@@ -1990,6 +1990,12 @@ N5:
 		ChargingColor: 008800
 		Instant: true
 		DeploySound: tibsurge.aud
+	IssueOrderToBot:
+		RequiresCondition: !being-warped && !reapersnare && !parachute && !berserk
+		OrderName: GrantTimedConditionOnDeploy
+		OrderTrigger: Attack, Damage
+		OrderChance: 100
+		OrderInterval: 830
 	Targetable@ChemWarrior:
 		TargetTypes: ChemWarrior
 	SpeedMultiplier@BlackHand:
@@ -4950,6 +4956,12 @@ ZDEF:
 		UndeploySound: gshielddown.aud
 		Voice: Shield
 		Instant: true
+	IssueOrderToBot:
+		RequiresCondition: !being-warped && !reapersnare && !parachute && !berserk
+		OrderName: GrantTimedConditionOnDeploy
+		OrderTrigger: Damage
+		OrderChance: 100
+		OrderInterval: 955
 	WithRadiatingCircle@ZoneDefenderShield:
 		EndRadius: 2c0
 		Color: 00eecc10

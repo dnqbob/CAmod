@@ -1,74 +1,74 @@
 NextProductionTab: PAGEDOWN
-	Description: hotkey-description-nextproductiontab
+	Description: Hotkey-NextProductionTab
 	Types: Production
 	Contexts: player
 
 PreviousProductionTab: PAGEUP
-	Description: hotkey-description-previousproductiontab
+	Description: Hotkey-PreviousProductionTab
 	Types: Production
 	Contexts: player
 
 ProductionTypeBuilding: E
-	Description: hotkey-description-productiontypebuilding
+	Description: Hotkey-ProductionTypeBuilding
 	Types: Production
 	Contexts: player
 
 ProductionTypeDefense: R
-	Description: hotkey-description-productiontypedefense
+	Description: Hotkey-ProductionTypeDefense
 	Types: Production
 	Contexts: player
 
 ProductionTypeInfantry: T
-	Description: hotkey-description-productiontypeinfantry
+	Description: Hotkey-ProductionTypeInfantry
 	Types: Production
 	Contexts: player
 
 ProductionTypeVehicle: Y
-	Description: hotkey-description-productiontypevehicle
+	Description: Hotkey-ProductionTypeVehicle
 	Types: Production
 	Contexts: player
 
 ProductionTypeAircraft: U
-	Description: hotkey-description-productiontypeaircraft
+	Description: Hotkey-ProductionTypeAircraft
 	Types: Production
 	Contexts: player
 
 ProductionTypeNaval: I
-	Description: hotkey-description-productiontypenaval
+	Description: Hotkey-ProductionTypeNaval
 	Types: Production
 	Contexts: player
 
 ProductionTypeUpgrade: O
-	Description: hotkey-description-productiontypeupgrade
+	Description: Hotkey-ProductionTypeUpgrade
 	Types: Production
 	Contexts: player
 
 PowerDown: X
-	Description: hotkey-description-powerdown
+	Description: Hotkey-PowerDownMode
 	Types: OrderGenerator
 	Contexts: player
 
 Upgrade: V
-	Description: hotkey-description-upgrade
+	Description: Hotkey-UpgradeMode
 	Types: OrderGenerator
 	Contexts: player
 
 SupportPower07:
-	Description: hotkey-description-supportpower07
+	Description: Hotkey-SupportPower07
 	Types: SupportPower
 	Contexts: player
 
 SupportPower08:
-	Description: hotkey-description-supportpower08
+	Description: Hotkey-SupportPower08
 	Types: SupportPower
 	Contexts: player
 
 SupportPower09:
-	Description: hotkey-description-supportpower09
+	Description: Hotkey-SupportPower09
 	Types: SupportPower
 	Contexts: player
 
 SupportPower10:
-	Description: hotkey-description-supportpower10
+	Description: Hotkey-SupportPower10
 	Types: SupportPower
 	Contexts: player

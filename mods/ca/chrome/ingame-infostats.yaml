@@ -25,7 +25,7 @@ Container@SKIRMISH_STATS:
 					Width: 482
 					Height: 20
 					Font: Bold
-					Text: Game-CA-InfoStats-ObjectiveCheckbox
+					Text: Chrome-InGameInfoStats-Stats
 					Disabled: true
 					TextColorDisabled: FFFFFF
 		Container@STATS_HEADERS:
@@ -37,7 +37,7 @@ Container@SKIRMISH_STATS:
 					X: 10
 					Width: 210
 					Height: 25
-					Text: Game-CA-InfoStats-Player
+					Text: Chrome-Setting-Player
 					Font: Bold
 				Label@FACTION:
 					X: 230

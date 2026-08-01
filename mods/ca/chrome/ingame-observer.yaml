@@ -81,7 +81,7 @@ Container@OBSERVER_WIDGETS:
 					Width: PARENT_WIDTH - 30
 					Height: 25
 					Align: Right
-					Text: Chrome-InGameObserver-MuteIndicator
+					Text: Chrome-IngameObserver-Containermuteindicator-Labellabel
 					Contrast: true
 		LogicKeyListener@OBSERVER_KEY_LISTENER:
 		MenuButton@OPTIONS_BUTTON:
@@ -177,7 +177,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 26
 							Height: 26
 							Key: Pause
-							TooltipText: Chrome-InGameObserver-PauseButton-Tooltip
+							TooltipText: Keycode-Pause
 							TooltipContainer: TOOLTIP_CONTAINER
 							IgnoreChildMouseOver: true
 							Children:
@@ -193,7 +193,7 @@ Container@OBSERVER_WIDGETS:
 							Height: 26
 							Key: Pause
 							IgnoreChildMouseOver: true
-							TooltipText: Chrome-InGameObserver-PlayButton-Tooltip
+							TooltipText: Chrome-MissionBrowser-OkButton
 							TooltipContainer: TOOLTIP_CONTAINER
 							Children:
 								Image@IMAGE_PLAY:
@@ -207,7 +207,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 34
 							Height: 20
 							Key: ReplaySpeedSlow
-							TooltipText: Chrome-InGameObserver-50Button-Tooltip
+							TooltipText: Chrome-IngameObserver-ReplayPlayer-ButtonSlow-TooltipText
 							TooltipContainer: TOOLTIP_CONTAINER
 							Text: Game-ObserverStatsLogic-Speed-05x
 							Font: TinyBold
@@ -217,7 +217,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 34
 							Height: 20
 							Key: ReplaySpeedRegular
-							TooltipText: Chrome-InGameObserver-100Button-Tooltip
+							TooltipText: Chrome-IngameObserver-ReplayPlayer-ButtonRegular-TooltipText
 							TooltipContainer: TOOLTIP_CONTAINER
 							Text: Game-ObserverStatsLogic-Speed-1x
 							Font: TinyBold
@@ -237,7 +237,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 13
 							Width: 34
 							Height: 20
-							TooltipText: Chrome-InGameObserver-200Button-Tooltip
+							TooltipText: Chrome-IngameObserver-ReplayPlayer-ButtonFaster-TooltipText
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Text: Game-ObserverStatsLogic-Speed-2x
@@ -248,7 +248,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 38
 							Height: 20
 							Key: ReplaySpeedMax
-							TooltipText: Chrome-InGameObserver-MaxButton-Tooltip
+							TooltipText: Hotkey-ReplaySpeedMax
 							TooltipContainer: TOOLTIP_CONTAINER
 							Text: Chrome-InGameObserver-MaxButton
 							Font: TinyBold
@@ -312,7 +312,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@CASH_HEADER:
@@ -330,7 +330,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Power
+									Text: Keycode-Power
 									Align: Center
 									Shadow: True
 								Label@KILLS_HEADER:
@@ -366,7 +366,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Lost
+									Text: Game-GameInfoStatsLogic-Lost
 									Align: Right
 									Shadow: True
 								Label@EXPERIENCE_HEADER:
@@ -375,7 +375,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 60
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Score
+									Text: Game-CA-InfoStats-Score
 									Align: Right
 									Shadow: True
 								Label@ACTIONS_MIN_HEADER:
@@ -411,7 +411,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Shadow: True
 								Label@CASH_HEADER:
 									X: 155
@@ -494,7 +494,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@PRODUCTION_HEADER:
@@ -529,7 +529,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Game-CA-InfoStats-Player
+									Text: Chrome-Setting-Player
 									Shadow: True
 								Label@HARVESTERS_KILLED_HEADER:
 									X: 155
@@ -588,7 +588,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@SUPPORT_POWERS_HEADER:
@@ -597,7 +597,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-SupportPowers
+									Text: Encyclopedia-Category-SupportPowers
 									Shadow: True
 						Container@ARMY_HEADERS:
 							X: 0
@@ -624,7 +624,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@ARMY_HEADER:
@@ -660,7 +660,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@UPGRADES_HEADER:
@@ -669,7 +669,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Upgrades
+									Text: Encyclopedia-Category-Upgrades
 									Shadow: True
 						Container@BUILD_ORDER_HEADERS:
 							X: 0
@@ -696,7 +696,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@BUILD_ORDER_HEADER:
@@ -732,7 +732,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@UNITS_PRODUCED_HEADER:
@@ -768,7 +768,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Player
+									Text: Chrome-Setting-Player
 									Align: Left
 									Shadow: True
 								Label@ASSETS_DESTROYED_HEADER:
@@ -786,7 +786,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 75
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Chrome-InGameObserver-Chart-Lost
+									Text: Game-GameInfoStatsLogic-Lost
 									Align: Right
 									Shadow: True
 								Label@UNITS_KILLED_HEADER:

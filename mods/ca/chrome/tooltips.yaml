@@ -155,7 +155,7 @@ Background@BOT_TOOLTIP:
 		Label@NAME:
 			X: 7
 			Y: 2
-			Text: Chrome-Tooltip-BotPlayerLabel
+			Text: Chrome-Tooltips-BotTooltip-Name
 			Width: 290
 			Height: 24
 			Font: Bold
@@ -286,7 +286,7 @@ Background@PRODUCTION_TOOLTIP:
 			Y: 26
 			Height: 15
 			Font: TinyBold
-			Text: Chrome-ProductionTooltip-Requires
+			Text: Chrome-Tooltips-ProductionTooltip-Requires
 		Label@DESC:
 			X: 7
 			Y: 27
@@ -388,7 +388,7 @@ Background@SUPPORT_POWER_TOOLTIP:
 			Y: 8
 			Font: TinyBold
 			VAlign: Top
-			Text: Chrome-SupportPowerTooltip-Currency
+			Text: $
 
 Background@ARMY_TOOLTIP:
 	Logic: ArmyTooltipLogicCA

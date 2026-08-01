@@ -112,7 +112,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Chrome-SingleplayerMenu-Title
+							Text: Chrome-MainMenu-Singleplayer
 							Align: Center
 							Font: Bold
 						Button@SKIRMISH_BUTTON:
@@ -127,14 +127,14 @@ Container@MAINMENU:
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Chrome-SingleplayerMenu-Mission
+							Text: Chrome-MissionBrowser-Title
 							Font: Bold
 						Button@LOAD_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Chrome-SingleplayerMenu-Load
+							Text: Chrome-GameSaveBrowser-Load
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -153,7 +153,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Chrome-ExtraMenu-Title
+							Text: Chrome-MainMenu-Extras
 							Align: Center
 							Font: Bold
 						Button@REPLAYS_BUTTON:
@@ -168,7 +168,7 @@ Container@MAINMENU:
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Chrome-ExtraMenu-Music
+							Text: Chrome-Lobby-Music
 							Font: Bold
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -182,14 +182,14 @@ Container@MAINMENU:
 							Y: 180
 							Width: 140
 							Height: 30
-							Text: Chrome-ExtraMenu-AssetBrowser
+							Text: Chrome-AssetBrowser-Title
 							Font: Bold
 						Button@CREDITS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Chrome-ExtraMenu-Credits
+							Text: Chrome-Credits-Title
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -208,7 +208,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Chrome-MapEditorMenu-Title
+							Text: Chrome-ExtraMenu-MapEditor
 							Align: Center
 							Font: Bold
 						Button@NEW_MAP_BUTTON:
@@ -216,7 +216,7 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Chrome-MapEditorMenu-NewMap
+							Text: Chrome-Editor-NewMap-Title
 							Font: Bold
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -409,7 +409,7 @@ Container@MAINMENU:
 					Background: ca-website-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Game-CA-MainMenu-SocialTooltip-Ladder1v1
+					TooltipText: Chrome-Mainmenu-ExternalLinks-WebsiteLink-TooltipText
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net
 				TooltipContainer@LINKS_TOOLTIP_CONTAINER:

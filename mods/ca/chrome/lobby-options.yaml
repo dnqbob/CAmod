@@ -16,7 +16,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Chrome-LobbyOptions-ResetTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Chrome-LobbyOptions-ResetButton
+			Text: Chrome-Setting-ResetButton
 		Button@LOAD_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50
 			Y: 0 - 26
@@ -24,7 +24,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Chrome-LobbyOptions-LoadTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Chrome-LobbyOptions-LoadButton
+			Text: Chrome-GameSaveBrowser-Load
 		Button@SAVE_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50 - 44
 			Y: 0 - 26
@@ -32,7 +32,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Chrome-LobbyOptions-SaveTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Chrome-LobbyOptions-SaveButton
+			Text: Chrome-Editor-SaveMap-Save
 		ScrollPanel:
 			Logic: LobbyOptionsLogicCA, LobbyMissionInfoLogic
 			Width: PARENT_WIDTH

@@ -121,7 +121,7 @@ Background@SERVER_LOBBY:
 					Y: PARENT_HEIGHT - HEIGHT
 					Width: 50
 					Height: 25
-					Text: Chrome-InGameInfoChat-Team
+					Text: Chrome-Lobby-Chat-Team
 					Font: Bold
 					Key: ToggleChatMode
 					TooltipText: Chrome-Chat-ModeTooltip

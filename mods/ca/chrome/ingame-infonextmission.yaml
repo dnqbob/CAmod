@@ -36,7 +36,7 @@ Container@NEXT_MISSION_PANEL:
 					Width: 140
 					Height: 25
 					Font: Bold
-					Text: Game-GameInfoLogic-Options
+					Text: Chrome-Lobby-Options
 		ScrollPanel@MISSION_DESCRIPTION_PANEL:
 			X: 20
 			Y: 263

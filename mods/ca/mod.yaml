@@ -1,9 +1,9 @@
 Metadata:
-	Title: mod-title
+	Title: Sys-Metadata-Title
 	Version: prep-CA
 	Website: https://www.moddb.com/mods/command-conquer-combined-arms
 	WebIcon32: https://ca.oraladder.net/img/icon_32x32.png
-	WindowTitle: mod-windowtitle
+	WindowTitle: Sys-Metadata-WindowTitle
 
 PackageFormats: Mix
 

@@ -59,7 +59,7 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Chrome-SingleplayerMenu-Title
+							Text: Chrome-MainMenu-Singleplayer
 							Font: Bold
 						Button@MULTIPLAYER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -87,7 +87,7 @@ Container@MAINMENU:
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Chrome-ExtraMenu-Title
+							Text: Chrome-MainMenu-Extras
 							Font: Bold
 						Button@CONTENT_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -175,7 +175,7 @@ Container@MAINMENU:
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Chrome-MapEditorMenu-Title
+							Text: Chrome-ExtraMenu-MapEditor
 							Font: Bold
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -343,7 +343,7 @@ Container@MAINMENU:
 					Background: discord-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Discord Server
+					TooltipText: Game-CA-MainMenu-SocialTooltip-Discord
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://discord.gg/2fUxXEKQhP
 				ExternalLinkButton@YOUTUBE_LINK:
@@ -354,7 +354,7 @@ Container@MAINMENU:
 					Background: youtube-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: YouTube Channel
+					TooltipText: Game-CA-MainMenu-SocialTooltip-YouTube
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://www.youtube.com/@openracombinedarms
 				ExternalLinkButton@FACEBOOK_LINK:
@@ -365,7 +365,7 @@ Container@MAINMENU:
 					Background: facebook-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Facebook Page
+					TooltipText: Game-CA-MainMenu-SocialTooltip-Facebook
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://www.facebook.com/openracombinedarms
 				ExternalLinkButton@MODDB_LINK:
@@ -376,7 +376,7 @@ Container@MAINMENU:
 					Background: moddb-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: ModDB
+					TooltipText: Game-CA-MainMenu-SocialTooltip-ModDB
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://www.moddb.com/mods/command-conquer-combined-arms
 				ExternalLinkButton@SPREADSHEET_LINK:
@@ -387,7 +387,7 @@ Container@MAINMENU:
 					Background: spreadsheet-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Unit Stats Spreadsheet
+					TooltipText: Game-CA-MainMenu-SocialTooltip-UnitStats
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://docs.google.com/spreadsheets/d/1RDg36FKB2kTU-rlwn358B879DHYen2vcZTdE39-Fz6k
 				ExternalLinkButton@TECHTREE_LINK:
@@ -398,7 +398,7 @@ Container@MAINMENU:
 					Background: tree-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Tech Tree
+					TooltipText: Game-CA-MainMenu-SocialTooltip-TechTree
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net/tech-tree
 				ExternalLinkButton@WEBSITE_LINK:
@@ -409,7 +409,7 @@ Container@MAINMENU:
 					Background: ca-website-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: CA Website
+					TooltipText: Game-CA-MainMenu-SocialTooltip-Ladder1v1 /tmp/c3_theirs.yaml
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net
 				TooltipContainer@LINKS_TOOLTIP_CONTAINER:

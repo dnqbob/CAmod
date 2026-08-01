@@ -14,7 +14,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Y: 0 - 26
 			Width: 50
 			Height: 26
-			TooltipText: Reset options to map defaults
+			TooltipText: Chrome-LobbyOptions-ResetTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
 			Text: Chrome-LobbyOptions-ResetButton
 		Button@LOAD_OPTIONS:
@@ -22,7 +22,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Load saved options
+			TooltipText: Chrome-LobbyOptions-LoadTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
 			Text: Chrome-LobbyOptions-LoadButton
 		Button@SAVE_OPTIONS:
@@ -30,7 +30,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Save options
+			TooltipText: Chrome-LobbyOptions-SaveTooltip
 			TooltipContainer: TOOLTIP_CONTAINER
 			Text: Chrome-LobbyOptions-SaveButton
 		ScrollPanel:

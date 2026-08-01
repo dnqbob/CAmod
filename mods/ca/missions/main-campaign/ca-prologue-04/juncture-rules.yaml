@@ -10,10 +10,10 @@ World:
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty
-		Label: dropdown-difficulty.label
-		Description: dropdown-difficulty.description
+		Label: Game-CA-Dropdown-Difficulty-Label
+		Description: Game-CA-Dropdown-Difficulty-Description
 		Values:
-			easy: options-difficulty.easy
+			easy: Map-Difficulty-easy
 		Default: easy
 		Locked: True
 	MusicPlaylist:

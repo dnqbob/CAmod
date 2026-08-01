@@ -29,14 +29,14 @@ Container@NEXT_MISSION_PANEL:
 					Width: 140
 					Height: 25
 					Font: Bold
-					Text: menu-game-info.briefing
+					Text: Game-GameInfoLogic-Briefing
 				Button@OPTIONS_TAB:
 					X: 140
 					Y: 0
 					Width: 140
 					Height: 25
 					Font: Bold
-					Text: menu-game-info.options
+					Text: Game-GameInfoLogic-Options
 		ScrollPanel@MISSION_DESCRIPTION_PANEL:
 			X: 20
 			Y: 263
@@ -106,5 +106,5 @@ Container@NEXT_MISSION_PANEL:
 			Width: 160
 			Height: 25
 			Font: Bold
-			Text: menu-game-info-ca.start-next-mission
+			Text: Game-GameInfoLogicCA-StartNextMission
 		TooltipContainer@TOOLTIP_CONTAINER:

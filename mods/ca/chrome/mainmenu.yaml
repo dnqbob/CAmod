@@ -409,7 +409,7 @@ Container@MAINMENU:
 					Background: ca-website-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Game-CA-MainMenu-SocialTooltip-Ladder1v1 /tmp/c3_theirs.yaml
+					TooltipText: Game-CA-MainMenu-SocialTooltip-Ladder1v1
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net
 				TooltipContainer@LINKS_TOOLTIP_CONTAINER:

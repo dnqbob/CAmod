@@ -213,8 +213,8 @@
 	ProduceActorPowerCA@InitialSatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~!gps.satellite.firstscan, ~fogenabled
-		Name: Actor-supportpower.satellitescannofogpower-Name
-		Description: Actor-supportpower.satellitescanpower-Description
+		Name: Actor-supportpower.initialsatellitescanpower-Name
+		Description: Actor-supportpower.initialsatellitescanpower-Description
 		Icon: gps
 		Actors: camera.satscan, gps.satellite.firstscan
 		Type: SpySatellite
@@ -227,7 +227,7 @@
 	ProduceActorPowerCA@SatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~gps.satellite, ~gps.satellite.firstscan, ~fogenabled
-		Name: Actor-supportpower.satellitescannofogpower-Name
+		Name: Actor-supportpower.satellitescanpower-Name
 		Description: Actor-supportpower.satellitescanpower-Description
 		Icon: gps
 		Actors: camera.satscan
@@ -399,8 +399,8 @@
 		EnemyDuration: 400
 		Icon: chrono
 		ChargeInterval: 4500
-		Name: Actor-supportpower.chronoshiftai-Name
-		Description: Actor-supportpower.chronoshiftai-Description
+		Name: Actor-supportpower.chronoshift-Name
+		Description: Actor-supportpower.chronoshift-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -761,7 +761,7 @@
 		OrderName: atomicammo
 		Icon: atomicammo
 		ChargeInterval: 4500
-		Name: Actor-supportpower.atomicammoiraq-Name
+		Name: Actor-supportpower.atomicammo-Name
 		Condition: atomic-ammo
 		Range: 4c0
 		MaxTargets: 5
@@ -769,7 +769,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: Actor-supportpower.atomicammoiraq-Description
+		Description: Actor-supportpower.atomicammo-Description
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -960,6 +960,7 @@
 
 ^ABombPower:
 	NukePower@ABomb:
+		OrderName: abomb
 		PauseOnCondition: disabled || empdisable || being-warped
 		Cursor: nuke
 		Icon: abomb
@@ -1004,8 +1005,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: uavicon
 		ChargeInterval: 3750
-		Name: Actor-supportpower.gdiuavarc-Name
-		Description: Actor-supportpower.gdiuavarc-Description
+		Name: Actor-supportpower.gdiuav-Name
+		Description: Actor-supportpower.gdiuav-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ReconDroneReady
@@ -1239,7 +1240,7 @@
 		Icon: arscan
 		IconPalette: chrometd
 		Name: Actor-supportpower.advradarorder-Name
-		Description: Reveals the location of enemy structures & units through the fog of war.\n\nCan be toggled on/off, but each deactivation will reduce the remaining duration.
+		Description: Actor-supportpower.advradarorder-Description
 		RequiresCondition: tower-radar
 		PauseOnCondition: !radar-active || disabled || being-warped
 		LaunchSound: gradarup.aud
@@ -1385,7 +1386,7 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Actor-supportpower.shadowairdrop-Name
+		Name: Actor-supportpower.nodairdrop-Name
 		Description: Actor-supportpower.nodairdrop-Description
 		DropItems: ltnk, ftnk, ltnk
 		SquadOffset: -2048, 2048, 0
@@ -1414,7 +1415,7 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Actor-supportpower.shadowairdrop-Name
+		Name: Actor-supportpower.blackhairdrop-Name
 		Description: Actor-supportpower.blackhairdrop-Description
 		DropItems: hftk, hftk
 		SquadOffset: -1024, 1024, 0
@@ -1506,8 +1507,8 @@
 		OrderName: sathack
 		Icon: hacksat
 		ChargeInterval: 4500
-		Name: Actor-supportpower.sathacklegion-Name
-		Description: Actor-supportpower.sathacklegion-Description
+		Name: Actor-supportpower.sathack-Name
+		Description: Actor-supportpower.sathack-Description
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1881,7 +1882,7 @@
 		ChargeInterval: 6000
 		Name: Actor-supportpower.ichorspike-Name
 		ActivationDelay: 1
-		Description: Creates an Ichor Spike at the target location. Resources within its area of influence grow and spread faster.\n\nAlso empowers units with Resource Conversion upgrade.\n\nUp to 3 resource nodes are affected.
+		Description: Actor-supportpower.ichorspike-Description
 		LaunchSound: scrinbuild.aud
 		Weapon: IchorSpikeSpawner
 		AirburstAltitude: 0c0
@@ -2073,10 +2074,10 @@
 		Actor: ichorseeder
 		Prerequisites: ~!player.reaper
 		ChargeInterval: 6000
-		Name: Actor-supportpower.ichorseedreaper-Name
+		Name: Actor-supportpower.ichorseed-Name
 		LifeTime: -1
 		AllowMultiple: false
-		Description: Actor-supportpower.ichorseedreaper-Description
+		Description: Actor-supportpower.ichorseed-Description
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -2238,8 +2239,8 @@
 		OrderName: suppression
 		Icon: spresspower
 		ChargeInterval: 4500
-		Name: Actor-supportpower.suppressionsiphon-Name
-		Description: Actor-supportpower.suppressionsiphon-Description
+		Name: Actor-supportpower.suppression-Name
+		Description: Actor-supportpower.suppression-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower

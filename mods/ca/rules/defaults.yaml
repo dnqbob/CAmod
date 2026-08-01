@@ -1750,7 +1750,7 @@
 	Inherits@HeavyArmor: ^HeavyArmor
 	Inherits@NodCovenantTarget: ^NodCovenantTarget
 	TooltipExtras:
-		Weaknesses: • Unarmed\n• Resistant to mind control
+		Weaknesses: Actor-^HarvesterBase-Weaknesses
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -4018,7 +4018,7 @@
 	MapEditorData:
 		Categories: Fake
 	TooltipExtras:
-		Attributes: • Can be detonated remotely
+		Attributes: Actor-^FakeBuilding-Attributes
 	FireWarheadsOnDeath@FAKE:
 		Weapon: FakeBuildingExplode
 		DamageThreshold: 70
@@ -4743,8 +4743,8 @@
 		BuildAtProductionType: Soldier
 		Description: Actor-^EngineerBase-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures enemy buildings\n• Repairs friendly structures & bridges\n• Defuses mines and bombs
+		Weaknesses: Actor-^EngineerBase-Weaknesses
+		Attributes: Actor-^EngineerBase-Attributes
 	Valued:
 		Cost: 400
 	Passenger:

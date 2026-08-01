@@ -23,7 +23,7 @@ hazmat.upgrade:
 		IconPalette: chrometd
 		Description: Actor-hazmat.upgrade-Description
 	TooltipExtras:
-		Strengths: + Tiberium immunity\n+ 50% resistance to irradiated terrain
+		Strengths: Actor-hazmat.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -46,7 +46,7 @@ flakarmor.upgrade:
 		Prerequisites: techcenter.any, infantry.any, ~!player.nod, ~!player.scrin, ~techlevel.high
 		Description: Actor-flakarmor.upgrade-Description
 	TooltipExtras:
-		Strengths: + 40% reduced damage from explosives\n+ 20% reduced damage from incendiary explosives
+		Strengths: Actor-flakarmor.upgrade-Strengths
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -83,8 +83,8 @@ bombard.strat:
 		IconPalette: chrometd
 		Description: Actor-bombard.strat-Description
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by 3%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: Actor-bombard.strat-Strengths
+		Attributes: Actor-bombard.strat-Attributes
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -107,7 +107,7 @@ bombard2.strat:
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
 		Description: Actor-bombard2.strat-Description
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by a further 3%
+		Strengths: Actor-bombard2.strat-Strengths
 		-Attributes:
 	RenderSprites:
 		Image: bombard2.strat
@@ -128,8 +128,8 @@ bombard3.strat:
 		Description: Actor-bombard3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by a further 3%\n+ Unlocks Firestorm Missile Barrage power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: Actor-bombard3.strat-Strengths
+		Attributes: Actor-bombard3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -145,10 +145,10 @@ seek.strat:
 		BuildPaletteOrder: 9
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Speed and weapon range focused strategy, required for:\n• Zone Raider\n• Enhanced Jumpjets Upgrade\n• Hypersonic Missiles Upgrade\n• Sidewinders Upgrade\n• Advanced Radar Power\n\n
+		Description: Actor-seek.strat-Description
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by 5%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: Actor-seek.strat-Strengths
+		Attributes: Actor-seek.strat-Attributes
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -171,7 +171,7 @@ seek2.strat:
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
 		Description: Actor-seek2.strat-Description
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by a further 5%
+		Strengths: Actor-seek2.strat-Strengths
 		-Attributes:
 	RenderSprites:
 		Image: seek2.strat
@@ -192,8 +192,8 @@ seek3.strat:
 		Description: Actor-seek3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by a further 5%\n+ Unlocks Advanced Radar Scan power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: Actor-seek3.strat-Strengths
+		Attributes: Actor-seek3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -211,8 +211,8 @@ hold.strat:
 		IconPalette: chrometd
 		Description: Actor-hold.strat-Description
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by 5%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: Actor-hold.strat-Strengths
+		Attributes: Actor-hold.strat-Attributes
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -235,7 +235,7 @@ hold2.strat:
 		Prerequisites: ~player.gdi, gtek, ~hold.strat,  ~techlevel.high
 		Description: Actor-hold2.strat-Description
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by a further 5%
+		Strengths: Actor-hold2.strat-Strengths
 		-Attributes:
 	RenderSprites:
 		Image: hold2.strat
@@ -256,8 +256,8 @@ hold3.strat:
 		Description: Actor-hold3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by a further 5%\n+ Unlocks Nanite Shield power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: Actor-hold3.strat-Strengths
+		Attributes: Actor-hold3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -274,8 +274,8 @@ vulcan.upgrade:
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
 		Description: Actor-vulcan.upgrade-Description
 	TooltipExtras:
-		Strengths: + Adds anti-air capability\n+ Increased damage against ground targets\n+ Adds turret
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: Actor-vulcan.upgrade-Strengths
+		Weaknesses: Actor-vulcan.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -292,8 +292,8 @@ bjet.upgrade:
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
 		Description: Actor-bjet.upgrade-Description
 	TooltipExtras:
-		Strengths: + Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: – Weak vs Heavy Armor\n– Has difficulty hitting moving targets\n– Cannot attack Aircraft
+		Strengths: Actor-bjet.upgrade-Strengths
+		Weaknesses: Actor-bjet.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -304,11 +304,11 @@ bjet.upgrade:
 tow.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Actor-tow.upgrade-Name
+		Name: Research: TOW Missile
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
-		Description: Actor-tow.upgrade-Description
+		Description: Hum-Vees and Guardian Drones will be produced with TOW missile launchers.\n\nReplaces: Hum-Vee\nReplaces: Guardian Drone
 	TooltipExtras:
 		Strengths: + Added TOW missile launcher (strong vs Heavy Armor)
 		Weaknesses: – Increased cost\n– Reduced speed
@@ -329,7 +329,7 @@ empgren.upgrade:
 		IconPalette: chrometd
 		Description: Actor-empgren.upgrade-Description
 	TooltipExtras:
-		Strengths: + Grenades briefly disable vehicles and defenses\n+ Grenadiers no longer explode when killed
+		Strengths: Actor-empgren.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -364,8 +364,8 @@ avenger.upgrade:
 		IconPalette: chrome
 		Description: Actor-avenger.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased range
-		Weaknesses: – Requires two passes
+		Strengths: Actor-avenger.upgrade-Strengths
+		Weaknesses: Actor-avenger.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -373,7 +373,7 @@ avenger.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: avenger.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-avenger.upgrade-EncyclopediaExtrasAdditionalInfo
 
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
@@ -385,7 +385,7 @@ sidewinders.upgrade:
 		IconPalette: chrometd
 		Description: Actor-sidewinders.upgrade-Description
 	TooltipExtras:
-		Strengths: + Added air-to-air missiles
+		Strengths: Actor-sidewinders.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -393,7 +393,7 @@ sidewinders.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: sidewinders.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Actor-sidewinders.upgrade-EncyclopediaExtrasAdditionalInfo
 
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -405,7 +405,7 @@ ceramic.upgrade:
 		IconPalette: chrometd
 		Description: Actor-ceramic.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased durability
+		Strengths: Actor-ceramic.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -413,7 +413,7 @@ ceramic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ceramic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Actor-ceramic.upgrade-EncyclopediaExtrasAdditionalInfo
 
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -423,7 +423,7 @@ strategic.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrade depends on chosen strategy.\n\n• Bombardment: Tomahawk Launcher research\n• Seek & Destroy: Enhanced Jumpjets upgrade\n• Hold the Line: Point Defense Systems upgrade
+		Description: Actor-strategic.upgrade-Description
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -442,8 +442,8 @@ thwk.upgrade:
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
 		Description: Actor-thwk.upgrade-Description
 	TooltipExtras:
-		Strengths: + Strong vs Buildings\n+ Extremely long range
-		Weaknesses: – Projectiles can be shot down\n– Slow rate of fire
+		Strengths: Actor-thwk.upgrade-Strengths
+		Weaknesses: Actor-thwk.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -451,19 +451,20 @@ thwk.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: thwk.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-thwk.upgrade-EncyclopediaExtrasAdditionalInfo
 
 ejjet.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Enhanced Jumpjets
+		Name: Actor-tow.upgrade-Name
 	Buildable:
 		BuildPaletteOrder: 30
 		IconPalette: chrometd
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
-		Description: Improves the speed and vision of Jumpjet Troopers and Bombardiers and grants them cloak detection.\n\nUpgrades: Jumpjet Infantry\nUpgrades: Bombardier
+		Description: Actor-tow.upgrade-Description
 	TooltipExtras:
-		Strengths: + 25% faster movement\n+ Vision range increased by 2\n+ Cloak detection
+		Strengths: Actor-tow.upgrade-Strengths
+		Weaknesses: Actor-tow.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -471,7 +472,7 @@ ejjet.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ejjet.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Actor-tow.upgrade-EncyclopediaExtrasAdditionalInfo
 
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
@@ -481,9 +482,9 @@ pointdef.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Equips several units with point defense shields and/or point defense lasers which protect against enemy fire.\n\nUpgrades: Battle Tank (Shield and Laser)\nUpgrades: Battle Drone (Shield and Laser)\nUpgrades: Harvester (Shield)\nUpgrades: Frigate (Laser)
+		Description: Actor-pointdef.upgrade-Description
 	TooltipExtras:
-		Strengths: + Added Point Defense Shield\n+ Added Point Defense Laser
+		Strengths: Actor-pointdef.upgrade-Strengths
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -491,7 +492,7 @@ pointdef.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: pointdef.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Actor-pointdef.upgrade-EncyclopediaExtrasAdditionalInfo
 
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
@@ -520,8 +521,8 @@ hailstorm.upgrade:
 		IconPalette: chrometd
 		Description: Actor-hailstorm.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage and area of effect\n+ Fires six missiles per salvo
-		Weaknesses: – Reduced accuracy
+		Strengths: Actor-hailstorm.upgrade-Strengths
+		Weaknesses: Actor-hailstorm.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -529,7 +530,7 @@ hailstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hailstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-hailstorm.upgrade-EncyclopediaExtrasAdditionalInfo
 
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -541,8 +542,8 @@ hypersonic.upgrade:
 		IconPalette: chrometd
 		Description: Actor-hypersonic.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased projectile speed, precision and damage
-		Weaknesses: – Unguided
+		Strengths: Actor-hypersonic.upgrade-Strengths
+		Weaknesses: Actor-hypersonic.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -550,7 +551,7 @@ hypersonic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hypersonic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Actor-hypersonic.upgrade-EncyclopediaExtrasAdditionalInfo
 
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
@@ -562,8 +563,8 @@ hammerhead.upgrade:
 		IconPalette: chrometd
 		Description: Actor-hammerhead.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage and area of effect\n+ Briefly slows movement and rate of fire of impacted targets
-		Weaknesses: – Reduced projectile speed
+		Strengths: Actor-hammerhead.upgrade-Strengths
+		Weaknesses: Actor-hammerhead.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -571,7 +572,7 @@ hammerhead.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hammerhead.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Actor-hammerhead.upgrade-EncyclopediaExtrasAdditionalInfo
 
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -583,7 +584,7 @@ sonic.upgrade:
 		IconPalette: chrometd
 		Description: Actor-sonic.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased range\n+ Slows enemy movement and rate of fire
+		Strengths: Actor-sonic.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -603,7 +604,7 @@ abur.upgrade:
 		IconPalette: chrometd
 		Description: Actor-abur.upgrade-Description
 	TooltipExtras:
-		Strengths: + Added Afterburner for temporary speed boost
+		Strengths: Actor-abur.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -622,8 +623,8 @@ bdrone.upgrade:
 		Prerequisites: ~player.arc, gtek, ~techlevel.high
 		Description: Actor-bdrone.upgrade-Description
 	TooltipExtras:
-		Strengths: + Reduced cost\n+ Increased rate of fire\n+ Self-repair\n• XP of losses reclaimed by replacements\n+ Immunity to crew kill, chaos gas and mind control
-		Weaknesses: – Reduced HP\n– Reduced damage\n– Disabled if radar is down\n– Can be hacked
+		Strengths: Actor-bdrone.upgrade-Strengths
+		Weaknesses: Actor-bdrone.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -646,7 +647,7 @@ railgun.upgrade:
 		IconPalette: chrometd
 		Description: Actor-railgun.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased range\n+ Damages targets in a line
+		Strengths: Actor-railgun.upgrade-Strengths
 	Valued:
 		Cost: 750
 	AnnounceOnCreation:
@@ -669,7 +670,7 @@ ionmam.upgrade:
 		IconPalette: chrometd
 		Description: Actor-ionmam.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased area of effect
+		Strengths: Actor-ionmam.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -692,7 +693,7 @@ hovermam.upgrade:
 		IconPalette: chrometd
 		Description: Actor-hovermam.upgrade-Description
 	TooltipExtras:
-		Strengths: + Faster movement speed\n+ Can traverse water
+		Strengths: Actor-hovermam.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -714,8 +715,8 @@ mdrone.upgrade:
 		Prerequisites: ~player.arc, upgc, ~techlevel.high
 		Description: Actor-mdrone.upgrade-Description
 	TooltipExtras:
-		Strengths: + Reduced cost\n+ Increased rate of fire\n+ Improved self-repair\n• XP of losses reclaimed by replacements\n+ Immunity to crew kill, chaos gas and mind control
-		Weaknesses: – Reduced HP\n– Reduced damage\n– Disabled if radar is down\n– Can be hacked
+		Strengths: Actor-mdrone.upgrade-Strengths
+		Weaknesses: Actor-mdrone.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -738,7 +739,7 @@ gyro.upgrade:
 		IconPalette: chrometd
 		Description: Actor-gyro.upgrade-Description
 	TooltipExtras:
-		Strengths: + Added Gyro Stabilizers ability (increased range, reduced rate of fire)\n+ Increases Juggernaut range by 50%.
+		Strengths: Actor-gyro.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -760,8 +761,8 @@ upgc.drop:
 		Description: Actor-upgc.drop-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + $1250 delivered every 60 seconds (normal speed)
-		Attributes: (!) Mutually exclusive with Firestorm Missile System, Advanced Radar System and Nanoshield Generator
+		Strengths: Actor-upgc.drop-Strengths
+		Attributes: Actor-upgc.drop-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
 	UpdatesCount:
@@ -796,7 +797,7 @@ wrath.covenant:
 		Description: Actor-wrath.covenant-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: Actor-wrath.covenant-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -816,7 +817,7 @@ unity.covenant:
 		Description: Actor-unity.covenant-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: Actor-unity.covenant-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -836,7 +837,7 @@ zeal.covenant:
 		Description: Actor-zeal.covenant-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: Actor-zeal.covenant-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -855,8 +856,8 @@ howi.upgrade:
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
 		Description: Actor-howi.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased projectile speed\n+ Increased movement speed\n+ Increased accuracy\n+ Increased burst damage\n+ Increased vision\n+ Has turret
-		Weaknesses: – Reduced splash radius\n– Reduced range\n– Reduced rate of fire
+		Strengths: Actor-howi.upgrade-Strengths
+		Weaknesses: Actor-howi.upgrade-Weaknesses
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -879,7 +880,7 @@ decoy.upgrade:
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
 		Description: Actor-decoy.upgrade-Description
 	TooltipExtras:
-		Strengths: + Decoy projection ability
+		Strengths: Actor-decoy.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -896,8 +897,8 @@ sharv.upgrade:
 		Prerequisites: ~player.nod, tmpl, ~techlevel.high
 		Description: Actor-sharv.upgrade-Description
 	TooltipExtras:
-		Strengths: + Hidden while moving
-		Weaknesses: – Reduced health
+		Strengths: Actor-sharv.upgrade-Strengths
+		Weaknesses: Actor-sharv.upgrade-Weaknesses
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -915,7 +916,7 @@ tibcore.upgrade:
 		Description: Actor-tibcore.upgrade-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage\n+ Increased projectile speed
+		Strengths: Actor-tibcore.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -935,8 +936,8 @@ blacknapalm.upgrade:
 		Prerequisites: ~player.blackh, tmpl, ~techlevel.high
 		Description: Actor-blacknapalm.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage against vehicles and defenses
-		Weaknesses: – Reduced rate of fire
+		Strengths: Actor-blacknapalm.upgrade-Strengths
+		Weaknesses: Actor-blacknapalm.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -956,7 +957,7 @@ microwave.upgrade:
 		IconPalette: chrometd
 		Description: Actor-microwave.upgrade-Description
 	TooltipExtras:
-		Strengths: + Kills crew of vehicles with less than 75% HP\n + Increased EMP duration for direct target\n+ EMP affects adjacent vehicles/defenses
+		Strengths: Actor-microwave.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -978,7 +979,7 @@ quantum.upgrade:
 		Prerequisites: ~player.marked, tmpl, ~techlevel.high
 		Description: Actor-quantum.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage
+		Strengths: Actor-quantum.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -997,8 +998,8 @@ hstk.upgrade:
 		Prerequisites: ~player.shadow, tmpl, ~techlevel.high
 		Description: Actor-hstk.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased durability
-		Weaknesses: – Reduced mobility\n– Increased cost\n– Increased cloaking delay
+		Strengths: Actor-hstk.upgrade-Strengths
+		Weaknesses: Actor-hstk.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1034,8 +1035,8 @@ lastnk.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~wrath.covenant, ~techlevel.high
 		Description: Actor-lastnk.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased damage vs infantry & light armor\n+ Increased range
-		Weaknesses: – Reduced damage vs heavy armor
+		Strengths: Actor-lastnk.upgrade-Strengths
+		Weaknesses: Actor-lastnk.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1052,8 +1053,8 @@ cust.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~unity.covenant, ~techlevel.high
 		Description: Actor-cust.upgrade-Description
 	TooltipExtras:
-		Strengths: + Heavy armor\n+ Heals cyborgs & repairs vehicles
-		Weaknesses: – No stealth capability\n– No offensive capability\n– Reduced speed\n– Increased cost
+		Strengths: Actor-cust.upgrade-Strengths
+		Weaknesses: Actor-cust.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1070,8 +1071,8 @@ rbug.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~zeal.covenant, ~techlevel.high
 		Description: Actor-rbug.upgrade-Description
 	TooltipExtras:
-		Strengths: + Heavy armor\n+ Increased damage\n+ Increased range
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: Actor-rbug.upgrade-Strengths
+		Weaknesses: Actor-rbug.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1087,9 +1088,9 @@ cyborgarmor.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level2, ~techlevel.high
 		IconPalette: chrometd
-		Description: Improves cyborg armor.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Cyberscrin/Cyberdog\nUpgrades: Enlightened\nUpgrades: Cyborg Reaper\nUpgrades: Cyborg Elite
+		Description: Actor-cyborgarmor.upgrade-Description
 	TooltipExtras:
-		Strengths: + 20% reduced damage taken\n+ Additional 10% reduced damage from explosives
+		Strengths: Actor-cyborgarmor.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1122,9 +1123,9 @@ cyborgdmg.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~wrath.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Increases cyborg firepower.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Cyberscrin/Cyberdog\nUpgrades: Cyborg Elite
+		Description: Actor-cyborgdmg.upgrade-Description
 	TooltipExtras:
-		Strengths: + 10% increased firepower
+		Strengths: Actor-cyborgdmg.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1132,7 +1133,7 @@ cyborgdmg.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgdmg.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Actor-cyborgdmg.upgrade-EncyclopediaExtrasAdditionalInfo
 
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
@@ -1144,7 +1145,7 @@ cyborgprod.upgrade:
 		IconPalette: chrometd
 		Description: Actor-cyborgprod.upgrade-Description
 	TooltipExtras:
-		Strengths: + 15% of lost cyborgs value is reclaimed to create new Cyborgs from Temple Prime
+		Strengths: Actor-cyborgprod.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1152,7 +1153,7 @@ cyborgprod.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgprod.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Actor-cyborgprod.upgrade-EncyclopediaExtrasAdditionalInfo
 
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
@@ -1162,9 +1163,9 @@ cyborgspeed.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Increases cyborg movement speed.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Cyberscrin/Cyberdog\nUpgrades: Enlightened\nUpgrades: Cyborg Elite
+		Description: Actor-cyborgspeed.upgrade-Description
 	TooltipExtras:
-		Strengths: + 20% faster movement
+		Strengths: Actor-cyborgspeed.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1172,7 +1173,7 @@ cyborgspeed.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgspeed.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Actor-cyborgspeed.upgrade-EncyclopediaExtrasAdditionalInfo
 
 #########################SOVIET#########
 ########################################
@@ -1200,7 +1201,7 @@ infantry.doctrine:
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
 		Description: Actor-infantry.doctrine-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: Actor-infantry.doctrine-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1217,7 +1218,7 @@ armor.doctrine:
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
 		Description: Actor-armor.doctrine-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: Actor-armor.doctrine-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1234,7 +1235,7 @@ arty.doctrine:
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
 		Description: Actor-arty.doctrine-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: Actor-arty.doctrine-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1251,8 +1252,8 @@ hazmatsoviet.upgrade:
 		Prerequisites: ~player.soviet, ~!player.iraq, anyradar, infantry.any, ~techlevel.medium
 		Description: Actor-hazmatsoviet.upgrade-Description
 	TooltipExtras:
-		Strengths: + Tiberium immunity\n+ High resistance to irradiated terrain
-		Weaknesses: – 33% slower movement across resources and rough terrain
+		Strengths: Actor-hazmatsoviet.upgrade-Strengths
+		Weaknesses: Actor-hazmatsoviet.upgrade-Weaknesses
 	Valued:
 		Cost: 850
 	RenderSprites:
@@ -1269,8 +1270,8 @@ tdog.upgrade:
 		Prerequisites: ~player.soviet, anyradar, ~techlevel.medium
 		Description: Actor-tdog.upgrade-Description
 	TooltipExtras:
-		Strengths: + Able to damage vehicles and buildings\n+ Trained to detect scent of enemy vehicles
-		Weaknesses: – Explodes on attack or on death\n– No longer detects scent of enemy infantry\n– Reduced detection range\n– Increased cost
+		Strengths: Actor-tdog.upgrade-Strengths
+		Weaknesses: Actor-tdog.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1287,8 +1288,8 @@ lasher.upgrade:
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
 		Description: Actor-lasher.upgrade-Description
 	TooltipExtras:
-		Strengths: + 25% faster movement\n+ Improved crushing performance
-		Weaknesses: – Reduced hit points\n– Reduced firepower
+		Strengths: Actor-lasher.upgrade-Strengths
+		Weaknesses: Actor-lasher.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1307,8 +1308,8 @@ gattling.upgrade:
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
 		Description: Actor-gattling.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased firepower
-		Weaknesses: – Increased production cost
+		Strengths: Actor-gattling.upgrade-Strengths
+		Weaknesses: Actor-gattling.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1327,8 +1328,8 @@ ttrp.upgrade:
 		Prerequisites: ~player.soviet, ~!player.iraq, stek, ~techlevel.high
 		Description: Actor-ttrp.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased rate of fire\n+ Increased damage
-		Weaknesses: – Increased cost
+		Strengths: Actor-ttrp.upgrade-Strengths
+		Weaknesses: Actor-ttrp.upgrade-Weaknesses
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -1351,8 +1352,8 @@ deso.upgrade:
 		Prerequisites: ~player.soviet, ~player.iraq, stek, ~techlevel.high
 		Description: Actor-deso.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased damage\n+ Irradiates vehicles\n+ Desolate Ground ability
-		Weaknesses: – Increased cost
+		Strengths: Actor-deso.upgrade-Strengths
+		Weaknesses: Actor-deso.upgrade-Weaknesses
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -1371,7 +1372,7 @@ tarc.upgrade:
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
 		Description: Actor-tarc.upgrade-Description
 	TooltipExtras:
-		Strengths: + Shots jump to up to 2 additional targets
+		Strengths: Actor-tarc.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1390,8 +1391,8 @@ seismic.upgrade:
 		Prerequisites: ~player.ukraine, stek, ~techlevel.high
 		Description: Actor-seismic.upgrade-Description
 	TooltipExtras:
-		Strengths: + High area damage vs structures and vehicles\n+ Slows movement and rate of fire of impacted targets
-		Weaknesses: – Slow moving projectiles
+		Strengths: Actor-seismic.upgrade-Strengths
+		Weaknesses: Actor-seismic.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1428,7 +1429,7 @@ imppara.upgrade:
 		Prerequisites: playerxp.level2, ~player.soviet, ~!player.russia, ~!player.yuri, ~infantry.doctrine, ~techlevel.medium
 		Description: Actor-imppara.upgrade-Description
 	TooltipExtras:
-		Strengths: + Additional units dropped
+		Strengths: Actor-imppara.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1436,7 +1437,7 @@ imppara.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: imppara.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Actor-imppara.upgrade-EncyclopediaExtrasAdditionalInfo
 
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1447,7 +1448,7 @@ impstorm.upgrade:
 		Prerequisites: playerxp.level2, ~player.russia, ~infantry.doctrine, ~techlevel.medium
 		Description: Actor-impstorm.upgrade-Description
 	TooltipExtras:
-		Strengths: + Additional units dropped
+		Strengths: Actor-impstorm.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1467,7 +1468,7 @@ impmuta.upgrade:
 		Prerequisites: playerxp.level2, ~player.yuri, ~infantry.doctrine, ~techlevel.medium
 		Description: Actor-impmuta.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased area of effect (Mutation Bomb)\n+ Increased maximum number of targets (Mutation Bomb)\n+ Increased movement speed (Brute)
+		Strengths: Actor-impmuta.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1487,7 +1488,7 @@ reactive.upgrade:
 		Prerequisites: ~player.soviet, ~armor.doctrine, playerxp.level2, ~techlevel.high
 		Description: Actor-reactive.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased armor
+		Strengths: Actor-reactive.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1495,7 +1496,7 @@ reactive.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: reactive.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Actor-reactive.upgrade-EncyclopediaExtrasAdditionalInfo
 
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1506,7 +1507,7 @@ rocketpods.upgrade:
 		Prerequisites: ~player.soviet, ~arty.doctrine, playerxp.level2, ~techlevel.high
 		Description: Actor-rocketpods.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased salvo size (Grad)\n+ Increased ammo & rate of fire (Hind)
+		Strengths: Actor-rocketpods.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1514,7 +1515,7 @@ rocketpods.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: rocketpods.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Actor-rocketpods.upgrade-EncyclopediaExtrasAdditionalInfo
 
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1525,8 +1526,8 @@ atomicengines.upgrade:
 		Prerequisites: ~player.soviet, npwr, ~techlevel.high
 		Description: Actor-atomicengines.upgrade-Description
 	TooltipExtras:
-		Strengths: + 25% faster movement
-		Weaknesses: – Explodes on death
+		Strengths: Actor-atomicengines.upgrade-Strengths
+		Weaknesses: Actor-atomicengines.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1543,8 +1544,8 @@ erad.upgrade:
 		Prerequisites: ~player.iraq, npwr, ~techlevel.high
 		Description: Actor-erad.upgrade-Description
 	TooltipExtras:
-		Strengths: + High area damage vs infantry and vehicles\n+ Irradiates impacted vehicles\n+ Increased range
-		Weaknesses: – Loses AA missiles\n– Reduced single-target anti-tank damage\n– Reduced damage vs buildings
+		Strengths: Actor-erad.upgrade-Strengths
+		Weaknesses: Actor-erad.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1578,8 +1579,8 @@ ovld.upgrade:
 		Prerequisites: playerxp.level3, ~player.soviet, ~infantry.doctrine, ~techlevel.high
 		Description: Actor-ovld.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased firepower\n+ Increased range\n+ Empowers nearby infantry
-		Weaknesses: – Reduced speed\n– Increased cost
+		Strengths: Actor-ovld.upgrade-Strengths
+		Weaknesses: Actor-ovld.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1596,8 +1597,8 @@ apoc.upgrade:
 		Prerequisites: playerxp.level3, ~player.soviet, ~armor.doctrine, ~techlevel.high
 		Description: Actor-apoc.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased firepower\n+ Increased health\n+ Increased range\n+ Increased splash damage
-		Weaknesses: – Reduced speed\n– Increased cost
+		Strengths: Actor-apoc.upgrade-Strengths
+		Weaknesses: Actor-apoc.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1614,8 +1615,8 @@ nukc.upgrade:
 		Prerequisites: playerxp.level3, ~player.soviet, ~arty.doctrine, ~techlevel.high
 		Description: Actor-nukc.upgrade-Description
 	TooltipExtras:
-		Strengths: + Strong vs Buildings, Defenses, Infantry, Light Armor\n+ Extremely long range
-		Weaknesses: – Must deploy to fire\n– Slow rate of fire\n– Slow projectiles
+		Strengths: Actor-nukc.upgrade-Strengths
+		Weaknesses: Actor-nukc.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1647,9 +1648,9 @@ economy.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue economic policy.\n\n• Level 1: -15% cost of Refineries, Harvesters & MCVs\n• Level 2: -20% cost of Refineries, Harvesters & MCVs, +20% MCV movement speed\n• Level 3: -25% cost of Refineries, Harvesters & MCVs, Free Chrono Miner upgrade, +50% Ore Purifier income
+		Description: Actor-economy.policy-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.(!) Cost reductions do not stack
+		Attributes: Actor-economy.policy-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1670,9 +1671,9 @@ defense.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue defense policy.\n\n• Level 1: +15% building/defense HP, +25% Construction Yard build radius\n• Level 2: +30% building/defense HP, +40% building repair rate, +50% building vision radius\n• Level 3: +25% defense vision radius, +20% defense repair rate, +15% defense weapon damage, +2 gap generator shroud radius
+		Description: Actor-defense.policy-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.\n(!) HP bonuses do not stack
+		Attributes: Actor-defense.policy-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1687,9 +1688,9 @@ development.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue development policy.\n\n• Level 1: +20% unit experience gain\n• Level 2: +40% unit experience gain, 15% discount on Tech Center, HQ & all upgrades\n• Level 3: +60% unit experience gain, rank 3 units gain additional health & damage
+		Description: Actor-development.policy-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.(!) XP bonuses do not stack
+		Attributes: Actor-development.policy-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1706,7 +1707,7 @@ greece.coalition:
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
 		Description: Actor-greece.coalition-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: Actor-greece.coalition-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1726,7 +1727,7 @@ korea.coalition:
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
 		Description: Actor-korea.coalition-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: Actor-korea.coalition-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1746,7 +1747,7 @@ sweden.coalition:
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
 		Description: Actor-sweden.coalition-Description
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: Actor-sweden.coalition-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1761,14 +1762,14 @@ delp.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Research: Delphis APC
+		Name: Actor-aapc.upgrade-Name
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: Allows construction of the Delphis APC.\n\nReplaces: APC
+		Description: Actor-aapc.upgrade-Description
 	TooltipExtras:
-		Strengths: + Turreted sonic weapon that weakens structures
-		Weaknesses: – Increased cost\n– Decreased unit speed
+		Strengths: Actor-aapc.upgrade-Strengths
+		Weaknesses: Actor-aapc.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1786,7 +1787,7 @@ optics.upgrade:
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
 		Description: Actor-optics.upgrade-Description
 	TooltipExtras:
-		Strengths: + Rangers can temporarily increase their vision & detection range
+		Strengths: Actor-optics.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1804,7 +1805,7 @@ entrench.upgrade:
 		Prerequisites: ~player.france, anyradar, ~techlevel.medium
 		Description: Actor-entrench.upgrade-Description
 	TooltipExtras:
-		Strengths: + Allows Engineers to deploy, enabling defensive structures to be built
+		Strengths: Actor-entrench.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1824,7 +1825,7 @@ cryw.upgrade:
 		Prerequisites: ~player.allies, atek, ~techlevel.high
 		Description: Actor-cryw.upgrade-Description
 	TooltipExtras:
-		Strengths: + Equip with Cryo Warheads which slow movement and increase damage taken
+		Strengths: Actor-cryw.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1842,8 +1843,8 @@ pcan.upgrade:
 		Prerequisites: ~player.allies, atek, ~techlevel.high
 		Description: Actor-pcan.upgrade-Description
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased burst damage
-		Weaknesses: – Reduced rate of fire\n– Reduced mobility
+		Strengths: Actor-pcan.upgrade-Strengths
+		Weaknesses: Actor-pcan.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1861,8 +1862,8 @@ apb.upgrade:
 		Prerequisites: ~player.england, atek, ~techlevel.high
 		Description: Actor-apb.upgrade-Description
 	TooltipExtras:
-		Strengths: + Can damage vehicles with AP rounds which slow movement and rate of fire
-		Weaknesses: – Reduced range
+		Strengths: Actor-apb.upgrade-Strengths
+		Weaknesses: Actor-apb.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1882,7 +1883,7 @@ airborne.upgrade:
 		Prerequisites: ~player.usa, atek, ~techlevel.high
 		Description: Actor-airborne.upgrade-Description
 	TooltipExtras:
-		Strengths: + Airborne units have veterancy\n+ Airborne units take 25% less time to prepare
+		Strengths: Actor-airborne.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1900,9 +1901,9 @@ tflx.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.germany, atek, ~techlevel.high
-		Description: Units gain increased movement speed and rate of fire after being chronoshifted.\n\nUpgrades: Chronoshift\n\nUpgrades: Chrono Prison\nUpgrades: Chrono Tank
+		Description: Actor-tflx.upgrade-Description
 	TooltipExtras:
-		Strengths: + 33% increased movement & rate of fire for 8s after chronoshifting
+		Strengths: Actor-tflx.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1922,7 +1923,7 @@ charv.upgrade:
 		Prerequisites: ~player.allies, alhq, ~techlevel.high, !charv.upgrade
 		Description: Actor-charv.upgrade-Description
 	TooltipExtras:
-		Strengths: + Teleport back to refinery
+		Strengths: Actor-charv.upgrade-Strengths
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -1957,7 +1958,7 @@ loyalist.allegiance:
 		Description: Actor-loyalist.allegiance-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: Actor-loyalist.allegiance-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1977,7 +1978,7 @@ rebel.allegiance:
 		Description: Actor-rebel.allegiance-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: Actor-rebel.allegiance-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1997,7 +1998,7 @@ malefic.allegiance:
 		Description: Actor-malefic.allegiance-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: Actor-malefic.allegiance-Attributes
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -2017,7 +2018,7 @@ hyper.upgrade:
 		Description: Actor-hyper.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Hypercharge ability
+		Strengths: Actor-hyper.upgrade-Strengths
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2052,8 +2053,8 @@ evis.upgrade:
 		Description: Actor-evis.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased health\n+ Increased rate of fire\n+ Benefits from Resource Conversion upgrade
-		Weaknesses: – Increased cost\n– Reduced range
+		Strengths: Actor-evis.upgrade-Strengths
+		Weaknesses: Actor-evis.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2071,8 +2072,8 @@ impl.upgrade:
 		Description: Actor-impl.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage\n+ Increased health\n+ Slows targets
-		Weaknesses: – Increased cost\n– Reduced speed\n– Reduced rate of fire
+		Strengths: Actor-impl.upgrade-Strengths
+		Weaknesses: Actor-impl.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2090,8 +2091,8 @@ stlk.upgrade:
 		Description: Actor-stlk.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased health\n+ Cloaking ability with speed boost
-		Weaknesses: – Increased cost\n– Reduced splash damage
+		Strengths: Actor-stlk.upgrade-Strengths
+		Weaknesses: Actor-stlk.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2109,8 +2110,8 @@ shrw.upgrade:
 		Description: Actor-shrw.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased durability\n+ Increased damage
-		Weaknesses: – Slower movement\n– Slower projectiles
+		Strengths: Actor-shrw.upgrade-Strengths
+		Weaknesses: Actor-shrw.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2128,7 +2129,7 @@ advart.upgrade:
 		Description: Actor-advart.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + 15% faster movement
+		Strengths: Actor-advart.upgrade-Strengths
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2148,7 +2149,7 @@ carapace.upgrade:
 		Description: Actor-carapace.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + 40% reduced damage from explosives\n+ 20% reduced damage from incendiary explosives
+		Strengths: Actor-carapace.upgrade-Strengths
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2166,7 +2167,7 @@ blink.upgrade:
 		Description: Actor-blink.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Teleport ability
+		Strengths: Actor-blink.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2181,10 +2182,10 @@ resconv.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Weapons of certain units are empowered by Tiberium and other resources. Reaper Tripod gains additional charges.\n\nUpgrades: Devourer\nUpgrades: Ruiner\nUpgrades: Reaper Tripod\nUpgrades: Eviscerator\nUpgrades: Corrupter (Reaper-17 only)
+		Description: Actor-resconv.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage when charged\n+ Doubled charge capacity (Reaper Tripod only)
+		Strengths: Actor-resconv.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2199,10 +2200,10 @@ ioncon.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.reaper, scrt, ~techlevel.high
-		Description: Allows Storm Columns, Storm Spikes and Stormcrawlers to store ion energy and release it into the atmosphere, creating a localized Ion Storm.\n\nUpgrades: Storm Column\nUpgrades: Stormcrawler\nUpgrades: Storm Spike
+		Description: Actor-ioncon.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increases damage and range over time when active\n+ Reduces incoming damage over time when active\n+ Ion storm can damage enemy units and structures
+		Strengths: Actor-ioncon.upgrade-Strengths
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2222,7 +2223,7 @@ regen.upgrade:
 		Description: Actor-regen.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Out-of-combat health regeneration
+		Strengths: Actor-regen.upgrade-Strengths
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2240,8 +2241,8 @@ stellar.upgrade:
 		Description: Actor-stellar.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased area of effect\n+ Improved accuracy\n+ Faster projectile
-		Weaknesses: – Must charge before firing
+		Strengths: Actor-stellar.upgrade-Strengths
+		Weaknesses: Actor-stellar.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2261,8 +2262,8 @@ coalescence.upgrade:
 		Description: Actor-coalescence.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Leecher able to resurrect\n+ Heals allies while in coalescence form
-		Weaknesses: – No longer regenerates while dealing damage
+		Strengths: Actor-coalescence.upgrade-Strengths
+		Weaknesses: Actor-coalescence.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2282,7 +2283,7 @@ shields.upgrade:
 		Description: Actor-shields.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Grants an additonal health pool\n+ Resistance to EMP for aircraft
+		Strengths: Actor-shields.upgrade-Strengths
 	Valued:
 		Cost: 1500
 	RenderSprites:

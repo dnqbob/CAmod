@@ -16,7 +16,7 @@ MSLO:
 		BuildLimit: 1
 		Description: Actor-MSLO-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: A-Bomb
+		Attributes: Actor-MSLO-Attributes
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -69,7 +69,7 @@ GAP:
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
 		Description: Actor-GAP-Description
 	TooltipExtras:
-		Attributes: • Requires power to operate
+		Attributes: Actor-GAP-Attributes
 	Selectable:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 2048, 0, -512
@@ -340,7 +340,7 @@ IRON:
 		BuildLimit: 1
 		Description: Actor-IRON-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Iron Curtain
+		Attributes: Actor-IRON-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -400,7 +400,7 @@ PDOX:
 		BuildLimit: 1
 		Description: Actor-PDOX-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chronoshift
+		Attributes: Actor-PDOX-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -464,9 +464,9 @@ TSLA:
 		Prerequisites: vehicles.any, ~structures.soviet, ~techlevel.medium
 		Description: Actor-TSLA-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units\n• Can be buffed or made work during low power by Shock Troopers
+		Strengths: Actor-TSLA-Strengths
+		Weaknesses: Actor-TSLA-Weaknesses
+		Attributes: Actor-TSLA-Attributes
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -547,9 +547,9 @@ AGUN:
 		Prerequisites: vehicles.any, ~structures.allies, ~techlevel.medium
 		Description: Actor-AGUN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: Actor-AGUN-Strengths
+		Weaknesses: Actor-AGUN-Weaknesses
+		Attributes: Actor-AGUN-Attributes
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -619,7 +619,7 @@ DOME:
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.medium
 		Description: Actor-DOME-Description
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: Actor-DOME-Attributes
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -731,9 +731,9 @@ PBOX:
 		Prerequisites: infantry.any, ~structures.pbox, ~techlevel.low
 		Description: Actor-PBOX-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: Actor-PBOX-Strengths
+		Weaknesses: Actor-PBOX-Weaknesses
+		Attributes: Actor-PBOX-Attributes
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -783,9 +783,9 @@ HBOX:
 		Prerequisites: infantry.any, ~structures.england, ~techlevel.low
 		Description: Actor-HBOX-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units\n• Camouflaged when idle
+		Strengths: Actor-HBOX-Strengths
+		Weaknesses: Actor-HBOX-Weaknesses
+		Attributes: Actor-HBOX-Attributes
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -838,9 +838,9 @@ GUN:
 		Prerequisites: infantry.any, ~structures.allies, ~techlevel.low
 		Description: Actor-GUN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: Actor-GUN-Strengths
+		Weaknesses: Actor-GUN-Weaknesses
+		Attributes: Actor-GUN-Attributes
 	Valued:
 		Cost: 800
 	CustomSellValue:
@@ -895,9 +895,9 @@ FTUR:
 		Prerequisites: infantry.any, ~structures.ftur, ~techlevel.low
 		Description: Actor-FTUR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Detects cloaked units
+		Strengths: Actor-FTUR-Strengths
+		Weaknesses: Actor-FTUR-Weaknesses
+		Attributes: Actor-FTUR-Attributes
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -960,9 +960,9 @@ SAM:
 		Prerequisites: anyradar, ~structures.soviet, ~techlevel.medium
 		Description: Actor-SAM-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: Actor-SAM-Strengths
+		Weaknesses: Actor-SAM-Weaknesses
+		Attributes: Actor-SAM-Attributes
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -1028,7 +1028,7 @@ ATEK:
 		Prerequisites: vehicles.any, anyradar, ~structures.allies, ~techlevel.high
 		Description: Actor-ATEK-Description
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Special Ability: GPS Satellite
+		Attributes: Actor-ATEK-Attributes
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -1139,7 +1139,7 @@ ALHQ:
 		Description: Actor-ALHQ-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-ALHQ-Attributes
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -1904,7 +1904,7 @@ NPWR:
 		Prerequisites: stek, ~structures.soviet, ~techlevel.high
 		Description: Actor-NPWR-Description
 	TooltipExtras:
-		Weaknesses: • Explodes when destroyed
+		Weaknesses: Actor-NPWR-Weaknesses
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1973,8 +1973,8 @@ TPWR:
 		Prerequisites: anyradar, ~techlevel.medium, ~structures.russia
 		Description: Actor-TPWR-Description
 	TooltipExtras:
-		Strengths: • Power output unaffected by damage
-		Weaknesses: • Unstable when damaged
+		Strengths: Actor-TPWR-Strengths
+		Weaknesses: Actor-TPWR-Weaknesses
 		Attributes: • Boosts nearby Tesla Coils
 	Valued:
 		Cost: 600
@@ -2334,7 +2334,7 @@ FIX:
 		Prerequisites: vehicles.any, ~structures.ra, ~techlevel.low
 		Description: Actor-FIX-Description
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: Actor-FIX-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -3459,9 +3459,9 @@ NSAM:
 		Prerequisites: anyradar, ~structures.nod, ~techlevel.medium
 		Description: Actor-NSAM-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: Actor-NSAM-Strengths
+		Weaknesses: Actor-NSAM-Weaknesses
+		Attributes: Actor-NSAM-Attributes
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -3520,9 +3520,9 @@ GTWR:
 		IconPalette: chrometd
 		Description: Actor-GTWR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: Actor-GTWR-Strengths
+		Weaknesses: Actor-GTWR-Weaknesses
+		Attributes: Actor-GTWR-Attributes
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -3571,9 +3571,9 @@ ATWR:
 		IconPalette: chrometd
 		Description: Actor-ATWR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: Actor-ATWR-Strengths
+		Weaknesses: Actor-ATWR-Weaknesses
+		Attributes: Actor-ATWR-Attributes
 	Valued:
 		Cost: 1250
 	Tooltip:
@@ -3622,9 +3622,9 @@ STWR:
 		Prerequisites: vehicles.any, ~structures.zocom, ~techlevel.medium
 		Description: Actor-STWR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: Actor-STWR-Strengths
+		Weaknesses: Actor-STWR-Weaknesses
+		Attributes: Actor-STWR-Attributes
 	Valued:
 		Cost: 1450
 	Tooltip:
@@ -3685,9 +3685,9 @@ OBLI:
 		IconPalette: chrometd
 		Description: Actor-OBLI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: Actor-OBLI-Strengths
+		Weaknesses: Actor-OBLI-Weaknesses
+		Attributes: Actor-OBLI-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -3780,7 +3780,7 @@ HQ:
 		IconPalette: chrometd
 		Description: Actor-HQ-Description
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: Actor-HQ-Attributes
 		RequiresCondition: !arc-built
 	TooltipExtras@ARC:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war\n• Has limited emergency backup power
@@ -3943,7 +3943,9 @@ HQ.UPG:
 	Tooltip:
 		Name: Actor-HQ.UPG-Name
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war (increases per garrisoned Hacker)\n• $25 delivered every 15 seconds (normal speed)\n• Income increased by $75 per garrisoned Hacker\n• Cannot be hacked
+		Attributes: Actor-HQ.UPG-Attributes
+	RenderSprites:
+		PlayerPalette: playertd
 	-Targetable@HACKABLE:
 	-TransformOnCondition@UPG:
 	-GrantConditionOnPrerequisite@UPG:
@@ -4060,7 +4062,7 @@ EYE:
 		BuildLimit: 1
 		Description: Actor-EYE-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Ion Cannon\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: Actor-EYE-Attributes
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -4143,7 +4145,7 @@ REP:
 		IconPalette: chrometd
 		Description: Actor-REP-Description
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: Actor-REP-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -4658,7 +4660,7 @@ TMPL:
 		IconPalette: chrometd
 		Description: Actor-TMPL-Description
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Special Ability: Cluster Missile
+		Attributes: Actor-TMPL-Attributes
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -4732,9 +4734,9 @@ PRIS:
 		Prerequisites: anyradar, ~structures.pris, ~techlevel.medium
 		Description: Actor-PRIS-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units\n• Beam can chain with nearby Prism Towers
+		Strengths: Actor-PRIS-Strengths
+		Weaknesses: Actor-PRIS-Weaknesses
+		Attributes: Actor-PRIS-Attributes
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -4994,9 +4996,9 @@ HTUR:
 		Prerequisites: anyradar, ~structures.france, ~techlevel.medium
 		Description: Actor-HTUR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft\n• Cannot hit targets at point-blank range
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: Actor-HTUR-Strengths
+		Weaknesses: Actor-HTUR-Weaknesses
+		Attributes: Actor-HTUR-Attributes
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -5088,9 +5090,9 @@ LTUR:
 		Prerequisites: infantry.any, ~structures.nod, ~techlevel.low
 		Description: Actor-LTUR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: Actor-LTUR-Strengths
+		Weaknesses: Actor-LTUR-Weaknesses
+		Attributes: Actor-LTUR-Attributes
 	Turreted:
 		InitialFacing: 128
 	-WithTurretAttackAnimation:
@@ -5123,9 +5125,9 @@ TTUR:
 		IconPalette: chrometd
 		Description: Actor-TTUR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Detects cloaked units
+		Strengths: Actor-TTUR-Strengths
+		Weaknesses: Actor-TTUR-Weaknesses
+		Attributes: Actor-TTUR-Attributes
 	Valued:
 		Cost: 650
 	CustomSellValue:
@@ -5185,9 +5187,9 @@ SGEN:
 		Prerequisites: tmpl, ~structures.nod, ~!player.shadow, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrometd
-		Description: Makes units/structures invisible.
+		Description: Actor-SGEN-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cloaks nearby units and structures\n• Requires power to operate\n• Special Ability: Tiberium Stealth
+		Attributes: Actor-SGEN-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5254,6 +5256,8 @@ SGEN.Shadow:
 	Buildable:
 		Prerequisites: tmpl, ~structures.nod, ~player.shadow, ~techlevel.high
 	WithRangeCircleCA@SGEN:
+		Attributes: Actor-SGEN.Shadow-Attributes
+	WithRangeCircle@SGEN:
 		Range: 11c512
 	ProximityExternalCondition@SGEN:
 		Range: 11c512
@@ -5446,7 +5450,7 @@ PATR:
 		IconPalette: chrometd
 		Description: Actor-PATR-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: E.M. Pulse Missile
+		Attributes: Actor-PATR-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5551,7 +5555,7 @@ CVAT:
 		Description: Actor-CVAT-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Clones any infantry unit put inside
+		Attributes: Actor-CVAT-Attributes
 	Valued:
 		Cost: 2000
 	Health:
@@ -5670,7 +5674,7 @@ INDP:
 		Description: Actor-INDP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-INDP-Attributes
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5742,7 +5746,7 @@ MUNP:
 		Description: Actor-MUNP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-MUNP-Attributes
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5830,7 +5834,7 @@ OREP:
 		Description: Actor-OREP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-OREP-Attributes
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5926,7 +5930,7 @@ UPGC:
 		BuildLimit: 1
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-UPGC-Attributes
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -6150,7 +6154,7 @@ TMPP:
 		Description: Actor-TMPP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Can convert regular infantry to cyborgs
+		Attributes: Actor-TMPP-Attributes
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -6240,7 +6244,7 @@ MSLO.Nod:
 		BuildLimit: 1
 		Description: Actor-MSLO.Nod-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chemical Missile
+		Attributes: Actor-MSLO.Nod-Attributes
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -6292,7 +6296,7 @@ WEAT:
 		BuildLimit: 1
 		Description: Actor-WEAT-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Lightning Storm
+		Attributes: Actor-WEAT-Attributes
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -6355,9 +6359,9 @@ IOK:
 	Tooltip:
 		Name: Actor-IOK-Name
 	TooltipExtras:
-		Strengths: • Increases damage and movement speed of friendly infantry\n• Reduces damage and movement speed of enemy infantry\n• Provides vision
-		Weaknesses: • Cannot attack
-		Attributes: • Special Ability: Rage Generator (enemy units within range go berserk)
+		Strengths: Actor-IOK-Strengths
+		Weaknesses: Actor-IOK-Weaknesses
+		Attributes: Actor-IOK-Attributes
 	Armor:
 		Type: Concrete
 	Targetable:

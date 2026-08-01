@@ -9,9 +9,9 @@ SS:
 		Prerequisites: ~spen, ~techlevel.low
 		Description: Actor-SS-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Cannot attack Ground Units, Aircraft
-		Attributes: • Detects other submarines
+		Strengths: Actor-SS-Strengths
+		Weaknesses: Actor-SS-Weaknesses
+		Attributes: Actor-SS-Attributes
 	Valued:
 		Cost: 950
 	Tooltip:
@@ -79,9 +79,9 @@ MSUB:
 		Prerequisites: ~spen, stek, ~techlevel.high
 		Description: Actor-MSUB-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
-		Attributes: • Detects other submarines
+		Strengths: Actor-MSUB-Strengths
+		Weaknesses: Actor-MSUB-Weaknesses
+		Attributes: Actor-MSUB-Attributes
 	Valued:
 		Cost: 1650
 	Tooltip:
@@ -131,9 +131,9 @@ DD:
 		Prerequisites: ~syrd, anyradar, ~techlevel.medium
 		Description: Actor-DD-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Vehicles, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Detects submarines
+		Strengths: Actor-DD-Strengths
+		Weaknesses: Actor-DD-Weaknesses
+		Attributes: Actor-DD-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -206,8 +206,8 @@ CA:
 		Prerequisites: ~syrd, atek, ~techlevel.high
 		Description: Actor-CA-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
+		Strengths: Actor-CA-Strengths
+		Weaknesses: Actor-CA-Weaknesses
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -278,8 +278,8 @@ LST:
 		Prerequisites: ~techlevel.low
 		Description: Actor-LST-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can carry vehicles and infantry
+		Weaknesses: Actor-LST-Weaknesses
+		Attributes: Actor-LST-Attributes
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -354,9 +354,9 @@ PT:
 		Prerequisites: ~syrd, ~techlevel.low
 		Description: Actor-PT-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Weak vs Ground Units\n• Cannot attack Aircraft
-		Attributes: • Detects submarines
+		Strengths: Actor-PT-Strengths
+		Weaknesses: Actor-PT-Weaknesses
+		Attributes: Actor-PT-Attributes
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -416,9 +416,9 @@ PT2:
 		IconPalette: chrometd
 		Description: Actor-PT2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Submarines, Aircraft
-		Weaknesses: • Weak vs Ground Units
-		Attributes: • Detects submarines
+		Strengths: Actor-PT2-Strengths
+		Weaknesses: Actor-PT2-Weaknesses
+		Attributes: Actor-PT2-Attributes
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -491,9 +491,9 @@ DD2:
 		Prerequisites: ~syrd.gdi, anyradar, ~techlevel.medium
 		Description: Actor-DD2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Vehicles
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects submarines
+		Strengths: Actor-DD2-Strengths
+		Weaknesses: Actor-DD2-Weaknesses
+		Attributes: Actor-DD2-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -591,9 +591,9 @@ SS2:
 		Prerequisites: ~spen.nod, ~techlevel.low
 		Description: Actor-SS2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Cannot attack Ground Units, Aircraft
-		Attributes: • Detects other submarines
+		Strengths: Actor-SS2-Strengths
+		Weaknesses: Actor-SS2-Weaknesses
+		Attributes: Actor-SS2-Attributes
 	Valued:
 		Cost: 950
 	Tooltip:
@@ -661,9 +661,9 @@ ISUB:
 		Prerequisites: ~spen.nod, tmpl, ~techlevel.high
 		Description: Actor-ISUB-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
-		Attributes: • Missiles can be shot down by static anti-air defenses\n• Detects other submarines
+		Strengths: Actor-ISUB-Strengths
+		Weaknesses: Actor-ISUB-Weaknesses
+		Attributes: Actor-ISUB-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -765,9 +765,9 @@ CV:
 		Prerequisites: ~syrd.gdi, gtek, ~techlevel.high
 		Description: Actor-CV-Description
 	TooltipExtras:
-		Strengths: • Strong vs Ground Units, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Hornets only targetable by static anti-air defenses
+		Strengths: Actor-CV-Strengths
+		Weaknesses: Actor-CV-Weaknesses
+		Attributes: Actor-CV-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -842,8 +842,8 @@ SB:
 		Prerequisites: ~spen.nod, ~techlevel.low
 		Description: Actor-SB-Description
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Ground Vehicles, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-SB-Strengths
+		Weaknesses: Actor-SB-Weaknesses
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -899,9 +899,9 @@ SEAS:
 		Prerequisites: ~spen, ~techlevel.low
 		Description: Actor-SEAS-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Infantry
-		Weaknesses: • Weak vs Naval Units, Vehicles
-		Attributes: • Detects submarines
+		Strengths: Actor-SEAS-Strengths
+		Weaknesses: Actor-SEAS-Weaknesses
+		Attributes: Actor-SEAS-Attributes
 	Valued:
 		Cost: 600
 	Tooltip:

@@ -15,8 +15,8 @@ V2RL:
 		Prerequisites: anyradar, ~vehicles.v2, ~techlevel.medium
 		Description: Actor-V2RL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-V2RL-Strengths
+		Weaknesses: Actor-V2RL-Weaknesses
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -82,8 +82,8 @@ KATY:
 		Prerequisites: ~vehicles.soviet, ~!arty.doctrine, ~techlevel.low
 		Description: Actor-KATY-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-KATY-Strengths
+		Weaknesses: Actor-KATY-Weaknesses
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -187,7 +187,7 @@ GRAD:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Actor-GRAD-EncyclopediaExtrasAdditionalInfo
 
 NUKC:
 	Inherits: ^Tank
@@ -201,9 +201,9 @@ NUKC:
 		Prerequisites: stek, ~vehicles.soviet, ~arty.doctrine, ~nukc.upgrade, ~techlevel.high
 		Description: Actor-NUKC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Can crush concrete walls
+		Strengths: Actor-NUKC-Strengths
+		Weaknesses: Actor-NUKC-Weaknesses
+		Attributes: Actor-NUKC-Attributes
 	Valued:
 		Cost: 2400
 	Tooltip:
@@ -386,7 +386,7 @@ NUKC:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Actor-NUKC-EncyclopediaExtrasAdditionalInfo
 
 NUKC.Preview:
 	Inherits: ^PreviewDummy
@@ -410,9 +410,9 @@ NUKC.Preview:
 		Prerequisites: ~vehicles.1tnk, ~techlevel.low
 		Description: Actor-1TNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: Actor-1TNK-Strengths
+		Weaknesses: Actor-1TNK-Weaknesses
+		Attributes: Actor-1TNK-Attributes
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -479,8 +479,8 @@ NUKC.Preview:
 		Prerequisites: ~vehicles.allies, ~techlevel.low
 		Description: Actor-2TNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-2TNK-Strengths
+		Weaknesses: Actor-2TNK-Weaknesses
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -539,8 +539,8 @@ GTNK:
 	Tooltip:
 		Name: Actor-GTNK-Name
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-GTNK-Strengths
+		Weaknesses: Actor-GTNK-Weaknesses
 	Mobile:
 		Speed: 100
 		Voice: Move
@@ -588,10 +588,10 @@ GTNK.squad:
 		BuildAtProductionType: ParadropVehicle
 		BuildPaletteOrder: 400
 		Prerequisites: radaroraircraft, ~vehicles.usa, ~techlevel.medium
-		Description: Prepare a pair of Grizzly Tanks for airdrop.
+		Description: Actor-GTNK.squad-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-GTNK.squad-Strengths
+		Weaknesses: Actor-GTNK.squad-Weaknesses
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -828,8 +828,8 @@ GTNK.squad:
 		Prerequisites: ~!atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 		Description: Actor-3TNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-3TNK-Strengths
+		Weaknesses: Actor-3TNK-Weaknesses
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -917,9 +917,9 @@ GTNK.squad:
 		BuildPaletteOrder: 81
 		Prerequisites: ~atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Explodes and leaves radiation on death
+		Strengths: Actor-3TNK.ATOMIC-Strengths
+		Weaknesses: Actor-3TNK.ATOMIC-Weaknesses
+		Attributes: Actor-3TNK.ATOMIC-Attributes
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -956,9 +956,9 @@ GTNK.squad:
 		Prerequisites: ~lasher.upgrade, ~!atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 		Description: Actor-3TNK.YURI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Can crush concrete walls
+		Strengths: Actor-3TNK.YURI-Strengths
+		Weaknesses: Actor-3TNK.YURI-Weaknesses
+		Attributes: Actor-3TNK.YURI-Attributes
 	Tooltip:
 		Name: Actor-3TNK.YURI-Name
 		GenericName: Actor-Generic-Tank-Name
@@ -1023,9 +1023,9 @@ GTNK.squad:
 		Prerequisites: ~lasher.upgrade, ~atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 		Description: Actor-3TNK.ATOMICYURI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Explodes and leaves radiation on death
+		Strengths: Actor-3TNK.ATOMICYURI-Strengths
+		Weaknesses: Actor-3TNK.ATOMICYURI-Weaknesses
+		Attributes: Actor-3TNK.ATOMICYURI-Attributes
 	Tooltip:
 		Name: Actor-3TNK.ATOMICYURI-Name
 		GenericName: Actor-Generic-Tank-Name
@@ -1096,8 +1096,8 @@ GTNK.squad:
 	RenderSprites:
 		Image: rhin
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-3TNK.RHINO-Strengths
+		Weaknesses: Actor-3TNK.RHINO-Weaknesses
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -1188,7 +1188,7 @@ GTNK.squad:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		Name: Actor-3TNK.RHINO-EncyclopediaExtrasName
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Actor-3TNK.RHINO-EncyclopediaExtrasAdditionalInfo
 
 3TNK.RHINO.ATOMIC:
 	Inherits: 3TNK.RHINO
@@ -1199,7 +1199,7 @@ GTNK.squad:
 		BuildPaletteOrder: 83
 		Prerequisites: ~atomicengines.upgrade, ~!lasher.upgrade, ~armor.doctrine, ~techlevel.low
 	TooltipExtras:
-		Attributes: • Explodes and leaves radiation on death
+		Attributes: Actor-3TNK.RHINO.ATOMIC-Attributes
 	Tooltip:
 		Name: Actor-3TNK.RHINO.ATOMIC-Name
 	Turreted:
@@ -1231,9 +1231,9 @@ GTNK.squad:
 		Prerequisites: ~!atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
 		Description: Actor-3TNK.RHINO.YURI-Description
 	Tooltip:
-		Name: Actor-3TNK.RHINO.YURI-EncyclopediaExtrasName
+		Name: Actor-3TNK.RHINO.YURI-Name
 	TooltipExtras:
-		Attributes: • Can crush concrete walls
+		Attributes: Actor-3TNK.RHINO.YURI-Attributes
 	Health:
 		HP: 63000
 	Mobile:
@@ -1271,9 +1271,9 @@ GTNK.squad:
 		Prerequisites: ~atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
 		Description: Actor-3TNK.RHINO.ATOMICYURI-Description
 	Tooltip:
-		Name: Actor-3TNK.RHINO.ATOMICYURI-EncyclopediaExtrasName
+		Name: Actor-3TNK.RHINO.ATOMICYURI-Name
 	TooltipExtras:
-		Attributes: • Can crush concrete walls
+		Attributes: Actor-3TNK.RHINO.ATOMICYURI-Attributes
 	Health:
 		HP: 65000
 	Mobile:
@@ -1315,8 +1315,8 @@ GTNK.squad:
 		Prerequisites: stek, ~vehicles.soviet, ~!erad.upgrade, ~!atomicengines.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 		Description: Actor-4TNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
+		Strengths: Actor-4TNK-Strengths
+		Attributes: Actor-4TNK-Attributes
 	Valued:
 		Cost: 1700
 	Tooltip:
@@ -1445,8 +1445,8 @@ GTNK.squad:
 		BuildPaletteOrder: 232
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death
+		Strengths: Actor-4TNK.ATOMIC-Strengths
+		Attributes: Actor-4TNK.ATOMIC-Attributes
 	Tooltip:
 		Name: Actor-4TNK.ATOMIC-Name
 	-SpawnActorOnDeath:
@@ -1477,8 +1477,8 @@ GTNK.squad:
 	Tooltip:
 		Name: Actor-4TNK.ERAD-Name
 	TooltipExtras:
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Weaknesses: Actor-4TNK.ERAD-Weaknesses
+		Attributes: Actor-4TNK.ERAD-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 		Description: Actor-4TNK.ERAD-Description
@@ -1526,8 +1526,8 @@ GTNK.squad:
 	Tooltip:
 		Name: Actor-4TNK.ERAD.ATOMIC-Name
 	TooltipExtras:
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Weaknesses: Actor-4TNK.ERAD.ATOMIC-Weaknesses
+		Attributes: Actor-4TNK.ERAD.ATOMIC-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 		Description: Actor-4TNK.ERAD.ATOMIC-Description
@@ -1574,8 +1574,8 @@ ARTY:
 		Prerequisites: ~vehicles.allies, ~techlevel.low
 		Description: Actor-ARTY-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-ARTY-Strengths
+		Weaknesses: Actor-ARTY-Weaknesses
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -1770,9 +1770,9 @@ ISU:
 		Prerequisites: anyradar, ~vehicles.ukraine, ~techlevel.medium
 		Description: Actor-ISU-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Concussion shells slow enemy movement and rate of fire\n• Can crush concrete walls
+		Strengths: Actor-ISU-Strengths
+		Weaknesses: Actor-ISU-Weaknesses
+		Attributes: Actor-ISU-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1854,8 +1854,8 @@ SPEC:
 		Prerequisites: tmpl, ~vehicles.shadow, ~techlevel.high
 		Description: Actor-SPEC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-SPEC-Strengths
+		Weaknesses: Actor-SPEC-Weaknesses
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -1947,8 +1947,8 @@ SAPC:
 		Prerequisites: tmpl, ~vehicles.nod, ~!cust.upgrade, ~techlevel.high
 		Description: Actor-SAPC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-SAPC-Strengths
+		Weaknesses: Actor-SAPC-Weaknesses
 	Valued:
 		Cost: 1100
 	Tooltip:
@@ -2109,7 +2109,7 @@ HARV.Chrono:
 		BuildPaletteOrder: 11
 		Prerequisites: anyrefinery, ~charv.upgrade, ~vehicles.allies, ~techlevel.high
 	TooltipExtras:
-		Attributes: • Teleports back to refinery
+		Attributes: Actor-HARV.Chrono-Attributes
 	RenderSprites:
 		Image: charv
 	Tooltip:
@@ -2158,8 +2158,8 @@ MCV:
 		Description: Actor-MCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Construction Yard
+		Weaknesses: Actor-MCV-Weaknesses
+		Attributes: Actor-MCV-Attributes
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -2212,9 +2212,9 @@ JEEP:
 		Prerequisites: ~vehicles.allies, ~techlevel.low
 		Description: Actor-JEEP-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: Actor-JEEP-Strengths
+		Weaknesses: Actor-JEEP-Weaknesses
+		Attributes: Actor-JEEP-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -2335,8 +2335,8 @@ APC:
 		Prerequisites: ~vehicles.allies, ~!delp.upgrade, ~techlevel.low
 		Description: Actor-APC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-APC-Strengths
+		Weaknesses: Actor-APC-Weaknesses
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -2411,7 +2411,7 @@ DELP:
 	Inherits: APC
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~delp.upgrade, ~techlevel.medium
-		Description: Tough infantry transport armed with an anti structure sonic weapon.
+		Description: Actor-AAPC-Description
 	Valued:
 		Cost: 800
 	Mobile:
@@ -2419,12 +2419,12 @@ DELP:
 	RevealsShroud:
 		Range: 6c0
 	Tooltip:
-		Name: Armored Personnel Carrier (Delphis)
+		Name: Actor-AAPC-Name
 	TooltipExtras:
-		Description: Tough infantry transport with a sonic weapon.
+		Description: Actor-AAPC-TooltipExtrasDescription
 		Strengths: • Strong vs Buildings, Defenses, Infantry
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Causes structures to take increased damage
+		Weaknesses: Actor-AAPC-Weaknesses
+		Attributes: Actor-AAPC-Attributes
 	-AttackFrontal:
 	AttackTurreted:
 		PauseOnCondition: empdisable || being-warped || blinded
@@ -2441,7 +2441,7 @@ DELP:
 	-Upgradeable@DELPHIS:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Delphis APC
+		Name: Actor-AAPC-EncyclopediaExtrasName
 
 APC.AI:
 	Inherits: APC
@@ -2482,8 +2482,8 @@ MNLY:
 		Prerequisites: repair, ~techlevel.low, ~vehicles.human
 		Description: Actor-MNLY-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Detects and disarms mines
+		Weaknesses: Actor-MNLY-Weaknesses
+		Attributes: Actor-MNLY-Attributes
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -2556,7 +2556,7 @@ TRUK:
 		Description: Actor-TRUK-Description
 		BuildDurationModifier: 30
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: Actor-TRUK-Weaknesses
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2611,7 +2611,7 @@ MGG:
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
 		Description: Actor-MGG-Description
 	TooltipExtras:
-		Attributes: • Special Ability: Toggle Gap Generator
+		Attributes: Actor-MGG-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -2680,8 +2680,8 @@ MRJ:
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
 		Description: Actor-MRJ-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Jamming fields reduce rate of fire and accuracy of enemy vehicles, aircraft & defenses
+		Weaknesses: Actor-MRJ-Weaknesses
+		Attributes: Actor-MRJ-Attributes
 	Health:
 		HP: 25000
 	Armor:
@@ -2731,8 +2731,8 @@ MSG:
 		Prerequisites: anyradar, ~vehicles.shadow, ~techlevel.medium
 		Description: Actor-MSG-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploys to cloak nearby units and structures
+		Weaknesses: Actor-MSG-Weaknesses
+		Attributes: Actor-MSG-Attributes
 	Valued:
 		Cost: 1100
 	Tooltip:
@@ -2816,8 +2816,8 @@ TTRA:
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
 		Description: Actor-TTRA-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-TTRA-Strengths
+		Weaknesses: Actor-TTRA-Weaknesses
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -2885,8 +2885,8 @@ TTNK:
 		Prerequisites: tslaorstek, anyradar, ~vehicles.russia, ~techlevel.medium
 		Description: Actor-TTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-TTNK-Strengths
+		Weaknesses: Actor-TTNK-Weaknesses
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -2953,8 +2953,8 @@ DTRK:
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
 		Description: Actor-DTRK-Description
 	TooltipExtras:
-		Weaknesses: • Very weak armor
-		Attributes: • Special Ability: Detonate
+		Weaknesses: Actor-DTRK-Weaknesses
+		Attributes: Actor-DTRK-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -3012,9 +3012,9 @@ CTNK:
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
 		Description: Actor-CTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Special Ability: Teleport\n• Teleporting longer distances requires charge up
+		Strengths: Actor-CTNK-Strengths
+		Weaknesses: Actor-CTNK-Weaknesses
+		Attributes: Actor-CTNK-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -3106,9 +3106,9 @@ QTNK:
 		Prerequisites: stek, ~vehicles.qtnk, ~techlevel.high
 		Description: Actor-QTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Seismic Shockwave
+		Strengths: Actor-QTNK-Strengths
+		Weaknesses: Actor-QTNK-Weaknesses
+		Attributes: Actor-QTNK-Attributes
 	Valued:
 		Cost: 1700
 	Tooltip:
@@ -3177,8 +3177,8 @@ AMCV:
 		Description: Actor-AMCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Construction Yard
+		Weaknesses: Actor-AMCV-Weaknesses
+		Attributes: Actor-AMCV-Attributes
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -3234,9 +3234,9 @@ HMMV:
 		Prerequisites: ~vehicles.hmmv, ~!tow.upgrade, ~techlevel.low
 		Description: Actor-HMMV-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: Actor-HMMV-Strengths
+		Weaknesses: Actor-HMMV-Weaknesses
+		Attributes: Actor-HMMV-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -3309,8 +3309,8 @@ HMMV.TOW:
 	Tooltip:
 		Name: Actor-HMMV.TOW-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-HMMV.TOW-Strengths
+		Weaknesses: Actor-HMMV.TOW-Weaknesses
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: TOW
@@ -3345,9 +3345,9 @@ GDRN:
 		Prerequisites: ~vehicles.arc, ~!tow.upgrade, ~techlevel.low
 		Description: Actor-GDRN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Buildings
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: Actor-GDRN-Strengths
+		Weaknesses: Actor-GDRN-Weaknesses
+		Attributes: Actor-GDRN-Attributes
 	Valued:
 		Cost: 450
 	Tooltip:
@@ -3461,9 +3461,9 @@ BGGY:
 		Prerequisites: ~vehicles.nod, ~!rbug.upgrade, ~techlevel.low
 		Description: Actor-BGGY-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: Actor-BGGY-Strengths
+		Weaknesses: Actor-BGGY-Weaknesses
+		Attributes: Actor-BGGY-Attributes
 	Valued:
 		Cost: 350
 	Tooltip:
@@ -3588,7 +3588,7 @@ RBUG:
 	-WithDecoration@UpgradeOverlay:
 	-WithEjectedCasings:
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Actor-RBUG-EncyclopediaExtrasAdditionalInfo
 
 ^DecoyUnit:
 	Inherits@selection: ^SelectableSupportUnit
@@ -3725,8 +3725,8 @@ APC2:
 		IconPalette: chrometd
 		Description: Actor-APC2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-APC2-Strengths
+		Weaknesses: Actor-APC2-Weaknesses
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -3872,12 +3872,12 @@ VULC:
 		IconPalette: chrometd
 		Description: Actor-VULC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: Actor-VULC-Strengths
+		Weaknesses: Actor-VULC-Weaknesses
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Actor-VULC-EncyclopediaExtrasName
+		Name: Actor-VULC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4071,9 +4071,9 @@ LTNK:
 		Prerequisites: ~vehicles.ltnk, ~!lastnk.upgrade, ~techlevel.low
 		Description: Actor-LTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: Actor-LTNK-Strengths
+		Weaknesses: Actor-LTNK-Weaknesses
+		Attributes: Actor-LTNK-Attributes
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
 		Strengths: • Strong vs Light Armor, Infantry
@@ -4201,8 +4201,8 @@ MTNK:
 		IconPalette: chrometd
 		Description: Actor-MTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-MTNK-Strengths
+		Weaknesses: Actor-MTNK-Weaknesses
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
 		Strengths: • Strong vs Light Armor, Infantry
@@ -4340,9 +4340,9 @@ MTNK.Drone:
 		Description: Actor-MTNK.Drone-Description
 		BuildPaletteOrder: 91
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Self repairs to 50% out of combat\n• Immune to mind control\n• Requires active radar communication\n• XP of losses reclaimed by replacements
+		Strengths: Actor-MTNK.Drone-Strengths
+		Weaknesses: Actor-MTNK.Drone-Weaknesses
+		Attributes: Actor-MTNK.Drone-Attributes
 		-RequiresCondition:
 	-Tooltip@LaserTank:
 	-TooltipExtras@LaserTank:
@@ -4479,9 +4479,9 @@ MDRN:
 		Prerequisites: anyradar, ~vehicles.arc, ~techlevel.medium
 		Description: Actor-MDRN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Attaches to vehicles to provide support and repairs\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: Actor-MDRN-Strengths
+		Weaknesses: Actor-MDRN-Weaknesses
+		Attributes: Actor-MDRN-Attributes
 	Valued:
 		Cost: 225
 	UpdatesPlayerStatistics:
@@ -4673,8 +4673,8 @@ HTNK:
 		Prerequisites: ~!mdrone.upgrade, gtek, ~vehicles.htnk, ~!ionmam.upgrade, ~!hovermam.upgrade, ~techlevel.high
 		Description: Actor-HTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
+		Strengths: Actor-HTNK-Strengths
+		Attributes: Actor-HTNK-Attributes
 	Valued:
 		Cost: 1700
 	Tooltip:
@@ -4799,7 +4799,7 @@ HTNK.Hover:
 		Prerequisites: gtek, ~vehicles.htnk, ~hovermam.upgrade, ~techlevel.high
 		Description: Actor-HTNK.Hover-Description
 	TooltipExtras:
-		Attributes: • Can traverse water\n• Self repairs to 50% out of combat\n• Afterburner ability (with upgrade)
+		Attributes: Actor-HTNK.Hover-Attributes
 	Mobile:
 		Speed: 60
 		Locomotor: hover
@@ -4874,9 +4874,9 @@ HTNK.Drone:
 		Prerequisites: ~mdrone.upgrade, gtek, ~vehicles.htnk, ~techlevel.high
 		Description: Actor-HTNK.Drone-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Requires active radar communication
-		Attributes: • Can crush concrete walls\n• Self repairs out of combat\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: Actor-HTNK.Drone-Strengths
+		Weaknesses: Actor-HTNK.Drone-Weaknesses
+		Attributes: Actor-HTNK.Drone-Attributes
 	Valued:
 		Cost: 1300
 	Health:
@@ -4961,8 +4961,8 @@ MSAM:
 		IconPalette: chrometd
 		Description: Actor-MSAM-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor
+		Strengths: Actor-MSAM-Strengths
+		Weaknesses: Actor-MSAM-Weaknesses
 	Mobile:
 		Speed: 72
 		Voice: Move
@@ -5101,8 +5101,8 @@ MLRS:
 		IconPalette: chrometd
 		Description: Actor-MLRS-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
+		Strengths: Actor-MLRS-Strengths
+		Weaknesses: Actor-MLRS-Weaknesses
 	Mobile:
 		Speed: 72
 		PauseOnCondition: aiming || being-captured || empdisable || being-warped || driver-dead || notmobile
@@ -5271,9 +5271,9 @@ STNK.Nod:
 		IconPalette: chrometd
 		Description: Actor-STNK.Nod-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Can be spotted by nearby infantry and defense structures
+		Strengths: Actor-STNK.Nod-Strengths
+		Weaknesses: Actor-STNK.Nod-Weaknesses
+		Attributes: Actor-STNK.Nod-Attributes
 	Mobile:
 		Speed: 126
 		Voice: Move
@@ -5394,9 +5394,9 @@ HSTK:
 		IconPalette: chrometd
 		Description: Actor-HSTK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Can be spotted by nearby infantry and defense structures
+		Strengths: Actor-HSTK-Strengths
+		Weaknesses: Actor-HSTK-Weaknesses
+		Attributes: Actor-HSTK-Attributes
 	Mobile:
 		Speed: 100
 		Voice: Move
@@ -5505,8 +5505,8 @@ BIKE:
 		IconPalette: chrometd
 		Description: Actor-BIKE-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: Actor-BIKE-Strengths
+		Weaknesses: Actor-BIKE-Weaknesses
 	Mobile:
 		TurnSpeed: 40
 		Speed: 170
@@ -5588,8 +5588,8 @@ FTNK:
 		IconPalette: chrometd
 		Description: Actor-FTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: Actor-FTNK-Strengths
+		Weaknesses: Actor-FTNK-Weaknesses
 	Mobile:
 		Speed: 76
 	Health:
@@ -5636,8 +5636,8 @@ HFTK:
 		Prerequisites: anyradar, ~vehicles.blackh, ~techlevel.medium
 		Description: Actor-HFTK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: Actor-HFTK-Strengths
+		Weaknesses: Actor-HFTK-Weaknesses
 	Valued:
 		Cost: 1100
 	Tooltip:
@@ -5813,8 +5813,8 @@ BTR:
 		Prerequisites: ~vehicles.soviet, ~!gattling.upgrade, ~techlevel.low
 		Description: Actor-BTR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: Actor-BTR-Strengths
+		Weaknesses: Actor-BTR-Weaknesses
 	Valued:
 		Cost: 675
 	Tooltip:
@@ -5946,8 +5946,8 @@ BTR.YURI:
 		Prerequisites: ~gattling.upgrade, ~vehicles.soviet, ~techlevel.low
 		Description: Actor-BTR.YURI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: Actor-BTR.YURI-Strengths
+		Weaknesses: Actor-BTR.YURI-Weaknesses
 	Tooltip:
 		Name: Actor-BTR.YURI-Name
 	Armament@AIR:
@@ -6094,8 +6094,8 @@ TRPC:
 		Prerequisites: ~vehicles.soviet, ~infantry.doctrine, ~techlevel.medium
 		Description: Actor-TRPC-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Empowers nearby basic infantry\n• Heals all nearby infantry\n• Detects cloaked units and mines
+		Weaknesses: Actor-TRPC-Weaknesses
+		Attributes: Actor-TRPC-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -6208,7 +6208,7 @@ TRPC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Actor-TRPC-EncyclopediaExtrasAdditionalInfo
 
 IFV:
 	Inherits: ^Tank
@@ -6350,9 +6350,9 @@ IFV:
 		Name: Reaper IFV
 		RequiresCondition: reapturr
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Weapon/function changes depending on infantry passenger
+		Strengths: Actor-IFV-Strengths
+		Weaknesses: Actor-IFV-Weaknesses
+		Attributes: Actor-IFV-Attributes
 		RequiresCondition: !full || samturr || ggiturr || disinturr || tigrturr || nochange
 	TooltipExtras@gunturr:
 		Strengths: • Strong vs Infantry, Light Armor
@@ -7236,9 +7236,9 @@ IFV.AI:
 		Name: Missile IFV
 		RequiresCondition: samturr
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Weapon/function changes depending on infantry passenger
+		Strengths: Actor-IFV.AI-Strengths
+		Weaknesses: Actor-IFV.AI-Weaknesses
+		Attributes: Actor-IFV.AI-Attributes
 		RequiresCondition: defturr || samturr
 	TooltipExtras@gunturr:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
@@ -7466,7 +7466,7 @@ RECK:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied War Factory.
+		AdditionalInfo: Actor-RECK-EncyclopediaExtrasAdditionalInfo
 		-Name:
 
 TITN:
@@ -7485,8 +7485,8 @@ TITN:
 		Prerequisites: gtek, ~vehicles.talon, ~!railgun.upgrade, ~techlevel.high
 		Description: Actor-TITN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: Actor-TITN-Strengths
+		Attributes: Actor-TITN-Attributes
 	Valued:
 		Cost: 2000
 	Selectable:
@@ -7629,9 +7629,9 @@ JUGG:
 		Description: Actor-JUGG-Description
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
-		Attributes: • Can crush smaller vehicles and concrete walls
+		Strengths: Actor-JUGG-Strengths
+		Weaknesses: Actor-JUGG-Weaknesses
+		Attributes: Actor-JUGG-Attributes
 	Mobile:
 		Locomotor: sheavytracked
 		Speed: 43
@@ -7753,8 +7753,8 @@ TTRK:
 		Prerequisites: techcenter.any, ~vehicles.ttrk, ~techlevel.high
 		Description: Actor-TTRK-Description
 	TooltipExtras:
-		Weaknesses: • Very weak armor
-		Attributes: • Special Ability: Detonate
+		Weaknesses: Actor-TTRK-Weaknesses
+		Attributes: Actor-TTRK-Attributes
 	Tooltip:
 		Name: Actor-TTRK-Name
 	FireWarheadsOnDeath:
@@ -7781,9 +7781,9 @@ DISR:
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.high
 		Description: Actor-DISR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Slows enemy movement and rate of fire (with upgrade)
+		Strengths: Actor-DISR-Strengths
+		Weaknesses: Actor-DISR-Weaknesses
+		Attributes: Actor-DISR-Attributes
 	Health:
 		HP: 66000
 	Mobile:
@@ -7874,9 +7874,9 @@ HSAM:
 		IconPalette: chrometd
 		Description: Actor-HSAM-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Can traverse water
+		Strengths: Actor-HSAM-Strengths
+		Weaknesses: Actor-HSAM-Weaknesses
+		Attributes: Actor-HSAM-Attributes
 	Mobile:
 		Speed: 86
 		Locomotor: hover
@@ -8017,9 +8017,9 @@ RTNK:
 		Prerequisites: ~vehicles.england, ~techlevel.low
 		Description: Actor-RTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Infantry\n• Cannot attack Aircraft
-		Attributes: • Disguised when not moving\n• Deals additional damage firing from disguised state
+		Strengths: Actor-RTNK-Strengths
+		Weaknesses: Actor-RTNK-Weaknesses
+		Attributes: Actor-RTNK-Attributes
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -8126,8 +8126,8 @@ V3RL:
 		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
 		Description: Actor-V3RL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Rockets can be shot down by static anti-air defenses
+		Strengths: Actor-V3RL-Strengths
+		Weaknesses: Actor-V3RL-Weaknesses
 	Valued:
 		Cost: 1250
 	Tooltip:
@@ -8245,8 +8245,8 @@ TNKD:
 		Prerequisites: ~vehicles.germany, anyradar, ~techlevel.medium
 		Description: Actor-TNKD-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor
-		Weaknesses: • Weak vs Infantry, Buildings, Defenses, Light Armor\n• Cannot attack Aircraft
+		Strengths: Actor-TNKD-Strengths
+		Weaknesses: Actor-TNKD-Weaknesses
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -8337,8 +8337,8 @@ MSAR:
 		Prerequisites: anyradar, ~vehicles.gdi, ~techlevel.medium
 		Description: Actor-MSAR-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Detects cloaked units (when deployed)\n• Increases nearby ground unit vision range (when deployed)\n• Special Ability: Activate Sensor Array
+		Weaknesses: Actor-MSAR-Weaknesses
+		Attributes: Actor-MSAR-Attributes
 	Health:
 		HP: 24000
 	Armor:
@@ -8427,8 +8427,8 @@ PTNK:
 		Prerequisites: anyradar, ~vehicles.allies, ~!pcan.upgrade, ~techlevel.medium
 		Description: Actor-PTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: Actor-PTNK-Strengths
+		Weaknesses: Actor-PTNK-Weaknesses
 		Attributes: • Can deploy for +2 range, -25% damage received and self-repair (France only)
 	Valued:
 		Cost: 1350
@@ -8602,9 +8602,9 @@ WTNK:
 		Prerequisites: anyradar, ~vehicles.legion, ~techlevel.medium
 		Description: Actor-WTNK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Infantry
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
-		Attributes: • Briefly disables vehicles/defenses\n• Kills crew of vehicles with less than 50% HP (with upgrade)\n• Crewless vehicles capturable by infantry
+		Strengths: Actor-WTNK-Strengths
+		Weaknesses: Actor-WTNK-Weaknesses
+		Attributes: Actor-WTNK-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -8688,7 +8688,7 @@ BATF:
 		Prerequisites: atek, ~vehicles.france, ~techlevel.high
 		Description: Actor-BATF-Description
 	TooltipExtras:
-		Attributes: • Can crush smaller vehicles and concrete walls
+		Attributes: Actor-BATF-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -8917,9 +8917,9 @@ MEMP:
 		Prerequisites: gtek, ~vehicles.gdi, ~techlevel.high
 		Description: Actor-MEMP-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: EMP Shockwave\n• Immune to mind control\n• Requires active radar communication
+		Strengths: Actor-MEMP-Strengths
+		Weaknesses: Actor-MEMP-Weaknesses
+		Attributes: Actor-MEMP-Attributes
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -9044,9 +9044,9 @@ CDRN:
 		Prerequisites: stek, ~vehicles.yuri, ~techlevel.high
 		Description: Actor-CDRN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft, Buildings, Defenses
-		Attributes: • Special Ability: Expel Chaos Gas
+		Strengths: Actor-CDRN-Strengths
+		Weaknesses: Actor-CDRN-Weaknesses
+		Attributes: Actor-CDRN-Attributes
 	Valued:
 		Cost: 850
 	Tooltip:
@@ -9135,9 +9135,9 @@ CHPR:
 		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
 		Description: Actor-CHPR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
-		Attributes: • Target is disabled while being erased\n• Can crush concrete walls\n• Special Ability: Teleport
+		Strengths: Actor-CHPR-Strengths
+		Weaknesses: Actor-CHPR-Weaknesses
+		Attributes: Actor-CHPR-Attributes
 	Valued:
 		Cost: 1550
 	Tooltip:
@@ -9259,9 +9259,9 @@ CRYO:
 		IconPalette: chrometd
 		Description: Actor-CRYO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Slows enemy movement and increases damage taken
+		Strengths: Actor-CRYO-Strengths
+		Weaknesses: Actor-CRYO-Weaknesses
+		Attributes: Actor-CRYO-Attributes
 	Mobile:
 		Speed: 72
 		TurnSpeed: 16
@@ -9303,7 +9303,7 @@ CRYO:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Actor-CRYO-EncyclopediaExtrasAdditionalInfo
 
 PBUL:
 	Inherits: ^VehicleTD
@@ -9317,9 +9317,9 @@ PBUL:
 		Prerequisites: gtek, ~vehicles.eagle, ~techlevel.high
 		Description: Actor-PBUL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry, Buildings, Defenses
-		Attributes: • Detects cloaked units and spies\n• Special Ability: Target Painter
+		Strengths: Actor-PBUL-Strengths
+		Weaknesses: Actor-PBUL-Weaknesses
+		Attributes: Actor-PBUL-Attributes
 	Valued:
 		Cost: 850
 	Tooltip:
@@ -9407,8 +9407,8 @@ CYCP:
 		Prerequisites: anyradar, ~vehicles.cycp
 		Description: Actor-CYCP-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-CYCP-Strengths
+		Weaknesses: Actor-CYCP-Weaknesses
 	Valued:
 		Cost: 1250
 	Tooltip:
@@ -9447,7 +9447,7 @@ CYCP:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet War Factory.
+		AdditionalInfo: Actor-CYCP-EncyclopediaExtrasAdditionalInfo
 
 BASI:
 	Inherits: ^TankTD
@@ -9461,8 +9461,8 @@ BASI:
 		Prerequisites: anyradar, ~vehicles.basi
 		Description: Actor-BASI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft\n• Can be spotted by nearby infantry and defense structures
+		Strengths: Actor-BASI-Strengths
+		Weaknesses: Actor-BASI-Weaknesses
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -9532,7 +9532,7 @@ BASI:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Weapons Factory.
+		AdditionalInfo: Actor-BASI-EncyclopediaExtrasAdditionalInfo
 
 MANT:
 	Inherits: ^VehicleTD
@@ -9548,9 +9548,9 @@ MANT:
 		Description: Actor-MANT-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground targets
-		Attributes: • Detects cloaked aircraft
+		Strengths: Actor-MANT-Strengths
+		Weaknesses: Actor-MANT-Weaknesses
+		Attributes: Actor-MANT-Attributes
 	Valued:
 		Cost: 1000
 	Selectable:
@@ -9596,7 +9596,7 @@ MANT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Nod Airstrip.
+		AdditionalInfo: Actor-MANT-EncyclopediaExtrasAdditionalInfo
 
 VIPR:
 	Inherits: ^VehicleTD
@@ -9611,8 +9611,8 @@ VIPR:
 		Description: Actor-VIPR-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
+		Strengths: Actor-VIPR-Strengths
+		Weaknesses: Actor-VIPR-Weaknesses
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -9667,7 +9667,7 @@ VIPR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Warp Sphere.
+		AdditionalInfo: Actor-VIPR-EncyclopediaExtrasAdditionalInfo
 
 WOLV:
 	Inherits: ^VehicleTD
@@ -9681,8 +9681,8 @@ WOLV:
 		Description: Actor-WOLV-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-WOLV-Strengths
+		Weaknesses: Actor-WOLV-Weaknesses
 	Valued:
 		Cost: 900
 	Selectable:
@@ -9758,9 +9758,9 @@ XO:
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.medium
 		Description: Actor-XO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Heavy Armor, Buildings
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Jump-Pack
+		Strengths: Actor-XO-Strengths
+		Weaknesses: Actor-XO-Weaknesses
+		Attributes: Actor-XO-Attributes
 	Valued:
 		Cost: 1000
 	Selectable:
@@ -9887,8 +9887,8 @@ APOC:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		Description: Actor-APOC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: Actor-APOC-Strengths
+		Attributes: Actor-APOC-Attributes
 	Valued:
 		Cost: 2600
 	Tooltip:
@@ -9995,7 +9995,7 @@ APOC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Actor-APOC-EncyclopediaExtrasAdditionalInfo
 
 APOC.ATOMIC:
 	Inherits: APOC
@@ -10009,8 +10009,8 @@ APOC.ATOMIC:
 		BuildPaletteOrder: 240
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death
+		Strengths: Actor-APOC.ATOMIC-Strengths
+		Attributes: Actor-APOC.ATOMIC-Attributes
 	WithFacingSpriteBody:
 	SpeedMultiplier:
 		Modifier: 125
@@ -10032,9 +10032,9 @@ APOC.ERAD:
 	Tooltip:
 		Name: Actor-APOC.ERAD-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: Actor-APOC.ERAD-Strengths
+		Weaknesses: Actor-APOC.ERAD-Weaknesses
+		Attributes: Actor-APOC.ERAD-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 241
@@ -10077,9 +10077,9 @@ APOC.ERAD.ATOMIC:
 	Tooltip:
 		Name: Actor-APOC.ERAD.ATOMIC-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: Actor-APOC.ERAD.ATOMIC-Strengths
+		Weaknesses: Actor-APOC.ERAD.ATOMIC-Weaknesses
+		Attributes: Actor-APOC.ERAD.ATOMIC-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 242
@@ -10126,9 +10126,9 @@ OVLD:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
 		Description: Actor-OVLD-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry
+		Strengths: Actor-OVLD-Strengths
+		Weaknesses: Actor-OVLD-Weaknesses
+		Attributes: Actor-OVLD-Attributes
 	Valued:
 		Cost: 2350
 	Tooltip:
@@ -10239,7 +10239,7 @@ OVLD:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Actor-OVLD-EncyclopediaExtrasAdditionalInfo
 
 OVLD.ATOMIC:
 	Inherits: OVLD
@@ -10249,9 +10249,9 @@ OVLD.ATOMIC:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 236
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Explodes and leaves radiation on death
+		Strengths: Actor-OVLD.ATOMIC-Strengths
+		Weaknesses: Actor-OVLD.ATOMIC-Weaknesses
+		Attributes: Actor-OVLD.ATOMIC-Attributes
 	RenderSprites:
 		Image: ovldi
 	ReplacedInQueue:
@@ -10274,8 +10274,8 @@ OVLD.ERAD:
 	Tooltip:
 		Name: Actor-OVLD.ERAD-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: Actor-OVLD.ERAD-Strengths
+		Attributes: Actor-OVLD.ERAD-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 237
@@ -10312,8 +10312,8 @@ OVLD.ERAD.ATOMIC:
 	Tooltip:
 		Name: Actor-OVLD.ERAD.ATOMIC-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: Actor-OVLD.ERAD.ATOMIC-Strengths
+		Attributes: Actor-OVLD.ERAD.ATOMIC-Attributes
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 238
@@ -10366,8 +10366,8 @@ THWK:
 		IconPalette: chrometd
 		Description: Actor-THWK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving\n• Rockets can be shot down by static anti-air defenses
+		Strengths: Actor-THWK-Strengths
+		Weaknesses: Actor-THWK-Weaknesses
 	Mobile:
 		Speed: 44
 		Voice: Move
@@ -10436,7 +10436,7 @@ THWK:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-THWK-EncyclopediaExtrasAdditionalInfo
 
 TH:
 	Inherits: ^ShootableMissile
@@ -10522,8 +10522,8 @@ ZEUS:
 		Prerequisites: ~vehicles.allies, alhq, ~greece.coalition, ~techlevel.high
 		Description: Actor-ZEUS-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
+		Strengths: Actor-ZEUS-Strengths
+		Weaknesses: Actor-ZEUS-Weaknesses
 	Selectable:
 		DecorationBounds: 1280, 1280
 	Health:
@@ -10578,7 +10578,7 @@ ZEUS:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Actor-ZEUS-EncyclopediaExtrasAdditionalInfo
 
 MOLE:
 	Inherits: ^Vehicle-NOUPG
@@ -10695,9 +10695,9 @@ AVTR:
 		Description: Actor-AVTR-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: Actor-AVTR-Strengths
+		Weaknesses: Actor-AVTR-Weaknesses
+		Attributes: Actor-AVTR-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -10826,7 +10826,7 @@ AVTR:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Actor-AVTR-EncyclopediaExtrasAdditionalInfo
 
 CUST:
 	Inherits: ^Tank
@@ -10843,8 +10843,8 @@ CUST:
 		Prerequisites: tmpl, ~vehicles.nod, ~cust.upgrade, ~techlevel.high
 		Description: Actor-CUST-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs cyborgs and vehicles\n• Nearby cyborgs gain experience faster
+		Weaknesses: Actor-CUST-Weaknesses
+		Attributes: Actor-CUST-Attributes
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Valued:
@@ -10944,4 +10944,4 @@ CUST:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Actor-CUST-EncyclopediaExtrasAdditionalInfo

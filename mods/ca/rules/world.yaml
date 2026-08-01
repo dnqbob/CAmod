@@ -254,12 +254,12 @@
 		UseExtendedIndex: true
 	TerrainLighting:
 	Faction@random:
-		Name: Game-Faction-Iraq-Name
+		Name: Game-Faction-Random-Name
 		InternalName: Random
 		RandomFactionMembers: RandomAllies, RandomSoviet, RandomGDI, RandomNOD, RandomScrin
-		Description: Game-Faction-Iraq-Desc
+		Description: Game-Faction-Random-Desc
 	Faction@0:
-		Name: Game-Faction-Yuri-Name
+		Name: Game-Faction-Allies-Name
 		InternalName: allies
 		Side: Allies
 		Selectable: False
@@ -269,22 +269,22 @@
 		Side: Allies
 		Description: Game-Faction-England-Desc
 	Faction@2:
-		Name: Game-Faction-Talon-Name
+		Name: Game-Faction-France-Name
 		InternalName: france
 		Side: Allies
-		Description: Game-Faction-Talon-Desc
+		Description: Game-Faction-France-Desc
 	Faction@3:
-		Name: Game-Faction-Zocom-Name
+		Name: Game-Faction-Germany-Name
 		InternalName: germany
 		Side: Allies
-		Description: Game-Faction-Zocom-Desc
+		Description: Game-Faction-Germany-Desc
 	Faction@USA:
-		Name: Game-Faction-Eagle-Name
+		Name: Game-Faction-Usa-Name
 		InternalName: usa
 		Side: Allies
-		Description: Game-Faction-Eagle-Desc
+		Description: Game-Faction-Usa-Desc
 	Faction@4:
-		Name: Game-Faction-Arc-Name
+		Name: Game-Faction-Soviet-Name
 		InternalName: soviet
 		Side: Soviet
 		Selectable: False
@@ -294,22 +294,22 @@
 		Side: Soviet
 		Description: Game-Faction-Russia-Desc
 	Faction@6:
-		Name: Game-Faction-Blackh-Name
+		Name: Game-Faction-Ukraine-Name
 		InternalName: ukraine
 		Side: Soviet
-		Description: Game-Faction-Blackh-Desc
+		Description: Game-Faction-Ukraine-Desc
 	Faction@7:
-		Name: Game-Faction-Marked-Name
+		Name: Game-Faction-Iraq-Name
 		InternalName: iraq
 		Side: Soviet
-		Description: Game-Faction-Marked-Desc
+		Description: Game-Faction-Iraq-Desc
 	Faction@YURI:
-		Name: Game-Faction-Legion-Name
+		Name: Game-Faction-Yuri-Name
 		InternalName: yuri
 		Side: Soviet
-		Description: Game-Faction-Legion-Desc
+		Description: Game-Faction-Yuri-Desc
 	Faction@8:
-		Name: Game-Faction-Shadow-Name
+		Name: Game-Faction-Gdi-Name
 		InternalName: gdi
 		Side: GDI
 		Selectable: False
@@ -319,22 +319,22 @@
 		Side: GDI
 		Description: Game-Faction-Talon-Desc
 	Faction@10:
-		Name: Game-Faction-Reaper-Name
+		Name: Game-Faction-Zocom-Name
 		InternalName: zocom
 		Side: GDI
-		Description: Game-Faction-Reaper-Desc
+		Description: Game-Faction-Zocom-Desc
 	Faction@11:
-		Name: Game-Faction-Traveler-Name
+		Name: Game-Faction-Eagle-Name
 		InternalName: eagle
 		Side: GDI
-		Description: Game-Faction-Traveler-Desc
+		Description: Game-Faction-Eagle-Desc
 	Faction@ARC:
-		Name: Game-Faction-Harbinger-Name
+		Name: Game-Faction-Arc-Name
 		InternalName: arc
 		Side: GDI
-		Description: Game-Faction-Harbinger-Desc
+		Description: Game-Faction-Arc-Desc
 	Faction@12:
-		Name: Game-Faction-Collector-Name
+		Name: Game-Faction-Nod-Name
 		InternalName: nod
 		Side: Nod
 		Selectable: False
@@ -364,10 +364,10 @@
 		Side: Scrin
 		Selectable: False
 	Faction@17:
-		Name: Game-Faction-Randomscrin-Name
+		Name: Game-Faction-Reaper-Name
 		InternalName: reaper
 		Side: Scrin
-		Description: Game-Faction-Randomscrin-Desc
+		Description: Game-Faction-Reaper-Desc
 	Faction@18:
 		Name: Game-Faction-Traveler-Name
 		InternalName: traveler

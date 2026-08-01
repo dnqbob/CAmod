@@ -112,7 +112,7 @@ encyclopedia.power.cryostorm:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.heliosbomb:
 	Inherits: ^SupportPowerPreview
@@ -127,7 +127,7 @@ encyclopedia.power.heliosbomb:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.bsky:
 	Inherits: ^SupportPowerPreview
@@ -141,7 +141,7 @@ encyclopedia.power.bsky:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.bsky-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Actor-encyclopedia.power.bsky-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.spysatellite:
 	Inherits: ^SupportPowerPreview
@@ -347,7 +347,7 @@ encyclopedia.power.heroes:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.heroes-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Actor-encyclopedia.power.heroes-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.tankdrop:
 	Inherits: ^SupportPowerPreview
@@ -360,7 +360,7 @@ encyclopedia.power.tankdrop:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.killzone:
 	Inherits: ^SupportPowerPreview
@@ -373,7 +373,7 @@ encyclopedia.power.killzone:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.killzone-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Actor-encyclopedia.power.killzone-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.ironcurtain:
 	Inherits: ^SupportPowerPreview
@@ -515,7 +515,7 @@ encyclopedia.power.firestorm:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.advancedradar:
 	Inherits: ^SupportPowerPreview
@@ -530,7 +530,7 @@ encyclopedia.power.advancedradar:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.naniteshield:
 	Inherits: ^SupportPowerPreview
@@ -544,7 +544,7 @@ encyclopedia.power.naniteshield:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.empmissile:
 	Inherits: ^SupportPowerPreview
@@ -697,7 +697,7 @@ encyclopedia.power.assassinsquad:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.hackercell:
 	Inherits: ^SupportPowerPreview
@@ -710,7 +710,7 @@ encyclopedia.power.hackercell:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.hackercell-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Actor-encyclopedia.power.hackercell-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.confessorcabal:
 	Inherits: ^SupportPowerPreview
@@ -724,7 +724,7 @@ encyclopedia.power.confessorcabal:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.clustermissile:
 	Inherits: ^SupportPowerPreview
@@ -796,7 +796,7 @@ encyclopedia.power.ichorspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.ichorspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.ichorspike-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.colonyspike:
 	Inherits: ^SupportPowerPreview
@@ -810,7 +810,7 @@ encyclopedia.power.colonyspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.colonyspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.colonyspike-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.voidspike:
 	Inherits: ^SupportPowerPreview
@@ -824,7 +824,7 @@ encyclopedia.power.voidspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.voidspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.voidspike-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.ionsurge:
 	Inherits: ^SupportPowerPreview
@@ -911,7 +911,7 @@ encyclopedia.power.gateway:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.gateway-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.gateway-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.anathemapower:
 	Inherits: ^SupportPowerPreview
@@ -926,7 +926,7 @@ encyclopedia.power.anathemapower:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.owrath:
 	Inherits: ^SupportPowerPreview
@@ -941,7 +941,7 @@ encyclopedia.power.owrath:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.owrath-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Actor-encyclopedia.power.owrath-EncyclopediaExtrasAdditionalInfo
 
 encyclopedia.power.fleetrecall:
 	Inherits: ^SupportPowerPreview
@@ -1032,9 +1032,9 @@ encyclopedia.ifv.missile:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.missile-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Rocket Soldier
+		Strengths: Actor-encyclopedia.ifv.missile-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.missile-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.missile-Attributes
 
 encyclopedia.ifv.mg:
 	Inherits: ^IFVVariantPreview
@@ -1047,9 +1047,9 @@ encyclopedia.ifv.mg:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Rifle Infantry
+		Strengths: Actor-encyclopedia.ifv.mg-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.mg-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.mg-Attributes
 
 encyclopedia.ifv.engi:
 	Inherits: ^IFVVariantPreview
@@ -1062,8 +1062,8 @@ encyclopedia.ifv.engi:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures\n• Passenger: Engineer
+		Weaknesses: Actor-encyclopedia.ifv.engi-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.engi-Attributes
 
 encyclopedia.ifv.med:
 	Inherits: ^IFVVariantPreview
@@ -1074,8 +1074,8 @@ encyclopedia.ifv.med:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.med-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry\n• Passenger: Medic
+		Weaknesses: Actor-encyclopedia.ifv.med-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.med-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1093,8 +1093,8 @@ encyclopedia.ifv.mech:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
+		Weaknesses: Actor-encyclopedia.ifv.mech-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.mech-Attributes
 
 encyclopedia.ifv.spy:
 	Inherits: ^IFVVariantPreview
@@ -1103,10 +1103,10 @@ encyclopedia.ifv.spy:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Spy. Paints targets to reveal them and make them take increased damage.
+		Description: Actor-encyclopedia.ifv.spy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Targets are reaveled and take increased damage
+		Weaknesses: Actor-encyclopedia.ifv.spy-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.spy-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1123,9 +1123,9 @@ encyclopedia.ifv.snip:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Sniper
+		Strengths: Actor-encyclopedia.ifv.snip-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.snip-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.snip-Attributes
 
 encyclopedia.ifv.enfo:
 	Inherits: ^IFVVariantPreview
@@ -1138,9 +1138,9 @@ encyclopedia.ifv.enfo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enforcer
+		Strengths: Actor-encyclopedia.ifv.enfo-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.enfo-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.enfo-Attributes
 
 encyclopedia.ifv.ggi:
 	Inherits: ^IFVVariantPreview
@@ -1153,9 +1153,9 @@ encyclopedia.ifv.ggi:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.ggi-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Guardian GI
+		Strengths: Actor-encyclopedia.ifv.ggi-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.ggi-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.ggi-Attributes
 
 encyclopedia.ifv.seal:
 	Inherits: ^IFVVariantPreview
@@ -1168,9 +1168,9 @@ encyclopedia.ifv.seal:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.seal-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Navy SEAL
+		Strengths: Actor-encyclopedia.ifv.seal-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.seal-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.seal-Attributes
 
 encyclopedia.ifv.cryo:
 	Inherits: ^IFVVariantPreview
@@ -1183,9 +1183,9 @@ encyclopedia.ifv.cryo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage\n• Passenger: Cryo Trooper
+		Strengths: Actor-encyclopedia.ifv.cryo-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.cryo-Attributes
 
 encyclopedia.ifv.tigr:
 	Inherits: ^IFVVariantPreview
@@ -1198,9 +1198,9 @@ encyclopedia.ifv.tigr:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.tigr-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Tiger Guard
+		Strengths: Actor-encyclopedia.ifv.tigr-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.tigr-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.tigr-Attributes
 
 encyclopedia.ifv.hopl:
 	Inherits: ^IFVVariantPreview
@@ -1213,9 +1213,9 @@ encyclopedia.ifv.hopl:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Hoplite
+		Strengths: Actor-encyclopedia.ifv.hopl-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.hopl-Attributes
 
 encyclopedia.ifv.cmdo:
 	Inherits: ^IFVVariantPreview
@@ -1228,9 +1228,9 @@ encyclopedia.ifv.cmdo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.ifv.cmdo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Tanya, Boris, Commando
+		Strengths: Actor-encyclopedia.ifv.cmdo-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.cmdo-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.cmdo-Attributes
 
 encyclopedia.ifv.grenade:
 	Inherits: ^IFVVariantPreview
@@ -1243,9 +1243,9 @@ encyclopedia.ifv.grenade:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Grenadier
+		Strengths: Actor-encyclopedia.ifv.grenade-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.grenade-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.grenade-Attributes
 
 encyclopedia.ifv.flame:
 	Inherits: ^IFVVariantPreview
@@ -1258,9 +1258,9 @@ encyclopedia.ifv.flame:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Flamethrower
+		Strengths: Actor-encyclopedia.ifv.flame-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.flame-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.flame-Attributes
 
 encyclopedia.ifv.chem:
 	Inherits: ^IFVVariantPreview
@@ -1273,9 +1273,9 @@ encyclopedia.ifv.chem:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Chem Warrior
+		Strengths: Actor-encyclopedia.ifv.chem-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.chem-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.chem-Attributes
 
 encyclopedia.ifv.rad:
 	Inherits: ^IFVVariantPreview
@@ -1288,9 +1288,9 @@ encyclopedia.ifv.rad:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Desolator, Rad Trooper
+		Strengths: Actor-encyclopedia.ifv.rad-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.rad-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.rad-Attributes
 
 encyclopedia.ifv.ivan:
 	Inherits: ^IFVVariantPreview
@@ -1301,9 +1301,9 @@ encyclopedia.ifv.ivan:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.ivan-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
-		Attributes: • Passengers: Crazy Ivan, Burster, Terror Dog
+		Strengths: Actor-encyclopedia.ifv.ivan-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.ivan-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.ivan-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1318,9 +1318,9 @@ encyclopedia.ifv.tes:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.tes-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Shock Trooper, Tesla Trooper
+		Strengths: Actor-encyclopedia.ifv.tes-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.tes-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.tes-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1334,9 +1334,9 @@ encyclopedia.ifv.psy:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits\n• Passenger: Yuri, Mastermind
+		Strengths: Actor-encyclopedia.ifv.psy-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.psy-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.psy-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1353,9 +1353,9 @@ encyclopedia.ifv.cmsr:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.cmsr-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Inspires nearby allies
-		Weaknesses: Unarmed
-		Attributes: • Passenger: Commissar
+		Strengths: Actor-encyclopedia.ifv.cmsr-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.cmsr-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.cmsr-Attributes
 	WithPreviewDecoration@CMSR:
 		Image: pips
 		Sequence: pip-cmsr
@@ -1372,9 +1372,9 @@ encyclopedia.ifv.laser:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Acolyte, Templar
+		Strengths: Actor-encyclopedia.ifv.laser-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.laser-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.laser-Attributes
 
 encyclopedia.ifv.enli:
 	Inherits: ^IFVVariantPreview
@@ -1387,9 +1387,9 @@ encyclopedia.ifv.enli:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enlightened
+		Strengths: Actor-encyclopedia.ifv.enli-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.enli-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.enli-Attributes
 
 encyclopedia.ifv.rmbc:
 	Inherits: ^IFVVariantPreview
@@ -1402,8 +1402,8 @@ encyclopedia.ifv.rmbc:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.rmbc-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-encyclopedia.ifv.rmbc-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.rmbc-Weaknesses
 
 encyclopedia.ifv.bh:
 	Inherits: ^IFVVariantPreview
@@ -1416,9 +1416,9 @@ encyclopedia.ifv.bh:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Black Hand
+		Strengths: Actor-encyclopedia.ifv.bh-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.bh-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.bh-Attributes
 
 encyclopedia.ifv.conf:
 	Inherits: ^IFVVariantPreview
@@ -1431,9 +1431,9 @@ encyclopedia.ifv.conf:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately\n• Passenger: Confessor
+		Strengths: Actor-encyclopedia.ifv.conf-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.conf-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.conf-Attributes
 
 encyclopedia.ifv.reap:
 	Inherits: ^IFVVariantPreview
@@ -1446,9 +1446,9 @@ encyclopedia.ifv.reap:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.reap-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Passenger: Reaper
+		Strengths: Actor-encyclopedia.ifv.reap-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.reap-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.reap-Attributes
 
 encyclopedia.ifv.shad:
 	Inherits: ^IFVVariantPreview
@@ -1461,9 +1461,9 @@ encyclopedia.ifv.shad:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Shadow Operative
+		Strengths: Actor-encyclopedia.ifv.shad-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.shad-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.shad-Attributes
 
 encyclopedia.ifv.hack:
 	Inherits: ^IFVVariantPreview
@@ -1474,9 +1474,9 @@ encyclopedia.ifv.hack:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
-		Attributes: • Passenger: Hacker
+		Strengths: Actor-encyclopedia.ifv.hack-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.hack-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.hack-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
 		Sequence: hack
@@ -1492,9 +1492,9 @@ encyclopedia.ifv.ztrp:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Trooper
+		Strengths: Actor-encyclopedia.ifv.ztrp-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.ztrp-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.ztrp-Attributes
 
 encyclopedia.ifv.zdef:
 	Inherits: ^IFVVariantPreview
@@ -1507,9 +1507,9 @@ encyclopedia.ifv.zdef:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Defender
+		Strengths: Actor-encyclopedia.ifv.zdef-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.zdef-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.zdef-Attributes
 
 encyclopedia.ifv.zrai:
 	Inherits: ^IFVVariantPreview
@@ -1522,9 +1522,9 @@ encyclopedia.ifv.zrai:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.zrai-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Zone Raider
+		Strengths: Actor-encyclopedia.ifv.zrai-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.zrai-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.zrai-Attributes
 
 encyclopedia.ifv.disin:
 	Inherits: ^IFVVariantPreview
@@ -1537,9 +1537,9 @@ encyclopedia.ifv.disin:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.disin-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Disintegrator (Scrin)
+		Strengths: Actor-encyclopedia.ifv.disin-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.disin-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.disin-Attributes
 
 encyclopedia.ifv.shard:
 	Inherits: ^IFVVariantPreview
@@ -1552,9 +1552,9 @@ encyclopedia.ifv.shard:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Ravager, Eviscerator
+		Strengths: Actor-encyclopedia.ifv.shard-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.shard-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.shard-Attributes
 
 encyclopedia.ifv.pdisc:
 	Inherits: ^IFVVariantPreview
@@ -1567,9 +1567,9 @@ encyclopedia.ifv.pdisc:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Intruder, Marauder
+		Strengths: Actor-encyclopedia.ifv.pdisc-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.pdisc-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.pdisc-Attributes
 
 encyclopedia.ifv.impl:
 	Inherits: ^IFVVariantPreview
@@ -1582,9 +1582,9 @@ encyclopedia.ifv.impl:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Impaler
+		Strengths: Actor-encyclopedia.ifv.impl-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.impl-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.impl-Attributes
 
 encyclopedia.ifv.stlk:
 	Inherits: ^IFVVariantPreview
@@ -1600,9 +1600,9 @@ encyclopedia.ifv.stlk:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Stalker
+		Strengths: Actor-encyclopedia.ifv.stlk-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.stlk-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.stlk-Attributes
 
 encyclopedia.ifv.mortchem:
 	Inherits: ^IFVVariantPreview
@@ -1615,9 +1615,9 @@ encyclopedia.ifv.mortchem:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Chemical Mortar
+		Strengths: Actor-encyclopedia.ifv.mortchem-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.mortchem-Attributes
 
 encyclopedia.ifv.mortcryo:
 	Inherits: ^IFVVariantPreview
@@ -1630,9 +1630,9 @@ encyclopedia.ifv.mortcryo:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Cryo Mortar
+		Strengths: Actor-encyclopedia.ifv.mortcryo-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.mortcryo-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.mortcryo-Attributes
 
 encyclopedia.ifv.mortsonic:
 	Inherits: ^IFVVariantPreview
@@ -1645,9 +1645,9 @@ encyclopedia.ifv.mortsonic:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.ifv.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Sonic Mortar
+		Strengths: Actor-encyclopedia.ifv.mortsonic-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.mortsonic-Weaknesses
+		Attributes: Actor-encyclopedia.ifv.mortsonic-Attributes
 
 # Reckoner Variants
 ^ReckonerVariantPreview:
@@ -1672,9 +1672,9 @@ encyclopedia.reck.missile:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.missile-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Rocket Soldier
+		Strengths: Actor-encyclopedia.reck.missile-Strengths
+		Weaknesses: Actor-encyclopedia.reck.missile-Weaknesses
+		Attributes: Actor-encyclopedia.reck.missile-Attributes
 
 encyclopedia.reck.mg:
 	Inherits: ^ReckonerVariantPreview
@@ -1687,9 +1687,9 @@ encyclopedia.reck.mg:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Rifle Infantry
+		Strengths: Actor-encyclopedia.reck.mg-Strengths
+		Weaknesses: Actor-encyclopedia.reck.mg-Weaknesses
+		Attributes: Actor-encyclopedia.reck.mg-Attributes
 
 encyclopedia.reck.engi:
 	Inherits: ^ReckonerVariantPreview
@@ -1702,8 +1702,8 @@ encyclopedia.reck.engi:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures\n• Passenger: Engineer
+		Weaknesses: Actor-encyclopedia.reck.engi-Weaknesses
+		Attributes: Actor-encyclopedia.reck.engi-Attributes
 
 encyclopedia.reck.med:
 	Inherits: ^ReckonerVariantPreview
@@ -1714,8 +1714,8 @@ encyclopedia.reck.med:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.med-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry\n• Passenger: Medic
+		Weaknesses: Actor-encyclopedia.reck.med-Weaknesses
+		Attributes: Actor-encyclopedia.reck.med-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1733,8 +1733,8 @@ encyclopedia.reck.mech:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
+		Weaknesses: Actor-encyclopedia.reck.mech-Weaknesses
+		Attributes: Actor-encyclopedia.reck.mech-Attributes
 
 encyclopedia.reck.spy:
 	Inherits: ^ReckonerVariantPreview
@@ -1745,8 +1745,8 @@ encyclopedia.reck.spy:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.spy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Sabotages enemy structures:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike\n• Passenger: Spy
+		Weaknesses: Actor-encyclopedia.reck.spy-Weaknesses
+		Attributes: Actor-encyclopedia.reck.spy-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1763,9 +1763,9 @@ encyclopedia.reck.snip:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Sniper
+		Strengths: Actor-encyclopedia.reck.snip-Strengths
+		Weaknesses: Actor-encyclopedia.reck.snip-Weaknesses
+		Attributes: Actor-encyclopedia.reck.snip-Attributes
 
 encyclopedia.reck.enfo:
 	Inherits: ^ReckonerVariantPreview
@@ -1778,9 +1778,9 @@ encyclopedia.reck.enfo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enforcer
+		Strengths: Actor-encyclopedia.reck.enfo-Strengths
+		Weaknesses: Actor-encyclopedia.reck.enfo-Weaknesses
+		Attributes: Actor-encyclopedia.reck.enfo-Attributes
 
 encyclopedia.reck.ggi:
 	Inherits: ^ReckonerVariantPreview
@@ -1793,9 +1793,9 @@ encyclopedia.reck.ggi:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.ggi-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Guardian GI
+		Strengths: Actor-encyclopedia.reck.ggi-Strengths
+		Weaknesses: Actor-encyclopedia.reck.ggi-Weaknesses
+		Attributes: Actor-encyclopedia.reck.ggi-Attributes
 
 encyclopedia.reck.seal:
 	Inherits: ^ReckonerVariantPreview
@@ -1808,9 +1808,9 @@ encyclopedia.reck.seal:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.seal-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Navy SEAL
+		Strengths: Actor-encyclopedia.reck.seal-Strengths
+		Weaknesses: Actor-encyclopedia.reck.seal-Weaknesses
+		Attributes: Actor-encyclopedia.reck.seal-Attributes
 
 encyclopedia.reck.cryo:
 	Inherits: ^ReckonerVariantPreview
@@ -1823,9 +1823,9 @@ encyclopedia.reck.cryo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage\n• Passenger: Cryo Trooper
+		Strengths: Actor-encyclopedia.reck.cryo-Strengths
+		Weaknesses: Actor-encyclopedia.reck.cryo-Weaknesses
+		Attributes: Actor-encyclopedia.reck.cryo-Attributes
 
 encyclopedia.reck.tigr:
 	Inherits: ^ReckonerVariantPreview
@@ -1838,9 +1838,9 @@ encyclopedia.reck.tigr:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.tigr-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Tiger Guard
+		Strengths: Actor-encyclopedia.reck.tigr-Strengths
+		Weaknesses: Actor-encyclopedia.reck.tigr-Weaknesses
+		Attributes: Actor-encyclopedia.reck.tigr-Attributes
 
 encyclopedia.reck.hopl:
 	Inherits: ^ReckonerVariantPreview
@@ -1853,9 +1853,9 @@ encyclopedia.reck.hopl:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Hoplite
+		Strengths: Actor-encyclopedia.reck.hopl-Strengths
+		Weaknesses: Actor-encyclopedia.reck.hopl-Weaknesses
+		Attributes: Actor-encyclopedia.reck.hopl-Attributes
 
 encyclopedia.reck.cmdo:
 	Inherits: ^ReckonerVariantPreview
@@ -1868,9 +1868,9 @@ encyclopedia.reck.cmdo:
 		VariantGroup: Allies
 		Description: Actor-encyclopedia.reck.cmdo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Tanya, Boris, Commando
+		Strengths: Actor-encyclopedia.reck.cmdo-Strengths
+		Weaknesses: Actor-encyclopedia.reck.cmdo-Weaknesses
+		Attributes: Actor-encyclopedia.reck.cmdo-Attributes
 
 encyclopedia.reck.grenade:
 	Inherits: ^ReckonerVariantPreview
@@ -1883,9 +1883,9 @@ encyclopedia.reck.grenade:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Grenadier
+		Strengths: Actor-encyclopedia.reck.grenade-Strengths
+		Weaknesses: Actor-encyclopedia.reck.grenade-Weaknesses
+		Attributes: Actor-encyclopedia.reck.grenade-Attributes
 
 encyclopedia.reck.flame:
 	Inherits: ^ReckonerVariantPreview
@@ -1898,9 +1898,9 @@ encyclopedia.reck.flame:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Flamethrower
+		Strengths: Actor-encyclopedia.reck.flame-Strengths
+		Weaknesses: Actor-encyclopedia.reck.flame-Weaknesses
+		Attributes: Actor-encyclopedia.reck.flame-Attributes
 
 encyclopedia.reck.chem:
 	Inherits: ^ReckonerVariantPreview
@@ -1913,9 +1913,9 @@ encyclopedia.reck.chem:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Chem Warrior
+		Strengths: Actor-encyclopedia.reck.chem-Strengths
+		Weaknesses: Actor-encyclopedia.reck.chem-Weaknesses
+		Attributes: Actor-encyclopedia.reck.chem-Attributes
 
 encyclopedia.reck.rad:
 	Inherits: ^ReckonerVariantPreview
@@ -1928,9 +1928,9 @@ encyclopedia.reck.rad:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Desolator, Rad Trooper
+		Strengths: Actor-encyclopedia.reck.rad-Strengths
+		Weaknesses: Actor-encyclopedia.reck.rad-Weaknesses
+		Attributes: Actor-encyclopedia.reck.rad-Attributes
 
 encyclopedia.reck.ivan:
 	Inherits: ^ReckonerVariantPreview
@@ -1941,9 +1941,9 @@ encyclopedia.reck.ivan:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.ivan-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
-		Attributes: • Passengers: Crazy Ivan, Burster, Terror Dog
+		Strengths: Actor-encyclopedia.reck.ivan-Strengths
+		Weaknesses: Actor-encyclopedia.reck.ivan-Weaknesses
+		Attributes: Actor-encyclopedia.reck.ivan-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1958,9 +1958,9 @@ encyclopedia.reck.tes:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.tes-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Shock Trooper, Tesla Trooper
+		Strengths: Actor-encyclopedia.reck.tes-Strengths
+		Weaknesses: Actor-encyclopedia.reck.tes-Weaknesses
+		Attributes: Actor-encyclopedia.reck.tes-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1974,9 +1974,9 @@ encyclopedia.reck.psy:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits\n• Passenger: Yuri, Mastermind
+		Strengths: Actor-encyclopedia.reck.psy-Strengths
+		Weaknesses: Actor-encyclopedia.reck.psy-Weaknesses
+		Attributes: Actor-encyclopedia.reck.psy-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1993,9 +1993,9 @@ encyclopedia.reck.cmsr:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.cmsr-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Inspires nearby allies
-		Weaknesses: Unarmed
-		Attributes: • Passenger: Commissar
+		Strengths: Actor-encyclopedia.reck.cmsr-Strengths
+		Weaknesses: Actor-encyclopedia.reck.cmsr-Weaknesses
+		Attributes: Actor-encyclopedia.reck.cmsr-Attributes
 	WithPreviewDecoration@CMSR:
 		Image: pips
 		Sequence: pip-cmsr
@@ -2012,9 +2012,9 @@ encyclopedia.reck.laser:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Acolyte, Templar
+		Strengths: Actor-encyclopedia.reck.laser-Strengths
+		Weaknesses: Actor-encyclopedia.reck.laser-Weaknesses
+		Attributes: Actor-encyclopedia.reck.laser-Attributes
 
 encyclopedia.reck.enli:
 	Inherits: ^ReckonerVariantPreview
@@ -2027,9 +2027,9 @@ encyclopedia.reck.enli:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enlightened
+		Strengths: Actor-encyclopedia.reck.enli-Strengths
+		Weaknesses: Actor-encyclopedia.reck.enli-Weaknesses
+		Attributes: Actor-encyclopedia.reck.enli-Attributes
 
 encyclopedia.reck.rmbc:
 	Inherits: ^ReckonerVariantPreview
@@ -2042,8 +2042,8 @@ encyclopedia.reck.rmbc:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.rmbc-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-encyclopedia.reck.rmbc-Strengths
+		Weaknesses: Actor-encyclopedia.reck.rmbc-Weaknesses
 
 encyclopedia.reck.bh:
 	Inherits: ^ReckonerVariantPreview
@@ -2056,9 +2056,9 @@ encyclopedia.reck.bh:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Black Hand
+		Strengths: Actor-encyclopedia.reck.bh-Strengths
+		Weaknesses: Actor-encyclopedia.reck.bh-Weaknesses
+		Attributes: Actor-encyclopedia.reck.bh-Attributes
 
 encyclopedia.reck.conf:
 	Inherits: ^ReckonerVariantPreview
@@ -2071,9 +2071,9 @@ encyclopedia.reck.conf:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately\n• Passenger: Confessor
+		Strengths: Actor-encyclopedia.reck.conf-Strengths
+		Weaknesses: Actor-encyclopedia.reck.conf-Weaknesses
+		Attributes: Actor-encyclopedia.reck.conf-Attributes
 
 encyclopedia.reck.reap:
 	Inherits: ^ReckonerVariantPreview
@@ -2086,9 +2086,9 @@ encyclopedia.reck.reap:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.reap-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Passenger: Reaper
+		Strengths: Actor-encyclopedia.reck.reap-Strengths
+		Weaknesses: Actor-encyclopedia.reck.reap-Weaknesses
+		Attributes: Actor-encyclopedia.reck.reap-Attributes
 
 encyclopedia.reck.shad:
 	Inherits: ^ReckonerVariantPreview
@@ -2101,9 +2101,9 @@ encyclopedia.reck.shad:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Shadow Operative
+		Strengths: Actor-encyclopedia.reck.shad-Strengths
+		Weaknesses: Actor-encyclopedia.reck.shad-Weaknesses
+		Attributes: Actor-encyclopedia.reck.shad-Attributes
 
 encyclopedia.reck.hack:
 	Inherits: ^ReckonerVariantPreview
@@ -2114,9 +2114,9 @@ encyclopedia.reck.hack:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
-		Attributes: • Passenger: Hacker
+		Strengths: Actor-encyclopedia.reck.hack-Strengths
+		Weaknesses: Actor-encyclopedia.reck.hack-Weaknesses
+		Attributes: Actor-encyclopedia.reck.hack-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
 		Sequence: hack
@@ -2132,9 +2132,9 @@ encyclopedia.reck.ztrp:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Trooper
+		Strengths: Actor-encyclopedia.reck.ztrp-Strengths
+		Weaknesses: Actor-encyclopedia.reck.ztrp-Weaknesses
+		Attributes: Actor-encyclopedia.reck.ztrp-Attributes
 
 encyclopedia.reck.zdef:
 	Inherits: ^ReckonerVariantPreview
@@ -2147,9 +2147,9 @@ encyclopedia.reck.zdef:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Defender
+		Strengths: Actor-encyclopedia.reck.zdef-Strengths
+		Weaknesses: Actor-encyclopedia.reck.zdef-Weaknesses
+		Attributes: Actor-encyclopedia.reck.zdef-Attributes
 
 encyclopedia.reck.zrai:
 	Inherits: ^ReckonerVariantPreview
@@ -2162,9 +2162,9 @@ encyclopedia.reck.zrai:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.zrai-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Zone Raider
+		Strengths: Actor-encyclopedia.reck.zrai-Strengths
+		Weaknesses: Actor-encyclopedia.reck.zrai-Weaknesses
+		Attributes: Actor-encyclopedia.reck.zrai-Attributes
 
 encyclopedia.reck.disin:
 	Inherits: ^ReckonerVariantPreview
@@ -2177,9 +2177,9 @@ encyclopedia.reck.disin:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.disin-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Disintegrator (Scrin)
+		Strengths: Actor-encyclopedia.reck.disin-Strengths
+		Weaknesses: Actor-encyclopedia.reck.disin-Weaknesses
+		Attributes: Actor-encyclopedia.reck.disin-Attributes
 
 encyclopedia.reck.shard:
 	Inherits: ^ReckonerVariantPreview
@@ -2192,9 +2192,9 @@ encyclopedia.reck.shard:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Ravager, Eviscerator
+		Strengths: Actor-encyclopedia.reck.shard-Strengths
+		Weaknesses: Actor-encyclopedia.reck.shard-Weaknesses
+		Attributes: Actor-encyclopedia.reck.shard-Attributes
 
 encyclopedia.reck.pdisc:
 	Inherits: ^ReckonerVariantPreview
@@ -2207,9 +2207,9 @@ encyclopedia.reck.pdisc:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Intruder, Marauder
+		Strengths: Actor-encyclopedia.reck.pdisc-Strengths
+		Weaknesses: Actor-encyclopedia.reck.pdisc-Weaknesses
+		Attributes: Actor-encyclopedia.reck.pdisc-Attributes
 
 encyclopedia.reck.impl:
 	Inherits: ^ReckonerVariantPreview
@@ -2222,9 +2222,9 @@ encyclopedia.reck.impl:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Impaler
+		Strengths: Actor-encyclopedia.reck.impl-Strengths
+		Weaknesses: Actor-encyclopedia.reck.impl-Weaknesses
+		Attributes: Actor-encyclopedia.reck.impl-Attributes
 
 encyclopedia.reck.stlk:
 	Inherits: ^ReckonerVariantPreview
@@ -2240,9 +2240,9 @@ encyclopedia.reck.stlk:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Stalker
+		Strengths: Actor-encyclopedia.reck.stlk-Strengths
+		Weaknesses: Actor-encyclopedia.reck.stlk-Weaknesses
+		Attributes: Actor-encyclopedia.reck.stlk-Attributes
 
 encyclopedia.reck.mortchem:
 	Inherits: ^ReckonerVariantPreview
@@ -2255,9 +2255,9 @@ encyclopedia.reck.mortchem:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Chemical Mortar
+		Strengths: Actor-encyclopedia.reck.mortchem-Strengths
+		Weaknesses: Actor-encyclopedia.reck.mortchem-Weaknesses
+		Attributes: Actor-encyclopedia.reck.mortchem-Attributes
 
 encyclopedia.reck.mortcryo:
 	Inherits: ^ReckonerVariantPreview
@@ -2270,9 +2270,9 @@ encyclopedia.reck.mortcryo:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Cryo Mortar
+		Strengths: Actor-encyclopedia.reck.mortcryo-Strengths
+		Weaknesses: Actor-encyclopedia.reck.mortcryo-Weaknesses
+		Attributes: Actor-encyclopedia.reck.mortcryo-Attributes
 
 encyclopedia.reck.mortsonic:
 	Inherits: ^ReckonerVariantPreview
@@ -2285,9 +2285,9 @@ encyclopedia.reck.mortsonic:
 		VariantGroup: Other Factions
 		Description: Actor-encyclopedia.reck.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Sonic Mortar
+		Strengths: Actor-encyclopedia.reck.mortsonic-Strengths
+		Weaknesses: Actor-encyclopedia.reck.mortsonic-Weaknesses
+		Attributes: Actor-encyclopedia.reck.mortsonic-Attributes
 
 encyclopedia.buffs.anathema:
 	Inherits: ^VehicleEffectPreview
@@ -2298,8 +2298,8 @@ encyclopedia.buffs.anathema:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.anathema-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Gains firepower, rate of fire and speed gradually over 30 seconds
-		Weaknesses: • Destroyed once effect ends
+		Strengths: Actor-encyclopedia.buffs.anathema-Strengths
+		Weaknesses: Actor-encyclopedia.buffs.anathema-Weaknesses
 	WithIdleOverlay@Anathema:
 		Sequence: idle
 		Image: anathema
@@ -2318,7 +2318,7 @@ encyclopedia.buffs.defensematrix:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.defensematrix-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Increased effective health by 1250 per stack (up to 6 stacks)
+		Strengths: Actor-encyclopedia.buffs.defensematrix-Strengths
 	WithIdleOverlay@ZoneDefenderShield:
 		Sequence: idle
 		Image: zdefshield-overlay
@@ -2334,8 +2334,8 @@ encyclopedia.buffs.frenzy:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.frenzy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: +33% rate of fire\n+25% movement speed
-		Weaknesses: -15% rate of fire after effect ends\n-15% movement speed after effect ends
+		Strengths: Actor-encyclopedia.buffs.frenzy-Strengths
+		Weaknesses: Actor-encyclopedia.buffs.frenzy-Weaknesses
 	WithPalettedOverlay@FRENZY:
 		Palette: frenzy
 		ShowInPreview: true
@@ -2361,8 +2361,8 @@ encyclopedia.buffs.gyro:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.gyro-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: +33% weapon range
-		Weaknesses: -25% rate of fire
+		Strengths: Actor-encyclopedia.buffs.gyro-Strengths
+		Weaknesses: Actor-encyclopedia.buffs.gyro-Weaknesses
 	WithPalettedOverlay@GYRO:
 		Palette: gyro
 		ShowInPreview: true
@@ -2376,7 +2376,7 @@ encyclopedia.buffs.hotu:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.hotu-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Effective health boosted to 28k\n+20% movement speed\n+50% range\n+50% rate of fire
+		Strengths: Actor-encyclopedia.buffs.hotu-Strengths
 	WithIdleOverlay@HeroOfTheUnionCrest:
 		Sequence: star
 		Image: hero-overlay
@@ -2399,8 +2399,8 @@ encyclopedia.buffs.hypercharge:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.hypercharge-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Continuous fire
-		Weaknesses: +20% increased damage taken
+		Strengths: Actor-encyclopedia.buffs.hypercharge-Strengths
+		Weaknesses: Actor-encyclopedia.buffs.hypercharge-Weaknesses
 	WithPalettedOverlay@HYPERCHARGE:
 		Palette: hypercharge
 		ShowInPreview: true
@@ -2418,7 +2418,7 @@ encyclopedia.buffs.inspiration:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.inspiration-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: +15% movement speed\n+10% rate of fire
+		Strengths: Actor-encyclopedia.buffs.inspiration-Strengths
 	WithIdleOverlay@Inspiration1:
 		Image: ussrstar
 		Sequence: idle-overlay1
@@ -2434,7 +2434,7 @@ encyclopedia.buffs.inspiration2:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.inspiration2-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: +30% movement speed\n+20% rate of fire
+		Strengths: Actor-encyclopedia.buffs.inspiration2-Strengths
 	WithIdleOverlay@Inspiration2:
 		Image: ussrstar
 		Sequence: idle-overlay2
@@ -2450,7 +2450,7 @@ encyclopedia.buffs.ionsurge:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.ionsurge-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: +50% movement speed
+		Strengths: Actor-encyclopedia.buffs.ionsurge-Strengths
 	WithColoredOverlayCA@IONSURGE:
 		Color: bd70ff23
 		ShowInPreview: true
@@ -2467,10 +2467,10 @@ encyclopedia.buffs.ironcurtain:
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Soviet minor superweapon effect which grants temporary invulnerability (still affected by debuffs).
+		Description: Actor-encyclopedia.buffs.ironcurtain-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Immune to all damage
-		Weaknesses: • Speed capped to Heavy Tank speed
+		Strengths: Actor-encyclopedia.buffs.ironcurtain-Strengths
+		Weaknesses: Actor-encyclopedia.buffs.ironcurtain-Weaknesses
 	WithPalettedOverlay@IRONCURTAIN:
 		Palette: invuln
 		ShowInPreview: true
@@ -2489,7 +2489,7 @@ encyclopedia.buffs.naniterepair:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.naniterepair-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Repairs 5% health per second
+		Strengths: Actor-encyclopedia.buffs.naniterepair-Strengths
 	WithPalettedOverlay@NREPAIR:
 		Palette: nrepair
 		ShowInPreview: true
@@ -2508,7 +2508,7 @@ encyclopedia.buffs.naniteshield:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.naniteshield-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Absorbs 50% of incoming damage
+		Strengths: Actor-encyclopedia.buffs.naniteshield-Strengths
 	WithIdleOverlay@NSHIELD:
 		Sequence: idle
 		Image: nshield-overlay
@@ -2526,7 +2526,7 @@ encyclopedia.buffs.tibstealth:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.tibstealth-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Invisible to enemies\n-10% damage taken
+		Strengths: Actor-encyclopedia.buffs.tibstealth-Strengths
 
 encyclopedia.debuffs.atomized:
 	Inherits: ^VehicleEffectPreview
@@ -2538,7 +2538,7 @@ encyclopedia.debuffs.atomized:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.atomized-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Deals periodic damage\n-33% movement speed\n-33% damage dealt
+		Weaknesses: Actor-encyclopedia.debuffs.atomized-Weaknesses
 	WithIdleOverlay@ATOMIZED:
 		-RequiresCondition:
 
@@ -2552,8 +2552,8 @@ encyclopedia.debuffs.berserk:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.berserk-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Attacks units indiscriminately
-		Attributes: +25% movement speed\n+100% rate of fire
+		Weaknesses: Actor-encyclopedia.debuffs.berserk-Weaknesses
+		Attributes: Actor-encyclopedia.debuffs.berserk-Attributes
 	WithPalettedOverlay@BERSERK:
 		ShowInPreview: true
 
@@ -2566,7 +2566,7 @@ encyclopedia.debuffs.blinded:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.blinded-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Vision disabled\n• Weapons disabled
+		Weaknesses: Actor-encyclopedia.debuffs.blinded-Weaknesses
 	WithPreviewDecoration@Blinded:
 		Image: blinded
 		Sequence: idle
@@ -2583,8 +2583,8 @@ encyclopedia.debuffs.chill:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.chill-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Attributes: • Stacks up to 10 times
-		Weaknesses: -25/35/43/50/56/59/62/65/68/70% movement speed\n+10% damage received per stack
+		Attributes: Actor-encyclopedia.debuffs.chill-Attributes
+		Weaknesses: Actor-encyclopedia.debuffs.chill-Weaknesses
 	WithColoredOverlayCA@chilled5:
 		Color: 51aeda68
 		ShowInPreview: true
@@ -2598,7 +2598,7 @@ encyclopedia.debuffs.concussion:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.concussion-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: -25% movement speed\n-50% rate of fire
+		Weaknesses: Actor-encyclopedia.debuffs.concussion-Weaknesses
 	WithPreviewDecoration:
 		Image: pips
 		Sequence: pip-conc
@@ -2616,7 +2616,7 @@ encyclopedia.debuffs.emp:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.emp-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled\n• Unshielded aircraft crash to ground
+		Weaknesses: Actor-encyclopedia.debuffs.emp-Weaknesses
 	WithColoredOverlayCA@EMPDISABLE:
 		Color: 000000b4
 		ShowInPreview: true
@@ -2635,7 +2635,7 @@ encyclopedia.debuffs.irradiated:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.irradiated-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Deals periodic damage to nearby units\n• Irradiates the ground\n-10% damage dealt\n+10% damage received
+		Weaknesses: Actor-encyclopedia.debuffs.irradiated-Weaknesses
 	WithPalettedOverlay@IRRADIATABLE:
 		ShowInPreview: true
 	WithPreviewDecoration:
@@ -2652,9 +2652,9 @@ encyclopedia.debuffs.jammed:
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Radar Jammers. Reduces vehicle and aircraft weapon damage and rate of fire.
+		Description: Actor-encyclopedia.debuffs.jammed-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: -10% damage dealt\n-20% rate of fire
+		Weaknesses: Actor-encyclopedia.debuffs.jammed-Weaknesses
 	WithIdleOverlay@WEAPJAMMED:
 		-RequiresCondition:
 
@@ -2667,7 +2667,7 @@ encyclopedia.debuffs.targetpainted:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.targetpainted-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Revealed to enemies\n+10% damage received
+		Weaknesses: Actor-encyclopedia.debuffs.targetpainted-Weaknesses
 	WithPreviewDecoration:
 		Image: targetpainter
 		Sequence: idle
@@ -2685,7 +2685,7 @@ encyclopedia.debuffs.reapersnared:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.reapersnared-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
+		Weaknesses: Actor-encyclopedia.debuffs.reapersnared-Weaknesses
 	WithIdleOverlay@ReaperSnare:
 		-RequiresCondition:
 	WithInfantryBody:
@@ -2702,7 +2702,7 @@ encyclopedia.debuffs.suppression:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.suppression-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: -60% movement speed\n-20% rate of fire
+		Weaknesses: Actor-encyclopedia.debuffs.suppression-Weaknesses
 	WithPalettedOverlay@SUPPRESSION:
 		ShowInPreview: true
 
@@ -2733,7 +2733,7 @@ encyclopedia.debuffs.veiled:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.veiled-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: -20% weapon range\n-20% vision range
+		Weaknesses: Actor-encyclopedia.debuffs.veiled-Weaknesses
 	WithIdleOverlay@VEILED:
 		-RequiresCondition:
 
@@ -2749,8 +2749,8 @@ encyclopedia.debuffs.warped:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.warped-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: • Immune to non-warping damage
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
+		Strengths: Actor-encyclopedia.debuffs.warped-Strengths
+		Weaknesses: Actor-encyclopedia.debuffs.warped-Weaknesses
 	WithPalettedOverlay@TEMPORALl:
 		ShowInPreview: true
 	WithIdleOverlay@TEMPORAL:
@@ -2765,7 +2765,7 @@ encyclopedia.debuffs.watched:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.watched-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: • Revealed to enemies
+		Weaknesses: Actor-encyclopedia.debuffs.watched-Weaknesses
 	WithPreviewDecoration:
 		Image: watched
 		Sequence: idle

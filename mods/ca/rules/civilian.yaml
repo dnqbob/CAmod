@@ -63,7 +63,7 @@ FCOM:
 	TooltipExtras:
 		Description: Actor-FCOM-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-FCOM-TooltipExtrasDescription
+		Description: Provides buildable area.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to give buildable area.
@@ -117,7 +117,7 @@ HOSP:
 	TooltipExtras:
 		Description: Actor-HOSP-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-HOSP-TooltipExtrasDescription
+		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to heal nearby infantry and train two Medics/Rejuvenators every two minutes.
@@ -213,7 +213,7 @@ MACS:
 	TooltipExtras:
 		Description: Actor-MACS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-MACS-TooltipExtrasDescription
+		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to repair nearby vehicles and train two Mechanics/Artificers every two minutes.
@@ -511,7 +511,7 @@ MISS:
 	TooltipExtras:
 		Description: Actor-MISS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-MISS-TooltipExtrasDescription
+		Description: Provides vision of the surrounding area.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to provide vision of surrounding area.
@@ -555,7 +555,7 @@ BIO:
 	TooltipExtras:
 		Description: Actor-BIO-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-BIO-TooltipExtrasDescription
+		Description: Provides access to the toxin truck and chem mortar units.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture for access to the toxin truck and chem mortar units.
@@ -614,9 +614,9 @@ OILB:
 		Name: Actor-OILB-Name
 	TooltipExtras:
 		Description: Actor-OILB-TooltipExtrasDescription
-		Attributes: • Gives $125 every 15 seconds.\n• Gives $400 on first capture.
+		Attributes: Actor-OILB-Attributes
 	TooltipDescription@ally:
-		Description: Actor-OILB-TooltipExtrasDescription
+		Description: Provides additional funds.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive additional funds.
@@ -685,7 +685,7 @@ OILR:
 	TooltipExtras:
 		Description: Actor-OILR-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Actor-OILR-TooltipExtrasDescription
+		Description: Provides 10% discount on all unit production.
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive a 10% discount on all unit production.

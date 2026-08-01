@@ -217,8 +217,8 @@ MIG:
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
 		Description: Actor-MIG-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-MIG-Strengths
+		Weaknesses: Actor-MIG-Weaknesses
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -336,8 +336,8 @@ SUK:
 		Prerequisites: afld, stek, ~aircraft.soviet, ~!seismic.upgrade, ~techlevel.high
 		Description: Actor-SUK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-SUK-Strengths
+		Weaknesses: Actor-SUK-Weaknesses
 		RequiresCondition: !seismic-upgrade
 	TooltipExtras@SEISMIC:
 		Description: Fast ground attack aircraft armed with powerful explosive munitions.
@@ -492,8 +492,8 @@ YAK:
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
 		Description: Actor-YAK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: Actor-YAK-Strengths
+		Weaknesses: Actor-YAK-Weaknesses
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -672,8 +672,8 @@ TRAN:
 		Prerequisites: aircraft.chinook, ~aircraft.chinookvisible, ~techlevel.medium
 		Description: Actor-TRAN-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can carry infantry\n• Can Paradrop infantry (Force Fire)
+		Weaknesses: Actor-TRAN-Weaknesses
+		Attributes: Actor-TRAN-Attributes
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -880,9 +880,9 @@ NHAW:
 		Prerequisites: ~aircraft.nhaw, ~techlevel.medium
 		Description: Actor-NHAW-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Can carry infantry\n• Can Paradrop Infantry (HoldFire Stance + Force Fire)
+		Strengths: Actor-NHAW-Strengths
+		Weaknesses: Actor-NHAW-Weaknesses
+		Attributes: Actor-NHAW-Attributes
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -1080,8 +1080,8 @@ HELI:
 		Prerequisites: ~aircraft.allies, ~techlevel.medium
 		Description: Actor-HELI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-HELI-Strengths
+		Weaknesses: Actor-HELI-Weaknesses
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1202,8 +1202,8 @@ HIND:
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
 		Description: Actor-HIND-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-HIND-Strengths
+		Weaknesses: Actor-HIND-Weaknesses
 		Attributes: • Reduces enemy speed and rare of fire (Ukraine only)
 	Valued:
 		Cost: 1600
@@ -1520,8 +1520,8 @@ A10:
 		IconPalette: chrometd
 		Description: Actor-A10-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-A10-Strengths
+		Weaknesses: Actor-A10-Weaknesses
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -1688,8 +1688,8 @@ A10.SW:
 		Description: Actor-A10.SW-Description
 		BuildPaletteOrder: 42
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: Actor-A10.SW-Strengths
+		Weaknesses: Actor-A10.SW-Weaknesses
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: Sidewinder
@@ -1755,8 +1755,8 @@ A10.GAU:
 		Description: Actor-A10.GAU-Description
 		BuildPaletteOrder: 42
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-A10.GAU-Strengths
+		Weaknesses: Actor-A10.GAU-Weaknesses
 	Rearmable:
 		AmmoPools: primary, secondary
 	RenderSprites:
@@ -2098,8 +2098,8 @@ APCH:
 		IconPalette: chrometd
 		Description: Actor-APCH-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: Actor-APCH-Strengths
+		Weaknesses: Actor-APCH-Weaknesses
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 22
@@ -2212,8 +2212,8 @@ ORCA:
 		IconPalette: chrometd
 		Description: Actor-ORCA-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-ORCA-Strengths
+		Weaknesses: Actor-ORCA-Weaknesses
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 22
@@ -2357,9 +2357,9 @@ ORCB:
 		IconPalette: chrometd
 		Description: Actor-ORCB-Description
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Disables vehicles, defenses and buildings
+		Strengths: Actor-ORCB-Strengths
+		Weaknesses: Actor-ORCB-Weaknesses
+		Attributes: Actor-ORCB-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2577,8 +2577,8 @@ RAH:
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
 		Description: Actor-RAH-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-RAH-Strengths
+		Weaknesses: Actor-RAH-Weaknesses
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2727,9 +2727,9 @@ KIRO:
 		Prerequisites: afld, stek, ~aircraft.kiro, ~techlevel.high
 		Description: Actor-KIRO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Takes +50% damage when dropping bombs
-		Attributes: • Self repairs to 75% out of combat
+		Strengths: Actor-KIRO-Strengths
+		Weaknesses: Actor-KIRO-Weaknesses
+		Attributes: Actor-KIRO-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2939,7 +2939,7 @@ OCAR:
 		IconPalette: chrometd
 		Description: Actor-OCAR-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: Actor-OCAR-Weaknesses
 	Aircraft:
 		CruiseAltitude: 2048
 		AltitudeVelocity: 0c100
@@ -3154,8 +3154,8 @@ HARR:
 		Prerequisites: atek, ~aircraft.allies, ~techlevel.high
 		Description: Actor-HARR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Buildings, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: Actor-HARR-Strengths
+		Weaknesses: Actor-HARR-Weaknesses
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -3279,8 +3279,8 @@ SCRN:
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
 		Description: Actor-SCRN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-SCRN-Strengths
+		Weaknesses: Actor-SCRN-Weaknesses
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -3652,8 +3652,8 @@ VENM:
 		IconPalette: chrometd
 		Description: Actor-VENM-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Defenses
+		Strengths: Actor-VENM-Strengths
+		Weaknesses: Actor-VENM-Weaknesses
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 24
@@ -3780,9 +3780,9 @@ AURO:
 		IconPalette: chrometd
 		Description: Actor-AURO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Uses afterburner on approach to target
+		Strengths: Actor-AURO-Strengths
+		Weaknesses: Actor-AURO-Weaknesses
+		Attributes: Actor-AURO-Attributes
 	Valued:
 		Cost: 2300
 	Tooltip:
@@ -3951,8 +3951,8 @@ PMAK:
 		Prerequisites: alhq, ~aircraft.allies, ~techlevel.high
 		Description: Actor-PMAK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
+		Strengths: Actor-PMAK-Strengths
+		Weaknesses: Actor-PMAK-Weaknesses
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -4098,9 +4098,9 @@ BEAG:
 		Prerequisites: alhq, ~korea.coalition, ~aircraft.allies, ~techlevel.high
 		Description: Actor-BEAG-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings
-		Attributes: • Reduces range and vision of targets
+		Strengths: Actor-BEAG-Strengths
+		Weaknesses: Actor-BEAG-Weaknesses
+		Attributes: Actor-BEAG-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -4212,7 +4212,7 @@ BEAG:
 	Encyclopedia:
 		Category: Allies/Aircraft
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Actor-BEAG-EncyclopediaExtrasAdditionalInfo
 
 PHAN:
 	Inherits: ^Helicopter
@@ -4225,9 +4225,9 @@ PHAN:
 		Prerequisites: anyradar, ~aircraft.phan
 		Description: Actor-PHAN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings
-		Attributes: • Disables weapons and vision of enemy vehicles and aircraft
+		Strengths: Actor-PHAN-Strengths
+		Weaknesses: Actor-PHAN-Weaknesses
+		Attributes: Actor-PHAN-Attributes
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -4348,7 +4348,7 @@ PHAN:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied Helipad.
+		AdditionalInfo: Actor-PHAN-EncyclopediaExtrasAdditionalInfo
 
 KAMV:
 	Inherits: ^Helicopter
@@ -4361,8 +4361,8 @@ KAMV:
 		Prerequisites: anyradar, ~aircraft.kamv
 		Description: Actor-KAMV-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-KAMV-Strengths
+		Weaknesses: Actor-KAMV-Weaknesses
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -4471,7 +4471,7 @@ KAMV:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet Airfield.
+		AdditionalInfo: Actor-KAMV-EncyclopediaExtrasAdditionalInfo
 
 SHDE:
 	Inherits: ^HelicopterTD
@@ -4485,8 +4485,8 @@ SHDE:
 		Prerequisites: anyradar, ~aircraft.shde
 		Description: Actor-SHDE-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-SHDE-Strengths
+		Weaknesses: Actor-SHDE-Weaknesses
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -4602,7 +4602,7 @@ SHDE:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Helipad.
+		AdditionalInfo: Actor-SHDE-EncyclopediaExtrasAdditionalInfo
 
 VERT:
 	Inherits: ^HelicopterTD
@@ -4616,9 +4616,9 @@ VERT:
 		Prerequisites: anyradar, ~aircraft.vert
 		Description: Actor-VERT-Description
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Bomb disrupts cloaking in a large area
+		Strengths: Actor-VERT-Strengths
+		Weaknesses: Actor-VERT-Weaknesses
+		Attributes: Actor-VERT-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -4758,7 +4758,7 @@ VERT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Nod Helipad.
+		AdditionalInfo: Actor-VERT-EncyclopediaExtrasAdditionalInfo
 
 MCOR:
 	Inherits: ^HelicopterTD
@@ -4778,8 +4778,8 @@ MCOR:
 		IconPalette: chrometd
 		Description: Actor-MCOR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
+		Strengths: Actor-MCOR-Strengths
+		Weaknesses: Actor-MCOR-Weaknesses
 	Aircraft:
 		CruiseAltitude: 2560
 		AltitudeVelocity: 0c100
@@ -4840,7 +4840,7 @@ MCOR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Gravity Stabilizer.
+		AdditionalInfo: Actor-MCOR-EncyclopediaExtrasAdditionalInfo
 
 DISC:
 	Inherits: ^Helicopter
@@ -4858,8 +4858,8 @@ DISC:
 		Prerequisites: afld, stek, ~aircraft.yuri, ~techlevel.high
 		Description: Actor-DISC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Attributes: • Special Ability: Power Drain\n• Special Ability: Resource Drain
+		Strengths: Actor-DISC-Strengths
+		Attributes: Actor-DISC-Attributes
 	Health:
 		HP: 65000
 	RevealsShroud:
@@ -5016,8 +5016,8 @@ JACK:
 		Prerequisites: afld.gdi, anyradar, ~aircraft.arc, ~techlevel.medium
 		Description: Actor-JACK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry, Defenses
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-JACK-Strengths
+		Weaknesses: Actor-JACK-Weaknesses
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 20

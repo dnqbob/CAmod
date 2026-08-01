@@ -808,7 +808,7 @@ powerproxy.airborne:
 		Icon: airborne
 		SquadSize: 1
 		UnitType: galx
-		Name: Airdrop: Guardian GIs
+		Name: Actor-Single-GGI-Name
 		Description: Actor-Single-GGI-Description
 		OneShot: true
 		Stacks: 1

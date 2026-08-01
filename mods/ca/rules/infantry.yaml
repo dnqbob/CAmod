@@ -7,9 +7,9 @@ DOG:
 		Prerequisites: kenn, ~infantry.dog, ~!tdog.upgrade
 		Description: Actor-DOG-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Can only attack Infantry
-		Attributes: • Detects cloaked units, spies and mines\n• Detects the scent of enemy infantry beyond vision range\n• Immune to mind control
+		Strengths: Actor-DOG-Strengths
+		Weaknesses: Actor-DOG-Weaknesses
+		Attributes: Actor-DOG-Attributes
 	RenderSprites:
 		PlayerPalette: player
 	WithDeathAnimation:
@@ -112,9 +112,9 @@ TDOG:
 	Tooltip:
 		Name: Actor-TDOG-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and mines\n• Detects the scent of enemy vehicles beyond vision range\n• Immune to mind control\n• Explodes on death or on contact with a target
+		Strengths: Actor-TDOG-Strengths
+		Weaknesses: Actor-TDOG-Weaknesses
+		Attributes: Actor-TDOG-Attributes
 	Valued:
 		Cost: 300
 	KillsSelf:
@@ -155,8 +155,8 @@ E1:
 		Prerequisites: ~infantry.ra
 		Description: Actor-E1-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-E1-Strengths
+		Weaknesses: Actor-E1-Weaknesses
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -209,8 +209,8 @@ E2:
 		Prerequisites: ~infantry.e2
 		Description: Actor-E2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-E2-Strengths
+		Weaknesses: Actor-E2-Weaknesses
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -263,8 +263,8 @@ E3:
 		Prerequisites: ~infantry.ra
 		Description: Actor-E3-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: Actor-E3-Strengths
+		Weaknesses: Actor-E3-Weaknesses
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -376,9 +376,9 @@ U3:
 	Tooltip:
 		Name: Actor-U3-Name
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
-		Attributes: • Deploys for personal anti-tank fortification\n• Uncrushable when deployed
+		Strengths: Actor-U3-Strengths
+		Weaknesses: Actor-U3-Weaknesses
+		Attributes: Actor-U3-Attributes
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -573,9 +573,9 @@ U3.squad:
 		Prerequisites: radaroraircraft, ~infantry.usa, ~techlevel.medium
 		Description: Actor-U3.squad-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
-		Attributes: • Deploys for personal anti-tank fortification\n• Uncrushable when deployed
+		Strengths: Actor-U3.squad-Strengths
+		Weaknesses: Actor-U3.squad-Weaknesses
+		Attributes: Actor-U3.squad-Attributes
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -614,8 +614,8 @@ E4:
 		Prerequisites: ~barr, fturorradar, ~techlevel.low
 		Description: Actor-E4-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-E4-Strengths
+		Weaknesses: Actor-E4-Weaknesses
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -745,8 +745,8 @@ SPY:
 		Prerequisites: ~tent, anyradar, ~techlevel.medium
 		Description: Actor-SPY-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Disguise as enemy infantry by right-clicking them\n• Detects cloaked ground units and spies\n • Infiltration effects:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike
+		Weaknesses: Actor-SPY-Weaknesses
+		Attributes: Actor-SPY-Attributes
 	Valued:
 		Cost: 500
 	-Tooltip:
@@ -871,9 +871,9 @@ E7:
 		BuildLimit: 1
 		Description: Actor-E7-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Plants C4 to destroy structures and vehicles
+		Strengths: Actor-E7-Strengths
+		Weaknesses: Actor-E7-Weaknesses
+		Attributes: Actor-E7-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -966,7 +966,7 @@ MEDI:
 		Prerequisites: ~infantry.medi
 		Description: Actor-MEDI-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: Actor-MEDI-Weaknesses
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -1026,8 +1026,8 @@ MECH:
 		Prerequisites: repair, ~!tmpp, ~infantry.mech, ~techlevel.low
 		Description: Actor-MECH-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: Actor-MECH-Weaknesses
+		Attributes: Actor-MECH-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -1118,8 +1118,8 @@ CMEC:
 		Prerequisites: repair, tmpp, ~tmpp, ~infantry.mech, ~techlevel.high
 		Description: Actor-CMEC-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: Actor-CMEC-Weaknesses
+		Attributes: Actor-CMEC-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -1211,9 +1211,9 @@ HACK:
 	Tooltip:
 		Name: Actor-HACK-Name
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Drones
-		Weaknesses: • Cannot attack Infantry, Aircraft, Vehicles (other than Drones)
-		Attributes: • Control lost if the Hacker dies\n• Generates income when inside Internet Center\n• Hack production buildings to steal technology\n    • Allies: Cryo Mortar, Reckoner, Phantom\n    • Soviets: Cyberdog, Cyclops, Kamov\n    • GDI: Sonic Mortar, Basilisk, Shade\n    • Nod: Chem Mortar, Mantis, Vertigo\n    • Scrin: Cyberscrin, Viper, Manticore
+		Strengths: Actor-HACK-Strengths
+		Weaknesses: Actor-HACK-Weaknesses
+		Attributes: Actor-HACK-Attributes
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1311,7 +1311,7 @@ HACK:
 		HideBuildable: True
 	EncyclopediaExtras:
 		RenderPreviewActor: hack.preview
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Actor-HACK-EncyclopediaExtrasAdditionalInfo
 
 HACK.Preview:
 	Inherits: ^PreviewDummy
@@ -1406,8 +1406,8 @@ THF:
 		Prerequisites: anyradar, ~barr, ~techlevel.medium
 		Description: Actor-THF-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Cloaked with increased vision when not moving
+		Weaknesses: Actor-THF-Weaknesses
+		Attributes: Actor-THF-Attributes
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -1491,9 +1491,9 @@ SHOK:
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~!ttrp.upgrade, ~techlevel.medium
 		Description: Actor-SHOK-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can overcharge nearby Tesla Coils
+		Strengths: Actor-SHOK-Strengths
+		Weaknesses: Actor-SHOK-Weaknesses
+		Attributes: Actor-SHOK-Attributes
 	Valued:
 		Cost: 425
 	Tooltip:
@@ -1598,8 +1598,8 @@ N1:
 		IconPalette: chrometd
 		Description: Actor-N1-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-N1-Strengths
+		Weaknesses: Actor-N1-Weaknesses
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -1659,8 +1659,8 @@ N2:
 		IconPalette: chrometd
 		Description: Actor-N2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-N2-Strengths
+		Weaknesses: Actor-N2-Weaknesses
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -1737,8 +1737,8 @@ N3:
 		IconPalette: chrometd
 		Description: Actor-N3-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: Actor-N3-Strengths
+		Weaknesses: Actor-N3-Weaknesses
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -1840,8 +1840,8 @@ N4:
 		IconPalette: chrometd
 		Description: Actor-N4-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-N4-Strengths
+		Weaknesses: Actor-N4-Weaknesses
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -1909,9 +1909,9 @@ N5:
 		IconPalette: chrometd
 		Description: Actor-N5-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Ability: Tiberium Surge
+		Strengths: Actor-N5-Strengths
+		Weaknesses: Actor-N5-Weaknesses
+		Attributes: Actor-N5-Attributes
 	Valued:
 		Cost: 325
 	Tooltip:
@@ -2035,9 +2035,9 @@ RMBO:
 		BuildLimit: 1
 		Description: Actor-RMBO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Plants C4 to destroy structures and vehicles
+		Strengths: Actor-RMBO-Strengths
+		Weaknesses: Actor-RMBO-Weaknesses
+		Attributes: Actor-RMBO-Attributes
 	Mobile:
 		Speed: 60
 		Voice: Move
@@ -2163,9 +2163,9 @@ SNIP:
 		Prerequisites: ~infantry.england, anyradar, ~techlevel.medium
 		Description: Actor-SNIP-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles (with upgrade)
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack aircraft
-		Attributes: • Camouflaged when not moving\n• When elite, kills crew of vehicles with less than 50% HP
+		Strengths: Actor-SNIP-Strengths
+		Weaknesses: Actor-SNIP-Weaknesses
+		Attributes: Actor-SNIP-Attributes
 	Valued:
 		Cost: 550
 	Tooltip:
@@ -2284,9 +2284,9 @@ BORI:
 		BuildLimit: 1
 		Description: Actor-BORI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Calls airstrike on targeted structures
+		Strengths: Actor-BORI-Strengths
+		Weaknesses: Actor-BORI-Weaknesses
+		Attributes: Actor-BORI-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -2386,9 +2386,9 @@ SAB:
 		Prerequisites: anyradar, ~hand, ~techlevel.medium
 		Description: Actor-SAB-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Can only attack Infantry
-		Attributes: • Detects cloaked ground units and spies\n• Infiltrates production buildings to steal technology\n    • Allies: Cryo Mortar, Reckoner, Phantom\n    • Soviets: Cyberdog, Cyclops, Kamov\n    • GDI: Sonic Mortar, Basilisk, Shade\n    • Nod: Chem Mortar, Mantis, Vertigo\n    • Scrin: Cyberscrin, Viper, Manticore\n• Infiltrates radars/tech centers to lock technology\n• Infiltrates any building for vision
+		Strengths: Actor-SAB-Strengths
+		Weaknesses: Actor-SAB-Weaknesses
+		Attributes: Actor-SAB-Attributes
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2475,9 +2475,9 @@ ASSA:
 		Description: Actor-ASSA-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses
-		Weaknesses: • Weak vs Heavy Armor, Light Armor\n• Cannot attack aircraft
-		Attributes: • Plants C4 to destroy structures\n• Resistant to mind control
+		Strengths: Actor-ASSA-Strengths
+		Weaknesses: Actor-ASSA-Weaknesses
+		Attributes: Actor-ASSA-Attributes
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -2573,15 +2573,15 @@ ASSA:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Actor-ASSA-EncyclopediaExtrasAdditionalInfo
 
 CONF:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Idol of Kane (max 1 per Confessor)\n• Immune to mind control
+		Strengths: Actor-CONF-Strengths
+		Weaknesses: Actor-CONF-Weaknesses
+		Attributes: Actor-CONF-Attributes
 	Buildable:
 		Queue: ConfessorCabal
 		Description: Actor-CONF-Description
@@ -2657,7 +2657,7 @@ CONF:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Actor-CONF-EncyclopediaExtrasAdditionalInfo
 
 ACOL:
 	Inherits: ^Cyborg
@@ -2670,9 +2670,9 @@ ACOL:
 		Prerequisites: obliortmpl, anyradar, ~infantry.marked, ~!tmpp, ~techlevel.medium
 		Description: Actor-ACOL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Heals rapidly on Tiberium
+		Strengths: Actor-ACOL-Strengths
+		Weaknesses: Actor-ACOL-Weaknesses
+		Attributes: Actor-ACOL-Attributes
 	Valued:
 		Cost: 475
 	Tooltip:
@@ -2840,9 +2840,9 @@ JJET:
 		IconPalette: chrometd
 		Description: Actor-JJET-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
-		Attributes: • Detects cloaked units (with upgrade)
+		Strengths: Actor-JJET-Strengths
+		Weaknesses: Actor-JJET-Weaknesses
+		Attributes: Actor-JJET-Attributes
 	Valued:
 		Cost: 350
 	Tooltip:
@@ -2978,8 +2978,8 @@ BJET:
 		Description: Actor-BJET-Description
 		BuildPaletteOrder: 101
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Has difficulty hitting moving targets\n• Cannot attack Aircraft
+		Strengths: Actor-BJET-Strengths
+		Weaknesses: Actor-BJET-Weaknesses
 	Tooltip:
 		Name: Actor-BJET-Name
 	Aircraft:
@@ -3060,8 +3060,8 @@ E8:
 		Prerequisites: ~infantry.iraq, tturorstek, anyradar, ~!deso.upgrade, ~techlevel.medium
 		Description: Actor-E8-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-E8-Strengths
+		Weaknesses: Actor-E8-Weaknesses
 	Valued:
 		Cost: 425
 	Tooltip:
@@ -3139,7 +3139,7 @@ DESO:
 	Tooltip:
 		Name: Actor-DESO-Name
 	TooltipExtras:
-		Attributes: • Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units\n• Special Ability: Desolate Ground
+		Attributes: Actor-DESO-Attributes
 	Valued:
 		Cost: 600
 	Health:
@@ -3230,9 +3230,9 @@ N1C:
 		IconPalette: chrometd
 		Description: Actor-N1C-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Heals on Tiberium
+		Strengths: Actor-N1C-Strengths
+		Weaknesses: Actor-N1C-Weaknesses
+		Attributes: Actor-N1C-Attributes
 	Valued:
 		Cost: 250
 	Tooltip:
@@ -3283,9 +3283,9 @@ N3C:
 		IconPalette: chrometd
 		Description: Actor-N3C-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
-		Attributes: • Heals on Tiberium
+		Strengths: Actor-N3C-Strengths
+		Weaknesses: Actor-N3C-Weaknesses
+		Attributes: Actor-N3C-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -3380,9 +3380,9 @@ RMBC:
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~techlevel.high
 		Description: Actor-RMBC-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Heals on Tiberium
+		Strengths: Actor-RMBC-Strengths
+		Weaknesses: Actor-RMBC-Weaknesses
+		Attributes: Actor-RMBC-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -3471,9 +3471,9 @@ IVAN:
 		Prerequisites: ~infantry.ukraine, weap, ~techlevel.low
 		Description: Actor-IVAN-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Bombs will bounce if they hit the ground
+		Strengths: Actor-IVAN-Strengths
+		Weaknesses: Actor-IVAN-Weaknesses
+		Attributes: Actor-IVAN-Attributes
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -3541,9 +3541,9 @@ BRUT:
 		Prerequisites: anyradar, ~infantry.yuri, ~techlevel.medium
 		Description: Actor-BRUT-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Immune to mind control\n• Self heals to 50% out of combat
+		Strengths: Actor-BRUT-Strengths
+		Weaknesses: Actor-BRUT-Weaknesses
+		Attributes: Actor-BRUT-Attributes
 	RenderSprites:
 	Valued:
 		Cost: 450
@@ -3683,9 +3683,9 @@ SHAD:
 	Tooltip:
 		Name: Actor-SHAD-Name
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
-		Attributes: • Cloaked when not in combat\n• Shadow beacons provide vision and attach to enemy vehicles that pass over them\n• Detects cloaked ground units and spies\n• Special Ability: Shadow Beacon
+		Strengths: Actor-SHAD-Strengths
+		Weaknesses: Actor-SHAD-Weaknesses
+		Attributes: Actor-SHAD-Attributes
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	RevealsShroud:
@@ -3799,8 +3799,8 @@ SGLI:
 	Tooltip:
 		Name: Actor-SGLI-Name
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
+		Strengths: Actor-SGLI-Strengths
+		Weaknesses: Actor-SGLI-Weaknesses
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3974,8 +3974,8 @@ BH:
 		Prerequisites: anyradar, ~infantry.blackh, ~techlevel.medium
 		Description: Actor-BH-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-BH-Strengths
+		Weaknesses: Actor-BH-Weaknesses
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -4052,9 +4052,9 @@ YURI:
 		BuildLimit: 1
 		Description: Actor-YURI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Shorter range and longer reload against vehicles\n• Psychic detection radius\n• Special Ability: Mind Blast
+		Strengths: Actor-YURI-Strengths
+		Weaknesses: Actor-YURI-Weaknesses
+		Attributes: Actor-YURI-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -4265,9 +4265,9 @@ SEAL:
 		BuildLimit: -1
 		Description: Actor-SEAL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects spies\n• Plants C4 to destroy structures
+		Strengths: Actor-SEAL-Strengths
+		Weaknesses: Actor-SEAL-Weaknesses
+		Attributes: Actor-SEAL-Attributes
 	Voiced:
 		VoiceSet: SealVoice
 	Mobile:
@@ -4385,9 +4385,9 @@ ENLI:
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~zeal.covenant, ~techlevel.high
 		Description: Actor-ENLI-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Heals on Tiberium\n• Damage scales with the max health of the target\n• Special Ability: EMP Blast
+		Strengths: Actor-ENLI-Strengths
+		Weaknesses: Actor-ENLI-Weaknesses
+		Attributes: Actor-ENLI-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -4480,7 +4480,7 @@ ENLI:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Actor-ENLI-EncyclopediaExtrasAdditionalInfo
 
 ^MortarInfantryBase:
 	Inherits: ^Soldier
@@ -4489,8 +4489,8 @@ ENLI:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-^MortarInfantryBase-Strengths
+		Weaknesses: Actor-^MortarInfantryBase-Weaknesses
 	Valued:
 		Cost: 350
 	UpdatesPlayerStatistics:
@@ -4529,7 +4529,7 @@ MORT.Cryo:
 		Prerequisites: ~stolentech.tent
 		Description: Actor-MORT.Cryo-Description
 	TooltipExtras:
-		Attributes: • Slows enemy movement and increases damage taken
+		Attributes: Actor-MORT.Cryo-Attributes
 	Tooltip:
 		Name: Actor-MORT.Cryo-Name
 	Armament@PRIMARY:
@@ -4537,7 +4537,7 @@ MORT.Cryo:
 	Armament@BATF:
 		Weapon: CryoMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied Barracks.
+		AdditionalInfo: Actor-MORT.Cryo-EncyclopediaExtrasAdditionalInfo
 
 CDOG:
 	Inherits: DOG
@@ -4577,7 +4577,7 @@ CDOG:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet Barracks.
+		AdditionalInfo: Actor-CDOG-EncyclopediaExtrasAdditionalInfo
 	-KeepsDistance:
 	-AutoGuard:
 
@@ -4593,14 +4593,14 @@ MORT.Sonic:
 	Tooltip:
 		Name: Actor-MORT.Sonic-Name
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Attributes: • Slows enemy movement and rate of fire
+		Strengths: Actor-MORT.Sonic-Strengths
+		Attributes: Actor-MORT.Sonic-Attributes
 	Armament@PRIMARY:
 		Weapon: SonicMortar
 	Armament@BATF:
 		Weapon: SonicMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Barracks.
+		AdditionalInfo: Actor-MORT.Sonic-EncyclopediaExtrasAdditionalInfo
 
 MORT.Chem:
 	Inherits: ^MortarInfantryBase
@@ -4619,7 +4619,7 @@ MORT.Chem:
 		Chance: 33
 		RequiresCondition: !being-warped
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Hand of Nod.
+		AdditionalInfo: Actor-MORT.Chem-EncyclopediaExtrasAdditionalInfo
 
 CSCR:
 	Inherits: ^Cyborg
@@ -4634,9 +4634,9 @@ CSCR:
 		IconPalette: chromes
 		Description: Actor-CSCR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Heals rapidly on Tiberium
+		Strengths: Actor-CSCR-Strengths
+		Weaknesses: Actor-CSCR-Weaknesses
+		Attributes: Actor-CSCR-Attributes
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -4676,7 +4676,7 @@ CSCR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Portal.
+		AdditionalInfo: Actor-CSCR-EncyclopediaExtrasAdditionalInfo
 	ChangesHealth@THEAL:
 		PercentageStep: 3
 
@@ -4691,9 +4691,9 @@ CMSR:
 		Prerequisites: stek, ~barr, ~techlevel.high
 		Description: Actor-CMSR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Light Armor, Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Increases speed and rate of fire of nearby basic infantry\n• Detects cloaked units and spies
+		Strengths: Actor-CMSR-Strengths
+		Weaknesses: Actor-CMSR-Weaknesses
+		Attributes: Actor-CMSR-Attributes
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -4769,9 +4769,9 @@ ZTRP:
 		Description: Actor-ZTRP-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Jump-Pack
+		Strengths: Actor-ZTRP-Strengths
+		Weaknesses: Actor-ZTRP-Weaknesses
+		Attributes: Actor-ZTRP-Attributes
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -4859,7 +4859,7 @@ ZTRP:
 	Encyclopedia:
 		Category: GDI/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Actor-ZTRP-EncyclopediaExtrasAdditionalInfo
 
 ZRAI:
 	Inherits: ZTRP
@@ -4870,9 +4870,9 @@ ZRAI:
 	Tooltip:
 		Name: Actor-ZRAI-Name
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Shots reduce enemy movement and rate of fire\n• Special Ability: Jump-Pack
+		Strengths: Actor-ZRAI-Strengths
+		Weaknesses: Actor-ZRAI-Weaknesses
+		Attributes: Actor-ZRAI-Attributes
 	Armament@PRIMARY:
 		Weapon: ZoneRaiderGrenade
 		LocalOffset: 350,0,300
@@ -4889,7 +4889,7 @@ ZRAI:
 		MaxDistance: 10
 		Speed: 200
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Actor-ZRAI-EncyclopediaExtrasAdditionalInfo
 
 ZDEF:
 	Inherits: ZTRP
@@ -4900,7 +4900,7 @@ ZDEF:
 	Tooltip:
 		Name: Actor-ZDEF-Name
 	TooltipExtras:
-		Attributes: • Special Ability: Defense Matrix
+		Attributes: Actor-ZDEF-Attributes
 	Armament@PRIMARY:
 		Weapon: ZoneDefenderGun
 		LocalOffset: 350,0,300
@@ -4951,7 +4951,7 @@ ZDEF:
 		RequiresCondition: shield-active && !passenger
 		AffectsParent: true
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Actor-ZDEF-EncyclopediaExtrasAdditionalInfo
 
 ENFO:
 	Inherits: ^Soldier
@@ -4964,9 +4964,9 @@ ENFO:
 		Prerequisites: ~tent, alhq, ~techlevel.high
 		Description: Actor-ENFO-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Deals damage in a cone\n• Damage falls off with distance
+		Strengths: Actor-ENFO-Strengths
+		Weaknesses: Actor-ENFO-Weaknesses
+		Attributes: Actor-ENFO-Attributes
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -5032,9 +5032,9 @@ HOPL:
 		Prerequisites: ~tent, alhq, ~greece.coalition, ~techlevel.high
 		Description: Actor-HOPL-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • One in every four shots blinds the target
+		Strengths: Actor-HOPL-Strengths
+		Weaknesses: Actor-HOPL-Weaknesses
+		Attributes: Actor-HOPL-Attributes
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -5109,7 +5109,7 @@ HOPL:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Actor-HOPL-EncyclopediaExtrasAdditionalInfo
 
 TIGR:
 	Inherits: ^Soldier
@@ -5122,9 +5122,9 @@ TIGR:
 		Prerequisites: ~tent, alhq, ~korea.coalition, ~techlevel.high
 		Description: Actor-TIGR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry, Defenses, Buildings\n• Cannot acquire targets at close range
-		Attributes: • Missile reduces enemy weapon range and vision
+		Strengths: Actor-TIGR-Strengths
+		Weaknesses: Actor-TIGR-Weaknesses
+		Attributes: Actor-TIGR-Attributes
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -5182,7 +5182,7 @@ TIGR:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Actor-TIGR-EncyclopediaExtrasAdditionalInfo
 
 CRYT:
 	Inherits: ^Soldier
@@ -5195,9 +5195,9 @@ CRYT:
 		Prerequisites: ~tent, alhq, ~sweden.coalition, ~techlevel.high
 		Description: Actor-CRYT-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage
+		Strengths: Actor-CRYT-Strengths
+		Weaknesses: Actor-CRYT-Weaknesses
+		Attributes: Actor-CRYT-Attributes
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -5257,7 +5257,7 @@ CRYT:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Actor-CRYT-EncyclopediaExtrasAdditionalInfo
 
 REAP:
 	Inherits: ^Cyborg
@@ -5275,9 +5275,9 @@ REAP:
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~unity.covenant, ~techlevel.high
 		Description: Actor-REAP-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Heals on Tiberium\n• Special Ability: Inhibitor Grenade
+		Strengths: Actor-REAP-Strengths
+		Weaknesses: Actor-REAP-Weaknesses
+		Attributes: Actor-REAP-Attributes
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
@@ -5383,4 +5383,4 @@ REAP:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Actor-REAP-EncyclopediaExtrasAdditionalInfo

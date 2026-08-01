@@ -479,8 +479,8 @@ S1:
 		Description: Actor-S1-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-S1-Strengths
+		Weaknesses: Actor-S1-Weaknesses
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -521,8 +521,8 @@ S2:
 		IconPalette: chromes
 		Description: Actor-S2-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-S2-Strengths
+		Weaknesses: Actor-S2-Weaknesses
 	Valued:
 		Cost: 275
 	Tooltip:
@@ -566,8 +566,8 @@ S3:
 		Description: Actor-S3-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: Actor-S3-Strengths
+		Weaknesses: Actor-S3-Weaknesses
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -624,9 +624,9 @@ S4:
 		IconPalette: chrome
 		Description: Actor-S4-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Teleport (with upgrade)
+		Strengths: Actor-S4-Strengths
+		Weaknesses: Actor-S4-Weaknesses
+		Attributes: Actor-S4-Attributes
 	Mobile:
 		Speed: 54
 	Valued:
@@ -688,9 +688,9 @@ MRDR:
 		IconPalette: chromes
 		Description: Actor-MRDR-Description
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Damage against vehicles scales with the max health of the target\n• Special Ability: Teleport (with upgrade)
+		Strengths: Actor-MRDR-Strengths
+		Weaknesses: Actor-MRDR-Weaknesses
+		Attributes: Actor-MRDR-Attributes
 	Mobile:
 		Speed: 46
 	Valued:
@@ -768,8 +768,8 @@ WCHR:
 	Tooltip:
 		Name: Actor-WCHR-Name
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Can attach parasites to enemy vehicles & structures\n• Cloaked with increased vision when not moving\n• Detects cloaked ground units and spies\n• Applies multi-target suppression (Collector-73 only)\n• Special Ability: Teleport (with upgrade)
+		Weaknesses: Actor-WCHR-Weaknesses
+		Attributes: Actor-WCHR-Attributes
 	Health:
 		HP: 5000
 	UpdatesPlayerStatistics:
@@ -850,8 +850,8 @@ BRST:
 	Tooltip:
 		Name: Actor-BRST-Name
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-BRST-Strengths
+		Weaknesses: Actor-BRST-Weaknesses
 	Health:
 		HP: 18000
 	UpdatesPlayerStatistics:
@@ -908,9 +908,9 @@ EVIS:
 	Tooltip:
 		Name: Actor-EVIS-Name
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Charges a more powerful attack while on resources (with upgrade)
+		Strengths: Actor-EVIS-Strengths
+		Weaknesses: Actor-EVIS-Weaknesses
+		Attributes: Actor-EVIS-Attributes
 	Health:
 		HP: 16000
 	UpdatesPlayerStatistics:
@@ -962,7 +962,7 @@ EVIS:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Actor-EVIS-EncyclopediaExtrasAdditionalInfo
 
 IMPL:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -982,9 +982,9 @@ IMPL:
 	Tooltip:
 		Name: Actor-IMPL-Name
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows targets
+		Strengths: Actor-IMPL-Strengths
+		Weaknesses: Actor-IMPL-Weaknesses
+		Attributes: Actor-IMPL-Attributes
 	Health:
 		HP: 8000
 	UpdatesPlayerStatistics:
@@ -1009,7 +1009,7 @@ IMPL:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Actor-IMPL-EncyclopediaExtrasAdditionalInfo
 
 STLK:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1029,9 +1029,9 @@ STLK:
 	Tooltip:
 		Name: Actor-STLK-Name
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Cloak\n• Moves faster while cloaked\n• Briefly takes greatly reduced damage after decloaking
+		Strengths: Actor-STLK-Strengths
+		Weaknesses: Actor-STLK-Weaknesses
+		Attributes: Actor-STLK-Attributes
 	Health:
 		HP: 10000
 	UpdatesPlayerStatistics:
@@ -1106,7 +1106,7 @@ STLK:
 	TakeCover:
 		PauseOnCondition: being-warped || phaseshield
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Actor-STLK-EncyclopediaExtrasAdditionalInfo
 
 SMEDI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1117,7 +1117,7 @@ SMEDI:
 		IconPalette: chromes
 		Description: Actor-SMEDI-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: Actor-SMEDI-Weaknesses
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -1156,7 +1156,7 @@ SMEDI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Acquired from captured Hospitals.
+		AdditionalInfo: Actor-SMEDI-EncyclopediaExtrasAdditionalInfo
 
 ARTI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1167,8 +1167,8 @@ ARTI:
 		IconPalette: chromes
 		Description: Actor-ARTI-Description
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: Actor-ARTI-Weaknesses
+		Attributes: Actor-ARTI-Attributes
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -1241,7 +1241,7 @@ ARTI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Acquired from captured Machine Shops.
+		AdditionalInfo: Actor-ARTI-EncyclopediaExtrasAdditionalInfo
 
 GSCR:
 	Inherits: BRUT
@@ -1270,7 +1270,7 @@ GSCR:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Result of Genetic Mutation Bomb on Scrin infantry.
+		AdditionalInfo: Actor-GSCR-EncyclopediaExtrasAdditionalInfo
 
 GSCR.Mutating:
 	Inherits: BRUT.Mutating
@@ -1303,9 +1303,9 @@ MAST:
 		IconPalette: chrome
 		Description: Actor-MAST-Description
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Can capture enemy buildings\n• Shorter range and longer reload against vehicles\n• Special Ability: Mind Spark
+		Strengths: Actor-MAST-Strengths
+		Weaknesses: Actor-MAST-Weaknesses
+		Attributes: Actor-MAST-Attributes
 	Voiced:
 		VoiceSet: MastermindVoice
 	Valued:
@@ -1548,8 +1548,8 @@ GUNW:
 		Description: Actor-GUNW-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: Actor-GUNW-Strengths
+		Weaknesses: Actor-GUNW-Weaknesses
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -1671,9 +1671,9 @@ SEEK:
 		Description: Actor-SEEK-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and submarines\n• Can traverse water
+		Strengths: Actor-SEEK-Strengths
+		Weaknesses: Actor-SEEK-Weaknesses
+		Attributes: Actor-SEEK-Attributes
 	Mobile:
 		Speed: 126
 		Locomotor: lighthover
@@ -1755,9 +1755,9 @@ LACE:
 		Description: Actor-LACE-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and submarines\n• Can traverse water
+		Strengths: Actor-LACE-Strengths
+		Weaknesses: Actor-LACE-Weaknesses
+		Attributes: Actor-LACE-Attributes
 	Mobile:
 		TurnSpeed: 40
 		Speed: 144
@@ -1846,9 +1846,9 @@ INTL:
 		Description: Actor-INTL-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: Actor-INTL-Strengths
+		Weaknesses: Actor-INTL-Weaknesses
+		Attributes: Actor-INTL-Attributes
 	Mobile:
 		Speed: 60
 		TurnSpeed: 512
@@ -2004,8 +2004,8 @@ CORR:
 		Description: Actor-CORR-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-CORR-Strengths
+		Weaknesses: Actor-CORR-Weaknesses
 	Mobile:
 		Speed: 72
 		TurnSpeed: 16
@@ -2089,9 +2089,9 @@ LCHR:
 		Description: Actor-LCHR-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Regenerates health while dealing damage (without upgrade)\n• Disables power plants\n• Regenerates and heals allies when in coalescence form (with upgrade)\n• Special Ability: Coalescence (with upgrade)
+		Strengths: Actor-LCHR-Strengths
+		Weaknesses: Actor-LCHR-Weaknesses
+		Attributes: Actor-LCHR-Attributes
 	Mobile:
 		Speed: 82
 		TurnSpeed: 20
@@ -2271,8 +2271,8 @@ STCR:
 		Description: Actor-STCR-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
+		Strengths: Actor-STCR-Strengths
+		Weaknesses: Actor-STCR-Weaknesses
 	Mobile:
 		Speed: 46
 		TurnSpeed: 16
@@ -2338,9 +2338,9 @@ DEVO:
 		Description: Actor-DEVO-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: Actor-DEVO-Strengths
+		Weaknesses: Actor-DEVO-Weaknesses
+		Attributes: Actor-DEVO-Attributes
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -2432,9 +2432,9 @@ DARK:
 		Description: Actor-DARK-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
-		Attributes: • Can traverse water\n• Damage scales with the max health of the target
+		Strengths: Actor-DARK-Strengths
+		Weaknesses: Actor-DARK-Weaknesses
+		Attributes: Actor-DARK-Attributes
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -2492,7 +2492,7 @@ DARK:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Actor-DARK-EncyclopediaExtrasAdditionalInfo
 
 RUIN:
 	Inherits: ^Vehicle
@@ -2518,9 +2518,9 @@ RUIN:
 		Description: Actor-RUIN-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Can traverse water
+		Strengths: Actor-RUIN-Strengths
+		Weaknesses: Actor-RUIN-Weaknesses
+		Attributes: Actor-RUIN-Attributes
 	Mobile:
 		Speed: 72
 		TurnSpeed: 512
@@ -2598,7 +2598,7 @@ RUIN:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Actor-RUIN-EncyclopediaExtrasAdditionalInfo
 
 ATMZ:
 	Inherits: ^Vehicle
@@ -2623,9 +2623,9 @@ ATMZ:
 		Description: Actor-ATMZ-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Atomizes up to 4 targets\n• Affected targets take damage over time\n• Affected targets have reduced speed and firepower\n• Can traverse water
+		Strengths: Actor-ATMZ-Strengths
+		Weaknesses: Actor-ATMZ-Weaknesses
+		Attributes: Actor-ATMZ-Attributes
 	Mobile:
 		Speed: 72
 		Locomotor: lighthover
@@ -2688,9 +2688,9 @@ TPOD:
 		Description: Actor-TPOD-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs on Tiberium or other resources when not in combat
+		Strengths: Actor-TPOD-Strengths
+		Weaknesses: Actor-TPOD-Weaknesses
+		Attributes: Actor-TPOD-Attributes
 	Voiced:
 		VoiceSet: TripodVoice
 	Valued:
@@ -2782,7 +2782,7 @@ RTPD:
 		BuildPaletteOrder: 282
 		Prerequisites: scrt, ~vehicles.reaper, ~techlevel.high
 	TooltipExtras:
-		Attributes: • Can crush concrete walls\n• Weapons empowered by Tiberium or other resources\n• Self repairs on Tiberium or other resources when not in combat
+		Attributes: Actor-RTPD-Attributes
 	Valued:
 		Cost: 2200
 	Tooltip:
@@ -2878,9 +2878,9 @@ OBLT:
 		Description: Actor-OBLT-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: Actor-OBLT-Strengths
+		Weaknesses: Actor-OBLT-Weaknesses
+		Attributes: Actor-OBLT-Attributes
 	Valued:
 		Cost: 2300
 	Tooltip:
@@ -2998,9 +2998,9 @@ NULL:
 		Description: Actor-NULL-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Disables enemy weapons and vision\n• Can traverse water
+		Strengths: Actor-NULL-Strengths
+		Weaknesses: Actor-NULL-Weaknesses
+		Attributes: Actor-NULL-Attributes
 	Valued:
 		Cost: 1600
 	Tooltip:
@@ -3055,7 +3055,7 @@ NULL:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Actor-NULL-EncyclopediaExtrasAdditionalInfo
 
 SMCV:
 	Inherits: ^Vehicle-NOUPG
@@ -3076,8 +3076,8 @@ SMCV:
 		Description: Actor-SMCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Colony Platform\n• Can traverse water
+		Weaknesses: Actor-SMCV-Weaknesses
+		Attributes: Actor-SMCV-Attributes
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -3148,8 +3148,8 @@ STMR:
 		Description: Actor-STMR-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
-		Weaknesses: • Weak vs Defenses
+		Strengths: Actor-STMR-Strengths
+		Weaknesses: Actor-STMR-Weaknesses
 	Valued:
 		Cost: 1650
 	Tooltip:
@@ -3289,8 +3289,8 @@ TORM:
 		Description: Actor-TORM-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Vehicles, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: Actor-TORM-Strengths
+		Weaknesses: Actor-TORM-Weaknesses
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -3431,9 +3431,9 @@ ENRV:
 		Description: Actor-ENRV-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Vehicles, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Slows targets
+		Strengths: Actor-ENRV-Strengths
+		Weaknesses: Actor-ENRV-Weaknesses
+		Attributes: Actor-ENRV-Attributes
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -3568,8 +3568,8 @@ DEVA:
 		Description: Actor-DEVA-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: Actor-DEVA-Strengths
+		Weaknesses: Actor-DEVA-Weaknesses
 	Voiced:
 		VoiceSet: DevastatorVoice
 	Valued:
@@ -3714,9 +3714,9 @@ PAC:
 		Description: Actor-PAC-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Weak vs Buildings, Defenses
-		Attributes: • Invaders only targetable by static anti-air defenses
+		Strengths: Actor-PAC-Strengths
+		Weaknesses: Actor-PAC-Weaknesses
+		Attributes: Actor-PAC-Attributes
 	Voiced:
 		VoiceSet: PlanetaryAssaultCarrierVoice
 	Valued:
@@ -3958,9 +3958,9 @@ MSHP:
 		IconPalette: chromes
 		BuildLimit: 1
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft\n• Long charge time before firing anti-structure weapon\n• Cannot move while firing
-		Attributes: • Maximum 1 can be built\n• Can create wormholes\n• Can recharge nearby Stormriders/Enervators/Tormentors
+		Strengths: Actor-MSHP-Strengths
+		Weaknesses: Actor-MSHP-Weaknesses
+		Attributes: Actor-MSHP-Attributes
 	Voiced:
 		VoiceSet: MothershipVoice
 	Valued:
@@ -5091,7 +5091,7 @@ NERV:
 		Description: Actor-NERV-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: Actor-NERV-Attributes
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -5383,7 +5383,7 @@ SIGN:
 		BuildLimit: 1
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: Actor-SIGN-Attributes
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5424,7 +5424,7 @@ SREP:
 		Description: Actor-SREP-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: Actor-SREP-Attributes
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -5539,7 +5539,7 @@ MANI:
 		IconPalette: chrome
 		Description: Actor-MANI-Description
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Suppression Field
+		Attributes: Actor-MANI-Attributes
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5596,7 +5596,7 @@ RFGN:
 		Description: Actor-RFGN-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Rift
+		Attributes: Actor-RFGN-Attributes
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -5659,9 +5659,9 @@ PTUR:
 		Description: Actor-PTUR-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: Actor-PTUR-Strengths
+		Weaknesses: Actor-PTUR-Weaknesses
+		Attributes: Actor-PTUR-Attributes
 	Valued:
 		Cost: 700
 	CustomSellValue:
@@ -5725,9 +5725,9 @@ SHAR:
 		Description: Actor-SHAR-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: Actor-SHAR-Strengths
+		Weaknesses: Actor-SHAR-Weaknesses
+		Attributes: Actor-SHAR-Attributes
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -5791,9 +5791,9 @@ SCOL:
 		Description: Actor-SCOL-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: Actor-SCOL-Strengths
+		Weaknesses: Actor-SCOL-Weaknesses
+		Attributes: Actor-SCOL-Attributes
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -6051,7 +6051,7 @@ VSPK:
 	Tooltip:
 		Name: Actor-VSPK-Name
 	TooltipExtras:
-		Attributes: • Corrupts resources\n• Damages nearby enemies over time\n• Direct damage is reflected back to the attacker
+		Attributes: Actor-VSPK-Attributes
 		Description: Actor-VSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6110,7 +6110,7 @@ ISPK:
 	Tooltip:
 		Name: Actor-ISPK-Name
 	TooltipExtras:
-		Attributes: • Enriches Tiberium trees (3 max)\n• Empowers units with Resource Conversion upgrade
+		Attributes: Actor-ISPK-Attributes
 		Description: Actor-ISPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6163,7 +6163,7 @@ CSPK:
 	Tooltip:
 		Name: Actor-CSPK-Name
 	TooltipExtras:
-		Attributes: • Produces non-defense buildings\n• Allows non-defense buildings to be built nearby once fully charged
+		Attributes: Actor-CSPK-Attributes
 		Description: Actor-CSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6242,9 +6242,9 @@ BUZZ:
 		Name: Actor-BUZZ-Name
 	TooltipExtras:
 		Description: Actor-BUZZ-TooltipExtrasDescription
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Untargetable\n• Blinds enemies
+		Strengths: Actor-BUZZ-Strengths
+		Weaknesses: Actor-BUZZ-Weaknesses
+		Attributes: Actor-BUZZ-Attributes
 	RevealsShroud:
 		MinRange: 1c0
 		Range: 6c0
@@ -6370,7 +6370,7 @@ GRCL:
 		Name: Actor-GRCL-Name
 	TooltipExtras:
 		Description: Actor-GRCL-TooltipExtrasDescription
-		Attributes: • Heals nearby allies\n• Slows and drains health from enemies\n• Disables power plants
+		Attributes: Actor-GRCL-Attributes
 	RenderSprites:
 		Palette: caneon
 	WithMakeAnimation:
@@ -6697,7 +6697,7 @@ REBELGATEWAY:
 	Tooltip:
 		Name: Actor-REBELGATEWAY-Name
 	TooltipExtras:
-		Attributes: • Can be powered down to disable, or sold to remove\n• Structures must be manually linked for gateway to function
+		Attributes: Actor-REBELGATEWAY-Attributes
 		Description: Actor-REBELGATEWAY-TooltipExtrasDescription
 	RenderSprites:
 		Image: wormholelg

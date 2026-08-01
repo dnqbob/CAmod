@@ -41,7 +41,7 @@ WorldLoaded = function()
 	Tanya.GrantCondition("difficulty-" .. Difficulty)
 
 	SetupFindTanyaObjective()
-	ObjectiveDestroyTiberiumStores = GDI.AddObjective("Destroy all Scrin Tiberium stores.")
+	ObjectiveDestroyTiberiumStores = GDI.AddObjective("Lua-duality-destroy-all-scrin")
 	SetupKeepAliveObjectives()
 
 	CommandoDeathTrigger(Commando)
@@ -88,13 +88,13 @@ end
 OncePerSecondChecks = function()
 	if DateTime.GameTime > 1 and DateTime.GameTime % 25 == 0 then
 		if NumSilosRemaining == 0 and not GDI.IsObjectiveCompleted(ObjectiveDestroyTiberiumStores) then
-			ObjectiveEscape = GDI.AddObjective("Exit the facility.")
+			ObjectiveEscape = GDI.AddObjective("Lua-duality-exit-the-facility")
 			SetEscapeText()
 			GDI.MarkCompletedObjective(ObjectiveDestroyTiberiumStores)
 			local exitFlare = Actor.Create("flare", true, { Owner = GDI, Location = Exit.Location })
 			Beacon.New(GDI, Exit.CenterPosition)
 			PlaySpeechNotificationToMissionPlayers("SignalFlare")
-			Notification("Signal flare detected.")
+			Notification("Lua-duality-signal-flare-detected")
 			Trigger.OnEnteredProximityTrigger(Exit.CenterPosition, WDist.New(3 * 1024), function(a, id)
 				if IsMissionPlayer(a.Owner) and a.Type ~= "flare" then
 					Trigger.AfterDelay(DateTime.Seconds(5), function()
@@ -151,12 +151,12 @@ end
 
 -- overridden in co-op version
 UpdateObjectiveText = function()
-	UserInterface.SetMissionText("Tiberium stores remaining: " .. NumSilosRemaining , HSLColor.Yellow)
+	UserInterface.SetMissionText("Lua-duality-tiberium-stores-remaining" .. NumSilosRemaining , HSLColor.Yellow)
 end
 
 ActivateProdigy = function()
 	if not Prodigy.IsDead then
-		Notification("We're tracking a powerful Scrin unit. Do not engage!")
+		Notification("Lua-duality-were-tracking-a")
 		MediaCA.PlaySound(MissionDir .. "/c_powerfulscrin.aud", 2)
 		Prodigy.GrantCondition("activated")
 		Beacon.New(GDI, Prodigy.CenterPosition)
@@ -205,7 +205,7 @@ CommandoDeathTrigger = function(commando)
 	Trigger.OnKilled(commando, function(self, killer)
 		GDI.MarkFailedObjective(ObjectiveCommandoSurvive)
 		if RespawnEnabled then
-			Notification("Commando respawns in 20 seconds.")
+			Notification("Lua-duality-commando-respawns-in")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnWaypoint = Exit
 				if NumSilosRemaining == 0 then
@@ -225,7 +225,7 @@ TanyaDeathTrigger = function(tanya)
 	Trigger.OnKilled(tanya, function(self, killer)
 		GDI.MarkFailedObjective(ObjectiveTanyaSurvive)
 		if RespawnEnabled then
-			Notification("Tanya respawns in 20 seconds.")
+			Notification("Lua-duality-tanya-respawns-in")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnWaypoint = Exit
 				if NumSilosRemaining == 0 then
@@ -286,7 +286,7 @@ end
 
 -- overridden in co-op version
 SetupFindTanyaObjective = function()
-	ObjectiveFindTanya = GDI.AddObjective("Find Tanya.")
+	ObjectiveFindTanya = GDI.AddObjective("Lua-duality-find-tanya")
 
 	Trigger.OnEnteredProximityTrigger(Tanya.CenterPosition, WDist.New(7 * 1024), function(a, id)
 		if IsMissionPlayer(a.Owner) then
@@ -301,11 +301,11 @@ end
 -- overridden in co-op version
 SetupKeepAliveObjectives = function()
 	if not RespawnEnabled then
-		ObjectiveCommandoSurvive = GDI.AddObjective("Commando must survive.")
-		ObjectiveTanyaSurvive = GDI.AddObjective("Tanya must survive.")
+		ObjectiveCommandoSurvive = GDI.AddObjective("Lua-duality-commando-must-survive")
+		ObjectiveTanyaSurvive = GDI.AddObjective("Lua-duality-tanya-must-survive")
 	else
-		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("Keep Commando alive.")
-		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("Keep Tanya alive.")
+		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("Lua-duality-commando-survive")
+		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("Lua-duality-tanya-survive")
 	end
 end
 
@@ -317,8 +317,8 @@ end
 
 SetEscapeText = function()
 	if GDI.IsObjectiveCompleted(ObjectiveFindTanya) then
-		UserInterface.SetMissionText("Exit the facility." , HSLColor.Lime)
+		UserInterface.SetMissionText("Lua-duality-exit-the-facility" , HSLColor.Lime)
 	else
-		UserInterface.SetMissionText("Find Tanya and exit the facility." , HSLColor.Lime)
+		UserInterface.SetMissionText("Lua-duality-find-tanya-and" , HSLColor.Lime)
 	end
 end

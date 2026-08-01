@@ -90,12 +90,12 @@ WorldLoaded = function()
 		end
 
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("Hackers can remotely take control of enemy structures, defenses and drone vehicles.")
-			Tip("Stealth units can be detected by enemy defenses, as well as infantry at close range.")
+			Tip("Lua-subversion-tip-hackers")
+			Tip("Lua-subversion-tip-stealth")
 		end)
 	end
 
-	ObjectiveHackIonControl = Nod.AddObjective("Hack into GDI Advanced Comms Center.")
+	ObjectiveHackIonControl = Nod.AddObjective("Lua-subversion-hack-ion")
 
 	CommandoDeathTrigger(Commando)
 	HackerDeathTrigger(Hacker1)
@@ -131,7 +131,7 @@ WorldLoaded = function()
 				DroneTipShown = true
 				Trigger.RemoveFootprintTrigger(id)
 				if not MammothDrone.IsDead and not IsMissionPlayer(MammothDrone.Owner) then
-					Tip("Mammoth Drone detected. Hackers can take control of this vehicle.")
+					Tip("Lua-subversion-tip-mammoth-drone")
 				end
 			end
 		end)
@@ -144,11 +144,11 @@ WorldLoaded = function()
 				Trigger.RemoveProximityTrigger(id)
 				if p == BridgeDefendersReveal1 and not BridgeTipShown then
 					BridgeTipShown = true
-					Tip("Too many guards up ahead. Find a way to neutralise them.")
+					Tip("Lua-subversion-tip-guards")
 				end
 				if IsNormalOrBelow() and p == EmpDroneReveal and not EmpDroneTipShown then
 					EmpDroneTipShown = true
-					Media.DisplayMessage("That E.M.P Drone could come in handy.", "Hacker", HSLColor.FromHex("00FF00"))
+					Media.DisplayMessage("Lua-subversion-emp-drone", "Lua-subversion-speaker-hacker", HSLColor.FromHex("00FF00"))
 				end
 				local camera = Actor.Create("smallcamera", true, { Owner = Nod, Location = p.Location })
 				Trigger.AfterDelay(DateTime.Seconds(4), function()
@@ -203,9 +203,9 @@ OncePerSecondChecks = function()
 		if not IonControlHacked and IsMissionPlayer(IonControl.Owner) then
 			IonControlHacked = true
 			InitBridgesObjective()
-			ObjectiveDestroyAlliedBase = Nod.AddObjective("Use the Ion Cannon to destroy the Allied base.")
+			ObjectiveDestroyAlliedBase = Nod.AddObjective("Lua-subversion-destroy-allied-base")
 			Nod.MarkCompletedObjective(ObjectiveHackIonControl)
-			UserInterface.SetMissionText("Destroy bridges then use the Ion Cannon to destroy the Allied base.", HSLColor.Yellow)
+			UserInterface.SetMissionText("Lua-subversion-destroy-bridges", HSLColor.Yellow)
 			MediaCA.PlaySound(MissionDir .. "/n_useioncannon.aud", 2)
 			BaseCamera1 = Actor.Create("camera", true, { Owner = Nod, Location = AlliedBase1.Location })
 			BaseCamera2 = Actor.Create("camera", true, { Owner = Nod, Location = AlliedBase2.Location })
@@ -292,7 +292,7 @@ end
 CommandoDeathTrigger = function(commando)
 	Trigger.OnKilled(commando, function(self, killer)
 		if RespawnEnabled then
-			Notification("Commando arriving in 20 seconds.")
+			Notification("Lua-subversion-commando-respawn")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnedCommando = Reinforcements.Reinforce(self.Owner, { "rmbo" }, { Respawn.Location, RespawnRally.Location })[1]
 				Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -310,7 +310,7 @@ HackerDeathTrigger = function(hacker)
 	Trigger.OnKilled(hacker, function(self, killer)
 		if #self.Owner.GetActorsByType("hack") == 0 and not Nod.IsObjectiveCompleted(ObjectiveHackIonControl) then
 			if RespawnEnabled then
-				Notification("Hacker arriving in 20 seconds.")
+				Notification("Lua-subversion-hacker-respawn")
 				Trigger.AfterDelay(DateTime.Seconds(20), function()
 					local respawnedHacker = Reinforcements.Reinforce(self.Owner, { "hack" }, { Respawn.Location, RespawnRally.Location })[1]
 					Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -331,7 +331,7 @@ StealthTankDeathTrigger = function(stealthTank)
 	Trigger.OnKilled(stealthTank, function(self, killer)
 		if #self.Owner.GetActorsByType("stnk.nod") == 0 then
 			if RespawnEnabled then
-				Notification("Stealth Tank arriving in 20 seconds.")
+				Notification("Lua-subversion-stealth-tank-respawn")
 				Trigger.AfterDelay(DateTime.Seconds(20), function()
 					local respawnedStealthTank = Reinforcements.Reinforce(self.Owner, { "stnk.nod" }, { Respawn.Location, RespawnRally.Location })[1]
 					Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -348,6 +348,6 @@ end
 
 InitBridgesObjective = function()
 	if ObjectiveDestroyBridges == nil then
-		ObjectiveDestroyBridges = Nod.AddObjective("Destroy bridges leading to Allied base.")
+		ObjectiveDestroyBridges = Nod.AddObjective("Lua-subversion-destroy-bridges")
 	end
 end

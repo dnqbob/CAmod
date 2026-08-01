@@ -75,11 +75,11 @@ WorldLoaded = function()
 
 	Sunrise()
 
-	ObjectiveKillReactors = Greece.AddObjective("Destroy the three Atomic Reactors.")
-	ObjectiveKillSAMSites = Greece.AddObjective("Destroy Soviet SAM sites along shoreline.")
-	ObjectiveKillSilos = Greece.AddObjective("Destroy Atom Bomb silos before they launch.")
-	ObjectiveNeutralizeChronosphere = Greece.AddObjective("Neutralize the Chronosphere.")
-	ObjectiveKeepAlive = Greece.AddSecondaryObjective("Keep all team members alive.")
+	ObjectiveKillReactors = Greece.AddObjective("Lua-containment-destroy-reactors")
+	ObjectiveKillSAMSites = Greece.AddObjective("Lua-containment-destroy-sam")
+	ObjectiveKillSilos = Greece.AddObjective("Lua-containment-destroy-silos")
+	ObjectiveNeutralizeChronosphere = Greece.AddObjective("Lua-containment-neutralize-chronosphere")
+	ObjectiveKeepAlive = Greece.AddSecondaryObjective("Lua-containment-keep-alive")
 
 	LandingCraft.Move(LandingCraftExit.Location)
 	LandingCraft.Destroy()
@@ -195,8 +195,8 @@ WorldLoaded = function()
 		end)
 
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip('Disguise your spy by "attacking" enemy infantry. Dogs can see through the disguise.')
-			Tip("Navy SEALs can swim.")
+			Tip("Lua-containment-tip-disguise")
+			Tip("Lua-containment-tip-seals")
 		end)
 
 		if Difficulty == "easy" then
@@ -245,7 +245,7 @@ WorldLoaded = function()
 			NukeDummy.Destroy()
 			Media.PlaySound("nukelaunch.aud")
 			PlaySpeechNotificationToMissionPlayers("AbombLaunchDetected")
-			Notification("A-Bomb launch detected.")
+			Notification("Lua-containment-abomb-launch")
 
 			Trigger.AfterDelay(DateTime.Seconds(15), function()
 				WhiteOut = true
@@ -337,7 +337,7 @@ end
 DoShoreSAMFlare = function()
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		ShoreSAMFlare = Actor.Create("flare", true, { Owner = Greece, Location = ShoreSAMFlareLocation })
-		Notification("Signal flare detected. A shore SAM Site has been located. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification(UserInterface.GetFluentMessage("Lua-containment-signal-flare-sam", { ["0"] = "[" .. UtilsCA.Hotkey("ToLastEvent") .. "]" }))
 		MediaCA.PlaySound(MissionDir .. "/r_samlocated.aud", 2)
 		Beacon.New(Greece, ShoreSAMBeaconPosition)
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -443,7 +443,7 @@ DropChronoPrison = function()
 	PlaySpeechNotificationToMissionPlayers("SignalFlare")
 
 	Trigger.AfterDelay(DateTime.Seconds(1), function()
-		Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification(UserInterface.GetFluentMessage("Lua-containment-signal-flare", { ["0"] = "[" .. UtilsCA.Hotkey("ToLastEvent") .. "]" }))
 		Beacon.New(Greece, CarryallDropPoint.CenterPosition)
 	end)
 
@@ -451,7 +451,7 @@ DropChronoPrison = function()
 		local entryPath = { CarryallEntryPoint.Location, CarryallDropPoint.Location }
 		local exitPath =  { CarryallEntryPoint.Location }
 		ReinforcementsCA.ReinforceWithTransport(Greece, "ocar.chpr", nil, entryPath, exitPath)
-		Notification("Rendezvous with the Chrono Prison and proceed to the Chronosphere.")
+		Notification("Lua-containment-rendezvous")
 		MediaCA.PlaySound(MissionDir .. "/r_cprendezvous.aud", 2)
 
 		Trigger.OnEnteredProximityTrigger(CarryallDropPoint.CenterPosition, WDist.New(2048), function(a, id)
@@ -482,7 +482,7 @@ RespawnTrigger = function(a, loc)
 			else
 				name = "SEAL"
 			end
-			Notification(name .. " respawns in 20 seconds.")
+			Notification(UserInterface.GetFluentMessage("Lua-containment-respawn", { ["0"] = name }))
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnedActor = Actor.Create(a.Type, true, { Owner = a.Owner, Location = loc })
 				Beacon.New(a.Owner, PlayerStart.CenterPosition)

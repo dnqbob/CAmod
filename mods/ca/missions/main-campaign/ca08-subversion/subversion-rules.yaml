@@ -5,16 +5,16 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, subversion.lua
 	MissionData:
-		Briefing: The Allies are now gripped by fear and suspicion. We must seize this opportunity to further destabilize their uneasy alliance with GDI.\n\nVery recently GDI launched one of their orbital weapons platforms. Both groups are being cautious about what information they give each other. The Allies were only partially informed and are predictably concerned, given recent events.\n\nLet us turn their fear into anger. Take control of GDI's Ion Cannon control systems and use the weapon against the Allies.
+		Briefing: Map-Briefing
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
-		Label: Respawns
-		Description: Enable/disable respawning on death
+		Label: Game-CA-Dropdown-Respawns-Label
+		Description: Game-CA-Dropdown-Respawns-Description
 		Values:
-			enabled: Enabled
-			disabled: Disabled
+			enabled: Map-Respawn-enabled
+			disabled: Map-Respawn-disabled
 		Default: disabled
 		DisplayOrder: 999
 	MusicPlaylist:
@@ -58,7 +58,8 @@ MEMP:
 	GrantTimedConditionOnDeploy:
 		RequiresCondition: !(empdisable || being-warped)
 	Tooltip:
-		Name: E.M.P Drone
+		Name: Lua-subversion-emp-drone-name
+		GenericName: Lua-subversion-emp-drone-name
 		GenericVisibility: None
 	Voiced:
 		-RequiresCondition:

@@ -234,16 +234,16 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitGenerals()
 
-	ObjectiveEliminateMarinesko = USSR.AddObjective("Defeat General Marinesko's forces.")
-	ObjectiveEliminateRomanov = USSR.AddObjective("Defeat Deputy Chairman Romanov's forces.")
-	ObjectiveEliminateKrukov = USSR.AddObjective("Defeat General Krukov's forces.")
+	ObjectiveEliminateMarinesko = USSR.AddObjective("Lua-statecraft-defeat-general-marineskos")
+	ObjectiveEliminateRomanov = USSR.AddObjective("Lua-statecraft-defeat-deputy-chairman")
+	ObjectiveEliminateKrukov = USSR.AddObjective("Lua-statecraft-defeat-general-krukovs")
 
 	Trigger.OnCapture(RomanovIndustrialPlant, function(self, captor, oldOwner, newOwner)
 		Actor.Create("captured.indp", true, { Owner = USSR })
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("Romanov. Marinesko. Krukov. Comrade General, you must crush these pretenders. The Union must prevail!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-statecraft-romanov-marinesko-krukov", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/cdko_crushtraitors.aud", 2)
 	end)
 

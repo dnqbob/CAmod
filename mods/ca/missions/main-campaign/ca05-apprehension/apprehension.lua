@@ -57,9 +57,9 @@ WorldLoaded = function()
 		Actor.Create("radar.dummy", true, { Owner = p })
 	end)
 
-    ObjectiveDestroySAMSites = Greece.AddObjective("Destroy Nod SAM Sites.")
-	ObjectiveClearBase = Greece.AddObjective("Clear the Nod naval base.")
-	ObjectiveApprehendTransports = Greece.AddObjective("Secure Nod transports.")
+    ObjectiveDestroySAMSites = Greece.AddObjective("Lua-apprehension-destroy-sam")
+	ObjectiveClearBase = Greece.AddObjective("Lua-apprehension-clear-base")
+	ObjectiveApprehendTransports = Greece.AddObjective("Lua-apprehension-secure-transports")
 
 	UpdateMissionText()
 
@@ -157,7 +157,7 @@ WorldLoaded = function()
 		else
 			rangersDesc = "Ranger is"
 		end
-		Tip("Your " .. rangersDesc .. " equipped with the Advanced Optics upgrade. Press [" .. UtilsCA.Hotkey("Deploy") .. "] (deploy) to activate for increased vision for a limited time.")
+		Tip(UserInterface.GetFluentMessage("Lua-apprehension-tip-rangers", { ["0"] = rangersDesc, ["1"] = "[" .. UtilsCA.Hotkey("Deploy") .. "]" }))
 	end)
 
 	AfterWorldLoaded()
@@ -226,7 +226,7 @@ end
 
 UpdateMissionText = function()
 	if SAMCount > 0 then
-		UserInterface.SetMissionText(SAMCount .. " SAM sites remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-apprehension-sam-remaining", { tostring(SAMCount) }, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -253,7 +253,7 @@ end
 
 InitLongbows = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Air support inbound.")
+	Notification("Lua-apprehension-air-support")
 	local targets = { Obelisk3, Obelisk1, Obelisk2, Turret1, Turret2 }
 	local delay = DateTime.Seconds(2)
 

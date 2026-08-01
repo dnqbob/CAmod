@@ -68,9 +68,9 @@ WorldLoaded = function()
 	InitGDI()
 	InitChina()
 
-	ObjectiveAcquireWeapons = USSR.AddObjective("Acquire Chinese weapons.")
-	ObjectiveExpelGDI = USSR.AddObjective("Remove the GDI presence.")
-	ObjectiveDestroyOutpost = USSR.AddSecondaryObjective("Destroy GDI outpost to receive reinforcements.")
+	ObjectiveAcquireWeapons = USSR.AddObjective("Lua-procurement-acquire-chinese-weapons")
+	ObjectiveExpelGDI = USSR.AddObjective("Lua-procurement-remove-the-gdi")
+	ObjectiveDestroyOutpost = USSR.AddSecondaryObjective("Lua-procurement-destroy-outpost")
 
 	if IsHardOrAbove() then
 		NonHardTroopCrawler.Destroy()
@@ -94,7 +94,7 @@ WorldLoaded = function()
 			McvRequested = true
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("Lua-procurement-reinforcements-have-arrived")
 				DoMcvArrival()
 				Beacon.New(USSR, McvRally.CenterPosition)
 				McvArrived = true
@@ -252,7 +252,7 @@ InitWeaponsCache = function(withOutpostFlare)
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
 				local outpostFlare = Actor.Create("flare", true, { Owner = USSR, Location = GDIOutpostFlare.Location })
 				PlaySpeechNotificationToMissionPlayers("SignalFlare")
-				Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+				Notification("Lua-procurement-signal-flare-detected" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
 				Beacon.New(USSR, GDIOutpostFlare.CenterPosition)
 
 				Trigger.OnEnteredProximityTrigger(GDIOutpostFlare.CenterPosition, WDist.New(6 * 1024), function(a, id)
@@ -271,9 +271,9 @@ InitCommsCenterObjective = function()
 		return
 	end
 
-	Media.DisplayMessage("Comrade General, we have reason to believe vital information can be found within the GDI comms network. Capture one of their Communications Centers at all costs!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("Lua-procurement-comrade-general-we", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 
-	ObjectiveCaptureComms = USSR.AddObjective("Capture a GDI Communications Center.")
+	ObjectiveCaptureComms = USSR.AddObjective("Lua-procurement-capture-a-gdi")
 	Media.PlaySound("beacon.aud")
 
 	Utils.Do(CommsCenters, function(c)
@@ -325,7 +325,7 @@ InitChinaRevenge = function()
 
 	ChinaRevengeStarted = true
 
-	Notification("The Chinese are retaliating!")
+	Notification("Lua-procurement-the-chinese-are")
 
 	local chinaUnits = Utils.Where(China.GetActors(), function(a)
 		return a.HasProperty("Attack") or a.HasProperty("StartBuildingRepairs")

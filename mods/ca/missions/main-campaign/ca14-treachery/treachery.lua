@@ -87,8 +87,8 @@ WorldLoaded = function()
 	HaloDropper = Actor.Create("powerproxy.halodrop", false, { Owner = USSR })
 	ShockDropper = Actor.Create("powerproxy.shockdrop", false, { Owner = USSR })
 
-	ObjectiveKillTraitor = USSR.AddObjective("Find and kill the traitor General Yegorov.")
-	ObjectiveFindSovietBase = USSR.AddSecondaryObjective("Take control of abandoned Soviet base.")
+	ObjectiveKillTraitor = USSR.AddObjective("Lua-treachery-kill-traitor")
+	ObjectiveFindSovietBase = USSR.AddSecondaryObjective("Lua-treachery-take-abandoned-base")
 
 	AbandonedHalo.ReturnToBase(AbandonedHelipad)
 	SetupRefAndSilosCaptureCredits(Traitor)
@@ -150,7 +150,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Boris, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("Boris has been killed.")
+			Notification("Lua-treachery-boris-killed")
 			MediaCA.PlaySound(MissionDir .. "/r2_boriskilled.aud", 2)
 		end)
 	end)
@@ -190,11 +190,11 @@ WorldLoaded = function()
 	Trigger.OnCapture(TraitorTechCenter, function(self, captor, oldOwner, newOwner)
 		if IsMissionPlayer(newOwner) then
 			if ObjectiveCaptureTraitorTechCenter == nil then
-				ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Capture Traitor's Tech Center.")
+				ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Lua-treachery-capture-tech-center")
 			end
 			USSR.MarkCompletedObjective(ObjectiveCaptureTraitorTechCenter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Notification("The traitor's tech center is ours! Let us rain down V3 rockets on the traitor, or perhaps crush him under the tracks of a Mammoth Tank!")
+				Notification("Lua-treachery-tech-center")
 			end)
 		end
 	end)
@@ -298,7 +298,7 @@ TraitorTechCenterDiscovered = function()
 	PlaySpeechNotificationToMissionPlayers("SignalFlare")
 
 	if ObjectiveCaptureTraitorTechCenter == nil then
-		ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Capture Traitor's Tech Center.")
+		ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Lua-treachery-capture-tech-center")
 		if TraitorTechCenter.IsDead then
 			USSR.MarkFailedObjective(ObjectiveCaptureTraitorTechCenter)
 		end

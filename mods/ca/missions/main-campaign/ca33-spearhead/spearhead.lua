@@ -45,8 +45,8 @@ WorldLoaded = function()
 	InitNod()
 	UpdateMissionText()
 
-	ObjectiveDestroyShardLaunchers = GDI.AddObjective("Destroy Scrin Shard Launchers.")
-    ObjectiveCaptureComms = GDI.AddObjective("Locate and capture Nod Communications Center.")
+	ObjectiveDestroyShardLaunchers = GDI.AddObjective("Lua-spearhead-destroy-scrin-shard")
+    ObjectiveCaptureComms = GDI.AddObjective("Lua-spearhead-locate-and-capture")
 
 	if IsHardOrBelow() then
 		HardOnlyTripod.Destroy()
@@ -124,7 +124,7 @@ UpdateMissionText = function()
 	ShardLaunchersRemaining = #Utils.Where(ShardLaunchers, function(s) return not s.IsDead end)
 
 	if ShardLaunchersRemaining > 0 then
-		UserInterface.SetMissionText("Shard Launchers remaining: " .. ShardLaunchersRemaining, HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-spearhead-shard-launchers-remaining" .. ShardLaunchersRemaining, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -148,7 +148,7 @@ end
 
 InitMcv = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("Lua-spearhead-reinforcements-have-arrived")
     local entryPath = { CarryallSpawn.Location, CarryallDest.Location }
     local exitPath =  { CarryallSpawn.Location }
     ReinforcementsCA.ReinforceWithTransport(GDI, "ocar.amcv", nil, entryPath, exitPath)

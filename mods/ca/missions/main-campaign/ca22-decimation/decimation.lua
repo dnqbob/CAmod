@@ -177,13 +177,13 @@ WorldLoaded = function()
 		end)
 	end
 
-	ObjectiveDestroyBases = Scrin.AddObjective("Eliminate Soviet bases.")
-	ObjectiveDestroyUncrewed = Scrin.AddObjective("Destroy all uncrewed Soviet vehicles.")
-	ObjectiveDestroySAMs = Scrin.AddSecondaryObjective("Destroy front line of Soviet SAM Sites.")
+	ObjectiveDestroyBases = Scrin.AddObjective("Lua-decimation-eliminate-bases")
+	ObjectiveDestroyUncrewed = Scrin.AddObjective("Lua-decimation-destroy-uncrewed")
+	ObjectiveDestroySAMs = Scrin.AddSecondaryObjective("Lua-decimation-destroy-sams")
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-decimation-reinforcements-arrived")
 		Reinforcements.Reinforce(Scrin, { "devo" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 		Reinforcements.Reinforce(Scrin, { "devo" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)
 	end)
@@ -192,7 +192,7 @@ WorldLoaded = function()
 		Utils.Do(MissionPlayers, function(p)
 			Actor.Create("reaperaccess", true, { Owner = p })
 		end)
-		Notification("You have been granted access to Reaper Tripods.")
+		Notification("Lua-decimation-granted-tripods")
 		MediaCA.PlaySound(MissionDir .. "/s_reaperaccess.aud", 2)
 	end)
 
@@ -204,7 +204,7 @@ WorldLoaded = function()
 				end
 			end)
 			DefensesOffline = true
-			Notification("Soviet power supply neutralized; defenses are now offline.")
+			Notification("Lua-decimation-power-neutralized")
 			MediaCA.PlaySound(MissionDir .. "/s_sovietpoweroffline.aud", 2)
 		end)
 	end)
@@ -228,11 +228,11 @@ WorldLoaded = function()
 			Actor.Create("fleetaccess", true, { Owner = p })
 		end)
 		Scrin.MarkCompletedObjective(ObjectiveDestroySAMs)
-		Notification("Scrin fleet vessels now available.")
+		Notification("Lua-decimation-fleet-available")
 		MediaCA.PlaySound(MissionDir .. "/s_scrinfleet.aud", 2)
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
-			Notification("Reinforcements have arrived.")
+			Notification("Lua-decimation-reinforcements-arrived")
 			PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
 			Reinforcements.Reinforce(Scrin, { "pac" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 			Reinforcements.Reinforce(Scrin, { "pac" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)
@@ -251,12 +251,12 @@ WorldLoaded = function()
 		if IsMissionPlayer(a.Owner) and a.Type ~= "camera" then
 			Trigger.RemoveProximityTrigger(id)
 
-			Notification("The entrance to the Soviet equipment holding area has been located.")
+			Notification("Lua-decimation-entrance-located")
 			MediaCA.PlaySound(MissionDir .. "/s_sovietholdingarea.aud", 2)
 
 			if not DefensesOffline then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(5)), function()
-					Notification("Substantial defenses detected. Recommened neutralizing power before beginning assault.")
+					Notification("Lua-decimation-defenses-detected")
 					MediaCA.PlaySound(MissionDir .. "/s_neutralizepower.aud", 2)
 				end)
 			end
@@ -379,7 +379,7 @@ end
 
 DevastatorReinforcements = function()
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-decimation-reinforcements-arrived")
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
 		Reinforcements.Reinforce(Scrin, { "deva" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 		Reinforcements.Reinforce(Scrin, { "deva" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)

@@ -95,12 +95,12 @@ WorldLoaded = function()
 	InitUSSR()
 	SetupChurchMoneyCrates(Neutral)
 
-	ObjectiveEliminateSoviets = Greece.AddObjective("Eliminate the Soviet presence.")
-	ObjectiveNeutralizeDomes = Greece.AddSecondaryObjective("Neutralize Soviet Radar Domes.")
+	ObjectiveEliminateSoviets = Greece.AddObjective("Lua-dissection-eliminate-the-soviet")
+	ObjectiveNeutralizeDomes = Greece.AddSecondaryObjective("Lua-dissection-neutralize-domes")
 
 	Trigger.AfterDelay(DateTime.Seconds(1), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-dissection-reinforcements-have-arrived")
 		DoMcvArrival()
 	end)
 
@@ -239,7 +239,7 @@ UpdateMissionText = function()
 	end
 
 	if not AllDomesDisabled then
-		UserInterface.SetMissionText("Soviet bombing run ETA " .. UtilsCA.FormatTimeForGameSpeed(TicksUntilBombingRun), color)
+		UserInterface.SetMissionText("Lua-dissection-soviet-bombing-run" .. UtilsCA.FormatTimeForGameSpeed(TicksUntilBombingRun), color)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -281,7 +281,7 @@ AssumeControl = function(player, side)
 
 	AssumedControl = true
 
-	Notification("Command transfer complete.")
+	Notification("Lua-dissection-command-transfer-complete")
 	MediaCA.PlaySound(MissionDir .. "/r_transfer.aud", 2)
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
@@ -357,7 +357,7 @@ InitBombingRun = function()
 	end
 
 	if #targets > 0 then
-		Notification("Warning, bombing run incoming.")
+		Notification("Lua-dissection-warning-bombing-run")
 		MediaCA.PlaySound(MissionDir .. "/r_bombingrun.aud", 2)
 
 		Utils.Do(targets, function(t)
@@ -411,7 +411,7 @@ DomeDisabled = function(d)
 		numDomesDisabled = numDomesDisabled + 1
 	end
 
-	Notification("Radar Dome neutralized, Soviet bombing runs have been delayed.")
+	Notification("Lua-dissection-radar-dome-neutralized")
 
 	if numDomesDisabled >= #SovietDomes then
 		AllDomesDisabled = true

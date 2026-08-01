@@ -19,7 +19,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, subjugation.lua
 	MissionData:
-		Briefing: We have located the one known as Yuri. Cloistered and protected by his cybernetic and genetically engineered slaves, he has been using an enriched form of ichor to empower his already considerable psionic powers.\n\nHe must be stopped, but kept alive so that we may learn more of his experiments.\n\nWe believe the enriched ichor will be similarly effective at increasing the power of our Masterminds. To test this theory, capture Yuri's enrichment facilities. The enriched ichor will be consumed by the Mastermind who will then be capable of protecting your other units against Yuri's influence.\n\nOnce all of the available enriched ichor has been consumed, use whatever forces you have remaining, along with any you have enslaved, to assault and capture Yuri's command center.
+		Briefing: Map-Briefing
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

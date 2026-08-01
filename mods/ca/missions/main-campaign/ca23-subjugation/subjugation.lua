@@ -108,9 +108,9 @@ WorldLoaded = function()
 	InitObjectives(Scrin)
 	InitUSSR()
 
-	ObjectiveCaptureTibFacilities = Scrin.AddObjective("Capture three Tiberium enrichment facilities.")
+	ObjectiveCaptureTibFacilities = Scrin.AddObjective("Lua-subjugation-capture-tib")
 	if not RespawnEnabled then
-		ObjectiveMastermindSurvives = Scrin.AddObjective("Mastermind must survive.")
+		ObjectiveMastermindSurvives = Scrin.AddObjective("Lua-subjugation-mastermind-survive")
 	end
 
 	Mastermind.GrantCondition("difficulty-" .. Difficulty)
@@ -129,16 +129,16 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Media.DisplayMessage("Your powers are no match for me. Flee through your wormholes, while you can.", "Yuri", HSLColor.FromHex("FF00BB"))
+		Media.DisplayMessage("Lua-subjugation-yuri-taunt", "Lua-subjugation-speaker-yuri", HSLColor.FromHex("FF00BB"))
 		MediaCA.PlaySound(MissionDir .. "/yuri_taunt.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("The Mastermind can mind control up to three enemy units. Mind controlling a fourth will kill the earliest controlled.")
+			Tip("Lua-subjugation-tip-mastermind-control")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
 				Tip("The Mastermind has a targeted ability that creates mind sparks from himself and his slaves which damage and slow nearby enemies (the slaves will be unharmed).")
 				Trigger.AfterDelay(DateTime.Seconds(7), function()
-					Tip("The Mastermind can take control of enemy buildings. Production structures will be able to produce permanently enslaved units.")
+					Tip("Lua-subjugation-tip-mastermind-buildings")
 					Trigger.AfterDelay(DateTime.Seconds(7), function()
-						Tip("Stay out of Yuri's area of influence until your Mastermind becomes powerful enough to protect your units.")
+						Tip("Lua-subjugation-tip-stay-away")
 					end)
 				end)
 			end)
@@ -173,16 +173,16 @@ WorldLoaded = function()
 
 			if TibFacilitiesCaptured == 3 then
 				if ObjectiveCaptureYuriHQ == nil then
-					ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+					ObjectiveCaptureYuriHQ = Scrin.AddObjective("Lua-subjugation-capture-yuri-hq")
 				end
 				Scrin.MarkCompletedObjective(ObjectiveCaptureTibFacilities)
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("Enriched ichor consumed. Your Mastermind has become a Prodigy and is able to protect nearby units from Yuri's influence.")
+					Notification("Lua-subjugation-prodigy")
 					MediaCA.PlaySound(MissionDir .. "/s_prodigy.aud", 2)
 				end)
 			else
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("Enriched ichor consumed. Mastermind mind control capacity increased by 1.")
+					Notification("Lua-subjugation-capacity-increased")
 					MediaCA.PlaySound(MissionDir .. "/s_ichorconsumed.aud", 2)
 				end)
 			end
@@ -191,7 +191,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(YuriHQ, function(self, killer)
 		if ObjectiveCaptureYuriHQ == nil then
-			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Lua-subjugation-capture-yuri-hq")
 		end
 
 		if not IsMissionPlayer(self.Owner) then
@@ -201,7 +201,7 @@ WorldLoaded = function()
 
 	Trigger.OnCapture(YuriHQ, function(self, captor, oldOwner, newOwner)
 		if ObjectiveCaptureYuriHQ == nil then
-			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Lua-subjugation-capture-yuri-hq")
 		end
 
 		Scrin.MarkCompletedObjective(ObjectiveCaptureYuriHQ)
@@ -216,10 +216,10 @@ WorldLoaded = function()
 
 				if not FirstShipmentAnnounced then
 					FirstShipmentAnnounced = true
-					Notification("Enriched ichor shipment detected. Dispatch is imminent. Prevent it from reaching Yuri's command center.")
+					Notification("Lua-subjugation-shipment-imminent")
 					MediaCA.PlaySound(MissionDir .. "/s_firstichorshipment.aud", 2)
 				else
-					Notification("Enriched ichor shipment detected.")
+					Notification("Lua-subjugation-shipment-detected")
 					MediaCA.PlaySound(MissionDir .. "/s_ichorshipment.aud", 2)
 				end
 
@@ -239,7 +239,7 @@ WorldLoaded = function()
 								Trigger.RemoveFootprintTrigger(id)
 								YuriHQ.GrantCondition("enriched")
 								a.Destroy()
-								Notification("A shipment of enriched ichor has reached Yuri's command center and he has grown more powerful.")
+								Notification("Lua-subjugation-shipment-delivered")
 								MediaCA.PlaySound(MissionDir .. "/s_yuripower.aud", 2)
 								if t.Objective ~= nil and not Scrin.IsObjectiveCompleted(t.Objective) then
 									Scrin.MarkFailedObjective(t.Objective)
@@ -267,7 +267,7 @@ WorldLoaded = function()
 			Trigger.RemoveProximityTrigger(id)
 			if not YuriDefenderTipShown then
 				YuriDefenderTipShown = true
-				Tip("Yuri's command center is heavily guarded. Brute force is unlikely to be the best approach.")
+				Tip("Lua-subjugation-tip-guarded")
 			end
 		end
 	end)
@@ -363,7 +363,7 @@ RespawnMastermind = function()
 		mastermindName = "Prodigy"
 	end
 
-	Notification("The " .. mastermindName .. " used its considerable psionic powers to cheat death. It will return in 20 seconds.")
+	Notification(UserInterface.GetFluentMessage("Lua-subjugation-mastermind-fled", { ["0"] = mastermindName }))
 
 	Trigger.AfterDelay(DateTime.Seconds(20), function()
 		local wormhole = Actor.Create("wormhole", true, { Owner = Scrin, Location = PlayerStart.Location })

@@ -175,18 +175,18 @@ WorldLoaded = function()
 	InitScrin()
 	InitScrinRebels()
 
-	ObjectiveDestroyOverlordForces = Nod.AddObjective("Destroy Scrin forces loyal to the Overlord.")
+	ObjectiveDestroyOverlordForces = Nod.AddObjective("Lua-reckoning-destroy-scrin-forces")
 
 	if not IsCoop then
-		ObjectiveDefendRebels = Nod.AddObjective("Protect Scrin rebel forces.")
+		ObjectiveDefendRebels = Nod.AddObjective("Lua-reckoning-protect-scrin-rebel")
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("The Overlord's tyranny will die today commander, and a new era will begin. Elsewhere, battles are still raging, but the decisive blow must be dealt here where his most elite forces are gathered. Show no mercy commander. Peace through power.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-reckoning-the-overlords-tyranny", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_nomercy.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()
-			Media.DisplayMessage("Foolish humans! Your armies will be crushed, the rebellion will fall, and you will die here!", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+			Media.DisplayMessage("Lua-reckoning-foolish-humans-your", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 			MediaCA.PlaySound(MissionDir .. "/overlordwarning.aud", 2)
 
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(60)), function()
@@ -237,7 +237,7 @@ OncePerFiveSecondChecks = function()
 
 		if not PlayerHasBuildings(Scrin) and #Scrin.GetActorsByType("etpd") == 0 and not Victory then
 			Victory = true
-			Media.DisplayMessage("The Overlord's fate is sealed, and the Scrin are liberated. Now we must return to Earth and forge a new beginning for mankind. With purified Tiberium the possibilites are truly limitless, and those who embrace its light will share in its blessings. Those who do not, will be left in the darkness.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-reckoning-the-overlords-fate", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_newbeginning.aud", 2)
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(19)), function()
 				Nod.MarkCompletedObjective(ObjectiveDestroyOverlordForces)
@@ -361,7 +361,7 @@ InitGDI = function()
 		Media.PlaySound("beacon.aud")
 
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Media.DisplayMessage("Our forces were successful in luring GDI here and they have established a base. The situation has been explained to them and they have agreed to a cease fire, but remain vigilant commander, our old enemy cannot be trusted.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-reckoning-our-forces-were", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_gdibase.aud", 2)
 		end)
 
@@ -399,11 +399,11 @@ SendNextExterminator = function()
 
 			if NextExterminatorIndex == 1 then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-					Media.DisplayMessage("Commander, the Overlord's most powerful weapons are being deployed. Use everything at your disposal to destroy them.", "Kane", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("Lua-reckoning-commander-the-overlords", "Kane", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_exterminators.aud", 2)
 				end)
 			else
-				Notification("Exterminator Tripod detected.")
+				Notification("Lua-reckoning-exterminator-tripod-detected")
 			end
 
 			local exterminator = Reinforcements.Reinforce(Scrin, { "etpd" }, { exterminatorLocations.SpawnLocation }, 10, function(a)

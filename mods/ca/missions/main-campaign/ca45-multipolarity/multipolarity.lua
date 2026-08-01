@@ -174,10 +174,10 @@ WorldLoaded = function()
 
 	MissionPlayersDefenseValue = 0
 
-	ObjectiveSecureBase = Greece.AddObjective("Secure the decommissioned Allied base.")
+	ObjectiveSecureBase = Greece.AddObjective("Lua-multipolarity-secure-the-decommissioned")
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
-		Media.DisplayMessage("This area is under GDI jurisdiction. Remove your forces immediately commander. If you advance, we will open fire.", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-multipolarity-this-area-is", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_jurisdiction.aud", 2)
 	end)
 
@@ -201,7 +201,7 @@ WorldLoaded = function()
 				Greece.MarkCompletedObjective(ObjectiveSecureBase)
 
 				Trigger.AfterDelay(DateTime.Seconds(3), function()
-					Media.DisplayMessage("You will pay dearly for this transgression! Prepare to witness the full force of the GDI war machine!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+					Media.DisplayMessage("Lua-multipolarity-you-will-pay", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 					MediaCA.PlaySound(MissionDir .. "/hth_paydearly.aud", 2)
 				end)
 
@@ -245,7 +245,7 @@ WorldLoaded = function()
 			InitCaptureHQObjective()
 			if not FinalTaunt then
 				FinalTaunt = true
-				Media.DisplayMessage("You will not stop me from bringing Kane and his minions to justice!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+				Media.DisplayMessage("Lua-multipolarity-you-will-not", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 				MediaCA.PlaySound(MissionDir .. "/hth_notstop.aud", 2)
 			end
 		end
@@ -413,7 +413,7 @@ FlipAlliedBase = function()
 	Trigger.AfterDelay(McvDelayTime[Difficulty], function()
 		Beacon.New(Greece, McvDest.CenterPosition)
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-multipolarity-reinforcements-have-arrived")
 		DoMcvArrival()
 
 		Utils.Do(MissionPlayers, function(p)
@@ -505,10 +505,10 @@ HawthorneClaimSovietBase = function()
 	HawthorneClaimedSovietBase = true
 
 	if NodBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Soviet equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-multipolarity-two-can-play2", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequip.aud", 2)
 	else
-		Media.DisplayMessage("I think it's high time I got some use out of that old Soviet base!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-multipolarity-i-think-its", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequipauto.aud", 2)
 	end
 
@@ -560,10 +560,10 @@ HawthorneClaimNodBase = function()
 	HawthorneClaimedNodBase = true
 
 	if SovietBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Nod equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-multipolarity-two-can-play", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequip.aud", 2)
 	else
-		Media.DisplayMessage("That Nod base has been sitting idle for too long. It's time I got some use out of it!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-multipolarity-that-nod-base", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequipauto.aud", 2)
 	end
 
@@ -713,12 +713,12 @@ end
 
 InitCaptureHQObjective = function()
 	if not ObjectiveCaptureHQ then
-		ObjectiveCaptureHQ = Greece.AddObjective("Capture Gen. Hawthorne's Command Center.")
+		ObjectiveCaptureHQ = Greece.AddObjective("Lua-multipolarity-capture-gen-hawthornes")
 	end
 end
 
 DoFinale = function()
-	Media.DisplayMessage("This is far from over! You will regret making an enemy of me!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+	Media.DisplayMessage("Lua-multipolarity-this-is-far", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 	MediaCA.PlaySound(MissionDir .. "/hth_farfromover.aud", 2)
 
 	Hawthorne = Actor.Create("xo.hawthorne", true, { Owner = GDI, Location = HawthorneSpawn.Location })

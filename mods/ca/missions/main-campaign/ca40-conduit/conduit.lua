@@ -111,7 +111,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitNod()
 
-	ObjectiveSecureGateway = USSR.AddObjective("Eliminate Nod forces near gateway.")
+	ObjectiveSecureGateway = USSR.AddObjective("Lua-conduit-eliminate-nod-forces")
 
 	Trigger.OnAllKilledOrCaptured({ NodEastAirstrip, NodEastHand }, function()
 		InitNodSouth()
@@ -143,7 +143,7 @@ OncePerSecondChecks = function()
 		if Difficulty ~= "easy" and TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Kane's forces will begin returning in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionText("Lua-conduit-kanes-forces-will" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 			else
 				TimerTicks = 0
 				UserInterface.SetMissionText("")
@@ -228,7 +228,7 @@ end
 InitKaneReturn = function()
 	if not KaneReturnInitiated then
 		KaneReturnInitiated = true
-		Media.DisplayMessage("The Overlord will not be your salvation. Your empire is dead. Surrender, or be destroyed. My return will not be stopped.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-conduit-the-overlord-will", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_return.aud", 2.5)
 		DeployCyborgs()
 	end

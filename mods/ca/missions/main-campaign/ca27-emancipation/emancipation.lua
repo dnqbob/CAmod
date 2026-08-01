@@ -85,12 +85,12 @@ WorldLoaded = function()
 	InitObjectives(GDI)
 	InitScrin()
 
-	ObjectiveLiberateBases = GDI.AddObjective("Kill Masterminds to liberate GDI bases.")
+	ObjectiveLiberateBases = GDI.AddObjective("Lua-emancipation-kill-masterminds-to")
 
 	if Difficulty == "easy" then
 		NormalHardOnlyTripod.Destroy()
 	else
-		ObjectiveMinimiseCasualties = GDI.AddObjective("Avoid killing mind controlled GDI units.")
+		ObjectiveMinimiseCasualties = GDI.AddObjective("Lua-emancipation-avoid-killing-mind")
 	end
 
 	if Difficulty == "brutal" then
@@ -103,18 +103,18 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Tip("Drones (e.g. Guardian Drones, Mini Drones, Battle Drones, Mammoth Drones and Mobile EMP) are immune to mind control.")
+		Tip("Lua-emancipation-drones-eg-guardian")
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("Masterminds are also unable to mind control aircraft.")
+			Tip("Lua-emancipation-masterminds-are-also")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
-				Tip("Larger drones (Battle Drones, Mammoth Drones and Mobile EMP) require an active radar to function.")
+				Tip("Lua-emancipation-larger-drones-battle")
 			end)
 		end)
 	end)
 
 	Trigger.OnAllKilled(Masterminds, function()
 		if ObjectiveEliminateScrin == nil then
-			ObjectiveEliminateScrin = GDI.AddObjective("Destroy the remaining Scrin presence in the area.")
+			ObjectiveEliminateScrin = GDI.AddObjective("Lua-emancipation-destroy-the-remaining")
 		end
 		GDI.MarkCompletedObjective(ObjectiveLiberateBases)
 		if ObjectiveMinimiseCasualties ~= nil and EnslavedUnitsKilled <= MaxEnslavedUnitsKilled[Difficulty] then
@@ -126,11 +126,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind1, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The first GDI base has been released from Scrin control.")
+			Notification("Lua-emancipation-the-first-gdi")
 			MediaCA.PlaySound(MissionDir .. "/c_firstbasereleased.aud", 2)
 			if not Mastermind2.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("The next GDI base is located to the north-east.")
+					Notification("Lua-emancipation-the-next-gdi")
 					MediaCA.PlaySound(MissionDir .. "/c_secondbaselocated.aud", 2)
 				end)
 			end
@@ -139,11 +139,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind2, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The second GDI base has been released from Scrin control.")
+			Notification("Lua-emancipation-the-second-gdi")
 			MediaCA.PlaySound(MissionDir .. "/c_secondbasereleased.aud", 2)
 			if not Mastermind3.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("GDI airbase located to the south-east.")
+					Notification("Lua-emancipation-gdi-airbase-located")
 					MediaCA.PlaySound(MissionDir .. "/c_airbaselocated.aud", 2)
 				end)
 			end
@@ -152,23 +152,23 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind3, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("GDI airbase secured.")
+			Notification("Lua-emancipation-gdi-airbase-secured")
 			MediaCA.PlaySound(MissionDir .. "/c_airbasereleased.aud", 2)
 
 			if not Mastermind4.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("The primary GDI base is located to the south.")
+					Notification("Lua-emancipation-the-primary-gdi2")
 					MediaCA.PlaySound(MissionDir .. "/c_primarybaselocated.aud", 2)
 					if not Mastermind5.IsDead then
 						Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-							Notification("We have also lost contact with our outpost on the island to the north.")
+							Notification("Lua-emancipation-we-have-also")
 							MediaCA.PlaySound(MissionDir .. "/c_island.aud", 2)
 						end)
 					end
 				end)
 			elseif not Mastermind5.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("We have also lost contact with our outpost on the island to the north.")
+					Notification("Lua-emancipation-we-have-also")
 					MediaCA.PlaySound(MissionDir .. "/c_island.aud", 2)
 				end)
 			end
@@ -177,11 +177,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind4, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The primary GDI base has been released from Scrin control.")
+			Notification("Lua-emancipation-the-primary-gdi")
 			MediaCA.PlaySound(MissionDir .. "/c_primarybasereleased.aud", 2)
 			if not Mastermind1.IsDead or not Mastermind2.IsDead or not Mastermind3.IsDead or not Mastermind5.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("Eliminate the remaining Masterminds before assaulting the Scrin base.")
+					Notification("Lua-emancipation-eliminate-the-remaining")
 					MediaCA.PlaySound(MissionDir .. "/c_remainingmasterminds.aud", 2)
 				end)
 			end
@@ -189,7 +189,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.OnKilled(Mastermind5, function(self, killer)
-		Notification("Good job getting our EMP Missile launcher back. This should come in very handy.")
+		Notification("Lua-emancipation-good-job-getting")
 	end)
 
 	Trigger.AfterDelay(1, function()
@@ -214,7 +214,7 @@ WorldLoaded = function()
 					MastermindsLocated[tostring(m)] = true
 					Trigger.RemoveProximityTrigger(id)
 					local camera = Actor.Create("smallcamera", true, { Owner = GDI, Location = m.Location })
-					Notification("A Mastermind has been located.")
+					Notification("Lua-emancipation-a-mastermind-has")
 					Beacon.New(GDI, m.CenterPosition)
 					Trigger.AfterDelay(DateTime.Seconds(4), function()
 						camera.Destroy()
@@ -273,7 +273,7 @@ OncePerSecondChecks = function()
 
 		if not PlayerHasBuildings(Scrin) then
 			if ObjectiveEliminateScrin == nil then
-				ObjectiveEliminateScrin = GDI.AddObjective("Eliminate the Scrin presence.")
+				ObjectiveEliminateScrin = GDI.AddObjective("Lua-emancipation-eliminate-the-scrin")
 			end
 			GDI.MarkCompletedObjective(ObjectiveEliminateScrin)
 		end
@@ -341,7 +341,7 @@ UpdateObjectiveText = function()
 
 		UserInterface.SetMissionText(objectiveText, objectiveTextColor)
 	else
-		UserInterface.SetMissionText("Eliminate the Scrin presence.", HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-emancipation-eliminate-the-scrin", HSLColor.Yellow)
 	end
 end
 

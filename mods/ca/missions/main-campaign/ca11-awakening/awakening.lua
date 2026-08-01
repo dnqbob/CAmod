@@ -187,7 +187,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitUSSR()
 
-	ObjectiveProtectTemple = Nod.AddObjective("Protect Temple Prime.")
+	ObjectiveProtectTemple = Nod.AddObjective("Lua-awakening-protect-temple")
 
 	if IsHardOrAbove() then
 		Utils.Do(GetMissionPlayersActorsByType("mlrs"), function(a)
@@ -225,11 +225,11 @@ OncePerSecondChecks = function()
 				TimerTicks = 0
 			end
 
-			UserInterface.SetMissionText("Protect Temple Prime - Time Remaining: " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+			UserInterface.SetMissionTextWithArgs("Lua-awakening-time-remaining", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 
 		elseif not Nod.IsObjectiveCompleted(ObjectiveProtectTemple) then
-			UserInterface.SetMissionText("Destroy all Soviet forces.", HSLColor.Yellow)
-			ObjectiveDestroySovietForces = Nod.AddObjective("Destroy all Soviet forces.")
+			UserInterface.SetMissionText("Lua-awakening-destroy-soviets", HSLColor.Yellow)
+			ObjectiveDestroySovietForces = Nod.AddObjective("Lua-awakening-destroy-soviets")
 			Nod.MarkCompletedObjective(ObjectiveProtectTemple)
 
 			Utils.Do(MissionPlayers, function(p)
@@ -319,11 +319,11 @@ InitUSSR = function()
 		attemptCount = attemptCount + 1
 		Trigger.AfterDelay(BaseAttemptTimes[attemptCount], function()
 			if ObjectiveDestroyBases == nil then
-				Notification("The Soviets are attempting to set up a base in the area.")
+				Notification("Lua-awakening-soviets-building")
 				MediaCA.PlaySound(MissionDir .. "/n_sovietbase.aud", 2)
-				ObjectiveDestroyBases = Nod.AddSecondaryObjective("Crush any Soviet attempts to establish a base\nbefore the timer runs out.")
+				ObjectiveDestroyBases = Nod.AddSecondaryObjective("Lua-awakening-crush-soviet-bases")
 			else
-				Notification("The Soviets are attempting to set up another base.")
+				Notification("Lua-awakening-soviets-another")
 				MediaCA.PlaySound(MissionDir .. "/n_anothersovietbase.aud", 2)
 			end
 			Reinforcements.Reinforce(USSR, { "mcv" }, { attempt.SpawnLocation, attempt.DeployLocation }, 0, function(a)

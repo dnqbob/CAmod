@@ -168,13 +168,13 @@ WorldLoaded = function()
 	InitObjectives(Scrin)
 	InitNod()
 
-	ObjectiveEliminateNodHarvesting = Scrin.AddObjective("Eliminate all enemy harvesting operations.")
-	ObjectiveHarvestFields = Scrin.AddObjective("Establish and maintain harvesting operations\nat all six blue ichor fields.")
+	ObjectiveEliminateNodHarvesting = Scrin.AddObjective("Lua-proliferation-eliminate-harvesting")
+	ObjectiveHarvestFields = Scrin.AddObjective("Lua-proliferation-harvest-fields")
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Tip("A tiberium field is considered occupied when it has been cleared of Nod forces and when you have both a refinery and an active harvester nearby.")
+		Tip("Lua-proliferation-tip-occupied")
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("The more lucrative your harvesting operation becomes, the more reinforcements will be provided to you.")
+			Tip("Lua-proliferation-tip-lucrative")
 		end)
 	end)
 
@@ -202,7 +202,7 @@ WorldLoaded = function()
 		Trigger.OnAllKilled(r.SAMSites, function()
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("Lua-proliferation-reinforcements-arrived")
 				Beacon.New(Scrin, r.Spawn.CenterPosition)
 				Reinforcements.Reinforce(Scrin, { "stmr" }, { r.Spawn.Location, r.Dest.Location }, 25)
 			end)
@@ -306,7 +306,7 @@ CheckFields = function()
 
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
 					PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-					Notification("Reinforcements have arrived.")
+					Notification("Lua-proliferation-reinforcements-arrived")
 					Beacon.New(Scrin, field.Waypoint.CenterPosition)
 
 					local reinforcements = Reinforcements.Reinforce(Scrin, field.Reinforcements, { field.Waypoint.Location }, 10, function(a)
@@ -326,7 +326,7 @@ CheckFields = function()
 	end)
 
 	if FieldsClearedAndBeingHarvested < PreviousFieldsClearedAndBeingHarvested then
-		Notification("You have lost control of an ichor field.")
+		Notification("Lua-proliferation-field-lost")
 		MediaCA.PlaySound(MissionDir .. "/s_ichorfieldlost.aud", 2)
 	end
 end
@@ -334,10 +334,9 @@ end
 -- overridden in co-op version
 UpdateObjectiveMessage = function()
 	if FieldsClearedAndBeingHarvested == 6 then
-		UserInterface.SetMissionText("6 of 6 fields occupied.\n   Maintain for " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
+		UserInterface.SetMissionTextWithArgs("Lua-proliferation-fields-occupied", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Lime)
 	else
-		local missionText = FieldsClearedAndBeingHarvested .. " of 6 fields occupied  -  Next reinforcement threshold: $" .. Scrin.Cash + Scrin.Resources .. "/" .. NextReinforcementThreshold
-		UserInterface.SetMissionText(missionText, HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-proliferation-fields-progress", { tostring(FieldsClearedAndBeingHarvested), tostring(Scrin.Cash + Scrin.Resources), tostring(NextReinforcementThreshold) }, HSLColor.Yellow)
 	end
 end
 
@@ -380,7 +379,7 @@ DoReinforcements = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-proliferation-reinforcements-arrived")
 		Beacon.New(Scrin, reinforcementsWaypoint.CenterPosition)
 
 		local reinforcements = Reinforcements.Reinforce(Scrin, { "s1", "s1", "s1", "s3", "s3", "gunw", "seek", "intl", "s1", "s1", "s4", "s1" }, { reinforcementsWaypoint.Location }, 10, function(a)
@@ -422,7 +421,7 @@ CheckColonyPlatform = function()
 
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("Lua-proliferation-reinforcements-arrived")
 				Beacon.New(Scrin, McvReplace.CenterPosition)
 				ColonyPlatformBeingReplaced = false
 				Reinforcements.Reinforce(Scrin, { "smcv" }, { McvReplace.Location })

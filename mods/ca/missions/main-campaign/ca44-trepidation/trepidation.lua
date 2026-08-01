@@ -89,14 +89,14 @@ WorldLoaded = function()
 		Actor.Create("optics.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveExtractSpy = Greece.AddObjective("Get spy to safety.")
+	ObjectiveExtractSpy = Greece.AddObjective("Lua-trepidation-get-spy-to")
 
 	Trigger.AfterDelay(DateTime.Seconds(20), function()
 		CreateSpy()
 		Spy.DisguiseAs(SpyTarget)
 		Spy.Move(SpyDest.Location)
 		MediaCA.PlaySound(MissionDir .. "/r_spydetected.aud", 2)
-		Notification("Allied spy detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification("Lua-trepidation-allied-spy-detected" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
 		Beacon.New(Greece, SpyDest.CenterPosition)
 
 		Trigger.OnKilled(Spy, function()
@@ -143,7 +143,7 @@ OncePerSecondChecks = function()
 
 		if not PlayerHasBuildings(USSR) and not PlayerHasBuildings(Scrin) then
 			if ObjectiveEliminateEnemy == nil then
-				ObjectiveEliminateEnemy = Greece.AddObjective("Eliminate Soviet & Scrin presence.")
+				ObjectiveEliminateEnemy = Greece.AddObjective("Lua-trepidation-eliminate-soviet-scrin")
 			end
 			Greece.MarkCompletedObjective(ObjectiveEliminateEnemy)
 		end
@@ -254,7 +254,7 @@ SpyDeparture = function()
 				Trigger.RemoveFootprintTrigger(id)
 				SpyDeparted = true
 				if ObjectiveEliminateEnemy == nil then
-					ObjectiveEliminateEnemy = Greece.AddObjective("Eliminate Soviet & Scrin presence.")
+					ObjectiveEliminateEnemy = Greece.AddObjective("Lua-trepidation-eliminate-soviet-scrin")
 				end
 				Greece.MarkCompletedObjective(ObjectiveExtractSpy)
 				Spy.Stop()
@@ -267,7 +267,7 @@ SpyDeparture = function()
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
 					Beacon.New(Greece, McvDest.CenterPosition)
 					PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-					Notification("Reinforcements have arrived.")
+					Notification("Lua-trepidation-reinforcements-have-arrived")
 					DoMcvArrival()
 					InitUSSRAttacks()
 					InitScrinAttacks()

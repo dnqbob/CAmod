@@ -27,9 +27,9 @@ WorldLoaded = function()
 	SetupPlayers()
 	InitObjectives(Greece)
 
-	FindEinsteinObjective = Greece.AddObjective("Find Einstein.")
-	TanyaSurviveObjective = Greece.AddObjective("Tanya must survive.")
-	EinsteinSurviveObjective = Greece.AddObjective("Einstein must survive.")
+	FindEinsteinObjective = Greece.AddObjective("Lua-prologue-01-find-einstein")
+	TanyaSurviveObjective = Greece.AddObjective("Lua-prologue-01-tanya-survive")
+	EinsteinSurviveObjective = Greece.AddObjective("Lua-prologue-01-einstein-survive")
 
 	RunInitialActivities()
 
@@ -52,7 +52,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(SubPen, function(self, killer)
 		if ObjectiveDestroySubPen == nil then
-			ObjectiveDestroySubPen = Greece.AddObjective("Destroy the Soviet Sub Pen.")
+			ObjectiveDestroySubPen = Greece.AddObjective("Lua-prologue-01-destroy-sub-pen")
 		end
 
 		if not Greece.IsObjectiveCompleted(ObjectiveDestroySubPen) then
@@ -64,7 +64,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(30), function()
-		Tip("Information is displayed in the bottom right of the screen if any single unit or structure is selected, listing its strengths and weaknesses (as long as Selected Unit Tooltip is enabled in settings).")
+		Tip("Lua-prologue-01-tip-info-panel")
 	end)
 
 	AfterWorldLoaded()
@@ -164,7 +164,7 @@ end
 SendCruisers = function()
 	CruisersArrived = true
 
-	Notification("Allied cruisers have arrived.")
+	Notification("Lua-prologue-01-cruisers-arrived")
 	MediaCA.PlaySound(MissionDir .. "/r_alliedcruisers.aud", 2);
 	Actor.Create("camera", true, { Owner = Greece, Location = CruiserCameraPoint.Location })
 	Beacon.New(Greece, CruiserBeacon.CenterPosition)
@@ -178,14 +178,14 @@ SendCruisers = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
-		Media.DisplayMessage("Encountering Soviet naval presence! We're under heavy fire!", "Cruiser Captain", HSLColor.FromHex("99ACF2"))
+		Media.DisplayMessage("Lua-prologue-01-encountering-naval", "Lua-prologue-01-speaker-cruiser-captain", HSLColor.FromHex("99ACF2"))
 		MediaCA.PlaySound(MissionDir .. "/encountering.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-			Media.DisplayMessage("This is impossible! These waters were cleared!", "Cruiser Captain", HSLColor.FromHex("99ACF2"))
+			Media.DisplayMessage("Lua-prologue-01-impossible-waters", "Lua-prologue-01-speaker-cruiser-captain", HSLColor.FromHex("99ACF2"))
 			MediaCA.PlaySound(MissionDir .. "/impossible.aud", 2)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 				if not SubPen.IsDead and ObjectiveDestroySubPen == nil then
-					ObjectiveDestroySubPen = Greece.AddObjective("Destroy the Soviet Sub Pen.")
+					ObjectiveDestroySubPen = Greece.AddObjective("Lua-prologue-01-destroy-sub-pen")
 					Beacon.New(Greece, SubPen.CenterPosition)
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
 						PrismsArrived = true
@@ -198,11 +198,11 @@ SendCruisers = function()
 							Actor.Create("ptnk", true, { Owner = England, Location = PrismSpawn2.Location, Facing = Angle.East })
 							Actor.Create("ptnk", true, { Owner = England, Location = PrismSpawn3.Location, Facing = Angle.East })
 							Trigger.AfterDelay(DateTime.Seconds(2), function()
-								Notification("Unidentified Allied units detected.")
+								Notification("Lua-prologue-01-unidentified-units")
 								MediaCA.PlaySound(MissionDir .. "/r_unidentified.aud", 2)
 
 								Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(3)), function()
-									Media.DisplayMessage("Another temporal disturbance.. Well, we can work this out later. For now, we are at your disposal commander.", "Unknown", HSLColor.FromHex("99ACF2"))
+									Media.DisplayMessage("Lua-prologue-01-temporal-disturbance", "Lua-prologue-01-speaker-unknown", HSLColor.FromHex("99ACF2"))
 									MediaCA.PlaySound(MissionDir .. "/disturbance.aud", 2)
 									Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(5)), function()
 										local prismTanks = England.GetActorsByType("ptnk")
@@ -243,7 +243,7 @@ CreateEinstein = function()
 	Einstein = Actor.Create(EinsteinType, true, { Location = EinsteinSpawnPoint.Location, Owner = Greece })
 	Einstein.Scatter()
 	Trigger.OnKilled(Einstein, RescueFailed)
-	ExtractObjective = Greece.AddObjective("Bring Einstein to the extraction point and board\nthe transport helicopter.")
+	ExtractObjective = Greece.AddObjective("Lua-prologue-01-extract-einstein")
 	Trigger.AfterDelay(DateTime.Seconds(1), function() PlaySpeechNotificationToMissionPlayers("TargetFreed") end)
 end
 

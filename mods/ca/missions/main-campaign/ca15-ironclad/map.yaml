@@ -2,9 +2,9 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: 15: Ironclad
+Title: Map-Title
 
-Author: Darkademic
+Author: Map-Author
 
 Tileset: SNOW
 
@@ -14,7 +14,9 @@ Bounds: 1,1,96,128
 
 Visibility: MissionSelector
 
-Categories: Campaign
+Categories: Map-Categories-Mission
+
+Translations: en.json5, metadata_en.json5, zh.json5, metadata_zh.json5
 
 LockPreview: True
 

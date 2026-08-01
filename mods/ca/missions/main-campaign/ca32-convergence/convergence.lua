@@ -133,9 +133,9 @@ WorldLoaded = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(10), function()
 		if IsHardOrAbove() then
-			Tip("Scrin fleet vessels will be pinged on the minimap when entering the area.")
+			Tip("Lua-convergence-scrin-fleet-vessels22")
 		else
-			Tip("Scrin fleet vessels will be pinged on the minimap when entering the area and their paths will be visible as long as you have an active radar.")
+			Tip("Lua-convergence-scrin-fleet-vessels2")
 		end
 	end)
 
@@ -143,7 +143,7 @@ WorldLoaded = function()
 		SendFleetWave()
 
 		Trigger.AfterDelay(DateTime.Seconds(120), function()
-			Notification("The area across the river is infested with Tiberium lifeforms. You will need to use aicraft to intercept Scrin fleet vessels attempting to break through there.")
+			Notification("Lua-convergence-the-area-across")
 			MediaCA.PlaySound(MissionDir .. "/c_acrossriver.aud", 2)
 			Beacon.New(GDI, AcrossRiver.CenterPosition)
 			local acrossRiverCamera = Actor.Create("camera", true, { Owner = GDI, Location = AcrossRiver.Location })
@@ -154,9 +154,9 @@ WorldLoaded = function()
 	end)
 
 	if IsHardOrAbove() then
-		ObjectiveStopFleet = GDI.AddObjective("Prevent any Scrin fleet vessels breaking through.")
+		ObjectiveStopFleet = GDI.AddObjective("Lua-convergence-prevent-any-scrin")
 	else
-		ObjectiveStopFleet = GDI.AddObjective("Allow no more than " .. MaxBreakthroughs[Difficulty] .. " fleet vessels through.")
+		ObjectiveStopFleet = GDI.AddObjective("Lua-convergence-allow-no-more" .. MaxBreakthroughs[Difficulty] .. " fleet vessels through.")
 	end
 
 	BottomOfMap = { }
@@ -265,7 +265,7 @@ IonStorm = function()
 end
 
 SendFleetWave = function()
-	Notification("Scrin fleet vessels approaching.")
+	Notification("Lua-convergence-scrin-fleet-vessels")
 	MediaCA.PlaySound(MissionDir .. "/c_scrinfleetvessels.aud", 2)
 	local currentWave = NextWave
 	local interval = 1
@@ -317,7 +317,7 @@ SendFleetWave = function()
 				self.Destroy()
 				NumBreakthroughs = NumBreakthroughs + 1
 				Media.PlaySoundNotification(nil, "AlertBuzzer")
-				Notification("A Scrin fleet vessel has broken through.")
+				Notification("Lua-convergence-a-scrin-fleet")
 			end)
 			if IsNormalOrBelow() then
 				local pathRenderer = Actor.Create("pathRenderer", true, { Owner = GDI, Location = entry })
@@ -354,16 +354,13 @@ SendFleetWave = function()
 end
 
 UpdateMissionText = function()
-	local missionText = "Waves remaining: " .. WavesRemaining
-
-	if IsNormalOrBelow() then
-		missionText = missionText .. " -- Fleet vessels escaped: " .. NumBreakthroughs .. "/" .. MaxBreakthroughs[Difficulty]
-	end
-
 	local color = HSLColor.Yellow
-	if IsNormalOrBelow() and NumBreakthroughs >= MaxBreakthroughs[Difficulty] then
-		color = HSLColor.Red
-	end
+		if IsNormalOrBelow() and NumBreakthroughs >= MaxBreakthroughs[Difficulty] then
+			color = HSLColor.Red
+		end
 
-	UserInterface.SetMissionText(missionText, color)
-end
+		if IsNormalOrBelow() then
+			UserInterface.SetMissionTextWithArgs("Lua-convergence-waves-fleet", { tostring(WavesRemaining), tostring(NumBreakthroughs), tostring(MaxBreakthroughs[Difficulty]) }, color)
+		else
+			UserInterface.SetMissionTextWithArgs("Lua-convergence-waves-remaining", { tostring(WavesRemaining) }, color)
+		end

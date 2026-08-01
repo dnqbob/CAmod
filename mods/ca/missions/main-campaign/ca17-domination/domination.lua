@@ -72,7 +72,7 @@ WorldLoaded = function()
 	InitObjectives(USSR)
 	InitNod()
 
-	ObjectiveStealCodes = USSR.AddObjective("Steal Nod cyborg encryption codes.")
+	ObjectiveStealCodes = USSR.AddObjective("Lua-domination-steal-codes")
 
 	if Difficulty == "easy" then
 		StartLightTank.Destroy()
@@ -107,11 +107,11 @@ WorldLoaded = function()
 	end
 
 	if RespawnEnabled then
-		ObjectiveKeepYuriAlive = USSR.AddSecondaryObjective("Keep Yuri alive.")
+		ObjectiveKeepYuriAlive = USSR.AddSecondaryObjective("Lua-domination-keep-yuri-alive")
 		RespawnTrigger(Yuri)
 		RespawnTrigger(Thief)
 	else
-		ObjectiveKeepYuriAlive = USSR.AddObjective("Yuri must survive.")
+		ObjectiveKeepYuriAlive = USSR.AddObjective("Lua-domination-yuri-survive")
 		Trigger.OnKilled(Thief, function(self, killer)
 			if not USSR.IsObjectiveCompleted(ObjectiveStealCodes) then
 				USSR.MarkFailedObjective(ObjectiveStealCodes)
@@ -127,9 +127,9 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Tip("Yuri can mind control up to three enemy units. Mind controlling a fourth will kill the earliest controlled.")
+		Tip("Lua-domination-tip-yuri-control")
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("Deploying Yuri releases a mind blast around Yuri and his slaves (the slaves will be unharmed).")
+			Tip("Lua-domination-tip-yuri-deploy")
 		end)
 	end)
 
@@ -145,7 +145,7 @@ WorldLoaded = function()
 		Media.PlaySound("powrdn1.aud")
 		Actor.Create("powerproxy.mutabomb", true, { Owner = MissionPlayers[1] })
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("The Genetic Mutation Bomb support power can turn enemy infantry into Brutes under your command. Avoid enemy SAM sites by holding the mouse button when selecting the target, allowing you to control the approach angle.")
+			Tip("Lua-domination-tip-genetic-mutation")
 		end)
 	end)
 
@@ -167,7 +167,7 @@ WorldLoaded = function()
 
 	Trigger.OnInfiltrated(CyberneticsLab, function(self, infiltrator)
 		Actor.Create("cyborgsdecrypted", true, { Owner = Nod })
-		ObjectiveDestroyTemple = USSR.AddObjective("Locate and destroy the Temple of Nod.")
+		ObjectiveDestroyTemple = USSR.AddObjective("Lua-domination-destroy-temple")
 		USSR.MarkCompletedObjective(ObjectiveStealCodes)
 
 		if TempleOfNod.IsDead then
@@ -177,7 +177,7 @@ WorldLoaded = function()
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
 			MediaCA.PlaySound(MissionDir .. "/r2_codesacquired.aud", 2)
-			Notification("Cyborg encryption codes acquired.")
+			Notification("Lua-domination-codes-acquired")
 
 			if EvacStarted then
 				SendEvac()
@@ -199,7 +199,7 @@ WorldLoaded = function()
 			Trigger.RemoveProximityTrigger(id)
 
 			if ObjectiveStealCodes == nil or not USSR.IsObjectiveCompleted(ObjectiveStealCodes) then
-				Notification("Encryption codes are required for mission completion.")
+				Notification("Lua-domination-codes-required")
 				MediaCA.PlaySound(MissionDir .. "/r2_codesrequired.aud", 2)
 				return
 			end
@@ -328,7 +328,7 @@ DisableDefenses = function(actors)
 end
 
 TempleDestroyed = function()
-	ObjectiveEscape = USSR.AddObjective("Bring Yuri to the extraction point.")
+	ObjectiveEscape = USSR.AddObjective("Lua-domination-escape")
 
 	if ObjectiveDestroyTemple ~= nil then
 		USSR.MarkCompletedObjective(ObjectiveDestroyTemple)
@@ -343,7 +343,7 @@ TempleDiscovered = function()
 	if not IsTempleDiscovered then
 		IsTempleDiscovered = true
 		Beacon.New(USSR, TempleOfNod.CenterPosition)
-		Notification("Temple of Nod located.")
+		Notification("Lua-domination-temple-located")
 		MediaCA.PlaySound(MissionDir .. "/r2_templelocated.aud", 2)
 		local autoCamera = Actor.Create("smallcamera", true, { Owner = USSR, Location = TempleOfNodLocation })
 		Trigger.AfterDelay(DateTime.Seconds(5), autoCamera.Destroy)
@@ -363,7 +363,7 @@ SendEvac = function()
 		EvacFlare.Destroy()
 	end
 
-	Notification("Extraction transport inbound.")
+	Notification("Lua-domination-evac-inbound")
 	MediaCA.PlaySound(MissionDir .. "/r2_extraction.aud", 2)
 
 	Reinforcements.ReinforceWithTransport(USSR, "halo.paradrop", nil, { EvacSpawn.Location, EvacLanding.Location }, nil, function(transport, cargo)
@@ -388,13 +388,11 @@ end
 RespawnTrigger = function(a)
 	Trigger.OnKilled(a, function(self, killer)
 		if a.Type == "yuri" then
-			message = "Yuri has used his tremendous psionic power to cheat death. He will return in 20 seconds."
+			Notification("Lua-domination-yuri-respawn")
 			USSR.MarkFailedObjective(ObjectiveKeepYuriAlive)
 		else
-			message = "Yuri has used his tremendous psionic power to save the Thief from death. He will return in 20 seconds."
+			Notification("Lua-domination-thief-respawn")
 		end
-
-		Notification(message)
 
 		local respawnLocation = PlayerStart.Location
 

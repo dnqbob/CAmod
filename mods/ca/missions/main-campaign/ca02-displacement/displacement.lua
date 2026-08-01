@@ -137,12 +137,12 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitScrin()
 
-	ObjectiveClearPath = Greece.AddObjective("Clear a path for inbound convoys.")
+	ObjectiveClearPath = Greece.AddObjective("Lua-displacement-clear-path")
 
 	if IsHardOrBelow() then
-		ObjectiveProtectConvoys = Greece.AddObjective("Do not lose more than " .. MaxLosses[Difficulty] .. " convoy trucks.")
+		ObjectiveProtectConvoys = Greece.AddObjective(UserInterface.GetFluentMessage("Lua-displacement-protect-convoys-limit", { ["0"] = tostring(MaxLosses[Difficulty]) }))
 	else
-		ObjectiveProtectConvoys = Greece.AddObjective("Do not lose any convoy trucks.")
+		ObjectiveProtectConvoys = Greece.AddObjective("Lua-displacement-protect-convoys-no-loss")
 	end
 
 	if IsNormalOrBelow() then
@@ -164,7 +164,7 @@ WorldLoaded = function()
 		end)
 
 		Trigger.AfterDelay(DateTime.Minutes(1), function()
-			Tip("Resources in the vicinity are limited. Explore to find additional sources of income.")
+			Tip("Lua-displacement-tip-resources")
 		end)
 	end
 
@@ -250,16 +250,16 @@ end
 UpdateConvoyCountdown = function()
 	if TimerTicks == 0 then
 		if MaxLosses[Difficulty] == 0 then
-			UserInterface.SetMissionText("Protect the convoy. All trucks must survive." , HSLColor.Yellow)
+			UserInterface.SetMissionText("Lua-displacement-convoy-all-survive", HSLColor.Yellow)
 		else
 			if TrucksLost == MaxLosses[Difficulty] then
-				UserInterface.SetMissionText("Protect the convoy. No more trucks can be lost.", HSLColor.Yellow)
+				UserInterface.SetMissionText("Lua-displacement-convoy-no-more", HSLColor.Yellow)
 			else
-				UserInterface.SetMissionText("Protect the convoy. Acceptable losses: " .. TrucksLost .. " / " ..  MaxLosses[Difficulty] , HSLColor.Yellow)
+				UserInterface.SetMissionTextWithArgs("Lua-displacement-convoy-losses", { tostring(TrucksLost), tostring(MaxLosses[Difficulty]) }, HSLColor.Yellow)
 			end
 		end
 	else
-		UserInterface.SetMissionText("Next convoy arrives in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-displacement-next-convoy", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 	end
 end
 
@@ -292,7 +292,7 @@ InitConvoy = function()
 		ConvoyFlare.Destroy()
 		UpdateConvoyCountdown()
 		PlaySpeechNotificationToMissionPlayers("ConvoyApproaching")
-		Notification("Convoy approaching.")
+		Notification("Lua-displacement-convoy-approaching")
 		CurrentConvoyArrivalComplete = false
 
 		local trucks = Reinforcements.Reinforce(England, ConvoyUnits, nextConvoy.Spawn, 50, function(truck)
@@ -354,15 +354,15 @@ QueueNextConvoy = function(timeUntilNext)
 	NextConvoyIdx = NextConvoyIdx + 1
 	TrucksLostCurrentConvoy = 0
 	if NextConvoyIdx <= #Convoys then
-		UserInterface.SetMissionText("Awaiting next convoy.")
+		UserInterface.SetMissionText("Lua-displacement-awaiting-convoy")
 		Trigger.AfterDelay(timeUntilNext, function()
 			InitConvoy()
 		end)
 	else
-		ObjectiveDestroyScrinBase = Greece.AddObjective("Destroy the alien stronghold.")
+		ObjectiveDestroyScrinBase = Greece.AddObjective("Lua-displacement-destroy-scrin")
 		Greece.MarkCompletedObjective(ObjectiveClearPath)
 		Greece.MarkCompletedObjective(ObjectiveProtectConvoys)
-		UserInterface.SetMissionText("Destroy the alien stronghold.", HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-displacement-destroy-scrin", HSLColor.Yellow)
 	end
 end
 

@@ -158,11 +158,11 @@ WorldLoaded = function()
 		HardNormalAA3.Destroy()
 	end
 
-	ObjectiveDestroyMothership = GDI.AddObjective("Destroy the Scrin Mothership.")
+	ObjectiveDestroyMothership = GDI.AddObjective("Lua-singularity-destroy-the-scrin")
 
 	Trigger.OnAllKilledOrCaptured(NWReactors, function()
 		ScrinDefenseBuff1.Destroy()
-		Notification("The north-western reactors have been destroyed. Scrin defenses have been weakened.")
+		Notification("Lua-singularity-the-northwestern-reactors")
 		MediaCA.PlaySound(MissionDir .. "/c_nwreactorsdown.aud", 2)
 
 		if ScrinDefenseBuff2.IsDead then
@@ -179,7 +179,7 @@ WorldLoaded = function()
 
 	Trigger.OnAllKilledOrCaptured(NEReactors, function()
 		ScrinDefenseBuff2.Destroy()
-		Notification("The north-eastern reactors have been destroyed. Scrin defenses have been weakened.")
+		Notification("Lua-singularity-the-northeastern-reactors")
 		MediaCA.PlaySound(MissionDir .. "/c_nereactorsdown.aud", 2)
 
 		if ScrinDefenseBuff1.IsDead then
@@ -201,14 +201,14 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
-		Media.DisplayMessage("Beginning our attack run. Let's see what we're up against. Over.", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("Lua-singularity-beginning-our-attack", "GDI Pilot", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/pilot_begin.aud", 1.5)
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(10), function()
 		DoInterceptors()
 		Trigger.AfterDelay(DateTime.Seconds(15), function()
-			Media.DisplayMessage("We barely made a scratch! We'll need you to bring those shields down before we can do any damage. Over and out.", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+			Media.DisplayMessage("Lua-singularity-we-barely-made", "GDI Pilot", HSLColor.FromHex("F2CF74"))
 			MediaCA.PlaySound(MissionDir .. "/pilot_barelyscratch.aud", 1.5)
 		end)
 	end)
@@ -243,7 +243,7 @@ WorldLoaded = function()
 		if ObjectiveHackSignalTransmitter ~= nil and not GDI.IsObjectiveCompleted(ObjectiveHackSignalTransmitter) then
 			GDI.MarkFailedObjective(ObjectiveHackSignalTransmitter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Media.DisplayMessage("The Signal Transmitter has been destroyed! Your only option now is to use brute force to bring those shields down. I only hope you can do it in time.", "Nod Commander", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("Lua-singularity-the-signal-transmitter", "Nod Commander", HSLColor.FromHex("FF0000"))
 			end)
 		end
 	end)
@@ -255,7 +255,7 @@ WorldLoaded = function()
 		Trigger.OnDamaged(c, function(self, attacker, damage)
 			if not SleepingCyborgsMessageShown and not Mothership.IsDead and not self.IsDead and self.Health < self.MaxHealth * 0.8 then
 				SleepingCyborgsMessageShown = true
-				Notification("Nod cyborgs appear to be in a hibernation state. The enriched Tiberium is providing powerful regeneration. Recommendation is to not engage.")
+				Notification("Lua-singularity-nod-cyborgs-appear")
 				MediaCA.PlaySound(MissionDir .. "/c_hibernation.aud", 2)
 				Utils.Do(cyborgs, function(c)
 					if not c.IsDead then
@@ -355,7 +355,7 @@ OncePerFiveSecondChecks = function()
 				GDI.MarkCompletedObjective(ObjectiveHackSignalTransmitter)
 			end
 
-			Notification("The Mothership's shields are down. Air attacks resuming.")
+			Notification("Lua-singularity-the-motherships-shields")
 			MediaCA.PlaySound(MissionDir .. "/c_resuming.aud", 2)
 
 			Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -364,7 +364,7 @@ OncePerFiveSecondChecks = function()
 
 				Trigger.AfterDelay(DateTime.Seconds(15), function()
 					if not Mothership.IsDead then
-						Notification("Attack run successful. The Mothership's hull has sustained significant damage. Next attack run ETA 2 minutes.")
+						Notification("Lua-singularity-attack-run-successful")
 						MediaCA.PlaySound(MissionDir .. "/c_attackrunsuccess.aud", 2)
 
 						Trigger.AfterDelay(DateTime.Minutes(2), function()
@@ -373,7 +373,7 @@ OncePerFiveSecondChecks = function()
 
 							Trigger.AfterDelay(DateTime.Seconds(15), function()
 								if not Mothership.IsDead then
-									Notification("Estimate one more pass to destroy the Mothership, ETA 2 minutes.")
+									Notification("Lua-singularity-estimate-one-more")
 									MediaCA.PlaySound(MissionDir .. "/c_onemorepass.aud", 2)
 
 									Trigger.AfterDelay(DateTime.Minutes(2), function()
@@ -541,10 +541,10 @@ DropHackers = function()
 
 	if not FirstHackersArrived then
 		MediaCA.PlaySound(MissionDir .. "/seth_hackers.aud", 2)
-		Media.DisplayMessage("Attention GDI commander. We are sending you some of our hackers. Use them to hack into the Scrin Signal Transmitter. They will be able to bring the Mothership's shields down for you.", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-singularity-attention-gdi-commander", "Nod Commander", HSLColor.FromHex("FF0000"))
 	else
 		MediaCA.PlaySound(MissionDir .. "/seth_morehackers.aud", 2)
-		Media.DisplayMessage("We are sending you another squad of hackers. Perhaps you'll be more careful with them this time.", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-singularity-we-are-sending", "Nod Commander", HSLColor.FromHex("FF0000"))
 	end
 
 	local hackerFlare = Actor.Create("flare", true, { Owner = GDI, Location = HackerDropLanding.Location })
@@ -567,7 +567,7 @@ DropHackers = function()
 
 			if not FirstHackersArrived then
 				if not SignalTransmitter.IsDead then
-					ObjectiveHackSignalTransmitter = GDI.AddSecondaryObjective("Hack Signal Transmitter to bring shields down.")
+					ObjectiveHackSignalTransmitter = GDI.AddSecondaryObjective("Lua-singularity-hack-transmitter")
 				end
 				FirstHackersArrived = true
 			end
@@ -582,7 +582,7 @@ InitChronoTanks = function()
 			return
 		end
 
-		Notification("The Allies have provided a squadron of Chrono Tanks. Use them to destroy Scrin Reactors in the north-east.")
+		Notification("Lua-singularity-the-allies-have")
 		MediaCA.PlaySound(MissionDir .. "/c_chronotanks.aud", 2)
 		local northEastPowerFlare = Actor.Create("flare", true, { Owner = GDI, Location = NorthEastPowerBeacon.Location })
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -608,7 +608,7 @@ InitMADTankAttack = function()
 		if ScrinDefenseBuff1.IsDead then
 			return
 		end
-		Notification("Signal flare detected. The Soviets are sending a MAD Tank to destroy Scrin Reactors in the north-west. They have requested a rendezvous to provide escort.")
+		Notification("Lua-singularity-signal-flare-detected")
 		MediaCA.PlaySound(MissionDir .. "/c_madtank.aud", 2)
 
 		local northWestPowerFlare = Actor.Create("flare", true, { Owner = GDI, Location = MADTankPath9.Location })
@@ -629,7 +629,7 @@ InitMADTankAttack = function()
 
 		MADTank = Actor.Create("qtnk", true, { Owner = USSR, Location = MADTankSpawn.Location, Facing = Angle.East })
 		MADTank.Move(MADTankPath1.Location)
-		Notification("MAD Tank has arrived. Rendezvous to provide escort.")
+		Notification("Lua-singularity-mad-tank-has")
 		MediaCA.PlaySound(MissionDir .. "/c_madtankarrived.aud", 2)
 
 		Trigger.OnDamaged(MADTank, function(self, attacker, damage)
@@ -663,7 +663,7 @@ end
 SendMADTank = function()
 	if not MADTankEnRoute and not MADTank.IsDead then
 		MADTankEnRoute = true
-		Notification("MAD Tank en route to target.")
+		Notification("Lua-singularity-mad-tank-en")
 		MediaCA.PlaySound(MissionDir .. "/c_madtankenroute.aud", 2)
 		MADTank.Move(MADTankPath2.Location)
 		MADTank.Move(MADTankPath3.Location)
@@ -751,7 +751,7 @@ FlipSlaveFaction = function(player, killer)
 		if ScrinDefenseBuff1.IsDead and ScrinDefenseBuff2.IsDead then
 			InitHackers(HackersDelay[Difficulty])
 		end
-		Notification("Nod forces have been released from Scrin control.")
+		Notification("Lua-singularity-nod-forces-have")
 		MediaCA.PlaySound(MissionDir .. "/c_nodreleased.aud", 2)
 	elseif player == SovietSlaves then
 		targetPlayer = USSR
@@ -761,7 +761,7 @@ FlipSlaveFaction = function(player, killer)
 		InitUSSR()
 		InitAttackSquad(Squads.ScrinWest, Scrin)
 		InitMADTankAttack()
-		Notification("Soviet forces have been released from Scrin control.")
+		Notification("Lua-singularity-soviet-forces-have")
 		MediaCA.PlaySound(MissionDir .. "/c_sovietsreleased.aud", 2)
 	elseif player == AlliedSlaves then
 		targetPlayer = Greece
@@ -771,7 +771,7 @@ FlipSlaveFaction = function(player, killer)
 		InitGreece()
 		InitAttackSquad(Squads.ScrinCenter, Scrin)
 		InitChronoTanks()
-		Notification("Allied forces have been released from Scrin control.")
+		Notification("Lua-singularity-allied-forces-have")
 		MediaCA.PlaySound(MissionDir .. "/c_alliesreleased.aud", 2)
 	end
 
@@ -816,7 +816,7 @@ DoFinale = function()
 		end
 	end)
 
-	Notification("Scrin mothership destroyed.")
+	Notification("Lua-singularity-scrin-mothership-destroyed")
 	MediaCA.PlaySound(MissionDir .. "/c_mothershipdestroyed.aud", 2)
 
 	Lighting.Flash("Chronoshift", 10)
@@ -852,7 +852,7 @@ DoFinale = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
 		Beacon.New(GDI, kane.CenterPosition, 50)
-		Media.DisplayMessage("Well commander, we meet at last! Your contribution has been invaluable, unwitting as it may be.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-singularity-well-commander-we", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/outro.aud", 2.5)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(25)), function()
@@ -869,19 +869,19 @@ DoFinale = function()
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(6)), function()
-			Media.DisplayMessage("Ironic isn't it? That GDI should lay the foundation for the Brotherhood's ultimate victory.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-singularity-ironic-isnt-it", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
-			Media.DisplayMessage("Of course the Allies and Soviets played their part as well.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-singularity-of-course-the", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(16)), function()
-			Media.DisplayMessage("My painstaking manipulation of time and space finally bears fruit, and now we stand at the threshold.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-singularity-my-painstaking-manipulation", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(21)), function()
-			Media.DisplayMessage("There is much yet to be done. I have no doubt our paths will cross again.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-singularity-there-is-much", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(27)), function()
@@ -889,7 +889,7 @@ DoFinale = function()
 				kane.Stop()
 				kane.Move(WormholeWP.Location)
 			end
-			UserInterface.SetMissionText("To be continued...", HSLColor.Red)
+			UserInterface.SetMissionText("Lua-singularity-to-be-continued", HSLColor.Red)
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(37)), function()

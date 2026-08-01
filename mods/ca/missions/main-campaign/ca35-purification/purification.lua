@@ -100,8 +100,8 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitScrin()
 
-	ObjectiveChargeDevice = Nod.AddObjective("Bring the device to full power.")
-	ObjectiveProtectLiquidTib = Nod.AddObjective("Protect liquid Tiberium processing plant.")
+	ObjectiveChargeDevice = Nod.AddObjective("Lua-purification-bring-the-device")
+	ObjectiveProtectLiquidTib = Nod.AddObjective("Lua-purification-protect-liquid-tiberium")
 
 	UpdateMissionText()
 
@@ -121,10 +121,10 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("Commander, we must bring the device to full power as quickly as possible. Transporting crystals will take too long, so liquid Tiberium is our only option. We have set up a liquid T production facility. Do not let it be destroyed, and as each shipment becomes available load it into a tanker and bring it to the entrance of the cave system.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-purification-commander-we-must", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_liquidt.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(18)), function()
-			Tip("Move a tanker next to the processing plant to pick up a prepared shipment, then take it to the cave entrance in the north-east.")
+			Tip("Lua-purification-move-a-tanker")
 			Utils.Do({ InitAttacker1, InitAttacker2, InitAttacker3, InitAttacker4 }, function(a)
 				if not a.IsDead then
 					a.AttackMove(PlayerStart.Location)
@@ -143,7 +143,7 @@ WorldLoaded = function()
 	Trigger.OnEnteredFootprint({ LiquidTibPickup1.Location, LiquidTibPickup2.Location }, function(a)
 		if IsMissionPlayer(a.Owner) and not a.IsDead and a.Type == "ttrk" then
 			if not LiquidTibFacility.IsDead and LiquidTibFacility.AmmoCount("primary") == 0 then
-				Notification("No liquid Tiberium currently available for pickup.")
+				Notification("Lua-purification-no-liquid-tiberium")
 			end
 		end
 	end)
@@ -153,7 +153,7 @@ WorldLoaded = function()
 			if a.AmmoCount("primary") == 1 then
 				a.Reload("primary", -1)
 				ShipmentsComplete = ShipmentsComplete + 1
-				Notification("Liquid Tiberium shipment delivered.")
+				Notification("Lua-purification-liquid-tiberium-shipment")
 				MediaCA.PlaySound(MissionDir .. "/n_liquidtibdelivered.aud", 2)
 				UpdateMissionText()
 				if ShipmentsComplete == 5 then
@@ -162,7 +162,7 @@ WorldLoaded = function()
 					Nod.MarkCompletedObjective(ObjectiveProtectLiquidTib)
 				end
 			else
-				Notification("No liquid Tiberium to drop off.")
+				Notification("Lua-purification-no-liquid-tiberium2")
 			end
 		end
 	end)
@@ -201,7 +201,7 @@ OncePerSecondChecks = function()
 					TibLoaded = true
 					t.Reload("primary", 1)
 					LiquidTibFacility.Reload("primary", -1)
-					Notification("Liquid Tiberium transfer complete.")
+					Notification("Lua-purification-liquid-tiberium-transfer")
 					Beacon.New(Nod, t.CenterPosition)
 				end
 			end)
@@ -286,10 +286,7 @@ UpdateMissionText = function()
 		return
 	end
 
-	local shipmentsText = "Shipments complete: " .. ShipmentsComplete .. "/5"
-	local cooldownText = " -- Next shipment ready in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks)
-	UserInterface.SetMissionText(shipmentsText .. cooldownText, HSLColor.Yellow)
-end
+		UserInterface.SetMissionTextWithArgs("Lua-purification-shipments-progress", { tostring(ShipmentsComplete), UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 
 LiquidTibProduced = function()
 	if Nod.IsObjectiveCompleted(ObjectiveChargeDevice) then
@@ -297,7 +294,7 @@ LiquidTibProduced = function()
 	end
 
 	TimerTicks = LiquidTibCooldown
-	Notification("Liquid Tiberium shipment ready.")
+	Notification("Lua-purification-liquid-tiberium-shipment2")
 	MediaCA.PlaySound(MissionDir .. "/n_liquidtibready.aud", 2)
 
 	if not LiquidTibFacility.IsDead then
@@ -307,10 +304,10 @@ LiquidTibProduced = function()
 end
 
 PurificationWave = function()
-	ObjectivePurify = Nod.AddObjective("Await the purification wave.")
+	ObjectivePurify = Nod.AddObjective("Lua-purification-await-the-purification")
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("Well done commander! The device is at full power, and will soon release its purifying energy. The question is, will the Scrin fight for their freedom against the Overlord, or cower in servitude even after such heinous treachery is revealed?", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-purification-well-done-commander", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_purification.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()
@@ -318,7 +315,7 @@ PurificationWave = function()
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(9)), function()
 				PurificationComplete = true
 				Lighting.Flash("Purification", AdjustTimeForGameSpeed(10))
-				ObjectiveDestroyRemainingLoyalists = Nod.AddObjective("Eliminate any hostile Scrin remaining.")
+				ObjectiveDestroyRemainingLoyalists = Nod.AddObjective("Lua-purification-eliminate-any-hostile")
 				Nod.MarkCompletedObjective(ObjectivePurify)
 				PurifyScrin()
 				InitScrinReinforcements()

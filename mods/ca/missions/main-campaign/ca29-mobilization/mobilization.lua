@@ -109,8 +109,8 @@ WorldLoaded = function()
 	InitFriendlies()
 	SetupLightning()
 
-	ObjectiveDestroyWormholes = GDI.AddObjective("Destroy all Scrin wormholes.")
-	ObjectiveDefendHQ = GDI.AddObjective("Protect the Command Center.")
+	ObjectiveDestroyWormholes = GDI.AddObjective("Lua-mobilization-destroy-all-scrin")
+	ObjectiveDefendHQ = GDI.AddObjective("Lua-mobilization-protect-the-command")
 
 	Utils.Do({ Nod, USSR, Greece }, function(p)
 		local groundAttackers = p.GetGroundAttackers()
@@ -184,7 +184,7 @@ end
 
 UpdateMissionText = function()
 	if TimerTicks > 0 then
-		UserInterface.SetMissionText(WormholeCount .. " wormholes remaining. Reinforcements in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-mobilization-wormholes-remaining", { tostring(WormholeCount), UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -294,7 +294,7 @@ SendReinforcements = function()
 	local reinforcements = Reinforcements.Reinforce(GDI, units, path, 50)
 	ReinforcementFlare.Destroy()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("Lua-mobilization-reinforcements-have-arrived")
 	Beacon.New(GDI, Map.CenterOfCell(flareLoc))
 
 	TimerTicks = ReinforcementInterval

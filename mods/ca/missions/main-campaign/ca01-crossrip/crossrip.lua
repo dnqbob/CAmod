@@ -199,8 +199,8 @@ WorldLoaded = function()
 	InitUSSR()
 
 	Trigger.AfterDelay(1, function()
-		ObjectiveEstablishBase = Greece.AddObjective("Establish a base.")
-		UserInterface.SetMissionText("Establish a base.", HSLColor.Yellow)
+		ObjectiveEstablishBase = Greece.AddObjective("Lua-crossrip-establish-base")
+		UserInterface.SetMissionText("Lua-crossrip-establish-base", HSLColor.Yellow)
 	end)
 
 	Trigger.OnKilled(Church, function(self, killer)
@@ -217,10 +217,10 @@ WorldLoaded = function()
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		BaseFlare = Actor.Create("flare", true, { Owner = Greece, Location = DeploySuggestion.Location })
 		PlaySpeechNotificationToMissionPlayers("SignalFlare")
-		Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification(UserInterface.GetFluentMessage("Lua-crossrip-signal-flare", { ["0"] = "[" .. UtilsCA.Hotkey("ToLastEvent") .. "]" }))
 		Beacon.New(Greece, DeploySuggestion.CenterPosition)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Tip("Press [" .. UtilsCA.Hotkey("OpenTeamChat") .. "] to open the chat panel to read previous notification messages.")
+			Tip(UserInterface.GetFluentMessage("Lua-crossrip-tip-chat", { ["0"] = "[" .. UtilsCA.Hotkey("OpenTeamChat") .. "]" }))
 		end)
 
 		Trigger.OnEnteredProximityTrigger(DeploySuggestion.CenterPosition, WDist.New(6 * 1024), function(a, id)
@@ -240,7 +240,7 @@ Tick = function()
 	if not IsBaseEstablished and MissionPlayersHaveConyard() then
 		IsBaseEstablished = true
 		if ObjectiveInvestigateArea == nil then
-			ObjectiveInvestigateArea = Greece.AddObjective("Investigate the area.")
+			ObjectiveInvestigateArea = Greece.AddObjective("Lua-crossrip-investigate-area")
 			UserInterface.SetMissionText("")
 		end
 		Greece.MarkCompletedObjective(ObjectiveEstablishBase)
@@ -249,15 +249,15 @@ Tick = function()
 			InitUSSRAttacks()
 
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
-				Tip("Build a barracks for access to static defenses which should allow you to hold off any early attacks. Use Pillboxes against infantry and Turrets against vehicles.")
+				Tip("Lua-crossrip-tip-barracks")
 			end)
 
 			Trigger.AfterDelay(DateTime.Minutes(2), function()
-				Tip("Mechanics can repair your vehicles in the field. Putting a Mechanic inside an IFV turns it into a repair vehicle. Build a Supply Depot for access to Mechanics.")
+				Tip("Lua-crossrip-tip-mechanics")
 			end)
 
 			Trigger.AfterDelay(DateTime.Minutes(3), function()
-				Tip("Prism Tanks are excellent long range support units that are effective against infantry, defenses and light vehicles. Build a Radar Dome for access to Prism Tanks.")
+				Tip("Lua-crossrip-tip-prism")
 			end)
 		end
 	end
@@ -274,10 +274,10 @@ OncePerSecondChecks = function()
 		if TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Evacuation begins in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionTextWithArgs("Lua-crossrip-evacuation-begins", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 			else
 				TimerTicks = 0
-				UserInterface.SetMissionText("Evacuation underway.", HSLColor.Yellow)
+				UserInterface.SetMissionText("Lua-crossrip-evacuation-underway", HSLColor.Yellow)
 				Greece.MarkCompletedObjective(ObjectiveDefendUntilEvacuation)
 			end
 		end
@@ -416,14 +416,14 @@ ChronosphereDiscovered = function()
 	if not IsChronosphereDiscovered then
 		IsBaseEstablished = true
 		IsChronosphereDiscovered = true
-		Notification("Commander, the Soviets have been attempting to reverse engineer stolen Chronosphere technology! Use whatever means necessary to cease their experiments.")
+		Notification("Lua-crossrip-chronosphere-discovered")
 		MediaCA.PlaySound(MissionDir .. "/r_chronodisc.aud", 2)
 
 		local autoCamera = Actor.Create("smallcamera", true, { Owner = Greece, Location = SovietChronosphereLocation })
 		Trigger.AfterDelay(DateTime.Seconds(5), autoCamera.Destroy)
 
-		ObjectiveCaptureOrDestroyChronosphere = Greece.AddObjective("Capture or destroy the Soviet Chronosphere.")
-		UserInterface.SetMissionText("Capture or destroy the Soviet Chronosphere.", HSLColor.Yellow)
+		ObjectiveCaptureOrDestroyChronosphere = Greece.AddObjective("Lua-crossrip-capture-chronosphere")
+		UserInterface.SetMissionText("Lua-crossrip-capture-chronosphere", HSLColor.Yellow)
 
 		if ObjectiveEstablishBase ~= nil and not Greece.IsObjectiveCompleted(ObjectiveEstablishBase) then
 			Greece.MarkCompletedObjective(ObjectiveEstablishBase)
@@ -462,7 +462,7 @@ InterdimensionalCrossrip = function()
 	Trigger.AfterDelay(1, SpawnWormhole)
 	Trigger.AfterDelay(2, SpawnTibTree)
 
-	ObjectiveDefendUntilEvacuation = Greece.AddObjective("Defend your base until evacuation is prepared.")
+	ObjectiveDefendUntilEvacuation = Greece.AddObjective("Lua-crossrip-defend-evacuation")
 
 	if ObjectiveCaptureOrDestroyChronosphere ~= nil then
 		Greece.MarkCompletedObjective(ObjectiveCaptureOrDestroyChronosphere)
@@ -476,7 +476,7 @@ InterdimensionalCrossrip = function()
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
 		ScrinInvasion()
-		Notification("Unidentified hostile forces detected. Fall back to your base, and prepare for evacuation.")
+		Notification("Lua-crossrip-hostile-forces")
 		MediaCA.PlaySound(MissionDir .. "/r_evac.aud", 2)
 		TimerTicks = EvacuationTime[Difficulty]
 		Trigger.AfterDelay(DateTime.Seconds(7), function()

@@ -147,7 +147,7 @@ WorldLoaded = function()
 		Actor.Create("hazmatsoviet.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveSecurePurifier = USSR.AddObjective("Use the Exterminator Tripod to secure\nthe purification device.")
+	ObjectiveSecurePurifier = USSR.AddObjective("Lua-schism-use-the-exterminator")
 	UpdateMissionText()
 
 	local spyPlaneDummy1 = Actor.Create("spy.plane.dummy", true, { Owner = SpyPlaneProvider })
@@ -173,17 +173,17 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
-		Media.DisplayMessage("Stop this madness. You have no idea what you are dealing with. You will be the end of us all!", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-schism-stop-this-madness", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_stopmadness.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(7)), function()
-			Media.DisplayMessage("Your foolish quest ends here Kane. The Overlord will have your head.", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-schism-your-foolish-quest", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/cdko_quest.aud", 2)
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(7)), function()
 				spyPlaneDummy1.TargetAirstrike(Purifier.CenterPosition, Angle.NorthEast)
 				spyPlaneDummy1.Destroy()
 
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("Lua-schism-reinforcements-have-arrived")
 				Reinforcements.Reinforce(USSR, { "kiro" }, { KirovSpawn1.Location, KirovRally1.Location })
 				Reinforcements.Reinforce(USSR, { "kiro" }, { KirovSpawn2.Location, KirovRally2.Location })
 				DoMcvArrival()
@@ -195,7 +195,7 @@ WorldLoaded = function()
 				end)
 
 				Trigger.AfterDelay(DateTime.Seconds(5), function()
-					Tip("The Iron Curtain must be intact and powered to shield the Exterminator Tripod from purification waves.")
+					Tip("Lua-schism-the-iron-curtain")
 				end)
 			end)
 		end)
@@ -247,7 +247,7 @@ OncePerSecondChecks = function()
 				TimerTicks = DefendDuration[Difficulty]
 
 				if ObjectiveDefendPurifier == nil then
-					ObjectiveDefendPurifier = USSR.AddObjective("Defend the purification device.")
+					ObjectiveDefendPurifier = USSR.AddObjective("Lua-schism-defend-the-purification")
 				end
 
 				USSR.MarkCompletedObjective(ObjectiveSecurePurifier)
@@ -290,7 +290,7 @@ end
 UpdateMissionText = function()
 
 	if USSR.IsObjectiveCompleted(ObjectiveSecurePurifier) then
-		UserInterface.SetMissionText("Purifier teleportation in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-schism-purifier-teleportation-in", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 	else
 		if not Purifier.IsDead and Purifier.Owner == ScrinRebels then
 			local color = HSLColor.Yellow
@@ -395,7 +395,7 @@ MaleficInit = function()
 
 		MediaCA.PlaySound("malefic.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(8), function()
-			Media.DisplayMessage("Impossible! These Scrin are not..  Do not allow the device to be destroyed!", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+			Media.DisplayMessage("Lua-schism-impossible-these-scrin", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 			MediaCA.PlaySound(MissionDir .. "/ovld_impossible.aud", 2)
 
 			Trigger.AfterDelay(DateTime.Seconds(8), function()

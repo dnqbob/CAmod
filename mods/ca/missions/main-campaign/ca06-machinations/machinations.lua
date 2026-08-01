@@ -190,7 +190,7 @@ WorldLoaded = function()
 		InitNodAttacks()
 	end)
 
-	ObjectiveFindLab = Greece.AddObjective("Locate the Nod research lab.")
+	ObjectiveFindLab = Greece.AddObjective("Lua-machinations-locate-lab")
 
 	-- On proximity to lab, reveal it and update objectives.
 	Trigger.OnEnteredProximityTrigger(ResearchLab.CenterPosition, WDist.New(10 * 1024), function(a, id)
@@ -301,7 +301,7 @@ end
 InitNodAttacks = function()
 	if not NodAttacksInitialized then
 		NodAttacksInitialized = true
-		Notification("Nod forces have been alerted to your presence, prepare your defenses!")
+		Notification("Lua-machinations-alerted")
 		MediaCA.PlaySound(MissionDir .. "/r_nodalerted.aud", 2)
 
 		InitAttackSquad(Squads.South, Nod)
@@ -334,13 +334,13 @@ end
 RevealLab = function()
 	if not IsLabRevealed then
 		Beacon.New(Greece, ResearchLab.CenterPosition)
-		ObjectiveCaptureLab = Greece.AddObjective("Capture the Nod research lab.")
+		ObjectiveCaptureLab = Greece.AddObjective("Lua-machinations-capture-lab")
 
 		if ObjectiveFindLab ~= nil and not Greece.IsObjectiveCompleted(ObjectiveFindLab) then
 			Greece.MarkCompletedObjective(ObjectiveFindLab)
 		end
 
-		UserInterface.SetMissionText("Capture the Nod research lab.", HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-machinations-capture-lab", HSLColor.Yellow)
 		LabCamera = Actor.Create("camera.paradrop", true, { Owner = Greece, Location = ResearchLab.Location })
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()

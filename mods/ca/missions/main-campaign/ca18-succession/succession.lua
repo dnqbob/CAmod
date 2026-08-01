@@ -107,9 +107,9 @@ WorldLoaded = function()
 		spyPlaneDummy1.Destroy()
 	end)
 
-    ObjectiveCaptureTemplePrime = USSR.AddObjective("Capture Temple Prime.")
-    ObjectiveCaptureFactories = USSR.AddObjective("Capture all four cyborg manufacturing facilities.")
-	ObjectiveYuriMustSurvive = USSR.AddSecondaryObjective("Protect Yuri.")
+    ObjectiveCaptureTemplePrime = USSR.AddObjective("Lua-succession-capture-temple")
+    ObjectiveCaptureFactories = USSR.AddObjective("Lua-succession-capture-factories")
+	ObjectiveYuriMustSurvive = USSR.AddSecondaryObjective("Lua-succession-protect-yuri")
 
     local factories = { CyborgFactory1, CyborgFactory2, CyborgFactory3, CyborgFactory4 }
     Utils.Do(factories, function(f)
@@ -149,12 +149,12 @@ WorldLoaded = function()
 		if not USSR.IsObjectiveCompleted(ObjectiveYuriMustSurvive) then
 			USSR.MarkFailedObjective(ObjectiveYuriMustSurvive)
 		end
-		Notification("Yuri used his psionic powers to cheat death and has fled the battlefield to recuperate.")
+		Notification("Lua-succession-yuri-fled")
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-succession-reinforcements-arrived")
 		SendKirovs()
 	end)
 

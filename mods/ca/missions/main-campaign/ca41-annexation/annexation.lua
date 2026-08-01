@@ -95,15 +95,15 @@ WorldLoaded = function()
 		Actor.Create("hazmatsoviet.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveCaptureNerveCenter = USSR.AddObjective("Capture rebel Nerve Center.")
-	ObjectiveEliminateRebels = USSR.AddObjective("Eliminate all rebel forces.")
+	ObjectiveCaptureNerveCenter = USSR.AddObjective("Lua-annexation-capture-rebel-nerve")
+	ObjectiveEliminateRebels = USSR.AddObjective("Lua-annexation-eliminate-all-rebel")
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("Assist us to annihilate Kane and the rebels, and you will be rewarded.", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		Media.DisplayMessage("Lua-annexation-assist-us-to", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_assist.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(11)), function()
-			Media.DisplayMessage("The vastness of space, uncorrupted by capitalism, is ours for the taking!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-annexation-the-vastness-of", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/cdko_space.aud", 2)
 		end)
 	end)
@@ -124,7 +124,7 @@ WorldLoaded = function()
 	Trigger.OnCapture(GatewayNerveCenter, function(self, captor, oldOwner, newOwner)
 		if IsMissionPlayer(newOwner) and not USSR.IsObjectiveCompleted(ObjectiveCaptureNerveCenter) then
 			USSR.MarkCompletedObjective(ObjectiveCaptureNerveCenter)
-			ObjectiveHoldNerveCenter = USSR.AddObjective("Protect the captured Nerve Center.")
+			ObjectiveHoldNerveCenter = USSR.AddObjective("Lua-annexation-protect-the-captured")
 			TimerTicks = 0
 			UpdateMissionText()
 
@@ -210,7 +210,7 @@ end
 
 UpdateMissionText = function()
 	if TimerTicks > 0 then
-		UserInterface.SetMissionText("Capture Nerve Center. Gateway collapses in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-annexation-capture-nerve-center" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -274,8 +274,8 @@ end
 
 InitSignalTransmittersObjective = function()
 	if ObjectiveSignalTransmitters == nil then
-		ObjectiveSignalTransmitters = USSR.AddObjective("Capture the three signal transmitters.")
-		Media.DisplayMessage("Capture the rebel Signal Transmiters, and I will unleash my forces to assist you.", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		ObjectiveSignalTransmitters = USSR.AddObjective("Lua-annexation-capture-the-three")
+		Media.DisplayMessage("Lua-annexation-capture-the-rebel", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_capture.aud", 2)
 
 		local transmitters = Utils.Where({ SignalTransmitter1, SignalTransmitter2, SignalTransmitter3 }, function(a)
@@ -311,7 +311,7 @@ InitSignalTransmittersObjective = function()
 					local wormhole = SpawnWormhole(wormholeLoc)
 					Trigger.AfterDelay(DateTime.Seconds(3), function()
 						PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-						Notification("Reinforcements have arrived.")
+						Notification("Lua-annexation-reinforcements-have-arrived")
 						InitScrinReinforcements(wormhole)
 						FleetRecall(transmitterLocation)
 					end)

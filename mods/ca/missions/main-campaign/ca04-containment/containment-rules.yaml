@@ -18,16 +18,16 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, containment.lua
 	MissionData:
-		Briefing: Intel reports that the Soviets are preparing to strike their ruptured Chronosphere with atomic weapons in an attempt to put an end to the damage that it continues to cause. They don't know what they are dealing with. If they succeed, the consequences could be apocalyptic.\n\nThere isn't enough time to launch a full offensive, so our best option is a small, covert operation to take out their missile silos.\n\nThe bulk of the Soviet forces in the region are busy pushing back the alien invaders, so the bases here are vulnerable to such an attack. If all goes to plan, by the time they realize there's a significant threat it will be too late.\n\nWe have been preparing our own means of containing the Chronosphere, and assuming we succeed in stopping the Soviets from launching, this would be as good a time as any to put it to the test.\n\nFirst, you must take out the three atomic reactors that power the Soviet Tesla Coils so that our team can slip by the remaining defenses.\n\nNext, take out the SAM sites along the shoreline to clear a path for our attempt at containment.\n\nThirdly, destroy the two missile silos that are preparing to launch.\n\nThen we will send in our experimental weapon. Escort it to the Chronosphere and neutralize it.
+		Briefing: Map-Briefing
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
-		Label: Respawns
-		Description: Enable/disable respawning on death
+		Label: Game-CA-Dropdown-Respawns-Label
+		Description: Game-CA-Dropdown-Respawns-Description
 		Values:
-			enabled: Enabled
-			disabled: Disabled
+			enabled: Map-Respawn-enabled
+			disabled: Map-Respawn-disabled
 		Default: disabled
 		DisplayOrder: 999
 	MusicPlaylist:
@@ -91,14 +91,15 @@ PDOX.CROSSRIP:
 	Targetable:
 		TargetTypes: Temporal
 	Tooltip:
-		Name: Ruptured Chronosphere
+		Name: Lua-containment-chronosphere-name
+		GenericName: Lua-containment-chronosphere-name
 	Health:
 		HP: 35000
 	Armor:
 		Type: Concrete
 	-TooltipExtras:
 	Buildable:
-		Description: Causes temporal and interdimensional crossrips.
+		Description: Lua-containment-crossrip-desc
 	-Valued:
 	-WithBuildingBib:
 	-WithColoredOverlay@IDISABLE:

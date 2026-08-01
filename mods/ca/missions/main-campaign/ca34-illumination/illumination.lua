@@ -105,8 +105,8 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitScrin()
 
-	ObjectiveFindFragments = Nod.AddObjective("Find the six hidden artifact fragments.")
-	ObjectiveKaneSurvives = Nod.AddObjective("Kane must survive.")
+	ObjectiveFindFragments = Nod.AddObjective("Lua-illumination-find-the-six")
+	ObjectiveKaneSurvives = Nod.AddObjective("Lua-illumination-kane-must-survive")
 
 	local fragments = TibLifeforms.GetActorsByType("fragment")
 
@@ -127,10 +127,10 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("There are six fragments of an artifact hidden within these caverns. Only I have the ability to detect them. Once we have them all, the assembled artifact will lead us to our goal.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-illumination-there-are-six", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_findfragments.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(4), function()
-			Tip("Kane is able to create wormholes which can be used to travel between neighboring chambers. Only Kane can detect the hidden artifact fragments.")
+			Tip("Lua-illumination-kane-is-able")
 		end)
 	end)
 
@@ -144,11 +144,11 @@ WorldLoaded = function()
 				if not FirstFragmentFound then
 					FirstFragmentFound = true
 					Beacon.New(Nod, pos)
-					Media.DisplayMessage("There! We have already found the first fragment.", "Kane", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("Lua-illumination-there-we-have", "Kane", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_firstfragment.aud", 2)
 				elseif FragmentsDetected[fragmentId] == nil then
 					Beacon.New(Nod, pos)
-					Notification("Artifact fragment detected.")
+					Notification("Lua-illumination-artifact-fragment-detected")
 					Media.PlaySound("beacon.aud")
 				end
 
@@ -163,7 +163,7 @@ WorldLoaded = function()
 				FragmentsAcquired[tostring(fragment)] = true
 				FragmentsAcquiredCount = FragmentsAcquiredCount + 1
 				Media.PlaySound("fragment.aud")
-				Notification("Artifact fragment acquired.")
+				Notification("Lua-illumination-artifact-fragment-acquired")
 				UpdateMissionText()
 
 				if FragmentsAcquiredCount == 6 then
@@ -178,8 +178,8 @@ WorldLoaded = function()
 						CaveShroud6.Destroy()
 						CaveShroud7.Destroy()
 						Beacon.New(Nod, HiddenChamberEntrance.CenterPosition)
-						Notification("A hidden chamber has been revealed.")
-						ObjectiveExploreHiddenChamber = Nod.AddObjective("Explore the hidden chamber.")
+						Notification("Lua-illumination-a-hidden-chamber")
+						ObjectiveExploreHiddenChamber = Nod.AddObjective("Lua-illumination-explore-the-hidden")
 
 						local chamberCamera = Actor.Create("camera", true, { Owner = Nod, Location = HiddenChamberEntrance.Location })
 						Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -187,7 +187,7 @@ WorldLoaded = function()
 						end)
 
 						Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(1)), function()
-							Media.DisplayMessage("With the fragments combined the path to our goal is revealed. Now we must get to the chamber before the Scrin.", "Kane", HSLColor.FromHex("FF0000"))
+							Media.DisplayMessage("Lua-illumination-with-the-fragments", "Kane", HSLColor.FromHex("FF0000"))
 							MediaCA.PlaySound(MissionDir .. "/kane_fragmentscombined.aud", 2)
 						end)
 					end)
@@ -210,11 +210,11 @@ WorldLoaded = function()
 		Media.PlaySound("purification.aud")
 		Nod.MarkCompletedObjective(ObjectiveActivatePurifier)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Media.DisplayMessage("The Scrin have no doubt located us by now. Protect the device!", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-illumination-the-scrin-have", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_protect.aud", 2)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				ObjectiveDefendPurifier = Nod.AddObjective("Protect the ancient device.")
-				ObjectiveDestroyWormholes = Nod.AddObjective("Destroy Scrin wormholes.")
+				ObjectiveDefendPurifier = Nod.AddObjective("Lua-illumination-protect-the-ancient")
+				ObjectiveDestroyWormholes = Nod.AddObjective("Lua-illumination-destroy-scrin-wormholes")
 				InitFinalBattle()
 			end)
 		end)
@@ -229,9 +229,9 @@ WorldLoaded = function()
 			PurifierFound = true
 			Trigger.RemoveProximityTrigger(id)
 			Beacon.New(Nod, Purifier.CenterPosition)
-			ObjectiveActivatePurifier = Nod.AddObjective("Activate the ancient device.")
+			ObjectiveActivatePurifier = Nod.AddObjective("Lua-illumination-activate-the-ancient")
 			Nod.MarkCompletedObjective(ObjectiveExploreHiddenChamber)
-			Media.DisplayMessage("We found it! The Scrin rulers believed it to be destroyed long ago, but its creators hid it well. Quickly, let us activate it, we must make sure it still functions.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Lua-illumination-we-found-it", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_foundit.aud", 2)
 		end
 	end)
@@ -257,7 +257,7 @@ OncePerFiveSecondChecks = function()
 			local finalScrinUnits = Map.ActorsInCircle(HiddenChamberCenter.CenterPosition, WDist.New(12 * 1024), function(a) return a.Owner == Scrin and (a.HasProperty("Move") or a.Type == "scrinwormhole") end)
 			if #finalScrinUnits == 0 then
 				DoFinalBattleChecks = false
-				Media.DisplayMessage("Our forces on the surface have triumphed. The device is ours, and soon it will be ready to do what had been intended for it millennia ago. Excellent work commander, our ultimate victory draws ever closer.", "Kane", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("Lua-illumination-our-forces-on", "Kane", HSLColor.FromHex("FF0000"))
 				MediaCA.PlaySound(MissionDir .. "/kane_victory.aud", 2)
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
 					Nod.MarkCompletedObjective(ObjectiveDefendPurifier)
@@ -273,7 +273,7 @@ UpdateMissionText = function()
 	if FragmentsAcquiredCount == 6 then
 		UserInterface.SetMissionText("")
 	else
-		UserInterface.SetMissionText("Artifact fragments collected: " .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
+		UserInterface.SetMissionText("Lua-illumination-artifact-fragments-collected" .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
 	end
 end
 

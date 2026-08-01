@@ -12,7 +12,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, trepidation.lua
 	MissionData:
-		Briefing: With the Soviet breakthrough pushed back we have a window of opportunity to strike at the Soviet gateway. However, before we proceed we require intel from our espionage team which has been embedded within Soviet forces on the Scrin homeworld for some time.\n\nThe team was awaiting information regarding the state of GDI and Nod following the arrival of the third Scrin faction, however we have not received any transmissions for several days now, which either means they have been discovered or that they have lost the ability to transmit undetected.\n\nIn accordance with contingency procedures, we expect one of our operatives through the Soviet gateway at any moment. We must extract him safely, obtain whatever new information he has, and then Allied High Command can make an informed decision regarding our next steps.\n\nTake a small specialist team and move into position to extract our spy. Hopefully he will be able to safely make contact so that you can coordinate his escape. Once he is safe we will decide whether the situation warrants further action.
+		Briefing: Map-Briefing
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

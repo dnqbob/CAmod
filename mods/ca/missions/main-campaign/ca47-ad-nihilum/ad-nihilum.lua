@@ -154,12 +154,12 @@ WorldLoaded = function()
 	RemoveActorsBasedOnDifficultyTags()
 	InitMaleficScrin()
 
-	ObjectiveDestroyScrinBases = Greece.AddObjective("Destroy all Scrin bases.")
-	ObjectiveStopVoidEngines = Greece.AddObjective("Prevent Void Engines from breaking through.")
+	ObjectiveDestroyScrinBases = Greece.AddObjective("Lua-ad-nihilum-destroy-all-scrin")
+	ObjectiveStopVoidEngines = Greece.AddObjective("Lua-ad-nihilum-prevent-void-engines")
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-ad-nihilum-reinforcements-have-arrived")
 		DoMcvArrival()
 	end)
 
@@ -181,7 +181,7 @@ WorldLoaded = function()
 	Trigger.OnEnteredFootprint(voidEngineExit, function(a, id)
 		if a.Type == "veng" then
 			a.Destroy()
-			Notification("A Void Engine has broken through.")
+			Notification("Lua-ad-nihilum-a-void-engine")
 			Media.PlaySoundNotification(nil, "AlertBuzzer")
 			Greece.MarkFailedObjective(ObjectiveStopVoidEngines)
 		end
@@ -269,7 +269,7 @@ SendNextVoidEngine = function()
 		MediaCA.PlaySound("veng-spawn.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-			Notification("Alert. Void Engine detected.")
+			Notification("Lua-ad-nihilum-alert-void-engine")
 			MediaCA.PlaySound(MissionDir .. "/r_vengdet.aud", 2)
 		end)
 

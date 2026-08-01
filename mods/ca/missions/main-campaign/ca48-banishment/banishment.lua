@@ -121,8 +121,8 @@ WorldLoaded = function()
 	SetupLightning()
 	SetupChurchMoneyCrates()
 
-	ObjectiveSecureAllBases = Greece.AddObjective("Secure the four abandoned Allied bases.")
-	ObjectiveDestroyScrinBases = Greece.AddObjective("Destroy all Scrin Nerve Centers.")
+	ObjectiveSecureAllBases = Greece.AddObjective("Lua-banishment-secure-the-four")
+	ObjectiveDestroyScrinBases = Greece.AddObjective("Lua-banishment-destroy-all-scrin")
 
 	Utils.Do(MissionPlayers, function(p)
 		Actor.Create("radar.dummy", true, { Owner = p })
@@ -209,7 +209,7 @@ UpdateMissionText = function(text)
 	local nerveCenterCount = #MaleficScrin.GetActorsByType("nerv")
 
 	if nerveCenterCount > 0 then
-		UserInterface.SetMissionText(nerveCenterCount .. " Nerve Centers remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-banishment-nerve-centers-remaining", { tostring(nerveCenterCount) }, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -309,7 +309,7 @@ SecureBase = function(base)
 				InitMcvObjective(true)
 			else
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+				Notification("Lua-banishment-reinforcements-have-arrived" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
 				DoMcvArrival()
 				Beacon.New(Greece, McvDest.CenterPosition)
 				Utils.Do(MissionPlayers, function(p)
@@ -435,12 +435,12 @@ end
 
 InitMcvObjective = function(notify)
 	if ObjectiveRecoverMcv == nil then
-		ObjectiveRecoverMcv = Greece.AddSecondaryObjective("Recover Allied MCV.")
+		ObjectiveRecoverMcv = Greece.AddSecondaryObjective("Lua-banishment-recover-mcv")
 
 		if notify then
 			McvFlare = Actor.Create("flare", true, { Owner = Greece, Location = McvReveal.Location })
 			Beacon.New(Greece, McvReveal.CenterPosition)
-			Notification("Abandoned MCV located. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view.")
+			Notification("Lua-banishment-abandoned-mcv-located" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view.")
 		end
 	end
 end
@@ -471,7 +471,7 @@ SecureMcv = function()
 			Utils.Do(MissionPlayers, function(p)
 				Actor.Create("mcv.allowed", true, { Owner = p })
 			end)
-			Notification("MCV production now available.")
+			Notification("Lua-banishment-mcv-production-now")
 		end)
 		if McvFlare ~= nil and not McvFlare.IsDead then
 			McvFlare.Destroy()

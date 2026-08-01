@@ -87,7 +87,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitGDI()
 
-	ObjectiveExpelGDI = USSR.AddObjective("Remove the GDI presence.")
+	ObjectiveExpelGDI = USSR.AddObjective("Lua-expulsion-remove-gdi")
 
 	if Difficulty == "easy" then
 		BattleTank1.Destroy()
@@ -98,7 +98,7 @@ WorldLoaded = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(8), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("Lua-expulsion-reinforcements-arrived")
 		DoMcvArrival()
 		McvArrived = true
 

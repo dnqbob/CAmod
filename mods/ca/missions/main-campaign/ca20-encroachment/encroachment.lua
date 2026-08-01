@@ -122,8 +122,8 @@ WorldLoaded = function()
 		SellOnCaptureAttempt({ NWBuilding4, NEBuilding1 })
 	end
 
-	ObjectiveDestroyAdvComms = Scrin.AddObjective("Destroy GDI Advanced Communications Center.")
-	ObjectiveDestroyWeatherControl = Scrin.AddObjective("Destroy Allied Weather Control Device.")
+	ObjectiveDestroyAdvComms = Scrin.AddObjective("Lua-encroachment-destroy-comms")
+	ObjectiveDestroyWeatherControl = Scrin.AddObjective("Lua-encroachment-destroy-weather")
 
 	Trigger.OnKilledOrCaptured(AdvancedComms, function()
 		Scrin.MarkCompletedObjective(ObjectiveDestroyAdvComms)
@@ -150,7 +150,7 @@ WorldLoaded = function()
 
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
 					PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-					Notification("Reinforcements have arrived.")
+					Notification("Lua-encroachment-reinforcements-arrived")
 					Beacon.New(Scrin, group.Waypoint.CenterPosition)
 
 					local reinforcements = Reinforcements.Reinforce(Scrin, group.Units, { group.Waypoint.Location }, 10, function(a)

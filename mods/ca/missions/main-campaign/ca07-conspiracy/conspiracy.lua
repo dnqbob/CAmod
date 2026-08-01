@@ -131,11 +131,11 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Tip("Stealth units can be detected by enemy defenses and certain units (see tooltips), as well as all infantry at close range.")
+		Tip("Lua-conspiracy-tip-stealth")
 	end)
 
-	ObjectiveTakeOverBase = Nod.AddObjective("Take control of the GDI base due south.")
-	UserInterface.SetMissionText("Take control of the GDI base due south.", HSLColor.Yellow)
+	ObjectiveTakeOverBase = Nod.AddObjective("Lua-conspiracy-take-base")
+	UserInterface.SetMissionText("Lua-conspiracy-take-base", HSLColor.Yellow)
 
 	local startingUnits = Nod.GetActors()
 	Utils.Do(startingUnits, function(a)
@@ -184,10 +184,10 @@ WorldLoaded = function()
 		Trigger.OnEnteredProximityTrigger(researcher.CenterPosition, WDist.New(8 * 1024), function(a, id)
 			if IsMissionPlayer(a.Owner) then
 				Trigger.RemoveProximityTrigger(id)
-				Notification("Researcher located.")
+				Notification("Lua-conspiracy-researcher-located")
 				MediaCA.PlaySound(MissionDir .. "/n_researcherlocated.aud", 2)
 				if ObjectiveRescueResearchers == nil then
-					ObjectiveRescueResearchers = Nod.AddObjective("Locate and rescue Nod researchers.")
+					ObjectiveRescueResearchers = Nod.AddObjective("Lua-conspiracy-rescue-researchers")
 				end
 				local researcherCamera = Actor.Create("camera.paradrop", true, { Owner = Nod, Location = researcher.Location })
 				Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -200,7 +200,7 @@ WorldLoaded = function()
 			if IsMissionPlayer(a.Owner) and a.HasProperty("Move") and not a.HasProperty("Land") then
 				Trigger.RemoveProximityTrigger(id)
 				researcher.Owner = a.Owner
-				Notification("Escort researcher to evacuation point.")
+				Notification("Lua-conspiracy-escort-researcher")
 				MediaCA.PlaySound(MissionDir .. "/n_escortresearcher.aud", 2)
 				InitEvacSite()
 			end
@@ -227,7 +227,7 @@ WorldLoaded = function()
 				if Researcher1.Owner == EvacPlayer and Researcher2.Owner == EvacPlayer and not EvacStarted then
 					EvacStarted = true
 
-					Notification("Evacuation transport inbound.")
+					Notification("Lua-conspiracy-evac-inbound")
 					MediaCA.PlaySound(MissionDir .. "/n_evacinbound.aud", 2)
 
 					Trigger.AfterDelay(DateTime.Seconds(3), function()
@@ -264,7 +264,7 @@ WorldLoaded = function()
 						end)
 					end)
 				else
-					Notification("A researcher has reached the evacuation point. Waiting for the second.")
+					Notification("Lua-conspiracy-one-evacuated")
 				end
 			end)
 		end
@@ -325,10 +325,10 @@ AwakenSleeperCell = function()
 		return
 	end
 	SleeperCellAwakened = true
-	Media.DisplayMessage("The time has come, warriors of Nod.", "Nod Soldier", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("Lua-conspiracy-time-has-come", "Lua-conspiracy-speaker-nod-soldier", HSLColor.FromHex("FF0000"))
 	MediaCA.PlaySound(MissionDir .. "/timehascome.aud", 2)
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-		Media.DisplayMessage("Down with GDI!", "Nod Soldier", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Lua-conspiracy-down-with-gdi", "Lua-conspiracy-speaker-nod-soldier", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/downwithgdi.aud", 2)
 		Trigger.AfterDelay(15, function()
 			UserInterface.SetMissionText("")
@@ -356,7 +356,7 @@ AwakenSleeperCell = function()
 			end
 
 			if ObjectiveRescueResearchers == nil then
-				ObjectiveRescueResearchers = Nod.AddObjective("Locate and rescue Nod researchers.")
+				ObjectiveRescueResearchers = Nod.AddObjective("Lua-conspiracy-rescue-researchers")
 			end
 
 			if ObjectiveTakeOverBase ~= nil and not Nod.IsObjectiveCompleted(ObjectiveTakeOverBase) then

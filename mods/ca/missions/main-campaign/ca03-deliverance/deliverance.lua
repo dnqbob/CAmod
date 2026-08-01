@@ -197,7 +197,7 @@ WorldLoaded = function()
 			HardOnlyKatyusha2.Destroy()
 
 			Trigger.AfterDelay(DateTime.Seconds(3), function()
-				Tip("If you put a Mechanic inside an IFV it becomes a repair vehicle.")
+				Tip("Lua-deliverance-tip-mechanic-ifv")
 			end)
 
 			if Difficulty == "easy" then
@@ -207,8 +207,8 @@ WorldLoaded = function()
 		end
 	end
 
-	ObjectiveFindBase = Greece.AddObjective("Find besieged GDI base.")
-	UserInterface.SetMissionText("Find besieged GDI base.", HSLColor.Yellow)
+	ObjectiveFindBase = Greece.AddObjective("Lua-deliverance-find-base")
+	UserInterface.SetMissionText("Lua-deliverance-find-base", HSLColor.Yellow)
 
 	-- On finding the GDI base, transfer ownership to player
 	Trigger.OnEnteredProximityTrigger(GDIBaseTopRight.CenterPosition, WDist.New(16 * 1024), function(a, id)
@@ -244,7 +244,7 @@ WorldLoaded = function()
 
 			Trigger.AfterDelay(DateTime.Seconds(3), function()
 				if GDICommanderAlive then
-					Notification("The GDI commander has been freed.")
+					Notification("Lua-deliverance-commander-freed")
 					MediaCA.PlaySound(MissionDir .. "/r_gdicmdrfreed.aud", 2)
 				end
 
@@ -271,7 +271,7 @@ WorldLoaded = function()
 								Greece.MarkCompletedObjective(ObjectiveCapturePrison)
 
 								if not IsHoldOutComplete then
-									Notification("Continue holding your position, we need to keep the Soviets busy so they don't pursue the GDI commander.")
+									Notification("Lua-deliverance-hold-position")
 								end
 							end)
 						end)
@@ -355,7 +355,7 @@ GDIBaseFound = function()
 		TimerTicks = HoldOutTime[Difficulty]
 
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			ObjectiveHoldOut = Greece.AddObjective("Hold out until reinforcements arrive.")
+			ObjectiveHoldOut = Greece.AddObjective("Lua-deliverance-hold-out")
 			UpdateReinforcementCountdown()
 			Greece.MarkCompletedObjective(ObjectiveFindBase)
 		end)
@@ -363,7 +363,7 @@ GDIBaseFound = function()
 		Trigger.AfterDelay(HoldOutTime[Difficulty] - DateTime.Seconds(20), function()
 			McvFlare = Actor.Create("flare", true, { Owner = Greece, Location = McvRally.Location })
 			PlaySpeechNotificationToMissionPlayers("SignalFlare")
-			Notification("Signal flare detected, reinforcements inbound. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+			Notification(UserInterface.GetFluentMessage("Lua-deliverance-signal-flare", { ["0"] = "[" .. UtilsCA.Hotkey("ToLastEvent") .. "]" }))
 			Beacon.New(Greece, McvRally.CenterPosition)
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				McvFlare.Destroy()
@@ -409,7 +409,7 @@ end
 
 UpdateReinforcementCountdown = function()
 	if not IsHoldOutComplete and (not IsPrisonRevealed or (ObjectiveCapturePrison ~= nil and Greece.IsObjectiveCompleted(ObjectiveCapturePrison))) then
-		UserInterface.SetMissionText("Hold out until reinforcements arrive: " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionTextWithArgs("Lua-deliverance-hold-out-timer", { UtilsCA.FormatTimeForGameSpeed(TimerTicks) }, HSLColor.Yellow)
 	end
 end
 
@@ -418,8 +418,8 @@ HoldOutComplete = function()
 		IsHoldOutComplete = true
 
 		if ObjectiveLocateCommander == nil then
-			ObjectiveLocateCommander = Greece.AddObjective("Locate the GDI commander.")
-			UserInterface.SetMissionText("Locate the GDI commander.", HSLColor.Yellow)
+			ObjectiveLocateCommander = Greece.AddObjective("Lua-deliverance-locate-commander")
+			UserInterface.SetMissionText("Lua-deliverance-locate-commander", HSLColor.Yellow)
 		end
 
 		Greece.MarkCompletedObjective(ObjectiveHoldOut)
@@ -427,7 +427,7 @@ HoldOutComplete = function()
 		if ObjectiveCapturePrison == nil or not Greece.IsObjectiveCompleted(ObjectiveCapturePrison) then
 			Trigger.AfterDelay(DateTime.Seconds(1), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("Lua-deliverance-reinforcements-arrived")
 				DoMcvArrival()
 				Beacon.New(Greece, McvRally.CenterPosition)
 			end)
@@ -451,17 +451,17 @@ RevealPrison = function()
 		Beacon.New(Greece, GDICommanderSpawn.CenterPosition)
 
 		if ObjectiveLocateCommander == nil then
-			ObjectiveLocateCommander = Greece.AddObjective("Locate the GDI commander.")
+			ObjectiveLocateCommander = Greece.AddObjective("Lua-deliverance-locate-commander")
 		end
 
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			ObjectiveCapturePrison = Greece.AddObjective("Take control of prison and rescue GDI commander.")
+			ObjectiveCapturePrison = Greece.AddObjective("Lua-deliverance-capture-prison")
 
 			if not Greece.IsObjectiveCompleted(ObjectiveLocateCommander) then
 				Greece.MarkCompletedObjective(ObjectiveLocateCommander)
 			end
 
-			UserInterface.SetMissionText("Take control of prison and rescue GDI commander.", HSLColor.Yellow)
+			UserInterface.SetMissionText("Lua-deliverance-capture-prison", HSLColor.Yellow)
 			PrisonCamera = Actor.Create("camera.paradrop", true, { Owner = Greece, Location = SovietPrison.Location })
 
 			Trigger.AfterDelay(DateTime.Seconds(5), function()

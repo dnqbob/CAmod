@@ -76,7 +76,7 @@ WorldLoaded = function()
 		table.insert(NodRadarProviders, Actor.Create("radar.dummy", true, { Owner = p }))
 	end)
 
-	ObjectiveReinforce = Nod.AddObjective("Reinforce one of the two Nod bases.")
+	ObjectiveReinforce = Nod.AddObjective("Lua-supremacy-reinforce")
 
 	local eastAttackTriggerCells = {}
 	for x = 9, 18 do
@@ -347,7 +347,7 @@ FlipEastBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("Lua-supremacy-destroy-gdi")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferEastNod()
 
@@ -379,7 +379,7 @@ FlipWestBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("Lua-supremacy-destroy-gdi")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferWestNod()
 

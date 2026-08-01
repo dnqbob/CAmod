@@ -1,7 +1,7 @@
 1TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Scout Tank)
+		Name: Actor-1TNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -10,7 +10,7 @@
 2TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Medium Tank)
+		Name: Actor-2TNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -19,7 +19,7 @@
 GTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Grizzly Tank)
+		Name: Actor-GTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -28,7 +28,7 @@ GTNK.Husk:
 3TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Heavy Tank)
+		Name: Actor-3TNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -37,7 +37,7 @@ GTNK.Husk:
 3TNK.YURI.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Lasher Tank)
+		Name: Actor-3TNK.YURI.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -46,7 +46,7 @@ GTNK.Husk:
 3TNK.RHIN.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Rhino Heavy Tank)
+		Name: Actor-3TNK.RHIN.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -55,7 +55,7 @@ GTNK.Husk:
 4TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mammoth Tank)
+		Name: Actor-4TNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -64,7 +64,7 @@ GTNK.Husk:
 4TNK.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Eradicator)
+		Name: Actor-4TNK.ERAD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -73,7 +73,7 @@ GTNK.Husk:
 HARV.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: Actor-HARV.Husk-Name
 	RenderSprites:
 		Image: hhusk2
 
@@ -81,7 +81,7 @@ HARV.Husk:
 HARV.FullHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: Actor-HARV.FullHusk-Name
 	RenderSprites:
 		Image: hhusk
 
@@ -89,28 +89,28 @@ HARV.FullHusk:
 HARV.EmptyHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: Actor-HARV.EmptyHusk-Name
 	RenderSprites:
 		Image: hhusk2
 
 HARV.Chrono.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Miner)
+		Name: Actor-HARV.Chrono.Husk-Name
 	RenderSprites:
 		Image: charv.destroyed
 
 MCV.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Construction Vehicle)
+		Name: Actor-MCV.Husk-Name
 	RenderSprites:
 		Image: mcvhusk
 
 MGG.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Gap Generator)
+		Name: Actor-MGG.Husk-Name
 	ThrowsParticle@spinner:
 		Anim: spinner-idle
 		Offset: -299,0,171
@@ -120,21 +120,21 @@ MGG.Husk:
 MSG.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Stealth Generator)
+		Name: Actor-MSG.Husk-Name
 	RenderSprites:
 		Image: msg.destroyed
 
 MOLE.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Subterranean APC)
+		Name: Actor-MOLE.Husk-Name
 	RenderSprites:
 		Image: mole.destroyed
 
 TRAN.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Chinook
+		Name: Actor-TRAN.Husk-Name
 	Aircraft:
 		TurnSpeed: 1
 		Speed: 149
@@ -162,7 +162,7 @@ TRAN.Husk.EMP:
 TRAN.Husk1:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chinook)
+		Name: Actor-TRAN.Husk1-Name
 	RenderSprites:
 		Image: tran1husk
 	-Capturable:
@@ -175,7 +175,7 @@ TRAN.Husk1:
 TRAN.Husk2:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chinook)
+		Name: Actor-TRAN.Husk2-Name
 	RenderSprites:
 		Image: tran2husk
 	-Capturable:
@@ -188,7 +188,7 @@ TRAN.Husk2:
 HALO.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Heavy Transport
+		Name: Actor-HALO.Husk-Name
 	Aircraft:
 		TurnSpeed: 1
 		Speed: 149
@@ -213,7 +213,7 @@ HALO.Husk.EMP:
 NHAW.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Nighthawk
+		Name: Actor-NHAW.Husk-Name
 	Aircraft:
 		TurnSpeed: 1
 		Speed: 149
@@ -250,7 +250,7 @@ NHAW.UPG.Husk.EMP:
 BADR.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Badger
+		Name: Actor-BADR.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 180
@@ -281,7 +281,7 @@ BADR.Husk.EMP:
 B2B.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: B2 Stealth Bomber
+		Name: Actor-B2B.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 180
@@ -312,7 +312,7 @@ B2B.Husk.EMP:
 MIG.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: MiG Attack Plane
+		Name: Actor-MIG.Husk-Name
 	Contrail@1:
 		Offset: -598,-683,0
 	Contrail@2:
@@ -354,7 +354,7 @@ MIG.Husk.Empty.EMP:
 YAK.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Yak Attack Plane
+		Name: Actor-YAK.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 180
@@ -390,7 +390,7 @@ YAK.Husk.EMP:
 P51.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: P51 Attack Plane
+		Name: Actor-P51.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 180
@@ -426,7 +426,7 @@ P51.Husk.EMP:
 HELI.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Longbow
+		Name: Actor-HELI.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 149
@@ -467,7 +467,7 @@ HELI.Husk.Empty.EMP:
 HIND.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Hind
+		Name: Actor-HIND.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 112
@@ -507,7 +507,7 @@ HIND.Husk.Empty.EMP:
 SMIG.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Husk (Supersonic Bomber)
+		Name: Actor-SMIG.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 373
@@ -712,14 +712,14 @@ TC05.Husk:
 AMCV.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mobile Construction Vehicle)
+		Name: Actor-AMCV.Husk-Name
 	RenderSprites:
 		Image: amcv.destroyed
 
 RTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mirage Tank)
+		Name: Actor-RTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -728,7 +728,7 @@ RTNK.Husk:
 TNKD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tank Destroyer)
+		Name: Actor-TNKD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -737,28 +737,28 @@ TNKD.Husk:
 APC2.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (APC)
+		Name: Actor-APC2.Husk-Name
 	RenderSprites:
 		Image: apc2.destroyed
 
 HMMV.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Hum-Vee)
+		Name: Actor-HMMV.Husk-Name
 	RenderSprites:
 		Image: hmmv.destroyed
 
 BGGY.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Fast Attack Buggy)
+		Name: Actor-BGGY.Husk-Name
 	RenderSprites:
 		Image: bggy.destroyed
 
 MTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Battle Tank)
+		Name: Actor-MTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -767,7 +767,7 @@ MTNK.Husk:
 MTNK.DRONE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Battle Drone)
+		Name: Actor-MTNK.DRONE.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -776,7 +776,7 @@ MTNK.DRONE.Husk:
 HTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mammoth Tank)
+		Name: Actor-HTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -785,7 +785,7 @@ HTNK.Husk:
 HTNK.ION.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Ion Mammoth Tank)
+		Name: Actor-HTNK.ION.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret-ion
 	RenderSprites:
@@ -794,7 +794,7 @@ HTNK.ION.Husk:
 HTNK.HOVER.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Hover Mammoth Tank)
+		Name: Actor-HTNK.HOVER.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	WithFacingSpriteBody:
@@ -805,7 +805,7 @@ HTNK.HOVER.Husk:
 HTNK.DRONE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mammoth Drone)
+		Name: Actor-HTNK.DRONE.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret-drone
 	RenderSprites:
@@ -814,7 +814,7 @@ HTNK.DRONE.Husk:
 TITN.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Titan)
+		Name: Actor-TITN.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -823,7 +823,7 @@ TITN.Husk:
 TITN.RAIL.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Railgun Titan)
+		Name: Actor-TITN.RAIL.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -832,7 +832,7 @@ TITN.RAIL.Husk:
 JUGG.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Juggernaut)
+		Name: Actor-JUGG.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -841,21 +841,21 @@ JUGG.Husk:
 AVTR.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Avatar)
+		Name: Actor-AVTR.Husk-Name
 	RenderSprites:
 		Image: avtr.destroyed
 
 FTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Flame Tank)
+		Name: Actor-FTNK.Husk-Name
 	RenderSprites:
 		Image: ftnk.destroyed
 
 HFTK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Heavy Flame Tank)
+		Name: Actor-HFTK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -864,14 +864,14 @@ HFTK.Husk:
 BIKE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Recon Bike)
+		Name: Actor-BIKE.Husk-Name
 	RenderSprites:
 		Image: bike.destroyed
 
 MSAM.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (MLRS)
+		Name: Actor-MSAM.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -880,14 +880,14 @@ MSAM.Husk:
 STNK.NOD.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Stealth Tank)
+		Name: Actor-STNK.NOD.Husk-Name
 	RenderSprites:
 		Image: stnknod.destroyed
 
 APCH.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Apache
+		Name: Actor-APCH.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -925,7 +925,7 @@ APCH.Husk.Empty.EMP:
 ORCA.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Orca
+		Name: Actor-ORCA.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -963,7 +963,7 @@ ORCA.Husk.Empty.EMP:
 OCAR.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Orca Carryall
+		Name: Actor-OCAR.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 46
@@ -996,7 +996,7 @@ OCAR.Husk.EMP:
 UAV.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (UAV)
+		Name: Actor-UAV.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 123
@@ -1022,21 +1022,21 @@ UAV.Husk.EMP:
 HARV.TD.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Harvester (Destroyed)
+		Name: Actor-HARV.TD.Husk-Name
 	RenderSprites:
 		Image: harv2.destroyed
 
 HARV.TD.UPG.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Stealth Harvester (Destroyed)
+		Name: Actor-HARV.TD.UPG.Husk-Name
 	RenderSprites:
 		Image: harv2.upg.destroyed
 
 A10.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Warthog)
+		Name: Actor-A10.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 180
@@ -1070,7 +1070,7 @@ A10.Husk.Empty.EMP:
 YF23.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Aurora)
+		Name: Actor-YF23.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 240
@@ -1096,7 +1096,7 @@ YF23.Husk.EMP:
 AURO.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Aurora)
+		Name: Actor-AURO.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 180
@@ -1130,7 +1130,7 @@ AURO.Husk.Empty.EMP:
 C17.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: C17
+		Name: Actor-C17.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 236
@@ -1160,7 +1160,7 @@ C17.Husk.EMP:
 GALX.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Transport Aircraft
+		Name: Actor-GALX.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 266
@@ -1191,7 +1191,7 @@ GALX.Husk.EMP:
 ANTO.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Transport Aircraft
+		Name: Actor-ANTO.Husk-Name
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 266
@@ -1221,14 +1221,14 @@ ANTO.Husk.EMP:
 BTR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (APC)
+		Name: Actor-BTR.Husk-Name
 	RenderSprites:
 		Image: BTR.destroyed
 
 RAH.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Comanche
+		Name: Actor-RAH.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -1266,7 +1266,7 @@ RAH.Husk.Empty.EMP:
 KIRO.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Kirov
+		Name: Actor-KIRO.Husk-Name
 	Aircraft:
 		TurnSpeed: 2
 		Speed: 30
@@ -1312,7 +1312,7 @@ KIRO.Husk.Ground:
 	RenderSprites:
 		Image: kirov
 	Tooltip:
-		Name: Husk (Kirov)
+		Name: Actor-KIRO.Husk.Ground-Name
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -1333,21 +1333,21 @@ KIRO.Husk.Ground:
 APC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (APC)
+		Name: Actor-APC.Husk-Name
 	RenderSprites:
 		Image: apc.destroyed
 
 TTRA.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tesla Track)
+		Name: Actor-TTRA.Husk-Name
 	RenderSprites:
 		Image: ttra.destroyed
 
 TTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tesla Tank)
+		Name: Actor-TTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1356,35 +1356,35 @@ TTNK.Husk:
 CYCP.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Cyclops)
+		Name: Actor-CYCP.Husk-Name
 	RenderSprites:
 		Image: cycp.destroyed
 
 BASI.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Basilisk)
+		Name: Actor-BASI.Husk-Name
 	RenderSprites:
 		Image: basi.destroyed
 
 ISU.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Siege Tank)
+		Name: Actor-ISU.Husk-Name
 	RenderSprites:
 		Image: isu.destroyed
 
 NUKC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Nuke Cannon)
+		Name: Actor-NUKC.Husk-Name
 	RenderSprites:
 		Image: nukc.destroyed
 
 DISR.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Disruptor)
+		Name: Actor-DISR.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1393,7 +1393,7 @@ DISR.Husk:
 WTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Microwave Tank)
+		Name: Actor-WTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1402,14 +1402,14 @@ WTNK.Husk:
 BATF.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Battle Fortress)
+		Name: Actor-BATF.Husk-Name
 	RenderSprites:
 		Image: batf.destroyed
 
 CHPR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Prison)
+		Name: Actor-CHPR.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1423,7 +1423,7 @@ MISS.Husk:
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
 	Tooltip:
-		Name: Ruin (Communications Center)
+		Name: Actor-MISS.Husk-Name
 	TransformOnCapture:
 		IntoActor: miss
 	InfiltrateForTransform:
@@ -1437,7 +1437,7 @@ BIO.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Bio Lab)
+		Name: Actor-BIO.Husk-Name
 	TransformOnCapture:
 		IntoActor: bio
 	InfiltrateForTransform:
@@ -1451,7 +1451,7 @@ HOSP.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Hospital)
+		Name: Actor-HOSP.Husk-Name
 	TransformOnCapture:
 		IntoActor: hosp.rebuilt
 	InfiltrateForTransform:
@@ -1465,7 +1465,7 @@ MACS.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Machine Shop)
+		Name: Actor-MACS.Husk-Name
 	TransformOnCapture:
 		IntoActor: macs.rebuilt
 	InfiltrateForTransform:
@@ -1476,7 +1476,7 @@ MACS.Husk:
 FCOM.Husk:
 	Inherits: ^TechHusk
 	Tooltip:
-		Name: Ruin (Forward Command)
+		Name: Actor-FCOM.Husk-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1495,7 +1495,7 @@ OILB.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Oil Derrick)
+		Name: Actor-OILB.Husk-Name
 	TransformOnCapture:
 		IntoActor: oilb
 	InfiltrateForTransform:
@@ -1514,7 +1514,7 @@ OILR.Husk:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	Tooltip:
-		Name: Ruin (Oil Refinery)
+		Name: Actor-OILR.Husk-Name
 	TransformOnCapture:
 		IntoActor: oilr
 	InfiltrateForTransform:
@@ -1529,7 +1529,7 @@ OILR.Husk:
 HARR.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Harrier
+		Name: Actor-HARR.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 201
@@ -1571,7 +1571,7 @@ HARR.Husk.Empty.EMP:
 HORN.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Hornet
+		Name: Actor-HORN.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 195
@@ -1612,7 +1612,7 @@ HORN.Husk.Empty.EMP:
 SCRN.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Banshee
+		Name: Actor-SCRN.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 225
@@ -1654,7 +1654,7 @@ SCRN.Husk.Empty.EMP:
 ORCB.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Orca Bomber
+		Name: Actor-ORCB.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 155
@@ -1694,7 +1694,7 @@ ORCB.Husk.Empty.EMP:
 SUK.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Sukhoi Attack Plane
+		Name: Actor-SUK.Husk-Name
 	Contrail@1:
 		Offset: -598,-683,-40
 	Contrail@2:
@@ -1736,7 +1736,7 @@ SUK.Husk.Empty.EMP:
 PTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Prism Tank)
+		Name: Actor-PTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1745,14 +1745,14 @@ PTNK.Husk:
 PCAN.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Prism Cannon)
+		Name: Actor-PCAN.Husk-Name
 	RenderSprites:
 		Image: pcan.destroyed
 
 WTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Microwave Tank)
+		Name: Actor-WTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1761,7 +1761,7 @@ WTNK.Husk:
 LTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Light Tank)
+		Name: Actor-LTNK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1770,7 +1770,7 @@ LTNK.Husk:
 CHPR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Prison)
+		Name: Actor-CHPR.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1779,7 +1779,7 @@ CHPR.Husk:
 VENM.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Venom
+		Name: Actor-VENM.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -1817,7 +1817,7 @@ VENM.Husk.Empty.EMP:
 APOC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Apocalypse)
+		Name: Actor-APOC.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1826,7 +1826,7 @@ APOC.Husk:
 APOC.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Apocalyptic Eradicator)
+		Name: Actor-APOC.ERAD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1835,7 +1835,7 @@ APOC.ERAD.Husk:
 OVLD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Overlord)
+		Name: Actor-OVLD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1844,7 +1844,7 @@ OVLD.Husk:
 OVLD.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Eradicator Overlord)
+		Name: Actor-OVLD.ERAD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1853,7 +1853,7 @@ OVLD.ERAD.Husk:
 PMAK.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Peacemaker
+		Name: Actor-PMAK.Husk-Name
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 157
@@ -1887,7 +1887,7 @@ PMAK.Husk.Empty.EMP:
 BEAG.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Black Eagle
+		Name: Actor-BEAG.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 201
@@ -1929,7 +1929,7 @@ BEAG.Husk.Empty.EMP:
 PHAN.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Phantom
+		Name: Actor-PHAN.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 201
@@ -1971,7 +1971,7 @@ PHAN.Husk.Empty.EMP:
 KAMV.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Kamov
+		Name: Actor-KAMV.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 112
@@ -2015,7 +2015,7 @@ KAMV.Husk.Empty.EMP:
 SHDE.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Shade
+		Name: Actor-SHDE.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 225
@@ -2057,7 +2057,7 @@ SHDE.Husk.Empty.EMP:
 VERT.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Vertigo
+		Name: Actor-VERT.Husk-Name
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 157
@@ -2099,8 +2099,8 @@ VERT.Husk.Empty.EMP:
 MCOR.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Manticore
-		GenericName: Destroyed Aircraft
+		Name: Actor-MCOR.Husk-Name
+		GenericName: Actor-Generic-DestroyedAircraft-Name
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 35
@@ -2126,7 +2126,7 @@ MCOR.Husk.EMP:
 DISC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Floating Disc
+		Name: Actor-DISC.Husk-Name
 	Aircraft:
 		TurnSpeed: 12
 		Speed: 112

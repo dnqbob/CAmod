@@ -18,17 +18,17 @@ INFANTRY.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: Actor-INFANTRY.SCRIN-Name
 	Buildable:
-		Description: Infantry Production
+		Description: Actor-INFANTRY.SCRIN-Description
 
 VEHICLES.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: Actor-VEHICLES.SCRIN-Name
 	Buildable:
-		Description: Vehicle Production
+		Description: Actor-VEHICLES.SCRIN-Description
 
 ^OnResourceConditions:
 	ExternalCondition@RESCONVTIB:
@@ -476,7 +476,7 @@ S1:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 12
 		Prerequisites: ~infantry.scrin
-		Description: General-purpose infantry.
+		Description: Actor-S1-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
@@ -484,7 +484,7 @@ S1:
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Warrior
+		Name: Actor-S1-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -519,14 +519,14 @@ S2:
 		BuildPaletteOrder: 120
 		Prerequisites: anyradar, ~infantry.scrin, ~!evis.upgrade, ~!impl.upgrade, ~!stlk.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry.
+		Description: Actor-S2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 275
 	Tooltip:
-		Name: Ravager
+		Name: Actor-S2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -563,7 +563,7 @@ S3:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 22
 		Prerequisites: ~infantry.scrin
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: Actor-S3-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
@@ -571,7 +571,7 @@ S3:
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Disintegrator
+		Name: Actor-S3-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -622,7 +622,7 @@ S4:
 		BuildPaletteOrder: 124
 		Prerequisites: anyradar, ~infantry.intruder, ~techlevel.medium
 		IconPalette: chrome
-		Description: Heavy assault infantry with high burst damage.
+		Description: Actor-S4-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -632,7 +632,7 @@ S4:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Intruder
+		Name: Actor-S4-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -686,7 +686,7 @@ MRDR:
 		BuildPaletteOrder: 125
 		Prerequisites: anyradar, ~infantry.harbinger, ~techlevel.medium
 		IconPalette: chromes
-		Description: Heavy assault infantry with high burst damage.
+		Description: Actor-MRDR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -696,7 +696,7 @@ MRDR:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Marauder
+		Name: Actor-MRDR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -750,7 +750,7 @@ S6:
 		Prerequisites: ~infantry.scrin
 		IconPalette: chrome
 	Tooltip:
-		Name: Assimilator
+		Name: Actor-S6-Name
 	Voiced:
 		VoiceSet: AssimilatorVoice
 
@@ -762,11 +762,11 @@ WCHR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 126
 		Prerequisites: anyradar, ~infantry.scrin, ~techlevel.medium
-		Description: Infiltration unit used to gain vision of enemies.
+		Description: Actor-WCHR-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Watcher
+		Name: Actor-WCHR-Name
 	TooltipExtras:
 		Weaknesses: • Cannot deal damage
 		Attributes: • Can attach parasites to enemy vehicles & structures\n• Cloaked with increased vision when not moving\n• Detects cloaked ground units and spies\n• Applies multi-target suppression (Collector-73 only)\n• Special Ability: Teleport (with upgrade)
@@ -844,11 +844,11 @@ BRST:
 		BuildPaletteOrder: 160
 		Prerequisites: scrt, ~infantry.scrin, ~techlevel.high
 		IconPalette: chromes
-		Description: Explodes on death or on contact with target.
+		Description: Actor-BRST-Description
 	Valued:
 		Cost: 550
 	Tooltip:
-		Name: Burster
+		Name: Actor-BRST-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -900,13 +900,13 @@ EVIS:
 		BuildPaletteOrder: 121
 		Prerequisites: anyradar, ~infantry.scrin, ~evis.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Durable, fast moving, short-range, anti-personnel infantry.
+		Description: Actor-EVIS-Description
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Eviscerator
+		Name: Actor-EVIS-Name
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -974,13 +974,13 @@ IMPL:
 		BuildPaletteOrder: 122
 		Prerequisites: anyradar, ~infantry.scrin, ~impl.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Assault infantry with high burst damage. Impales targets, slowing their movement.
+		Description: Actor-IMPL-Description
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Impaler
+		Name: Actor-IMPL-Name
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1021,13 +1021,13 @@ STLK:
 		BuildPaletteOrder: 123
 		Prerequisites: anyradar, ~infantry.scrin, ~stlk.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry that can turn invisible temporarily and ambush targets.
+		Description: Actor-STLK-Description
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Stalker
+		Name: Actor-STLK-Name
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1115,13 +1115,13 @@ SMEDI:
 		Queue: Hospital
 		BuildPaletteOrder: 240
 		IconPalette: chromes
-		Description: Heals nearby life-forms.
+		Description: Actor-SMEDI-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Rejuvenator
+		Name: Actor-SMEDI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1165,14 +1165,14 @@ ARTI:
 		Queue: Hospital
 		BuildPaletteOrder: 240
 		IconPalette: chromes
-		Description: Repairs nearby vehicles.
+		Description: Actor-ARTI-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Can salvage destroyed vehicles for credits
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Artificer
+		Name: Actor-ARTI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1254,7 +1254,7 @@ GSCR:
 		DeathSequencePalette: playerscrin
 	-Buildable:
 	Tooltip:
-		Name: Brutalizer
+		Name: Actor-GSCR-Name
 	-GrantConditionOnTerrain@ONTIB:
 	-GrantStackingCondition@TIBEXPOSED:
 	-DamagedByTerrainCA@TIBDAMAGE:
@@ -1282,7 +1282,7 @@ GSCR.Mutating:
 	WithDeathAnimation:
 		DeathSequencePalette: playerscrin
 	Tooltip:
-		Name: Brutalizer
+		Name: Actor-GSCR.Mutating-Name
 
 MAST:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1301,7 +1301,7 @@ MAST:
 		Prerequisites: scrt, ~infantry.scrin, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrome
-		Description: Elite specialist infantry able to mind-control enemy units (up to 3, increases with veterancy).
+		Description: Actor-MAST-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -1311,7 +1311,7 @@ MAST:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Mastermind
+		Name: Actor-MAST-Name
 		RequiresCondition: !rank-elite
 	Tooltip@PRODIGY:
 		Name: Prodigy
@@ -1545,7 +1545,7 @@ GUNW:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~vehicles.scrin, ~!shrw.upgrade, ~techlevel.low
-		Description: Durable light assault walker.
+		Description: Actor-GUNW-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Aircraft
@@ -1553,7 +1553,7 @@ GUNW:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Gun Walker
+		Name: Actor-GUNW-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1620,7 +1620,7 @@ SHRW:
 	Inherits: GUNW
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Shard Walker
+		Name: Actor-SHRW-Name
 	Buildable:
 		Prerequisites: ~vehicles.scrin, ~shrw.upgrade, ~techlevel.medium
 		IconPalette: chromes
@@ -1659,7 +1659,7 @@ SEEK:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Seeker
+		Name: Actor-SEEK-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1668,7 +1668,7 @@ SEEK:
 		BuildPaletteOrder: 160
 		Prerequisites: ~vehicles.seek, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Light hover tank.
+		Description: Actor-SEEK-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Buildings
@@ -1743,7 +1743,7 @@ LACE:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Lacerator
+		Name: Actor-LACE-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1752,7 +1752,7 @@ LACE:
 		BuildPaletteOrder: 161
 		Prerequisites: ~vehicles.traveler, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Fast hover tank.
+		Description: Actor-LACE-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Buildings
@@ -1836,14 +1836,14 @@ INTL:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Interloper
+		Name: Actor-INTL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 110
 		Prerequisites: ~vehicles.scrin, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Heavily armored front-line assault vehicle and troop carrier.
+		Description: Actor-INTL-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
@@ -1992,7 +1992,7 @@ CORR:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Corrupter
+		Name: Actor-CORR-Name
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2001,7 +2001,7 @@ CORR:
 		BuildPaletteOrder: 210
 		Prerequisites: anyradar, ~vehicles.corr, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Medium-ranged anti-infantry/structure unit.
+		Description: Actor-CORR-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
@@ -2077,7 +2077,7 @@ LCHR:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Leecher
+		Name: Actor-LCHR-Name
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2086,7 +2086,7 @@ LCHR:
 		BuildPaletteOrder: 211
 		Prerequisites: anyradar, ~vehicles.collector, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Medium-ranged anti-infantry/structure unit.
+		Description: Actor-LCHR-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
@@ -2167,9 +2167,9 @@ LCHR.Orb:
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Tooltip:
-		Name: Leecher Orb
+		Name: Actor-LCHR.Orb-Name
 	TooltipExtras:
-		Description: Heals nearby allies. Will revive into a Leecher if not destroyed.
+		Description: Actor-LCHR.Orb-TooltipExtrasDescription
 	RenderSprites:
 		Image: lchr.orb
 		Palette: caneon
@@ -2259,7 +2259,7 @@ STCR:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Stormcrawler
+		Name: Actor-STCR-Name
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2268,7 +2268,7 @@ STCR:
 		BuildPaletteOrder: 213
 		Prerequisites: anyradar, ~vehicles.reaper, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Slow moving, very durable, short-range assault unit.
+		Description: Actor-STCR-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Buildings
@@ -2335,7 +2335,7 @@ DEVO:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 212
 		Prerequisites: anyradar, ~vehicles.scrin, ~techlevel.medium
-		Description: Maneuverable medium-range hover tank.
+		Description: Actor-DEVO-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
@@ -2344,7 +2344,7 @@ DEVO:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Devourer Tank
+		Name: Actor-DEVO-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2429,7 +2429,7 @@ DARK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 292
 		Prerequisites: scrt, ~vehicles.scrin, ~malefic.allegiance, ~techlevel.high
-		Description: Heavy hover tank armed with a rift cannon.
+		Description: Actor-DARK-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
@@ -2438,7 +2438,7 @@ DARK:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Darkener Tank
+		Name: Actor-DARK-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2506,7 +2506,7 @@ RUIN:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Ruiner
+		Name: Actor-RUIN-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2515,7 +2515,7 @@ RUIN:
 		BuildPaletteOrder: 290
 		Prerequisites: scrt, ~vehicles.scrin, ~loyalist.allegiance, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
-		Description: Long-range hover artillery.
+		Description: Actor-RUIN-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
@@ -2611,7 +2611,7 @@ ATMZ:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Atomizer
+		Name: Actor-ATMZ-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2620,7 +2620,7 @@ ATMZ:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 285
 		Prerequisites: scrt, ~vehicles.collector, ~techlevel.high
-		Description: Lightly armored long-range anti-tank unit that atomizes vehicles and defenses.
+		Description: Actor-ATMZ-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
@@ -2685,7 +2685,7 @@ TPOD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 281
 		Prerequisites: scrt, ~vehicles.tpod, ~techlevel.high
-		Description: Heavy assault walker with beam weapons.
+		Description: Actor-TPOD-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
@@ -2698,7 +2698,7 @@ TPOD:
 	Selectable:
 		Bounds: 1280, 2218, 0, -426
 	Tooltip:
-		Name: Annihilator Tripod
+		Name: Actor-TPOD-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2786,7 +2786,7 @@ RTPD:
 	Valued:
 		Cost: 2200
 	Tooltip:
-		Name: Reaper Tripod
+		Name: Actor-RTPD-Name
 	Health:
 		HP: 102000
 	SpawnActorOnDeath:
@@ -2875,7 +2875,7 @@ OBLT:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 283
 		Prerequisites: scrt, ~vehicles.harbinger, ~techlevel.high
-		Description: Heavy artillery that creates a charged particle stream through which it projects a powerful energy pulse, damaging everything it passes through.
+		Description: Actor-OBLT-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
@@ -2884,7 +2884,7 @@ OBLT:
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Obliterator
+		Name: Actor-OBLT-Name
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -2995,7 +2995,7 @@ NULL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 291
 		Prerequisites: scrt, ~vehicles.scrin, ~rebel.allegiance, ~techlevel.high
-		Description: Heavy hover tank that disables enemy weapons and vision.
+		Description: Actor-NULL-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
@@ -3004,7 +3004,7 @@ NULL:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Nullifier
+		Name: Actor-NULL-Name
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -3073,7 +3073,7 @@ SMCV:
 		BuildPaletteOrder: 602
 		Prerequisites: vehicles.mcv, ~vehicles.scrin
 		IconPalette: chrome
-		Description: Deploys into another Colony Platform.
+		Description: Actor-SMCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
 		Weaknesses: • Unarmed
@@ -3081,7 +3081,7 @@ SMCV:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Ship
+		Name: Actor-SMCV-Name
 	Selectable:
 		Priority: 4
 		Bounds: 1792, 1792
@@ -3145,7 +3145,7 @@ STMR:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~aircraft.scrin, ~techlevel.medium
-		Description: Durable patrol craft.
+		Description: Actor-STMR-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
@@ -3153,8 +3153,8 @@ STMR:
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Stormrider
-		GenericName: Aircraft
+		Name: Actor-STMR-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3286,7 +3286,7 @@ TORM:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 61
 		Prerequisites: ~aircraft.scrin, ~techlevel.medium
-		Description: Small anti-vehicle harrasser aircraft.
+		Description: Actor-TORM-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Vehicles, Defenses, Aircraft
@@ -3294,8 +3294,8 @@ TORM:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Tormentor
-		GenericName: Aircraft
+		Name: Actor-TORM-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3428,7 +3428,7 @@ ENRV:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 110
 		Prerequisites: scrt, ~aircraft.traveler, ~techlevel.high
-		Description: Fast attack craft that creates a focused suppression field.
+		Description: Actor-ENRV-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • Strong vs Vehicles, Defenses, Aircraft
@@ -3437,8 +3437,8 @@ ENRV:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Enervator
-		GenericName: Aircraft
+		Name: Actor-ENRV-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3565,7 +3565,7 @@ DEVA:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 111
 		Prerequisites: scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Long-range siege warship.
+		Description: Actor-DEVA-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry
@@ -3575,8 +3575,8 @@ DEVA:
 	Valued:
 		Cost: 2400
 	Tooltip:
-		Name: Devastator Warship
-		GenericName: Aircraft
+		Name: Actor-DEVA-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3711,7 +3711,7 @@ PAC:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 112
 		Prerequisites: sign, scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Warship that launches a squadron of Invader assault craft.
+		Description: Actor-PAC-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
@@ -3722,8 +3722,8 @@ PAC:
 	Valued:
 		Cost: 2800
 	Tooltip:
-		Name: Planetary Assault Carrier
-		GenericName: Aircraft
+		Name: Actor-PAC-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3860,7 +3860,7 @@ INVA:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Invader
+		Name: Actor-INVA-Name
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3954,7 +3954,7 @@ MSHP:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 113
 		Prerequisites: sign, scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Huge craft with powerful anti-structure beam weapon and secondary plasma weapons.
+		Description: Actor-MSHP-Description
 		IconPalette: chromes
 		BuildLimit: 1
 	TooltipExtras:
@@ -3966,8 +3966,8 @@ MSHP:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mothership
-		GenericName: Aircraft
+		Name: Actor-MSHP-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4156,14 +4156,14 @@ SMCV.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Colony Ship)
+		Name: Actor-SMCV.Husk-Name
 	RenderSprites:
 		Image: smcv.destroyed
 
 HARV.Scrin.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Harvester)
+		Name: Actor-HARV.Scrin.Husk-Name
 	RenderSprites:
 		Image: harv.scrin.destroyed
 	WithShadow:
@@ -4174,7 +4174,7 @@ GUNW.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Gun Walker)
+		Name: Actor-GUNW.Husk-Name
 	RenderSprites:
 		Image: gunw.destroyed
 
@@ -4182,7 +4182,7 @@ SEEK.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Seeker)
+		Name: Actor-SEEK.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4195,7 +4195,7 @@ INTL.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Interloper)
+		Name: Actor-INTL.Husk-Name
 	RenderSprites:
 		Image: intl.destroyed
 
@@ -4203,14 +4203,14 @@ CORR.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Corrupter)
+		Name: Actor-CORR.Husk-Name
 	RenderSprites:
 		Image: corr.destroyed
 
 DEVO.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Devourer)
+		Name: Actor-DEVO.Husk-Name
 	RenderSprites:
 		Image: devo.destroyed
 
@@ -4218,7 +4218,7 @@ STCR.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Stormcrawler)
+		Name: Actor-STCR.Husk-Name
 	RenderSprites:
 		Image: stcr.destroyed
 
@@ -4226,14 +4226,14 @@ RUIN.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Ruiner)
+		Name: Actor-RUIN.Husk-Name
 	RenderSprites:
 		Image: ruin.destroyed
 
 TPOD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Annihilator Tripod)
+		Name: Actor-TPOD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4243,7 +4243,7 @@ RTPD.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Reaper Tripod)
+		Name: Actor-RTPD.Husk-Name
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4253,7 +4253,7 @@ OBLT.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Obliterator)
+		Name: Actor-OBLT.Husk-Name
 	RenderSprites:
 		Image: oblt.destroyed
 
@@ -4261,7 +4261,7 @@ NULL.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Nullifier)
+		Name: Actor-NULL.Husk-Name
 	RenderSprites:
 		Image: null.destroyed
 
@@ -4269,7 +4269,7 @@ STMR.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Stormrider
+		Name: Actor-STMR.Husk-Name
 	Aircraft:
 		TurnSpeed: 16
 		Speed: 146
@@ -4310,7 +4310,7 @@ TORM.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Tormentor
+		Name: Actor-TORM.Husk-Name
 	Aircraft:
 		TurnSpeed: 28
 		Speed: 201
@@ -4349,8 +4349,8 @@ ENRV.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Enervator
-		GenericName: Destroyed Aircraft
+		Name: Actor-ENRV.Husk-Name
+		GenericName: Actor-Generic-DestroyedAircraft-Name
 	Aircraft:
 		TurnSpeed: 14
 		Speed: 170
@@ -4391,8 +4391,8 @@ ENRV.Husk.EMP:
 DEVA.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Devastator Warship
-		GenericName: Destroyed Aircraft
+		Name: Actor-DEVA.Husk-Name
+		GenericName: Actor-Generic-DestroyedAircraft-Name
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 35
@@ -4423,7 +4423,7 @@ DEVA.Husk.Ground:
 	RenderSprites:
 		Image: deva
 	Tooltip:
-		Name: Husk (Devastator Warship)
+		Name: Actor-DEVA.Husk.Ground-Name
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4444,8 +4444,8 @@ DEVA.Husk.Ground:
 PAC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Planetary Assault Carrier
-		GenericName: Destroyed Aircraft
+		Name: Actor-PAC.Husk-Name
+		GenericName: Actor-Generic-DestroyedAircraft-Name
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30
@@ -4478,7 +4478,7 @@ PAC.Husk.Ground:
 	RenderSprites:
 		Image: pac
 	Tooltip:
-		Name: Husk (Planetary Assault Carrier)
+		Name: Actor-PAC.Husk.Ground-Name
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4500,8 +4500,8 @@ MSHP.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Mothership
-		GenericName: Destroyed Aircraft
+		Name: Actor-MSHP.Husk-Name
+		GenericName: Actor-Generic-DestroyedAircraft-Name
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30
@@ -4539,7 +4539,7 @@ MSHP.Husk.Ground:
 	RenderSprites:
 		Image: mshp
 	Tooltip:
-		Name: Husk (Mothership)
+		Name: Actor-MSHP.Husk.Ground-Name
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4575,14 +4575,14 @@ SWAL:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.scrin
-		Description: • Stops units\n• Blocks enemy fire\n• Regenerates over time
+		Description: Actor-SWAL-Description
 		IconPalette: chromes
 	Valued:
 		Cost: 200
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Biometallic Wall
+		Name: Actor-SWAL-Name
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -4624,7 +4624,7 @@ SFAC:
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 		IconPalette: chrometd
-		Description: Produces structures.
+		Description: Actor-SFAC-Description
 	Health:
 		HP: 150000
 	Armor:
@@ -4639,7 +4639,7 @@ SFAC:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Platform
+		Name: Actor-SFAC-Name
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -4729,11 +4729,11 @@ REAC:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.scrin
 		IconPalette: chromes
-		Description: Provides power for other structures.
+		Description: Actor-REAC-Description
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Reactor
+		Name: Actor-REAC-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4771,11 +4771,11 @@ REA2:
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
 		IconPalette: chrome
-		Description: Provides double the power of a standard Reactor.
+		Description: Actor-REA2-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Reactor
+		Name: Actor-REA2-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4817,13 +4817,13 @@ PROC.SCRIN:
 	CustomSellValue:
 		Value: 400
 	Tooltip:
-		Name: Refinery
+		Name: Actor-PROC.SCRIN-Name
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.scrin
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chromes
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: Actor-PROC.SCRIN-Description
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -4898,11 +4898,11 @@ PORT:
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.scrin
 		IconPalette: chromes
-		Description: Produces infantry.
+		Description: Actor-PORT-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Portal
+		Name: Actor-PORT-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -4994,11 +4994,11 @@ WSPH:
 		BuildPaletteOrder: 80
 		Prerequisites: proc.scrin, ~structures.scrin, ~techlevel.low
 		IconPalette: chromes
-		Description: Produces vehicles.
+		Description: Actor-WSPH-Description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warp Sphere
+		Name: Actor-WSPH-Name
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -5088,14 +5088,14 @@ NERV:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 90
 		Prerequisites: proc.scrin, ~structures.scrin, ~techlevel.medium
-		Description: Provides an overview of the battlefield.
+		Description: Actor-NERV-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Nerve Center
+		Name: Actor-NERV-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5193,12 +5193,12 @@ SCRT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 150
 		Prerequisites: vehicles.any, anyradar, ~structures.scrin, ~techlevel.high
-		Description: Provides Scrin advanced technologies.
+		Description: Actor-SCRT-Description
 		IconPalette: chromes
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Scrin Tech Center
+		Name: Actor-SCRT-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5254,12 +5254,12 @@ GRAV:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 130
 		Prerequisites: radarorrepair, ~structures.scrin, ~techlevel.medium
-		Description: Produces Scrin aircraft.
+		Description: Actor-GRAV-Description
 		IconPalette: chromes
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gravity Stabilizer
+		Name: Actor-GRAV-Name
 	Selectable:
 		Bounds: 3072, 2560, 0, -128
 	Building:
@@ -5379,7 +5379,7 @@ SIGN:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.scrin, scrt, ~techlevel.high
-		Description: Provides access to the most powerful Scrin units and technology.
+		Description: Actor-SIGN-Description
 		BuildLimit: 1
 		IconPalette: chromes
 	TooltipExtras:
@@ -5392,7 +5392,7 @@ SIGN:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Signal Transmitter
+		Name: Actor-SIGN-Name
 	Power:
 		Amount: -150
 	ProvidesPrerequisite@Name:
@@ -5421,14 +5421,14 @@ SREP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 100
 		Prerequisites: vehicles.scrin, ~structures.scrin, ~techlevel.low
-		Description: Repairs vehicles and aircraft.
+		Description: Actor-SREP-Description
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Regeneration Bay
+		Name: Actor-SREP-Name
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -5489,13 +5489,13 @@ SILO.SCRIN:
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Silo
+		Name: Actor-SILO.SCRIN-Name
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: proc.scrin, ~structures.scrin
 		Queue: DefenseSQ, DefenseMQ
 		IconPalette: chromes
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: Actor-SILO.SCRIN-Description
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -5537,13 +5537,13 @@ MANI:
 		Prerequisites: scrt, ~structures.scrin, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrome
-		Description: Slows enemy unit movement and rate of fire.
+		Description: Actor-MANI-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Suppression Field
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Field Manipulator
+		Name: Actor-MANI-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5593,14 +5593,14 @@ RFGN:
 		BuildPaletteOrder: 140
 		Prerequisites: scrt, ~structures.scrin, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the Rift superweapon power.
+		Description: Actor-RFGN-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Rift
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Rift Generator
+		Name: Actor-RFGN-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5656,7 +5656,7 @@ PTUR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 60
 		Prerequisites: port, ~structures.scrin, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: Actor-PTUR-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
@@ -5667,7 +5667,7 @@ PTUR:
 	CustomSellValue:
 		Value: 250
 	Tooltip:
-		Name: Plasma Cannon
+		Name: Actor-PTUR-Name
 	Selectable:
 		DecorationBounds: 1024, 1194, 0, -256
 	Building:
@@ -5722,7 +5722,7 @@ SHAR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 90
 		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: Actor-SHAR-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
@@ -5731,7 +5731,7 @@ SHAR:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Shard Launcher
+		Name: Actor-SHAR-Name
 	Selectable:
 		DecorationBounds: 1024, 1877, 0, -469
 	Health:
@@ -5788,7 +5788,7 @@ SCOL:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
-		Description: Advanced base defense.
+		Description: Actor-SCOL-Description
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
@@ -5797,7 +5797,7 @@ SCOL:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Storm Column
+		Name: Actor-SCOL-Name
 	Selectable:
 		DecorationBounds: 1280, 2048, 0, -597
 	Health:
@@ -5842,7 +5842,7 @@ STRM:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Ion Storm
+		Name: Actor-STRM-Name
 	# required for death animation
 	Health:
 		HP: 1
@@ -5955,7 +5955,7 @@ STRM2:
 SSPK:
 	Inherits: SCOL
 	Tooltip:
-		Name: Storm Spike
+		Name: Actor-SSPK-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	-Sellable:
@@ -6049,10 +6049,10 @@ VSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Voidspike
+		Name: Actor-VSPK-Name
 	TooltipExtras:
 		Attributes: • Corrupts resources\n• Damages nearby enemies over time\n• Direct damage is reflected back to the attacker
-		Description: Gradually transforms nearby resources into Black Tiberium, which is devoid of most of its useful properties.
+		Description: Actor-VSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6108,10 +6108,10 @@ ISPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Ichor Spike
+		Name: Actor-ISPK-Name
 	TooltipExtras:
 		Attributes: • Enriches Tiberium trees (3 max)\n• Empowers units with Resource Conversion upgrade
-		Description: Enriches nearby Tiberium trees causing them to seed Tiberium more quickly.
+		Description: Actor-ISPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6161,10 +6161,10 @@ CSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Colony Spike
+		Name: Actor-CSPK-Name
 	TooltipExtras:
 		Attributes: • Produces non-defense buildings\n• Allows non-defense buildings to be built nearby once fully charged
-		Description: Enables production of non-defense buildings.
+		Description: Actor-CSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6239,9 +6239,9 @@ BUZZ:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Buzzer Swarm
+		Name: Actor-BUZZ-Name
 	TooltipExtras:
-		Description: Swarm of biometallic shards.
+		Description: Actor-BUZZ-TooltipExtrasDescription
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 		Attributes: • Untargetable\n• Blinds enemies
@@ -6315,7 +6315,7 @@ MSPK:
 	Inherits@selection: ^SelectableSupportUnit
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Mind Spark
+		Name: Actor-MSPK-Name
 	RenderSprites:
 		Palette: caneon
 	WithSpriteBody:
@@ -6367,9 +6367,9 @@ GRCL:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Greater Coalescence
+		Name: Actor-GRCL-Name
 	TooltipExtras:
-		Description: Pulsing biomass that heals allies and feeds on enemies.
+		Description: Actor-GRCL-TooltipExtrasDescription
 		Attributes: • Heals nearby allies\n• Slows and drains health from enemies\n• Disables power plants
 	RenderSprites:
 		Palette: caneon
@@ -6441,9 +6441,9 @@ GRCL:
 TBCL:
 	Inherits: GRCL
 	Tooltip:
-		Name: Tiberium Coalescence
+		Name: Actor-TBCL-Name
 	TooltipExtras:
-		Description: Pulsing biomass that damages nearby units.
+		Description: Actor-TBCL-TooltipExtrasDescription
 		-Attributes:
 	PeriodicExplosion:
 		Weapon: TiberiumCoalescence
@@ -6643,7 +6643,7 @@ IonSurgeFade:
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Wormhole
+		Name: Actor-^WormholeBase-Name
 	RenderSprites:
 		PlayerPalette: playerscrin
 	WithSpriteBody:
@@ -6695,10 +6695,10 @@ REBELGATEWAY:
 	Inherits@SelectableBuilding: ^SelectableBuilding
 	-Interactable:
 	Tooltip:
-		Name: Gateway
+		Name: Actor-REBELGATEWAY-Name
 	TooltipExtras:
 		Attributes: • Can be powered down to disable, or sold to remove\n• Structures must be manually linked for gateway to function
-		Description: Acts as a remote exit for linked ground unit production structures
+		Description: Actor-REBELGATEWAY-TooltipExtrasDescription
 	RenderSprites:
 		Image: wormholelg
 	Selectable:

@@ -5,7 +5,7 @@ DOG:
 		BuildAtProductionType: Dog
 		BuildPaletteOrder: 51
 		Prerequisites: kenn, ~infantry.dog, ~!tdog.upgrade
-		Description: Melee anti-infantry scout unit.
+		Description: Actor-DOG-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Can only attack Infantry
@@ -17,8 +17,8 @@ DOG:
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Attack Dog
-		GenericName: Dog
+		Name: Actor-DOG-Name
+		GenericName: Actor-Generic-Dog-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -108,9 +108,9 @@ TDOG:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Prerequisites: kenn, ~infantry.dog, ~tdog.upgrade
-		Description: Scout with attached explosives that will detonate on contact with a target.
+		Description: Actor-TDOG-Description
 	Tooltip:
-		Name: Terror Dog
+		Name: Actor-TDOG-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -153,14 +153,14 @@ E1:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
 		Prerequisites: ~infantry.ra
-		Description: General-purpose infantry.
+		Description: Actor-E1-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Rifle Infantry
+		Name: Actor-E1-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -207,14 +207,14 @@ E2:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
 		Prerequisites: ~infantry.e2
-		Description: Infantry armed with grenades.
+		Description: Actor-E2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 160
 	Tooltip:
-		Name: Grenadier
+		Name: Actor-E2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -261,14 +261,14 @@ E3:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 20
 		Prerequisites: ~infantry.ra
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: Actor-E3-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
 		Weaknesses: • Weak vs Infantry, Light Armor
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Rocket Soldier
+		Name: Actor-E3-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -370,11 +370,11 @@ U3:
 	Inherits@BOTHELPER: ^BotCaptureHelper
 	Buildable:
 		Queue: GuardianGI
-		Description: Allied specialist paradropped infantry.
+		Description: Actor-U3-Description
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Guardian G.I
+		Name: Actor-U3-Name
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
 		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
@@ -565,13 +565,13 @@ U3.squad:
 	ScriptTriggers:
 	ProvidesPrerequisite@squadname:
 	Tooltip:
-		Name: Airdrop: Guardian GIs
+		Name: Actor-U3.squad-Name
 	Buildable:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: ParadropInfantry
 		BuildPaletteOrder: 300
 		Prerequisites: radaroraircraft, ~infantry.usa, ~techlevel.medium
-		Description: Prepare five Guardian GIs for airdrop.
+		Description: Actor-U3.squad-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
 		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
@@ -612,14 +612,14 @@ E4:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
 		Prerequisites: ~barr, fturorradar, ~techlevel.low
-		Description: Short-range anti-infantry/anti-structure infantry.
+		Description: Actor-E4-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Soviet Flamethrower
+		Name: Actor-E4-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -666,7 +666,7 @@ E6:
 		BuildPaletteOrder: 31
 		Prerequisites: ~infantry.ra
 	Tooltip:
-		Name: Engineer
+		Name: Actor-E6-Name
 	Voiced:
 		VoiceSet: EngineerVoice
 	WithInfantryBody:
@@ -743,7 +743,7 @@ SPY:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 82
 		Prerequisites: ~tent, anyradar, ~techlevel.medium
-		Description: Infiltrates enemy structures for intel or sabotage. Effects depend on the building infiltrated.
+		Description: Actor-SPY-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Disguise as enemy infantry by right-clicking them\n• Detects cloaked ground units and spies\n • Infiltration effects:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike
@@ -751,8 +751,8 @@ SPY:
 		Cost: 500
 	-Tooltip:
 	DisguiseTooltip:
-		Name: Spy
-		GenericName: Soldier
+		Name: Actor-SPY-Name
+		GenericName: Actor-Generic-Spy-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	-Guard:
@@ -869,7 +869,7 @@ E7:
 		BuildPaletteOrder: 200
 		Prerequisites: ~tent, atek, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite commando infantry armed with dual pistols and C4.
+		Description: Actor-E7-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -877,7 +877,7 @@ E7:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Tanya
+		Name: Actor-E7-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -964,13 +964,13 @@ MEDI:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 50
 		Prerequisites: ~infantry.medi
-		Description: Heals nearby infantry.
+		Description: Actor-MEDI-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Medic
+		Name: Actor-MEDI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1024,14 +1024,14 @@ MECH:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
 		Prerequisites: repair, ~!tmpp, ~infantry.mech, ~techlevel.low
-		Description: Repairs nearby vehicles.
+		Description: Actor-MECH-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Can salvage destroyed vehicles for credits
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Mechanic
+		Name: Actor-MECH-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1116,14 +1116,14 @@ CMEC:
 		BuildAtProductionType: Cyborg
 		BuildPaletteOrder: 81
 		Prerequisites: repair, tmpp, ~tmpp, ~infantry.mech, ~techlevel.high
-		Description: Repairs nearby vehicles and advanced cyborgs.
+		Description: Actor-CMEC-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Can salvage destroyed vehicles for credits
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Cyborg Mechanic
+		Name: Actor-CMEC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1205,11 +1205,11 @@ HACK:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Queue: HackerCell
-		Description: Specialist able to take control of enemy structures & drones from range.
+		Description: Actor-HACK-Description
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Hacker
+		Name: Actor-HACK-Name
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Drones
 		Weaknesses: • Cannot attack Infantry, Aircraft, Vehicles (other than Drones)
@@ -1330,7 +1330,7 @@ EINSTEIN:
 		DeathSequencePalette: player
 	-Wanders:
 	Tooltip:
-		Name: Prof. Einstein
+		Name: Actor-EINSTEIN-Name
 	Mobile:
 		Speed: 54
 	Voiced:
@@ -1340,7 +1340,7 @@ DELPHI:
 	Inherits: ^CivInfantry
 	-Wanders:
 	Tooltip:
-		Name: Agent Delphi
+		Name: Actor-DELPHI-Name
 	Mobile:
 		Speed: 54
 
@@ -1354,7 +1354,7 @@ CHAN:
 	Selectable:
 		Class: chan
 	Tooltip:
-		Name: Scientist
+		Name: Actor-CHAN-Name
 
 MOEBIUS:
 	Inherits: ^CivInfantry
@@ -1362,7 +1362,7 @@ MOEBIUS:
 	Voiced:
 		VoiceSet: MoebiusVoice
 	Tooltip:
-		Name: Dr. Moebius
+		Name: Actor-MOEBIUS-Name
 	Mobile:
 		Speed: 54
 
@@ -1372,7 +1372,7 @@ GNRL:
 		Image: boris
 	-Wanders:
 	Tooltip:
-		Name: General
+		Name: Actor-GNRL-Name
 	Selectable:
 		Class: gnrl
 	Mobile:
@@ -1404,14 +1404,14 @@ THF:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 95
 		Prerequisites: anyradar, ~barr, ~techlevel.medium
-		Description: Steals enemy credits and hijacks enemy vehicles.
+		Description: Actor-THF-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Cloaked with increased vision when not moving
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Thief
+		Name: Actor-THF-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1489,7 +1489,7 @@ SHOK:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~!ttrp.upgrade, ~techlevel.medium
-		Description: Elite infantry with portable Tesla weapon.
+		Description: Actor-SHOK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -1497,7 +1497,7 @@ SHOK:
 	Valued:
 		Cost: 425
 	Tooltip:
-		Name: Shock Trooper
+		Name: Actor-SHOK-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1565,7 +1565,7 @@ TTRP:
 		BuildPaletteOrder: 91
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~ttrp.upgrade, ~techlevel.medium
 	Tooltip:
-		Name: Tesla Trooper
+		Name: Actor-TTRP-Name
 	Valued:
 		Cost: 600
 	Health:
@@ -1596,14 +1596,14 @@ N1:
 		BuildPaletteOrder: 11
 		Prerequisites: ~!tmpp, ~infantry.td
 		IconPalette: chrometd
-		Description: General-purpose infantry.
+		Description: Actor-N1-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Mini-Gunner
+		Name: Actor-N1-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1657,14 +1657,14 @@ N2:
 		BuildPaletteOrder: 42
 		Prerequisites: ~pyle
 		IconPalette: chrometd
-		Description: Infantry armed with grenades.
+		Description: Actor-N2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 160
 	Tooltip:
-		Name: Grenadier
+		Name: Actor-N2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1735,14 +1735,14 @@ N3:
 		BuildPaletteOrder: 21
 		Prerequisites: ~!tmpp, ~infantry.td
 		IconPalette: chrometd
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: Actor-N3-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
 		Weaknesses: • Weak vs Infantry, Light Armor
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Rocket Soldier
+		Name: Actor-N3-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1838,14 +1838,14 @@ N4:
 		BuildPaletteOrder: 71
 		Prerequisites: ~hand, ~!tmpp
 		IconPalette: chrometd
-		Description: Short-range anti-infantry/anti-structure infantry.
+		Description: Actor-N4-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Nod Flamethrower
+		Name: Actor-N4-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1907,7 +1907,7 @@ N5:
 		BuildPaletteOrder: 72
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: Short-range anti-infantry/anti-structure cyborg infantry.
+		Description: Actor-N5-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -1915,7 +1915,7 @@ N5:
 	Valued:
 		Cost: 325
 	Tooltip:
-		Name: Chemical Warrior
+		Name: Actor-N5-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2024,7 +2024,7 @@ RMBO:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Commando
+		Name: Actor-RMBO-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2033,7 +2033,7 @@ RMBO:
 		Queue: InfantrySQ, InfantryMQ
 		IconPalette: chrometd
 		BuildLimit: 1
-		Description: Elite infantry armed with an SMG and C4.
+		Description: Actor-RMBO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -2123,7 +2123,7 @@ N6:
 		Prerequisites: ~infantry.td
 		IconPalette: chrometd
 	Tooltip:
-		Name: Engineer
+		Name: Actor-N6-Name
 	Voiced:
 		VoiceSet: EngineerVoice
 	WithInfantryBody:
@@ -2161,7 +2161,7 @@ SNIP:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 83
 		Prerequisites: ~infantry.england, anyradar, ~techlevel.medium
-		Description: Elite marksman infantry armed with a powerful sniper rifle.
+		Description: Actor-SNIP-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Vehicles (with upgrade)
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack aircraft
@@ -2169,7 +2169,7 @@ SNIP:
 	Valued:
 		Cost: 550
 	Tooltip:
-		Name: Sniper
+		Name: Actor-SNIP-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2282,7 +2282,7 @@ BORI:
 		BuildPaletteOrder: 205
 		Prerequisites: ~barr, stek, ~infantry.boris, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite commando infantry armed with a high-powered assault rifle.
+		Description: Actor-BORI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Defenses
 		Weaknesses: • Cannot attack Aircraft
@@ -2290,7 +2290,7 @@ BORI:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Boris
+		Name: Actor-BORI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2384,7 +2384,7 @@ SAB:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 113
 		Prerequisites: anyradar, ~hand, ~techlevel.medium
-		Description: Covert infantry that infiltrates enemy structures to steal or lock technology.
+		Description: Actor-SAB-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Can only attack Infantry
@@ -2392,7 +2392,7 @@ SAB:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Infiltrator
+		Name: Actor-SAB-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	RevealsShroud:
@@ -2472,7 +2472,7 @@ ASSA:
 	Inherits@COMMANDOSKULL: ^CommandoSkull
 	Buildable:
 		Queue: AssassinSquad
-		Description: Specialist armed with a sniper rifle and C4 explosives.
+		Description: Actor-ASSA-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Defenses
@@ -2481,7 +2481,7 @@ ASSA:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Assassin
+		Name: Actor-ASSA-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2584,12 +2584,12 @@ CONF:
 		Attributes: • Special Ability: Idol of Kane (max 1 per Confessor)\n• Immune to mind control
 	Buildable:
 		Queue: ConfessorCabal
-		Description: Fanatical elite infantry that can deploy Idols of Kane to inspire allies and demoralize enemies.
+		Description: Actor-CONF-Description
 		IconPalette: chrometd
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Confessor
+		Name: Actor-CONF-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2668,7 +2668,7 @@ ACOL:
 		BuildPaletteOrder: 111
 		IconPalette: chrometd
 		Prerequisites: obliortmpl, anyradar, ~infantry.marked, ~!tmpp, ~techlevel.medium
-		Description: Cyborg infantry with a laser weapon.
+		Description: Actor-ACOL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -2676,7 +2676,7 @@ ACOL:
 	Valued:
 		Cost: 475
 	Tooltip:
-		Name: Acolyte
+		Name: Actor-ACOL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2731,7 +2731,7 @@ TPLR:
 	Inherits: ACOL
 	Inherits@HEALINGCOOLDOWN: ^HealingCooldown
 	Tooltip:
-		Name: Templar
+		Name: Actor-TPLR-Name
 	Valued:
 		Cost: 550
 	Health:
@@ -2838,7 +2838,7 @@ JJET:
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~pyle, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Flying general-purpose infantry.
+		Description: Actor-JJET-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Aircraft
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
@@ -2846,7 +2846,7 @@ JJET:
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Jump-Jet Trooper
+		Name: Actor-JJET-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2975,13 +2975,13 @@ BJET:
 	Buildable:
 		Prerequisites: anyradar, ~pyle, bjet.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Flying infantry with a grenade launcher.
+		Description: Actor-BJET-Description
 		BuildPaletteOrder: 101
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Has difficulty hitting moving targets\n• Cannot attack Aircraft
 	Tooltip:
-		Name: Bombardier
+		Name: Actor-BJET-Name
 	Aircraft:
 		Speed: 100
 	Armament@AIRBORNE:
@@ -3014,7 +3014,7 @@ JJET.Husk:
 		Type: GroundPosition
 	ScriptTriggers:
 	Tooltip:
-		Name: Jumpjet Infantry
+		Name: Actor-JJET.Husk-Name
 	FallsToEarth:
 		Velocity: 70
 		Explosion:
@@ -3058,14 +3058,14 @@ E8:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 92
 		Prerequisites: ~infantry.iraq, tturorstek, anyradar, ~!deso.upgrade, ~techlevel.medium
-		Description: Anti-infantry unit with radiation based weaponry.
+		Description: Actor-E8-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 425
 	Tooltip:
-		Name: Rad Trooper
+		Name: Actor-E8-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3137,7 +3137,7 @@ DESO:
 		BuildPaletteOrder: 93
 		Prerequisites: ~infantry.iraq, tturorstek, anyradar, ~deso.upgrade, ~techlevel.medium
 	Tooltip:
-		Name: Desolator
+		Name: Actor-DESO-Name
 	TooltipExtras:
 		Attributes: • Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units\n• Special Ability: Desolate Ground
 	Valued:
@@ -3228,7 +3228,7 @@ N1C:
 		BuildPaletteOrder: 13
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: General-purpose cyborg infantry.
+		Description: Actor-N1C-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -3236,7 +3236,7 @@ N1C:
 	Valued:
 		Cost: 250
 	Tooltip:
-		Name: Cyborg
+		Name: Actor-N1C-Name
 	-TakeCover:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3281,7 +3281,7 @@ N3C:
 		BuildPaletteOrder: 23
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: Anti-tank/anti-aircraft cyborg infantry.
+		Description: Actor-N3C-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
 		Weaknesses: • Weak vs Infantry, Light Armor
@@ -3289,7 +3289,7 @@ N3C:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Cyborg Rocket Soldier
+		Name: Actor-N3C-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	-TakeCover:
@@ -3378,7 +3378,7 @@ RMBC:
 		BuildPaletteOrder: 232
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~techlevel.high
-		Description: Elite cyborg infantry unit armed with a plasma cannon.
+		Description: Actor-RMBC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3386,7 +3386,7 @@ RMBC:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Cyborg Elite
+		Name: Actor-RMBC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3469,7 +3469,7 @@ IVAN:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 41
 		Prerequisites: ~infantry.ukraine, weap, ~techlevel.low
-		Description: Specialist demolition infantry armed with explosives.
+		Description: Actor-IVAN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -3477,7 +3477,7 @@ IVAN:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Crazy Ivan
+		Name: Actor-IVAN-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3539,7 +3539,7 @@ BRUT:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 94
 		Prerequisites: anyradar, ~infantry.yuri, ~techlevel.medium
-		Description: Melee range genetically engineered hulk.
+		Description: Actor-BRUT-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3548,7 +3548,7 @@ BRUT:
 	Valued:
 		Cost: 450
 	Tooltip:
-		Name: Brute
+		Name: Actor-BRUT-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3677,11 +3677,11 @@ SHAD:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: ShadowTeam
-		Description: Stealth infantry armed with a machine pistol and grenades.
+		Description: Actor-SHAD-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shadow Operative
+		Name: Actor-SHAD-Name
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
@@ -3797,7 +3797,7 @@ SGLI:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shadow Glider
+		Name: Actor-SGLI-Name
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
@@ -3972,14 +3972,14 @@ BH:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~infantry.blackh, ~techlevel.medium
-		Description: Elite precision anti-tank flamethrower unit.
+		Description: Actor-BH-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Black Hand Trooper
+		Name: Actor-BH-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4050,7 +4050,7 @@ YURI:
 		BuildPaletteOrder: 206
 		Prerequisites: ~barr, stek, ~infantry.yuri, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite specialist infantry able to mind-control enemy units (up to 3, increases with veterancy).
+		Description: Actor-YURI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -4058,7 +4058,7 @@ YURI:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Yuri
+		Name: Actor-YURI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4245,7 +4245,7 @@ SEAL:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Navy SEAL
+		Name: Actor-SEAL-Name
 	Health:
 		HP: 16000
 	UpdatesPlayerStatistics:
@@ -4263,7 +4263,7 @@ SEAL:
 		Queue: InfantrySQ, InfantryMQ
 		IconPalette: chrome
 		BuildLimit: -1
-		Description: Elite infantry armed with an SMG and C4.
+		Description: Actor-SEAL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -4383,7 +4383,7 @@ ENLI:
 		BuildPaletteOrder: 230
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~zeal.covenant, ~techlevel.high
-		Description: Heavy cyborg infantry unit armed with a particle cannon.
+		Description: Actor-ENLI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -4391,7 +4391,7 @@ ENLI:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Enlightened
+		Name: Actor-ENLI-Name
 	-TakeCover:
 	-Crushable:
 	-KillsSelf@Immolate:
@@ -4527,11 +4527,11 @@ MORT.Cryo:
 	Buildable:
 		BuildPaletteOrder: 250
 		Prerequisites: ~stolentech.tent
-		Description: Infantry armed with a Cryo Mortar.
+		Description: Actor-MORT.Cryo-Description
 	TooltipExtras:
 		Attributes: • Slows enemy movement and increases damage taken
 	Tooltip:
-		Name: Cryo Mortar
+		Name: Actor-MORT.Cryo-Name
 	Armament@PRIMARY:
 		Weapon: CryoMortar
 	Armament@BATF:
@@ -4551,13 +4551,13 @@ CDOG:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 251
 		Prerequisites: ~stolentech.barr
-		Description: Melee anti-infantry scout unit.
+		Description: Actor-CDOG-Description
 	Valued:
 		Cost: 400
 	Mobile:
 		Speed: 100
 	Tooltip:
-		Name: Cyberdog
+		Name: Actor-CDOG-Name
 	Armor:
 		Type: Light
 	Health:
@@ -4589,9 +4589,9 @@ MORT.Sonic:
 	Buildable:
 		BuildPaletteOrder: 252
 		Prerequisites: ~stolentech.pyle
-		Description: Infantry armed with a Sonic Mortar.
+		Description: Actor-MORT.Sonic-Description
 	Tooltip:
-		Name: Sonic Mortar
+		Name: Actor-MORT.Sonic-Name
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Buildings
 		Attributes: • Slows enemy movement and rate of fire
@@ -4610,9 +4610,9 @@ MORT.Chem:
 	Buildable:
 		BuildPaletteOrder: 253
 		Prerequisites: ~stolentech.hand
-		Description: Infantry armed with a Chemical Mortar, delivering a corrosive payload which is particularly effective against cyborgs.
+		Description: Actor-MORT.Chem-Description
 	Tooltip:
-		Name: Chemical Mortar
+		Name: Actor-MORT.Chem-Name
 	FireWarheadsOnDeath:
 		Weapon: UnitExplodeChemSmall
 		EmptyWeapon: UnitExplodeChemSmall
@@ -4632,7 +4632,7 @@ CSCR:
 		BuildPaletteOrder: 254
 		Prerequisites: ~stolentech.port
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry.
+		Description: Actor-CSCR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -4640,7 +4640,7 @@ CSCR:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Cyberscrin
+		Name: Actor-CSCR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4689,7 +4689,7 @@ CMSR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
 		Prerequisites: stek, ~barr, ~techlevel.high
-		Description: Leads regular infantry into battle, motivating them to move faster and fight harder.
+		Description: Actor-CMSR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Weak vs Light Armor, Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -4697,7 +4697,7 @@ CMSR:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Commissar
+		Name: Actor-CMSR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4766,7 +4766,7 @@ ZTRP:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
 		Prerequisites: ~pyle, gtek, ~bombard.strat, ~techlevel.high
-		Description: Elite infantry armed with a railgun and equipped with a jump-pack.
+		Description: Actor-ZTRP-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
@@ -4775,7 +4775,7 @@ ZTRP:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Zone Trooper
+		Name: Actor-ZTRP-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4865,10 +4865,10 @@ ZRAI:
 	Inherits: ZTRP
 	Buildable:
 		Prerequisites: ~pyle, gtek, ~seek.strat, ~techlevel.high
-		Description: Elite infantry armed with a sonic grenade launcher and equipped with a jump-pack.
+		Description: Actor-ZRAI-Description
 		BuildPaletteOrder: 151
 	Tooltip:
-		Name: Zone Raider
+		Name: Actor-ZRAI-Name
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -4895,10 +4895,10 @@ ZDEF:
 	Inherits: ZTRP
 	Buildable:
 		Prerequisites: ~pyle, gtek, ~hold.strat, ~techlevel.high
-		Description: Elite infantry armed with an ion rifle and an ability which shields nearby infantry.
+		Description: Actor-ZDEF-Description
 		BuildPaletteOrder: 152
 	Tooltip:
-		Name: Zone Defender
+		Name: Actor-ZDEF-Name
 	TooltipExtras:
 		Attributes: • Special Ability: Defense Matrix
 	Armament@PRIMARY:
@@ -4962,7 +4962,7 @@ ENFO:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
 		Prerequisites: ~tent, alhq, ~techlevel.high
-		Description: Durable short-range front-line infantry.
+		Description: Actor-ENFO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -4970,7 +4970,7 @@ ENFO:
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Enforcer
+		Name: Actor-ENFO-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5030,7 +5030,7 @@ HOPL:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~greece.coalition, ~techlevel.high
-		Description: Elite infantry armed with a prism rifle which periodically fires charged shots to blind enemies.
+		Description: Actor-HOPL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -5038,7 +5038,7 @@ HOPL:
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Hoplite
+		Name: Actor-HOPL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5120,7 +5120,7 @@ TIGR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~korea.coalition, ~techlevel.high
-		Description: Elite infantry with a long range rocket launcher.
+		Description: Actor-TIGR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Aircraft
 		Weaknesses: • Weak vs Infantry, Defenses, Buildings\n• Cannot acquire targets at close range
@@ -5128,7 +5128,7 @@ TIGR:
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Tiger Guard
+		Name: Actor-TIGR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5193,7 +5193,7 @@ CRYT:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~sweden.coalition, ~techlevel.high
-		Description: Elite infantry armed with a cryo sprayer.
+		Description: Actor-CRYT-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
@@ -5201,7 +5201,7 @@ CRYT:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Cryo Trooper
+		Name: Actor-CRYT-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5273,7 +5273,7 @@ REAP:
 		BuildPaletteOrder: 231
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~unity.covenant, ~techlevel.high
-		Description: Heavy cyborg with dual missile launchers and an infantry incapacitating grenade launcher.
+		Description: Actor-REAP-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor
@@ -5283,7 +5283,7 @@ REAP:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Cyborg Reaper
+		Name: Actor-REAP-Name
 	-TakeCover:
 	-Crushable:
 	-KillsSelf@Immolate:

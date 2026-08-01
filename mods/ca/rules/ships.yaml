@@ -7,7 +7,7 @@ SS:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Submerged anti-ship unit armed with torpedoes.
+		Description: Actor-SS-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units
 		Weaknesses: • Cannot attack Ground Units, Aircraft
@@ -15,7 +15,7 @@ SS:
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Submarine
+		Name: Actor-SS-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -77,7 +77,7 @@ MSUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 60
 		Prerequisites: ~spen, stek, ~techlevel.high
-		Description: Submerged anti-ground siege unit.
+		Description: Actor-MSUB-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Ground Units
 		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
@@ -85,7 +85,7 @@ MSUB:
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Missile Submarine
+		Name: Actor-MSUB-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -129,7 +129,7 @@ DD:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 40
 		Prerequisites: ~syrd, anyradar, ~techlevel.medium
-		Description: Fast multi-role ship.
+		Description: Actor-DD-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units, Vehicles, Aircraft
 		Weaknesses: • Weak vs Infantry
@@ -137,7 +137,7 @@ DD:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Destroyer
+		Name: Actor-DD-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -204,14 +204,14 @@ CA:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 50
 		Prerequisites: ~syrd, atek, ~techlevel.high
-		Description: Very slow long-range bombardment ship.
+		Description: Actor-CA-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Ground Units
 		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Cruiser
+		Name: Actor-CA-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -276,14 +276,14 @@ LST:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.low
-		Description: General-purpose naval transport.
+		Description: Actor-LST-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Can carry vehicles and infantry
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Transport
+		Name: Actor-LST-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -352,7 +352,7 @@ PT:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 20
 		Prerequisites: ~syrd, ~techlevel.low
-		Description: Light scout & support ship.
+		Description: Actor-PT-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units
 		Weaknesses: • Weak vs Ground Units\n• Cannot attack Aircraft
@@ -360,7 +360,7 @@ PT:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gunboat
+		Name: Actor-PT-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -414,7 +414,7 @@ PT2:
 		BuildPaletteOrder: 20
 		Prerequisites: ~syrd.gdi, ~techlevel.low
 		IconPalette: chrometd
-		Description: Light scout & support ship armed with guided missiles.
+		Description: Actor-PT2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Submarines, Aircraft
 		Weaknesses: • Weak vs Ground Units
@@ -422,7 +422,7 @@ PT2:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Patrol Boat
+		Name: Actor-PT2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -489,7 +489,7 @@ DD2:
 		BuildPaletteOrder: 40
 		IconPalette: chrometd
 		Prerequisites: ~syrd.gdi, anyradar, ~techlevel.medium
-		Description: Advanced warship armed with a powerful railgun.
+		Description: Actor-DD2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units, Vehicles
 		Weaknesses: • Cannot attack Aircraft
@@ -497,7 +497,7 @@ DD2:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Frigate
+		Name: Actor-DD2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -589,7 +589,7 @@ SS2:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen.nod, ~techlevel.low
-		Description: Submerged anti-ship unit armed with torpedoes.
+		Description: Actor-SS2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units
 		Weaknesses: • Cannot attack Ground Units, Aircraft
@@ -597,7 +597,7 @@ SS2:
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Attack Submarine
+		Name: Actor-SS2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -659,7 +659,7 @@ ISUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen.nod, tmpl, ~techlevel.high
-		Description: Submerged unit armed with extreme long-range missiles.
+		Description: Actor-ISUB-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Ground Units
 		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
@@ -667,7 +667,7 @@ ISUB:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: ICBM Submarine
+		Name: Actor-ISUB-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -727,7 +727,7 @@ ICBM:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: ICBM
+		Name: Actor-ICBM-Name
 	Health:
 		HP: 7500
 	BallisticMissile:
@@ -763,7 +763,7 @@ CV:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~syrd.gdi, gtek, ~techlevel.high
-		Description: Carrier that launches a squadron of Hornet drone aircraft.
+		Description: Actor-CV-Description
 	TooltipExtras:
 		Strengths: • Strong vs Ground Units, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -771,7 +771,7 @@ CV:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Drone Carrier
+		Name: Actor-CV-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -840,14 +840,14 @@ SB:
 		BuildPaletteOrder: 20
 		IconPalette: chrometd
 		Prerequisites: ~spen.nod, ~techlevel.low
-		Description: Fast scout boat, armed with rockets.
+		Description: Actor-SB-Description
 	TooltipExtras:
 		Strengths: • Strong vs Naval Units, Ground Vehicles, Aircraft
 		Weaknesses: • Weak vs Infantry
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Recon Boat
+		Name: Actor-SB-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -897,7 +897,7 @@ SEAS:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Light scout & support ship.
+		Description: Actor-SEAS-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Infantry
 		Weaknesses: • Weak vs Naval Units, Vehicles
@@ -905,7 +905,7 @@ SEAS:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Sea Scorpion
+		Name: Actor-SEAS-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

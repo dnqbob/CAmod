@@ -54,7 +54,7 @@ PROXYMINESPAWN:
 	Armor:
 		Type: Light
 	Tooltip:
-		Name: Mine
+		Name: Actor-PROXYMINESPAWN-Name
 	Targetable:
 		TargetTypes: Ground, Water, Mine
 	HitShape:
@@ -276,7 +276,7 @@ CRATE:
 MONEYCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Money Crate
+		Name: Actor-MONEYCRATE-Name
 	GiveCashCrateAction:
 		Amount: 500
 		SelectionShares: 1
@@ -287,7 +287,7 @@ MONEYCRATE:
 HEALCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Heal Crate
+		Name: Actor-HEALCRATE-Name
 	HealActorsCrateAction:
 		Sound: heal2.aud
 		SelectionShares: 1
@@ -298,14 +298,14 @@ HEALCRATE:
 WCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Wooden Crate
+		Name: Actor-WCRATE-Name
 	RenderSprites:
 		Image: wcrate
 
 SCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Steel Crate
+		Name: Actor-SCRATE-Name
 
 ^CameraBase:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -380,7 +380,7 @@ camera.satscan:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: Satellite Scan
+		Name: Actor-camera.satscan-Name
 	RevealsMap:
 		RevealGeneratedShroud: false
 		RequiresCondition: uplinkavailable
@@ -446,7 +446,7 @@ gps.satellite:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS Satellite
+		Name: Actor-gps.satellite-Name
 
 gps.satellite.firstscan:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -454,7 +454,7 @@ gps.satellite.firstscan:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS Satellite
+		Name: Actor-gps.satellite.firstscan-Name
 
 ToxicCloud:
 	Interactable:
@@ -560,7 +560,7 @@ FLARE:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Flare
+		Name: Actor-FLARE-Name
 		ShowOwnerRow: false
 	MapEditorData:
 		Categories: Decoration
@@ -570,7 +570,7 @@ FLARE.dropzone:
 	RevealsShroud:
 		Range: 4c0
 	Tooltip:
-		Name: Dropzone Flare
+		Name: Actor-FLARE.dropzone-Name
 	FreeActorWithDelivery@2:
 		Actor: vulc.reinforce
 		DeliveryOffset: 0,0
@@ -592,7 +592,7 @@ MINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Ore Mine
+		Name: Actor-MINE-Name
 	RenderSprites:
 		Palette: terrain
 	WithSpriteBody:
@@ -621,7 +621,7 @@ GMINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Gem Mine
+		Name: Actor-GMINE-Name
 	RenderSprites:
 		Palette: player
 	WithSpriteBody:
@@ -650,7 +650,7 @@ RAILMINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Abandoned Mine
+		Name: Actor-RAILMINE-Name
 	RenderSprites:
 		Palette: player
 	WithSpriteBody:
@@ -669,7 +669,7 @@ QUEE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Queen Ant
+		Name: Actor-QUEE-Name
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -685,7 +685,7 @@ LAR1:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Ant Larva
+		Name: Actor-LAR1-Name
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -700,14 +700,14 @@ LAR1:
 LAR2:
 	Inherits@1: LAR1
 	Tooltip:
-		Name: Ant Larvae
+		Name: Actor-LAR2-Name
 
 powerproxy.parabombs:
 	Inherits@DUMMY: ^InvisibleDummy
 	AirstrikePowerCA:
 		Icon: parabombs
-		Name: Parabombs (Single Use)
-		Description: A Badger drops a load of parachuted bombs on your target.
+		Name: Actor-Single-Parabombs-Name
+		Description: Actor-Single-Parabombs-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 750
@@ -751,8 +751,8 @@ powerproxy.paratroopers:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: halo.paradrop
-		Name: Paratroopers (Single Use)
-		Description: A Halo transport drops a squad of infantry\nanywhere on the map.
+		Name: Actor-Single-Paratroopers-Soviet-Name
+		Description: Actor-Single-Paratroopers-Soviet-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 750
@@ -779,8 +779,8 @@ powerproxy.paratroopers.allies:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: tran.paradrop
-		Name: Paratroopers (Single Use)
-		Description: A Chinook drops a squad of infantry\nanywhere on the map.
+		Name: Actor-Single-Paratroopers-Allies-Name
+		Description: Actor-Single-Paratroopers-Allies-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 750
@@ -809,7 +809,7 @@ powerproxy.airborne:
 		SquadSize: 1
 		UnitType: galx
 		Name: Airdrop: Guardian GIs
-		Description: A Heavy Transport Plane drops a squad of Guardian GIs\nanywhere on the map.
+		Description: Actor-Single-GGI-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 250
@@ -834,7 +834,7 @@ powerproxy.airborne:
 	Buildable:
 		Queue: PowerProxy
 	Tooltip:
-		Name: Guardian GIs (Single Use)
+		Name: Actor-powerproxy.airborne-Name
 
 powerproxy.airborne.tank:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -844,7 +844,7 @@ powerproxy.airborne.tank:
 		SquadSize: 1
 		UnitType: galx
 		Name: Airdrop: Grizzly Tanks
-		Description: A Heavy Transport Plane drops a pair of Grizzly Tanks\nanywhere on the map.
+		Description: Actor-Single-Grizzly-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 250
@@ -869,7 +869,7 @@ powerproxy.airborne.tank:
 	Buildable:
 		Queue: PowerProxy
 	Tooltip:
-		Name: Grizzly Tanks (Single Use)
+		Name: Actor-powerproxy.airborne.tank-Name
 
 powerproxy.airstrike:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -886,8 +886,8 @@ powerproxy.airstrike:
 				SpawnOffset: 0,0,0
 				TargetOffset: 0,0,0
 		Icon: airstrike
-		Name: Air Strike (Single Use)
-		Description: A10 strike planes drop napalm\nbombs on your target.
+		Name: Actor-Single-AirStrike-Name
+		Description: Actor-Single-AirStrike-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 375
@@ -926,52 +926,52 @@ aircraft.upgraded:
 playerxp.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 1
+		Name: Actor-playerxp.level1-Name
 	Buildable:
-		Description: Player Rank 1
+		Description: Actor-playerxp.level1-Description
 
 playerxp.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 2
+		Name: Actor-playerxp.level2-Name
 	Buildable:
-		Description: Player Rank 2
+		Description: Actor-playerxp.level2-Description
 
 playerxp.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 3
+		Name: Actor-playerxp.level3-Name
 	Buildable:
-		Description: Player Rank 3
+		Description: Actor-playerxp.level3-Description
 
 influence.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 1
+		Name: Actor-influence.level1-Name
 	Buildable:
-		Description: Influence Level 1
+		Description: Actor-influence.level1-Description
 
 influence.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 2
+		Name: Actor-influence.level2-Name
 	Buildable:
-		Description: Influence Level 2
+		Description: Actor-influence.level2-Description
 
 influence.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 3
+		Name: Actor-influence.level3-Name
 	Buildable:
-		Description: Influence Level 3
+		Description: Actor-influence.level3-Description
 
 timeskip:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Time Skip
+		Name: Actor-timeskip-Name
 	Buildable:
 		Queue: TimeSkip
-		Description: Advances influence progress by 1:00.
+		Description: Actor-timeskip-Description
 	AdvancesTimeline:
 		Type: AlliedInfluence
 		Ticks: 1500
@@ -1125,7 +1125,7 @@ sfac.colorpicker:
 CTFLAG:
 	Inherits: ^TechBuilding
 	Tooltip:
-		Name: Flag
+		Name: Actor-CTFLAG-Name
 	WithBuildingBib:
 		HasMinibib: true
 	-HitShape:
@@ -1161,7 +1161,7 @@ SPLITBLUE:
 	AppearsOnMapPreview:
 		Terrain: BlueTiberium
 	Tooltip:
-		Name: Blossom Tree (blue)
+		Name: Actor-SPLITBLUE-Name
 	RadarColorFromTerrain:
 		Terrain: BlueTiberium
 	ProximityExternalCondition@ONTIB:
@@ -1452,7 +1452,7 @@ watcher.parasite:
 SHAB:
 	Inherits: ^Mine
 	Tooltip:
-		Name: Shadow Beacon
+		Name: Actor-SHAB-Name
 	Mine:
 		CrushClasses: beacon, mine
 		DetonateClasses: beacon
@@ -1490,9 +1490,9 @@ scrin.allegiances.available:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 4x Refineries
+		Name: Actor-scrin.allegiances.available-Name
 	Buildable:
-		Description: 4x Refineries
+		Description: Actor-scrin.allegiances.available-Description
 
 # For MQ, ensures production tabs are updated properly
 QueueUpdaterDummy:
@@ -1505,71 +1505,71 @@ QueueUpdaterDummy:
 playerxp.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 1
+		Name: Actor-playerxp.level1-Name
 	Buildable:
-		Description: Player XP rank 1.
+		Description: Actor-playerxp.level1-Description
 	RenderSprites:
 
 playerxp.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 2
+		Name: Actor-playerxp.level2-Name
 	Buildable:
-		Description: Player XP rank 2.
+		Description: Actor-playerxp.level2-Description
 	RenderSprites:
 
 playerxp.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 3
+		Name: Actor-playerxp.level3-Name
 	Buildable:
-		Description: Player XP rank 3.
+		Description: Actor-playerxp.level3-Description
 	RenderSprites:
 
 influence.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 1
+		Name: Actor-influence.level1-Name
 	Buildable:
-		Description: Allied influence level 1.
+		Description: Actor-influence.level1-Description
 	RenderSprites:
 
 influence.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 2
+		Name: Actor-influence.level2-Name
 	Buildable:
-		Description: Allied influence level 2.
+		Description: Actor-influence.level2-Description
 	RenderSprites:
 
 influence.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 3
+		Name: Actor-influence.level3-Name
 	Buildable:
-		Description: Allied influence level 3.
+		Description: Actor-influence.level3-Description
 	RenderSprites:
 
 covenant.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 1 (1x enemy building destroyed/captured/infiltrated or harvester destroyed)
+		Name: Actor-covenant.level1-Name
 	Buildable:
-		Description: Covenant level 1 (1x enemy building destroyed/captured/infiltrated or harvester destroyed)
+		Description: Actor-covenant.level1-Description
 	RenderSprites:
 
 covenant.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 2
+		Name: Actor-covenant.level2-Name
 	Buildable:
-		Description: Covenant level 2.
+		Description: Actor-covenant.level2-Description
 	RenderSprites:
 
 covenant.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 3
+		Name: Actor-covenant.level3-Name
 	Buildable:
-		Description: Covenant level 3.
+		Description: Actor-covenant.level3-Description
 	RenderSprites:

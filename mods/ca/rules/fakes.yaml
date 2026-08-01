@@ -6,11 +6,11 @@ FPWR:
 		BuildPaletteOrder: 900
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: anypower, ~structures.england, ~techlevel.low
-		Description: Looks like a Power Plant. Packed with explosives.
+		Description: Actor-FPWR-Description
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Power Plant
-		GenericName: Power Plant
+		Name: Actor-FPWR-Name
+		GenericName: Actor-Generic-Pp-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -44,11 +44,11 @@ FREF:
 		BuildPaletteOrder: 910
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: proc, ~structures.england, ~techlevel.low
-		Description: Looks like a Refinery. Packed with explosives.
+		Description: Actor-FREF-Description
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Refinery
-		GenericName: Refinery
+		Name: Actor-FREF-Name
+		GenericName: Actor-Generic-Ref-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -104,11 +104,11 @@ WEAF:
 		BuildPaletteOrder: 920
 		Prerequisites: weap, ~structures.england, ~techlevel.low
 		Queue: DefenseSQ, DefenseMQ
-		Description: Looks like a War Factory. Packed with explosives.
+		Description: Actor-WEAF-Description
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake War Factory
-		GenericName: War Factory
+		Name: Actor-WEAF-Name
+		GenericName: Actor-Generic-Wf-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -143,8 +143,8 @@ DOMF:
 	Inherits@SHAPE: ^2x2Shape
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownOrForceDisable
 	Tooltip:
-		Name: Fake Radar Dome
-		GenericName: Radar Dome
+		Name: Actor-DOMF-Name
+		GenericName: Actor-Generic-Radar-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -153,7 +153,7 @@ DOMF:
 		BuildPaletteOrder: 930
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: dome, ~structures.england, ~techlevel.medium
-		Description: Looks like a Radar Dome. Packed with explosives.
+		Description: Actor-DOMF-Description
 		Icon: fake-icon
 	Building:
 		Footprint: xx xx ==
@@ -180,11 +180,11 @@ FACF:
 		BuildPaletteOrder: 1000
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: ~structures.england
-		Description: Looks like a Construction Yard. Packed with explosives.
+		Description: Actor-FACF-Description
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Construction Yard
-		GenericName: Construction Yard
+		Name: Actor-FACF-Name
+		GenericName: Actor-Generic-Conyard-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -225,11 +225,11 @@ SYRF:
 		BuildPaletteOrder: 1100
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: syrd, ~structures.england, ~techlevel.navy, ~techlevel.low
-		Description: Looks like a Naval yard. Packed with explosives.
+		Description: Actor-SYRF-Description
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Naval Yard
-		GenericName: Shipyard
+		Name: Actor-SYRF-Name
+		GenericName: Actor-Generic-Shipyard-Name
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:

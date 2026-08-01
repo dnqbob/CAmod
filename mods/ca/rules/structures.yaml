@@ -8,13 +8,13 @@ MSLO:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Missile Silo
+		Name: Actor-MSLO-Name
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 140
 		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the A-Bomb superweapon power.
+		Description: Actor-MSLO-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: A-Bomb
 	Building:
@@ -62,12 +62,12 @@ GAP:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Gap Generator
+		Name: Actor-GAP-Name
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 110
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
-		Description: Regenerates the shroud nearby, obscuring enemy vision. Can channel the effect to reduce enemy weapon range and vision.
+		Description: Actor-GAP-Description
 	TooltipExtras:
 		Attributes: • Requires power to operate
 	Selectable:
@@ -132,12 +132,12 @@ SPEN:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Sub Pen
+		Name: Actor-SPEN-Name
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 220
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nsubmarines and transports.
+		Description: Actor-SPEN-Description
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -249,11 +249,11 @@ SYRD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 210
 		Prerequisites: anypower, ~structures.allies, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nships and transports.
+		Description: Actor-SYRD-Description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: Actor-SYRD-Name
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -338,13 +338,13 @@ IRON:
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~structures.soviet, ~techlevel.high
 		BuildLimit: 1
-		Description: Makes a group of units invulnerable for a short time.
+		Description: Actor-IRON-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Iron Curtain
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Iron Curtain
+		Name: Actor-IRON-Name
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -398,13 +398,13 @@ PDOX:
 		BuildPaletteOrder: 130
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
 		BuildLimit: 1
-		Description: Can be used to teleports units anywhere on the map.
+		Description: Actor-PDOX-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chronoshift
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Chronosphere
+		Name: Actor-PDOX-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -462,7 +462,7 @@ TSLA:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.soviet, ~techlevel.medium
-		Description: Advanced base defense.
+		Description: Actor-TSLA-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -470,7 +470,7 @@ TSLA:
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Tesla Coil
+		Name: Actor-TSLA-Name
 	Selectable:
 		DecorationBounds: 1024, 1706, 0, -341
 	Health:
@@ -545,7 +545,7 @@ AGUN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 90
 		Prerequisites: vehicles.any, ~structures.allies, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: Actor-AGUN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
 		Weaknesses: • Cannot attack ground units
@@ -553,7 +553,7 @@ AGUN:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: AA Gun
+		Name: Actor-AGUN-Name
 	Selectable:
 		DecorationBounds: 1024, 1365, 0, -170
 	Health:
@@ -617,13 +617,13 @@ DOME:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.medium
-		Description: Provides an overview of the battlefield.
+		Description: Actor-DOME-Description
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Radar Dome
+		Name: Actor-DOME-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -723,13 +723,13 @@ PBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
-		Name: Pillbox
+		Name: Actor-PBOX-Name
 	Building:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 40
 		Prerequisites: infantry.any, ~structures.pbox, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: Actor-PBOX-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -775,13 +775,13 @@ HBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
-		Name: Camo Pillbox
+		Name: Actor-HBOX-Name
 	Building:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 50
 		Prerequisites: infantry.any, ~structures.england, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: Actor-HBOX-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -836,7 +836,7 @@ GUN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 70
 		Prerequisites: infantry.any, ~structures.allies, ~techlevel.low
-		Description: Basic anti-tank base defense.
+		Description: Actor-GUN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -846,7 +846,7 @@ GUN:
 	CustomSellValue:
 		Value: 300
 	Tooltip:
-		Name: Turret
+		Name: Actor-GUN-Name
 	Building:
 	Health:
 		HP: 46500
@@ -893,7 +893,7 @@ FTUR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.ftur, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: Actor-FTUR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -903,7 +903,7 @@ FTUR:
 	CustomSellValue:
 		Value: 200
 	Tooltip:
-		Name: Flame Tower
+		Name: Actor-FTUR-Name
 	Building:
 	Health:
 		HP: 40000
@@ -958,7 +958,7 @@ SAM:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~structures.soviet, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: Actor-SAM-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
 		Weaknesses: • Cannot attack ground units
@@ -966,7 +966,7 @@ SAM:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: SAM Site
+		Name: Actor-SAM-Name
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -1026,13 +1026,13 @@ ATEK:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 140
 		Prerequisites: vehicles.any, anyradar, ~structures.allies, ~techlevel.high
-		Description: Provides Allied advanced technologies.
+		Description: Actor-ATEK-Description
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Special Ability: GPS Satellite
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Allied Tech Center
+		Name: Actor-ATEK-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1136,7 +1136,7 @@ ALHQ:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: vehicles.any, influence.level2, ~structures.allies, ~techlevel.high
-		Description: Provides access to coalitions and other advanced technologies.
+		Description: Actor-ALHQ-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
@@ -1148,7 +1148,7 @@ ALHQ:
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Allied HQ
+		Name: Actor-ALHQ-Name
 	Power:
 		Amount: -150
 	WithDeathAnimation:
@@ -1189,11 +1189,11 @@ WEAP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.low
-		Description: Produces vehicles.
+		Description: Actor-WEAP-Description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: War Factory
+		Name: Actor-WEAP-Name
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -1310,7 +1310,7 @@ FACT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		Description: Produces structures.
+		Description: Actor-FACT-Description
 	TracksCapturedFaction:
 	ValidFactions:
 		Factions: allies, england, france, germany, usa, soviet, russia, ukraine, iraq, yuri
@@ -1378,7 +1378,7 @@ FACT:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Construction Yard
+		Name: Actor-FACT-Name
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -1454,12 +1454,12 @@ PROC:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.ra
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: Actor-PROC-Description
 		BuildDuration: 1400
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Ore Refinery
+		Name: Actor-PROC-Name
 	Building:
 		Footprint: _X_ xxx X++ ===
 		Dimensions: 3,4
@@ -1571,11 +1571,11 @@ SILO:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 35
 		Prerequisites: anyrefinery, ~structures.ra
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: Actor-SILO-Description
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Silo
+		Name: Actor-SILO-Name
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -1622,11 +1622,11 @@ HPAD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 120
 		Prerequisites: radarorrepair, ~structures.allies, ~techlevel.medium
-		Description: Produces and reloads helicopters and VTOL aircraft.
+		Description: Actor-HPAD-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Helipad
+		Name: Actor-HPAD-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1723,11 +1723,11 @@ AFLD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 130
 		Prerequisites: radarorrepair, ~structures.soviet, ~techlevel.medium
-		Description: Produces and reloads aircraft.
+		Description: Actor-AFLD-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Airfield
+		Name: Actor-AFLD-Name
 	Selectable:
 		Bounds: 3072, 2176, 0, -256
 	Building:
@@ -1808,11 +1808,11 @@ POWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.ra
-		Description: Provides power for other structures.
+		Description: Actor-POWR-Description
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Power Plant
+		Name: Actor-POWR-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1851,11 +1851,11 @@ APWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~structures.apwr, ~techlevel.medium
-		Description: Provides double the power of a standard Power Plant.
+		Description: Actor-APWR-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Power Plant
+		Name: Actor-APWR-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1902,13 +1902,13 @@ NPWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 165
 		Prerequisites: stek, ~structures.soviet, ~techlevel.high
-		Description: Provides ten times the power of a standard Power Plant.
+		Description: Actor-NPWR-Description
 	TooltipExtras:
 		Weaknesses: • Explodes when destroyed
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Atomic Reactor
+		Name: Actor-NPWR-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1971,7 +1971,7 @@ TPWR:
 	Inherits: APWR
 	Buildable:
 		Prerequisites: anyradar, ~techlevel.medium, ~structures.russia
-		Description: Provides triple the power of a standard Power Plant.
+		Description: Actor-TPWR-Description
 	TooltipExtras:
 		Strengths: • Power output unaffected by damage
 		Weaknesses: • Unstable when damaged
@@ -1979,7 +1979,7 @@ TPWR:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Tesla Reactor
+		Name: Actor-TPWR-Name
 	WithIdleOverlay@POWER:
 		Offset: -20,-70,0
 		Sequence: power
@@ -2027,11 +2027,11 @@ STEK:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 150
 		Prerequisites: vehicles.any, anyradar, ~structures.soviet, ~techlevel.high
-		Description: Provides Soviet advanced technologies.
+		Description: Actor-STEK-Description
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Soviet Tech Center
+		Name: Actor-STEK-Name
 	Building:
 		Footprint: XxX XxX ===
 		Dimensions: 3,3
@@ -2090,11 +2090,11 @@ BARR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.soviet
-		Description: Trains infantry.
+		Description: Actor-BARR-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Soviet Barracks
+		Name: Actor-BARR-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2193,11 +2193,11 @@ KENN:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 205
 		Prerequisites: anypower, ~structures.soviet
-		Description: Trains Attack Dogs.
+		Description: Actor-KENN-Description
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Kennel
+		Name: Actor-KENN-Name
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -2238,11 +2238,11 @@ TENT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.allies
-		Description: Trains infantry.
+		Description: Actor-TENT-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Allied Barracks
+		Name: Actor-TENT-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2332,13 +2332,13 @@ FIX:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 100
 		Prerequisites: vehicles.any, ~structures.ra, ~techlevel.low
-		Description: Repairs vehicles and aircraft.
+		Description: Actor-FIX-Description
 	TooltipExtras:
 		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Service Depot
+		Name: Actor-FIX-Name
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -2408,13 +2408,13 @@ SBAG:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.sandbag
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: Actor-SBAG-Description
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Sandbag Wall
+		Name: Actor-SBAG-Name
 	Health:
 		HP: 15000
 	Armor:
@@ -2436,13 +2436,13 @@ FENC:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.soviet
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: Actor-FENC-Description
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Wire Fence
+		Name: Actor-FENC-Name
 	Health:
 		HP: 15000
 	Armor:
@@ -2462,13 +2462,13 @@ CHAIN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.nod
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: Actor-CHAIN-Description
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Chain-link Fence
+		Name: Actor-CHAIN-Name
 	Health:
 		HP: 15000
 	Armor:
@@ -2488,13 +2488,13 @@ BRIK:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.wall
-		Description: • Stops units\n• Blocks enemy fire
+		Description: Actor-BRIK-Description
 	Valued:
 		Cost: 200
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Concrete Wall
+		Name: Actor-BRIK-Name
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -2517,7 +2517,7 @@ BRIK:
 CYCL:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Chain-Link Barrier
+		Name: Actor-CYCL-Name
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2530,7 +2530,7 @@ CYCL:
 BARB:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Barbed-Wire Fence
+		Name: Actor-BARB-Name
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2543,7 +2543,7 @@ BARB:
 WOOD:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Wooden Fence
+		Name: Actor-WOOD-Name
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2557,177 +2557,177 @@ INFANTRY.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: Actor-INFANTRY.ANY-Name
 	Buildable:
-		Description: Infantry Production
+		Description: Actor-INFANTRY.ANY-Description
 
 INFANTRY.RA:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: Actor-INFANTRY.RA-Name
 	Buildable:
-		Description: Infantry Production
+		Description: Actor-INFANTRY.RA-Description
 
 INFANTRY.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: Actor-INFANTRY.TD-Name
 	Buildable:
-		Description: Infantry Production
+		Description: Actor-INFANTRY.TD-Description
 
 VEHICLES.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: Actor-VEHICLES.ANY-Name
 	Buildable:
-		Description: Vehicle Production
+		Description: Actor-VEHICLES.ANY-Description
 
 VEHICLES.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: Actor-VEHICLES.TD-Name
 	Buildable:
-		Description: Vehicle Production
+		Description: Actor-VEHICLES.TD-Description
 
 VEHICLES.NOD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: Actor-VEHICLES.NOD-Name
 	Buildable:
-		Description: Vehicle Production
+		Description: Actor-VEHICLES.NOD-Description
 
 AIRCRAFT.CHINOOK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Helipad
+		Name: Actor-AIRCRAFT.CHINOOK-Name
 	Buildable:
-		Description: Helipad
+		Description: Actor-AIRCRAFT.CHINOOK-Description
 
 TECHCENTER.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tech Center
+		Name: Actor-TECHCENTER.ANY-Name
 	Buildable:
-		Description: Tech Center
+		Description: Actor-TECHCENTER.ANY-Description
 
 TECHCENTER.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tech Center
+		Name: Actor-TECHCENTER.TD-Name
 	Buildable:
-		Description: Tech Center
+		Description: Actor-TECHCENTER.TD-Description
 
 ANYPOWER:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Power Plant
+		Name: Actor-ANYPOWER-Name
 	Buildable:
-		Description: Power Plant
+		Description: Actor-ANYPOWER-Description
 
 ANYREFINERY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Refinery
+		Name: Actor-ANYREFINERY-Name
 	Buildable:
-		Description: Refinery
+		Description: Actor-ANYREFINERY-Description
 
 ANYRADAR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar
+		Name: Actor-ANYRADAR-Name
 	Buildable:
-		Description: Radar
+		Description: Actor-ANYRADAR-Description
 
 REPAIR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Service Depot/Repair Facility
+		Name: Actor-REPAIR-Name
 	Buildable:
-		Description: Service Depot/Repair Facility
+		Description: Actor-REPAIR-Description
 
 RADARORREPAIR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar or Service Depot/Repair Facility
+		Name: Actor-RADARORREPAIR-Name
 	Buildable:
-		Description: Radar or Service Depot/Repair Facility
+		Description: Actor-RADARORREPAIR-Description
 
 RADARORAIRCRAFT:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar or Aircraft Production
+		Name: Actor-RADARORAIRCRAFT-Name
 	Buildable:
-		Description: Radar or Aircraft Production
+		Description: Actor-RADARORAIRCRAFT-Description
 
 TSLAORSTEK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tesla Coil or Soviet Tech Center
+		Name: Actor-TSLAORSTEK-Name
 	Buildable:
-		Description: Tesla Coil or Soviet Tech Center
+		Description: Actor-TSLAORSTEK-Description
 
 OBLIORTMPL:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Obelisk or Temple of Nod
+		Name: Actor-OBLIORTMPL-Name
 	Buildable:
-		Description: Obelisk or Temple of Nod
+		Description: Actor-OBLIORTMPL-Description
 
 TTURORSTEK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Chem Tower or Soviet Tech Center
+		Name: Actor-TTURORSTEK-Name
 	Buildable:
-		Description: Chem Tower or Soviet Tech Center
+		Description: Actor-TTURORSTEK-Description
 
 FTURORRADAR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Flame Tower or Radar
+		Name: Actor-FTURORRADAR-Name
 	Buildable:
-		Description: Flame Tower or Radar
+		Description: Actor-FTURORRADAR-Description
 
 VEHICLES.MCV:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Service Depot/Repair Facility OR no MCV/Conyard
+		Name: Actor-VEHICLES.MCV-Name
 	Buildable:
-		Description: Service Depot/Repair Facility OR no MCV/Conyard
+		Description: Actor-VEHICLES.MCV-Description
 
 INFANTRY.MEDI:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Barracks
+		Name: Actor-INFANTRY.MEDI-Name
 	Buildable:
-		Description: Barracks
+		Description: Actor-INFANTRY.MEDI-Description
 
 INFANTRY.MECH:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Barracks
+		Name: Actor-INFANTRY.MECH-Name
 	Buildable:
-		Description: Barracks
+		Description: Actor-INFANTRY.MECH-Description
 
 PYLE:
 	Inherits: ^BuildingTD
@@ -2746,11 +2746,11 @@ PYLE:
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.gdi
 		IconPalette: chrometd
-		Description: Trains infantry.
+		Description: Actor-PYLE-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: GDI Barracks
+		Name: Actor-PYLE-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2843,11 +2843,11 @@ HAND:
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.nod
 		IconPalette: chrometd
-		Description: Trains infantry.
+		Description: Actor-HAND-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Hand of Nod
+		Name: Actor-HAND-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2947,11 +2947,11 @@ WEAP.TD:
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.weap.td, ~structures.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Produces vehicles.
+		Description: Actor-WEAP.TD-Description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Weapons Factory
+		Name: Actor-WEAP.TD-Name
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -3073,11 +3073,11 @@ AIRS:
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.airs, ~techlevel.low
 		IconPalette: chrometd
-		Description: Provides a dropzone for vehicle reinforcements
+		Description: Actor-AIRS-Description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Airstrip
+		Name: Actor-AIRS-Name
 	Building:
 		Footprint: XXX+ xxx+ ++++
 		Dimensions: 4,3
@@ -3216,11 +3216,11 @@ NUKE:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.td
 		IconPalette: chrometd
-		Description: Provides power for other structures.
+		Description: Actor-NUKE-Description
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Nuclear Power Plant
+		Name: Actor-NUKE-Name
 	Building:
 		Footprint: xX xx ==
 		Dimensions: 2,3
@@ -3267,11 +3267,11 @@ NUK2:
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~structures.td, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Provides double the power of a standard Nuclear Power Plant.
+		Description: Actor-NUK2-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Nuclear Power Plant
+		Name: Actor-NUK2-Name
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -3317,7 +3317,7 @@ AFAC:
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 		IconPalette: chrometd
-		Description: Produces structures.
+		Description: Actor-AFAC-Description
 	Health:
 		HP: 150000
 	Armor:
@@ -3332,7 +3332,7 @@ AFAC:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Construction Yard
+		Name: Actor-AFAC-Name
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -3457,7 +3457,7 @@ NSAM:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~structures.nod, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: Actor-NSAM-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
 		Weaknesses: • Cannot attack ground units
@@ -3465,7 +3465,7 @@ NSAM:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: SAM Site
+		Name: Actor-NSAM-Name
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -3518,7 +3518,7 @@ GTWR:
 		BuildPaletteOrder: 50
 		Prerequisites: infantry.any, ~structures.gdi, ~techlevel.low
 		IconPalette: chrometd
-		Description: Anti-infantry base defense.
+		Description: Actor-GTWR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -3528,7 +3528,7 @@ GTWR:
 	CustomSellValue:
 		Value: 200
 	Tooltip:
-		Name: Guard Tower
+		Name: Actor-GTWR-Name
 	Building:
 	Health:
 		HP: 40000
@@ -3569,7 +3569,7 @@ ATWR:
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.atwr, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Advanced base defense.
+		Description: Actor-ATWR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3577,7 +3577,7 @@ ATWR:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Advanced Guard Tower
+		Name: Actor-ATWR-Name
 	Health:
 		HP: 52000
 	Armor:
@@ -3620,7 +3620,7 @@ STWR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.zocom, ~techlevel.medium
-		Description: Advanced base defense that emits devastating sonic shockwaves.
+		Description: Actor-STWR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3628,7 +3628,7 @@ STWR:
 	Valued:
 		Cost: 1450
 	Tooltip:
-		Name: Sonic Tower
+		Name: Actor-STWR-Name
 	Building:
 	Health:
 		HP: 47500
@@ -3683,7 +3683,7 @@ OBLI:
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.nod, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Advanced experimental base defense.
+		Description: Actor-OBLI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3691,7 +3691,7 @@ OBLI:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Obelisk of Light
+		Name: Actor-OBLI-Name
 	Selectable:
 		DecorationBounds: 938, 1792, 0, -341
 	Health:
@@ -3778,7 +3778,7 @@ HQ:
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.td, ~techlevel.medium, ~!unity.covenant
 		IconPalette: chrometd
-		Description: Provides an overview of the battlefield.
+		Description: Actor-HQ-Description
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
 		RequiresCondition: !arc-built
@@ -3789,7 +3789,7 @@ HQ:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Comm. Center
+		Name: Actor-HQ-Name
 		RequiresCondition: !arc-built
 	Tooltip@ARC:
 		Name: Drone Comm. Center
@@ -3939,9 +3939,9 @@ HQ.UPG:
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.td, ~techlevel.medium, ~unity.covenant
 		IconPalette: chrometd
-		Description: Provides an overview of the battlefield.
+		Description: Actor-HQ.UPG-Description
 	Tooltip:
-		Name: Internet Center
+		Name: Actor-HQ.UPG-Name
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war (increases per garrisoned Hacker)\n• $25 delivered every 15 seconds (normal speed)\n• Income increased by $75 per garrisoned Hacker\n• Cannot be hacked
 	-Targetable@HACKABLE:
@@ -4058,13 +4058,13 @@ EYE:
 		Prerequisites: gtek, ~structures.gdi, ~techlevel.unrestricted
 		IconPalette: chrometd
 		BuildLimit: 1
-		Description: Provides radar and orbital Ion Cannon superweapon power.
+		Description: Actor-EYE-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Ion Cannon\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Advanced Communications Center
+		Name: Actor-EYE-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -4141,13 +4141,13 @@ REP:
 		BuildPaletteOrder: 100
 		Prerequisites: vehicles.any, ~structures.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Repairs vehicles and aircraft.
+		Description: Actor-REP-Description
 	TooltipExtras:
 		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Repair Facility
+		Name: Actor-REP-Name
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -4222,11 +4222,11 @@ HPAD.TD:
 		BuildPaletteOrder: 120
 		Prerequisites: radarorrepair, ~structures.nod, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Produces and reloads helicopters and VTOL aircraft.
+		Description: Actor-HPAD.TD-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Helipad
+		Name: Actor-HPAD.TD-Name
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -4329,13 +4329,13 @@ PROC.TD:
 	CustomSellValue:
 		Value: 400
 	Tooltip:
-		Name: Refinery
+		Name: Actor-PROC.TD-Name
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.td
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chrometd
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: Actor-PROC.TD-Description
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -4428,13 +4428,13 @@ SILO.TD:
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Silo
+		Name: Actor-SILO.TD-Name
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: anyrefinery, ~structures.td
 		Queue: DefenseSQ, DefenseMQ
 		IconPalette: chrometd
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: Actor-SILO.TD-Description
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -4491,11 +4491,11 @@ AFLD.GDI:
 		BuildPaletteOrder: 130
 		IconPalette: chrometd
 		Prerequisites: radarorrepair, ~structures.gdi, ~techlevel.medium
-		Description: Produces and reloads aircraft.
+		Description: Actor-AFLD.GDI-Description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Airfield
+		Name: Actor-AFLD.GDI-Name
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -4573,11 +4573,11 @@ GTEK:
 		BuildPaletteOrder: 150
 		IconPalette: chrometd
 		Prerequisites: vehicles.any, anyradar, ~structures.gdi, ~techlevel.high
-		Description: Provides GDI advanced technologies.
+		Description: Actor-GTEK-Description
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: GDI Tech Center
+		Name: Actor-GTEK-Name
 	Building:
 		Footprint: xxx =xx ===
 		Dimensions: 3,3
@@ -4650,13 +4650,13 @@ TMPL:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Temple of Nod
+		Name: Actor-TMPL-Name
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 140
 		Prerequisites: vehicles.any, anyradar, ~structures.nod, ~techlevel.high
 		IconPalette: chrometd
-		Description: Provides Nod advanced technologies.
+		Description: Actor-TMPL-Description
 	TooltipExtras:
 		Attributes: • Requires power to operate\n• Special Ability: Cluster Missile
 	Building:
@@ -4730,7 +4730,7 @@ PRIS:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.pris, ~techlevel.medium
-		Description: Advanced experimental base defense.
+		Description: Actor-PRIS-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -4738,7 +4738,7 @@ PRIS:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Prism Tower
+		Name: Actor-PRIS-Name
 	Building:
 	Selectable:
 		DecorationBounds: 1024, 1962, 0, -560
@@ -4811,13 +4811,13 @@ SPEN.nod:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Sub Pen
+		Name: Actor-SPEN.nod-Name
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 240
 		IconPalette: chrometd
 		Prerequisites: anypower, ~structures.nod, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nsubmarines and transports.
+		Description: Actor-SPEN.nod-Description
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -4903,12 +4903,12 @@ SYRD.gdi:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 230
 		Prerequisites: anypower, ~structures.gdi, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs ships\nand transports.
+		Description: Actor-SYRD.gdi-Description
 		IconPalette: chrometd
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: Actor-SYRD.gdi-Name
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -4992,7 +4992,7 @@ HTUR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.france, ~techlevel.medium
-		Description: Artillery base defense.
+		Description: Actor-HTUR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft\n• Cannot hit targets at point-blank range
@@ -5000,7 +5000,7 @@ HTUR:
 	Valued:
 		Cost: 1750
 	Tooltip:
-		Name: Grand Cannon
+		Name: Actor-HTUR-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5082,11 +5082,11 @@ LTUR:
 	CustomSellValue:
 		Value: 300
 	Tooltip:
-		Name: Laser Turret
+		Name: Actor-LTUR-Name
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.nod, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: Actor-LTUR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -5121,7 +5121,7 @@ TTUR:
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.iraq, ~techlevel.low
 		IconPalette: chrometd
-		Description: Anti-infantry base defense.
+		Description: Actor-TTUR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -5131,7 +5131,7 @@ TTUR:
 	CustomSellValue:
 		Value: 220
 	Tooltip:
-		Name: Chemical Tower
+		Name: Actor-TTUR-Name
 	Building:
 	Health:
 		HP: 44000
@@ -5191,7 +5191,7 @@ SGEN:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Stealth Generator
+		Name: Actor-SGEN-Name
 	Building:
 		Footprint: xxx xx+
 		Dimensions: 3,2
@@ -5324,7 +5324,7 @@ LASP:
 		BuildPaletteOrder: 30
 		Prerequisites: ~structures.nod, nuk2, ~techlevel.medium
 		IconPalette: chrometd
-		Description: • Stops infantry\n• Blocks enemy fire\n• Cannot be crushed by tanks
+		Description: Actor-LASP-Description
 	Building:
 		RequiresBaseProvider: False
 	Valued:
@@ -5336,7 +5336,7 @@ LASP:
 		AreaTypes: building, defense
 		Adjacent: 7
 	Tooltip:
-		Name: Laser Fence
+		Name: Actor-LASP-Name
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -5382,7 +5382,7 @@ LASP:
 LASF:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Laser Fence
+		Name: Actor-LASF-Name
 	LineBuild:
 		NodeTypes: laserfence
 	LineBuildNode:
@@ -5444,13 +5444,13 @@ PATR:
 		Prerequisites: gtek, ~structures.gdi, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrometd
-		Description: Launches E.M. Pulse Missiles that disable vehicles & structures.
+		Description: Actor-PATR-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: E.M. Pulse Missile
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: EMP Missile Launcher
+		Name: Actor-PATR-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5539,7 +5539,7 @@ CVAT:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
 	Tooltip:
-		Name: Cloning Vat
+		Name: Actor-CVAT-Name
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -5548,7 +5548,7 @@ CVAT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~infantry.doctrine, ~techlevel.high
-		Description: Clones infantry periodically at no cost.
+		Description: Actor-CVAT-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Clones any infantry unit put inside
@@ -5667,7 +5667,7 @@ INDP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~armor.doctrine, ~techlevel.high
-		Description: Vehicles & aircraft are produced 15% faster and cost 10% less.
+		Description: Actor-INDP-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
@@ -5679,7 +5679,7 @@ INDP:
 	-CapturableProgressBlink:
 	-CaptureManager:
 	Tooltip:
-		Name: Industrial Plant
+		Name: Actor-INDP-Name
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -5739,7 +5739,7 @@ MUNP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~arty.doctrine, ~techlevel.high
-		Description: Vehicles & aircraft are produced 15% faster. Vehicles have 15% reduced reload time.
+		Description: Actor-MUNP-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
@@ -5751,7 +5751,7 @@ MUNP:
 	-CapturableProgressBlink:
 	-CaptureManager:
 	Tooltip:
-		Name: Munitions Plant
+		Name: Actor-MUNP-Name
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -5827,7 +5827,7 @@ OREP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.allies, alhq, ~techlevel.high
-		Description: Refines ore, gems & Tiberium, increasing income by 10%.
+		Description: Actor-OREP-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
@@ -5839,7 +5839,7 @@ OREP:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Ore Purifier
+		Name: Actor-OREP-Name
 	ResourcePurifierCA@Normal:
 		Modifier: 10
 		RequiresCondition: !disabled && !being-warped && !tech-locked && !economy-policy3
@@ -5922,7 +5922,7 @@ UPGC:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.gdi, gtek, ~techlevel.high
-		Description: Allows the construction of advanced weaponry and upgrades.
+		Description: Actor-UPGC-Description
 		BuildLimit: 1
 		IconPalette: chrometd
 	TooltipExtras:
@@ -5935,7 +5935,7 @@ UPGC:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Upgrade Center
+		Name: Actor-UPGC-Name
 	ValidFactions:
 		Factions: gdi, talon, zocom, eagle, arc
 	ProvidesPrerequisiteValidatedFaction@talonupgc:
@@ -6147,7 +6147,7 @@ TMPP:
 		BuildPaletteOrder: 200
 		IconPalette: chrometd
 		Prerequisites: ~structures.nod, tmpl, ~techlevel.high
-		Description: Provides access to cybernetic upgrades.
+		Description: Actor-TMPP-Description
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Can convert regular infantry to cyborgs
@@ -6159,7 +6159,7 @@ TMPP:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Temple Prime
+		Name: Actor-TMPP-Name
 	Power:
 		Amount: -150
 	ProvidesPrerequisite@buildingname:
@@ -6231,14 +6231,14 @@ MSLO.Nod:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Missile Silo
+		Name: Actor-MSLO.Nod-Name
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 140
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~techlevel.unrestricted, ~structures.nod
 		BuildLimit: 1
-		Description: Provides the Chemical Missile superweapon power.
+		Description: Actor-MSLO.Nod-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chemical Missile
 	Building:
@@ -6290,13 +6290,13 @@ WEAT:
 		BuildPaletteOrder: 140
 		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the Lightning Storm superweapon power.
+		Description: Actor-WEAT-Description
 	TooltipExtras:
 		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Lightning Storm
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Weather Control Device
+		Name: Actor-WEAT-Name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -6353,7 +6353,7 @@ IOK:
 	Health:
 		HP: 15000
 	Tooltip:
-		Name: Idol of Kane
+		Name: Actor-IOK-Name
 	TooltipExtras:
 		Strengths: • Increases damage and movement speed of friendly infantry\n• Reduces damage and movement speed of enemy infantry\n• Provides vision
 		Weaknesses: • Cannot attack

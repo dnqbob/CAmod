@@ -41,7 +41,7 @@ TECN:
 	RenderSprites:
 		Image: c1
 	Tooltip:
-		Name: Technician
+		Name: Actor-TECN-Name
 
 FCOM:
 	Inherits: ^TechBuilding
@@ -59,11 +59,11 @@ FCOM:
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Forward Command
+		Name: Actor-FCOM-Name
 	TooltipExtras:
-		Description: Provides buildable area.
+		Description: Actor-FCOM-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides buildable area.
+		Description: Actor-FCOM-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to give buildable area.
@@ -113,11 +113,11 @@ HOSP:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Hospital
+		Name: Actor-HOSP-Name
 	TooltipExtras:
-		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
+		Description: Actor-HOSP-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
+		Description: Actor-HOSP-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to heal nearby infantry and train two Medics/Rejuvenators every two minutes.
@@ -209,11 +209,11 @@ MACS:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Machine Shop
+		Name: Actor-MACS-Name
 	TooltipExtras:
-		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
+		Description: Actor-MACS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
+		Description: Actor-MACS-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to repair nearby vehicles and train two Mechanics/Artificers every two minutes.
@@ -291,7 +291,7 @@ V01:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Church
+		Name: Actor-V01-Name
 	RevealsShroud:
 		Range: 10c0
 	MapEditorData:
@@ -443,7 +443,7 @@ V19:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Oil Pump
+		Name: Actor-V19-Name
 	SpawnActorOnDeath:
 		Actor: V19.Husk
 	Targetable:
@@ -454,7 +454,7 @@ V19.Husk:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Husk (Oil Pump)
+		Name: Actor-V19.Husk-Name
 	WithSpriteBody:
 	WithIdleOverlay:
 		StartSequence: fire-start
@@ -507,11 +507,11 @@ MISS:
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Communications Center
+		Name: Actor-MISS-Name
 	TooltipExtras:
-		Description: Provides vision of the surrounding area.
+		Description: Actor-MISS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides vision of the surrounding area.
+		Description: Actor-MISS-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to provide vision of surrounding area.
@@ -551,11 +551,11 @@ BIO:
 	CapturableProgressBar:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Biological Lab
+		Name: Actor-BIO-Name
 	TooltipExtras:
-		Description: Provides access to the toxin truck and chem mortar units.
+		Description: Actor-BIO-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides access to the toxin truck and chem mortar units.
+		Description: Actor-BIO-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture for access to the toxin truck and chem mortar units.
@@ -611,12 +611,12 @@ OILB:
 	DummyConditionConsumer@Tick:
 		Condition: tick
 	Tooltip:
-		Name: Oil Derrick
+		Name: Actor-OILB-Name
 	TooltipExtras:
-		Description: Provides additional funds.
+		Description: Actor-OILB-TooltipExtrasDescription
 		Attributes: • Gives $125 every 15 seconds.\n• Gives $400 on first capture.
 	TooltipDescription@ally:
-		Description: Provides additional funds.
+		Description: Actor-OILB-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive additional funds.
@@ -681,11 +681,11 @@ OILR:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Oil Refinery
+		Name: Actor-OILR-Name
 	TooltipExtras:
-		Description: Provides 10% discount on all unit production.
+		Description: Actor-OILR-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides 10% discount on all unit production.
+		Description: Actor-OILR-TooltipExtrasDescription
 		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive a 10% discount on all unit production.
@@ -779,7 +779,7 @@ V25:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Church
+		Name: Actor-V25-Name
 	RevealsShroud:
 		Range: 10c0
 	HitShape:
@@ -922,7 +922,7 @@ LHUS:
 	Selectable:
 		Bounds: 1024, 2048, 0, -682
 	Tooltip:
-		Name: Lighthouse
+		Name: Actor-LHUS-Name
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -936,7 +936,7 @@ WINDMILL:
 		DecorationBounds: 1536, 1536, 0, -597
 	SelectionDecorations:
 	Tooltip:
-		Name: Windmill
+		Name: Actor-WINDMILL-Name
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -949,5 +949,5 @@ ARCO:
 		Footprint: xx
 		Dimensions: 2,1
 	Tooltip:
-		Name: Oil Pump
+		Name: Actor-ARCO-Name
 		ShowOwnerRow: True

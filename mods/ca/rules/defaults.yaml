@@ -73,7 +73,7 @@
 	Mobile:
 		Locomotor: foot
 	Tooltip:
-		Name: Preview
+		Name: Actor-^PreviewDummy-Name
 	Armament:
 		Weapon: DummyWeapon
 	AttackFrontal:
@@ -1754,7 +1754,7 @@
 	Valued:
 		Cost: 1400
 	Tooltip:
-		GenericName: Harvester
+		GenericName: Actor-Generic-Harvester-Name
 	Health:
 		HP: 75000
 	Mobile:
@@ -2545,7 +2545,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Vehicle
+		GenericName: Actor-Generic-Vehicle-Name
 	CaptureManager:
 		BeingCapturedCondition: being-captured
 	Capturable:
@@ -2844,7 +2844,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Soldier
+		GenericName: Actor-Generic-Soldier-Name
 	DeathSounds@NORMAL:
 		Voice: Die
 		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath, FrozenDeath
@@ -3119,7 +3119,7 @@
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Civilian
+		Name: Actor-^CivInfantry-Name
 		ShowOwnerRow: false
 	RevealsShroud:
 		Range: 3c0
@@ -3140,7 +3140,7 @@
 	Tooltip:
 		RequiresCondition: !owned-by-combatant
 	Tooltip@COMBATANT:
-		Name: Technician
+		Name: Actor-Single-ArmedCivilian-Name
 		RequiresCondition: owned-by-combatant
 	GrantConditionOnCombatantOwner@COMBATANT:
 		Condition: owned-by-combatant
@@ -3242,7 +3242,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Ship
+		GenericName: Actor-Generic-Ship-Name
 	MustBeDestroyed:
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
@@ -3391,7 +3391,7 @@
 		Notification: AirUnitLost
 		TextNotification: Airborne unit lost.
 	Tooltip:
-		GenericName: Plane
+		GenericName: Actor-Generic-Plane-Name
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -3532,7 +3532,7 @@
 ^Helicopter:
 	Inherits: ^Plane
 	Tooltip:
-		GenericName: Helicopter
+		GenericName: Actor-Generic-Helicopter-Name
 	Aircraft:
 		CanHover: True
 		WaitDistanceFromResupplyBase: 4c0
@@ -3571,7 +3571,7 @@
 		Weapon: BarrelExplode
 		Type: Footprint
 	Tooltip:
-		Name: Explosive Barrel
+		Name: Actor-^Barrel-Name
 		ShowOwnerRow: False
 	Armor:
 		Type: None
@@ -3629,7 +3629,7 @@
 	FrozenUnderFogUpdatedByGpsRadar:
 	EdibleByLeap:
 	Tooltip:
-		GenericName: Structure
+		GenericName: Actor-Generic-Structure-Name
 	MapEditorData:
 		Categories: Building
 	CommandBarBlacklist:
@@ -3963,7 +3963,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: Actor-^TechBuilding-Name
 		GenericVisibility: None
 	MapEditorData:
 		Categories: Tech building
@@ -4067,7 +4067,7 @@
 	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 	Tooltip:
-		Name: Ammo Box
+		Name: Actor-^AmmoBox-Name
 		GenericVisibility: None
 	Targetable:
 		TargetTypes: Ground, Structure, NoAutoTarget
@@ -4086,7 +4086,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: Actor-^CivBuilding-Name
 		GenericVisibility: None
 	RenderSprites:
 		Palette: player
@@ -4116,7 +4116,7 @@
 	-Selectable:
 	-SelectionDecorations:
 	Tooltip:
-		Name: Field
+		Name: Actor-^CivField-Name
 	-Targetable:
 	Interactable:
 
@@ -4156,7 +4156,7 @@
 	Inherits@ResourceNode: ^ResourceNode
 	Interactable:
 	Tooltip:
-		Name: Blossom Tree
+		Name: Actor-^TibTree-Name
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: temptd
@@ -4183,7 +4183,7 @@
 	Inherits@shape: ^1x1Shape
 	Interactable:
 	Tooltip:
-		Name: Tree
+		Name: Actor-^Tree-Name
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: terrain
@@ -4243,7 +4243,7 @@
 		Dimensions: 1,1
 	WithSpriteBody:
 	Tooltip:
-		Name: Tree (Burnt)
+		Name: Actor-^TreeHusk-Name
 		ShowOwnerRow: false
 	HiddenUnderShroud:
 	ScriptTriggers:
@@ -4257,7 +4257,7 @@
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: Actor-^Box-Name
 	MapEditorData:
 		-ExcludeTilesets:
 		Categories: Decoration
@@ -4317,7 +4317,7 @@
 		TargetTypes: Ground, Husk, NoAutoTarget
 		RequiresForceFire: true
 	Tooltip:
-		GenericName: Destroyed Vehicle
+		GenericName: Actor-Generic-DestroyedVehicle-Name
 	FireWarheadsOnDeath:
 		Weapon: VisualExplodeHusk
 		EmptyWeapon: VisualExplodeHusk
@@ -4346,7 +4346,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Plane
+		GenericName: Actor-Generic-DestroyedPlane-Name
 	Aircraft:
 	FallsToEarth:
 		MaximumSpinSpeed: 0
@@ -4382,7 +4382,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Helicopter
+		GenericName: Actor-Generic-DestroyedHelicotper-Name
 	Aircraft:
 		CanHover: True
 		VTOL: true
@@ -4424,7 +4424,7 @@
 	TransformOnCapture:
 		ForceHealthPercentage: 25
 	Tooltip:
-		GenericName: Destroyed Building
+		GenericName: Actor-Generic-DestroyedBuilding-Name
 	FireWarheadsOnDeath@NORMAL:
 		Type: Footprint
 		Weapon: BuildingExplode
@@ -4434,7 +4434,7 @@
 	Inherits@shape: ^1x1Shape
 	AlwaysVisible:
 	Tooltip:
-		Name: Bridge
+		Name: Actor-^Bridge-Name
 		ShowOwnerRow: false
 	Targetable:
 		TargetTypes: Ground, Water, Bridge
@@ -4461,7 +4461,7 @@
 	Inherits@1: ^SpriteActor
 	Interactable:
 	Tooltip:
-		Name: Rock
+		Name: Actor-^Rock-Name
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: desert
@@ -4494,8 +4494,8 @@
 		Bounds: 1024, 1024
 	HiddenUnderFog:
 	Tooltip:
-		Name: Crate
-		GenericName: Crate
+		Name: Actor-^Crate-Name
+		GenericName: Actor-Generic-Crate-Name
 		ShowOwnerRow: false
 	CrateCA:
 		Duration: 4500
@@ -4543,7 +4543,7 @@
 		DetectionTypes: Mine
 		InitialDelay: 0
 	Tooltip:
-		Name: Mine
+		Name: Actor-^Mine-Name
 	Targetable:
 		TargetTypes: Ground, Mine
 	Targetable@ONWATER:
@@ -4741,7 +4741,7 @@
 	Buildable:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
-		Description: Utility infantry used for capturing/repairing structures.
+		Description: Actor-^EngineerBase-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Captures enemy buildings\n• Repairs friendly structures & bridges\n• Defuses mines and bombs
@@ -4841,7 +4841,7 @@
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Visceroid
+		Name: Actor-^Viceroid-Name
 	Armament:
 		Weapon: Chemspray
 		LocalOffset: 384,0,0
@@ -4882,8 +4882,8 @@
 	HiddenUnderFog:
 		Type: GroundPosition
 	Tooltip:
-		Name: Missile
-		GenericName: Missile
+		Name: Actor-^ShootableMissile-Name
+		GenericName: Actor-Generic-Missile-Name
 		ShowOwnerRow: false
 	HitShape:
 	RejectsOrders:

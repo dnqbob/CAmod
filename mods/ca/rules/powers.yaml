@@ -10,8 +10,8 @@
 		ExplosionWeapon: ForceShield
 		ExplosionDelay: 5
 		AllowMultiple: false
-		Name: Force Shield
-		Description: Makes selected friendly structures temporarily invulnerable.\n\nWarning: Causes power failure.
+		Name: Actor-supportpower.fshield-Name
+		Description: Actor-supportpower.fshield-Description
 		OnFireSound: forceon.aud
 		DisplayTimerRelationships: Ally
 		SelectTargetSpeechNotification: SelectTarget
@@ -35,8 +35,8 @@
 		OrderName: sendcash
 		Icon: sendcash
 		ChargeInterval: 1
-		Name: Send Cash
-		Description: Sends up to $1000 to the owner of the target allied unit or structure.\n\n20% is deducted from the amount received.
+		Name: Actor-supportpower.sendcash-Name
+		Description: Actor-supportpower.sendcash-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		Cursor: ability
@@ -52,8 +52,8 @@
 		Type: TimeSkip
 		ChargeInterval: 125
 		StartFullyCharged: true
-		Name: Time Skip
-		Description: Allocate funding for precise temporal manipulation to progress Allied technological and organizational advancement.\n\nAdvances influence progress by 1:00.
+		Name: Actor-supportpower.timeskip-Name
+		Description: Actor-supportpower.timeskip-Description
 		Actors: timeskip
 		SupportPowerPaletteOrder: 0
 		SelectProducer: false
@@ -69,8 +69,8 @@
 		Prerequisites: ~radar.england
 		ChargeInterval: 7500
 		LifeTime: -1
-		Name: Veil of War
-		Description: Creates an expanding area of shroud, reducing the vision and weapon range of enemy units and defenses.
+		Name: Actor-supportpower.veilofwar-Name
+		Description: Actor-supportpower.veilofwar-Description
 		LaunchSound: sscrambl.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -92,8 +92,8 @@
 	AirstrikePowerCA@clustermines:
 		ChargeInterval: 6750
 		Prerequisites: ~radar.france
-		Name: Cluster Mines
-		Description: Sends a cargo plane to drop a minefield at the target location.
+		Name: Actor-supportpower.clustermine-Name
+		Description: Actor-supportpower.clustermine-Description
 		OrderName: clustermine
 		UnitType: c17.clustermines
 		CameraActor: camera.paradrop
@@ -122,9 +122,9 @@
 		Icon: tempinc
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Temporal Incursion
+		Name: Actor-supportpower.tempinc-Name
 		ActivationDelay: 25
-		Description: Summons reinforcements from the future. Units return to their origin time after a short time.
+		Description: Actor-supportpower.tempinc-Description
 		Weapon: TemporalIncursion
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -164,8 +164,8 @@
 		Prerequisites: ~aircraft.usa
 		Icon: strafe
 		ChargeInterval: 7500
-		Name: Strafing Run
-		Description: Calls in P51 ground attack planes to perform strafing runs on the target.
+		Name: Actor-supportpower.strafe-Name
+		Description: Actor-supportpower.strafe-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: StrafingRunReady
@@ -213,8 +213,8 @@
 	ProduceActorPowerCA@InitialSatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~!gps.satellite.firstscan, ~fogenabled
-		Name: Spy Satellite
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Name: Actor-supportpower.satellitescannofogpower-Name
+		Description: Actor-supportpower.satellitescanpower-Description
 		Icon: gps
 		Actors: camera.satscan, gps.satellite.firstscan
 		Type: SpySatellite
@@ -227,8 +227,8 @@
 	ProduceActorPowerCA@SatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~gps.satellite, ~gps.satellite.firstscan, ~fogenabled
-		Name: Spy Satellite
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Name: Actor-supportpower.satellitescannofogpower-Name
+		Description: Actor-supportpower.satellitescanpower-Description
 		Icon: gps
 		Actors: camera.satscan
 		Type: SpySatellite
@@ -240,8 +240,8 @@
 	ProduceActorPowerCA@SatelliteScanNoFog:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~!fogenabled
-		Name: Spy Satellite
-		Description: Permanently reveals the entire map (activated automatically).
+		Name: Actor-supportpower.satellitescannofogpower-Name
+		Description: Actor-supportpower.satellitescannofogpower-Description
 		Icon: gps
 		Actors: camera.satscan.oneshot
 		Type: SpySatellite
@@ -259,8 +259,8 @@
 		Prerequisites: pdox.germany
 		Cursor: ability
 		ChargeInterval: 4500
-		Name: Time Warp
-		Description: Disrupts time and space at the target location. Affected units & structures are frozen in time, unable to act, but immune to damage.
+		Name: Actor-supportpower.timewarp-Name
+		Description: Actor-supportpower.timewarp-Description
 		ExplosionWeapon: TimeWarp
 		Condition: being-warped
 		Duration: 375
@@ -296,8 +296,8 @@
 		Prerequisites: ~sweden.coalition, ~alhq
 		ChargeInterval: 8250
 		LifeTime: -1
-		Name: Cryostorm
-		Description: Creates a turbulent area of extreme cold, reducing movement speed and increasing damage taken.
+		Name: Actor-supportpower.cryostorm-Name
+		Description: Actor-supportpower.cryostorm-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -330,8 +330,8 @@
 		Icon: heliosbomb
 		IconPalette: caneon
 		ChargeInterval: 10500
-		Name: Helios Bomb
-		Description: Calls in a bomber which drops a Helios bomb, blinding units in a large area.
+		Name: Actor-supportpower.heliosbomb-Name
+		Description: Actor-supportpower.heliosbomb-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: HeliosBombReady
@@ -364,8 +364,8 @@
 		Icon: bsky
 		IconPalette: chrome
 		ChargeInterval: 9000
-		Name: Black Sky Strike
-		Description: Fires long range guided missiles at multiple ground targets prioritized by value. Tracking can be lost if targets move far enough from their initial location.
+		Name: Actor-supportpower.blackskystrike-Name
+		Description: Actor-supportpower.blackskystrike-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: BlackSkyStrikeReady
@@ -399,8 +399,8 @@
 		EnemyDuration: 400
 		Icon: chrono
 		ChargeInterval: 4500
-		Name: Chronoshift
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Name: Actor-supportpower.chronoshiftai-Name
+		Description: Actor-supportpower.chronoshiftai-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -433,9 +433,9 @@
 		Icon: chrono
 		Cursor: ability
 		ChargeInterval: 7000
-		Name: Chronoshift
+		Name: Actor-supportpower.chronoshiftai-Name
 		ActivationDelay: 25
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Description: Actor-supportpower.chronoshiftai-Description
 		Weapon: ChronoAI
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -460,9 +460,9 @@
 		Icon: storm
 		Cursor: ability
 		ChargeInterval: 13500
-		Name: Lightning Storm
+		Name: Actor-supportpower.storm-Name
 		ActivationDelay: 50
-		Description: Initiate a Lightning Storm which deals heavy damage over a large area.
+		Description: Actor-supportpower.storm-Description
 		Weapon: WeatherStormInit
 		AirburstAltitude: 5c768
 		AllowMultiple: false
@@ -498,8 +498,8 @@
 		Prerequisites: ~radar.soviet
 		PauseOnCondition: disabled || empdisable || being-warped
 		ChargeInterval: 3000
-		Name: Spy Plane
-		Description: Dispatches a spy plane that reveals the target location for a limited time.
+		Name: Actor-supportpower.spyplane-Name
+		Description: Actor-supportpower.spyplane-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: SpyPlaneReady
@@ -530,8 +530,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: paratroopers
 		ChargeInterval: 7500
-		Name: Paratroopers
-		Description: Dispatches a Halo transport to drop a squad of infantry anywhere on the map.
+		Name: Actor-supportpower.paratroopers-Name
+		Description: Actor-supportpower.paratroopers-Description
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: E1,E1,E2,E3,E3,E1,E1,E1
@@ -564,8 +564,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: stormtroopers
 		ChargeInterval: 9000
-		Name: Storm-troopers
-		Description: Dispatches a Halo transport to drop a squad of Shock Troopers anywhere on the map.
+		Name: Actor-supportpower.stormtroopers-Name
+		Description: Actor-supportpower.stormtroopers-Description
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: SHOK,SHOK,SHOK,SHOK,SHOK
@@ -602,8 +602,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: parabombs
 		ChargeInterval: 7500
-		Name: Parabombs
-		Description: Calls in a Badger bomber which drops parachuted bombs on your target.
+		Name: Actor-supportpower.parabombs-Name
+		Description: Actor-supportpower.parabombs-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ParabombsReady
@@ -630,8 +630,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: carpetbomb
 		ChargeInterval: 10500
-		Name: Carpet Bomb
-		Description: Calls in a squad of Badgers which drop bombs on your target.
+		Name: Actor-supportpower.carpetbomb-Name
+		Description: Actor-supportpower.carpetbomb-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: CarpetBombReady
@@ -658,8 +658,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: abombair
 		ChargeInterval: 10500
-		Name: Atomic Bomb
-		Description: Calls in a Badger bomber which drops an atom bomb on your target.
+		Name: Actor-supportpower.atombomb-Name
+		Description: Actor-supportpower.atombomb-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: AtomicBombReady
@@ -687,8 +687,8 @@
 		Icon: mutabomb
 		IconPalette: chromes
 		ChargeInterval: 6750
-		Name: Genetic Mutation Bomb
-		Description: Calls in a Badger bomber which drops a genetic mutation bomb on your target, transforming infantry into Brutes under your control.
+		Name: Actor-supportpower.mutabomb-Name
+		Description: Actor-supportpower.mutabomb-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: GeneticMutationBombReady
@@ -716,8 +716,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: chaosbombs
 		ChargeInterval: 8250
-		Name: Chaos Bombs
-		Description: Calls in a Badger bomber which drops parachuted chaos bombs on your target.
+		Name: Actor-supportpower.chaosbombs-Name
+		Description: Actor-supportpower.chaosbombs-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ChaosBombsReady
@@ -761,7 +761,7 @@
 		OrderName: atomicammo
 		Icon: atomicammo
 		ChargeInterval: 4500
-		Name: Atomic Shells
+		Name: Actor-supportpower.atomicammoiraq-Name
 		Condition: atomic-ammo
 		Range: 4c0
 		MaxTargets: 5
@@ -769,7 +769,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)\n\nNuke Cannon gains a neutron shell that kills vehicle crews.
+		Description: Actor-supportpower.atomicammoiraq-Description
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -792,7 +792,7 @@
 		OrderName: atomicammoiraq
 		Icon: atomicammo
 		ChargeInterval: 4500
-		Name: Atomic Shells
+		Name: Actor-supportpower.atomicammoiraq-Name
 		Condition: atomic-ammo
 		Range: 4c0
 		MaxTargets: 5
@@ -800,7 +800,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)\n\nNuke Cannon gains a neutron shell that kills vehicle crews.
+		Description: Actor-supportpower.atomicammoiraq-Description
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -824,7 +824,7 @@
 		OrderName: heroesofunion
 		Icon: heroes
 		ChargeInterval: 6000
-		Name: Heroes of the Union
+		Name: Actor-supportpower.heroesofunion-Name
 		Condition: herooftheunion
 		Range: 3c512
 		MaxTargets: 5
@@ -832,7 +832,7 @@
 		ValidTargets: HeroOfUnionTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: Targeted basic infantry units become Heroes of the Union, significantly increasing their damage, speed, range and resilience.\n\nCan affect Rifle Infantry, Rocket Soldiers, Grenadiers and Flamethrowers.
+		Description: Actor-supportpower.heroesofunion-Description
 		Prerequisites: ~infantry.doctrine, playerxp.level2
 		OnFireSound: heroes.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -857,8 +857,8 @@
 		UnitType: anto
 		Icon: tankdrop
 		ChargeInterval: 13500
-		Name: Tank Drop
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Name: Actor-supportpower.tankdrop-Name
+		Description: Actor-supportpower.tankdrop-Description
 		DropItems: 3tnk, 3tnk, 3tnk
 		SquadOffset: -2048, 2048, 0
 		SelectTargetSpeechNotification: SelectTarget
@@ -902,8 +902,8 @@
 		Prerequisites: ~arty.doctrine, playerxp.level2
 		Icon: killzone
 		ChargeInterval: 4500
-		Name: Kill Zone
-		Description: Calls in a Spy Plane which marks a target area. Any enemy units within it take increased damage.
+		Name: Actor-supportpower.killzone-Name
+		Description: Actor-supportpower.killzone-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: KillZoneReady
@@ -931,7 +931,7 @@
 		Icon: invuln
 		ChargeInterval: 4500
 		ExplosionWeapon: IronCurtain
-		Name: supportpower-ironcurtain.name
+		Name: Actor-supportpower.ironcurtain-Name
 		Condition: invulnerability
 		Range: 4c0
 		MaxTargets: 5
@@ -941,7 +941,7 @@
 		InvalidTargets: IronCurtainImmune
 		Duration: 550
 		AllowMultiple: false
-		Description: supportpower-ironcurtain.desc
+		Description: Actor-supportpower.ironcurtain-Description
 		OnFireSound: ironcur9.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -964,8 +964,8 @@
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 13500
-		Name: Atom Bomb
-		Description: Launches a devastating atomic bomb at the target location, dealing heavy damage over a large area.
+		Name: Actor-supportpower.abomb-Name
+		Description: Actor-supportpower.abomb-Description
 		BeginChargeSpeechNotification: AbombPrepping
 		EndChargeSpeechNotification: AbombReady
 		EndChargeTextNotification: A-bomb ready.
@@ -1004,8 +1004,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: uavicon
 		ChargeInterval: 3750
-		Name: Recon Drone
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Name: Actor-supportpower.gdiuavarc-Name
+		Description: Actor-supportpower.gdiuavarc-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ReconDroneReady
@@ -1028,8 +1028,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: uavicon
 		ChargeInterval: 3000
-		Name: Recon Drone
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Name: Actor-supportpower.gdiuavarc-Name
+		Description: Actor-supportpower.gdiuavarc-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ReconDroneReady
@@ -1054,9 +1054,9 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: xodrop
 		ChargeInterval: 9750
-		Name: X-O Drop
+		Name: Actor-supportpower.xodrop-Name
 		UnitType: ocar.xo
-		Description: An Orca transport drops a squad of X-O Powersuits at the target location.
+		Description: Actor-supportpower.xodrop-Description
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: XO,XO,XO
@@ -1085,8 +1085,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: droppods
 		IconPalette: chrometd
-		Name: Drop Pods
-		Description: Instantly deploys a small team of elite soldiers at the target location via orbital drop pods.
+		Name: Actor-supportpower.droppods-Name
+		Description: Actor-supportpower.droppods-Description
 		EndChargeSpeechNotification: DropPodsAvailable
 		EndChargeTextNotification: Drop Pods ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1112,8 +1112,8 @@
 		Icon: orcaca
 		IconPalette: chrometd
 		ChargeInterval: 6000
-		Name: Reinforcements
-		Description: An Orca Carryall drops an APC containing an infantry squad at the target location.
+		Name: Actor-supportpower.dropzoneeagle-Name
+		Description: Actor-supportpower.dropzoneeagle-Description
 		EndChargeSpeechNotification: Reinforce
 		EndChargeTextNotification: Reinforcements ready.
 		LaunchSpeechNotification: ReinforcementsArrived
@@ -1138,8 +1138,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: airsupport
 		ChargeInterval: 10500
-		Name: Interceptors
-		Description: A squadron of Interceptors provides air cover over the target area, engaging any enemy aircraft within range.
+		Name: Actor-supportpower.interceptors-Name
+		Description: Actor-supportpower.interceptors-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: InterceptorsReady
@@ -1177,8 +1177,8 @@
 		ExplosionWeapon: RepairFlash
 		ExplosionDelay: 5
 		AllowMultiple: false
-		Name: Nanite Repair
-		Description: Repairs selected damaged vehicles over time.
+		Name: Actor-supportpower.nrepair-Name
+		Description: Actor-supportpower.nrepair-Description
 		OnFireSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1203,8 +1203,8 @@
 		Icon: fstorm
 		IconPalette: chrometd
 		ChargeInterval: 7500
-		Name: Firestorm
-		Description: Fires a barrage of rockets at the target area.
+		Name: Actor-supportpower.rocketbarrage-Name
+		Description: Actor-supportpower.rocketbarrage-Description
 		BeginChargeSpeechNotification: FireStormOffline
 		EndChargeSpeechNotification: FireStormReady
 		EndChargeTextNotification: Firestorm Missiles ready.
@@ -1238,7 +1238,7 @@
 		ChargeInterval: 4500
 		Icon: arscan
 		IconPalette: chrometd
-		Name: Advanced Radar Scan
+		Name: Actor-supportpower.advradarorder-Name
 		Description: Reveals the location of enemy structures & units through the fog of war.\n\nCan be toggled on/off, but each deactivation will reduce the remaining duration.
 		RequiresCondition: tower-radar
 		PauseOnCondition: !radar-active || disabled || being-warped
@@ -1260,8 +1260,8 @@
 		Prerequisites: ~techlevel.high
 		ChargeInterval: 6000
 		LifeTime: 375
-		Name: Nanite Shield
-		Description: Reduces the damage taken by all vehicles in the target area.
+		Name: Actor-supportpower.nshieldorder-Name
+		Description: Actor-supportpower.nshieldorder-Description
 		LaunchSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1288,8 +1288,8 @@
 		Cursor: empmissile
 		Icon: empmissile
 		ChargeInterval: 4500
-		Name: E.M. Missile
-		Description: Fires a Tomahawk missile which disables all mechanical units and structures on impact.
+		Name: Actor-supportpower.empmissile-Name
+		Description: Actor-supportpower.empmissile-Description
 		BeginChargeSpeechNotification: EMMissilePrepping
 		EndChargeSpeechNotification: EMMissileReady
 		EndChargeTextNotification: E.M. Missile ready.
@@ -1320,9 +1320,9 @@
 		IconPalette: chrometd
 		ChargeInterval: 6000
 		WeaponDelay: 3
-		Name: Surgical Strike
+		Name: Actor-supportpower.surgicalstrike-Name
 		EffectPalette: tdeffect-ignore-lighting-alpha85
-		Description: Initiate an precision Ion Cannon strike which deals instant damage to a small area.
+		Description: Actor-supportpower.surgicalstrike-Description
 		EndChargeSpeechNotification: SurgicalStrikeReady
 		EndChargeTextNotification: Surgical Strike ready.
 		IncomingSound: ion2.aud
@@ -1347,9 +1347,9 @@
 		Icon: ioncannon
 		Cursor: ioncannon
 		ChargeInterval: 13500
-		Name: Ion Cannon
+		Name: Actor-supportpower.ioncannon-Name
 		ActivationDelay: 50
-		Description: Initiate an Ion Cannon strike which deals heavy damage over a large area.
+		Description: Actor-supportpower.ioncannon-Description
 		Weapon: IonStormInit
 		AirburstAltitude: 4c512
 		AllowMultiple: false
@@ -1385,8 +1385,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Name: Actor-supportpower.shadowairdrop-Name
+		Description: Actor-supportpower.nodairdrop-Description
 		DropItems: ltnk, ftnk, ltnk
 		SquadOffset: -2048, 2048, 0
 		SelectTargetSpeechNotification: SelectTarget
@@ -1414,8 +1414,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop flame tanks at the target location.
+		Name: Actor-supportpower.shadowairdrop-Name
+		Description: Actor-supportpower.blackhairdrop-Description
 		DropItems: hftk, hftk
 		SquadOffset: -1024, 1024, 0
 		SelectTargetSpeechNotification: SelectTarget
@@ -1443,9 +1443,9 @@
 		Prerequisites: vehicles.marked
 		Cursor: ability
 		ChargeInterval: 12000
-		Name: Subterranean Strike
+		Name: Actor-supportpower.substrike-Name
 		ActivationDelay: 250
-		Description: Deploys a squad of Acolytes/Templar via Subterranean APC.
+		Description: Actor-supportpower.substrike-Description
 		LaunchSound: subrumble.aud
 		Weapon: SubterraneanStrikeSpawner
 		AirburstAltitude: 0c0
@@ -1472,8 +1472,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop stealth tanks at the target location.
+		Name: Actor-supportpower.shadowairdrop-Name
+		Description: Actor-supportpower.shadowairdrop-Description
 		DropItems: stnk.nod, stnk.nod
 		SquadOffset: -1024, 1024, 0
 		SelectTargetSpeechNotification: SelectTarget
@@ -1506,8 +1506,8 @@
 		OrderName: sathack
 		Icon: hacksat
 		ChargeInterval: 4500
-		Name: Hack Satellite Uplink
-		Description: Reveals the targeted area for a short time.
+		Name: Actor-supportpower.sathacklegion-Name
+		Description: Actor-supportpower.sathacklegion-Description
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1527,8 +1527,8 @@
 		OrderName: sathacklegion
 		Icon: hacksat
 		ChargeInterval: 3000
-		Name: Hack Satellite Uplink
-		Description: Reveals the targeted area for a short time.
+		Name: Actor-supportpower.sathacklegion-Name
+		Description: Actor-supportpower.sathacklegion-Description
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1549,8 +1549,8 @@
 		Icon: infbomb
 		IconPalette: chrometd
 		ChargeInterval: 9750
-		Name: Inferno Bomb
-		Description: A B2 Stealth Bomber drops inferno bombs on your target.
+		Name: Actor-supportpower.infernobomb-Name
+		Description: Actor-supportpower.infernobomb-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: InfernoBombReady
@@ -1581,8 +1581,8 @@
 		Maximum: 2000
 		Prerequisites: ~radar.legion
 		AllowMultiple: false
-		Name: Cash Hack
-		Description: Steal up to $2000 credits from a targeted enemy Refinery.
+		Name: Actor-supportpower.cashhack-Name
+		Description: Actor-supportpower.cashhack-Description
 		OnFireSound: scashhac.aud
 		Notification: CreditsStolen
 		SelectTargetSpeechNotification: SelectTarget
@@ -1601,8 +1601,8 @@
 		Prerequisites: ~radar.shadow
 		Icon: shadteam
 		ChargeInterval: 6750
-		Name: Shadow Team
-		Description: Calls for a Shadow Team; three stealth infantry that arrive via glider armed with grenades and a machine pistol.\n\nOperatives can be ordered to land via the deploy command.
+		Name: Actor-supportpower.shadowteam-Name
+		Description: Actor-supportpower.shadowteam-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		LaunchSpeechNotification: ReinforcementsArrived
@@ -1626,8 +1626,8 @@
 		Prerequisites: ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 10500
-		Name: Cluster Missile
-		Description: Launches a Cluster Missile which deals heavy damage at the target location.
+		Name: Actor-supportpower.clustermissile-Name
+		Description: Actor-supportpower.clustermissile-Description
 		EndChargeSpeechNotification: ClusMissileReady
 		EndChargeTextNotification: Cluster Missile ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1671,14 +1671,14 @@
 		Prerequisites: ~tmpl.marked
 		ChargeInterval: 6750
 		ExplosionWeapon: Frenzy
-		Name: Frenzy
+		Name: Actor-supportpower.frenzy-Name
 		Condition: frenzyinit
 		Range: 2c512
 		ValidRelationships: Ally
 		Duration: 750
 		ActiveSequence: false-active
 		AllowMultiple: false
-		Description: Increases the movement speed and rate of fire of targeted units for a limited time.\n\nWarning: Units are weakened for a short time after frenzy wears off.
+		Description: Actor-supportpower.frenzy-Description
 		OnFireSound: nodfrenzy.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1699,8 +1699,8 @@
 		OrderName: techhack
 		Icon: techhack
 		ChargeInterval: 18000
-		Name: Technology Hack
-		Description: Hack the targeted enemy production structure, providing access to a unit developed using enemy technology.\n\nFor infantry, vehicle and air production respectively: \n\n• Allies: Cryo Mortar, Reckoner, Phantom\n• Soviets: Cyberdog, Cyclops, Kamov\n• GDI: Sonic Mortar, Basilisk, Shade\n• Nod: Chem Mortar, Mantis, Vertigo\n• Scrin: Cyberscrin, Viper, Manticore
+		Name: Actor-supportpower.techhack-Name
+		Description: Actor-supportpower.techhack-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -1721,8 +1721,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Assassin Squad
-		Description: Deploy a squad of Assassins that can snipe infantry from long range and destroy buildings with C4.\n\nTarget infantry production structure to deploy.
+		Name: Actor-supportpower.assassinsquad-Name
+		Description: Actor-supportpower.assassinsquad-Description
 		Actors: assa, assa, assa
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: AssassinSquadReady
@@ -1735,8 +1735,8 @@
 		IconPalette: chrometd
 		Type: ParadropInfantry
 		ChargeInterval: 6000
-		Name: Assassin Squad (AI)
-		Description: Deploy a squad of Assassins that can destroy buildings and salvage technology.
+		Name: Actor-supportpower.assassinsquadai-Name
+		Description: Actor-supportpower.assassinsquadai-Description
 		Actors: assa, assa, assa
 		SupportPowerPaletteOrder: 50
 
@@ -1749,8 +1749,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Hacker Cell
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.\n\nTarget infantry production structure to deploy.
+		Name: Actor-supportpower.hackercell-Name
+		Description: Actor-supportpower.hackercell-Description
 		Actors: hack, hack, hack
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: HackerCellReady
@@ -1762,8 +1762,8 @@
 		Icon: hackercell
 		Type: ParadropInfantry
 		ChargeInterval: 6000
-		Name: Hacker Cell (AI)
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.
+		Name: Actor-supportpower.hackercellai-Name
+		Description: Actor-supportpower.hackercellai-Description
 		Actors: hack, hack, hack
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
@@ -1778,8 +1778,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Confessor Cabal
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.\n\nTarget infantry production structure to deploy.
+		Name: Actor-supportpower.confessorcabal-Name
+		Description: Actor-supportpower.confessorcabal-Description
 		Actors: conf, conf, conf
 		LaunchSound: conf-create.aud
 		EndChargeSpeechNotification: ConfessorCabalReady
@@ -1792,8 +1792,8 @@
 		IconPalette: chrometd
 		Type: ParadropInfantry
 		ChargeInterval: 6000
-		Name: Confessor Cabal (AI)
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.
+		Name: Actor-supportpower.confessorcabalai-Name
+		Description: Actor-supportpower.confessorcabalai-Description
 		Actors: conf, conf, conf
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
@@ -1805,14 +1805,14 @@
 		IconPalette: chrometd
 		ChargeInterval: 4500
 		ExplosionWeapon: StealthBubble
-		Name: Tiberium Stealth
+		Name: Actor-supportpower.stealthgen-Name
 		Condition: tibstealth
 		ValidRelationships: Ally, Neutral, Enemy
 		Range: 3c512
 		Duration: 600
 		MaxAltitude: 1
 		AllowMultiple: false
-		Description: Makes selected vehicles and structures temporarily invisible.\n\nWarning: Harmful to non-cyborg infantry.\n\nHazmat Suits upgrade makes allies immune to damage and enemies take 50% damage.
+		Description: Actor-supportpower.stealthgen-Description
 		OnFireSound: cloak6.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1836,8 +1836,8 @@
 		IconPalette: chrometd
 		Cursor: chemmissile
 		ChargeInterval: 13500
-		Name: Chemical Missile
-		Description: Launches an deadly Chemical Missile. Deals heavy damage and creates toxic clouds which are extremely harmful to infantry.\n
+		Name: Actor-supportpower.chemmissile-Name
+		Description: Actor-supportpower.chemmissile-Description
 		EndChargeSpeechNotification: ChemMissileReady
 		EndChargeTextNotification: Chemical Missile ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1879,7 +1879,7 @@
 		Prerequisites: loyalist.allegiance
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Ichor Spike
+		Name: Actor-supportpower.ichorspike-Name
 		ActivationDelay: 1
 		Description: Creates an Ichor Spike at the target location. Resources within its area of influence grow and spread faster.\n\nAlso empowers units with Resource Conversion upgrade.\n\nUp to 3 resource nodes are affected.
 		LaunchSound: scrinbuild.aud
@@ -1904,9 +1904,9 @@
 		Prerequisites: rebel.allegiance
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Colony Spike
+		Name: Actor-supportpower.colonyspike-Name
 		ActivationDelay: 1
-		Description: Creates a Colony Spike at the target location. Enables production of non-defensive structures.\n\nWhen fully charged allows non-defensive structures to be built nearby.\n\nMust be built within range of a Colony Platform.
+		Description: Actor-supportpower.colonyspike-Description
 		LaunchSound: cspk.aud
 		IncomingSound: cspk.aud
 		Weapon: ColonySpikeSpawner
@@ -1931,9 +1931,9 @@
 		Prerequisites: malefic.allegiance
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Voidspike
+		Name: Actor-supportpower.voidspike-Name
 		ActivationDelay: 1
-		Description: Creates a Voidspike at the target location. Gradually transforms nearby resources into Black Tiberium which is devoid of most of its useful properties.\n\nDamages nearby enemy units.
+		Description: Actor-supportpower.voidspike-Description
 		LaunchSound: scrinbuild.aud
 		Weapon: VoidSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1957,8 +1957,8 @@
 		OrderName: resourcescan
 		Icon: rescanpower
 		ChargeInterval: 7500
-		Name: Resource Scan
-		Description: Reveals the area surrounding all resources on the map.
+		Name: Actor-supportpower.resourcescan-Name
+		Description: Actor-supportpower.resourcescan-Description
 		LaunchSound: tibscan.aud
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
@@ -1976,9 +1976,9 @@
 		Prerequisites: radar.reaper
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Storm Spike
+		Name: Actor-supportpower.stormspike-Name
 		ActivationDelay: 1
-		Description: Creates a temporary Storm Column defensive structure at the target location.
+		Description: Actor-supportpower.stormspike-Description
 		LaunchSound: scrinbuild.aud
 		Weapon: StormSpikeSpawner
 		AirburstAltitude: 0c0
@@ -2002,9 +2002,9 @@
 		Prerequisites: radar.harbinger, !botplayer
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Buzzer Swarm
+		Name: Actor-supportpower.buzzerswarm-Name
 		ActivationDelay: 1
-		Description: Spawns a controllable swarm which blinds and damages anything nearby; particularly harmful to infantry.
+		Description: Actor-supportpower.buzzerswarm-Description
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawner
 		AirburstAltitude: 0c0
@@ -2024,9 +2024,9 @@
 		Prerequisites: radar.harbinger, botplayer
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Buzzer Swarm (AI)
+		Name: Actor-supportpower.buzzerswarmai-Name
 		ActivationDelay: 1
-		Description: Spawns a controllable swarm which damages anything nearby; particularly harmful to infantry.
+		Description: Actor-supportpower.buzzerswarmai-Description
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawnerAI
 		AirburstAltitude: 0c0
@@ -2048,9 +2048,9 @@
 		Prerequisites: radar.traveler
 		Cursor: ability
 		ChargeInterval: 6750
-		Name: Ion Surge
+		Name: Actor-supportpower.ionsurge-Name
 		ActivationDelay: 1
-		Description: Increases the movement speed of all friendly units passing through the target area.
+		Description: Actor-supportpower.ionsurge-Description
 		LaunchSound: ionsurge.aud
 		Weapon: IonSurgeSpawner
 		AirburstAltitude: 0c0
@@ -2073,10 +2073,10 @@
 		Actor: ichorseeder
 		Prerequisites: ~!player.reaper
 		ChargeInterval: 6000
-		Name: Ichor Seed
+		Name: Actor-supportpower.ichorseedreaper-Name
 		LifeTime: -1
 		AllowMultiple: false
-		Description: Grows Tiberium at selected location.
+		Description: Actor-supportpower.ichorseedreaper-Description
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -2095,10 +2095,10 @@
 		Actor: ichorseeder
 		Prerequisites: ~player.reaper
 		ChargeInterval: 4800
-		Name: Ichor Seed
+		Name: Actor-supportpower.ichorseedreaper-Name
 		LifeTime: -1
 		AllowMultiple: false
-		Description: Grows Tiberium at selected location.
+		Description: Actor-supportpower.ichorseedreaper-Description
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -2120,9 +2120,9 @@
 		Prerequisites: scrt.collector
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Greater Coalescence
+		Name: Actor-supportpower.greatercoalescence-Name
 		ActivationDelay: 1
-		Description: Spawns a controllable biomass which heals nearby allies and sustains itself by feeding off enemies.\n\nFeeding from power plants will shut them down temporarily.
+		Description: Actor-supportpower.greatercoalescence-Description
 		LaunchSound: grcl-spawn.aud
 		Weapon: GreaterCoalescenceSpawner
 		AirburstAltitude: 0c0
@@ -2146,8 +2146,8 @@
 		Prerequisites: ~loyalist.allegiance, ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 10500
-		Name: Overlord's Wrath
-		Description: A Tiberium meteor strikes the target location dealing heavy damage and creating a patch of Tiberium.
+		Name: Actor-supportpower.overlordswrath-Name
+		Description: Actor-supportpower.overlordswrath-Description
 		EndChargeSpeechNotification: OverlordsWrathReady
 		EndChargeTextNotification: Overlord's Wrath ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -2185,9 +2185,9 @@
 		Prerequisites: ~rebel.allegiance, ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Gateway
+		Name: Actor-supportpower.gateway-Name
 		ActivationDelay: 1
-		Description: Creates a Gateway at the target location. Acts as the exit for any\n   targeted infantry or vehicle production structure.\n\nRequires target location to be within vision.
+		Description: Actor-supportpower.gateway-Description
 		LaunchSound: wormhole-open.aud
 		IncomingSound: wormhole-open.aud
 		Weapon: GatewaySpawner
@@ -2209,14 +2209,14 @@
 		Icon: anathema
 		IconPalette: chromes
 		ChargeInterval: 3000
-		Name: Anathema
+		Name: Actor-supportpower.anathema-Name
 		Condition: anathema
 		Range: 2c0
 		MaxTargets: 1
 		ValidTargets: AnathemaTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: Targeted vehicle greatly increases in power over time. After 30 seconds the unit explodes.
+		Description: Actor-supportpower.anathema-Description
 		Prerequisites: ~malefic.allegiance, ~techlevel.high
 		OnFireSound: anathema.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -2238,8 +2238,8 @@
 		OrderName: suppression
 		Icon: spresspower
 		ChargeInterval: 4500
-		Name: Suppression Field
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Name: Actor-supportpower.suppressionsiphon-Name
+		Description: Actor-supportpower.suppressionsiphon-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -2269,8 +2269,8 @@
 		OrderName: suppressionsiphon
 		Icon: spresspower
 		ChargeInterval: 3750
-		Name: Suppression Field
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Name: Actor-supportpower.suppressionsiphon-Name
+		Description: Actor-supportpower.suppressionsiphon-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -2302,9 +2302,9 @@
 		Icon: riftpower
 		Cursor: ability
 		ChargeInterval: 13500
-		Name: Rift
+		Name: Actor-supportpower.rift-Name
 		ActivationDelay: 75
-		Description: Initiate a Rift which deals heavy damage over time to a large area.
+		Description: Actor-supportpower.rift-Description
 		Weapon: RiftInit
 		AllowMultiple: false
 		CameraActor: camera.dummy
@@ -2339,9 +2339,9 @@
 		Icon: fleetrecall
 		IconPalette: chromes
 		ChargeInterval: 5250
-		Name: Fleet Recall
+		Name: Actor-supportpower.recall-Name
 		KeepFormation: true
-		Description: Recalls all selected Scrin fleet vessels back to the Signal Transmitter.\n\nApplies to: Mothership, Planetary Assault Carrier, Devastator
+		Description: Actor-supportpower.recall-Description
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower

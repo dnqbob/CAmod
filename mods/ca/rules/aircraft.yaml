@@ -17,7 +17,7 @@ BADR:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: Actor-BADR-Name
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -70,7 +70,7 @@ BADR.Bomber:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: Actor-BADR.Bomber-Name
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -164,7 +164,7 @@ B2B:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: B2 Stealth Bomber
+		Name: Actor-B2B-Name
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -215,14 +215,14 @@ MIG:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 31
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Multi purpose strike aircraft.
+		Description: Actor-MIG-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
 		Weaknesses: • Weak vs Infantry
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: MiG Attack Plane
+		Name: Actor-MIG-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -334,7 +334,7 @@ SUK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 80
 		Prerequisites: afld, stek, ~aircraft.soviet, ~!seismic.upgrade, ~techlevel.high
-		Description: Fast ground attack aircraft armed with powerful armor-piercing munitions.
+		Description: Actor-SUK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
@@ -349,7 +349,7 @@ SUK:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Sukhoi Attack Plane
+		Name: Actor-SUK-Name
 	Health:
 		HP: 18000
 	RevealsShroud:
@@ -466,7 +466,7 @@ SUK.UPG:
 		Image: suk
 	Buildable:
 		Prerequisites: afld, stek, ~aircraft.soviet, ~seismic.upgrade, ~techlevel.high
-		Description: Fast ground attack aircraft armed with powerful explosive munitions.
+		Description: Actor-SUK.UPG-Description
 		BuildPaletteOrder: 81
 	-TooltipExtras:
 	TooltipExtras@SEISMIC:
@@ -479,7 +479,7 @@ SUK.UPG:
 		Class: suk
 	-ReplacedInQueue:
 	EncyclopediaExtras:
-		Name: Seismic Sukhoi
+		Name: Actor-SUK.UPG-EncyclopediaExtrasName
 		VariantOf: SUK
 
 YAK:
@@ -490,14 +490,14 @@ YAK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Fighter plane armed with dual machine guns
+		Description: Actor-YAK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
 		Weaknesses: • Weak vs Heavy Armor, Defenses
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Yak Attack Plane
+		Name: Actor-YAK-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -594,7 +594,7 @@ P51:
 	Inherits: ^NeutralPlane
 	Inherits@EMP: ^EmpDisable
 	Tooltip:
-		Name: P51 Attack Plane
+		Name: Actor-P51-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -670,14 +670,14 @@ TRAN:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
 		Prerequisites: aircraft.chinook, ~aircraft.chinookvisible, ~techlevel.medium
-		Description: Fast infantry transport helicopter.
+		Description: Actor-TRAN-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Can carry infantry\n• Can Paradrop infantry (Force Fire)
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Chinook
+		Name: Actor-TRAN-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -801,7 +801,7 @@ HALO:
 	RenderSprites:
 		Image: halo
 	Tooltip:
-		Name: Halo
+		Name: Actor-HALO-Name
 	Valued:
 		Cost: 1000
 	Cargo:
@@ -878,7 +878,7 @@ NHAW:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.nhaw, ~techlevel.medium
-		Description: Fast infantry transport helicopter armed with a light machine gun.
+		Description: Actor-NHAW-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -886,7 +886,7 @@ NHAW:
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Nighthawk
+		Name: Actor-NHAW-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1078,14 +1078,14 @@ HELI:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.allies, ~techlevel.medium
-		Description: Helicopter gunship armed with multi-purpose missiles.
+		Description: Actor-HELI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
 		Weaknesses: • Weak vs Infantry
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Longbow
+		Name: Actor-HELI-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1200,7 +1200,7 @@ HIND:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 32
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Durable helicopter gunship armed with a chaingun and rockets.
+		Description: Actor-HIND-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
@@ -1208,7 +1208,7 @@ HIND:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Hind
+		Name: Actor-HIND-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1357,7 +1357,7 @@ U2:
 	Health:
 		HP: 200000
 	Tooltip:
-		Name: Spy Plane
+		Name: Actor-U2-Name
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 28
@@ -1437,7 +1437,7 @@ SMIG:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Supersonic Bomber
+		Name: Actor-SMIG-Name
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -1518,14 +1518,14 @@ A10:
 		BuildPaletteOrder: 41
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~!sidewinders.upgrade, ~!avenger.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Attack aircraft armed with incendiary bombs.
+		Description: Actor-A10-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warthog
+		Name: Actor-A10-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1685,7 +1685,7 @@ A10.SW:
 		Image: a10
 	Buildable:
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~sidewinders.upgrade, ~techlevel.medium
-		Description: Attack aircraft armed with incendiary bombs and air-to-air missiles.
+		Description: Actor-A10.SW-Description
 		BuildPaletteOrder: 42
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Infantry, Light Armor, Aircraft
@@ -1731,7 +1731,7 @@ A10.SW:
 		ValidTargets: Air, AirSmall
 		InvalidTargets: NoAutoTarget
 	EncyclopediaExtras:
-		Name: Sidewinder Warthog
+		Name: Actor-A10.SW-EncyclopediaExtrasName
 		VariantOf: A10
 
 A10.GAU:
@@ -1752,7 +1752,7 @@ A10.GAU:
 	-ReplacedInQueue:
 	Buildable:
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~avenger.upgrade, ~techlevel.medium
-		Description: Attack aircraft armed with a rotary cannon and rockets.
+		Description: Actor-A10.GAU-Description
 		BuildPaletteOrder: 42
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Infantry, Light Armor
@@ -1810,7 +1810,7 @@ A10.GAU:
 		FullSequence: pip-red
 	WithMuzzleOverlay:
 	EncyclopediaExtras:
-		Name: Avenger Warthog
+		Name: Actor-A10.GAU-EncyclopediaExtrasName
 		VariantOf: A10
 
 A10.bomber:
@@ -1818,7 +1818,7 @@ A10.bomber:
 	Inherits@EMP: ^EmpDisable
 	Inherits@TDPAL: ^TDPalette
 	Tooltip:
-		Name: Warthog
+		Name: Actor-A10.bomber-Name
 	Health:
 		HP: 36000
 	Armament:
@@ -1901,7 +1901,7 @@ C17:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Supply Aircraft
+		Name: Actor-C17-Name
 	Contrail@1:
 		Offset: -261,-650,0
 		TrailLength: 15
@@ -2000,7 +2000,7 @@ GALX:
 	RenderSprites:
 		Image: galx
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: Actor-GALX-Name
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2031,7 +2031,7 @@ ANTO:
 		Image: anto
 		PlayerPalette: player
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: Actor-ANTO-Name
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2087,7 +2087,7 @@ APCH:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Apache
+		Name: Actor-APCH-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2096,7 +2096,7 @@ APCH:
 		BuildPaletteOrder: 50
 		Prerequisites: ~aircraft.apch, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Helicopter gunship armed with a chaingun.
+		Description: Actor-APCH-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Aircraft
 		Weaknesses: • Weak vs Heavy Armor, Defenses
@@ -2201,7 +2201,7 @@ ORCA:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Orca
+		Name: Actor-ORCA-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2210,7 +2210,7 @@ ORCA:
 		BuildPaletteOrder: 40
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~techlevel.medium
 		IconPalette: chrometd
-		Description: VTOL gunship armed with multi-purpose missiles.
+		Description: Actor-ORCA-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
 		Weaknesses: • Weak vs Infantry
@@ -2355,7 +2355,7 @@ ORCB:
 		BuildPaletteOrder: 90
 		Prerequisites: afld.gdi, ~aircraft.gdi, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Heavy VTOL bomber armed with EMP bombs.
+		Description: Actor-ORCB-Description
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -2363,8 +2363,8 @@ ORCB:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Orca Bomber
-		GenericName: Aircraft
+		Name: Actor-ORCB-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2518,7 +2518,7 @@ UAV:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Recon Drone
+		Name: Actor-UAV-Name
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -2575,14 +2575,14 @@ RAH:
 		BuildPaletteOrder: 52
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: Stealth attack helicopter with powerful anti-personnel rockets.
+		Description: Actor-RAH-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Comanche
+		Name: Actor-RAH-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2725,7 +2725,7 @@ KIRO:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 82
 		Prerequisites: afld, stek, ~aircraft.kiro, ~techlevel.high
-		Description: Heavily armored airship armed with specialised bombs.
+		Description: Actor-KIRO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Takes +50% damage when dropping bombs
@@ -2733,8 +2733,8 @@ KIRO:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Kirov Airship
-		GenericName: Airship
+		Name: Actor-KIRO-Name
+		GenericName: Actor-Generic-Airship-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2927,8 +2927,8 @@ OCAR:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Orca Carryall
-		GenericName: Aircraft
+		Name: Actor-OCAR-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2937,7 +2937,7 @@ OCAR:
 		BuildPaletteOrder: 43
 		Prerequisites: afld.gdi, rep, ~aircraft.gdi, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Fast VTOL Vehicle Transporter.
+		Description: Actor-OCAR-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 	Aircraft:
@@ -3152,15 +3152,15 @@ HARR:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 70
 		Prerequisites: atek, ~aircraft.allies, ~techlevel.high
-		Description: Fast VTOL ground attack aircraft armed with powerful explosive missiles.
+		Description: Actor-HARR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Buildings, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Harrier
-		GenericName: Aircraft
+		Name: Actor-HARR-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3277,15 +3277,15 @@ SCRN:
 		BuildPaletteOrder: 100
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: Fast VTOL attack craft armed with powerful plasma cannons.
+		Description: Actor-SCRN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
 		Weaknesses: • Weak vs Infantry
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Banshee
-		GenericName: Aircraft
+		Name: Actor-SCRN-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3430,7 +3430,7 @@ HORN:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Hornet
+		Name: Actor-HORN-Name
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3506,7 +3506,7 @@ YF23.Bomber:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Widow
+		Name: Actor-YF23.Bomber-Name
 	Health:
 		HP: 36000
 	Armament:
@@ -3587,7 +3587,7 @@ POD:
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Drop Pod
+		Name: Actor-POD-Name
 	Health:
 		HP: 7200
 	Armor:
@@ -3641,7 +3641,7 @@ VENM:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Venom
+		Name: Actor-VENM-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -3650,7 +3650,7 @@ VENM:
 		BuildPaletteOrder: 51
 		Prerequisites: ~aircraft.marked, ~techlevel.medium
 		IconPalette: chrometd
-		Description: VTOL gunship armed with laser.
+		Description: Actor-VENM-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Aircraft
 		Weaknesses: • Weak vs Defenses
@@ -3778,7 +3778,7 @@ AURO:
 		BuildPaletteOrder: 91
 		Prerequisites: afld.gdi, ~aircraft.eagle, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Supersonic bomber armed with a MOAB.
+		Description: Actor-AURO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -3786,7 +3786,7 @@ AURO:
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Aurora
+		Name: Actor-AURO-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3949,15 +3949,15 @@ PMAK:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 71
 		Prerequisites: alhq, ~aircraft.allies, ~techlevel.high
-		Description: Heavy VTOL bomber with powerful armor penetrating bombs.
+		Description: Actor-PMAK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor, Buildings
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Peacemaker
-		GenericName: Aircraft
+		Name: Actor-PMAK-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4096,7 +4096,7 @@ BEAG:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 72
 		Prerequisites: alhq, ~korea.coalition, ~aircraft.allies, ~techlevel.high
-		Description: Air superiority fighter with range/vision reducing missiles.
+		Description: Actor-BEAG-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Buildings
@@ -4104,8 +4104,8 @@ BEAG:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Eagle
-		GenericName: Aircraft
+		Name: Actor-BEAG-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4223,7 +4223,7 @@ PHAN:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 200
 		Prerequisites: anyradar, ~aircraft.phan
-		Description: Air superiority fighter with incapacitating missiles.
+		Description: Actor-PHAN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Buildings
@@ -4231,8 +4231,8 @@ PHAN:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Phantom
-		GenericName: Aircraft
+		Name: Actor-PHAN-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4359,14 +4359,14 @@ KAMV:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 201
 		Prerequisites: anyradar, ~aircraft.kamv
-		Description: Durable helicopter gunship armed with long range anti-tank rockets with concussive warheads.
+		Description: Actor-KAMV-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Kamov
+		Name: Actor-KAMV-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4483,15 +4483,15 @@ SHDE:
 		BuildPaletteOrder: 202
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.shde
-		Description: Fast VTOL ground attack aircraft armed with EMP weaponry.
+		Description: Actor-SHDE-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Shade
-		GenericName: Aircraft
+		Name: Actor-SHDE-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4614,7 +4614,7 @@ VERT:
 		BuildPaletteOrder: 203
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.vert
-		Description: Stealth bomber loaded with a single powerful bomb.
+		Description: Actor-VERT-Description
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -4622,8 +4622,8 @@ VERT:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Vertigo
-		GenericName: Aircraft
+		Name: Actor-VERT-Name
+		GenericName: Actor-Generic-Aircraft-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4767,7 +4767,7 @@ MCOR:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Manticore
+		Name: Actor-MCOR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4776,7 +4776,7 @@ MCOR:
 		BuildPaletteOrder: 204
 		Prerequisites: anyradar, ~stolentech.grav
 		IconPalette: chrometd
-		Description: Long ranged air-to-air craft with dual plasma cannons.
+		Description: Actor-MCOR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
 		Weaknesses: • Cannot attack ground units
@@ -4848,7 +4848,7 @@ DISC:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Floating Disc
+		Name: Actor-DISC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4856,7 +4856,7 @@ DISC:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 83
 		Prerequisites: afld, stek, ~aircraft.yuri, ~techlevel.high
-		Description: Heavily armored attack craft.
+		Description: Actor-DISC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Attributes: • Special Ability: Power Drain\n• Special Ability: Resource Drain
@@ -5006,7 +5006,7 @@ JACK:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Jackknife
+		Name: Actor-JACK-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5014,7 +5014,7 @@ JACK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 44
 		Prerequisites: afld.gdi, anyradar, ~aircraft.arc, ~techlevel.medium
-		Description: Loitering munition that dives at targets and explodes.
+		Description: Actor-JACK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry, Defenses
 		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft

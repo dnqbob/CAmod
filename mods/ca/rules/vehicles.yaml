@@ -13,14 +13,14 @@ V2RL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 180
 		Prerequisites: anyradar, ~vehicles.v2, ~techlevel.medium
-		Description: Long-range rocket artillery with low rate of fire.
+		Description: Actor-V2RL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: V2 Rocket Launcher
+		Name: Actor-V2RL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -80,14 +80,14 @@ KATY:
 		BuildPaletteOrder: 130
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.soviet, ~!arty.doctrine, ~techlevel.low
-		Description: Long-range rocket barrage artillery.
+		Description: Actor-KATY-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings, Defenses
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Katyusha
+		Name: Actor-KATY-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -147,7 +147,7 @@ GRAD:
 		Prerequisites: ~vehicles.soviet, ~arty.doctrine, ~techlevel.medium
 		IconPalette: chrome
 	Tooltip:
-		Name: Grad
+		Name: Actor-GRAD-Name
 	Health:
 		HP: 14000
 	-Upgradeable@Grad:
@@ -199,7 +199,7 @@ NUKC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 243
 		Prerequisites: stek, ~vehicles.soviet, ~arty.doctrine, ~nukc.upgrade, ~techlevel.high
-		Description: Nuclear long-range artillery.
+		Description: Actor-NUKC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -207,7 +207,7 @@ NUKC:
 	Valued:
 		Cost: 2400
 	Tooltip:
-		Name: Nuke Cannon
+		Name: Actor-NUKC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -408,7 +408,7 @@ NUKC.Preview:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 120
 		Prerequisites: ~vehicles.1tnk, ~techlevel.low
-		Description: Fast tank, good for scouting and skirmishes.
+		Description: Actor-1TNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
@@ -416,8 +416,8 @@ NUKC.Preview:
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Scout Tank
-		GenericName: Tank
+		Name: Actor-1TNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -477,15 +477,15 @@ NUKC.Preview:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Allied main battle tank.
+		Description: Actor-2TNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Medium Tank
-		GenericName: Tank
+		Name: Actor-2TNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -533,11 +533,11 @@ GTNK:
 	Buildable:
 		Queue: GrizzlyTank
 		-Prerequisites:
-		Description: Allied paradropped battle tank.
+		Description: Actor-GTNK-Description
 	Valued:
 		Cost: 875
 	Tooltip:
-		Name: Grizzly Tank
+		Name: Actor-GTNK-Name
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
@@ -582,7 +582,7 @@ GTNK.squad:
 	ScriptTriggers:
 	ProvidesPrerequisite@squadname:
 	Tooltip:
-		Name: Airdrop: Grizzly Tanks
+		Name: Actor-GTNK.squad-Name
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildAtProductionType: ParadropVehicle
@@ -706,23 +706,23 @@ GTNK.squad:
 		RequiresCondition: france || usa
 	Tooltip@Germany:
 		Name: Tank Destroyer
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: germany
 	Tooltip@Mirage:
 		Name: Mirage Tank
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: england
 	Tooltip@TD:
 		Name: Battle Tank
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: nod || gdi
 	Tooltip@SOVIET:
 		Name: Heavy Tank
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: soviet
 	Tooltip@SCRIN:
 		Name: Devourer
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: scrin
 	Turreted:
 		RequiresCondition: !scrin
@@ -826,15 +826,15 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 80
 		Prerequisites: ~!atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Soviet main battle tank with dual cannons.
+		Description: Actor-3TNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Heavy Tank
-		GenericName: Tank
+		Name: Actor-3TNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -923,8 +923,8 @@ GTNK.squad:
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Atomic Heavy Tank
-		GenericName: Tank
+		Name: Actor-3TNK.ATOMIC-Name
+		GenericName: Actor-Generic-Tank-Name
 	Turreted:
 		Offset: 0,0,20
 	Selectable:
@@ -954,14 +954,14 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 84
 		Prerequisites: ~lasher.upgrade, ~!atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Heavy tank with infantry crushing improvements.
+		Description: Actor-3TNK.YURI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
 		Attributes: • Can crush concrete walls
 	Tooltip:
-		Name: Lasher Tank
-		GenericName: Tank
+		Name: Actor-3TNK.YURI-Name
+		GenericName: Actor-Generic-Tank-Name
 	Health:
 		HP: 57000
 	Selectable:
@@ -1021,14 +1021,14 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 85
 		Prerequisites: ~lasher.upgrade, ~atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Heavy tank with infantry crushing improvements.
+		Description: Actor-3TNK.ATOMICYURI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
 		Attributes: • Can crush concrete walls\n• Explodes and leaves radiation on death
 	Tooltip:
-		Name: Atomic Lasher Tank
-		GenericName: Tank
+		Name: Actor-3TNK.ATOMICYURI-Name
+		GenericName: Actor-Generic-Tank-Name
 	Health:
 		HP: 57000
 	Selectable:
@@ -1092,7 +1092,7 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 82
 		Prerequisites: ~vehicles.soviet, ~!atomicengines.upgrade, ~!lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with a single powerful cannon.
+		Description: Actor-3TNK.RHINO-Description
 	RenderSprites:
 		Image: rhin
 	TooltipExtras:
@@ -1101,8 +1101,8 @@ GTNK.squad:
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Rhino Heavy Tank
-		GenericName: Tank
+		Name: Actor-3TNK.RHINO-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1187,7 +1187,7 @@ GTNK.squad:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		Name: Rhino Tank
+		Name: Actor-3TNK.RHINO-EncyclopediaExtrasName
 		AdditionalInfo: Requires Armor Doctrine.
 
 3TNK.RHINO.ATOMIC:
@@ -1201,7 +1201,7 @@ GTNK.squad:
 	TooltipExtras:
 		Attributes: • Explodes and leaves radiation on death
 	Tooltip:
-		Name: Atomic Rhino Heavy Tank
+		Name: Actor-3TNK.RHINO.ATOMIC-Name
 	Turreted:
 		Offset: 0,0,20
 	Selectable:
@@ -1219,7 +1219,7 @@ GTNK.squad:
 		Actor: 3tnk.rhino.atomicyuri
 	-Upgradeable@ATOMIC:
 	EncyclopediaExtras:
-		Name: Atomic Rhino Tank
+		Name: Actor-3TNK.RHINO.ATOMIC-EncyclopediaExtrasName
 		VariantOf: 3TNK.RHINO
 
 3TNK.RHINO.YURI:
@@ -1229,9 +1229,9 @@ GTNK.squad:
 	Buildable:
 		BuildPaletteOrder: 86
 		Prerequisites: ~!atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with infantry crushing improvements.
+		Description: Actor-3TNK.RHINO.YURI-Description
 	Tooltip:
-		Name: Thrasher Tank
+		Name: Actor-3TNK.RHINO.YURI-EncyclopediaExtrasName
 	TooltipExtras:
 		Attributes: • Can crush concrete walls
 	Health:
@@ -1259,7 +1259,7 @@ GTNK.squad:
 	-SpeedMultiplier@CRUSHSLOW:
 	-Upgradeable@LASHER:
 	EncyclopediaExtras:
-		Name: Thrasher Tank
+		Name: Actor-3TNK.RHINO.YURI-EncyclopediaExtrasName
 		Subfaction: yuri
 
 3TNK.RHINO.ATOMICYURI:
@@ -1269,9 +1269,9 @@ GTNK.squad:
 	Buildable:
 		BuildPaletteOrder: 87
 		Prerequisites: ~atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with infantry crushing improvements.
+		Description: Actor-3TNK.RHINO.ATOMICYURI-Description
 	Tooltip:
-		Name: Atomic Thrasher Tank
+		Name: Actor-3TNK.RHINO.ATOMICYURI-EncyclopediaExtrasName
 	TooltipExtras:
 		Attributes: • Can crush concrete walls
 	Health:
@@ -1297,7 +1297,7 @@ GTNK.squad:
 	-Upgradeable@LASHER:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Atomic Thrasher Tank
+		Name: Actor-3TNK.RHINO.ATOMICYURI-EncyclopediaExtrasName
 		Subfaction: yuri
 		VariantOf: 3TNK.RHINO.YURI
 
@@ -1313,15 +1313,15 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 231
 		Prerequisites: stek, ~vehicles.soviet, ~!erad.upgrade, ~!atomicengines.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank with anti-air capability.
+		Description: Actor-4TNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: Mammoth Tank
-		GenericName: Tank
+		Name: Actor-4TNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1448,7 +1448,7 @@ GTNK.squad:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death
 	Tooltip:
-		Name: Atomic Mammoth Tank
+		Name: Actor-4TNK.ATOMIC-Name
 	-SpawnActorOnDeath:
 	FireWarheadsOnDeath@ATOMICUPGRADE:
 		Weapon: UnitExplodeIraqTank
@@ -1475,13 +1475,13 @@ GTNK.squad:
 	RenderSprites:
 		Image: 4tnkerad
 	Tooltip:
-		Name: Eradicator
+		Name: Actor-4TNK.ERAD-Name
 	TooltipExtras:
 		Weaknesses: • Cannot attack Aircraft
 		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank armed with a radiation cannon.
+		Description: Actor-4TNK.ERAD-Description
 		BuildPaletteOrder: 233
 	Armament@PRIMARY:
 		Weapon: RadBeamWeaponHeavy
@@ -1524,13 +1524,13 @@ GTNK.squad:
 	RenderSprites:
 		Image: 4tnkeradi
 	Tooltip:
-		Name: Atomic Eradicator
+		Name: Actor-4TNK.ERAD.ATOMIC-Name
 	TooltipExtras:
 		Weaknesses: • Cannot attack Aircraft
 		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank armed with a radiation cannon.
+		Description: Actor-4TNK.ERAD.ATOMIC-Description
 		BuildPaletteOrder: 234
 	Selectable:
 		Class: 4tnk.erad
@@ -1572,14 +1572,14 @@ ARTY:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 122
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Long-range artillery.
+		Description: Actor-ARTY-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Artillery
+		Name: Actor-ARTY-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1648,7 +1648,7 @@ HOWI:
 	RenderSprites:
 		Image: howi
 	Tooltip:
-		Name: Howitzer
+		Name: Actor-HOWI-Name
 	Buildable:
 		BuildPaletteOrder: 152
 		Prerequisites: ~vehicles.nod, ~howi.upgrade, ~techlevel.medium
@@ -1768,7 +1768,7 @@ ISU:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 183
 		Prerequisites: anyradar, ~vehicles.ukraine, ~techlevel.medium
-		Description: Powerful medium-range artillery.
+		Description: Actor-ISU-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -1776,7 +1776,7 @@ ISU:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Siege Tank
+		Name: Actor-ISU-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1852,14 +1852,14 @@ SPEC:
 		BuildPaletteOrder: 271
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~vehicles.shadow, ~techlevel.high
-		Description: Long-range stealth artillery.
+		Description: Actor-SPEC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Spectre
+		Name: Actor-SPEC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1945,14 +1945,14 @@ SAPC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 272
 		Prerequisites: tmpl, ~vehicles.nod, ~!cust.upgrade, ~techlevel.high
-		Description: Stealth infantry transport.
+		Description: Actor-SAPC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Stealth APC
+		Name: Actor-SAPC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2075,9 +2075,9 @@ HARV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 10
 		Prerequisites: anyrefinery, ~vehicles.ra, ~!charv.upgrade, ~techlevel.low
-		Description: Collects Ore, Gems and Tiberium for processing.
+		Description: Actor-HARV-Description
 	Tooltip:
-		Name: Ore Truck
+		Name: Actor-HARV-Name
 	Selectable:
 		Priority: 7
 		DecorationBounds: 1792, 1792
@@ -2113,7 +2113,7 @@ HARV.Chrono:
 	RenderSprites:
 		Image: charv
 	Tooltip:
-		Name: Chrono Miner
+		Name: Actor-HARV.Chrono-Name
 	Mobile:
 		Voice: Move
 	Harvester:
@@ -2155,7 +2155,7 @@ MCV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 600
 		Prerequisites: vehicles.mcv, ~vehicles.ra, ~techlevel.low
-		Description: Deploys into another Construction Yard.
+		Description: Actor-MCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
 		Weaknesses: • Unarmed
@@ -2163,7 +2163,7 @@ MCV:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: Actor-MCV-Name
 	Selectable:
 		Priority: 4
 		DecorationBounds: 1792, 1792
@@ -2210,7 +2210,7 @@ JEEP:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: Actor-JEEP-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -2218,7 +2218,7 @@ JEEP:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Ranger
+		Name: Actor-JEEP-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2333,14 +2333,14 @@ APC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 121
 		Prerequisites: ~vehicles.allies, ~!delp.upgrade, ~techlevel.low
-		Description: Tough infantry transport.
+		Description: Actor-APC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Armored Personnel Carrier
+		Name: Actor-APC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2405,7 +2405,7 @@ APC:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		Name: APC
+		Name: Actor-APC-EncyclopediaExtrasName
 
 DELP:
 	Inherits: APC
@@ -2480,14 +2480,14 @@ MNLY:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 340
 		Prerequisites: repair, ~techlevel.low, ~vehicles.human
-		Description: Lays mines to destroy unwary enemy units.
+		Description: Actor-MNLY-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Detects and disarms mines
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Minelayer
+		Name: Actor-MNLY-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -2553,14 +2553,14 @@ TRUK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 350
 		Prerequisites: ~disabled
-		Description: Transports cash to other players.
+		Description: Actor-TRUK-Description
 		BuildDurationModifier: 30
 	TooltipExtras:
 		Weaknesses: • Unarmed
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Supply Truck
+		Name: Actor-TRUK-Name
 	Selectable:
 		Priority: 6
 	Health:
@@ -2609,13 +2609,13 @@ MGG:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 301
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Regenerates the shroud nearby, obscuring enemy vision. Can channel the effect to reduce enemy weapon range and vision.
+		Description: Actor-MGG-Description
 	TooltipExtras:
 		Attributes: • Special Ability: Toggle Gap Generator
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Mobile Gap Generator
+		Name: Actor-MGG-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2671,14 +2671,14 @@ MRJ:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Mobile Radar Jammer
+		Name: Actor-MRJ-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 300
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Support vehicle that can disrupt enemy targeting systems.
+		Description: Actor-MRJ-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Jamming fields reduce rate of fire and accuracy of enemy vehicles, aircraft & defenses
@@ -2729,14 +2729,14 @@ MSG:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 330
 		Prerequisites: anyradar, ~vehicles.shadow, ~techlevel.medium
-		Description: Support unit that projects a cloaking field.
+		Description: Actor-MSG-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Special Ability: Deploys to cloak nearby units and structures
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Mobile Stealth Generator
+		Name: Actor-MSG-Name
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
 		Name: Mobile Stealth Generator (deployed)
@@ -2814,15 +2814,15 @@ TTRA:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 230
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
-		Description: Half-track with mounted Tesla Coil.
+		Description: Actor-TTRA-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Tesla Track
-		GenericName: Tank
+		Name: Actor-TTRA-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2883,15 +2883,15 @@ TTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 182
 		Prerequisites: tslaorstek, anyradar, ~vehicles.russia, ~techlevel.medium
-		Description: Tank with twin mounted Tesla Coils.
+		Description: Actor-TTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Tesla Tank
-		GenericName: Tank
+		Name: Actor-TTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2951,14 +2951,14 @@ DTRK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 312
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
-		Description: Truck carrying nuclear explosives.
+		Description: Actor-DTRK-Description
 	TooltipExtras:
 		Weaknesses: • Very weak armor
 		Attributes: • Special Ability: Detonate
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Demolition Truck
+		Name: Actor-DTRK-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3010,7 +3010,7 @@ CTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 220
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Teleporting tank armed with twin missile launchers.
+		Description: Actor-CTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
 		Weaknesses: • Weak vs Infantry
@@ -3018,8 +3018,8 @@ CTNK:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Chrono Tank
-		GenericName: Tank
+		Name: Actor-CTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3104,7 +3104,7 @@ QTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 310
 		Prerequisites: stek, ~vehicles.qtnk, ~techlevel.high
-		Description: Deals seismic damage to nearby vehicles and structures.
+		Description: Actor-QTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -3112,8 +3112,8 @@ QTNK:
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: MAD Tank
-		GenericName: Tank
+		Name: Actor-QTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3174,7 +3174,7 @@ AMCV:
 		BuildPaletteOrder: 601
 		Prerequisites: vehicles.mcv, ~vehicles.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Deploys into another Construction Yard.
+		Description: Actor-AMCV-Description
 		BuildDurationModifier: 50
 	TooltipExtras:
 		Weaknesses: • Unarmed
@@ -3182,7 +3182,7 @@ AMCV:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: Actor-AMCV-Name
 	Selectable:
 		Priority: 4
 		Bounds: 1792, 1792
@@ -3232,7 +3232,7 @@ HMMV:
 		BuildPaletteOrder: 40
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.hmmv, ~!tow.upgrade, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: Actor-HMMV-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -3240,7 +3240,7 @@ HMMV:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Hum-Vee
+		Name: Actor-HMMV-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3300,14 +3300,14 @@ HMMV.TOW:
 	RenderSprites:
 		Image: hmmv
 	Buildable:
-		Description: Fast scout & anti-infantry vehicle with anti-tank missile launcher.
+		Description: Actor-HMMV.TOW-Description
 		Prerequisites: ~vehicles.hmmv, ~tow.upgrade, ~techlevel.high
 	Valued:
 		Cost: 575
 	Mobile:
 		Speed: 126
 	Tooltip:
-		Name: TOW Hum-Vee
+		Name: Actor-HMMV.TOW-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
@@ -3343,7 +3343,7 @@ GDRN:
 		BuildPaletteOrder: 41
 		IconPalette: chrome
 		Prerequisites: ~vehicles.arc, ~!tow.upgrade, ~techlevel.low
-		Description: Fast scout & anti-tank drone.
+		Description: Actor-GDRN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Buildings
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
@@ -3351,7 +3351,7 @@ GDRN:
 	Valued:
 		Cost: 450
 	Tooltip:
-		Name: Guardian Drone
+		Name: Actor-GDRN-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3423,7 +3423,7 @@ GDRN.TOW:
 	Valued:
 		Cost: 575
 	Tooltip:
-		Name: TOW Guardian Drone
+		Name: Actor-GDRN.TOW-Name
 	Mobile:
 		Speed: 118
 	Armament@SECONDARY:
@@ -3459,7 +3459,7 @@ BGGY:
 		BuildPaletteOrder: 50
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.nod, ~!rbug.upgrade, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: Actor-BGGY-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -3467,7 +3467,7 @@ BGGY:
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Buggy
+		Name: Actor-BGGY-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3569,7 +3569,7 @@ RBUG:
 	Buildable:
 		Prerequisites: ~vehicles.nod, ~rbug.upgrade, ~techlevel.low
 	Tooltip:
-		Name: Raider Buggy
+		Name: Actor-RBUG-Name
 	Valued:
 		Cost: 400
 	Armament:
@@ -3723,14 +3723,14 @@ APC2:
 		BuildPaletteOrder: 140
 		Prerequisites: ~vehicles.td, ~!vulcan.upgrade, ~vehicles.apc2, ~techlevel.low
 		IconPalette: chrometd
-		Description: Tough infantry transport.
+		Description: Actor-APC2-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Armored Personnel Carrier
+		Name: Actor-APC2-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3797,7 +3797,7 @@ APC2:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		Name: APC
+		Name: Actor-APC2-EncyclopediaExtrasName
 
 APC2.Nod.Preview:
 	Inherits: APC2
@@ -3870,14 +3870,14 @@ VULC:
 		BuildPaletteOrder: 141
 		Prerequisites: ~vehicles.gdi, ~vulcan.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Tough infantry transport, armed with a powerful chaingun.
+		Description: Actor-VULC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Vulcan
+		Name: Actor-VULC-EncyclopediaExtrasName
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4024,7 +4024,7 @@ VULC:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		Name: Vulcan
+		Name: Actor-VULC-EncyclopediaExtrasName
 
 VULC.AI:
 	Inherits: VULC
@@ -4069,7 +4069,7 @@ LTNK:
 		BuildPaletteOrder: 100
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.ltnk, ~!lastnk.upgrade, ~techlevel.low
-		Description: Standard front-line tank.
+		Description: Actor-LTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
@@ -4083,7 +4083,7 @@ LTNK:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Light Tank
+		Name: Actor-LTNK-Name
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
 		Name: Laser Light Tank
@@ -4199,7 +4199,7 @@ MTNK:
 		BuildPaletteOrder: 90
 		Prerequisites: ~!bdrone.upgrade, ~!lastnk.upgrade, ~vehicles.mtnk, ~techlevel.low
 		IconPalette: chrometd
-		Description: Main battle tank.
+		Description: Actor-MTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
@@ -4211,12 +4211,12 @@ MTNK:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Battle Tank
-		GenericName: Tank
+		Name: Actor-MTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
 		Name: Laser Battle Tank
-		GenericName: Tank
+		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: lastnk-upgrade
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4337,7 +4337,7 @@ MTNK.Drone:
 		Queue: VehicleSQ, VehicleMQ
 		Prerequisites: ~bdrone.upgrade, ~vehicles.mtnk, ~techlevel.high
 		IconPalette: chrometd
-		Description: Remotely piloted battle tank.
+		Description: Actor-MTNK.Drone-Description
 		BuildPaletteOrder: 91
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
@@ -4351,7 +4351,7 @@ MTNK.Drone:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Battle Drone
+		Name: Actor-MTNK.Drone-Name
 		-RequiresCondition:
 	Mobile:
 		PauseOnCondition: !radarenabled || being-captured || empdisable || being-warped || driver-dead || notmobile
@@ -4472,12 +4472,12 @@ MDRN:
 	Inherits@HACKABLE: ^Hackable
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
-		Name: Mini Drone
+		Name: Actor-MDRN-Name
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 192
 		Prerequisites: anyradar, ~vehicles.arc, ~techlevel.medium
-		Description: Hovering drone with machine gun.
+		Description: Actor-MDRN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
@@ -4671,15 +4671,15 @@ HTNK:
 		BuildPaletteOrder: 253
 		IconPalette: chrometd
 		Prerequisites: ~!mdrone.upgrade, gtek, ~vehicles.htnk, ~!ionmam.upgrade, ~!hovermam.upgrade, ~techlevel.high
-		Description: Big and slow tank with anti-air capability.
+		Description: Actor-HTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: Mammoth Tank
-		GenericName: Tank
+		Name: Actor-HTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4773,8 +4773,8 @@ HTNK.Ion:
 		BuildPaletteOrder: 254
 		Prerequisites: gtek, ~vehicles.htnk, ~ionmam.upgrade, ~techlevel.high
 	Tooltip:
-		Name: Ion Mammoth Tank
-		GenericName: Tank
+		Name: Actor-HTNK.Ion-Name
+		GenericName: Actor-Generic-Tank-Name
 	Armament@PRIMARY:
 		Weapon: IonZap
 		LocalOffset: 870,0,360
@@ -4792,12 +4792,12 @@ HTNK.Hover:
 	Inherits: HTNK
 	Inherits@HOVERTRAIL: ^HoverTrail
 	Tooltip:
-		Name: Hover Mammoth Tank
-		GenericName: Tank
+		Name: Actor-HTNK.Hover-Name
+		GenericName: Actor-Generic-Tank-Name
 	Buildable:
 		BuildPaletteOrder: 255
 		Prerequisites: gtek, ~vehicles.htnk, ~hovermam.upgrade, ~techlevel.high
-		Description: Big and fairly mobile tank with anti-air capability.
+		Description: Actor-HTNK.Hover-Description
 	TooltipExtras:
 		Attributes: • Can traverse water\n• Self repairs to 50% out of combat\n• Afterburner ability (with upgrade)
 	Mobile:
@@ -4872,7 +4872,7 @@ HTNK.Drone:
 		BuildPaletteOrder: 256
 		IconPalette: chrometd
 		Prerequisites: ~mdrone.upgrade, gtek, ~vehicles.htnk, ~techlevel.high
-		Description: Remotely piloted heavy tank with anti-air capability.
+		Description: Actor-HTNK.Drone-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Requires active radar communication
@@ -4882,7 +4882,7 @@ HTNK.Drone:
 	Health:
 		HP: 88000
 	Tooltip:
-		Name: Mammoth Drone
+		Name: Actor-HTNK.Drone-Name
 	Mobile:
 		PauseOnCondition: !radarenabled || being-captured || empdisable || being-warped || driver-dead || notmobile
 		Voice: Move
@@ -4951,7 +4951,7 @@ MSAM:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: MLRS
+		Name: Actor-MSAM-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4959,7 +4959,7 @@ MSAM:
 		Prerequisites: anyradar, ~vehicles.msam, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Multiple Launch Rocket System. Long-range guided artillery with anti-air capability.
+		Description: Actor-MSAM-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor
@@ -5087,7 +5087,7 @@ MLRS:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: SSM Launcher
+		Name: Actor-MLRS-Name
 		RequiresCondition: !player-blackh
 	Tooltip@BH:
 		Name: SSM Launcher (Triple)
@@ -5099,7 +5099,7 @@ MLRS:
 		Prerequisites: tmpl, ~vehicles.mlrs, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Long-range incendiary missile artillery.
+		Description: Actor-MLRS-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
@@ -5260,8 +5260,8 @@ STNK.Nod:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Stealth Tank
-		GenericName: Tank
+		Name: Actor-STNK.Nod-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5269,7 +5269,7 @@ STNK.Nod:
 		Prerequisites: anyradar, ~vehicles.nod, ~!hstk.upgrade, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Medium-range missile tank that can cloak.
+		Description: Actor-STNK.Nod-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
 		Weaknesses: • Weak vs Infantry
@@ -5383,8 +5383,8 @@ HSTK:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Heavy Stealth Tank
-		GenericName: Tank
+		Name: Actor-HSTK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5392,7 +5392,7 @@ HSTK:
 		Prerequisites: anyradar, ~vehicles.nod, ~hstk.upgrade, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Medium-range missile heavy tank that can cloak.
+		Description: Actor-HSTK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
 		Weaknesses: • Weak vs Infantry
@@ -5495,7 +5495,7 @@ BIKE:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Recon Bike
+		Name: Actor-BIKE-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5503,7 +5503,7 @@ BIKE:
 		Prerequisites: ~vehicles.nod, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Fast scout vehicle armed with rockets.
+		Description: Actor-BIKE-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Buildings
 		Weaknesses: • Weak vs Infantry, Light Armor
@@ -5577,8 +5577,8 @@ FTNK:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Flame Tank
-		GenericName: Tank
+		Name: Actor-FTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5586,7 +5586,7 @@ FTNK:
 		Prerequisites: anyradar, ~vehicles.ftnk, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Tank armed with dual short-range flamethrowers.
+		Description: Actor-FTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -5634,15 +5634,15 @@ HFTK:
 		BuildPaletteOrder: 201
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.blackh, ~techlevel.medium
-		Description: Heavy tank armed with dual short-range flamethrowers.
+		Description: Actor-HFTK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Heavy Flame Tank
-		GenericName: Tank
+		Name: Actor-HFTK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5730,13 +5730,13 @@ HARV.TD:
 	RenderSprites:
 		Image: harv2
 	Tooltip:
-		Name: Harvester
+		Name: Actor-HARV.TD-Name
 	Buildable:
 		BuildPaletteOrder: 12
 		Prerequisites: ~!sharv.upgrade, anyrefinery, ~vehicles.td, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Collects Ore, Gems and Tiberium for processing.
+		Description: Actor-HARV.TD-Description
 	Selectable:
 		Priority: 7
 		DecorationBounds: 1536, 1536
@@ -5768,7 +5768,7 @@ HARV.TD.UPG:
 	Health:
 		HP: 65000
 	Tooltip:
-		Name: Stealth Harvester
+		Name: Actor-HARV.TD.UPG-Name
 	Cloak@NORMAL:
 		InitialDelay: 74
 		CloakDelay: 75
@@ -5811,14 +5811,14 @@ BTR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.soviet, ~!gattling.upgrade, ~techlevel.low
-		Description: Tough infantry transport.
+		Description: Actor-BTR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Aircraft
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
 	Valued:
 		Cost: 675
 	Tooltip:
-		Name: Armored Personnel Carrier (BTR)
+		Name: Actor-BTR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5919,7 +5919,7 @@ BTR:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		Name: BTR
+		Name: Actor-BTR-EncyclopediaExtrasName
 
 BTR.AI:
 	Inherits: BTR
@@ -5944,12 +5944,12 @@ BTR.YURI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 31
 		Prerequisites: ~gattling.upgrade, ~vehicles.soviet, ~techlevel.low
-		Description: Tough infantry transport with armament improvements.
+		Description: Actor-BTR.YURI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Aircraft
 		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
 	Tooltip:
-		Name: Armored Personnel Carrier (Gattling BTR)
+		Name: Actor-BTR.YURI-Name
 	Armament@AIR:
 		Weapon: MGatt
 		LocalOffset: 320,50,350, 320,-50,350
@@ -6062,7 +6062,7 @@ BTR.YURI:
 	-Upgradeable@GATTLING:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Gattling BTR
+		Name: Actor-BTR.YURI-EncyclopediaExtrasName
 		Subfaction: yuri
 
 BTR.YURI.AI:
@@ -6092,14 +6092,14 @@ TRPC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 132
 		Prerequisites: ~vehicles.soviet, ~infantry.doctrine, ~techlevel.medium
-		Description: Tough infantry transport pre-loaded with infantry.
+		Description: Actor-TRPC-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Empowers nearby basic infantry\n• Heals all nearby infantry\n• Detects cloaked units and mines
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Troop Crawler
+		Name: Actor-TRPC-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: false
 		AddToAssetsValue: false
@@ -6222,9 +6222,9 @@ IFV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 170
 		Prerequisites: radarorrepair, ~vehicles.allies, ~techlevel.medium
-		Description: Adaptable infantry transport.
+		Description: Actor-IFV-Description
 	Tooltip:
-		Name: Infantry Fighting Vehicle
+		Name: Actor-IFV-Name
 		RequiresCondition: !full || nochange
 	Tooltip@gunturr:
 		Name: MG IFV
@@ -7215,7 +7215,7 @@ IFV:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		Name: IFV
+		Name: Actor-IFV-EncyclopediaExtrasName
 
 IFV.AI:
 	Inherits: ^Tank
@@ -7225,9 +7225,9 @@ IFV.AI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 170
 		Prerequisites: anyradar, ~vehicles.allies, ~botplayer, ~techlevel.medium
-		Description: Adaptable infantry transport.
+		Description: Actor-IFV.AI-Description
 	Tooltip:
-		Name: Infantry Fighting Vehicle
+		Name: Actor-IFV.AI-Name
 		RequiresCondition: !gunturr && !samturr
 	Tooltip@gunturr:
 		Name: MG IFV
@@ -7377,7 +7377,7 @@ RECK:
 		BuildPaletteOrder: 500
 		Prerequisites: radarorrepair, ~vehicles.reck
 	Tooltip:
-		Name: Reckoner
+		Name: Actor-RECK-Name
 	Tooltip@gunturr:
 		Name: MG Reckoner
 	Tooltip@fragturr:
@@ -7483,7 +7483,7 @@ TITN:
 		BuildPaletteOrder: 257
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.talon, ~!railgun.upgrade, ~techlevel.high
-		Description: Tough, slow combat battle-mech.
+		Description: Actor-TITN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
@@ -7493,7 +7493,7 @@ TITN:
 		Bounds: 1280, 1706
 		DecorationBounds: 1280, 1706, 0, -100
 	Tooltip:
-		Name: Titan
+		Name: Actor-TITN-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -7594,7 +7594,7 @@ TITN:
 TITN.RAIL:
 	Inherits: TITN
 	Tooltip:
-		Name: Railgun Titan
+		Name: Actor-TITN.RAIL-Name
 	Buildable:
 		BuildPaletteOrder: 258
 		Prerequisites: gtek, ~vehicles.talon, ~railgun.upgrade, ~techlevel.high
@@ -7621,12 +7621,12 @@ JUGG:
 	Inherits@GYRO: ^GyroStabilizers
 	Inherits@HeavyArmor: ^HeavyArmor
 	Tooltip:
-		Name: Juggernaut
+		Name: Actor-JUGG-Name
 	Buildable:
 		BuildPaletteOrder: 261
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Tough artillery battle-mech.
+		Description: Actor-JUGG-Description
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.high
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
@@ -7751,12 +7751,12 @@ TTRK:
 	Buildable:
 		BuildPaletteOrder: 510
 		Prerequisites: techcenter.any, ~vehicles.ttrk, ~techlevel.high
-		Description: Truck carrying a Tiberium bomb.
+		Description: Actor-TTRK-Description
 	TooltipExtras:
 		Weaknesses: • Very weak armor
 		Attributes: • Special Ability: Detonate
 	Tooltip:
-		Name: Toxin Truck
+		Name: Actor-TTRK-Name
 	FireWarheadsOnDeath:
 		Weapon: UnitExplodeToxinTruck
 		EmptyWeapon: UnitExplodeToxinTruck
@@ -7771,7 +7771,7 @@ DISR:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Disruptor
+		Name: Actor-DISR-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -7779,7 +7779,7 @@ DISR:
 		BuildPaletteOrder: 259
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.high
-		Description: Armored high-tech vehicle with medium-range sonic armament.
+		Description: Actor-DISR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -7864,7 +7864,7 @@ HSAM:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Hover MLRS
+		Name: Actor-HSAM-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -7872,7 +7872,7 @@ HSAM:
 		Prerequisites: anyradar, ~vehicles.eagle, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Prototype Hover Multiple Launch Rocket System. Long-range guided artillery with anti-air capability.
+		Description: Actor-HSAM-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor
@@ -8015,7 +8015,7 @@ RTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 120
 		Prerequisites: ~vehicles.england, ~techlevel.low
-		Description: Advanced battle tank that can disguise when stationary.
+		Description: Actor-RTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Heavy Armor
 		Weaknesses: • Weak vs Defenses, Infantry\n• Cannot attack Aircraft
@@ -8023,7 +8023,7 @@ RTNK:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Mirage Tank
+		Name: Actor-RTNK-Name
 	Mirage:
 		RequiresCondition: !cloak-force-disabled && !invisibility && !driver-dead && !empdisable && !being-warped
 		RevealOn: Attack, Dock, Move, Damage, Heal
@@ -8124,14 +8124,14 @@ V3RL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 243
 		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
-		Description: Extreme long-range rocket artillery.
+		Description: Actor-V3RL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Rockets can be shot down by static anti-air defenses
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: V3 Launcher
+		Name: Actor-V3RL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8206,7 +8206,7 @@ V3:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: V3 Rocket
+		Name: Actor-V3-Name
 	Health:
 		HP: 5000
 	BallisticMissile:
@@ -8243,15 +8243,15 @@ TNKD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 171
 		Prerequisites: ~vehicles.germany, anyradar, ~techlevel.medium
-		Description: German tank destroyer.
+		Description: Actor-TNKD-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor
 		Weaknesses: • Weak vs Infantry, Buildings, Defenses, Light Armor\n• Cannot attack Aircraft
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Tank Destroyer
-		GenericName: Tank
+		Name: Actor-TNKD-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8323,7 +8323,7 @@ MSAR:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Mobile Sensor Array
+		Name: Actor-MSAR-Name
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
 		Name: Mobile Sensor Array (deployed)
@@ -8335,7 +8335,7 @@ MSAR:
 		BuildPaletteOrder: 321
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.gdi, ~techlevel.medium
-		Description: When deployed, detects enemy vehicles, aircraft and structures within a large radius.
+		Description: Actor-MSAR-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Detects cloaked units (when deployed)\n• Increases nearby ground unit vision range (when deployed)\n• Special Ability: Activate Sensor Array
@@ -8425,7 +8425,7 @@ PTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 172
 		Prerequisites: anyradar, ~vehicles.allies, ~!pcan.upgrade, ~techlevel.medium
-		Description: Long-range artillery with Prism Tower derived weapon.
+		Description: Actor-PTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -8433,8 +8433,8 @@ PTNK:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Prism Tank
-		GenericName: Tank
+		Name: Actor-PTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8540,9 +8540,9 @@ PCAN:
 	Buildable:
 		BuildPaletteOrder: 173
 		Prerequisites: anyradar, ~vehicles.allies, ~pcan.upgrade, ~techlevel.high
-		Description: A prototype long-range artillery that fires highly focused beams of light.
+		Description: Actor-PCAN-Description
 	Tooltip:
-		Name: Prism Cannon
+		Name: Actor-PCAN-Name
 	Mobile:
 		Speed: 60
 		TurnSpeed: 12
@@ -8600,7 +8600,7 @@ WTNK:
 		BuildPaletteOrder: 203
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.legion, ~techlevel.medium
-		Description: Prototype MGT-1A microwave gun tank.
+		Description: Actor-WTNK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Infantry
 		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
@@ -8608,8 +8608,8 @@ WTNK:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Microwave Tank
-		GenericName: Tank
+		Name: Actor-WTNK-Name
+		GenericName: Actor-Generic-Tank-Name
 	Health:
 		HP: 20000
 	Armor:
@@ -8686,13 +8686,13 @@ BATF:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 223
 		Prerequisites: atek, ~vehicles.france, ~techlevel.high
-		Description: Tough infantry transport with weapon ports for infantry to fire from.
+		Description: Actor-BATF-Description
 	TooltipExtras:
 		Attributes: • Can crush smaller vehicles and concrete walls
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Battle Fortress
+		Name: Actor-BATF-Name
 	Health:
 		HP: 140000
 	Mobile:
@@ -8915,7 +8915,7 @@ MEMP:
 		BuildPaletteOrder: 410
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.gdi, ~techlevel.high
-		Description: Remotely piloted vehicle, deploys to disable nearby vehicles & structures.
+		Description: Actor-MEMP-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -8923,8 +8923,8 @@ MEMP:
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Mobile E.M.P
-		GenericName: Tank
+		Name: Actor-MEMP-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9042,7 +9042,7 @@ CDRN:
 		BuildPaletteOrder: 311
 		IconPalette: chrometd
 		Prerequisites: stek, ~vehicles.yuri, ~techlevel.high
-		Description: Drone armed with Chaos Gas which causes units to become frenzied and attack indiscriminately.
+		Description: Actor-CDRN-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft, Buildings, Defenses
@@ -9050,7 +9050,7 @@ CDRN:
 	Valued:
 		Cost: 850
 	Tooltip:
-		Name: Chaos Drone
+		Name: Actor-CDRN-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9133,7 +9133,7 @@ CHPR:
 		BuildPaletteOrder: 222
 		IconPalette: chrometd
 		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
-		Description: Advanced heavy tank that can erase targets from existence.
+		Description: Actor-CHPR-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Defenses
 		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
@@ -9141,8 +9141,8 @@ CHPR:
 	Valued:
 		Cost: 1550
 	Tooltip:
-		Name: Chrono Prison
-		GenericName: Tank
+		Name: Actor-CHPR-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9249,7 +9249,7 @@ CRYO:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Cryo Launcher
+		Name: Actor-CRYO-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -9257,7 +9257,7 @@ CRYO:
 		Prerequisites: ~vehicles.allies, alhq, ~sweden.coalition, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Long-range support artillery that slows enemies and makes them take more damage.
+		Description: Actor-CRYO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -9315,7 +9315,7 @@ PBUL:
 		BuildPaletteOrder: 252
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.eagle, ~techlevel.high
-		Description: Fast scout vehicle with rockets that disrupts weapons and vision. Can designates targets, revealing them and increasing the damage they take.
+		Description: Actor-PBUL-Description
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Aircraft
 		Weaknesses: • Weak vs Infantry, Buildings, Defenses
@@ -9323,7 +9323,7 @@ PBUL:
 	Valued:
 		Cost: 850
 	Tooltip:
-		Name: Pitbull
+		Name: Actor-PBUL-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9405,15 +9405,15 @@ CYCP:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 501
 		Prerequisites: anyradar, ~vehicles.cycp
-		Description: Light tank with a Tesla Coil derived weapon.
+		Description: Actor-CYCP-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Cyclops
-		GenericName: Tank
+		Name: Actor-CYCP-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9459,15 +9459,15 @@ BASI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 502
 		Prerequisites: anyradar, ~vehicles.basi
-		Description: Stealth tank with an EMP wave weapon.
+		Description: Actor-BASI-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft\n• Can be spotted by nearby infantry and defense structures
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Basilisk
-		GenericName: Tank
+		Name: Actor-BASI-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9545,7 +9545,7 @@ MANT:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 503
 		Prerequisites: anyradar, ~vehicles.mant
-		Description: Tracked vehicle armed with anti-aircraft laser cannons.
+		Description: Actor-MANT-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft
@@ -9563,7 +9563,7 @@ MANT:
 		Speed: 126
 		TurnSpeed: 30
 	Tooltip:
-		Name: Mantis
+		Name: Actor-MANT-Name
 	WithMoveAnimation:
 		ValidMovementTypes: Horizontal, Vertical, Turn
 	RevealsShroud:
@@ -9608,7 +9608,7 @@ VIPR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 504
 		Prerequisites: anyradar, ~stolentech.wsph
-		Description: Medium hover tank.
+		Description: Actor-VIPR-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
@@ -9616,7 +9616,7 @@ VIPR:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Viper
+		Name: Actor-VIPR-Name
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -9678,7 +9678,7 @@ WOLV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 250
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.medium
-		Description: Compact & durable battle-mech with dual chainguns.
+		Description: Actor-WOLV-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings, Light Armor
@@ -9689,7 +9689,7 @@ WOLV:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 1024, 0, -100
 	Tooltip:
-		Name: Wolverine
+		Name: Actor-WOLV-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9756,7 +9756,7 @@ XO:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 251
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.medium
-		Description: Light battle-mech armed with a laser and a coil-gun. Able to jump short distances using its jump-pack.
+		Description: Actor-XO-Description
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Heavy Armor, Buildings
 		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
@@ -9767,7 +9767,7 @@ XO:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 1024, 0, -100
 	Tooltip:
-		Name: X-O Powersuit
+		Name: Actor-XO-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9885,15 +9885,15 @@ APOC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 239
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
-		Description: Enormous slow tank with uranium shells and anti-air capability.
+		Description: Actor-APOC-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
 	Valued:
 		Cost: 2600
 	Tooltip:
-		Name: Apocalypse Tank
-		GenericName: Tank
+		Name: Actor-APOC-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -10002,8 +10002,8 @@ APOC.ATOMIC:
 	RenderSprites:
 		Image: apoci
 	Tooltip:
-		Name: Atomic Apocalypse Tank
-		GenericName: Tank
+		Name: Actor-APOC.ATOMIC-Name
+		GenericName: Actor-Generic-Tank-Name
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 240
@@ -10030,7 +10030,7 @@ APOC.ATOMIC:
 APOC.ERAD:
 	Inherits: APOC
 	Tooltip:
-		Name: Apocalyptic Eradicator
+		Name: Actor-APOC.ERAD-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -10038,7 +10038,7 @@ APOC.ERAD:
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 241
-		Description: Enormous slow tank with twin heavy radiation cannons.
+		Description: Actor-APOC.ERAD-Description
 	Armament@PRIMARY:
 		Weapon: ApocRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10075,7 +10075,7 @@ APOC.ERAD.ATOMIC:
 	RenderSprites:
 		Image: apoc.eradi
 	Tooltip:
-		Name: Atomic Apocalyptic Eradicator
+		Name: Actor-APOC.ERAD.ATOMIC-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -10083,7 +10083,7 @@ APOC.ERAD.ATOMIC:
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 242
-		Description: Enormous slow tank with twin heavy radiation cannons.
+		Description: Actor-APOC.ERAD.ATOMIC-Description
 	Armament@PRIMARY:
 		Weapon: ApocRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10124,7 +10124,7 @@ OVLD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 235
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
-		Description: Enormous slow tank fitted with a commissar tower which supports infantry in combat.
+		Description: Actor-OVLD-Description
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -10132,8 +10132,8 @@ OVLD:
 	Valued:
 		Cost: 2350
 	Tooltip:
-		Name: Overlord Tank
-		GenericName: Tank
+		Name: Actor-OVLD-Name
+		GenericName: Actor-Generic-Tank-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -10244,7 +10244,7 @@ OVLD:
 OVLD.ATOMIC:
 	Inherits: OVLD
 	Tooltip:
-		Name: Atomic Overlord Tank
+		Name: Actor-OVLD.ATOMIC-Name
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 236
@@ -10272,14 +10272,14 @@ OVLD.ATOMIC:
 OVLD.ERAD:
 	Inherits: OVLD
 	Tooltip:
-		Name: Overlord Eradicator
+		Name: Actor-OVLD.ERAD-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 237
-		Description: Enormous slow tank equipped with radiation cannons and a commissar tower which supports infantry in combat.
+		Description: Actor-OVLD.ERAD-Description
 	Armament@PRIMARY:
 		Weapon: OverlordRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10310,14 +10310,14 @@ OVLD.ERAD:
 OVLD.ERAD.ATOMIC:
 	Inherits: OVLD.ATOMIC
 	Tooltip:
-		Name: Atomic Overlord Eradicator
+		Name: Actor-OVLD.ERAD.ATOMIC-Name
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 238
-		Description: Enormous slow tank equipped with radiation cannons and a commissar tower which supports infantry in combat.
+		Description: Actor-OVLD.ERAD.ATOMIC-Description
 	Armament@PRIMARY:
 		Weapon: OverlordRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10356,7 +10356,7 @@ THWK:
 	Valued:
 		Cost: 1850
 	Tooltip:
-		Name: Tomahawk Launcher
+		Name: Actor-THWK-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -10364,7 +10364,7 @@ THWK:
 		Prerequisites: gtek, ~thwk.upgrade, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Extreme long-range missile artillery.
+		Description: Actor-THWK-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving\n• Rockets can be shot down by static anti-air defenses
@@ -10445,7 +10445,7 @@ TH:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Tomahawk Missile
+		Name: Actor-TH-Name
 	Health:
 		HP: 5000
 	CruiseMissile:
@@ -10483,7 +10483,7 @@ BSKY:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Black Sky Missile
+		Name: Actor-BSKY-Name
 	Health:
 		HP: 5000
 	GuidedMissile:
@@ -10513,14 +10513,14 @@ ZEUS:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Zeus Artillery
+		Name: Actor-ZEUS-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 224
 		Prerequisites: ~vehicles.allies, alhq, ~greece.coalition, ~techlevel.high
-		Description: Extreme long range artillery that can generate localized storm clouds.
+		Description: Actor-ZEUS-Description
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses
 		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
@@ -10596,7 +10596,7 @@ MOLE:
 	-Carryable:
 	-GrantCondition@CarriedImmobile:
 	Tooltip:
-		Name: Subterranean APC
+		Name: Actor-MOLE-Name
 	Valued:
 		Cost: 2000
 	Armor:
@@ -10692,7 +10692,7 @@ AVTR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 273
 		Prerequisites: ~vehicles.nod, tmpp, covenant.level3, ~wrath.covenant, ~techlevel.high
-		Description: Heavy mech armed with a powerful laser and a flamethrower.
+		Description: Actor-AVTR-Description
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
@@ -10701,7 +10701,7 @@ AVTR:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Avatar
+		Name: Actor-AVTR-Name
 	Selectable:
 		Bounds: 1280, 1900, 0, -250
 	UpdatesPlayerStatistics:
@@ -10841,7 +10841,7 @@ CUST:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 272
 		Prerequisites: tmpl, ~vehicles.nod, ~cust.upgrade, ~techlevel.high
-		Description: Heavy transport that repairs cyborgs and vehicles and empowers cyborg machine learning.
+		Description: Actor-CUST-Description
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Repairs cyborgs and vehicles\n• Nearby cyborgs gain experience faster
@@ -10850,7 +10850,7 @@ CUST:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Custodian
+		Name: Actor-CUST-Name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: false
 		AddToAssetsValue: false

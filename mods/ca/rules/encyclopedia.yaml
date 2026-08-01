@@ -4,7 +4,7 @@ encyclopedia.tips.general:
 	Interactable:
 	AlwaysVisible:
 	Tooltip:
-		Name: General
+		Name: Actor-encyclopedia.tips.general-Name
 	Encyclopedia:
 		Category: Other/Tips
 	EncyclopediaExtras:
@@ -65,11 +65,11 @@ encyclopedia.power.veilofwar:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Veil of War
+		Name: Actor-encyclopedia.power.veilofwar-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Creates an expanding area of shroud, reducing the vision and weapon range of enemy units and defenses.
+		Description: Actor-encyclopedia.power.veilofwar-EncyclopediaExtrasDescription
 		Subfaction: england
 
 encyclopedia.power.clustermines:
@@ -79,11 +79,11 @@ encyclopedia.power.clustermines:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Cluster Mines
+		Name: Actor-encyclopedia.power.clustermines-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Sends a cargo plane to drop a minefield at the target location.
+		Description: Actor-encyclopedia.power.clustermines-EncyclopediaExtrasDescription
 		Subfaction: france
 
 encyclopedia.power.strafe:
@@ -93,11 +93,11 @@ encyclopedia.power.strafe:
 		Prerequisites: hpad
 		BuildDuration: 7500
 	Tooltip:
-		Name: Strafing Run
+		Name: Actor-encyclopedia.power.strafe-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in P51 ground attack planes to perform strafing runs on the target.
+		Description: Actor-encyclopedia.power.strafe-EncyclopediaExtrasDescription
 		Subfaction: usa
 
 encyclopedia.power.cryostorm:
@@ -107,11 +107,11 @@ encyclopedia.power.cryostorm:
 		Prerequisites: alhq
 		BuildDuration: 8250
 	Tooltip:
-		Name: Cryostorm
+		Name: Actor-encyclopedia.power.cryostorm-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a turbulent area of extreme cold, reducing movement speed and increasing damage taken.
+		Description: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Sweden Coalition.
 
 encyclopedia.power.heliosbomb:
@@ -122,11 +122,11 @@ encyclopedia.power.heliosbomb:
 		Prerequisites: alhq
 		BuildDuration: 10500
 	Tooltip:
-		Name: Helios Bomb
+		Name: Actor-encyclopedia.power.heliosbomb-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a bomber which drops a Helios bomb, blinding units in a large area.
+		Description: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Greece Coalition.
 
 encyclopedia.power.bsky:
@@ -136,11 +136,11 @@ encyclopedia.power.bsky:
 		Prerequisites: alhq
 		BuildDuration: 9000
 	Tooltip:
-		Name: Black Sky Strike
+		Name: Actor-encyclopedia.power.bsky-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Fires long range guided missiles at multiple ground targets prioritized by value. Tracking can be lost if targets move far enough from their initial location.
+		Description: Actor-encyclopedia.power.bsky-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Korea Coalition.
 
 encyclopedia.power.spysatellite:
@@ -150,11 +150,11 @@ encyclopedia.power.spysatellite:
 		Prerequisites: atek
 		BuildDuration: 5250
 	Tooltip:
-		Name: Spy Satellite
+		Name: Actor-encyclopedia.power.spysatellite-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Description: Actor-encyclopedia.power.spysatellite-EncyclopediaExtrasDescription
 
 encyclopedia.power.tempinc:
 	Inherits: ^SupportPowerPreview
@@ -163,11 +163,11 @@ encyclopedia.power.tempinc:
 		Prerequisites: pdox
 		BuildDuration: 7500
 	Tooltip:
-		Name: Temporal Incursion
+		Name: Actor-encyclopedia.power.tempinc-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Summons reinforcements from the future. Units return to their origin time after a short time.
+		Description: Actor-encyclopedia.power.tempinc-EncyclopediaExtrasDescription
 		Subfaction: germany
 
 encyclopedia.power.timewarp:
@@ -177,11 +177,11 @@ encyclopedia.power.timewarp:
 		Prerequisites: pdox
 		BuildDuration: 4500
 	Tooltip:
-		Name: Time Warp
+		Name: Actor-encyclopedia.power.timewarp-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Disrupts time and space at the target location. Affected units & structures are frozen in time, unable to act, but immune to damage.
+		Description: Actor-encyclopedia.power.timewarp-EncyclopediaExtrasDescription
 		Subfaction: germany
 
 encyclopedia.power.chronoshift:
@@ -191,11 +191,11 @@ encyclopedia.power.chronoshift:
 		Prerequisites: pdox
 		BuildDuration: 4500
 	Tooltip:
-		Name: Chronoshift
+		Name: Actor-encyclopedia.power.chronoshift-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Description: Actor-encyclopedia.power.chronoshift-EncyclopediaExtrasDescription
 
 encyclopedia.power.lightningstorm:
 	Inherits: ^SupportPowerPreview
@@ -204,11 +204,11 @@ encyclopedia.power.lightningstorm:
 		Prerequisites: weat
 		BuildDuration: 13500
 	Tooltip:
-		Name: Lightning Storm
+		Name: Actor-encyclopedia.power.lightningstorm-Name
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate a Lightning Storm which deals heavy damage over a large area.
+		Description: Actor-encyclopedia.power.lightningstorm-EncyclopediaExtrasDescription
 
 # Soviet Support Powers
 
@@ -219,11 +219,11 @@ encyclopedia.power.spyplane:
 		Prerequisites: anyradar
 		BuildDuration: 3750
 	Tooltip:
-		Name: Spy Plane
+		Name: Actor-encyclopedia.power.spyplane-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a spy plane that reveals the target location for a limited time.
+		Description: Actor-encyclopedia.power.spyplane-EncyclopediaExtrasDescription
 
 encyclopedia.power.paratroopers:
 	Inherits: ^SupportPowerPreview
@@ -232,11 +232,11 @@ encyclopedia.power.paratroopers:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Paratroopers
+		Name: Actor-encyclopedia.power.paratroopers-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a Halo transport to drop a squad of infantry anywhere on the map.
+		Description: Actor-encyclopedia.power.paratroopers-EncyclopediaExtrasDescription
 
 encyclopedia.power.stormtroopers:
 	Inherits: ^SupportPowerPreview
@@ -245,11 +245,11 @@ encyclopedia.power.stormtroopers:
 		Prerequisites: anyradar
 		BuildDuration: 9000
 	Tooltip:
-		Name: Storm-troopers
+		Name: Actor-encyclopedia.power.stormtroopers-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a Halo transport to drop a squad of Shock Troopers anywhere on the map.
+		Description: Actor-encyclopedia.power.stormtroopers-EncyclopediaExtrasDescription
 		Subfaction: russia
 
 encyclopedia.power.parabombs:
@@ -259,11 +259,11 @@ encyclopedia.power.parabombs:
 		Prerequisites: afld
 		BuildDuration: 7500
 	Tooltip:
-		Name: Parabombs
+		Name: Actor-encyclopedia.power.parabombs-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops parachuted bombs on your target.
+		Description: Actor-encyclopedia.power.parabombs-EncyclopediaExtrasDescription
 		Subfaction: russia
 
 encyclopedia.power.carpetbomb:
@@ -273,11 +273,11 @@ encyclopedia.power.carpetbomb:
 		Prerequisites: afld
 		BuildDuration: 10500
 	Tooltip:
-		Name: Carpet Bomb
+		Name: Actor-encyclopedia.power.carpetbomb-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a squad of Badgers which drop bombs on your target.
+		Description: Actor-encyclopedia.power.carpetbomb-EncyclopediaExtrasDescription
 		Subfaction: ukraine
 
 encyclopedia.power.atomicbombair:
@@ -287,11 +287,11 @@ encyclopedia.power.atomicbombair:
 		Prerequisites: afld
 		BuildDuration: 10500
 	Tooltip:
-		Name: Atomic Bomb (Air)
+		Name: Actor-encyclopedia.power.atomicbombair-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops an atom bomb on your target.
+		Description: Actor-encyclopedia.power.atomicbombair-EncyclopediaExtrasDescription
 		Subfaction: iraq
 
 encyclopedia.power.mutabomb:
@@ -302,11 +302,11 @@ encyclopedia.power.mutabomb:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Muta Bomb
+		Name: Actor-encyclopedia.power.mutabomb-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops a genetic mutation bomb on your target, transforming infantry into Brutes under your control.
+		Description: Actor-encyclopedia.power.mutabomb-EncyclopediaExtrasDescription
 		Subfaction: yuri
 
 encyclopedia.power.chaosbombs:
@@ -316,11 +316,11 @@ encyclopedia.power.chaosbombs:
 		Prerequisites: afld
 		BuildDuration: 8250
 	Tooltip:
-		Name: Chaos Bombs
+		Name: Actor-encyclopedia.power.chaosbombs-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops parachuted chaos bombs on your target.
+		Description: Actor-encyclopedia.power.chaosbombs-EncyclopediaExtrasDescription
 		Subfaction: yuri
 
 encyclopedia.power.atomicammo:
@@ -330,11 +330,11 @@ encyclopedia.power.atomicammo:
 		Prerequisites: npwr
 		BuildDuration: 4500
 	Tooltip:
-		Name: Atomic Shells
+		Name: Actor-encyclopedia.power.atomicammo-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)
+		Description: Actor-encyclopedia.power.atomicammo-EncyclopediaExtrasDescription
 
 encyclopedia.power.heroes:
 	Inherits: ^SupportPowerPreview
@@ -342,11 +342,11 @@ encyclopedia.power.heroes:
 		Icon: heroes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Heroes of the Union
+		Name: Actor-encyclopedia.power.heroes-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Targeted basic infantry units become Heroes of the Union, significantly increasing their damage, speed, range and resilience.\n\nCan affect Rifle Infantry, Rocket Soldiers, Grenadiers and Flamethrowers.
+		Description: Actor-encyclopedia.power.heroes-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Infantry Doctrine.
 
 encyclopedia.power.tankdrop:
@@ -355,11 +355,11 @@ encyclopedia.power.tankdrop:
 		Icon: tankdrop
 		BuildDuration: 13500
 	Tooltip:
-		Name: Tank Drop
+		Name: Actor-encyclopedia.power.tankdrop-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Description: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Armor Doctrine.
 
 encyclopedia.power.killzone:
@@ -368,11 +368,11 @@ encyclopedia.power.killzone:
 		Icon: killzone
 		BuildDuration: 4500
 	Tooltip:
-		Name: Kill Zone
+		Name: Actor-encyclopedia.power.killzone-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Spy Plane which marks a target area. Any enemy units within it take increased damage.
+		Description: Actor-encyclopedia.power.killzone-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Artillery Doctrine.
 
 encyclopedia.power.ironcurtain:
@@ -382,11 +382,11 @@ encyclopedia.power.ironcurtain:
 		Prerequisites: iron
 		BuildDuration: 4500
 	Tooltip:
-		Name: Iron Curtain
+		Name: Actor-encyclopedia.power.ironcurtain-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected friendly vehicles temporarily invulnerable.
+		Description: Actor-encyclopedia.power.ironcurtain-EncyclopediaExtrasDescription
 
 encyclopedia.power.atombomb:
 	Inherits: ^SupportPowerPreview
@@ -395,11 +395,11 @@ encyclopedia.power.atombomb:
 		Prerequisites: mslo
 		BuildDuration: 13500
 	Tooltip:
-		Name: Atom Bomb
+		Name: Actor-encyclopedia.power.atombomb-Name
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Launches a devastating atomic bomb at the target location, dealing heavy damage over a large area.
+		Description: Actor-encyclopedia.power.atombomb-EncyclopediaExtrasDescription
 
 # GDI Support Powers
 
@@ -410,11 +410,11 @@ encyclopedia.power.recondrone:
 		Prerequisites: anyradar
 		BuildDuration: 3750
 	Tooltip:
-		Name: Recon Drone
+		Name: Actor-encyclopedia.power.recondrone-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Description: Actor-encyclopedia.power.recondrone-EncyclopediaExtrasDescription
 
 encyclopedia.power.xodrop:
 	Inherits: ^SupportPowerPreview
@@ -423,11 +423,11 @@ encyclopedia.power.xodrop:
 		Prerequisites: anyradar
 		BuildDuration: 9750
 	Tooltip:
-		Name: X-O Drop
+		Name: Actor-encyclopedia.power.xodrop-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: An Orca transport drops a squad of X-O Powersuits at the target location.
+		Description: Actor-encyclopedia.power.xodrop-EncyclopediaExtrasDescription
 		Subfaction: talon
 
 encyclopedia.power.droppods:
@@ -438,11 +438,11 @@ encyclopedia.power.droppods:
 		Prerequisites: anyradar
 		BuildDuration: 4500
 	Tooltip:
-		Name: Drop Pods
+		Name: Actor-encyclopedia.power.droppods-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Instantly deploys a small team of elite soldiers at the target location via orbital drop pods.
+		Description: Actor-encyclopedia.power.droppods-EncyclopediaExtrasDescription
 		Subfaction: zocom
 
 encyclopedia.power.reinforcements:
@@ -453,11 +453,11 @@ encyclopedia.power.reinforcements:
 		Prerequisites: anyradar
 		BuildDuration: 6000
 	Tooltip:
-		Name: Reinforcements
+		Name: Actor-encyclopedia.power.reinforcements-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: An Orca Carryall drops an APC containing an infantry squad at the target location.
+		Description: Actor-encyclopedia.power.reinforcements-EncyclopediaExtrasDescription
 		Subfaction: eagle
 
 encyclopedia.power.interceptors:
@@ -467,11 +467,11 @@ encyclopedia.power.interceptors:
 		Prerequisites: afld.gdi
 		BuildDuration: 10500
 	Tooltip:
-		Name: Interceptors
+		Name: Actor-encyclopedia.power.interceptors-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: A squadron of Interceptors provides air cover over the target area, engaging any enemy aircraft within range.
+		Description: Actor-encyclopedia.power.interceptors-EncyclopediaExtrasDescription
 
 encyclopedia.power.naniterepair:
 	Inherits: ^SupportPowerPreview
@@ -480,11 +480,11 @@ encyclopedia.power.naniterepair:
 		Prerequisites: gtek
 		BuildDuration: 6750
 	Tooltip:
-		Name: Nanite Repair
+		Name: Actor-encyclopedia.power.naniterepair-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Repairs selected damaged vehicles over time.
+		Description: Actor-encyclopedia.power.naniterepair-EncyclopediaExtrasDescription
 		Subfaction: arc
 
 encyclopedia.power.surgicalstrike:
@@ -495,11 +495,11 @@ encyclopedia.power.surgicalstrike:
 		Prerequisites: eye
 		BuildDuration: 6000
 	Tooltip:
-		Name: Surgical Strike
+		Name: Actor-encyclopedia.power.surgicalstrike-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate an precision Ion Cannon strike which deals instant damage to a small area.
+		Description: Actor-encyclopedia.power.surgicalstrike-EncyclopediaExtrasDescription
 		Subfaction: zocom
 
 encyclopedia.power.firestorm:
@@ -510,11 +510,11 @@ encyclopedia.power.firestorm:
 		Prerequisites: upgc
 		BuildDuration: 7500
 	Tooltip:
-		Name: Firestorm
+		Name: Actor-encyclopedia.power.firestorm-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Fires a barrage of rockets at the target area.
+		Description: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Bombardment Strategy.
 
 encyclopedia.power.advancedradar:
@@ -525,11 +525,11 @@ encyclopedia.power.advancedradar:
 		Prerequisites: upgc
 		BuildDuration: 4500
 	Tooltip:
-		Name: Advanced Radar
+		Name: Actor-encyclopedia.power.advancedradar-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the location of enemy structures & units through the fog of war.
+		Description: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 encyclopedia.power.naniteshield:
@@ -539,11 +539,11 @@ encyclopedia.power.naniteshield:
 		Prerequisites: upgc
 		BuildDuration: 6000
 	Tooltip:
-		Name: Nanite Shield
+		Name: Actor-encyclopedia.power.naniteshield-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Reduces the damage taken by all vehicles in the target area.
+		Description: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Hold the Line Strategy.
 
 encyclopedia.power.empmissile:
@@ -553,11 +553,11 @@ encyclopedia.power.empmissile:
 		Prerequisites: patr
 		BuildDuration: 4500
 	Tooltip:
-		Name: EMP Missile
+		Name: Actor-encyclopedia.power.empmissile-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Launches an EMP missile that disables vehicles and structures in the target area.
+		Description: Actor-encyclopedia.power.empmissile-EncyclopediaExtrasDescription
 
 encyclopedia.power.ioncannon:
 	Inherits: ^SupportPowerPreview
@@ -566,11 +566,11 @@ encyclopedia.power.ioncannon:
 		Prerequisites: eye
 		BuildDuration: 13500
 	Tooltip:
-		Name: Ion Cannon
+		Name: Actor-encyclopedia.power.ioncannon-Name
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Fires a devastating ion cannon beam at the target location.
+		Description: Actor-encyclopedia.power.ioncannon-EncyclopediaExtrasDescription
 
 # Nod Support Powers
 
@@ -581,11 +581,11 @@ encyclopedia.power.hacksat:
 		Prerequisites: anyradar
 		BuildDuration: 4500
 	Tooltip:
-		Name: Hack Satellite
+		Name: Actor-encyclopedia.power.hacksat-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the targeted area for a short time.
+		Description: Actor-encyclopedia.power.hacksat-EncyclopediaExtrasDescription
 
 encyclopedia.power.airdrop:
 	Inherits: ^SupportPowerPreview
@@ -594,11 +594,11 @@ encyclopedia.power.airdrop:
 		Prerequisites: airs
 		BuildDuration: 13500
 	Tooltip:
-		Name: Air Drop
+		Name: Actor-encyclopedia.power.airdrop-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches cargo planes to air drop tanks at the target location. Units dependent on subfaction.
+		Description: Actor-encyclopedia.power.airdrop-EncyclopediaExtrasDescription
 
 encyclopedia.power.substrike:
 	Inherits: ^SupportPowerPreview
@@ -607,11 +607,11 @@ encyclopedia.power.substrike:
 		Prerequisites: weap.td
 		BuildDuration: 12000
 	Tooltip:
-		Name: Subterranean Strike
+		Name: Actor-encyclopedia.power.substrike-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploys a squad of infantry via Subterranean APC.
+		Description: Actor-encyclopedia.power.substrike-EncyclopediaExtrasDescription
 		Subfaction: marked
 
 encyclopedia.power.infbomb:
@@ -622,11 +622,11 @@ encyclopedia.power.infbomb:
 		Prerequisites: anyradar
 		BuildDuration: 9750
 	Tooltip:
-		Name: Inferno Bomb
+		Name: Actor-encyclopedia.power.infbomb-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: A B2 Stealth Bomber drops inferno bombs on your target.
+		Description: Actor-encyclopedia.power.infbomb-EncyclopediaExtrasDescription
 		Subfaction: blackh
 
 encyclopedia.power.cashhack:
@@ -636,11 +636,11 @@ encyclopedia.power.cashhack:
 		Prerequisites: anyradar
 		BuildDuration: 6000
 	Tooltip:
-		Name: Cash Hack
+		Name: Actor-encyclopedia.power.cashhack-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Steal up to $2000 credits from a targeted enemy Refinery.
+		Description: Actor-encyclopedia.power.cashhack-EncyclopediaExtrasDescription
 		Subfaction: legion
 
 encyclopedia.power.shadowteam:
@@ -650,11 +650,11 @@ encyclopedia.power.shadowteam:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Shadow Team
+		Name: Actor-encyclopedia.power.shadowteam-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Calls for a Shadow Team; three stealth infantry that arrive via glider armed with grenades and a machine pistol.\n\nOperatives can be ordered to land via the deploy command.
+		Description: Actor-encyclopedia.power.shadowteam-EncyclopediaExtrasDescription
 		Subfaction: shadow
 
 encyclopedia.power.frenzy:
@@ -664,11 +664,11 @@ encyclopedia.power.frenzy:
 		Prerequisites: tmpl
 		BuildDuration: 6750
 	Tooltip:
-		Name: Frenzy
+		Name: Actor-encyclopedia.power.frenzy-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Increases the movement speed and rate of fire of targeted units for a limited time.\n\nWarning: Units are weakened for a short time after frenzy wears off.
+		Description: Actor-encyclopedia.power.frenzy-EncyclopediaExtrasDescription
 		Subfaction: marked
 
 encyclopedia.power.techhack:
@@ -678,11 +678,11 @@ encyclopedia.power.techhack:
 		Prerequisites: tmpl
 		BuildDuration: 18000
 	Tooltip:
-		Name: Tech Hack
+		Name: Actor-encyclopedia.power.techhack-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Hack the targeted enemy production structure, providing access to a unit developed using enemy technology.\n\nFor infantry, vehicle and air production respectively: \n\n• Allies: Cryo Mortar, Reckoner, Phantom\n• Soviets: Cyberdog, Cyclops, Kamov\n• GDI: Sonic Mortar, Basilisk, Shade\n• Nod: Chem Mortar, Mantis, Vertigo\n• Scrin: Cyberscrin, Viper, Manticore
+		Description: Actor-encyclopedia.power.techhack-EncyclopediaExtrasDescription
 		Subfaction: legion
 
 encyclopedia.power.assassinsquad:
@@ -692,11 +692,11 @@ encyclopedia.power.assassinsquad:
 		IconPalette: chrometd
 		BuildDuration: 6000
 	Tooltip:
-		Name: Assassin Squad
+		Name: Actor-encyclopedia.power.assassinsquad-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a squad of Assassins that can snipe infantry from long range and destroy buildings with C4.\n\nTarget infantry production structure to deploy.
+		Description: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Wrath Covenant.
 
 encyclopedia.power.hackercell:
@@ -705,11 +705,11 @@ encyclopedia.power.hackercell:
 		Icon: hackercell
 		BuildDuration: 6000
 	Tooltip:
-		Name: Hacker Cell
+		Name: Actor-encyclopedia.power.hackercell-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.\n\nTarget infantry production structure to deploy.
+		Description: Actor-encyclopedia.power.hackercell-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Unity Covenant.
 
 encyclopedia.power.confessorcabal:
@@ -719,11 +719,11 @@ encyclopedia.power.confessorcabal:
 		IconPalette: chrometd
 		BuildDuration: 6000
 	Tooltip:
-		Name: Confessor Cabal
+		Name: Actor-encyclopedia.power.confessorcabal-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.\n\nTarget infantry production structure to deploy.
+		Description: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Zeal Covenant.
 
 encyclopedia.power.clustermissile:
@@ -734,11 +734,11 @@ encyclopedia.power.clustermissile:
 		Prerequisites: tmpl
 		BuildDuration: 10500
 	Tooltip:
-		Name: Cluster Missile
+		Name: Actor-encyclopedia.power.clustermissile-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Launches a Cluster Missile which deals heavy damage at the target location.
+		Description: Actor-encyclopedia.power.clustermissile-EncyclopediaExtrasDescription
 
 encyclopedia.power.tibstealth:
 	Inherits: ^SupportPowerPreview
@@ -748,11 +748,11 @@ encyclopedia.power.tibstealth:
 		Prerequisites: sgen
 		BuildDuration: 4500
 	Tooltip:
-		Name: Tiberium Stealth
+		Name: Actor-encyclopedia.power.tibstealth-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected vehicles and structures temporarily invisible.\n\nWarning: Harmful to non-cyborg infantry.\n\nHazmat Suits upgrade makes allies immune to damage and enemies take 50% damage.
+		Description: Actor-encyclopedia.power.tibstealth-EncyclopediaExtrasDescription
 
 encyclopedia.power.chemmissile:
 	Inherits: ^SupportPowerPreview
@@ -762,11 +762,11 @@ encyclopedia.power.chemmissile:
 		Prerequisites: mslo.nod
 		BuildDuration: 13500
 	Tooltip:
-		Name: Chemical Missile
+		Name: Actor-encyclopedia.power.chemmissile-Name
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Launches an deadly Chemical Missile. Deals heavy damage and creates toxic clouds which are extremely harmful to infantry.\n
+		Description: Actor-encyclopedia.power.chemmissile-EncyclopediaExtrasDescription
 
 # Scrin Support Powers
 
@@ -778,11 +778,11 @@ encyclopedia.power.resourcescan:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Resource Scan
+		Name: Actor-encyclopedia.power.resourcescan-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the area surrounding all resources on the map.
+		Description: Actor-encyclopedia.power.resourcescan-EncyclopediaExtrasDescription
 
 encyclopedia.power.ichorspike:
 	Inherits: ^SupportPowerPreview
@@ -791,11 +791,11 @@ encyclopedia.power.ichorspike:
 		IconPalette: chromes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Ichor Spike
+		Name: Actor-encyclopedia.power.ichorspike-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description:  Creates an Ichor Spike at the target location. Resources within its area of influence grow and spread faster.\n\nAlso empowers units with Resource Conversion upgrade.
+		Description: Actor-encyclopedia.power.ichorspike-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.colonyspike:
@@ -805,11 +805,11 @@ encyclopedia.power.colonyspike:
 		IconPalette: chromes
 		BuildDuration: 7500
 	Tooltip:
-		Name: Colony Spike
+		Name: Actor-encyclopedia.power.colonyspike-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Colony Spike at the target location. Enables production of non-defensive structures.\n\nWhen fully charged allows non-defensive structures to be built nearby.\n\nMust be built within range of a Colony Platform.
+		Description: Actor-encyclopedia.power.colonyspike-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.voidspike:
@@ -819,11 +819,11 @@ encyclopedia.power.voidspike:
 		IconPalette: chromes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Voidspike
+		Name: Actor-encyclopedia.power.voidspike-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Voidspike at the target location. Gradually transforms nearby resources into Black Tiberium which is devoid of most of its useful properties.\n\nDamages nearby enemy units.
+		Description: Actor-encyclopedia.power.voidspike-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.ionsurge:
@@ -834,11 +834,11 @@ encyclopedia.power.ionsurge:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Ion Surge
+		Name: Actor-encyclopedia.power.ionsurge-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Increases the movement speed of all friendly units passing through the target area.
+		Description: Actor-encyclopedia.power.ionsurge-EncyclopediaExtrasDescription
 		Subfaction: traveler
 
 encyclopedia.power.stormspikepower:
@@ -849,11 +849,11 @@ encyclopedia.power.stormspikepower:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Storm Spike
+		Name: Actor-encyclopedia.power.stormspikepower-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a temporary Storm Column defensive structure at the target location.
+		Description: Actor-encyclopedia.power.stormspikepower-EncyclopediaExtrasDescription
 		Subfaction: reaper
 
 encyclopedia.power.buzzerswarm:
@@ -864,11 +864,11 @@ encyclopedia.power.buzzerswarm:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Buzzer Swarm
+		Name: Actor-encyclopedia.power.buzzerswarm-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Spawns a controllable swarm which blinds and damages anything nearby; particularly harmful to infantry.
+		Description: Actor-encyclopedia.power.buzzerswarm-EncyclopediaExtrasDescription
 		Subfaction: harbinger
 
 encyclopedia.power.ichorseed:
@@ -878,11 +878,11 @@ encyclopedia.power.ichorseed:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Ichor Seed
+		Name: Actor-encyclopedia.power.ichorseed-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Grows Tiberium at selected location.
+		Description: Actor-encyclopedia.power.ichorseed-EncyclopediaExtrasDescription
 
 encyclopedia.power.greatercoalescence:
 	Inherits: ^SupportPowerPreview
@@ -891,11 +891,11 @@ encyclopedia.power.greatercoalescence:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Greater Coalescence
+		Name: Actor-encyclopedia.power.greatercoalescence-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Spawns a controllable biomass which heals nearby allies and sustains itself by feeding off enemies.\n\nFeeding from power plants will shut them down temporarily.
+		Description: Actor-encyclopedia.power.greatercoalescence-EncyclopediaExtrasDescription
 		Subfaction: collector
 
 encyclopedia.power.gateway:
@@ -906,11 +906,11 @@ encyclopedia.power.gateway:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Gateway
+		Name: Actor-encyclopedia.power.gateway-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Gateway at the target location. Acts as the exit for any\n   targeted infantry or vehicle production structure.\n\nRequires target location to be within vision.
+		Description: Actor-encyclopedia.power.gateway-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.anathemapower:
@@ -921,11 +921,11 @@ encyclopedia.power.anathemapower:
 		Prerequisites: scrt
 		BuildDuration: 3000
 	Tooltip:
-		Name: Anathema
+		Name: Actor-encyclopedia.power.anathemapower-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Targeted vehicle greatly increases in power over time. After 30 seconds the unit explodes.
+		Description: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.owrath:
@@ -936,11 +936,11 @@ encyclopedia.power.owrath:
 		Prerequisites: scrt
 		BuildDuration: 10500
 	Tooltip:
-		Name: Overlord's Wrath
+		Name: Actor-encyclopedia.power.owrath-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: A Tiberium meteor strikes the target location dealing heavy damage and creating a patch of Tiberium.
+		Description: Actor-encyclopedia.power.owrath-EncyclopediaExtrasDescription
 		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.fleetrecall:
@@ -951,11 +951,11 @@ encyclopedia.power.fleetrecall:
 		Prerequisites: sign
 		BuildDuration: 5250
 	Tooltip:
-		Name: Fleet Recall
+		Name: Actor-encyclopedia.power.fleetrecall-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Recalls all selected Scrin fleet vessels back to the Signal Transmitter.\n\nApplies to: Mothership, Planetary Assault Carrier, Devastator
+		Description: Actor-encyclopedia.power.fleetrecall-EncyclopediaExtrasDescription
 
 encyclopedia.power.suppression:
 	Inherits: ^SupportPowerPreview
@@ -964,11 +964,11 @@ encyclopedia.power.suppression:
 		Prerequisites: mani
 		BuildDuration: 4500
 	Tooltip:
-		Name: Suppression
+		Name: Actor-encyclopedia.power.suppression-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Description: Actor-encyclopedia.power.suppression-EncyclopediaExtrasDescription
 
 encyclopedia.power.rift:
 	Inherits: ^SupportPowerPreview
@@ -977,11 +977,11 @@ encyclopedia.power.rift:
 		Prerequisites: rfgn
 		BuildDuration: 13500
 	Tooltip:
-		Name: Rift
+		Name: Actor-encyclopedia.power.rift-Name
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate a Rift which deals heavy damage over time to a large area.
+		Description: Actor-encyclopedia.power.rift-EncyclopediaExtrasDescription
 
 encyclopedia.power.forceshield:
 	Inherits: ^SupportPowerPreview
@@ -990,11 +990,11 @@ encyclopedia.power.forceshield:
 		Prerequisites: techcenter.any
 		BuildDuration: 7500
 	Tooltip:
-		Name: Force Shield
+		Name: Actor-encyclopedia.power.forceshield-Name
 	Encyclopedia:
 		Category: Other/Shared Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected friendly structures temporarily invulnerable.\n\nWarning: Causes power failure.
+		Description: Actor-encyclopedia.power.forceshield-EncyclopediaExtrasDescription
 
 encyclopedia.power.sendcash:
 	Inherits: ^SupportPowerPreview
@@ -1003,11 +1003,11 @@ encyclopedia.power.sendcash:
 		Prerequisites: anyrefinery
 		BuildDuration: 0
 	Tooltip:
-		Name: Send Cash
+		Name: Actor-encyclopedia.power.sendcash-Name
 	Encyclopedia:
 		Category: Other/Shared Support Powers
 	EncyclopediaExtras:
-		Description: Available in team games and co-op. Sends $1000 credits to targeted ally.
+		Description: Actor-encyclopedia.power.sendcash-EncyclopediaExtrasDescription
 
 # IFV Variants
 ^IFVVariantPreview:
@@ -1026,11 +1026,11 @@ encyclopedia.ifv.missile:
 	WithSpriteTurret:
 		Sequence: turret-rocket
 	Tooltip:
-		Name: Missile IFV
+		Name: Actor-encyclopedia.ifv.missile-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Rocket Soldier. Fires anti-air/anti-armor missiles.
+		Description: Actor-encyclopedia.ifv.missile-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1041,11 +1041,11 @@ encyclopedia.ifv.mg:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Machine Gun IFV
+		Name: Actor-encyclopedia.ifv.mg-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Rifle Infantry. Fires a rapid machine gun.
+		Description: Actor-encyclopedia.ifv.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1056,11 +1056,11 @@ encyclopedia.ifv.engi:
 	WithSpriteTurret:
 		Sequence: turret-engi
 	Tooltip:
-		Name: Engineer IFV
+		Name: Actor-encyclopedia.ifv.engi-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with an Engineer. Can capture enemy structures.
+		Description: Actor-encyclopedia.ifv.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Captures structures\n• Passenger: Engineer
@@ -1068,11 +1068,11 @@ encyclopedia.ifv.engi:
 encyclopedia.ifv.med:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Medical IFV
+		Name: Actor-encyclopedia.ifv.med-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Medic. Heals nearby friendly infantry.
+		Description: Actor-encyclopedia.ifv.med-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Heals friendly infantry\n• Passenger: Medic
@@ -1087,11 +1087,11 @@ encyclopedia.ifv.mech:
 	WithSpriteTurret:
 		Sequence: turret-mech
 	Tooltip:
-		Name: Repair IFV
+		Name: Actor-encyclopedia.ifv.mech-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Mechanic. Repairs nearby friendly vehicles.
+		Description: Actor-encyclopedia.ifv.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
@@ -1099,7 +1099,7 @@ encyclopedia.ifv.mech:
 encyclopedia.ifv.spy:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Spy IFV
+		Name: Actor-encyclopedia.ifv.spy-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
@@ -1117,11 +1117,11 @@ encyclopedia.ifv.snip:
 	WithSpriteTurret:
 		Sequence: turret-snip
 	Tooltip:
-		Name: Sniper IFV
+		Name: Actor-encyclopedia.ifv.snip-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Sniper. Fires long-range sniper rounds.
+		Description: Actor-encyclopedia.ifv.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
@@ -1132,11 +1132,11 @@ encyclopedia.ifv.enfo:
 	WithSpriteTurret:
 		Sequence: turret-enfo
 	Tooltip:
-		Name: Enforcer IFV
+		Name: Actor-encyclopedia.ifv.enfo-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with an Enforcer. Fires double shotgun blasts.
+		Description: Actor-encyclopedia.ifv.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1147,11 +1147,11 @@ encyclopedia.ifv.ggi:
 	WithSpriteTurret:
 		Sequence: turret-ggi
 	Tooltip:
-		Name: GGI IFV
+		Name: Actor-encyclopedia.ifv.ggi-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Guardian GI. Fires powerful anti-armor rounds.
+		Description: Actor-encyclopedia.ifv.ggi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1162,11 +1162,11 @@ encyclopedia.ifv.seal:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: SEAL IFV
+		Name: Actor-encyclopedia.ifv.seal-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Navy SEAL. Fires heavy anti-infantry rounds.
+		Description: Actor-encyclopedia.ifv.seal-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
@@ -1177,11 +1177,11 @@ encyclopedia.ifv.cryo:
 	WithSpriteTurret:
 		Sequence: turret-cryo
 	Tooltip:
-		Name: Cryo IFV
+		Name: Actor-encyclopedia.ifv.cryo-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Cryo Trooper. Fires freezing blasts.
+		Description: Actor-encyclopedia.ifv.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
@@ -1192,11 +1192,11 @@ encyclopedia.ifv.tigr:
 	WithSpriteTurret:
 		Sequence: turret-tigr
 	Tooltip:
-		Name: Tiger Guard IFV
+		Name: Actor-encyclopedia.ifv.tigr-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Tiger Guard. Fires long range missiles.
+		Description: Actor-encyclopedia.ifv.tigr-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1207,11 +1207,11 @@ encyclopedia.ifv.hopl:
 	WithSpriteTurret:
 		Sequence: turret-hopl
 	Tooltip:
-		Name: Hoplite IFV
+		Name: Actor-encyclopedia.ifv.hopl-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Hoplite. Fires a prism beam.
+		Description: Actor-encyclopedia.ifv.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1222,11 +1222,11 @@ encyclopedia.ifv.cmdo:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: Commando IFV
+		Name: Actor-encyclopedia.ifv.cmdo-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Commando (Tanya/Boris/Commando). Fires rapid and powerful sniper bursts with high damage per shot.
+		Description: Actor-encyclopedia.ifv.cmdo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
@@ -1237,11 +1237,11 @@ encyclopedia.ifv.grenade:
 	WithSpriteTurret:
 		Sequence: turret-frag
 	Tooltip:
-		Name: Grenade IFV
+		Name: Actor-encyclopedia.ifv.grenade-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Grenadier. Launches fragmentation grenades.
+		Description: Actor-encyclopedia.ifv.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1252,11 +1252,11 @@ encyclopedia.ifv.flame:
 	WithSpriteTurret:
 		Sequence: turret-flame
 	Tooltip:
-		Name: Flamethrower IFV
+		Name: Actor-encyclopedia.ifv.flame-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Flamethrower. Projects devastating flames.
+		Description: Actor-encyclopedia.ifv.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1267,11 +1267,11 @@ encyclopedia.ifv.chem:
 	WithSpriteTurret:
 		Sequence: turret-chem
 	Tooltip:
-		Name: Chemical IFV
+		Name: Actor-encyclopedia.ifv.chem-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Toxin Soldier. Sprays toxic chemicals.
+		Description: Actor-encyclopedia.ifv.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1282,11 +1282,11 @@ encyclopedia.ifv.rad:
 	WithSpriteTurret:
 		Sequence: turret-rad
 	Tooltip:
-		Name: Desolator IFV
+		Name: Actor-encyclopedia.ifv.rad-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Desolator. Fires a radiation beam.
+		Description: Actor-encyclopedia.ifv.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -1295,11 +1295,11 @@ encyclopedia.ifv.rad:
 encyclopedia.ifv.ivan:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Explosive IFV
+		Name: Actor-encyclopedia.ifv.ivan-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Crazy Ivan. Self-destructs on contact with the target, dealing massive damage.
+		Description: Actor-encyclopedia.ifv.ivan-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Everything
 		Weaknesses: • Self-destructs
@@ -1312,11 +1312,11 @@ encyclopedia.ifv.ivan:
 encyclopedia.ifv.tes:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Tesla IFV
+		Name: Actor-encyclopedia.ifv.tes-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Shock Trooper or Tesla Trooper. Fires a powerful tesla bolt.
+		Description: Actor-encyclopedia.ifv.tes-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -1328,11 +1328,11 @@ encyclopedia.ifv.tes:
 encyclopedia.ifv.psy:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Psychic IFV
+		Name: Actor-encyclopedia.ifv.psy-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with Yuri or a Mastermind. Can mind control enemy units. Control is lost if passenger exits.
+		Description: Actor-encyclopedia.ifv.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Vehicles
 		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
@@ -1347,11 +1347,11 @@ encyclopedia.ifv.cmsr:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Commissar IFV
+		Name: Actor-encyclopedia.ifv.cmsr-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Commissar. Inspires nearby friendly infantry, boosting their combat effectiveness.
+		Description: Actor-encyclopedia.ifv.cmsr-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Inspires nearby allies
 		Weaknesses: Unarmed
@@ -1366,11 +1366,11 @@ encyclopedia.ifv.laser:
 	WithSpriteTurret:
 		Sequence: turret-laser
 	Tooltip:
-		Name: Laser IFV
+		Name: Actor-encyclopedia.ifv.laser-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Acolyte or Templar. Fires a powerful laser beam.
+		Description: Actor-encyclopedia.ifv.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -1381,11 +1381,11 @@ encyclopedia.ifv.enli:
 	WithSpriteTurret:
 		Sequence: turret-enli
 	Tooltip:
-		Name: Enlightened IFV
+		Name: Actor-encyclopedia.ifv.enli-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Enlightened. Fires a powerful particle beam.
+		Description: Actor-encyclopedia.ifv.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -1396,11 +1396,11 @@ encyclopedia.ifv.rmbc:
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: Cyborg Elite IFV
+		Name: Actor-encyclopedia.ifv.rmbc-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cyborg Elite. Fires a plasma cannon.
+		Description: Actor-encyclopedia.ifv.rmbc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -1410,11 +1410,11 @@ encyclopedia.ifv.bh:
 	WithSpriteTurret:
 		Sequence: turret-bh
 	Tooltip:
-		Name: Black Hand IFV
+		Name: Actor-encyclopedia.ifv.bh-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Black Hand. Projects devastating anti-vehicle flames.
+		Description: Actor-encyclopedia.ifv.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
@@ -1425,11 +1425,11 @@ encyclopedia.ifv.conf:
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: Confessor IFV
+		Name: Actor-encyclopedia.ifv.conf-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Confessor. Fires hallucinogenic rounds.
+		Description: Actor-encyclopedia.ifv.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -1440,11 +1440,11 @@ encyclopedia.ifv.reap:
 	WithSpriteTurret:
 		Sequence: turret-reap
 	Tooltip:
-		Name: Reaper IFV
+		Name: Actor-encyclopedia.ifv.reap-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cyborg Reaper. Fires anti-personnel missiles.
+		Description: Actor-encyclopedia.ifv.reap-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor
@@ -1455,11 +1455,11 @@ encyclopedia.ifv.shad:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Shadow IFV
+		Name: Actor-encyclopedia.ifv.shad-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Shadow Operative. Armed with a heavy machinegun and able to cloak.
+		Description: Actor-encyclopedia.ifv.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1468,11 +1468,11 @@ encyclopedia.ifv.shad:
 encyclopedia.ifv.hack:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Hacker IFV
+		Name: Actor-encyclopedia.ifv.hack-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Hacker. Can hack enemy defenses and buildings. Control is lost if passenger exits.
+		Description: Actor-encyclopedia.ifv.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Buildings
 		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
@@ -1486,11 +1486,11 @@ encyclopedia.ifv.ztrp:
 	WithSpriteTurret:
 		Sequence: turret-ztrp
 	Tooltip:
-		Name: Zone Trooper IFV
+		Name: Actor-encyclopedia.ifv.ztrp-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Trooper. Fires powerful railgun shots.
+		Description: Actor-encyclopedia.ifv.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
@@ -1501,11 +1501,11 @@ encyclopedia.ifv.zdef:
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: Zone Defender IFV
+		Name: Actor-encyclopedia.ifv.zdef-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Defender. Fires ion blasts.
+		Description: Actor-encyclopedia.ifv.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
@@ -1516,11 +1516,11 @@ encyclopedia.ifv.zrai:
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: Zone Raider IFV
+		Name: Actor-encyclopedia.ifv.zrai-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Raider. Fires sonic grenades.
+		Description: Actor-encyclopedia.ifv.zrai-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -1531,11 +1531,11 @@ encyclopedia.ifv.disin:
 	WithSpriteTurret:
 		Sequence: turret-disin
 	Tooltip:
-		Name: Disintegrator IFV
+		Name: Actor-encyclopedia.ifv.disin-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Disintegrator. Fires disintegration beams.
+		Description: Actor-encyclopedia.ifv.disin-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1546,11 +1546,11 @@ encyclopedia.ifv.shard:
 	WithSpriteTurret:
 		Sequence: turret-shard
 	Tooltip:
-		Name: Shard IFV
+		Name: Actor-encyclopedia.ifv.shard-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Ravager or Eviscerator. Fires Tiberium shards.
+		Description: Actor-encyclopedia.ifv.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -1561,11 +1561,11 @@ encyclopedia.ifv.pdisc:
 	WithSpriteTurret:
 		Sequence: turret-pdisc
 	Tooltip:
-		Name: Plasma Disc IFV
+		Name: Actor-encyclopedia.ifv.pdisc-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: Fires plasma discs.
+		Description: Actor-encyclopedia.ifv.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -1576,11 +1576,11 @@ encyclopedia.ifv.impl:
 	WithSpriteTurret:
 		Sequence: turret-impl
 	Tooltip:
-		Name: Impaler IFV
+		Name: Actor-encyclopedia.ifv.impl-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Impaler. Fires long range impaling projectiles.
+		Description: Actor-encyclopedia.ifv.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1594,11 +1594,11 @@ encyclopedia.ifv.stlk:
 		Sequence: turret-stlk
 		Palette: playerscrin
 	Tooltip:
-		Name: Stalker IFV
+		Name: Actor-encyclopedia.ifv.stlk-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Stalker. Fires anti-infantry plasma darts and can cloak.
+		Description: Actor-encyclopedia.ifv.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1609,11 +1609,11 @@ encyclopedia.ifv.mortchem:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Chemical Mortar IFV
+		Name: Actor-encyclopedia.ifv.mortchem-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Chemical Mortar Infantry. Fires chemical mortar rounds that leave toxic residue.
+		Description: Actor-encyclopedia.ifv.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -1624,11 +1624,11 @@ encyclopedia.ifv.mortcryo:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Cryo Mortar IFV
+		Name: Actor-encyclopedia.ifv.mortcryo-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cryo Mortar Infantry. Fires cryo mortar rounds that slow and freeze enemies.
+		Description: Actor-encyclopedia.ifv.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -1639,11 +1639,11 @@ encyclopedia.ifv.mortsonic:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Sonic Mortar IFV
+		Name: Actor-encyclopedia.ifv.mortsonic-Name
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Sonic Mortar Infantry. Fires sonic mortar rounds that cause concussion.
+		Description: Actor-encyclopedia.ifv.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -1666,11 +1666,11 @@ encyclopedia.reck.missile:
 	WithSpriteTurret:
 		Sequence: turret-rocket
 	Tooltip:
-		Name: Missile Reckoner
+		Name: Actor-encyclopedia.reck.missile-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Rocket Soldier. Fires anti-air/anti-armor missiles.
+		Description: Actor-encyclopedia.reck.missile-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1681,11 +1681,11 @@ encyclopedia.reck.mg:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Machine Gun Reckoner
+		Name: Actor-encyclopedia.reck.mg-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Rifle Infantry. Fires a rapid machine gun.
+		Description: Actor-encyclopedia.reck.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1696,11 +1696,11 @@ encyclopedia.reck.engi:
 	WithSpriteTurret:
 		Sequence: turret-engi
 	Tooltip:
-		Name: Engineer Reckoner
+		Name: Actor-encyclopedia.reck.engi-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with an Engineer. Can capture enemy structures.
+		Description: Actor-encyclopedia.reck.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Captures structures\n• Passenger: Engineer
@@ -1708,11 +1708,11 @@ encyclopedia.reck.engi:
 encyclopedia.reck.med:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Medical Reckoner
+		Name: Actor-encyclopedia.reck.med-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Medic. Heals nearby friendly infantry.
+		Description: Actor-encyclopedia.reck.med-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Heals friendly infantry\n• Passenger: Medic
@@ -1727,11 +1727,11 @@ encyclopedia.reck.mech:
 	WithSpriteTurret:
 		Sequence: turret-mech
 	Tooltip:
-		Name: Repair Reckoner
+		Name: Actor-encyclopedia.reck.mech-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Mechanic. Repairs nearby friendly vehicles.
+		Description: Actor-encyclopedia.reck.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Unarmed
 		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
@@ -1739,11 +1739,11 @@ encyclopedia.reck.mech:
 encyclopedia.reck.spy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Spy Reckoner
+		Name: Actor-encyclopedia.reck.spy-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Spy. Can sabotage enemy structures and detect cloaked units.
+		Description: Actor-encyclopedia.reck.spy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Cannot deal damage
 		Attributes: • Sabotages enemy structures:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike\n• Passenger: Spy
@@ -1757,11 +1757,11 @@ encyclopedia.reck.snip:
 	WithSpriteTurret:
 		Sequence: turret-snip
 	Tooltip:
-		Name: Sniper Reckoner
+		Name: Actor-encyclopedia.reck.snip-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Sniper. Fires long-range sniper rounds.
+		Description: Actor-encyclopedia.reck.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
 		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
@@ -1772,11 +1772,11 @@ encyclopedia.reck.enfo:
 	WithSpriteTurret:
 		Sequence: turret-enfo
 	Tooltip:
-		Name: Enforcer Reckoner
+		Name: Actor-encyclopedia.reck.enfo-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with an Enforcer. Fires double shotgun blasts.
+		Description: Actor-encyclopedia.reck.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -1787,11 +1787,11 @@ encyclopedia.reck.ggi:
 	WithSpriteTurret:
 		Sequence: turret-ggi
 	Tooltip:
-		Name: GGI Reckoner
+		Name: Actor-encyclopedia.reck.ggi-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Guardian GI. Fires powerful anti-armor rounds.
+		Description: Actor-encyclopedia.reck.ggi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1802,11 +1802,11 @@ encyclopedia.reck.seal:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: SEAL Reckoner
+		Name: Actor-encyclopedia.reck.seal-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Navy SEAL. Fires heavy anti-infantry rounds.
+		Description: Actor-encyclopedia.reck.seal-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
@@ -1817,11 +1817,11 @@ encyclopedia.reck.cryo:
 	WithSpriteTurret:
 		Sequence: turret-cryo
 	Tooltip:
-		Name: Cryo Reckoner
+		Name: Actor-encyclopedia.reck.cryo-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Cryo Trooper. Fires freezing blasts.
+		Description: Actor-encyclopedia.reck.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
@@ -1832,11 +1832,11 @@ encyclopedia.reck.tigr:
 	WithSpriteTurret:
 		Sequence: turret-tigr
 	Tooltip:
-		Name: Tiger Guard Reckoner
+		Name: Actor-encyclopedia.reck.tigr-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Tiger Guard. Fires long range missiles.
+		Description: Actor-encyclopedia.reck.tigr-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -1847,11 +1847,11 @@ encyclopedia.reck.hopl:
 	WithSpriteTurret:
 		Sequence: turret-hopl
 	Tooltip:
-		Name: Hoplite Reckoner
+		Name: Actor-encyclopedia.reck.hopl-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Hoplite. Fires a prism beam.
+		Description: Actor-encyclopedia.reck.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1862,11 +1862,11 @@ encyclopedia.reck.cmdo:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: Commando Reckoner
+		Name: Actor-encyclopedia.reck.cmdo-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Commando (Tanya/Boris/Commando). Fires rapid and powerful sniper bursts with high damage per shot.
+		Description: Actor-encyclopedia.reck.cmdo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry
 		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
@@ -1877,11 +1877,11 @@ encyclopedia.reck.grenade:
 	WithSpriteTurret:
 		Sequence: turret-frag
 	Tooltip:
-		Name: Grenade Reckoner
+		Name: Actor-encyclopedia.reck.grenade-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Grenadier. Launches fragmentation grenades.
+		Description: Actor-encyclopedia.reck.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Light Armor
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1892,11 +1892,11 @@ encyclopedia.reck.flame:
 	WithSpriteTurret:
 		Sequence: turret-flame
 	Tooltip:
-		Name: Flamethrower Reckoner
+		Name: Actor-encyclopedia.reck.flame-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Flamethrower. Projects devastating flames.
+		Description: Actor-encyclopedia.reck.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1907,11 +1907,11 @@ encyclopedia.reck.chem:
 	WithSpriteTurret:
 		Sequence: turret-chem
 	Tooltip:
-		Name: Chemical Reckoner
+		Name: Actor-encyclopedia.reck.chem-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Toxin Soldier. Sprays toxic chemicals.
+		Description: Actor-encyclopedia.reck.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
@@ -1922,11 +1922,11 @@ encyclopedia.reck.rad:
 	WithSpriteTurret:
 		Sequence: turret-rad
 	Tooltip:
-		Name: Desolator Reckoner
+		Name: Actor-encyclopedia.reck.rad-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Desolator. Fires a radiation beam.
+		Description: Actor-encyclopedia.reck.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -1935,11 +1935,11 @@ encyclopedia.reck.rad:
 encyclopedia.reck.ivan:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Explosive Reckoner
+		Name: Actor-encyclopedia.reck.ivan-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Crazy Ivan. Self-destructs on contact with the target, dealing massive damage.
+		Description: Actor-encyclopedia.reck.ivan-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Everything
 		Weaknesses: • Self-destructs
@@ -1952,11 +1952,11 @@ encyclopedia.reck.ivan:
 encyclopedia.reck.tes:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Tesla Reckoner
+		Name: Actor-encyclopedia.reck.tes-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Shock Trooper or Tesla Trooper. Fires a powerful tesla bolt.
+		Description: Actor-encyclopedia.reck.tes-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
 		Weaknesses: • Cannot attack Aircraft
@@ -1968,11 +1968,11 @@ encyclopedia.reck.tes:
 encyclopedia.reck.psy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Psychic Reckoner
+		Name: Actor-encyclopedia.reck.psy-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with Yuri or a Mastermind. Can mind control enemy units. Control is lost if passenger exits.
+		Description: Actor-encyclopedia.reck.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Vehicles
 		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
@@ -1987,11 +1987,11 @@ encyclopedia.reck.cmsr:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Commissar Reckoner
+		Name: Actor-encyclopedia.reck.cmsr-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Commissar. Inspires nearby friendly infantry, boosting their combat effectiveness.
+		Description: Actor-encyclopedia.reck.cmsr-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Inspires nearby allies
 		Weaknesses: Unarmed
@@ -2006,11 +2006,11 @@ encyclopedia.reck.laser:
 	WithSpriteTurret:
 		Sequence: turret-laser
 	Tooltip:
-		Name: Laser Reckoner
+		Name: Actor-encyclopedia.reck.laser-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Acolyte or Templar. Fires a powerful laser beam.
+		Description: Actor-encyclopedia.reck.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -2021,11 +2021,11 @@ encyclopedia.reck.enli:
 	WithSpriteTurret:
 		Sequence: turret-enli
 	Tooltip:
-		Name: Enlightened Reckoner
+		Name: Actor-encyclopedia.reck.enli-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Enlightened. Fires a powerful particle beam.
+		Description: Actor-encyclopedia.reck.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -2036,11 +2036,11 @@ encyclopedia.reck.rmbc:
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: Cyborg Elite Reckoner
+		Name: Actor-encyclopedia.reck.rmbc-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cyborg Elite. Fires a plasma cannon.
+		Description: Actor-encyclopedia.reck.rmbc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
 		Weaknesses: • Cannot attack Aircraft
@@ -2050,11 +2050,11 @@ encyclopedia.reck.bh:
 	WithSpriteTurret:
 		Sequence: turret-bh
 	Tooltip:
-		Name: Black Hand Reckoner
+		Name: Actor-encyclopedia.reck.bh-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Black Hand. Projects devastating anti-vehicle flames.
+		Description: Actor-encyclopedia.reck.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
@@ -2065,11 +2065,11 @@ encyclopedia.reck.conf:
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: Confessor Reckoner
+		Name: Actor-encyclopedia.reck.conf-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Confessor. Fires hallucinogenic rounds.
+		Description: Actor-encyclopedia.reck.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -2080,11 +2080,11 @@ encyclopedia.reck.reap:
 	WithSpriteTurret:
 		Sequence: turret-reap
 	Tooltip:
-		Name: Reaper Reckoner
+		Name: Actor-encyclopedia.reck.reap-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cyborg Reaper. Fires anti-personnel missiles.
+		Description: Actor-encyclopedia.reck.reap-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor, Buildings
 		Weaknesses: • Weak vs Heavy Armor
@@ -2095,11 +2095,11 @@ encyclopedia.reck.shad:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Shadow Reckoner
+		Name: Actor-encyclopedia.reck.shad-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Shadow Operative. Armed with a heavy machinegun and able to cloak.
+		Description: Actor-encyclopedia.reck.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -2108,11 +2108,11 @@ encyclopedia.reck.shad:
 encyclopedia.reck.hack:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Hacker Reckoner
+		Name: Actor-encyclopedia.reck.hack-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Hacker. Can hack enemy defenses and buildings. Control is lost if passenger exits.
+		Description: Actor-encyclopedia.reck.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Defenses, Buildings
 		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
@@ -2126,11 +2126,11 @@ encyclopedia.reck.ztrp:
 	WithSpriteTurret:
 		Sequence: turret-ztrp
 	Tooltip:
-		Name: Zone Trooper Reckoner
+		Name: Actor-encyclopedia.reck.ztrp-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Trooper. Fires powerful railgun shots.
+		Description: Actor-encyclopedia.reck.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
@@ -2141,11 +2141,11 @@ encyclopedia.reck.zdef:
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: Zone Defender Reckoner
+		Name: Actor-encyclopedia.reck.zdef-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Defender. Fires ion blasts.
+		Description: Actor-encyclopedia.reck.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
 		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
@@ -2156,11 +2156,11 @@ encyclopedia.reck.zrai:
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: Zone Raider Reckoner
+		Name: Actor-encyclopedia.reck.zrai-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Raider. Fires sonic grenades.
+		Description: Actor-encyclopedia.reck.zrai-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Buildings
 		Weaknesses: • Cannot attack Aircraft
@@ -2171,11 +2171,11 @@ encyclopedia.reck.disin:
 	WithSpriteTurret:
 		Sequence: turret-disin
 	Tooltip:
-		Name: Disintegrator Reckoner
+		Name: Actor-encyclopedia.reck.disin-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Disintegrator. Fires disintegration beams.
+		Description: Actor-encyclopedia.reck.disin-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Aircraft, Heavy Armor
 		Weaknesses: • Weak vs Infantry
@@ -2186,11 +2186,11 @@ encyclopedia.reck.shard:
 	WithSpriteTurret:
 		Sequence: turret-shard
 	Tooltip:
-		Name: Shard Reckoner
+		Name: Actor-encyclopedia.reck.shard-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Ravager or Eviscerator. Fires Tiberium shards.
+		Description: Actor-encyclopedia.reck.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Light Armor
 		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
@@ -2201,11 +2201,11 @@ encyclopedia.reck.pdisc:
 	WithSpriteTurret:
 		Sequence: turret-pdisc
 	Tooltip:
-		Name: Plasma Disc Reckoner
+		Name: Actor-encyclopedia.reck.pdisc-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Fires plasma discs.
+		Description: Actor-encyclopedia.reck.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
 		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
@@ -2216,11 +2216,11 @@ encyclopedia.reck.impl:
 	WithSpriteTurret:
 		Sequence: turret-impl
 	Tooltip:
-		Name: Impaler Reckoner
+		Name: Actor-encyclopedia.reck.impl-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Impaler. Fires long range impaling projectiles.
+		Description: Actor-encyclopedia.reck.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -2234,11 +2234,11 @@ encyclopedia.reck.stlk:
 		Sequence: turret-stlk
 		Palette: playerscrin
 	Tooltip:
-		Name: Stalker Reckoner
+		Name: Actor-encyclopedia.reck.stlk-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Stalker. Fires anti-infantry plasma darts and can cloak.
+		Description: Actor-encyclopedia.reck.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
 		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
@@ -2249,11 +2249,11 @@ encyclopedia.reck.mortchem:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Chemical Mortar Reckoner
+		Name: Actor-encyclopedia.reck.mortchem-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Chemical Mortar Infantry. Fires chemical mortar rounds that leave toxic residue.
+		Description: Actor-encyclopedia.reck.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -2264,11 +2264,11 @@ encyclopedia.reck.mortcryo:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Cryo Mortar Reckoner
+		Name: Actor-encyclopedia.reck.mortcryo-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cryo Mortar Infantry. Fires cryo mortar rounds that slow and freeze enemies.
+		Description: Actor-encyclopedia.reck.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -2279,11 +2279,11 @@ encyclopedia.reck.mortsonic:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Sonic Mortar Reckoner
+		Name: Actor-encyclopedia.reck.mortsonic-Name
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Sonic Mortar Infantry. Fires sonic mortar rounds that cause concussion.
+		Description: Actor-encyclopedia.reck.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Strong vs Infantry, Buildings
 		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
@@ -2292,11 +2292,11 @@ encyclopedia.reck.mortsonic:
 encyclopedia.buffs.anathema:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Anathema
+		Name: Actor-encyclopedia.buffs.anathema-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: A Malefic Scrin support power effect which gradually increases damage output and speed over 30 seconds, but unit is destroyed once the effect ends. Bonus firepower scales inversely with the value of the affected unit.
+		Description: Actor-encyclopedia.buffs.anathema-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Gains firepower, rate of fire and speed gradually over 30 seconds
 		Weaknesses: • Destroyed once effect ends
@@ -2312,11 +2312,11 @@ encyclopedia.buffs.anathema:
 encyclopedia.buffs.defensematrix:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Defense Matrix
+		Name: Actor-encyclopedia.buffs.defensematrix-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by GDI Zone Defenders to nearby allied infantry, increasing their effective health.
+		Description: Actor-encyclopedia.buffs.defensematrix-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Increased effective health by 1250 per stack (up to 6 stacks)
 	WithIdleOverlay@ZoneDefenderShield:
@@ -2328,11 +2328,11 @@ encyclopedia.buffs.defensematrix:
 encyclopedia.buffs.frenzy:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Frenzy
+		Name: Actor-encyclopedia.buffs.frenzy-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the eponymous Marked of Kane support power. Increases rate of fire and movement speed, but reduces them once the effect ends.
+		Description: Actor-encyclopedia.buffs.frenzy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: +33% rate of fire\n+25% movement speed
 		Weaknesses: -15% rate of fire after effect ends\n-15% movement speed after effect ends
@@ -2355,11 +2355,11 @@ encyclopedia.buffs.gyro:
 	WithFacingSpriteBody:
 		Sequence: stand
 	Tooltip:
-		Name: Gyro Stabilizers
+		Name: Actor-encyclopedia.buffs.gyro-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: An effect granted by activating the Gyro Stabilizers ability available via upgrade to Talon mechs which increases weapon range but reduces rate of fire.
+		Description: Actor-encyclopedia.buffs.gyro-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: +33% weapon range
 		Weaknesses: -25% rate of fire
@@ -2370,11 +2370,11 @@ encyclopedia.buffs.gyro:
 encyclopedia.buffs.hotu:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Hero of the Union
+		Name: Actor-encyclopedia.buffs.hotu-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the Heroes of the Union support power available to the Soviets after adopting the Infantry Doctrine. Increases effective health, speed, rate of fire and range.
+		Description: Actor-encyclopedia.buffs.hotu-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Effective health boosted to 28k\n+20% movement speed\n+50% range\n+50% rate of fire
 	WithIdleOverlay@HeroOfTheUnionCrest:
@@ -2393,11 +2393,11 @@ encyclopedia.buffs.hypercharge:
 	RenderSprites:
 		Image: seek
 	Tooltip:
-		Name: Hypercharge
+		Name: Actor-encyclopedia.buffs.hypercharge-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: An effect granted by activating the Hypercharge ability available via upgrade to Scrin Seekers and Lacerators. Allows the unit to fire continuously for a short duration while taking increased damage. After the effect ends the unit has reduced speed, damage and rate of fire for a short time.
+		Description: Actor-encyclopedia.buffs.hypercharge-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Continuous fire
 		Weaknesses: +20% increased damage taken
@@ -2412,11 +2412,11 @@ encyclopedia.buffs.hypercharge:
 encyclopedia.buffs.inspiration:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Inspiration I
+		Name: Actor-encyclopedia.buffs.inspiration-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied to basic infantry within range of a Soviet Commissar, Troop Crawler or Overlord Tank. Increases movement speed and rate of fire.
+		Description: Actor-encyclopedia.buffs.inspiration-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: +15% movement speed\n+10% rate of fire
 	WithIdleOverlay@Inspiration1:
@@ -2428,11 +2428,11 @@ encyclopedia.buffs.inspiration:
 encyclopedia.buffs.inspiration2:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Inspiration II
+		Name: Actor-encyclopedia.buffs.inspiration2-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied to basic infantry within range of two or more different units that apply the Inspiration effect. Further increases movement speed and rate of fire.
+		Description: Actor-encyclopedia.buffs.inspiration2-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: +30% movement speed\n+20% rate of fire
 	WithIdleOverlay@Inspiration2:
@@ -2444,11 +2444,11 @@ encyclopedia.buffs.inspiration2:
 encyclopedia.buffs.ionsurge:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Ion Surge
+		Name: Actor-encyclopedia.buffs.ionsurge-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Effect granted by a Traveler-59 support power which increases movement speed.
+		Description: Actor-encyclopedia.buffs.ionsurge-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: +50% movement speed
 	WithColoredOverlayCA@IONSURGE:
@@ -2463,7 +2463,7 @@ encyclopedia.buffs.ionsurge:
 encyclopedia.buffs.ironcurtain:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Iron Curtain
+		Name: Actor-encyclopedia.buffs.ironcurtain-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
@@ -2483,11 +2483,11 @@ encyclopedia.buffs.ironcurtain:
 encyclopedia.buffs.naniterepair:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Nanite Repair
+		Name: Actor-encyclopedia.buffs.naniterepair-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied by an ARC support power. Repairs vehicles over time.
+		Description: Actor-encyclopedia.buffs.naniterepair-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Repairs 5% health per second
 	WithPalettedOverlay@NREPAIR:
@@ -2502,11 +2502,11 @@ encyclopedia.buffs.naniterepair:
 encyclopedia.buffs.naniteshield:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Nanite Shield
+		Name: Actor-encyclopedia.buffs.naniteshield-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the support power available with the third level of GDI's Hold the Line Strategy. Absorbs a portion of incoming damage.
+		Description: Actor-encyclopedia.buffs.naniteshield-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Absorbs 50% of incoming damage
 	WithIdleOverlay@NSHIELD:
@@ -2520,11 +2520,11 @@ encyclopedia.buffs.tibstealth:
 	RenderSprites:
 		Palette: cloakgreen
 	Tooltip:
-		Name: Tiberium Stealth
+		Name: Actor-encyclopedia.buffs.tibstealth-Name
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied by the minor superweapon power granted by Nod's Stealth Generator. Makes units invisible to enemies until it attacks or is attacked, and reduces damage taken.
+		Description: Actor-encyclopedia.buffs.tibstealth-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Invisible to enemies\n-10% damage taken
 
@@ -2532,11 +2532,11 @@ encyclopedia.debuffs.atomized:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Atomizable: ^Atomizable
 	Tooltip:
-		Name: Atomized
+		Name: Actor-encyclopedia.debuffs.atomized-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: An effect that can only be applied Collector-73's Atomizer unit. Deals damage over time and reduces movement speed and firepower.
+		Description: Actor-encyclopedia.debuffs.atomized-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Deals periodic damage\n-33% movement speed\n-33% damage dealt
 	WithIdleOverlay@ATOMIZED:
@@ -2546,11 +2546,11 @@ encyclopedia.debuffs.berserk:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Berserk: ^Berserk
 	Tooltip:
-		Name: Berserk
+		Name: Actor-encyclopedia.debuffs.berserk-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied via Yuri's Chaos Gas, or the Rage Generator ability of Nod Idols of Kane. Causes affected units to uncontrollably attack nearby units.
+		Description: Actor-encyclopedia.debuffs.berserk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Attacks units indiscriminately
 		Attributes: +25% movement speed\n+100% rate of fire
@@ -2560,11 +2560,11 @@ encyclopedia.debuffs.berserk:
 encyclopedia.debuffs.blinded:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Blinded
+		Name: Actor-encyclopedia.debuffs.blinded-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Disables unit vision and weapons.
+		Description: Actor-encyclopedia.debuffs.blinded-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Vision disabled\n• Weapons disabled
 	WithPreviewDecoration@Blinded:
@@ -2577,11 +2577,11 @@ encyclopedia.debuffs.blinded:
 encyclopedia.debuffs.chill:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Chilled
+		Name: Actor-encyclopedia.debuffs.chill-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied cryo weaponry. Reduces movement speed and makes affected units take more damage.
+		Description: Actor-encyclopedia.debuffs.chill-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Attributes: • Stacks up to 10 times
 		Weaknesses: -25/35/43/50/56/59/62/65/68/70% movement speed\n+10% damage received per stack
@@ -2592,11 +2592,11 @@ encyclopedia.debuffs.chill:
 encyclopedia.debuffs.concussion:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Concussed
+		Name: Actor-encyclopedia.debuffs.concussion-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Reduces rate of fire and movement speed.
+		Description: Actor-encyclopedia.debuffs.concussion-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: -25% movement speed\n-50% rate of fire
 	WithPreviewDecoration:
@@ -2610,11 +2610,11 @@ encyclopedia.debuffs.concussion:
 encyclopedia.debuffs.emp:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: EMP
+		Name: Actor-encyclopedia.debuffs.emp-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Completely incapacitates vehicles, heavy cyborgs and defenses. Causes unshielded aircraft to crash.
+		Description: Actor-encyclopedia.debuffs.emp-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled\n• Unshielded aircraft crash to ground
 	WithColoredOverlayCA@EMPDISABLE:
@@ -2629,11 +2629,11 @@ encyclopedia.debuffs.irradiated:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Irradiatable: ^Irradiatable
 	Tooltip:
-		Name: Irradiated
+		Name: Actor-encyclopedia.debuffs.irradiated-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Iraqi Desolators and Eradicators. Causes periodic AoE damage, reduces outgoing damage and increases incoming damage.
+		Description: Actor-encyclopedia.debuffs.irradiated-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Deals periodic damage to nearby units\n• Irradiates the ground\n-10% damage dealt\n+10% damage received
 	WithPalettedOverlay@IRRADIATABLE:
@@ -2648,7 +2648,7 @@ encyclopedia.debuffs.jammed:
 	Inherits: ^VehicleEffectPreview
 	Inherits@WeaponJammable: ^WeaponJammable
 	Tooltip:
-		Name: Jammed
+		Name: Actor-encyclopedia.debuffs.jammed-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
@@ -2661,11 +2661,11 @@ encyclopedia.debuffs.jammed:
 encyclopedia.debuffs.targetpainted:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Target Painted
+		Name: Actor-encyclopedia.debuffs.targetpainted-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Increases damage received and reveals the unit to enemies.
+		Description: Actor-encyclopedia.debuffs.targetpainted-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Revealed to enemies\n+10% damage received
 	WithPreviewDecoration:
@@ -2679,11 +2679,11 @@ encyclopedia.debuffs.reapersnared:
 	Inherits: ^InfantryEffectPreview
 	Inherits@ReaperSnareable: ^ReaperSnareable
 	Tooltip:
-		Name: Reaper Snared
+		Name: Actor-encyclopedia.debuffs.reapersnared-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Nod Cyborg Reapers' snare ability. Completely incapacitates infantry.
+		Description: Actor-encyclopedia.debuffs.reapersnared-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
 	WithIdleOverlay@ReaperSnare:
@@ -2696,11 +2696,11 @@ encyclopedia.debuffs.suppression:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Suppressable: ^Suppressable
 	Tooltip:
-		Name: Suppressed
+		Name: Actor-encyclopedia.debuffs.suppression-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: An effect applied by the Scrin Suppression power, Masterminds and Enervators. Reduces movement speed and rate of fire.
+		Description: Actor-encyclopedia.debuffs.suppression-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: -60% movement speed\n-20% rate of fire
 	WithPalettedOverlay@SUPPRESSION:
@@ -2727,11 +2727,11 @@ encyclopedia.debuffs.veiled:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Veilable: ^Veilable
 	Tooltip:
-		Name: Veiled
+		Name: Actor-encyclopedia.debuffs.veiled-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Gap Generators, Black Eagles, Tiger Guards, and England's Veil of War support power. Reduces weapon and vision range.
+		Description: Actor-encyclopedia.debuffs.veiled-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: -20% weapon range\n-20% vision range
 	WithIdleOverlay@VEILED:
@@ -2743,11 +2743,11 @@ encyclopedia.debuffs.warped:
 	-Warpable:
 	-FireWarheadsOnDeath@TEMPORAL:
 	Tooltip:
-		Name: Warped
+		Name: Actor-encyclopedia.debuffs.warped-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Chrono Prisons and Germany's Time Warp ability. Completely incapacitates the target, but makes it immune to non-warping damage.
+		Description: Actor-encyclopedia.debuffs.warped-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: • Immune to non-warping damage
 		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
@@ -2759,11 +2759,11 @@ encyclopedia.debuffs.warped:
 encyclopedia.debuffs.watched:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Watched
+		Name: Actor-encyclopedia.debuffs.watched-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Revealed to enemies.
+		Description: Actor-encyclopedia.debuffs.watched-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: • Revealed to enemies
 	WithPreviewDecoration:

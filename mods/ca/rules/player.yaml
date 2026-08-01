@@ -250,23 +250,23 @@ Player:
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
-		Name: options-tech-level.infantry-only
+		Name: Actor-Player-TechLevel_infonly-Name
 		Prerequisites: techlevel.infonly
 		Id: infantryonly
 	ProvidesTechPrerequisite@low:
-		Name: options-tech-level.low
+		Name: Actor-Player-TechLevel_low-Name
 		Prerequisites: techlevel.infonly, techlevel.low
 		Id: low
 	ProvidesTechPrerequisite@medium:
-		Name: options-tech-level.medium
+		Name: Actor-Player-TechLevel_medium-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
 	ProvidesTechPrerequisite@high:
-		Name: options-tech-level.high
+		Name: Actor-Player-TechLevel_high-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high
 		Id: high
 	ProvidesTechPrerequisite@unrestricted:
-		Name: options-tech-level.unrestricted
+		Name: Actor-Player-TechLevel_unrestricted-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
 	ProvidesPrerequisite@allies:

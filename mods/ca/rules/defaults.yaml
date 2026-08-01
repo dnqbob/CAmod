@@ -1538,7 +1538,7 @@
 		TargetTypes: NoCrew
 		RequiresCondition: driver-dead
 	TooltipDescription@DRIVER_DEAD:
-		Description: Crewless. Capturable by infantry.
+		Description: Actor-AffectedByDriverKill.DRIVER_DEAD-Description
 		RequiresCondition: driver-dead
 
 ^CanCaptureDriverlessVehicles:

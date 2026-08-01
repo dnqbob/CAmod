@@ -209,7 +209,7 @@ Container@OBSERVER_WIDGETS:
 							Key: ReplaySpeedSlow
 							TooltipText: Chrome-InGameObserver-50Button-Tooltip
 							TooltipContainer: TOOLTIP_CONTAINER
-							Text: 0.5x
+							Text: Game-ObserverStatsLogic-Speed-05x
 							Font: TinyBold
 						Button@BUTTON_REGULAR:
 							X: 52 + 36
@@ -219,7 +219,7 @@ Container@OBSERVER_WIDGETS:
 							Key: ReplaySpeedRegular
 							TooltipText: Chrome-InGameObserver-100Button-Tooltip
 							TooltipContainer: TOOLTIP_CONTAINER
-							Text: 1x
+							Text: Game-ObserverStatsLogic-Speed-1x
 							Font: TinyBold
 						Button@BUTTON_FAST:
 							X: 52 + 36 * 2
@@ -230,7 +230,7 @@ Container@OBSERVER_WIDGETS:
 							TooltipText: Chrome-InGameObserver-133Button-Tooltip
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
-							Text: 1.33x
+							Text: Game-ObserverStatsLogic-Speed-133x
 							Font: TinyBold
 						Button@BUTTON_FASTER:
 							X: 52 + 36 * 3
@@ -240,7 +240,7 @@ Container@OBSERVER_WIDGETS:
 							TooltipText: Chrome-InGameObserver-200Button-Tooltip
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
-							Text: 2x
+							Text: Game-ObserverStatsLogic-Speed-2x
 							Font: TinyBold
 						Button@BUTTON_MAXIMUM:
 							X: 52 + 36 * 4
@@ -529,14 +529,14 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: Game-CA-InfoStats-Player
 									Shadow: True
 								Label@HARVESTERS_KILLED_HEADER:
 									X: 155
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Harv Killed
+									Text: Game-ObserverStatsLogic-EconomyDamage-HarvKilled
 									Align: Right
 									Shadow: True
 								Label@HARVESTERS_LOST_HEADER:
@@ -544,7 +544,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Harv Lost
+									Text: Game-ObserverStatsLogic-EconomyDamage-HarvLost
 									Align: Right
 									Shadow: True
 								Label@REFINERIES_KILLED_HEADER:
@@ -552,7 +552,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Ref Killed
+									Text: Game-ObserverStatsLogic-EconomyDamage-RefKilled
 									Align: Right
 									Shadow: True
 								Label@REFINERIES_LOST_HEADER:
@@ -560,7 +560,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Ref Lost
+									Text: Game-ObserverStatsLogic-EconomyDamage-RefLost
 									Align: Right
 									Shadow: True
 						Container@SUPPORT_POWERS_HEADERS:

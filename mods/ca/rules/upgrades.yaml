@@ -304,14 +304,14 @@ bjet.upgrade:
 tow.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: TOW Missile
+		Name: Actor-tow.upgrade-Name
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
-		Description: Hum-Vees and Guardian Drones will be produced with TOW missile launchers.\n\nReplaces: Hum-Vee\nReplaces: Guardian Drone
+		Description: Actor-tow.upgrade-Description
 	TooltipExtras:
-		Strengths: + Added TOW missile launcher (strong vs Heavy Armor)
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: Actor-tow.upgrade-Strengths
+		Weaknesses: Actor-tow.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
 	RenderSprites:

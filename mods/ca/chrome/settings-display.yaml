@@ -403,4 +403,4 @@ Container@DISPLAY_PANEL:
 									Width: PARENT_WIDTH
 									Height: 20
 									Font: Regular
-									Text: Enable Weapon Post Processing FX
+									Text: Game-SettingLogic-WeaponPostFX

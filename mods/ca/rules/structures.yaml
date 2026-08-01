@@ -1975,7 +1975,7 @@ TPWR:
 	TooltipExtras:
 		Strengths: Actor-TPWR-Strengths
 		Weaknesses: Actor-TPWR-Weaknesses
-		Attributes: • Boosts nearby Tesla Coils
+		Attributes: Actor-TPWR-Attributes
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -3783,7 +3783,7 @@ HQ:
 		Attributes: Actor-HQ-Attributes
 		RequiresCondition: !arc-built
 	TooltipExtras@ARC:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war\n• Has limited emergency backup power
+		Attributes: Actor-HQ.ARC-Attributes
 		RequiresCondition: arc-built
 		IsStandard: false
 	Valued:
@@ -3792,7 +3792,7 @@ HQ:
 		Name: Actor-HQ-Name
 		RequiresCondition: !arc-built
 	Tooltip@ARC:
-		Name: Drone Comm. Center
+		Name: Actor-HQ.ARC-Name
 		RequiresCondition: arc-built
 	Building:
 		Footprint: XX xx ==

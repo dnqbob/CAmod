@@ -340,9 +340,9 @@ SUK:
 		Weaknesses: Actor-SUK-Weaknesses
 		RequiresCondition: !seismic-upgrade
 	TooltipExtras@SEISMIC:
-		Description: Fast ground attack aircraft armed with powerful explosive munitions.
-		Strengths: • Strong vs Buildings, Heavy Armor, Defenses, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Description: Actor-SUK.SEISMIC-Description
+		Strengths: Actor-SUK.SEISMIC-Strengths
+		Weaknesses: Actor-SUK.SEISMIC-Weaknesses
 		RequiresCondition: seismic-upgrade
 	Valued:
 		Cost: 2000
@@ -1204,7 +1204,7 @@ HIND:
 	TooltipExtras:
 		Strengths: Actor-HIND-Strengths
 		Weaknesses: Actor-HIND-Weaknesses
-		Attributes: • Reduces enemy speed and rare of fire (Ukraine only)
+		Attributes: Actor-HIND-Attributes
 	Valued:
 		Cost: 1600
 	Tooltip:

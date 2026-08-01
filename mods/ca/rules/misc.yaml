@@ -310,7 +310,7 @@ SCRATE:
 ^CameraBase:
 	Inherits@DUMMY: ^InvisibleDummy
 	EditorOnlyTooltip:
-		Name: (reveals area to owner)
+		Name: Actor-CameraBase-Name
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
@@ -460,7 +460,7 @@ ToxicCloud:
 	Interactable:
 	ScriptTriggers:
 	EditorOnlyTooltip:
-		Name: (support power)
+		Name: Actor-ToxicCloud-Name
 	HiddenUnderFog:
 		Type: CenterPosition
 	RenderSprites:
@@ -732,8 +732,8 @@ powerproxy.sonarpulse:
 	Inherits@DUMMY: ^InvisibleDummy
 	SpawnActorPower:
 		Icon: sonar
-		Name: Sonar Pulse
-		Description: Reveals all submarines in the vicinity for a \nshort time.
+		Name: Actor-powerproxy.sonarpulse-Name
+		Description: Actor-powerproxy.sonarpulse-Description
 		ChargeInterval: 750
 		EndChargeSpeechNotification: SonarPulseReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -843,7 +843,7 @@ powerproxy.airborne.tank:
 		Icon: airdropicon
 		SquadSize: 1
 		UnitType: galx
-		Name: Airdrop: Grizzly Tanks
+		Name: Actor-powerproxy.airborne.tank-Name
 		Description: Actor-Single-Grizzly-Description
 		OneShot: true
 		Stacks: 1
@@ -1068,7 +1068,7 @@ stolentech.hpad.td:
 mpspawn:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (multiplayer player starting point)
+		Name: Actor-mpspawn-Name
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
@@ -1084,7 +1084,7 @@ mpspawn:
 waypoint:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (waypoint for scripted behavior)
+		Name: Actor-waypoint-Name
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
@@ -1170,7 +1170,7 @@ SPLITBLUE:
 ^Veil:
 	Inherits@DUMMY: ^InvisibleDummy
 	EditorOnlyTooltip:
-		Name: (Veil of War)
+		Name: Actor-Veil-Name
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:

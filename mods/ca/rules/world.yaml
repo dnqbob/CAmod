@@ -418,23 +418,23 @@
 			Ore:
 				Sequences: gold01, gold02, gold03, gold04
 				Palette: player
-				Name: Valuable Minerals
+				Name: Actor-ResourceTypes-Name
 			Gems:
 				Sequences: gem01, gem02, gem03, gem04
 				Palette: player
-				Name: Valuable Minerals
+				Name: Actor-ResourceTypes-Name2
 			Tiberium:
 				Sequences: ti1,ti2,ti3,ti4,ti5,ti6,ti7,ti8,ti9,ti10,ti11,ti12
 				Palette: tiberiumpalette
-				Name: Tiberium
+				Name: Actor-ResourceTypes-Name3
 			BlueTiberium:
 				Sequences: bti1,bti2,bti3,bti4,bti5,bti6,bti7,bti8,bti9,bti10,bti11,bti12
 				Palette: bluetiberium
-				Name: Azure Tiberium
+				Name: Actor-ResourceTypes-Name4
 			BlackTiberium:
 				Sequences: bti1,bti2,bti3,bti4,bti5,bti6,bti7,bti8,bti9,bti10,bti11,bti12
 				Palette: blacktiberium
-				Name: Black Tiberium
+				Name: Actor-ResourceTypes-Name5
 
 World:
 	Inherits: ^BaseWorld

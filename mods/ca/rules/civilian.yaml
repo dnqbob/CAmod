@@ -63,10 +63,10 @@ FCOM:
 	TooltipExtras:
 		Description: Actor-FCOM-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides buildable area.
+		Description: Actor-FCOM.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to give buildable area.
+		Description: Actor-FCOM.other-Description
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 5c0
@@ -117,10 +117,10 @@ HOSP:
 	TooltipExtras:
 		Description: Actor-HOSP-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
+		Description: Actor-HOSP.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to heal nearby infantry and train two Medics/Rejuvenators every two minutes.
+		Description: Actor-HOSP.other-Description
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
@@ -213,10 +213,10 @@ MACS:
 	TooltipExtras:
 		Description: Actor-MACS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
+		Description: Actor-MACS.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to repair nearby vehicles and train two Mechanics/Artificers every two minutes.
+		Description: Actor-MACS.other-Description
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
@@ -511,10 +511,10 @@ MISS:
 	TooltipExtras:
 		Description: Actor-MISS-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides vision of the surrounding area.
+		Description: Actor-MISS.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to provide vision of surrounding area.
+		Description: Actor-MISS.other-Description
 		ValidRelationships: Neutral, Enemy
 	WithBuildingBib:
 	CaptureManager:
@@ -555,10 +555,10 @@ BIO:
 	TooltipExtras:
 		Description: Actor-BIO-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides access to the toxin truck and chem mortar units.
+		Description: Actor-BIO.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture for access to the toxin truck and chem mortar units.
+		Description: Actor-BIO.other-Description
 		ValidRelationships: Neutral, Enemy
 	WithDeathAnimation:
 		DeathSequence: dead
@@ -616,10 +616,10 @@ OILB:
 		Description: Actor-OILB-TooltipExtrasDescription
 		Attributes: Actor-OILB-Attributes
 	TooltipDescription@ally:
-		Description: Provides additional funds.
+		Description: Actor-OILB.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to receive additional funds.
+		Description: Actor-OILB.other-Description
 		ValidRelationships: Neutral, Enemy
 	FireWarheadsOnDeath:
 		Weapon: BarrelExplode
@@ -685,10 +685,10 @@ OILR:
 	TooltipExtras:
 		Description: Actor-OILR-TooltipExtrasDescription
 	TooltipDescription@ally:
-		Description: Provides 10% discount on all unit production.
+		Description: Actor-OILR.ally-Description
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to receive a 10% discount on all unit production.
+		Description: Actor-OILR.other-Description
 		ValidRelationships: Neutral, Enemy
 	FireWarheadsOnDeath:
 		Weapon: BarrelExplode

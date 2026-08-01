@@ -1314,7 +1314,7 @@ MAST:
 		Name: Actor-MAST-Name
 		RequiresCondition: !rank-elite
 	Tooltip@PRODIGY:
-		Name: Prodigy
+		Name: Actor-MAST.PRODIGY-Name
 		RequiresCondition: rank-elite
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -6490,7 +6490,7 @@ TBCL:
 Rift:
 	Inherits: ^RiftBase
 	EditorOnlyTooltip:
-		Name: (Rift)
+		Name: Actor-Rift-Name
 	RenderSprites:
 		Image: riftlg
 		Palette: effect-ignore-lighting-alpha85
@@ -6528,7 +6528,7 @@ RiftFade:
 RiftMinor:
 	Inherits: ^RiftBase
 	EditorOnlyTooltip:
-		Name: (Minor Rift)
+		Name: Actor-RiftMinor-Name
 	RenderSprites:
 		Image: riftsm
 	PeriodicExplosion:

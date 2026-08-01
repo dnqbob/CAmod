@@ -705,23 +705,23 @@ GTNK.squad:
 	Tooltip:
 		RequiresCondition: france || usa
 	Tooltip@Germany:
-		Name: Tank Destroyer
+		Name: Actor-2TNK.Chrono.Germany-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: germany
 	Tooltip@Mirage:
-		Name: Mirage Tank
+		Name: Actor-2TNK.Chrono.Mirage-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: england
 	Tooltip@TD:
-		Name: Battle Tank
+		Name: Actor-2TNK.Chrono.TD-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: nod || gdi
 	Tooltip@SOVIET:
-		Name: Heavy Tank
+		Name: Actor-2TNK.Chrono.SOVIET-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: soviet
 	Tooltip@SCRIN:
-		Name: Devourer
+		Name: Actor-2TNK.Chrono.SCRIN-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: scrin
 	Turreted:
@@ -1730,10 +1730,10 @@ ARTY.Chrono:
 	Tooltip:
 		RequiresCondition: !scrin && !soviet
 	Tooltip@KATY:
-		Name: Katyusha
+		Name: Actor-ARTY.Chrono.KATY-Name
 		RequiresCondition: soviet
 	Tooltip@SCRIN:
-		Name: Gun Walker
+		Name: Actor-ARTY.Chrono.SCRIN-Name
 		RequiresCondition: scrin
 	SpeedMultiplier@SCRIN:
 		RequiresCondition: scrin
@@ -2422,7 +2422,7 @@ DELP:
 		Name: Actor-AAPC-Name
 	TooltipExtras:
 		Description: Actor-AAPC-TooltipExtrasDescription
-		Strengths: • Strong vs Buildings, Defenses, Infantry
+		Strengths: Actor-DELP-Strengths
 		Weaknesses: Actor-AAPC-Weaknesses
 		Attributes: Actor-AAPC-Attributes
 	-AttackFrontal:
@@ -2739,7 +2739,7 @@ MSG:
 		Name: Actor-MSG-Name
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
-		Name: Mobile Stealth Generator (deployed)
+		Name: Actor-MSG.DEPLOYED-Name
 		RequiresCondition: deployed
 	Selectable:
 		DecorationBounds: 1621, 1536, 0, -42
@@ -3601,7 +3601,7 @@ RBUG:
 	KillsSelf:
 		RequiresCondition: !active
 	WithTextDecoration@Decoy:
-		Text: Decoy
+		Text: Actor-RBUG.Decoy-Text
 		ValidRelationships: Ally
 		Font: TinyBold
 		Position: Top
@@ -4076,9 +4076,9 @@ LTNK:
 		Attributes: Actor-LTNK-Attributes
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: Actor-LTNK.LaserTank-Strengths
+		Weaknesses: Actor-LTNK.LaserTank-Weaknesses
+		Attributes: Actor-LTNK.LaserTank-Attributes
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 700
@@ -4086,7 +4086,7 @@ LTNK:
 		Name: Actor-LTNK-Name
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
-		Name: Laser Light Tank
+		Name: Actor-LTNK.LaserTank-Name
 		RequiresCondition: lastnk-upgrade
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4205,8 +4205,8 @@ MTNK:
 		Weaknesses: Actor-MTNK-Weaknesses
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-MTNK.LaserTank-Strengths
+		Weaknesses: Actor-MTNK.LaserTank-Weaknesses
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 900
@@ -4215,7 +4215,7 @@ MTNK:
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
-		Name: Laser Battle Tank
+		Name: Actor-MTNK.LaserTank-Name
 		GenericName: Actor-Generic-Tank-Name
 		RequiresCondition: lastnk-upgrade
 	UpdatesPlayerStatistics:
@@ -5090,7 +5090,7 @@ MLRS:
 		Name: Actor-MLRS-Name
 		RequiresCondition: !player-blackh
 	Tooltip@BH:
-		Name: SSM Launcher (Triple)
+		Name: Actor-MLRS.BH-Name
 		RequiresCondition: player-blackh
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -6227,127 +6227,127 @@ IFV:
 		Name: Actor-IFV-Name
 		RequiresCondition: !full || nochange
 	Tooltip@gunturr:
-		Name: MG IFV
+		Name: Actor-IFV.gunturr-Name
 		RequiresCondition: gunturr
 	Tooltip@fragturr:
-		Name: Grenade IFV
+		Name: Actor-IFV.fragturr-Name
 		RequiresCondition: fragturr
 	Tooltip@samturr:
-		Name: Missile IFV
+		Name: Actor-IFV.samturr-Name
 		RequiresCondition: samturr
 	Tooltip@engturr:
-		Name: Engineer IFV
+		Name: Actor-IFV.engturr-Name
 		RequiresCondition: engturr
 	Tooltip@mechturr:
-		Name: Repair IFV
+		Name: Actor-IFV.mechturr-Name
 		RequiresCondition: mechturr
 	Tooltip@commturr:
-		Name: Commando IFV
+		Name: Actor-IFV.commturr-Name
 		RequiresCondition: commturr
 	Tooltip@chemturr:
-		Name: Chemical IFV
+		Name: Actor-IFV.chemturr-Name
 		RequiresCondition: chemturr
 	Tooltip@medturr:
-		Name: Medical IFV
+		Name: Actor-IFV.medturr-Name
 		RequiresCondition: medturr
 	Tooltip@ivanturr:
-		Name: Explosive IFV
+		Name: Actor-IFV.ivanturr-Name
 		RequiresCondition: ivanturr
 	Tooltip@flamturr:
-		Name: Flamethrower IFV
+		Name: Actor-IFV.flamturr-Name
 		RequiresCondition: flamturr
 	Tooltip@spyturr:
-		Name: Spy IFV
+		Name: Actor-IFV.spyturr-Name
 		RequiresCondition: spyturr
 	Tooltip@sealturr:
-		Name: SEAL IFV
+		Name: Actor-IFV.sealturr-Name
 		RequiresCondition: sealturr
 	Tooltip@acolturr:
-		Name: Laser IFV
+		Name: Actor-IFV.acolturr-Name
 		RequiresCondition: acolturr
 	Tooltip@snipturr:
-		Name: Sniper IFV
+		Name: Actor-IFV.snipturr-Name
 		RequiresCondition: snipturr
 	Tooltip@desoturr:
-		Name: Desolator IFV
+		Name: Actor-IFV.desoturr-Name
 		RequiresCondition: desoturr
 	Tooltip@testurr:
-		Name: Tesla IFV
+		Name: Actor-IFV.testurr-Name
 		RequiresCondition: testurr
 	Tooltip@rmbcturr:
-		Name: Cyborg Elite IFV
+		Name: Actor-IFV.rmbcturr-Name
 		RequiresCondition: rmbcturr
 	Tooltip@enliturr:
-		Name: Enlightened IFV
+		Name: Actor-IFV.enliturr-Name
 		RequiresCondition: enliturr
 	Tooltip@bhturr:
-		Name: Black Hand IFV
+		Name: Actor-IFV.bhturr-Name
 		RequiresCondition: bhturr
 	Tooltip@mortchemturr:
-		Name: Chemical Mortar IFV
+		Name: Actor-IFV.mortchemturr-Name
 		RequiresCondition: mortchemturr
 	Tooltip@mortcryoturr:
-		Name: Cryo Mortar IFV
+		Name: Actor-IFV.mortcryoturr-Name
 		RequiresCondition: mortcryoturr
 	Tooltip@mortsonicturr:
-		Name: Sonic Mortar IFV
+		Name: Actor-IFV.mortsonicturr-Name
 		RequiresCondition: mortsonicturr
 	Tooltip@discturr:
-		Name: Plasma Disc IFV
+		Name: Actor-IFV.discturr-Name
 		RequiresCondition: discturr
 	Tooltip@sharturr:
-		Name: Shard IFV
+		Name: Actor-IFV.sharturr-Name
 		RequiresCondition: sharturr
 	Tooltip@ggiturr:
-		Name: GGI IFV
+		Name: Actor-IFV.ggiturr-Name
 		RequiresCondition: ggiturr
 	Tooltip@psyturr:
-		Name: Psychic IFV
+		Name: Actor-IFV.psyturr-Name
 		RequiresCondition: psyturr
 	Tooltip@cryoturr:
-		Name: Cryo IFV
+		Name: Actor-IFV.cryoturr-Name
 		RequiresCondition: cryoturr
 	Tooltip@enfoturr:
-		Name: Enforcer IFV
+		Name: Actor-IFV.enfoturr-Name
 		RequiresCondition: enfoturr
 	Tooltip@ztrpturr:
-		Name: Zone Trooper IFV
+		Name: Actor-IFV.ztrpturr-Name
 		RequiresCondition: ztrpturr
 	Tooltip@zdefturr:
-		Name: Zone Defender IFV
+		Name: Actor-IFV.zdefturr-Name
 		RequiresCondition: zdefturr
 	Tooltip@zraiturr:
-		Name: Zone Raider IFV
+		Name: Actor-IFV.zraiturr-Name
 		RequiresCondition: zraiturr
 	Tooltip@tigrturr:
-		Name: Tiger Guard IFV
+		Name: Actor-IFV.tigrturr-Name
 		RequiresCondition: tigrturr
 	Tooltip@disinturr:
-		Name: Disintegrator IFV
+		Name: Actor-IFV.disinturr-Name
 		RequiresCondition: disinturr
 	Tooltip@implturr:
-		Name: Impaler IFV
+		Name: Actor-IFV.implturr-Name
 		RequiresCondition: implturr
 	Tooltip@stlkturr:
-		Name: Stalker IFV
+		Name: Actor-IFV.stlkturr-Name
 		RequiresCondition: stlkturr
 	Tooltip@hoplturr:
-		Name: Hoplite IFV
+		Name: Actor-IFV.hoplturr-Name
 		RequiresCondition: hoplturr
 	Tooltip@cmsrturr:
-		Name: Commissar IFV
+		Name: Actor-IFV.cmsrturr-Name
 		RequiresCondition: cmsrturr
 	Tooltip@shadturr:
-		Name: Shadow IFV
+		Name: Actor-IFV.shadturr-Name
 		RequiresCondition: shadturr
 	Tooltip@hackturr:
-		Name: Hacker IFV
+		Name: Actor-IFV.hackturr-Name
 		RequiresCondition: hackturr
 	Tooltip@confturr:
-		Name: Confessor IFV
+		Name: Actor-IFV.confturr-Name
 		RequiresCondition: confturr
 	Tooltip@reapturr:
-		Name: Reaper IFV
+		Name: Actor-IFV.reapturr-Name
 		RequiresCondition: reapturr
 	TooltipExtras:
 		Strengths: Actor-IFV-Strengths
@@ -6355,111 +6355,111 @@ IFV:
 		Attributes: Actor-IFV-Attributes
 		RequiresCondition: !full || samturr || ggiturr || disinturr || tigrturr || nochange
 	TooltipExtras@gunturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.gunturr-Strengths
+		Weaknesses: Actor-IFV.gunturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: gunturr || enfoturr || shadturr
 	TooltipExtras@fragturr:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.fragturr-Strengths
+		Weaknesses: Actor-IFV.fragturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: fragturr
 	TooltipExtras@mechturr:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles
+		Weaknesses: Actor-IFV.mechturr-Weaknesses
+		Attributes: Actor-IFV.mechturr-Attributes
 		IsStandard: false
 		RequiresCondition: mechturr
 	TooltipExtras@engturr:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures
+		Weaknesses: Actor-IFV.engturr-Weaknesses
+		Attributes: Actor-IFV.engturr-Attributes
 		IsStandard: false
 		RequiresCondition: engturr
 	TooltipExtras@commturr:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
+		Strengths: Actor-IFV.commturr-Strengths
+		Weaknesses: Actor-IFV.commturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: commturr || sealturr
 	TooltipExtras@medturr:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry
+		Weaknesses: Actor-IFV.medturr-Weaknesses
+		Attributes: Actor-IFV.medturr-Attributes
 		IsStandard: false
 		RequiresCondition: medturr
 	TooltipExtras@ivanturr:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
+		Strengths: Actor-IFV.ivanturr-Strengths
+		Weaknesses: Actor-IFV.ivanturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: ivanturr
 	TooltipExtras@flamturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.flamturr-Strengths
+		Weaknesses: Actor-IFV.flamturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: flamturr || chemturr || hoplturr
 	TooltipExtras@spyturr:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Targets are reaveled and take increased damage
+		Weaknesses: Actor-IFV.spyturr-Weaknesses
+		Attributes: Actor-IFV.spyturr-Attributes
 		IsStandard: false
 		RequiresCondition: spyturr
 	TooltipExtras@rmbcturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-IFV.rmbcturr-Strengths
+		Weaknesses: Actor-IFV.rmbcturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: rmbcturr
 	TooltipExtras@snipturr:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.snipturr-Strengths
+		Weaknesses: Actor-IFV.snipturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: snipturr
 	TooltipExtras@desoturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.desoturr-Strengths
+		Weaknesses: Actor-IFV.desoturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: desoturr || acolturr || sharturr || implturr || stlkturr
 	TooltipExtras@testurr:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-IFV.testurr-Strengths
+		Weaknesses: Actor-IFV.testurr-Weaknesses
 		IsStandard: false
 		RequiresCondition: testurr
 	TooltipExtras@bhturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.bhturr-Strengths
+		Weaknesses: Actor-IFV.bhturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: bhturr || enliturr
 	TooltipExtras@ztrpturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.ztrpturr-Strengths
+		Weaknesses: Actor-IFV.ztrpturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: ztrpturr || zdefturr
 	TooltipExtras@zraiturr:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: Actor-IFV.zraiturr-Strengths
+		Weaknesses: Actor-IFV.zraiturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: zraiturr
 	TooltipExtras@psyturr:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units
+		Strengths: Actor-IFV.psyturr-Strengths
+		Weaknesses: Actor-IFV.psyturr-Weaknesses
+		Attributes: Actor-IFV.psyturr-Attributes
 		IsStandard: false
 		RequiresCondition: psyturr
 	TooltipExtras@hackturr:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage
+		Strengths: Actor-IFV.hackturr-Strengths
+		Weaknesses: Actor-IFV.hackturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: hackturr
 	TooltipExtras@cryoturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage
+		Strengths: Actor-IFV.cryoturr-Strengths
+		Weaknesses: Actor-IFV.cryoturr-Weaknesses
+		Attributes: Actor-IFV.cryoturr-Attributes
 		IsStandard: false
 		RequiresCondition: cryoturr
 	TooltipExtras@reapturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
+		Strengths: Actor-IFV.reapturr-Strengths
+		Weaknesses: Actor-IFV.reapturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: reapturr
 	TooltipExtras@confturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately
+		Strengths: Actor-IFV.confturr-Strengths
+		Weaknesses: Actor-IFV.confturr-Weaknesses
+		Attributes: Actor-IFV.confturr-Attributes
 		IsStandard: false
 		RequiresCondition: confturr
 	Valued:
@@ -7230,10 +7230,10 @@ IFV.AI:
 		Name: Actor-IFV.AI-Name
 		RequiresCondition: !gunturr && !samturr
 	Tooltip@gunturr:
-		Name: MG IFV
+		Name: Actor-IFV.AI.gunturr-Name
 		RequiresCondition: gunturr
 	Tooltip@samturr:
-		Name: Missile IFV
+		Name: Actor-IFV.AI.samturr-Name
 		RequiresCondition: samturr
 	TooltipExtras:
 		Strengths: Actor-IFV.AI-Strengths
@@ -7241,8 +7241,8 @@ IFV.AI:
 		Attributes: Actor-IFV.AI-Attributes
 		RequiresCondition: defturr || samturr
 	TooltipExtras@gunturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: Actor-IFV.AI.gunturr-Strengths
+		Weaknesses: Actor-IFV.AI.gunturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: gunturr
 	Valued:
@@ -7379,85 +7379,85 @@ RECK:
 	Tooltip:
 		Name: Actor-RECK-Name
 	Tooltip@gunturr:
-		Name: MG Reckoner
+		Name: Actor-RECK.gunturr-Name
 	Tooltip@fragturr:
-		Name: Grenade Reckoner
+		Name: Actor-RECK.fragturr-Name
 	Tooltip@samturr:
-		Name: Missile Reckoner
+		Name: Actor-RECK.samturr-Name
 	Tooltip@mechturr:
-		Name: Repair Reckoner
+		Name: Actor-RECK.mechturr-Name
 	Tooltip@engturr:
-		Name: Engineer Reckoner
+		Name: Actor-RECK.engturr-Name
 	Tooltip@commturr:
-		Name: Commando Reckoner
+		Name: Actor-RECK.commturr-Name
 	Tooltip@chemturr:
-		Name: Chemical Reckoner
+		Name: Actor-RECK.chemturr-Name
 	Tooltip@medturr:
-		Name: Medical Reckoner
+		Name: Actor-RECK.medturr-Name
 	Tooltip@ivanturr:
-		Name: Explosive Reckoner
+		Name: Actor-RECK.ivanturr-Name
 	Tooltip@flamturr:
-		Name: Flamethrower Reckoner
+		Name: Actor-RECK.flamturr-Name
 	Tooltip@spyturr:
-		Name: Spy Reckoner
+		Name: Actor-RECK.spyturr-Name
 	Tooltip@sealturr:
-		Name: SEAL Reckoner
+		Name: Actor-RECK.sealturr-Name
 	Tooltip@acolturr:
-		Name: Laser Reckoner
+		Name: Actor-RECK.acolturr-Name
 	Tooltip@snipturr:
-		Name: Sniper Reckoner
+		Name: Actor-RECK.snipturr-Name
 	Tooltip@desoturr:
-		Name: Desolator Reckoner
+		Name: Actor-RECK.desoturr-Name
 	Tooltip@testurr:
-		Name: Tesla Reckoner
+		Name: Actor-RECK.testurr-Name
 	Tooltip@rmbcturr:
-		Name: Cyborg Elite Reckoner
+		Name: Actor-RECK.rmbcturr-Name
 	Tooltip@enliturr:
-		Name: Enlightened Reckoner
+		Name: Actor-RECK.enliturr-Name
 	Tooltip@bhturr:
-		Name: Black Hand Reckoner
+		Name: Actor-RECK.bhturr-Name
 	Tooltip@mortchemturr:
-		Name: Chemical Mortar Reckoner
+		Name: Actor-RECK.mortchemturr-Name
 	Tooltip@mortcryoturr:
-		Name: Cryo Mortar Reckoner
+		Name: Actor-RECK.mortcryoturr-Name
 	Tooltip@mortsonicturr:
-		Name: Sonic Mortar Reckoner
+		Name: Actor-RECK.mortsonicturr-Name
 	Tooltip@discturr:
-		Name: Plasma Disc Reckoner
+		Name: Actor-RECK.discturr-Name
 	Tooltip@sharturr:
-		Name: Shard Reckoner
+		Name: Actor-RECK.sharturr-Name
 	Tooltip@ggiturr:
-		Name: GGI Reckoner
+		Name: Actor-RECK.ggiturr-Name
 	Tooltip@psyturr:
-		Name: Psychic Reckoner
+		Name: Actor-RECK.psyturr-Name
 	Tooltip@enfoturr:
-		Name: Enforcer Reckoner
+		Name: Actor-RECK.enfoturr-Name
 	Tooltip@ztrpturr:
-		Name: Zone Trooper Reckoner
+		Name: Actor-RECK.ztrpturr-Name
 	Tooltip@zdefturr:
-		Name: Zone Defender Reckoner
+		Name: Actor-RECK.zdefturr-Name
 	Tooltip@zraiturr:
-		Name: Zone Raider Reckoner
+		Name: Actor-RECK.zraiturr-Name
 	Tooltip@tigrturr:
-		Name: Tiger Guard Reckoner
+		Name: Actor-RECK.tigrturr-Name
 	Tooltip@disinturr:
-		Name: Disintegrator Reckoner
+		Name: Actor-RECK.disinturr-Name
 	Tooltip@implturr:
-		Name: Impaler Reckoner
+		Name: Actor-RECK.implturr-Name
 	Tooltip@stlkturr:
-		Name: Stalker Reckoner
+		Name: Actor-RECK.stlkturr-Name
 	Tooltip@hoplturr:
-		Name: Hoplite Reckoner
+		Name: Actor-RECK.hoplturr-Name
 	Tooltip@cmsrturr:
-		Name: Commissar Reckoner
+		Name: Actor-RECK.cmsrturr-Name
 	Tooltip@shadturr:
-		Name: Shadow Reckoner
+		Name: Actor-RECK.shadturr-Name
 	Tooltip@hackturr:
-		Name: Hacker Reckoner
+		Name: Actor-RECK.hackturr-Name
 	Tooltip@confturr:
-		Name: Confessor Reckoner
+		Name: Actor-RECK.confturr-Name
 	Tooltip@reapturr:
-		Name: Reaper Reckoner
+		Name: Actor-RECK.reapturr-Name
 	ReloadDelayMultiplier@CyborgElite:
 		RequiresCondition: rmbcturr
 		Modifier: 80
@@ -8326,7 +8326,7 @@ MSAR:
 		Name: Actor-MSAR-Name
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
-		Name: Mobile Sensor Array (deployed)
+		Name: Actor-MSAR.DEPLOYED-Name
 		RequiresCondition: deployed
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -8429,7 +8429,7 @@ PTNK:
 	TooltipExtras:
 		Strengths: Actor-PTNK-Strengths
 		Weaknesses: Actor-PTNK-Weaknesses
-		Attributes: • Can deploy for +2 range, -25% damage received and self-repair (France only)
+		Attributes: Actor-PTNK-Attributes
 	Valued:
 		Cost: 1350
 	Tooltip:

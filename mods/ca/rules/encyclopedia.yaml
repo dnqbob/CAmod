@@ -9,7 +9,7 @@ encyclopedia.tips.general:
 		Category: Other/Tips
 	EncyclopediaExtras:
 		HideNotProducible: true
-		Description: encyclopedia-tips-general-description
+		Description: Actor-encyclopedia.tips.general-EncyclopediaExtras-Description
 
 ^EffectPreview:
 	Inherits: ^PreviewDummy
@@ -2709,13 +2709,13 @@ encyclopedia.debuffs.suppression:
 encyclopedia.debuffs.underminedfoundation:
 	Inherits: ^BuildingEffectPreview
 	Tooltip:
-		Name: Undermined Foundation
+		Name: Actor-encyclopedia.debuffs.underminedfoundation-Name
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by the Allied Delphis APC. Buildings take greatly increased damage.
+		Description: Actor-encyclopedia.debuffs.underminedfoundation-EncyclopediaExtras-Description
 	TooltipExtras:
-		Weaknesses: +60% damage received
+		Weaknesses: Actor-encyclopedia.debuffs.underminedfoundation-Weaknesses
 	WithPreviewDecoration@UnderminedFoundation:
 		Image: underminefoundation
 		Sequence: idle

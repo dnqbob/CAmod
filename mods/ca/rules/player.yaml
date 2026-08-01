@@ -239,9 +239,9 @@ Player:
 		DisplayOrder: 3
 		Default: global.singlequeue
 		Values:
-			global.singlequeue: options-queuetype.singlequeue
-			global.multiqueuefull: options-queuetype.multiqueuefull
-			global.multiqueuescaled: options-queuetype.multiqueuescaled
+			global.singlequeue: Actor-Player-QueueType_singlequeue-Name
+			global.multiqueuefull: Actor-Player-QueueType_multiqueuefull-Name
+			global.multiqueuescaled: Actor-Player-QueueType_multiqueuescaled-Name
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		TextNotification: Base under attack.

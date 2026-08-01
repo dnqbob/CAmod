@@ -19,9 +19,8 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	class NodCovenantIndicatorLogic : ChromeLogic
 	{
-		[FluentReference("level")]
-		const string CovenantLevel = "label-covenant-level";
-		const string CovenantDescription = "label-covenant-description";
+		const string CovenantLevel = "Game-CA-NodCovenant-Level";
+		const string CovenantDescription = "Game-CA-NodCovenant-Description";
 
 		const string CountType = "NodCovenant";
 		const string DisabledImage = "disabled";
@@ -62,9 +61,9 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			var tooltipTextCached = new CachedTransform<int, string>((CurrentCount) =>
 			{
-				var tooltip = FluentProvider.GetMessage(CovenantLevel, "level", CurrentCount);
+				var tooltip = Game.Translate(CovenantLevel, "level", CurrentCount);
 				tooltip += "\n\n";
-				tooltip += FluentProvider.GetMessage(CovenantDescription);
+				tooltip += Game.Translate(CovenantDescription);
 				return tooltip;
 			});
 

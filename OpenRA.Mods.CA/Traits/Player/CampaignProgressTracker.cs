@@ -45,10 +45,10 @@ namespace OpenRA.Mods.CA.Traits
 			if (player.World.Players.Count(p => p.Playable) > 1)
 				return;
 
-			if (!player.World.Map.Categories.Contains("Campaign"))
+			if (!player.World.Map.Categories.Contains("Map-Categories-Mission"))
 				return;
 
-			var missionTitle = GetMapTitleWithoutNumber(player.World.Map.Title);
+			var missionUid = player.World.Map.Uid;
 			var worldActor = player.World.WorldActor;
 			var difficulty = worldActor.TraitsImplementing<ScriptLobbyDropdown>()
 				.FirstOrDefault(sld => sld.Info.ID == "difficulty");
@@ -65,7 +65,7 @@ namespace OpenRA.Mods.CA.Traits
 			bool? respawnEnabled = respawnDropdown != null ? respawnDropdown.Value == "enabled" : null;
 
 			var campaignProgress = GetCampaignProgress();
-			campaignProgress.TryGetValue(missionTitle, out var existingMissionResult);
+			campaignProgress.TryGetValue(missionUid, out var existingMissionResult);
 
 			if (existingMissionResult != null)
 			{
@@ -96,13 +96,13 @@ namespace OpenRA.Mods.CA.Traits
 					return;
 			}
 
-			var speed = FluentProvider.GetMessage(player.World.GameSpeed.Name);
+			var speed = Game.Translate(player.World.GameSpeed.Name);
 
-			campaignProgress[missionTitle] = new MissionVictoryResult()
+			campaignProgress[missionUid] = new MissionVictoryResult()
 			{
 				Uid = player.World.Map.Uid,
 				Version = Game.ModData.Manifest.Metadata.Version,
-				MissionTitle = missionTitle,
+				MissionTitle = GetMapTitleWithoutNumber(player.World.Map.Title),
 				Difficulty = difficulty?.Value,
 				Time = WidgetUtils.FormatTime(player.World.WorldTick, player.World.Timestep),
 				Ticks = player.World.WorldTick,
@@ -219,6 +219,19 @@ namespace OpenRA.Mods.CA.Traits
 					// do nothing
 				}
 			}
+
+			// Migrate old title-based keys to UID-based keys
+			var migrated = false;
+			foreach (var kv in campaignProgress.ToList())
+			{
+				if (!string.IsNullOrEmpty(kv.Value.Uid) && kv.Key != kv.Value.Uid)
+				{
+					campaignProgress[kv.Value.Uid] = kv.Value;
+					migrated = true;
+				}
+			}
+			if (migrated)
+				SaveCampaignProgress(campaignProgress);
 
 			return campaignProgress;
 		}

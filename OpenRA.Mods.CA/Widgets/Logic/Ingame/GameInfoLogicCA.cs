@@ -23,23 +23,17 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	public class GameInfoLogicCA : ChromeLogic
 	{
-		[FluentReference]
-		const string Objectives = "menu-game-info.objectives";
+		const string Objectives = "Game-GameInfoLogic-Objective";
 
-		[FluentReference]
-		const string Briefing = "menu-game-info.briefing";
+		const string Briefing = "Game-GameInfoLogic-Briefing";
 
-		[FluentReference]
-		const string NextMission = "menu-game-info-ca.next-mission";
+		const string NextMission = "Game-GameInfoLogicCA-NextMission";
 
-		[FluentReference]
-		const string Options = "menu-game-info.options";
+		const string Options = "Game-GameInfoLogic-Options";
 
-		[FluentReference]
-		const string Debug = "menu-game-info.debug";
+		const string Debug = "Game-GameInfoLogic-Debug";
 
-		[FluentReference]
-		const string Chat = "menu-game-info.chat";
+		const string Chat = "Game-GameInfoLogic-Chat";
 
 		readonly World world;
 		readonly ModData modData;
@@ -113,7 +107,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 				if (tabButton != null)
 				{
-					var tabButtonText = FluentProvider.GetMessage(label);
+					var tabButtonText = Game.Translate(label);
 					tabButton.GetText = () => tabButtonText;
 					tabButton.OnClick = () =>
 					{

@@ -35,53 +35,51 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		"StatisticsArmyGraphKey")]
 	public class ObserverStatsLogicCA : ChromeLogic
 	{
-		[FluentReference]
-		const string InformationNone = "options-observer-stats.none";
+		
+		const string InformationNone = "Game-ObserverStatsLogic-StatsDropdown-Title";
 
-		[FluentReference]
-		const string Basic = "options-observer-stats.basic";
+		
+		const string Basic = "Game-ObserverStatsLogic-StatsOption-Basic";
 
-		[FluentReference]
-		const string Economy = "options-observer-stats.economy";
+		
+		const string Economy = "Game-ObserverStatsLogic-StatsOption-Economy";
 
-		[FluentReference]
-		const string EconomyDamage = "options-observer-stats.economy-damage";
+		const string EconomyDamage = "Game-ObserverStatsLogic-StatsOption-EconomyDamage";
 
-		[FluentReference]
-		const string Production = "options-observer-stats.production";
+		
+		const string Production = "Game-ObserverStatsLogic-StatsOption-Production";
 
-		[FluentReference]
-		const string SupportPowers = "options-observer-stats.support-powers";
+		
+		const string SupportPowers = "Game-ObserverStatsLogic-StatsOption-SupportPowers";
 
-		[FluentReference]
-		const string Combat = "options-observer-stats.combat";
+		
+		const string Combat = "Game-ObserverStatsLogic-StatsOption-Combat";
 
-		[FluentReference]
-		const string Army = "options-observer-stats.army";
+		
+		const string Army = "Game-ObserverStatsLogic-StatsOption-Army";
 
-		[FluentReference]
-		const string Upgrades = "options-observer-stats.upgrades";
+		
+		const string Upgrades = "Game-ObserverStatsLogic-StatsOption-Upgrades";
 
-		[FluentReference]
-		const string BuildOrder = "options-observer-stats.build-order";
+		
+		const string BuildOrder = "Game-ObserverStatsLogic-StatsOption-BuildOrder";
 
-		[FluentReference]
-		const string UnitsProduced = "options-observer-stats.units-produced";
+		
+		const string UnitsProduced = "Game-ObserverStatsLogic-StatsOption-UnitsProduced";
 
-		[FluentReference]
-		const string EarningsGraph = "options-observer-stats.earnings-graph";
+		
+		const string EarningsGraph = "Game-ObserverStatsLogic-StatsOption-EarningsGraph";
 
-		[FluentReference]
-		const string ArmyGraph = "options-observer-stats.army-graph";
+		
+		const string ArmyGraph = "Game-ObserverStatsLogic-StatsOption-ArmyGraph";
 
-		[FluentReference]
-		const string TeamArmyGraph = "options-observer-stats.team-army-graph";
+		
+		const string TeamArmyGraph = "Game-ObserverStatsLogic-StatsOption-TeamArmyGraph";
 
-		[FluentReference("team")]
-		const string TeamNumber = "label-team-name";
+		const string TeamNumber = "Game-ObserverStatsLogic-TeamName";
 
-		[FluentReference]
-		const string NoTeam = "label-no-team";
+		
+		const string NoTeam = "Game-ObserverStatsLogic-NoTeam";
 
 		readonly ContainerWidget basicStatsHeaders;
 		readonly ContainerWidget economyStatsHeaders;
@@ -195,10 +193,10 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			var statsDropDown = widget.Get<DropDownButtonWidget>("STATS_DROPDOWN");
 			StatsDropDownOption CreateStatsOption(string title, ObserverStatsPanel panel, ScrollItemWidget template, Action a)
 			{
-				title = FluentProvider.GetMessage(title);
+				title = Game.Translate(title);
 				return new StatsDropDownOption
 				{
-					Title = FluentProvider.GetMessage(title),
+					Title = Game.Translate(title),
 					IsSelected = () => activePanel == panel,
 					OnClick = () =>
 					{
@@ -219,11 +217,11 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			{
 				new()
 				{
-					Title = FluentProvider.GetMessage(InformationNone),
+					Title = Game.Translate(InformationNone),
 					IsSelected = () => activePanel == ObserverStatsPanel.None,
 					OnClick = () =>
 					{
-						var informationNone = FluentProvider.GetMessage(InformationNone);
+						var informationNone = Game.Translate(InformationNone);
 						statsDropDown.GetText = () => informationNone;
 						playerStatsPanel.Visible = false;
 						ClearStats();
@@ -334,7 +332,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			teamArmyValueGraph.GetSeries = () =>
 				teams.Select(t => new ScrollableLineGraphSeries(
-					t.Key > 0 ? FluentProvider.GetMessage(TeamNumber, "team", $"{t.Key} ({t.First().ResolvedPlayerName})") : FluentProvider.GetMessage(NoTeam),
+					t.Key > 0 ? Game.Translate(TeamNumber, "team", $"{t.Key} ({t.First().ResolvedPlayerName})") : Game.Translate(NoTeam),
 					t.First().Color,
 					t.Select(p => (p.PlayerActor.TraitOrDefault<PlayerStatistics>() ?? new PlayerStatistics(p.PlayerActor)).ArmySamples.Select(s => (float)s)).Aggregate((a, b) => a.Zip(b, (x, y) => x + y))));
 		}
@@ -349,8 +347,8 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					tt.IgnoreMouseOver = true;
 
 					var teamLabel = tt.Get<LabelWidget>("TEAM");
-					var teamText = team.Key > 0 ? FluentProvider.GetMessage(TeamNumber, "team", team.Key)
-						: FluentProvider.GetMessage(NoTeam);
+					var teamText = team.Key > 0 ? Game.Translate(TeamNumber, "team", team.Key)
+						: Game.Translate(NoTeam);
 					teamLabel.GetText = () => teamText;
 					tt.Bounds.Width = teamLabel.Bounds.Width = Game.Renderer.Fonts[tt.Font].Measure(teamText).X;
 

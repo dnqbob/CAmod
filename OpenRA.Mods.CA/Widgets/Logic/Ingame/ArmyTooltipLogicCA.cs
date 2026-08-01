@@ -39,13 +39,13 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 					return;
 
 				var tooltip = armyUnit.TooltipInfo;
-				var name = tooltip != null ? FluentProvider.GetMessage(tooltip.Name) : armyUnit.ActorInfo.Name;
+				var name = tooltip != null ? Game.Translate(tooltip.Name) : armyUnit.ActorInfo.Name;
 				var buildable = armyUnit.BuildableInfo;
 
 				nameLabel.GetText = () => name;
 				var nameSize = font.Measure(name);
 
-				var desc = string.IsNullOrEmpty(buildable.Description) ? "" : FluentProvider.GetMessage(buildable.Description).Replace("\\n", "\n");
+				var desc = string.IsNullOrEmpty(buildable.Description) ? "" : Game.Translate(buildable.Description).Replace("\\n", "\n");
 				descLabel.GetText = () => desc;
 				var descSize = descFont.Measure(desc);
 				descLabel.Bounds.Width = descSize.X;

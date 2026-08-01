@@ -58,7 +58,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					return;
 
 				var cost = sp.Info.Cost;
-				var costString = costLabel.Text + cost.ToString();
+				var costString = Game.Translate(costLabel.Text) + cost.ToString();
 				costLabel.GetText = () => costString;
 				costLabel.GetColor = () => playerResources.Cash + playerResources.Resources >= cost
 					? Color.White : Color.Red;

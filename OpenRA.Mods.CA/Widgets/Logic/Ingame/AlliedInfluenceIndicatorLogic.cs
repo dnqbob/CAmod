@@ -18,17 +18,13 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	class AlliedInfluenceIndicatorLogic : ChromeLogic
 	{
-		[FluentReference("level")]
-		const string PlayerInfluenceLevel = "label-player-influence-level";
+		const string PlayerInfluenceLevel = "Game-CA-AlliedInfluence-Level";
 
-		[FluentReference("time")]
-		const string PlayerInfluenceLevelTime = "label-player-influence-level-time";
+		const string PlayerInfluenceLevelTime = "Game-CA-AlliedInfluence-LevelTime";
 
-		[FluentReference("coalition")]
-		const string ChosenCoalition = "label-player-influence-coalition";
+		const string ChosenCoalition = "Game-CA-AlliedInfluence-Coalition";
 
-		[FluentReference("policy")]
-		const string ChosenPolicy = "label-player-influence-policy";
+		const string ChosenPolicy = "Game-CA-AlliedInfluence-Policy";
 
 		const string NoneImage = "none";
 		const string DisabledImage = "disabled";
@@ -103,16 +99,16 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				{
 					var thresholdsPassed = timeline.ThresholdsPassed;
 
-					var tooltip = FluentProvider.GetMessage(PlayerInfluenceLevel, "level", thresholdsPassed);
+					var tooltip = Game.Translate(PlayerInfluenceLevel, "level", thresholdsPassed);
 
 					if (timeline.TicksUntilNextThreshold > 0)
-						tooltip += "\n" + FluentProvider.GetMessage(PlayerInfluenceLevelTime, "time", WidgetUtils.FormatTime(timeline.TicksUntilNextThreshold, world.Timestep));
+						tooltip += "\n" + Game.Translate(PlayerInfluenceLevelTime, "time", WidgetUtils.FormatTime(timeline.TicksUntilNextThreshold, world.Timestep));
 
 					if (chosenCoalition != null)
-						tooltip += "\n" + FluentProvider.GetMessage(ChosenCoalition, "coalition", char.ToUpper(chosenCoalition[0]) + chosenCoalition[1..]);
+						tooltip += "\n" + Game.Translate(ChosenCoalition, "coalition", char.ToUpper(chosenCoalition[0]) + chosenCoalition[1..]);
 
 					if (chosenPolicy != null)
-						tooltip += "\n" + FluentProvider.GetMessage(ChosenPolicy,"policy", char.ToUpper(chosenPolicy[0]) + chosenPolicy[1..]);
+						tooltip += "\n" + Game.Translate(ChosenPolicy,"policy", char.ToUpper(chosenPolicy[0]) + chosenPolicy[1..]);
 
 					return tooltip;
 				});
@@ -155,7 +151,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				influenceLevel.IsVisible = () => false;
 				coalitionImage.IsVisible = () => false;
 				noCoalitionImage.IsVisible = () => true;
-				container.GetTooltipText = () => FluentProvider.GetMessage(PlayerInfluenceLevel, "level", "N/A");;
+				container.GetTooltipText = () => Game.Translate(PlayerInfluenceLevel, "level", "N/A");
 			}
 		}
 

@@ -10,6 +10,7 @@
 
 using System.Linq;
 using OpenRA.Graphics;
+using OpenRA.Mods.Common.Widgets;
 
 namespace OpenRA.Mods.CA.Widgets
 {
@@ -32,6 +33,8 @@ namespace OpenRA.Mods.CA.Widgets
 					isOriginalLine[i] = true;
 				}
 
+				var isCjk = WidgetUtils.IsCurrentLanguageCjk();
+
 				for (var i = 0; i < lines.Count; i++)
 				{
 					var line = lines[i];
@@ -40,41 +43,35 @@ namespace OpenRA.Mods.CA.Widgets
 					if (font.Measure(line).X <= currentWidth)
 						continue;
 
-					// Scan forwards until we find the last word that fits
-					// This guarantees a small bound on the amount of string we need to search before a linebreak
-					var start = 0;
-					while (true)
+					void MarkWrappedContinuationInserted()
 					{
-						var spaceIndex = line.IndexOf(' ', start);
-						if (spaceIndex == -1)
-							break;
-
-						var fragmentWidth = font.Measure(line[..spaceIndex]).X;
-						if (fragmentWidth > currentWidth)
-							break;
-
-						start = spaceIndex + 1;
-					}
-
-					if (start > 0)
-					{
-						lines[i] = line[..(start - 1)];
-						lines.Insert(i + 1, line[start..]);
-
-						// Expand the isOriginalLine array and mark the new line as wrapped
 						var newIsOriginalLine = new bool[lines.Count];
 						for (var j = 0; j <= i; j++)
-						{
 							newIsOriginalLine[j] = isOriginalLine[j];
-						}
 
-						newIsOriginalLine[i + 1] = false; // This is a wrapped line
+						newIsOriginalLine[i + 1] = false;
 						for (var j = i + 2; j < lines.Count; j++)
-						{
 							newIsOriginalLine[j] = isOriginalLine[j - 1];
-						}
 
 						isOriginalLine = newIsOriginalLine;
+					}
+
+					if (isCjk)
+					{
+						var breakIndex = WidgetUtils.FindCjkAwareWrapExclusiveEnd(line, currentWidth, font);
+						lines[i] = line[..breakIndex].TrimEnd();
+						lines.Insert(i + 1, line[breakIndex..].TrimStart());
+						MarkWrappedContinuationInserted();
+					}
+					else
+					{
+						var (lineEndExclusive, continuationStart) = WidgetUtils.FindLatinWordWrapSplit(line, currentWidth, font);
+						if (lineEndExclusive > 0)
+						{
+							lines[i] = line[..lineEndExclusive];
+							lines.Insert(i + 1, line[continuationStart..]);
+							MarkWrappedContinuationInserted();
+						}
 					}
 				}
 

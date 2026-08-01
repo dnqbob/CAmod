@@ -18,6 +18,7 @@ using OpenRA.Graphics;
 using OpenRA.Mods.CA.Traits;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Network;
+using OpenRA.Primitives;
 using OpenRA.Traits;
 using OpenRA.Widgets;
 
@@ -28,23 +29,23 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		enum PlayingVideo { None, Info, Briefing, GameStart }
 		enum PanelType { MissionInfo, Options }
 
-		[FluentReference]
-		const string NoVideoTitle = "dialog-no-video.title";
+		
+		const string NoVideoTitle = "Game-MissionBrowserLogic-VideoNotInstallDialog-Title";
 
-		[FluentReference]
-		const string NoVideoPrompt = "dialog-no-video.prompt";
+		
+		const string NoVideoPrompt = "Game-MissionBrowserLogic-VideoNotInstallDialog-Text";
 
-		[FluentReference]
-		const string NoVideoCancel = "dialog-no-video.cancel";
+		
+		const string NoVideoCancel = "Game-MissionBrowserLogic-VideoNotInstallDialog-CancelButton";
 
-		[FluentReference]
-		const string CantPlayTitle = "dialog-cant-play-video.title";
+		
+		const string CantPlayTitle = "Game-MissionBrowserLogic-VideoPlaybackError-Title";
 
-		[FluentReference]
-		const string CantPlayPrompt = "dialog-cant-play-video.prompt";
+		
+		const string CantPlayPrompt = "Game-MissionBrowserLogic-VideoPlaybackError-Text";
 
-		[FluentReference]
-		const string CantPlayCancel = "dialog-cant-play-video.cancel";
+		
+		const string CantPlayCancel = "Game-MissionBrowserLogic-VideoPlaybackError-CancelButton";
 
 		readonly ModData modData;
 		readonly Action onStart;
@@ -90,11 +91,12 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 			template = widget.Get<ScrollItemWidget>("TEMPLATE");
 
 			var title = widget.GetOrNull<LabelWidget>("MISSIONBROWSER_TITLE");
+			var titleCache = new CachedTransform<bool, string>(flag =>
+				flag
+					? selectedMap.Translate(selectedMap.Title)
+					: Game.Translate(title.Text));
 			if (title != null)
-			{
-				var titleText = title.GetText();
-				title.GetText = () => playingVideo != PlayingVideo.None ? selectedMap.Title : titleText;
-			}
+				title.GetText = () => titleCache.Update(playingVideo != PlayingVideo.None);
 
 			widget.Get("MISSION_INFO").IsVisible = () => selectedMap != null;
 
@@ -256,7 +258,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 					() => StartMissionClicked(onExit));
 
 				var label = item.Get<LabelWithTooltipWidget>("TITLE");
-				var missionTitle = CampaignProgressTracker.GetMapTitleWithoutNumber(preview.Title);
+				var missionTitle = preview.Uid;
 
 				if (campaignProgress.ContainsKey(missionTitle))
 				{
@@ -292,26 +294,39 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 						}
 					}
 
-					var difficultyCompleted = difficulty != null ? FluentProvider.GetMessage($"options-difficulty.{difficulty}") : null;
+					var difficultyCompleted = difficulty != null ? Game.Translate("Map-Difficulty-" + difficulty) : null;
 
 					if (difficultyCompleted != null)
-						item.GetTooltipText = () => $"Completed ({difficultyCompleted})";
+						item.GetTooltipText = () => Game.Translate("Game-CA-MissionBrowser-Tooltip-CompletedWithDifficulty", "difficulty", difficultyCompleted);
 					else
-						item.GetTooltipText = () => "Completed";
+						item.GetTooltipText = () => Game.Translate("Game-CA-MissionBrowser-Tooltip-Completed");
 
 					var dateCompleted = missionProgress.DateCompleted.ToString("d");
 					var completionTime = missionProgress.Time;
 
-					var details = $"• Date: {dateCompleted}\n• Version: {missionProgress.Version}\n• Duration: {completionTime}\n• Speed: {missionProgress.Speed}";
+					var enabledState = Game.Translate("Game-CA-MissionProgress-State-Enabled");
+					var disabledState = Game.Translate("Game-CA-MissionProgress-State-Disabled");
+					var detailsLines = new List<string>
+					{
+						Game.Translate("Game-CA-MissionProgress-Detail-Date", "date", dateCompleted),
+						Game.Translate("Game-CA-MissionProgress-Detail-Version", "version", missionProgress.Version),
+						Game.Translate("Game-CA-MissionProgress-Detail-Duration", "duration", completionTime),
+						Game.Translate("Game-CA-MissionProgress-Detail-Speed", "speed", missionProgress.Speed),
+					};
 
 					if (missionProgress.FogEnabled.HasValue)
-						details += $"\n• Fog: {(missionProgress.FogEnabled.Value ? "Enabled" : "Disabled")}";
+						detailsLines.Add(Game.Translate("Game-CA-MissionProgress-Detail-Fog", "state",
+							missionProgress.FogEnabled.Value ? enabledState : disabledState));
 
 					if (missionProgress.BuildRadiusEnabled.HasValue)
-						details += $"\n• Build Radius: {(missionProgress.BuildRadiusEnabled.Value ? "Enabled" : "Disabled")}";
+						detailsLines.Add(Game.Translate("Game-CA-MissionProgress-Detail-BuildRadius", "state",
+							missionProgress.BuildRadiusEnabled.Value ? enabledState : disabledState));
 
 					if (missionProgress.RespawnEnabled.HasValue)
-						details += $"\n• Respawns: {(missionProgress.RespawnEnabled.Value ? "Enabled" : "Disabled")}";
+						detailsLines.Add(Game.Translate("Game-CA-MissionProgress-Detail-Respawns", "state",
+							missionProgress.RespawnEnabled.Value ? enabledState : disabledState));
+
+					var details = string.Join("\n", detailsLines);
 
 					item.GetTooltipDesc = () => details;
 
@@ -320,10 +335,10 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 				}
 				else
 				{
-					item.GetTooltipText = () => "Not Completed";
+					item.GetTooltipText = () => Game.Translate("Game-CA-MissionBrowser-Tooltip-NotCompleted");
 				}
 
-				WidgetUtils.TruncateLabelToTooltip(label, preview.Title);
+				WidgetUtils.TruncateLabelToTooltip(label, preview.Translate(preview.Title));
 
 				missionList.AddChild(item);
 			}
@@ -352,7 +367,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 					infoVideo = missionData.BackgroundVideo;
 					infoVideoVisible = infoVideo != null;
 
-					var briefingText = missionData.Briefing?.Replace("\\n", "\n");
+					var briefingText = preview.Translate(missionData.Briefing)?.Replace("\\n", "\n");
 					var briefing = WidgetUtils.WrapText(briefingText, description.Bounds.Width, descriptionFont);
 					var height = descriptionFont.Measure(briefing).Y;
 					Game.RunAfterTick(() =>

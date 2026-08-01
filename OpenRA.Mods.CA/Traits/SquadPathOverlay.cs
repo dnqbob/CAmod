@@ -34,8 +34,8 @@ namespace OpenRA.Mods.CA.Traits
 
 		const string CommandName = "squadpaths";
 
-		[FluentReference]
-		const string CommandDescription = "description-squadpaths-debug-overlay";
+		
+		const string CommandDescription = "Game-CA-Debug-SquadPathsOverlay-Description";
 
 		public bool Enabled { get; private set; }
 

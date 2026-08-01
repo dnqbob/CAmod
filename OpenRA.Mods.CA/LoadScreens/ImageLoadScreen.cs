@@ -31,7 +31,7 @@ namespace OpenRA.Mods.CA.LoadScreens
 			base.Init(modData, info);
 
 			if (info.ContainsKey("Text"))
-				messages = info["Text"].Split(',');
+				messages = Game.Translate(info["Text"]).Replace(", ", ",").Split(',');
 		}
 
 		public override void DisplayInner(Renderer r, Sheet s, int density)

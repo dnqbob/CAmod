@@ -48,7 +48,6 @@ namespace OpenRA.Mods.Common.Traits
 			"The filename of the audio is defined per faction in notifications.yaml.")]
 		public readonly string ReadyAudio = null;
 
-		[FluentReference(optional: true)]
 		[Desc("Notification displayed when production is complete.")]
 		public readonly string ReadyTextNotification = null;
 
@@ -58,7 +57,6 @@ namespace OpenRA.Mods.Common.Traits
 			"The filename of the audio is defined per faction in notifications.yaml.")]
 		public readonly string BlockedAudio = null;
 
-		[FluentReference(optional: true)]
 		[Desc("Notification displayed when you can't train another actor",
 			"when the build limit exceeded or the exit is jammed.")]
 		public readonly string BlockedTextNotification = null;

@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using OpenRA;
 using OpenRA.FileFormats;
 using OpenRA.Graphics;
 using OpenRA.Mods.CA.Traits;
@@ -27,8 +28,23 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	public class EncyclopediaLogicCA : ChromeLogic
 	{
-		[FluentReference("prerequisites")]
-		const string Requires = "label-requires";
+		const string Requires = "Chrome-ProductionTooltip-Requires";
+
+		const string SubfactionExclusive = "Game-CA-Encyclopedia-SubfactionExclusive";
+
+		static string TranslateEncyclopediaCategoryPath(string fullPath)
+		{
+			if (string.IsNullOrEmpty(fullPath))
+				return fullPath;
+
+			var parts = fullPath.Split('/');
+			var key = "Encyclopedia-Category-" + string.Join("-", parts.Select(p => p.Replace(" ", "", StringComparison.Ordinal)));
+			var translated = Game.Translate(key);
+			if (!string.IsNullOrEmpty(translated) && translated != key)
+				return translated;
+
+			return parts[^1];
+		}
 
 		readonly World world;
 		readonly ModData modData;
@@ -393,7 +409,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (tooltip == null || string.IsNullOrEmpty(tooltip.Name))
 				return null;
 
-			return FluentProvider.GetMessage(tooltip.Name);
+			return Game.Translate(tooltip.Name);
 		}
 
 		void NavigateToEntry(string actorName)
@@ -414,7 +430,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				// Find and activate the correct tab
 				foreach (var tab in categoryTabs)
 				{
-					if (tab.Text == topCategory)
+					if (tab.Id == topCategory)
 					{
 						tab.OnClick();
 						break;
@@ -570,7 +586,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			var arrowImage = folderHeader.GetOrNull<ImageWidget>("ICON");
 
 			// Set folder name
-			label.GetText = () => $"{node.Name}";
+			label.GetText = () => TranslateEncyclopediaCategoryPath(node.FullPath);
 			label.Bounds.X = 24 + displayDepth * 15;
 
 			// Update arrow direction based on expanded state
@@ -774,9 +790,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (encyclopediaExtrasInfo != null && !string.IsNullOrEmpty(encyclopediaExtrasInfo.Subfaction) && subfactionLabel != null)
 			{
 				subfaction = factions[encyclopediaExtrasInfo.Subfaction];
-				subfactionText = $"{FluentProvider.GetMessage(subfaction.Name)} only.";
-
-				// var subfactionText = FluentProvider.GetMessage(SubfactionOnly, "factionName", FluentProvider.GetMessage(subfaction.Name));
+				subfactionText = Game.Translate(SubfactionExclusive, "faction", Game.Translate(subfaction.Name));
 				subfactionHeight = descriptionFont.Measure(subfactionText).Y;
 			}
 
@@ -828,7 +842,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (encyclopediaExtrasInfo != null && !string.IsNullOrEmpty(encyclopediaExtrasInfo.AdditionalInfo) && additionalInfoLabel != null)
 			{
 				additionalInfoText = WidgetUtilsCA.WrapTextWithIndent(
-					encyclopediaExtrasInfo.AdditionalInfo.Replace("\\n", "\n"),
+					Game.Translate(encyclopediaExtrasInfo.AdditionalInfo).Replace("\\n", "\n"),
 					additionalInfoLabel.Bounds.Width,
 					descriptionFont);
 				additionalInfoHeight = descriptionFont.Measure(additionalInfoText).Y;
@@ -1168,7 +1182,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				if (prereqs.Count != 0)
 				{
 					prerequisitesText = WidgetUtilsCA.WrapTextWithIndent(
-						FluentProvider.GetMessage(Requires, "prerequisites", prereqs.JoinWith(", ")),
+						Game.Translate(Requires, "prerequisites", prereqs.JoinWith(", ")),
 						descriptionLabel.Bounds.Width,
 						descriptionFont);
 				}
@@ -1176,7 +1190,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				if (!string.IsNullOrEmpty(bi.Description))
 				{
 					descriptionText = WidgetUtilsCA.WrapTextWithIndent(
-						FluentProvider.GetMessage(bi.Description.Replace("\\n", "\n")),
+						Game.Translate(bi.Description).Replace("\\n", "\n"),
 						descriptionLabel.Bounds.Width,
 						descriptionFont);
 				}
@@ -1189,7 +1203,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				if (tooltipExtras != null && !string.IsNullOrEmpty(tooltipExtras.Description))
 				{
 					descriptionText = WidgetUtilsCA.WrapTextWithIndent(
-						FluentProvider.GetMessage(tooltipExtras.Description.Replace("\\n", "\n")),
+						Game.Translate(tooltipExtras.Description.Replace("\\n", "\n")),
 						descriptionLabel.Bounds.Width,
 						descriptionFont);
 				}
@@ -1199,7 +1213,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					if (!encyclopediaExtrasInfo.Description.Contains("[["))
 					{
 						descriptionText = WidgetUtilsCA.WrapTextWithIndent(
-							FluentProvider.GetMessage(encyclopediaExtrasInfo.Description.Replace("\\n", "\n")),
+							Game.Translate(encyclopediaExtrasInfo.Description.Replace("\\n", "\n")),
 							descriptionLabel.Bounds.Width,
 							descriptionFont);
 					}
@@ -1235,9 +1249,15 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			if (tooltipExtras != null)
 			{
-				strengthsText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Strengths.Replace("\\n", "\n"), strengthsLabel.Bounds.Width, descriptionFont, 6);
-				weaknessesText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Weaknesses.Replace("\\n", "\n"), weaknessesLabel.Bounds.Width, descriptionFont, 6);
-				attributesText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Attributes.Replace("\\n", "\n"), attributesLabel.Bounds.Width, descriptionFont, 6);
+				strengthsText = string.IsNullOrEmpty(tooltipExtras.Strengths)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Strengths).Replace("\\n", "\n"), strengthsLabel.Bounds.Width, descriptionFont, 6);
+				weaknessesText = string.IsNullOrEmpty(tooltipExtras.Weaknesses)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Weaknesses).Replace("\\n", "\n"), weaknessesLabel.Bounds.Width, descriptionFont, 6);
+				attributesText = string.IsNullOrEmpty(tooltipExtras.Attributes)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Attributes).Replace("\\n", "\n"), attributesLabel.Bounds.Width, descriptionFont, 6);
 			}
 
 			if (!string.IsNullOrEmpty(strengthsText) && strengthsLabel != null)
@@ -1275,7 +1295,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 				// First check EncyclopediaInfo.Description
 				if (selectedInfo != null && !string.IsNullOrEmpty(selectedInfo.Description))
-					encyclopediaText = WidgetUtils.WrapText(FluentProvider.GetMessage(selectedInfo.Description), descriptionLabel.Bounds.Width, descriptionFont);
+					encyclopediaText = WidgetUtils.WrapText(Game.Translate(selectedInfo.Description), descriptionLabel.Bounds.Width, descriptionFont);
 
 				// Also check EncyclopediaExtrasInfo.Description for text with [[...]] links
 				if (string.IsNullOrEmpty(encyclopediaText) && encyclopediaExtrasInfo != null
@@ -1283,7 +1303,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					&& encyclopediaExtrasInfo.Description.Contains("[["))
 				{
 					encyclopediaText = WidgetUtilsCA.WrapTextWithIndent(
-						FluentProvider.GetMessage(encyclopediaExtrasInfo.Description.Replace("\\n", "\n")),
+						Game.Translate(encyclopediaExtrasInfo.Description.Replace("\\n", "\n")),
 						descriptionLabel.Bounds.Width,
 						descriptionFont);
 				}
@@ -1349,7 +1369,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			{
 				var actorTooltip = actor.TraitInfos<TooltipInfo>().FirstOrDefault(info => info.EnabledByDefault);
 				if (actorTooltip != null)
-					return FluentProvider.GetMessage(actorTooltip.Name).Replace("Research: ", "").Replace("Upgrade: ", "");
+					return Game.Translate(actorTooltip.Name).Replace("Research: ", "").Replace("Upgrade: ", "");
 			}
 
 			return name;
@@ -1527,12 +1547,13 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			foreach (var category in topLevelCategories)
 			{
 				var tabButton = (ButtonWidget)tabTemplate.Clone();
+				tabButton.Id = category.FullPath;
 				tabButton.Bounds.X = tabX;
 				tabButton.Bounds.Width = tabWidth;
 				tabButton.IsHighlighted = () => selectedTopLevelCategory == category.FullPath;
 				tabButton.OnClick = () => SelectTopLevelCategory(category.FullPath);
 				tabButton.IsVisible = () => true;
-				tabButton.GetText = () => category.Name;
+				tabButton.GetText = () => TranslateEncyclopediaCategoryPath(category.FullPath);
 
 				// Get the flag image widget
 				var flagImage = tabButton.GetOrNull<ImageWidget>("TAB_FLAG");
@@ -1543,9 +1564,9 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					tabButton.GetText = () => "";
 
 					var tabLabel = tabButton.GetOrNull<LabelWidget>("TAB_LABEL");
-					tabLabel.GetText = () => category.Name;
+					tabLabel.GetText = () => TranslateEncyclopediaCategoryPath(category.FullPath);
 
-					var textWidth = font.Measure(category.Name).X;
+					var textWidth = font.Measure(TranslateEncyclopediaCategoryPath(category.FullPath)).X;
 					var flagWidth = 30; // Width of flag as defined in YAML
 					var gap = 7; // Small gap between flag and text
 
@@ -1671,14 +1692,14 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			var extras = actor.TraitInfoOrDefault<EncyclopediaExtrasInfo>();
 			if (extras != null && !string.IsNullOrEmpty(extras.Name))
 			{
-				return FluentProvider.GetMessage(extras.Name);
+				return Game.Translate(extras.Name);
 			}
 
 			// Fall back to TooltipInfo
 			var name = actor.TraitInfos<TooltipInfo>().FirstOrDefault(info => info.EnabledByDefault)?.Name;
 			if (!string.IsNullOrEmpty(name))
 			{
-				return FluentProvider.GetMessage(name).Replace("Upgrade: ", "").Replace("Research: ", "");
+				return Game.Translate(name).Replace("Upgrade: ", "").Replace("Research: ", "");
 			}
 
 			return "";

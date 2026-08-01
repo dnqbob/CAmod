@@ -326,5 +326,6 @@
 	"Chrome-Dialog-DeleteAllSaves-Confirm": "Delete All",
 	"Chrome-Dialog-RenameSave-Title": "Rename Save",
 	"Chrome-Dialog-RenameSave-Prompt": "Enter a new file name:",
-	"Chrome-Dialog-RenameSave-Confirm": "Rename"
+	"Chrome-Dialog-RenameSave-Confirm": "Rename",
+	"Game-GameInfoLogicCA-NextMission": "Next Mission"
 }

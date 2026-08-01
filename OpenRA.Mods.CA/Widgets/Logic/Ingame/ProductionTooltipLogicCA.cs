@@ -21,8 +21,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	public class ProductionTooltipLogicCA : ChromeLogic
 	{
-		[FluentReference("prequisites")]
-		const string Requires = "label-requires";
+		const string Requires = "Chrome-ProductionTooltip-Requires";
 
 		[ObjectCreator.UseCtor]
 		public ProductionTooltipLogicCA(Widget widget, TooltipContainerWidget tooltipContainer, Player player, Func<ProductionIcon> getTooltipIcon)
@@ -78,7 +77,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					return;
 
 				var tooltip = actor.TraitInfos<TooltipInfo>().FirstOrDefault(info => info.EnabledByDefault);
-				var name = tooltip != null ? FluentProvider.GetMessage(tooltip.Name) : actor.Name;
+				var name = tooltip != null ? Game.Translate(tooltip.Name) : actor.Name;
 				var buildable = actor.TraitInfo<BuildableInfo>();
 
 				var cost = 0;
@@ -116,7 +115,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				var requiresSize = int2.Zero;
 				if (prereqs.Count > 0)
 				{
-					var requiresText = FluentProvider.GetMessage(Requires, "prerequisites", prereqs.JoinWith(", "));
+					var requiresText = Game.Translate(Requires, "prerequisites", prereqs.JoinWith(", "));
 					requiresLabel.GetText = () => requiresText;
 					requiresSize = requiresFont.Measure(requiresText);
 					requiresLabel.Visible = true;
@@ -170,7 +169,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 				var extrasSpacing = descLabel.Bounds.X / 2;
 
-				var desc = string.IsNullOrEmpty(buildable.Description) ? "" : FluentProvider.GetMessage(buildable.Description);
+				var desc = string.IsNullOrEmpty(buildable.Description) ? "" : Game.Translate(buildable.Description);
 				desc = WidgetUtilsCA.WrapTextWithIndent(desc.Replace("\\n", "\n"), maxLeftWidth, descFont);
 				descLabel.GetText = () => desc;
 
@@ -186,9 +185,15 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 				if (tooltipExtras != null)
 				{
-					strengthsLabelText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Strengths.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
-					weaknessesLabelText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Weaknesses.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
-					attributesLabelText = WidgetUtilsCA.WrapTextWithIndent(tooltipExtras.Attributes.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+					strengthsLabelText = string.IsNullOrEmpty(tooltipExtras.Strengths)
+						? ""
+						: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Strengths).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+					weaknessesLabelText = string.IsNullOrEmpty(tooltipExtras.Weaknesses)
+						? ""
+						: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Weaknesses).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+					attributesLabelText = string.IsNullOrEmpty(tooltipExtras.Attributes)
+						? ""
+						: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtras.Attributes).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
 				}
 
 				strengthsLabel.GetText = () => strengthsLabelText;
@@ -232,7 +237,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			{
 				var actorTooltip = ai.TraitInfos<TooltipInfo>().FirstOrDefault(info => info.EnabledByDefault);
 				if (actorTooltip != null)
-					return FluentProvider.GetMessage(actorTooltip.Name);
+					return Game.Translate(actorTooltip.Name);
 			}
 
 			return a;

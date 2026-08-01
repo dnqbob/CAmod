@@ -10,6 +10,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
@@ -26,11 +27,11 @@ namespace OpenRA.Mods.CA.Traits
 		[Desc("The prerequisite type that this provides.")]
 		public readonly string Prerequisite = null;
 
-		[Desc("Label to display over the support power icon and in its tooltip while the power is active.")]
-		public readonly string ActiveText = "ACTIVE";
+		[Desc("Translation key or literal label over the support power icon and tooltip while the power is active.")]
+		public readonly string ActiveText = "Game-SupportPowerChargeDrain-Active";
 
-		[Desc("Label to display over the support power icon and in its tooltip while the power is available but not active.")]
-		public readonly string AvailableText = "READY";
+		[Desc("Translation key or literal label over the support power icon and tooltip while available but not active.")]
+		public readonly string AvailableText = "Game-ObserverOverlay-Ready";
 
 		[Desc("If deactivating the power prior to full discharge, discharge by this additional amount to prevent frequent activation/deactivation with no penalty.")]
 		public readonly int EarlyDeactivationPenalty = 0;
@@ -204,7 +205,7 @@ namespace OpenRA.Mods.CA.Traits
 				if (!Active || Info is not GrantPrerequisiteChargeDrainPowerCAInfo info)
 					return null;
 
-				return active ? info.ActiveText : available ? info.AvailableText : null;
+				return active ? Game.Translate(info.ActiveText) : available ? Game.Translate(info.AvailableText) : null;
 			}
 		}
 	}

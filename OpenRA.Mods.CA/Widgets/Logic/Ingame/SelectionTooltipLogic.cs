@@ -11,6 +11,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA;
 using OpenRA.Mods.CA.Traits;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Widgets;
@@ -120,7 +121,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			}
 
 			// Name
-			var name = tooltipInfo != null ? tooltipInfo.Name : char.ToUpper(actorInfo.Name[0]) + actorInfo.Name[1..];
+			var name = tooltipInfo != null ? Game.Translate(tooltipInfo.Name) : char.ToUpper(actorInfo.Name[0]) + actorInfo.Name[1..];
 
 			if (numSelectedActors > 1)
 				name = numSelectedActors.ToString() + "x " + name;
@@ -153,7 +154,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			if (buildable != null && buildable.Description != null)
 			{
-				descText = WidgetUtilsCA.WrapTextWithIndent(buildable.Description.Replace("\\n", "\n"), maxLeftWidth, descFont);
+				descText = WidgetUtilsCA.WrapTextWithIndent(Game.Translate(buildable.Description).Replace("\\n", "\n"), maxLeftWidth, descFont);
 			}
 
 			var descSize = descText != "" ? descFont.Measure(descText) : new int2(0, 0);
@@ -164,10 +165,18 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			// Strengths, weaknesses & attributes
 			if (tooltipExtrasInfo != null)
 			{
-				strengthsLabel.Text = WidgetUtilsCA.WrapTextWithIndent(tooltipExtrasInfo.Strengths.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
-				weaknessesLabel.Text = WidgetUtilsCA.WrapTextWithIndent(tooltipExtrasInfo.Weaknesses.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
-				attributesLabel.Text = WidgetUtilsCA.WrapTextWithIndent(tooltipExtrasInfo.Attributes.Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
-				descText = tooltipExtrasInfo.Description != "" ? WidgetUtilsCA.WrapTextWithIndent(tooltipExtrasInfo.Description.Replace("\\n", "\n"), maxLeftWidth, descFont, 6) : descText;
+				strengthsLabel.Text = string.IsNullOrEmpty(tooltipExtrasInfo.Strengths)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtrasInfo.Strengths).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+				weaknessesLabel.Text = string.IsNullOrEmpty(tooltipExtrasInfo.Weaknesses)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtrasInfo.Weaknesses).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+				attributesLabel.Text = string.IsNullOrEmpty(tooltipExtrasInfo.Attributes)
+					? ""
+					: WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtrasInfo.Attributes).Replace("\\n", "\n"), maxLeftWidth, descFont, 6);
+				descText = tooltipExtrasInfo.Description != ""
+					? WidgetUtilsCA.WrapTextWithIndent(Game.Translate(tooltipExtrasInfo.Description).Replace("\\n", "\n"), maxLeftWidth, descFont, 6)
+					: descText;
 			}
 			else
 			{
@@ -214,41 +223,53 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		public static LabelWidget GetArmorTypeLabel(LabelWidget armorTypeLabel, ActorInfo actor)
 		{
 			var armor = actor.TraitInfos<ArmorInfo>().FirstOrDefault();
-			armorTypeLabel.Text = armor != null ? armor.Type : "";
+			if (armor == null)
+			{
+				armorTypeLabel.Text = "";
+				return armorTypeLabel;
+			}
 
-			// Hard coded, specific to CA - find a better way to set user-friendly names and colors for armor types
-			switch (armorTypeLabel.Text)
+			// Armor.Type is rules data; display labels and colors are CA-specific (see Game-CA-ArmorType-* in mod languages).
+			switch (armor.Type)
 			{
 				case "None":
-					armorTypeLabel.Text = "Infantry";
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Infantry");
 					armorTypeLabel.TextColor = Color.ForestGreen;
 					break;
 
 				case "Light":
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Light");
 					armorTypeLabel.TextColor = Color.MediumPurple;
 					break;
 
 				case "Heavy":
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Heavy");
 					armorTypeLabel.TextColor = Color.Firebrick;
 					break;
 
 				case "Concrete":
-					armorTypeLabel.Text = "Defense";
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Defense");
 					armorTypeLabel.TextColor = Color.RoyalBlue;
 					break;
 
 				case "Wood":
-					armorTypeLabel.Text = "Building";
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Building");
 					armorTypeLabel.TextColor = Color.Peru;
 					break;
 
 				case "Brick":
-					armorTypeLabel.Text = "Wall";
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Wall");
 					armorTypeLabel.TextColor = Color.RosyBrown;
 					break;
 
 				case "Aircraft":
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Aircraft");
 					armorTypeLabel.TextColor = Color.SkyBlue;
+					break;
+
+				case "Tree":
+					armorTypeLabel.Text = Game.Translate("Game-CA-ArmorType-Tree");
+					armorTypeLabel.TextColor = Color.Peru;
 					break;
 
 				default:

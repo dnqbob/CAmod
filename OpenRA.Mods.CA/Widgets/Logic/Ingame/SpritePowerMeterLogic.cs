@@ -9,14 +9,19 @@
 #endregion
 
 using System;
+using System.Globalization;
 using OpenRA.Mods.CA.Widgets;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Primitives;
 using OpenRA.Widgets;
 
 namespace OpenRA.Mods.Common.Widgets.Logic
 {
 	public class SpritePowerMeterLogic : ChromeLogic
 	{
+		const string PowerUsage = "Game-IngamePowerCounterLogic-Usage";
+		const string Infinite = "Game-IngamePowerCounterLogic-Infinite";
+
 		readonly PowerManager powerManager;
 		readonly SpritePowerMeterWidget powerMeter;
 
@@ -26,8 +31,22 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 			powerManager = world.LocalPlayer.PlayerActor.Trait<PowerManager>();
 			powerMeter = widget.Get<SpritePowerMeterWidget>("POWER_BAR");
 
-			powerMeter.GetTooltipText = () => "Power Usage: " + powerManager.PowerDrained.ToString() +
-				(powerManager.PowerProvided != 1000000 ? "/" + powerManager.PowerProvided.ToString() : "");
+			var tooltipTextCached = new CachedTransform<(int Usage, int? Capacity), string>(args =>
+			{
+				var capacity = args.Capacity == null
+					? Game.Translate(Infinite)
+					: args.Capacity.Value.ToString(NumberFormatInfo.CurrentInfo);
+
+				return Game.Translate(PowerUsage,
+					"usage", args.Usage.ToString(NumberFormatInfo.CurrentInfo),
+					"capacity", capacity);
+			});
+
+			powerMeter.GetTooltipText = () =>
+			{
+				var capacity = powerManager.PowerProvided == 1000000 ? (int?)null : powerManager.PowerProvided;
+				return tooltipTextCached.Update((powerManager.PowerDrained, capacity));
+			};
 		}
 
 		void CheckFlash()

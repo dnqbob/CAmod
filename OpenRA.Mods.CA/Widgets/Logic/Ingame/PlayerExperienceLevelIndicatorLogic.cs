@@ -18,14 +18,11 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 {
 	class PlayerExperienceLevelIndicatorLogic : ChromeLogic
 	{
-		[FluentReference("level")]
-		const string PlayerLevel = "label-player-level";
+		const string PlayerLevel = "Game-PlayerExperience-LevelTooltip";
 
-		[FluentReference("currentXp")]
-		const string PlayerLevelCurrentXp = "label-player-level-current-xp";
+		const string PlayerLevelCurrentXp = "Game-PlayerExperience-CurrentXpLine";
 
-		[FluentReference("nextLevelXp")]
-		const string PlayerLevelRequiredXp = "label-player-level-required-xp";
+		const string PlayerLevelRequiredXp = "Game-PlayerExperience-NextRankXpLine";
 
 		const string DisabledImage = "disabled";
 
@@ -53,7 +50,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			{
 				rankImage.GetImageName = () => DisabledImage;
 				rankImage.IsVisible = () => true;
-				rankImage.GetTooltipText = () => FluentProvider.GetMessage(PlayerLevel, "level", "N/A");
+				rankImage.GetTooltipText = () => Game.Translate(PlayerLevel, "level", "N/A");
 
 				rankImageGlow.GetImageName = () => DisabledImage;
 				rankImageGlow.IsVisible = () => false;
@@ -81,18 +78,18 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			var tooltipTextCached = new CachedTransform<int?, string>((CurrentXp) =>
 			{
-				var tooltip = FluentProvider.GetMessage(
+				var tooltip = Game.Translate(
 					PlayerLevel,
 					"level", playerExperienceLevels.CurrentLevel);
 
 				if (playerExperienceLevels.XpRequiredForNextLevel != null) {
 					tooltip = tooltip
 					+ "\n\n"
-					+ FluentProvider.GetMessage(
+					+ Game.Translate(
 					PlayerLevelCurrentXp,
 					"currentXp", CurrentXp)
 					+ "\n"
-					+ FluentProvider.GetMessage(
+					+ Game.Translate(
 					PlayerLevelRequiredXp,
 					"nextLevelXp", playerExperienceLevels.XpRequiredForNextLevel);
 				}

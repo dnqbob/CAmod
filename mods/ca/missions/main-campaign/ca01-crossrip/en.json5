@@ -1,0 +1,15 @@
+{
+  "Lua-crossrip-establish-base": "Establish a base.",
+  "Lua-crossrip-investigate-area": "Investigate the area.",
+  "Lua-crossrip-capture-chronosphere": "Capture or destroy the Soviet Chronosphere.",
+  "Lua-crossrip-defend-evacuation": "Defend your base until evacuation is prepared.",
+  "Lua-crossrip-evacuation-begins": "Evacuation begins in {0}",
+  "Lua-crossrip-evacuation-underway": "Evacuation underway.",
+  "Lua-crossrip-signal-flare": "Signal flare detected. Press {0} to view location.",
+  "Lua-crossrip-chronosphere-discovered": "Commander, the Soviets have been attempting to reverse engineer stolen Chronosphere technology! Use whatever means necessary to cease their experiments.",
+  "Lua-crossrip-hostile-forces": "Unidentified hostile forces detected. Fall back to your base, and prepare for evacuation.",
+  "Lua-crossrip-tip-chat": "Press {0} to open the chat panel to read previous notification messages.",
+  "Lua-crossrip-tip-barracks": "Build a barracks for access to static defenses which should allow you to hold off any early attacks. Use Pillboxes against infantry and Turrets against vehicles.",
+  "Lua-crossrip-tip-mechanics": "Mechanics can repair your vehicles in the field. Putting a Mechanic inside an IFV turns it into a repair vehicle. Build a Supply Depot for access to Mechanics.",
+  "Lua-crossrip-tip-prism": "Prism Tanks are excellent long range support units that are effective against infantry, defenses and light vehicles. Build a Radar Dome for access to Prism Tanks."
+}

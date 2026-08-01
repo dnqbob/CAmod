@@ -1,0 +1,38 @@
+# UI fonts when the active language is Chinese (edit Font: paths independently from en.yaml).
+Fonts:
+    Tiny:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 12
+        Ascender: 12
+    TinyBold:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 12
+        Ascender: 12
+    Small:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 12
+        Ascender: 12
+    Regular:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 14
+        Ascender: 12
+    Bold:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 14
+        Ascender: 12
+    Medium:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 16
+        Ascender: 14
+    MediumBold:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 18
+        Ascender: 14
+    BigBold:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 22
+        Ascender: 14
+    Title:
+        Font: ca|JudouSansUiHans-Regular.ttf
+        Size: 32
+        Ascender: 26

@@ -1,0 +1,13 @@
+{
+  "Lua-duality-commando-must-survive": "Commando must survive.",
+  "Lua-duality-commando-respawns-in": "Commando respawns in 20 seconds.",
+  "Lua-duality-destroy-all-scrin": "Destroy all Scrin Tiberium stores.",
+  "Lua-duality-exit-the-facility": "Exit the facility.",
+  "Lua-duality-find-tanya-and": "Find Tanya and exit the facility.",
+  "Lua-duality-find-tanya": "Find Tanya.",
+  "Lua-duality-signal-flare-detected": "Signal flare detected.",
+  "Lua-duality-tanya-must-survive": "Tanya must survive.",
+  "Lua-duality-tanya-respawns-in": "Tanya respawns in 20 seconds.",
+  "Lua-duality-tiberium-stores-remaining": "Tiberium stores remaining: ",
+  "Lua-duality-were-tracking-a": "We're tracking a powerful Scrin unit. Do not engage!","Lua-duality-commando-survive": "Keep Commando alive.","Lua-duality-tanya-survive": "Keep Tanya alive."
+}

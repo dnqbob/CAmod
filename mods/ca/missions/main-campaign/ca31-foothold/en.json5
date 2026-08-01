@@ -1,0 +1,13 @@
+{
+  "Lua-foothold-capture-scrin-nerve": "Capture Scrin Nerve Center.",
+  "Lua-foothold-dangerous-tiberiumbased-lifeforms": "Dangerous Tiberium-based lifeforms detected. Recommend keeping your units at a safe distance.",
+  "Lua-foothold-deploy-sensor-arrays": "Deploy Sensor Arrays at target locations.",
+  "Lua-foothold-destroy-the-scrin": "Destroy the Scrin base.",
+  "Lua-foothold-do-not-allow": "Do not allow the Nerve Center to be destroyed, the gateway must remain stable.",
+  "Lua-foothold-interstellar-gateway-stabilized": "Interstellar gateway stabilized.",
+  "Lua-foothold-nerve-center-located": "Nerve Center located.",
+  "Lua-foothold-protect-the-captured": "Protect the captured Nerve Center.",
+  "Lua-foothold-reinforcements-have-arrived": "Reinforcements have arrived.",
+  "Lua-foothold-sensor-arrays-deployed": "Sensor arrays deployed: ",
+  "Lua-foothold-the-nerve-center": "The Nerve Center is well protected by Storm Columns. Sensors have detected Scrin reactors to the south-east which are powering these defenses."
+}

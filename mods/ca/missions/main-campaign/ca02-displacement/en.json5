@@ -1,0 +1,13 @@
+{
+  "Lua-displacement-clear-path": "Clear a path for inbound convoys.",
+  "Lua-displacement-protect-convoys-no-loss": "Do not lose any convoy trucks.",
+  "Lua-displacement-protect-convoys-limit": "Do not lose more than {0} convoy trucks.",
+  "Lua-displacement-tip-resources": "Resources in the vicinity are limited. Explore to find additional sources of income.",
+  "Lua-displacement-convoy-all-survive": "Protect the convoy. All trucks must survive.",
+  "Lua-displacement-convoy-no-more": "Protect the convoy. No more trucks can be lost.",
+  "Lua-displacement-convoy-losses": "Protect the convoy. Acceptable losses: {0} / {1}",
+  "Lua-displacement-next-convoy": "Next convoy arrives in {0}",
+  "Lua-displacement-convoy-approaching": "Convoy approaching.",
+  "Lua-displacement-awaiting-convoy": "Awaiting next convoy.",
+  "Lua-displacement-destroy-scrin": "Destroy the alien stronghold."
+}

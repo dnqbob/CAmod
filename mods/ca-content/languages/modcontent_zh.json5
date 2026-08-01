@@ -1,0 +1,15 @@
+{
+	"Game-ModContent-InstallPrompt": "联合武装需要原版《命令与征服》/《红色警戒》系列游戏中的图像与音频资源。\n\n快速安装会从 2008 年 EA 免费发布的 RA/C&C 镜像中自动下载基础内容（不含音乐与视频）。\n\n高级安装可安装音乐等额外内容，可能需要原版安装介质或数字版。\n\n你也可以稍后在主菜单中继续安装这些内容。",
+	"Game-ModContent-ManagePanel-Header": "游戏资源可从原版光盘或已有数字版安装中提取。OpenRA 也可从 2008 年 RA 免费发布镜像在线下载基础文件。",
+	"Game-ModContent-Package-Basefiles": "基础游戏文件",
+	"Game-ModContent-Package-Aftermathfiles": "余波资料片文件",
+	"Game-ModContent-Package-Deserttileset": "泰伯利亚黎明沙漠地形",
+	"Game-ModContent-Package-MusicCnc": "泰伯利亚黎明音乐",
+	"Game-ModContent-Package-MusicRa": "红色警戒音乐",
+	"Game-ModContent-Package-MusicCounterstrike": "反击音乐",
+	"Game-ModContent-Package-MusicAftermath": "余波音乐",
+	"Game-ModContent-Package-MusicTs": "泰伯利亚之日音乐",
+	"Game-ModContent-Package-MusicFs": "火线风暴音乐",
+	"Game-ModContent-Package-MusicRa2": "红色警戒 2 音乐",
+	"Game-ModContent-Package-MusicYr": "尤里的复仇音乐"
+}

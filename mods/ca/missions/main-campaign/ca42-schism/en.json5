@@ -1,0 +1,10 @@
+{
+  "Lua-schism-defend-the-purification": "Defend the purification device.",
+  "Lua-schism-impossible-these-scrin": "Impossible! These Scrin are not..  Do not allow the device to be destroyed!",
+  "Lua-schism-purifier-teleportation-in": "Purifier teleportation in {0}",
+  "Lua-schism-reinforcements-have-arrived": "Reinforcements have arrived.",
+  "Lua-schism-stop-this-madness": "Stop this madness. You have no idea what you are dealing with. You will be the end of us all!",
+  "Lua-schism-the-iron-curtain": "The Iron Curtain must be intact and powered to shield the Exterminator Tripod from purification waves.",
+  "Lua-schism-use-the-exterminator": "Use the Exterminator Tripod to secure\\nthe purification device.",
+  "Lua-schism-your-foolish-quest": "Your foolish quest ends here Kane. The Overlord will have your head.","Lua-schism-purification-wave": "Purification wave in {0}","Lua-schism-purification-wave-ic-failure": "Purification wave in {0} -- Iron Curtain integrity failure in {1}","Lua-schism-purification-wave-ic-destroyed": "Purification wave in {0} -- Iron Curtain destroyed"
+}

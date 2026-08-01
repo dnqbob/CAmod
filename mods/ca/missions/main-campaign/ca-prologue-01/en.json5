@@ -1,0 +1,17 @@
+{
+  "Lua-prologue-01-find-einstein": "Find Einstein.",
+  "Lua-prologue-01-tanya-survive": "Tanya must survive.",
+  "Lua-prologue-01-einstein-survive": "Einstein must survive.",
+  "Lua-prologue-01-destroy-sub-pen": "Destroy the Soviet Sub Pen.",
+  "Lua-prologue-01-extract-einstein": "Bring Einstein to the extraction point and board\nthe transport helicopter.",
+  "Lua-prologue-01-cruisers-arrived": "Allied cruisers have arrived.",
+  "Lua-prologue-01-unidentified-units": "Unidentified Allied units detected.",
+  "Lua-prologue-01-tip-info-panel": "Information is displayed in the bottom right of the screen if any single unit or structure is selected, listing its strengths and weaknesses (as long as Selected Unit Tooltip is enabled in settings).",
+  "Lua-prologue-01-encountering-naval": "Encountering Soviet naval presence! We're under heavy fire!",
+  "Lua-prologue-01-impossible-waters": "This is impossible! These waters were cleared!",
+  "Lua-prologue-01-temporal-disturbance": "Another temporal disturbance.. Well, we can work this out later. For now, we are at your disposal commander.",
+  "Notification-Mission": "Notification",
+  "Notification-Tip": "Tip",
+  "Lua-prologue-01-speaker-cruiser-captain": "Cruiser Captain",
+  "Lua-prologue-01-speaker-unknown": "Unknown"
+}

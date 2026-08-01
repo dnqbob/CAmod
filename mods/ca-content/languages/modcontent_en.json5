@@ -1,0 +1,15 @@
+{
+	"Game-ModContent-InstallPrompt": "Combined Arms requires artwork and audio from the original games.\n\nQuick Install will automatically download this content (without music nor videos) from a mirror of the 2008 Command & Conquer/Red Alert freeware release.\n\nAdvanced Install allows you to install music and other content, which may require original game installations or discs.\n\nYou can also install this additional content later via the main menu.",
+	"Game-ModContent-ManagePanel-Header": "Game content may be extracted from the original game discs or an existing digital install. OpenRA can also download the base game files from an online mirror of the 2008 freeware release of RA.",
+	"Game-ModContent-Package-Basefiles": "Base Game Files",
+	"Game-ModContent-Package-Aftermathfiles": "Aftermath Expansion Files",
+	"Game-ModContent-Package-Deserttileset": "C&C Desert Tileset",
+	"Game-ModContent-Package-MusicCnc": "Tiberian Dawn Music",
+	"Game-ModContent-Package-MusicRa": "Red Alert Music",
+	"Game-ModContent-Package-MusicCounterstrike": "Counterstrike Music",
+	"Game-ModContent-Package-MusicAftermath": "Aftermath Music",
+	"Game-ModContent-Package-MusicTs": "Tiberian Sun Music",
+	"Game-ModContent-Package-MusicFs": "Firestorm Music",
+	"Game-ModContent-Package-MusicRa2": "Red Alert 2 Music",
+	"Game-ModContent-Package-MusicYr": "Yuri's Revenge Music"
+}

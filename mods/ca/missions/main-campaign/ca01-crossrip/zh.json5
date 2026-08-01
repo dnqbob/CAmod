@@ -1,0 +1,15 @@
+{
+  "Lua-crossrip-establish-base": "建立基地。",
+  "Lua-crossrip-investigate-area": "调查该区域。",
+  "Lua-crossrip-capture-chronosphere": "占领或摧毁苏军超时空传送仪。",
+  "Lua-crossrip-defend-evacuation": "坚守基地直到撤离准备就绪。",
+  "Lua-crossrip-evacuation-begins": "撤离倒计时：{0}",
+  "Lua-crossrip-evacuation-underway": "撤离进行中。",
+  "Lua-crossrip-signal-flare": "侦测到信号弹。按 {0} 查看位置。",
+  "Lua-crossrip-chronosphere-discovered": "指挥官，苏军一直在试图对窃取的超时空传送仪技术进行逆向工程！不惜一切代价阻止他们的实验。",
+  "Lua-crossrip-hostile-forces": "侦测到未确认的敌对势力。撤回基地，准备撤离。",
+  "Lua-crossrip-tip-chat": "按 {0} 打开聊天面板以查看之前的通知消息。",
+  "Lua-crossrip-tip-barracks": "建造兵营以解锁静态防御建筑，帮你抵御早期进攻。用机枪碉堡对抗步兵，用炮塔对抗载具。",
+  "Lua-crossrip-tip-mechanics": "工程师可以在战场上维修你的载具。将工程师装入 IFV 可将其变为维修载具。建造补给站以解锁工程师。",
+  "Lua-crossrip-tip-prism": "光棱坦克是优秀的远程支援单位，对步兵、防御建筑和轻型载具非常有效。建造雷达穹顶以解锁光棱坦克。"
+}

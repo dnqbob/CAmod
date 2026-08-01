@@ -1,0 +1,13 @@
+{
+  "Lua-displacement-clear-path": "为运入车队清理道路。",
+  "Lua-displacement-protect-convoys-no-loss": "不得损失任何车队卡车。",
+  "Lua-displacement-protect-convoys-limit": "损失不得超过 {0} 辆卡车。",
+  "Lua-displacement-tip-resources": "附近资源有限。探索地图以寻找额外的收入来源。",
+  "Lua-displacement-convoy-all-survive": "保护车队。所有卡车必须存活。",
+  "Lua-displacement-convoy-no-more": "保护车队。不能再有更多损失。",
+  "Lua-displacement-convoy-losses": "保护车队。可接受的损失：{0} / {1}",
+  "Lua-displacement-next-convoy": "下一支车队将在 {0} 后到达",
+  "Lua-displacement-convoy-approaching": "车队正在接近。",
+  "Lua-displacement-awaiting-convoy": "等待下一支车队。",
+  "Lua-displacement-destroy-scrin": "摧毁外星据点。"
+}

@@ -1,0 +1,14 @@
+{
+  "Lua-purification-await-the-purification": "Await the purification wave.",
+  "Lua-purification-bring-the-device": "Bring the device to full power.",
+  "Lua-purification-commander-we-must": "Commander, we must bring the device to full power as quickly as possible. Transporting crystals will take too long, so liquid Tiberium is our only option. We have set up a liquid T production facility. Do not let it be destroyed, and as each shipment becomes available load it into a tanker and bring it to the entrance of the cave system.",
+  "Lua-purification-eliminate-any-hostile": "Eliminate any hostile Scrin remaining.",
+  "Lua-purification-liquid-tiberium-shipment": "Liquid Tiberium shipment delivered.",
+  "Lua-purification-liquid-tiberium-shipment2": "Liquid Tiberium shipment ready.",
+  "Lua-purification-liquid-tiberium-transfer": "Liquid Tiberium transfer complete.",
+  "Lua-purification-move-a-tanker": "Move a tanker next to the processing plant to pick up a prepared shipment, then take it to the cave entrance in the north-east.",
+  "Lua-purification-no-liquid-tiberium": "No liquid Tiberium currently available for pickup.",
+  "Lua-purification-no-liquid-tiberium2": "No liquid Tiberium to drop off.",
+  "Lua-purification-protect-liquid-tiberium": "Protect liquid Tiberium processing plant.",
+  "Lua-purification-well-done-commander": "Well done commander! The device is at full power, and will soon release its purifying energy. The question is, will the Scrin fight for their freedom against the Overlord, or cower in servitude even after such heinous treachery is revealed?","Lua-purification-shipments-progress": "Shipments complete: {0}/5 -- Next shipment ready in {1}"
+}

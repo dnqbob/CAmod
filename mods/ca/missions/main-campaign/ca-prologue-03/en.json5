@@ -1,0 +1,13 @@
+{
+  "Lua-prologue-03-locate-gdi-forces": "Locate all GDI forces.",
+  "Lua-prologue-03-find-safe-exit": "Find a safe exit route.",
+  "Lua-prologue-03-tip-fog-war": "When an enemy structure is destroyed under the fog of war, it won't disappear until its location is revealed again. The explosion sound and screen shake can be used to verify its destruction.",
+  "Lua-prologue-03-gdi-forces-found": "GDI forces found.",
+  "Lua-prologue-03-thank-god": "Thank god! You found us!.",
+  "Lua-prologue-03-signal-flare": "Signal flare detected. Press {0} to view location.",
+  "Lua-prologue-03-where-are-we": "Commander what's going on, where the hell are we?!",
+  "Lua-prologue-03-pinned-down": "Come in, any GDI units, hostile troops have us pinned down.",
+  "Lua-prologue-03-hold-fire": "Hold your fire, we're GDI! Damn, we thought we'd lost the whole company! We've got a base not far from here, we'll take you there.",
+  "Lua-prologue-03-speaker-gdi-soldier": "GDI Soldier",
+  "Lua-prologue-03-speaker-radio": "Radio"
+}

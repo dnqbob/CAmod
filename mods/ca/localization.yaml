@@ -1,0 +1,24 @@
+# Merged into mod.yaml by the engine (see Manifest). Defines UI language list, JSON5 tables, optional localization packages, and fonts.
+LocalizationPackage:
+	en:
+		common|languages/en
+	zh:
+		common|languages/zh
+
+GlyphPrecache:
+	en: common|languages/en/glyph-precache.txt
+	zh: common|languages/zh/glyph-precache.txt
+
+Translations: en, zh
+	ca|languages/en.json5:
+	ca|languages/zh.json5:
+	ca|languages/actors-en.json5:
+	ca|languages/actors-zh.json5:
+	common|languages/en.json5:
+	common|languages/zh.json5:
+
+# Per-language UI font definitions (see engine: Manifest.LanguageFontPaths, Renderer language font cache).
+# Startup: loads fonts for current language and English; settings language switch preloads target set then activates.
+LanguageFonts:
+	en: ca|fonts/en.yaml
+	zh: ca|fonts/zh.yaml

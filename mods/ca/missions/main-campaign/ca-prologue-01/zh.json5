@@ -1,0 +1,17 @@
+{
+  "Lua-prologue-01-find-einstein": "找到爱因斯坦。",
+  "Lua-prologue-01-tanya-survive": "谭雅必须存活。",
+  "Lua-prologue-01-einstein-survive": "爱因斯坦必须存活。",
+  "Lua-prologue-01-destroy-sub-pen": "摧毁苏军潜艇船坞。",
+  "Lua-prologue-01-extract-einstein": "将爱因斯坦带到撤离点并登入\n运输直升机。",
+  "Lua-prologue-01-cruisers-arrived": "盟军巡洋舰已抵达。",
+  "Lua-prologue-01-unidentified-units": "侦测到未确认的盟军单位。",
+  "Lua-prologue-01-tip-info-panel": "选中任意单位或建筑时，屏幕右下角会显示其信息，列出其优势与劣势（需在设置中启用\"选中单位提示\"）。",
+  "Lua-prologue-01-encountering-naval": "遭遇苏军海军！我们正遭受猛烈攻击！",
+  "Lua-prologue-01-impossible-waters": "这不可能！这片水域明明已经清剿完毕！",
+  "Lua-prologue-01-temporal-disturbance": "又一起时间扰动……好吧，这可以稍后再议。目前，我们听候您的调遣，指挥官。",
+  "Notification-Mission": "通知",
+  "Notification-Tip": "提示",
+  "Lua-prologue-01-speaker-cruiser-captain": "巡洋舰舰长",
+  "Lua-prologue-01-speaker-unknown": "未知"
+}

@@ -1,0 +1,13 @@
+{
+  "Lua-prologue-03-locate-gdi-forces": "找到所有 GDI 部队。",
+  "Lua-prologue-03-find-safe-exit": "找到安全的撤离路线。",
+  "Lua-prologue-03-tip-fog-war": "当敌方建筑在战争迷雾中被摧毁时，其外观不会立即消失，直到该位置再次被侦查到。可以利用爆炸声和屏幕震动来确认摧毁情况。",
+  "Lua-prologue-03-gdi-forces-found": "已找到 GDI 部队。",
+  "Lua-prologue-03-thank-god": "谢天谢地！你们找到我们了！",
+  "Lua-prologue-03-signal-flare": "侦测到信号弹。按 {0} 查看位置。",
+  "Lua-prologue-03-where-are-we": "指挥官，怎么回事，我们到底在哪儿？！",
+  "Lua-prologue-03-pinned-down": "呼叫，任何 GDI 单位，敌军把我们压制住了。",
+  "Lua-prologue-03-hold-fire": "别开火，我们是 GDI！见鬼，还以为全连都报销了！我们在不远处有个基地，带你们过去。",
+  "Lua-prologue-03-speaker-gdi-soldier": "GDI 士兵",
+  "Lua-prologue-03-speaker-radio": "无线电"
+}

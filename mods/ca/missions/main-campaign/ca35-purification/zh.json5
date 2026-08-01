@@ -1,0 +1,14 @@
+{
+  "Lua-purification-await-the-purification": "等待净化波。",
+  "Lua-purification-bring-the-device": "将装置充满能量。",
+  "Lua-purification-commander-we-must": "指挥官，我们必须尽快将装置充满能量。运送晶体太慢了，液态泰伯利亚是我们唯一的选择。我们建立了一座液态 T 生产设施。不要让它被摧毁，每当一批货物准备就绪，将其装载到罐车中并运送到洞穴系统入口。",
+  "Lua-purification-eliminate-any-hostile": "消灭任何剩余的敌对思金。",
+  "Lua-purification-liquid-tiberium-shipment": "液态泰伯利亚货物已送达。",
+  "Lua-purification-liquid-tiberium-shipment2": "液态泰伯利亚货物已准备就绪。",
+  "Lua-purification-liquid-tiberium-transfer": "液态泰伯利亚转移完成。",
+  "Lua-purification-move-a-tanker": "将罐车移动到加工厂旁边取货，然后将其运送到东北方的洞穴入口。",
+  "Lua-purification-no-liquid-tiberium": "当前没有可供取货的液态泰伯利亚。",
+  "Lua-purification-no-liquid-tiberium2": "没有液态泰伯利亚可供卸货。",
+  "Lua-purification-protect-liquid-tiberium": "保护液态泰伯利亚加工厂。",
+  "Lua-purification-well-done-commander": "干得好指挥官！装置已充满能量，即将释放其净化能量。问题是，思金会为自己的自由与霸主战斗，还是在这种滔天背叛被揭露后仍龟缩在奴役之中？","Lua-purification-shipments-progress": "货物已完成：{0}/5 -- 下一批货物准备就绪：{1}"
+}

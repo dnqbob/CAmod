@@ -1,0 +1,9 @@
+{
+  "Lua-convergence-a-scrin-fleet": "一艘思金舰队舰船已突破。",
+  "Lua-convergence-allow-no-more": "最多允许 ",
+  "Lua-convergence-prevent-any-scrin": "阻止任何思金舰队舰船突破。",
+  "Lua-convergence-scrin-fleet-vessels": "思金舰队舰船正在接近。",
+  "Lua-convergence-scrin-fleet-vessels2": "思金舰队舰船进入区域时将在小地图上标记，只要你拥有活跃的雷达，其路径将可见。",
+  "Lua-convergence-scrin-fleet-vessels22": "思金舰队舰船进入区域时将在小地图上标记。",
+  "Lua-convergence-the-area-across": "河对岸区域遍布泰伯利亚生命体。你需要使用飞行器拦截试图从那里突破的思金舰队舰船。","Lua-convergence-waves-remaining": "{0} 波剩余。","Lua-convergence-waves-fleet": "{0} 波剩余 -- 舰队舰船已逃脱：{1}/{2}"
+}

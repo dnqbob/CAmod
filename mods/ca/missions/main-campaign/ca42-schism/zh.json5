@@ -1,0 +1,10 @@
+{
+  "Lua-schism-defend-the-purification": "保卫净化装置。",
+  "Lua-schism-impossible-these-scrin": "不可能！这些思金不是……不要让装置被摧毁！",
+  "Lua-schism-purifier-teleportation-in": "净化者传送倒计时：{0}",
+  "Lua-schism-reinforcements-have-arrived": "援军已抵达。",
+  "Lua-schism-stop-this-madness": "停止这种疯狂。你根本不知道你在面对什么。你会毁了我们所有人！",
+  "Lua-schism-the-iron-curtain": "铁幕装置必须完好且通电，以保护歼灭者三足机甲免受净化波的影响。",
+  "Lua-schism-use-the-exterminator": "使用歼灭者三足机甲获取净化装置。",
+  "Lua-schism-your-foolish-quest": "你的愚蠢征伐到此为止，凯恩。霸主要你的头颅。","Lua-schism-purification-wave": "净化波倒计时：{0}","Lua-schism-purification-wave-ic-failure": "净化波倒计时：{0} -- 铁幕完整性失效倒计时：{1}","Lua-schism-purification-wave-ic-destroyed": "净化波倒计时：{0} -- 铁幕装置已摧毁"
+}

@@ -1,0 +1,9 @@
+{
+  "Lua-convergence-a-scrin-fleet": "A Scrin fleet vessel has broken through.",
+  "Lua-convergence-allow-no-more": "Allow no more than ",
+  "Lua-convergence-prevent-any-scrin": "Prevent any Scrin fleet vessels breaking through.",
+  "Lua-convergence-scrin-fleet-vessels": "Scrin fleet vessels approaching.",
+  "Lua-convergence-scrin-fleet-vessels2": "Scrin fleet vessels will be pinged on the minimap when entering the area and their paths will be visible as long as you have an active radar.",
+  "Lua-convergence-scrin-fleet-vessels22": "Scrin fleet vessels will be pinged on the minimap when entering the area.",
+  "Lua-convergence-the-area-across": "The area across the river is infested with Tiberium lifeforms. You will need to use aicraft to intercept Scrin fleet vessels attempting to break through there.","Lua-convergence-waves-remaining": "{0} waves remaining.","Lua-convergence-waves-fleet": "{0} waves remaining -- Fleet vessels escaped: {1}/{2}"
+}

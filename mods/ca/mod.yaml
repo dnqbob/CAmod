@@ -89,23 +89,9 @@ LoadScreen: ImageLoadScreen
 	Image3x: ca|uibits/ca-loading-artwork-3x.png
 	Width: 1024
 	Height: 256
-	Text: Loading...
+	Text: Sys-LoadScreen-Text
 
 Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll, OpenRA.Mods.CA.dll
-
-FluentMessages:
-	common|fluent/common.ftl
-	common|fluent/chrome.ftl
-	common|fluent/hotkeys.ftl
-	common|fluent/rules.ftl
-	ca|fluent/ca.ftl
-	ca|fluent/chrome.ftl
-	ca|fluent/encyclopedia.ftl
-	ca|fluent/factions.ftl
-	ca|fluent/hotkeys.ftl
-	ca|fluent/options.ftl
-	ca|fluent/powers.ftl
-	ca|fluent/rules.ftl
 
 ServerTraits:
 	LobbyCommands
@@ -190,3 +176,4 @@ DiscordService:
 
 Include: mod.content.yaml
 Include: mod.chrome.yaml
+Include: localization.yaml

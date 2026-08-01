@@ -931,7 +931,7 @@
 		Icon: invuln
 		ChargeInterval: 4500
 		ExplosionWeapon: IronCurtain
-		Name: supportpower-ironcurtain.name
+		Name: Actor-supportpower.ironcurtain-Name
 		Condition: invulnerability
 		Range: 4c0
 		MaxTargets: 5
@@ -941,7 +941,7 @@
 		InvalidTargets: IronCurtainImmune
 		Duration: 550
 		AllowMultiple: false
-		Description: supportpower-ironcurtain.desc
+		Description: Actor-supportpower.ironcurtain-Description
 		OnFireSound: ironcur9.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.

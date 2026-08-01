@@ -186,56 +186,56 @@ Player:
 	LobbyPrerequisiteCheckbox@GLOBALBOUNTY:
 		ID: bounty
 		Label: checkbox-kill-bounties.label
-		Description: checkbox-kill-bounties.description
+		Description: Game-CA-Lobby-KillBounties-Desc
 		Enabled: True
 		DisplayOrder: 2
 		Prerequisites: global-bounty
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
 		ID: factundeploy
 		Label: checkbox-redeployable-mcvs.label
-		Description: checkbox-redeployable-mcvs.description
+		Description: Game-CA-Lobby-RedeployableMcvs-Desc
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
 	LobbyPrerequisiteCheckbox@FORCESHIELD:
 		ID: forceshield
 		Label: checkbox-force-shield.label
-		Description: checkbox-force-shield.description
+		Description: Game-CA-Lobby-ForceShield-Desc
 		Enabled: True
 		DisplayOrder: 10
 		Prerequisites: forceshield.enabled
 	LobbyPrerequisiteCheckbox@NAVY:
 		ID: navy
 		Label: checkbox-naval-units.label
-		Description: checkbox-naval-units.description
+		Description: Game-CA-Lobby-NavalUnits-Desc
 		Enabled: True
 		DisplayOrder: 13
 		Prerequisites: techlevel.navy
 	LobbyPrerequisiteCheckbox@REVEALONFIRE:
 		ID: revealonfire
 		Label: checkbox-reveal-on-fire.label
-		Description: checkbox-reveal-on-fire.description
+		Description: Game-CA-Lobby-RevealOnFire-Desc
 		Enabled: False
 		DisplayOrder: 11
 		Prerequisites: global.revealonfire
 	LobbyPrerequisiteCheckbox@BALANCEDHARVESTING:
 		ID: balancedharvesting
 		Label: checkbox-balanced-harvesting.label
-		Description: checkbox-balanced-harvesting.description
+		Description: Game-CA-Lobby-BalancedHarvesting-Desc
 		Enabled: True
 		DisplayOrder: 4
 		Prerequisites: global.balancedharvesting
 	LobbyPrerequisiteCheckbox@FASTREGROWTH:
 		ID: fastregrowth
 		Label: checkbox-fast-regrowth.label
-		Description: checkbox-fast-regrowth.description
+		Description: Game-CA-Lobby-FastRegrowth-Desc
 		Enabled: False
 		DisplayOrder: 8
 		Prerequisites: global.fastregrowth
 	LobbyPrerequisiteDropdown@QUEUETYPE:
 		ID: queuetype
 		Label: dropdown-queuetype.label
-		Description: dropdown-queuetype.description
+		Description: Game-CA-Lobby-QueueType-Desc
 		DisplayOrder: 3
 		Default: global.singlequeue
 		Values:
@@ -250,23 +250,23 @@ Player:
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
-		Name: options-tech-level.infantry-only
+		Name: Actor-Player-TechLevel_infonly-Name
 		Prerequisites: techlevel.infonly
 		Id: infantryonly
 	ProvidesTechPrerequisite@low:
-		Name: options-tech-level.low
+		Name: Actor-Player-TechLevel_low-Name
 		Prerequisites: techlevel.infonly, techlevel.low
 		Id: low
 	ProvidesTechPrerequisite@medium:
-		Name: options-tech-level.medium
+		Name: Actor-Player-TechLevel_medium-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
 	ProvidesTechPrerequisite@high:
-		Name: options-tech-level.high
+		Name: Actor-Player-TechLevel_high-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high
 		Id: high
 	ProvidesTechPrerequisite@unrestricted:
-		Name: options-tech-level.unrestricted
+		Name: Actor-Player-TechLevel_unrestricted-Name
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
 	ProvidesPrerequisite@allies:

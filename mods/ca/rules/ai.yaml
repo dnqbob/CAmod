@@ -1,21 +1,21 @@
 Player:
 	ModularBot@BrutalAI:
-		Name: bot-brutal-ai.name
+		Name: Game-Bot-BrutalAi-Name
 		Type: brutal
 	ModularBot@VeryHardAI:
-		Name: bot-vhard-ai.name
+		Name: Game-Bot-VhardAi-Name
 		Type: vhard
 	ModularBot@HardAI:
-		Name: bot-hard-ai.name
+		Name: Game-Bot-HardAi-Name
 		Type: hard
 	ModularBot@NormalAI:
-		Name: bot-normal-ai.name
+		Name: Game-Bot-NormalAi-Name
 		Type: normal
 	ModularBot@EasyAI:
-		Name: bot-easy-ai.name
+		Name: Game-Bot-EasyAi-Name
 		Type: easy
 	ModularBot@NavalAI:
-		Name: bot-naval-ai.name
+		Name: Game-Bot-NavalAi-Name
 		Type: naval
 	GrantConditionOnBotOwner@BrutalAI:
 		Condition: enable-brutal-ai

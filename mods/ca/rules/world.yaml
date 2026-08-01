@@ -254,161 +254,161 @@
 		UseExtendedIndex: true
 	TerrainLighting:
 	Faction@random:
-		Name: faction-random.name
+		Name: Game-Faction-Random-Name
 		InternalName: Random
 		RandomFactionMembers: RandomAllies, RandomSoviet, RandomGDI, RandomNOD, RandomScrin
-		Description: faction-random.description
+		Description: Game-Faction-Random-Desc
 	Faction@0:
-		Name: faction-allies.name
+		Name: Game-Faction-Allies-Name
 		InternalName: allies
 		Side: Allies
 		Selectable: False
 	Faction@1:
-		Name: faction-england.name
+		Name: Game-Faction-England-Name
 		InternalName: england
 		Side: Allies
-		Description: faction-england.description
+		Description: Game-Faction-England-Desc
 	Faction@2:
-		Name: faction-france.name
+		Name: Game-Faction-France-Name
 		InternalName: france
 		Side: Allies
-		Description: faction-france.description
+		Description: Game-Faction-France-Desc
 	Faction@3:
-		Name: faction-germany.name
+		Name: Game-Faction-Germany-Name
 		InternalName: germany
 		Side: Allies
-		Description: faction-germany.description
+		Description: Game-Faction-Germany-Desc
 	Faction@USA:
-		Name: faction-usa.name
+		Name: Game-Faction-Usa-Name
 		InternalName: usa
 		Side: Allies
-		Description: faction-usa.description
+		Description: Game-Faction-Usa-Desc
 	Faction@4:
-		Name: faction-soviet.name
+		Name: Game-Faction-Soviet-Name
 		InternalName: soviet
 		Side: Soviet
 		Selectable: False
 	Faction@5:
-		Name: faction-russia.name
+		Name: Game-Faction-Russia-Name
 		InternalName: russia
 		Side: Soviet
-		Description: faction-russia.description
+		Description: Game-Faction-Russia-Desc
 	Faction@6:
-		Name: faction-ukraine.name
+		Name: Game-Faction-Ukraine-Name
 		InternalName: ukraine
 		Side: Soviet
-		Description: faction-ukraine.description
+		Description: Game-Faction-Ukraine-Desc
 	Faction@7:
-		Name: faction-iraq.name
+		Name: Game-Faction-Iraq-Name
 		InternalName: iraq
 		Side: Soviet
-		Description: faction-iraq.description
+		Description: Game-Faction-Iraq-Desc
 	Faction@YURI:
-		Name: faction-yuri.name
+		Name: Game-Faction-Yuri-Name
 		InternalName: yuri
 		Side: Soviet
-		Description: faction-yuri.description
+		Description: Game-Faction-Yuri-Desc
 	Faction@8:
-		Name: faction-gdi.name
+		Name: Game-Faction-Gdi-Name
 		InternalName: gdi
 		Side: GDI
 		Selectable: False
 	Faction@9:
-		Name: faction-talon.name
+		Name: Game-Faction-Talon-Name
 		InternalName: talon
 		Side: GDI
-		Description: faction-talon.description
+		Description: Game-Faction-Talon-Desc
 	Faction@10:
-		Name: faction-zocom.name
+		Name: Game-Faction-Zocom-Name
 		InternalName: zocom
 		Side: GDI
-		Description: faction-zocom.description
+		Description: Game-Faction-Zocom-Desc
 	Faction@11:
-		Name: faction-eagle.name
+		Name: Game-Faction-Eagle-Name
 		InternalName: eagle
 		Side: GDI
-		Description: faction-eagle.description
+		Description: Game-Faction-Eagle-Desc
 	Faction@ARC:
-		Name: faction-arc.name
+		Name: Game-Faction-Arc-Name
 		InternalName: arc
 		Side: GDI
-		Description: faction-arc.description
+		Description: Game-Faction-Arc-Desc
 	Faction@12:
-		Name: faction-nod.name
+		Name: Game-Faction-Nod-Name
 		InternalName: nod
 		Side: Nod
 		Selectable: False
 	Faction@13:
-		Name: faction-blackh.name
+		Name: Game-Faction-Blackh-Name
 		InternalName: blackh
 		Side: Nod
-		Description: faction-blackh.description
+		Description: Game-Faction-Blackh-Desc
 	Faction@14:
-		Name: faction-marked.name
+		Name: Game-Faction-Marked-Name
 		InternalName: marked
 		Side: Nod
-		Description: faction-marked.description
+		Description: Game-Faction-Marked-Desc
 	Faction@15:
-		Name: faction-legion.name
+		Name: Game-Faction-Legion-Name
 		InternalName: legion
 		Side: Nod
-		Description: faction-legion.description
+		Description: Game-Faction-Legion-Desc
 	Faction@shadow:
-		Name: faction-shadow.name
+		Name: Game-Faction-Shadow-Name
 		InternalName: shadow
 		Side: Nod
-		Description: faction-shadow.description
+		Description: Game-Faction-Shadow-Desc
 	Faction@16:
-		Name: faction-scrin.name
+		Name: Game-Faction-Scrin-Name
 		InternalName: scrin
 		Side: Scrin
 		Selectable: False
 	Faction@17:
-		Name: faction-reaper.name
+		Name: Game-Faction-Reaper-Name
 		InternalName: reaper
 		Side: Scrin
-		Description: faction-reaper.description
+		Description: Game-Faction-Reaper-Desc
 	Faction@18:
-		Name: faction-traveler.name
+		Name: Game-Faction-Traveler-Name
 		InternalName: traveler
 		Side: Scrin
-		Description: faction-traveler.description
+		Description: Game-Faction-Traveler-Desc
 	Faction@19:
-		Name: faction-harbinger.name
+		Name: Game-Faction-Harbinger-Name
 		InternalName: harbinger
 		Side: Scrin
-		Description: faction-harbinger.description
+		Description: Game-Faction-Harbinger-Desc
 	Faction@20:
-		Name: faction-collector.name
+		Name: Game-Faction-Collector-Name
 		InternalName: collector
 		Side: Scrin
-		Description: faction-collector.description
+		Description: Game-Faction-Collector-Desc
 	Faction@randomallies:
-		Name: faction-randomallies.name
+		Name: Game-Faction-Randomallies-Name
 		InternalName: RandomAllies
 		RandomFactionMembers: england, france, germany, usa
 		Side: Random
 		Description: Game-Faction-Randomallies-Desc
 	Faction@randomsoviet:
-		Name: faction-randomsoviet.name
+		Name: Game-Faction-Randomsoviet-Name
 		InternalName: RandomSoviet
 		RandomFactionMembers: russia, ukraine, iraq, yuri
 		Side: Random
 		Description: Game-Faction-Randomsoviet-Desc
 	Faction@randomgdi:
-		Name: faction-randomgdi.name
+		Name: Game-Faction-Randomgdi-Name
 		InternalName: RandomGDI
 		RandomFactionMembers: talon, zocom, eagle, arc
 		Side: Random
-		Description: faction-randomgdi.description
+		Description: Game-Faction-Randomgdi-Desc
 	Faction@randomnod:
-		Name: faction-randomnod.name
+		Name: Game-Faction-Randomnod-Name
 		InternalName: RandomNOD
 		RandomFactionMembers: blackh, marked, legion, shadow
 		Side: Random
-		Description: faction-randomnod.description
+		Description: Game-Faction-Randomnod-Desc
 	Faction@randomscrin:
-		Name: faction-randomscrin.name
+		Name: Game-Faction-Randomscrin-Name
 		InternalName: RandomScrin
 		RandomFactionMembers: reaper, traveler, harbinger, collector
 		Side: Random
@@ -559,12 +559,12 @@ World:
 	CreateMapPlayers:
 	StartingUnits@mcvonly:
 		Class: none
-		ClassName: options-starting-units.mcv-only
+		ClassName: Actor-World-MPStartUnits_mcvonly-ClassName
 		Factions: allies, england, france, germany, usa, soviet, russia, ukraine, iraq, yuri
 		BaseActor: mcv
 	StartingUnits@lightallies:
 		Class: light
-		ClassName: options-starting-units.light-support
+		ClassName: Actor-World-MPStartUnits_lightallies-ClassName
 		Factions: allies, england, france, germany, usa
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3
@@ -572,7 +572,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@lightsoviet:
 		Class: light
-		ClassName: options-starting-units.light-support
+		ClassName: Actor-World-MPStartUnits_lightsoviet-ClassName
 		Factions: soviet, russia, ukraine, iraq, yuri
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3
@@ -580,7 +580,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavyallies:
 		Class: heavy
-		ClassName: options-starting-units.heavy-support
+		ClassName: Actor-World-MPStartUnits_heavyallies-ClassName
 		Factions: allies, england, france, germany, usa
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,e3,2tnk,2tnk
@@ -588,7 +588,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavysoviet:
 		Class: heavy
-		ClassName: options-starting-units.heavy-support
+		ClassName: Actor-World-MPStartUnits_heavysoviet-ClassName
 		Factions: soviet, russia, ukraine, iraq, yuri
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,3tnk,3tnk
@@ -596,12 +596,12 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@mcvonly2:
 		Class: none
-		ClassName: options-starting-units.mcv-only
+		ClassName: Actor-World-MPStartUnits_mcvonly-ClassName
 		Factions: gdi, talon, zocom, eagle, arc, nod, blackh, marked, legion, shadow
 		BaseActor: amcv
 	StartingUnits@defaultgdia:
 		Class: light
-		ClassName: options-starting-units.light-support
+		ClassName: Actor-World-MPStartUnits_lightallies-ClassName
 		Factions: gdi, talon, zocom, eagle, arc
 		BaseActor: amcv
 		SupportActors: n1,n1,n1,n3,n3
@@ -609,7 +609,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@defaultnoda:
 		Class: light
-		ClassName: options-starting-units.light-support
+		ClassName: Actor-World-MPStartUnits_lightsoviet-ClassName
 		Factions: nod, blackh, marked, legion, shadow
 		BaseActor: amcv
 		SupportActors: n1,n1,n1,n3,n3
@@ -617,7 +617,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavynoda:
 		Class: heavy
-		ClassName: options-starting-units.heavy-support
+		ClassName: Actor-World-MPStartUnits_heavysoviet-ClassName
 		Factions: nod, blackh, marked, legion, shadow
 		BaseActor: amcv
 		SupportActors: n1,n1,n1,n3,n3,mtnk,mtnk
@@ -625,7 +625,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavygdia:
 		Class: heavy
-		ClassName: options-starting-units.heavy-support
+		ClassName: Actor-World-MPStartUnits_heavyallies-ClassName
 		Factions: gdi, talon, zocom, eagle, arc
 		BaseActor: amcv
 		SupportActors: n1,n1,n1,n3,n3,mtnk,mtnk
@@ -633,12 +633,12 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@mcvonlyscrin:
 		Class: none
-		ClassName: options-starting-units.mcv-only
+		ClassName: Actor-World-MPStartUnits_mcvonly-ClassName
 		Factions: scrin, reaper, traveler, harbinger, collector
 		BaseActor: smcv
 	StartingUnits@lightscrin:
 		Class: light
-		ClassName: options-starting-units.light-support
+		ClassName: Actor-World-MPStartUnits_lightallies-ClassName
 		Factions: scrin, reaper, traveler, harbinger, collector
 		BaseActor: smcv
 		SupportActors: s1,s1,s1,s3,s3
@@ -646,7 +646,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavyscrin:
 		Class: heavy
-		ClassName: options-starting-units.heavy-support
+		ClassName: Actor-World-MPStartUnits_heavyallies-ClassName
 		Factions: scrin, reaper, traveler, harbinger, collector
 		BaseActor: smcv
 		SupportActors: s1,s1,s1,s3,s3,seek,gunw

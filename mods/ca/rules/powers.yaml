@@ -931,7 +931,7 @@
 		Icon: invuln
 		ChargeInterval: 4500
 		ExplosionWeapon: IronCurtain
-		Name: Actor-supportpower.ironcurtain-Name
+		Name: supportpower-ironcurtain.name
 		Condition: invulnerability
 		Range: 4c0
 		MaxTargets: 5
@@ -941,7 +941,7 @@
 		InvalidTargets: IronCurtainImmune
 		Duration: 550
 		AllowMultiple: false
-		Description: Actor-supportpower.ironcurtain-Description
+		Description: supportpower-ironcurtain.desc
 		OnFireSound: ironcur9.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -960,7 +960,6 @@
 
 ^ABombPower:
 	NukePower@ABomb:
-		OrderName: abomb
 		PauseOnCondition: disabled || empdisable || being-warped
 		Cursor: nuke
 		Icon: abomb
@@ -1240,7 +1239,7 @@
 		Icon: arscan
 		IconPalette: chrometd
 		Name: Actor-supportpower.advradarorder-Name
-		Description: Actor-supportpower.advradarorder-Description
+		Description: Actor-AdvancedRadarPower.RADAR-Description
 		RequiresCondition: tower-radar
 		PauseOnCondition: !radar-active || disabled || being-warped
 		LaunchSound: gradarup.aud
@@ -1882,7 +1881,7 @@
 		ChargeInterval: 6000
 		Name: Actor-supportpower.ichorspike-Name
 		ActivationDelay: 1
-		Description: Actor-supportpower.ichorspike-Description
+		Description: Actor-IchorSpikePower.IchorSpike-Description
 		LaunchSound: scrinbuild.aud
 		Weapon: IchorSpikeSpawner
 		AirburstAltitude: 0c0

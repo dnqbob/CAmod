@@ -16,7 +16,7 @@ V2RL:
 		Description: Actor-V2RL-Description
 	TooltipExtras:
 		Strengths: Actor-V2RL-Strengths
-		Weaknesses: Actor-V2RL-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -83,7 +83,7 @@ KATY:
 		Description: Actor-KATY-Description
 	TooltipExtras:
 		Strengths: Actor-KATY-Strengths
-		Weaknesses: Actor-KATY-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -187,7 +187,7 @@ GRAD:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-GRAD-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Artillery Doctrine.
 
 NUKC:
 	Inherits: ^Tank
@@ -202,7 +202,7 @@ NUKC:
 		Description: Actor-NUKC-Description
 	TooltipExtras:
 		Strengths: Actor-NUKC-Strengths
-		Weaknesses: Actor-NUKC-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 		Attributes: Actor-NUKC-Attributes
 	Valued:
 		Cost: 2400
@@ -386,7 +386,7 @@ NUKC:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
-		AdditionalInfo: Actor-NUKC-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Artillery Doctrine.
 
 NUKC.Preview:
 	Inherits: ^PreviewDummy
@@ -411,7 +411,7 @@ NUKC.Preview:
 		Description: Actor-1TNK-Description
 	TooltipExtras:
 		Strengths: Actor-1TNK-Strengths
-		Weaknesses: Actor-1TNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 		Attributes: Actor-1TNK-Attributes
 	Valued:
 		Cost: 650
@@ -480,7 +480,7 @@ NUKC.Preview:
 		Description: Actor-2TNK-Description
 	TooltipExtras:
 		Strengths: Actor-2TNK-Strengths
-		Weaknesses: Actor-2TNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -540,7 +540,7 @@ GTNK:
 		Name: Actor-GTNK-Name
 	TooltipExtras:
 		Strengths: Actor-GTNK-Strengths
-		Weaknesses: Actor-GTNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 	Mobile:
 		Speed: 100
 		Voice: Move
@@ -588,10 +588,10 @@ GTNK.squad:
 		BuildAtProductionType: ParadropVehicle
 		BuildPaletteOrder: 400
 		Prerequisites: radaroraircraft, ~vehicles.usa, ~techlevel.medium
-		Description: Actor-GTNK.squad-Description
+		Description: Actor-GTNK.squad-Description2
 	TooltipExtras:
 		Strengths: Actor-GTNK.squad-Strengths
-		Weaknesses: Actor-GTNK.squad-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -829,7 +829,7 @@ GTNK.squad:
 		Description: Actor-3TNK-Description
 	TooltipExtras:
 		Strengths: Actor-3TNK-Strengths
-		Weaknesses: Actor-3TNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -918,7 +918,7 @@ GTNK.squad:
 		Prerequisites: ~atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 	TooltipExtras:
 		Strengths: Actor-3TNK.ATOMIC-Strengths
-		Weaknesses: Actor-3TNK.ATOMIC-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 		Attributes: Actor-3TNK.ATOMIC-Attributes
 	Valued:
 		Cost: 1150
@@ -957,7 +957,7 @@ GTNK.squad:
 		Description: Actor-3TNK.YURI-Description
 	TooltipExtras:
 		Strengths: Actor-3TNK.YURI-Strengths
-		Weaknesses: Actor-3TNK.YURI-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 		Attributes: Actor-3TNK.YURI-Attributes
 	Tooltip:
 		Name: Actor-3TNK.YURI-Name
@@ -1024,8 +1024,8 @@ GTNK.squad:
 		Description: Actor-3TNK.ATOMICYURI-Description
 	TooltipExtras:
 		Strengths: Actor-3TNK.ATOMICYURI-Strengths
-		Weaknesses: Actor-3TNK.ATOMICYURI-Weaknesses
-		Attributes: Actor-3TNK.ATOMICYURI-Attributes
+		Weaknesses: Actor-HIND-Weaknesses2
+		Attributes: Actor-3TNK.ATOMICYURI-Attributes2
 	Tooltip:
 		Name: Actor-3TNK.ATOMICYURI-Name
 		GenericName: Actor-Generic-Tank-Name
@@ -1097,7 +1097,7 @@ GTNK.squad:
 		Image: rhin
 	TooltipExtras:
 		Strengths: Actor-3TNK.RHINO-Strengths
-		Weaknesses: Actor-3TNK.RHINO-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -1188,7 +1188,7 @@ GTNK.squad:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		Name: Actor-3TNK.RHINO-EncyclopediaExtrasName
-		AdditionalInfo: Actor-3TNK.RHINO-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Armor Doctrine.
 
 3TNK.RHINO.ATOMIC:
 	Inherits: 3TNK.RHINO
@@ -1316,7 +1316,7 @@ GTNK.squad:
 		Description: Actor-4TNK-Description
 	TooltipExtras:
 		Strengths: Actor-4TNK-Strengths
-		Attributes: Actor-4TNK-Attributes
+		Attributes: Actor-4TNK-Attributes2
 	Valued:
 		Cost: 1700
 	Tooltip:
@@ -1446,7 +1446,7 @@ GTNK.squad:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 	TooltipExtras:
 		Strengths: Actor-4TNK.ATOMIC-Strengths
-		Attributes: Actor-4TNK.ATOMIC-Attributes
+		Attributes: Actor-4TNK.ATOMIC-Attributes2
 	Tooltip:
 		Name: Actor-4TNK.ATOMIC-Name
 	-SpawnActorOnDeath:
@@ -1478,7 +1478,7 @@ GTNK.squad:
 		Name: Actor-4TNK.ERAD-Name
 	TooltipExtras:
 		Weaknesses: Actor-4TNK.ERAD-Weaknesses
-		Attributes: Actor-4TNK.ERAD-Attributes
+		Attributes: Actor-4TNK.ERAD-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 		Description: Actor-4TNK.ERAD-Description
@@ -1527,7 +1527,7 @@ GTNK.squad:
 		Name: Actor-4TNK.ERAD.ATOMIC-Name
 	TooltipExtras:
 		Weaknesses: Actor-4TNK.ERAD.ATOMIC-Weaknesses
-		Attributes: Actor-4TNK.ERAD.ATOMIC-Attributes
+		Attributes: Actor-4TNK.ERAD.ATOMIC-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 		Description: Actor-4TNK.ERAD.ATOMIC-Description
@@ -1575,7 +1575,7 @@ ARTY:
 		Description: Actor-ARTY-Description
 	TooltipExtras:
 		Strengths: Actor-ARTY-Strengths
-		Weaknesses: Actor-ARTY-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -1771,8 +1771,8 @@ ISU:
 		Description: Actor-ISU-Description
 	TooltipExtras:
 		Strengths: Actor-ISU-Strengths
-		Weaknesses: Actor-ISU-Weaknesses
-		Attributes: Actor-ISU-Attributes
+		Weaknesses: Actor-IVAN-Weaknesses2
+		Attributes: Actor-ISU-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1855,7 +1855,7 @@ SPEC:
 		Description: Actor-SPEC-Description
 	TooltipExtras:
 		Strengths: Actor-SPEC-Strengths
-		Weaknesses: Actor-SPEC-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -1948,7 +1948,7 @@ SAPC:
 		Description: Actor-SAPC-Description
 	TooltipExtras:
 		Strengths: Actor-SAPC-Strengths
-		Weaknesses: Actor-SAPC-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 1100
 	Tooltip:
@@ -2213,7 +2213,7 @@ JEEP:
 		Description: Actor-JEEP-Description
 	TooltipExtras:
 		Strengths: Actor-JEEP-Strengths
-		Weaknesses: Actor-JEEP-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 		Attributes: Actor-JEEP-Attributes
 	Valued:
 		Cost: 400
@@ -2336,7 +2336,7 @@ APC:
 		Description: Actor-APC-Description
 	TooltipExtras:
 		Strengths: Actor-APC-Strengths
-		Weaknesses: Actor-APC-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -2411,7 +2411,7 @@ DELP:
 	Inherits: APC
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~delp.upgrade, ~techlevel.medium
-		Description: Actor-AAPC-Description
+		Description: Actor-DELP-Description
 	Valued:
 		Cost: 800
 	Mobile:
@@ -2419,12 +2419,12 @@ DELP:
 	RevealsShroud:
 		Range: 6c0
 	Tooltip:
-		Name: Actor-AAPC-Name
+		Name: Actor-DELP-Name
 	TooltipExtras:
-		Description: Actor-AAPC-TooltipExtrasDescription
+		Description: Actor-DELP-Description2
 		Strengths: Actor-DELP-Strengths
-		Weaknesses: Actor-AAPC-Weaknesses
-		Attributes: Actor-AAPC-Attributes
+		Weaknesses: Actor-DELP-Weaknesses
+		Attributes: Actor-DELP-Attributes
 	-AttackFrontal:
 	AttackTurreted:
 		PauseOnCondition: empdisable || being-warped || blinded
@@ -2441,7 +2441,7 @@ DELP:
 	-Upgradeable@DELPHIS:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Actor-AAPC-EncyclopediaExtrasName
+		Name: Actor-DELP-EncyclopediaExtras-Name
 
 APC.AI:
 	Inherits: APC
@@ -2681,7 +2681,7 @@ MRJ:
 		Description: Actor-MRJ-Description
 	TooltipExtras:
 		Weaknesses: Actor-MRJ-Weaknesses
-		Attributes: Actor-MRJ-Attributes
+		Attributes: Actor-MRJ-Attributes2
 	Health:
 		HP: 25000
 	Armor:
@@ -3014,7 +3014,7 @@ CTNK:
 	TooltipExtras:
 		Strengths: Actor-CTNK-Strengths
 		Weaknesses: Actor-CTNK-Weaknesses
-		Attributes: Actor-CTNK-Attributes
+		Attributes: Actor-CTNK-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -3107,7 +3107,7 @@ QTNK:
 		Description: Actor-QTNK-Description
 	TooltipExtras:
 		Strengths: Actor-QTNK-Strengths
-		Weaknesses: Actor-QTNK-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-QTNK-Attributes
 	Valued:
 		Cost: 1700
@@ -3235,7 +3235,7 @@ HMMV:
 		Description: Actor-HMMV-Description
 	TooltipExtras:
 		Strengths: Actor-HMMV-Strengths
-		Weaknesses: Actor-HMMV-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 		Attributes: Actor-HMMV-Attributes
 	Valued:
 		Cost: 400
@@ -3310,7 +3310,7 @@ HMMV.TOW:
 		Name: Actor-HMMV.TOW-Name
 	TooltipExtras:
 		Strengths: Actor-HMMV.TOW-Strengths
-		Weaknesses: Actor-HMMV.TOW-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: TOW
@@ -3346,8 +3346,8 @@ GDRN:
 		Description: Actor-GDRN-Description
 	TooltipExtras:
 		Strengths: Actor-GDRN-Strengths
-		Weaknesses: Actor-GDRN-Weaknesses
-		Attributes: Actor-GDRN-Attributes
+		Weaknesses: Actor-INTL-Weaknesses2
+		Attributes: Actor-GDRN-Attributes2
 	Valued:
 		Cost: 450
 	Tooltip:
@@ -3462,7 +3462,7 @@ BGGY:
 		Description: Actor-BGGY-Description
 	TooltipExtras:
 		Strengths: Actor-BGGY-Strengths
-		Weaknesses: Actor-BGGY-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 		Attributes: Actor-BGGY-Attributes
 	Valued:
 		Cost: 350
@@ -3588,7 +3588,7 @@ RBUG:
 	-WithDecoration@UpgradeOverlay:
 	-WithEjectedCasings:
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-RBUG-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Zeal Covenant.
 
 ^DecoyUnit:
 	Inherits@selection: ^SelectableSupportUnit
@@ -3601,7 +3601,7 @@ RBUG:
 	KillsSelf:
 		RequiresCondition: !active
 	WithTextDecoration@Decoy:
-		Text: Actor-RBUG.Decoy-Text
+		Text: Decoy
 		ValidRelationships: Ally
 		Font: TinyBold
 		Position: Top
@@ -3726,7 +3726,7 @@ APC2:
 		Description: Actor-APC2-Description
 	TooltipExtras:
 		Strengths: Actor-APC2-Strengths
-		Weaknesses: Actor-APC2-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -4072,12 +4072,12 @@ LTNK:
 		Description: Actor-LTNK-Description
 	TooltipExtras:
 		Strengths: Actor-LTNK-Strengths
-		Weaknesses: Actor-LTNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 		Attributes: Actor-LTNK-Attributes
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
 		Strengths: Actor-LTNK.LaserTank-Strengths
-		Weaknesses: Actor-LTNK.LaserTank-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 		Attributes: Actor-LTNK.LaserTank-Attributes
 		RequiresCondition: lastnk-upgrade
 	Valued:
@@ -4202,11 +4202,11 @@ MTNK:
 		Description: Actor-MTNK-Description
 	TooltipExtras:
 		Strengths: Actor-MTNK-Strengths
-		Weaknesses: Actor-MTNK-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
-		Strengths: Actor-MTNK.LaserTank-Strengths
-		Weaknesses: Actor-MTNK.LaserTank-Weaknesses
+		Strengths: Actor-LTNK.LaserTank-Strengths
+		Weaknesses: Actor-HIND-Weaknesses2
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 900
@@ -4341,8 +4341,8 @@ MTNK.Drone:
 		BuildPaletteOrder: 91
 	TooltipExtras:
 		Strengths: Actor-MTNK.Drone-Strengths
-		Weaknesses: Actor-MTNK.Drone-Weaknesses
-		Attributes: Actor-MTNK.Drone-Attributes
+		Weaknesses: Actor-INTL-Weaknesses2
+		Attributes: Actor-MTNK.Drone-Attributes2
 		-RequiresCondition:
 	-Tooltip@LaserTank:
 	-TooltipExtras@LaserTank:
@@ -4480,8 +4480,8 @@ MDRN:
 		Description: Actor-MDRN-Description
 	TooltipExtras:
 		Strengths: Actor-MDRN-Strengths
-		Weaknesses: Actor-MDRN-Weaknesses
-		Attributes: Actor-MDRN-Attributes
+		Weaknesses: Actor-E1-Weaknesses2
+		Attributes: Actor-MDRN-Attributes2
 	Valued:
 		Cost: 225
 	UpdatesPlayerStatistics:
@@ -4674,7 +4674,7 @@ HTNK:
 		Description: Actor-HTNK-Description
 	TooltipExtras:
 		Strengths: Actor-HTNK-Strengths
-		Attributes: Actor-HTNK-Attributes
+		Attributes: Actor-4TNK-Attributes2
 	Valued:
 		Cost: 1700
 	Tooltip:
@@ -4799,7 +4799,7 @@ HTNK.Hover:
 		Prerequisites: gtek, ~vehicles.htnk, ~hovermam.upgrade, ~techlevel.high
 		Description: Actor-HTNK.Hover-Description
 	TooltipExtras:
-		Attributes: Actor-HTNK.Hover-Attributes
+		Attributes: Actor-HTNK.Hover-Attributes2
 	Mobile:
 		Speed: 60
 		Locomotor: hover
@@ -4876,7 +4876,7 @@ HTNK.Drone:
 	TooltipExtras:
 		Strengths: Actor-HTNK.Drone-Strengths
 		Weaknesses: Actor-HTNK.Drone-Weaknesses
-		Attributes: Actor-HTNK.Drone-Attributes
+		Attributes: Actor-HTNK.Drone-Attributes2
 	Valued:
 		Cost: 1300
 	Health:
@@ -5102,7 +5102,7 @@ MLRS:
 		Description: Actor-MLRS-Description
 	TooltipExtras:
 		Strengths: Actor-MLRS-Strengths
-		Weaknesses: Actor-MLRS-Weaknesses
+		Weaknesses: Actor-MLRS-Weaknesses2
 	Mobile:
 		Speed: 72
 		PauseOnCondition: aiming || being-captured || empdisable || being-warped || driver-dead || notmobile
@@ -5589,7 +5589,7 @@ FTNK:
 		Description: Actor-FTNK-Description
 	TooltipExtras:
 		Strengths: Actor-FTNK-Strengths
-		Weaknesses: Actor-FTNK-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 	Mobile:
 		Speed: 76
 	Health:
@@ -5637,7 +5637,7 @@ HFTK:
 		Description: Actor-HFTK-Description
 	TooltipExtras:
 		Strengths: Actor-HFTK-Strengths
-		Weaknesses: Actor-HFTK-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 	Valued:
 		Cost: 1100
 	Tooltip:
@@ -6095,7 +6095,7 @@ TRPC:
 		Description: Actor-TRPC-Description
 	TooltipExtras:
 		Weaknesses: Actor-TRPC-Weaknesses
-		Attributes: Actor-TRPC-Attributes
+		Attributes: Actor-TRPC-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -6208,7 +6208,7 @@ TRPC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-TRPC-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Infantry Doctrine.
 
 IFV:
 	Inherits: ^Tank
@@ -6356,12 +6356,12 @@ IFV:
 		RequiresCondition: !full || samturr || ggiturr || disinturr || tigrturr || nochange
 	TooltipExtras@gunturr:
 		Strengths: Actor-IFV.gunturr-Strengths
-		Weaknesses: Actor-IFV.gunturr-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		IsStandard: false
 		RequiresCondition: gunturr || enfoturr || shadturr
 	TooltipExtras@fragturr:
 		Strengths: Actor-IFV.fragturr-Strengths
-		Weaknesses: Actor-IFV.fragturr-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		IsStandard: false
 		RequiresCondition: fragturr
 	TooltipExtras@mechturr:
@@ -6370,7 +6370,7 @@ IFV:
 		IsStandard: false
 		RequiresCondition: mechturr
 	TooltipExtras@engturr:
-		Weaknesses: Actor-IFV.engturr-Weaknesses
+		Weaknesses: Actor-IFV.mechturr-Weaknesses
 		Attributes: Actor-IFV.engturr-Attributes
 		IsStandard: false
 		RequiresCondition: engturr
@@ -6380,7 +6380,7 @@ IFV:
 		IsStandard: false
 		RequiresCondition: commturr || sealturr
 	TooltipExtras@medturr:
-		Weaknesses: Actor-IFV.medturr-Weaknesses
+		Weaknesses: Actor-IFV.mechturr-Weaknesses
 		Attributes: Actor-IFV.medturr-Attributes
 		IsStandard: false
 		RequiresCondition: medturr
@@ -6391,12 +6391,12 @@ IFV:
 		RequiresCondition: ivanturr
 	TooltipExtras@flamturr:
 		Strengths: Actor-IFV.flamturr-Strengths
-		Weaknesses: Actor-IFV.flamturr-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		IsStandard: false
 		RequiresCondition: flamturr || chemturr || hoplturr
 	TooltipExtras@spyturr:
 		Weaknesses: Actor-IFV.spyturr-Weaknesses
-		Attributes: Actor-IFV.spyturr-Attributes
+		Attributes: Actor-encyclopedia.ifv.spy-Attributes2
 		IsStandard: false
 		RequiresCondition: spyturr
 	TooltipExtras@rmbcturr:
@@ -6406,59 +6406,59 @@ IFV:
 		RequiresCondition: rmbcturr
 	TooltipExtras@snipturr:
 		Strengths: Actor-IFV.snipturr-Strengths
-		Weaknesses: Actor-IFV.snipturr-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.snip-Weaknesses2
 		IsStandard: false
 		RequiresCondition: snipturr
 	TooltipExtras@desoturr:
-		Strengths: Actor-IFV.desoturr-Strengths
-		Weaknesses: Actor-IFV.desoturr-Weaknesses
+		Strengths: Actor-IFV.gunturr-Strengths
+		Weaknesses: Actor-NHAW-Weaknesses2
 		IsStandard: false
 		RequiresCondition: desoturr || acolturr || sharturr || implturr || stlkturr
 	TooltipExtras@testurr:
 		Strengths: Actor-IFV.testurr-Strengths
-		Weaknesses: Actor-IFV.testurr-Weaknesses
+		Weaknesses: Actor-IFV.rmbcturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: testurr
 	TooltipExtras@bhturr:
 		Strengths: Actor-IFV.bhturr-Strengths
-		Weaknesses: Actor-IFV.bhturr-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
 		IsStandard: false
 		RequiresCondition: bhturr || enliturr
 	TooltipExtras@ztrpturr:
 		Strengths: Actor-IFV.ztrpturr-Strengths
-		Weaknesses: Actor-IFV.ztrpturr-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		IsStandard: false
 		RequiresCondition: ztrpturr || zdefturr
 	TooltipExtras@zraiturr:
 		Strengths: Actor-IFV.zraiturr-Strengths
-		Weaknesses: Actor-IFV.zraiturr-Weaknesses
+		Weaknesses: Actor-IFV.rmbcturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: zraiturr
 	TooltipExtras@psyturr:
 		Strengths: Actor-IFV.psyturr-Strengths
-		Weaknesses: Actor-IFV.psyturr-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.psy-Weaknesses2
 		Attributes: Actor-IFV.psyturr-Attributes
 		IsStandard: false
 		RequiresCondition: psyturr
 	TooltipExtras@hackturr:
 		Strengths: Actor-IFV.hackturr-Strengths
-		Weaknesses: Actor-IFV.hackturr-Weaknesses
+		Weaknesses: Actor-IFV.spyturr-Weaknesses
 		IsStandard: false
 		RequiresCondition: hackturr
 	TooltipExtras@cryoturr:
-		Strengths: Actor-IFV.cryoturr-Strengths
-		Weaknesses: Actor-IFV.cryoturr-Weaknesses
+		Strengths: Actor-IFV.gunturr-Strengths
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
 		Attributes: Actor-IFV.cryoturr-Attributes
 		IsStandard: false
 		RequiresCondition: cryoturr
 	TooltipExtras@reapturr:
-		Strengths: Actor-IFV.reapturr-Strengths
-		Weaknesses: Actor-IFV.reapturr-Weaknesses
+		Strengths: Actor-IFV.flamturr-Strengths
+		Weaknesses: Actor-DELP-Weaknesses
 		IsStandard: false
 		RequiresCondition: reapturr
 	TooltipExtras@confturr:
-		Strengths: Actor-IFV.confturr-Strengths
-		Weaknesses: Actor-IFV.confturr-Weaknesses
+		Strengths: Actor-IFV.gunturr-Strengths
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-IFV.confturr-Attributes
 		IsStandard: false
 		RequiresCondition: confturr
@@ -7230,10 +7230,10 @@ IFV.AI:
 		Name: Actor-IFV.AI-Name
 		RequiresCondition: !gunturr && !samturr
 	Tooltip@gunturr:
-		Name: Actor-IFV.AI.gunturr-Name
+		Name: Actor-IFV.gunturr-Name
 		RequiresCondition: gunturr
 	Tooltip@samturr:
-		Name: Actor-IFV.AI.samturr-Name
+		Name: Actor-IFV.samturr-Name
 		RequiresCondition: samturr
 	TooltipExtras:
 		Strengths: Actor-IFV.AI-Strengths
@@ -7241,8 +7241,8 @@ IFV.AI:
 		Attributes: Actor-IFV.AI-Attributes
 		RequiresCondition: defturr || samturr
 	TooltipExtras@gunturr:
-		Strengths: Actor-IFV.AI.gunturr-Strengths
-		Weaknesses: Actor-IFV.AI.gunturr-Weaknesses
+		Strengths: Actor-IFV.flamturr-Strengths
+		Weaknesses: Actor-A10-Weaknesses2
 		IsStandard: false
 		RequiresCondition: gunturr
 	Valued:
@@ -7466,7 +7466,7 @@ RECK:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-RECK-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Allied War Factory.
 		-Name:
 
 TITN:
@@ -7486,7 +7486,7 @@ TITN:
 		Description: Actor-TITN-Description
 	TooltipExtras:
 		Strengths: Actor-TITN-Strengths
-		Attributes: Actor-TITN-Attributes
+		Attributes: Actor-TITN-Attributes2
 	Valued:
 		Cost: 2000
 	Selectable:
@@ -7630,7 +7630,7 @@ JUGG:
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.high
 	TooltipExtras:
 		Strengths: Actor-JUGG-Strengths
-		Weaknesses: Actor-JUGG-Weaknesses
+		Weaknesses: Actor-JUGG-Weaknesses2
 		Attributes: Actor-JUGG-Attributes
 	Mobile:
 		Locomotor: sheavytracked
@@ -7782,7 +7782,7 @@ DISR:
 		Description: Actor-DISR-Description
 	TooltipExtras:
 		Strengths: Actor-DISR-Strengths
-		Weaknesses: Actor-DISR-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-DISR-Attributes
 	Health:
 		HP: 66000
@@ -8018,8 +8018,8 @@ RTNK:
 		Description: Actor-RTNK-Description
 	TooltipExtras:
 		Strengths: Actor-RTNK-Strengths
-		Weaknesses: Actor-RTNK-Weaknesses
-		Attributes: Actor-RTNK-Attributes
+		Weaknesses: Actor-RTNK-Weaknesses2
+		Attributes: Actor-RTNK-Attributes2
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -8127,7 +8127,7 @@ V3RL:
 		Description: Actor-V3RL-Description
 	TooltipExtras:
 		Strengths: Actor-V3RL-Strengths
-		Weaknesses: Actor-V3RL-Weaknesses
+		Weaknesses: Actor-V3RL-Weaknesses2
 	Valued:
 		Cost: 1250
 	Tooltip:
@@ -8246,7 +8246,7 @@ TNKD:
 		Description: Actor-TNKD-Description
 	TooltipExtras:
 		Strengths: Actor-TNKD-Strengths
-		Weaknesses: Actor-TNKD-Weaknesses
+		Weaknesses: Actor-TNKD-Weaknesses2
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -8338,7 +8338,7 @@ MSAR:
 		Description: Actor-MSAR-Description
 	TooltipExtras:
 		Weaknesses: Actor-MSAR-Weaknesses
-		Attributes: Actor-MSAR-Attributes
+		Attributes: Actor-MSAR-Attributes2
 	Health:
 		HP: 24000
 	Armor:
@@ -8428,7 +8428,7 @@ PTNK:
 		Description: Actor-PTNK-Description
 	TooltipExtras:
 		Strengths: Actor-PTNK-Strengths
-		Weaknesses: Actor-PTNK-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-PTNK-Attributes
 	Valued:
 		Cost: 1350
@@ -8603,8 +8603,8 @@ WTNK:
 		Description: Actor-WTNK-Description
 	TooltipExtras:
 		Strengths: Actor-WTNK-Strengths
-		Weaknesses: Actor-WTNK-Weaknesses
-		Attributes: Actor-WTNK-Attributes
+		Weaknesses: Actor-JACK-Weaknesses2
+		Attributes: Actor-WTNK-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -8918,8 +8918,8 @@ MEMP:
 		Description: Actor-MEMP-Description
 	TooltipExtras:
 		Strengths: Actor-MEMP-Strengths
-		Weaknesses: Actor-MEMP-Weaknesses
-		Attributes: Actor-MEMP-Attributes
+		Weaknesses: Actor-ORCB-Weaknesses2
+		Attributes: Actor-MEMP-Attributes2
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -9136,8 +9136,8 @@ CHPR:
 		Description: Actor-CHPR-Description
 	TooltipExtras:
 		Strengths: Actor-CHPR-Strengths
-		Weaknesses: Actor-CHPR-Weaknesses
-		Attributes: Actor-CHPR-Attributes
+		Weaknesses: Actor-JACK-Weaknesses2
+		Attributes: Actor-CHPR-Attributes2
 	Valued:
 		Cost: 1550
 	Tooltip:
@@ -9303,7 +9303,7 @@ CRYO:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CRYO-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Sweden Coalition.
 
 PBUL:
 	Inherits: ^VehicleTD
@@ -9319,7 +9319,7 @@ PBUL:
 	TooltipExtras:
 		Strengths: Actor-PBUL-Strengths
 		Weaknesses: Actor-PBUL-Weaknesses
-		Attributes: Actor-PBUL-Attributes
+		Attributes: Actor-PBUL-Attributes2
 	Valued:
 		Cost: 850
 	Tooltip:
@@ -9447,7 +9447,7 @@ CYCP:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CYCP-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Soviet War Factory.
 
 BASI:
 	Inherits: ^TankTD
@@ -9462,7 +9462,7 @@ BASI:
 		Description: Actor-BASI-Description
 	TooltipExtras:
 		Strengths: Actor-BASI-Strengths
-		Weaknesses: Actor-BASI-Weaknesses
+		Weaknesses: Actor-BASI-Weaknesses2
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -9532,7 +9532,7 @@ BASI:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-BASI-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from GDI Weapons Factory.
 
 MANT:
 	Inherits: ^VehicleTD
@@ -9596,7 +9596,7 @@ MANT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-MANT-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Nod Airstrip.
 
 VIPR:
 	Inherits: ^VehicleTD
@@ -9612,7 +9612,7 @@ VIPR:
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: Actor-VIPR-Strengths
-		Weaknesses: Actor-VIPR-Weaknesses
+		Weaknesses: Actor-DEVO-Weaknesses2
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -9667,7 +9667,7 @@ VIPR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-VIPR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Scrin Warp Sphere.
 
 WOLV:
 	Inherits: ^VehicleTD
@@ -9682,7 +9682,7 @@ WOLV:
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: Actor-WOLV-Strengths
-		Weaknesses: Actor-WOLV-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 	Valued:
 		Cost: 900
 	Selectable:
@@ -9759,7 +9759,7 @@ XO:
 		Description: Actor-XO-Description
 	TooltipExtras:
 		Strengths: Actor-XO-Strengths
-		Weaknesses: Actor-XO-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 		Attributes: Actor-XO-Attributes
 	Valued:
 		Cost: 1000
@@ -9888,7 +9888,7 @@ APOC:
 		Description: Actor-APOC-Description
 	TooltipExtras:
 		Strengths: Actor-APOC-Strengths
-		Attributes: Actor-APOC-Attributes
+		Attributes: Actor-TITN-Attributes2
 	Valued:
 		Cost: 2600
 	Tooltip:
@@ -9995,7 +9995,7 @@ APOC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-APOC-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Armor Doctrine.
 
 APOC.ATOMIC:
 	Inherits: APOC
@@ -10010,7 +10010,7 @@ APOC.ATOMIC:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
 	TooltipExtras:
 		Strengths: Actor-APOC.ATOMIC-Strengths
-		Attributes: Actor-APOC.ATOMIC-Attributes
+		Attributes: Actor-APOC.ATOMIC-Attributes2
 	WithFacingSpriteBody:
 	SpeedMultiplier:
 		Modifier: 125
@@ -10034,7 +10034,7 @@ APOC.ERAD:
 	TooltipExtras:
 		Strengths: Actor-APOC.ERAD-Strengths
 		Weaknesses: Actor-APOC.ERAD-Weaknesses
-		Attributes: Actor-APOC.ERAD-Attributes
+		Attributes: Actor-APOC.ERAD-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 241
@@ -10079,7 +10079,7 @@ APOC.ERAD.ATOMIC:
 	TooltipExtras:
 		Strengths: Actor-APOC.ERAD.ATOMIC-Strengths
 		Weaknesses: Actor-APOC.ERAD.ATOMIC-Weaknesses
-		Attributes: Actor-APOC.ERAD.ATOMIC-Attributes
+		Attributes: Actor-APOC.ERAD.ATOMIC-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 242
@@ -10128,7 +10128,7 @@ OVLD:
 	TooltipExtras:
 		Strengths: Actor-OVLD-Strengths
 		Weaknesses: Actor-OVLD-Weaknesses
-		Attributes: Actor-OVLD-Attributes
+		Attributes: Actor-OVLD-Attributes2
 	Valued:
 		Cost: 2350
 	Tooltip:
@@ -10239,7 +10239,7 @@ OVLD:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-OVLD-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Infantry Doctrine.
 
 OVLD.ATOMIC:
 	Inherits: OVLD
@@ -10251,7 +10251,7 @@ OVLD.ATOMIC:
 	TooltipExtras:
 		Strengths: Actor-OVLD.ATOMIC-Strengths
 		Weaknesses: Actor-OVLD.ATOMIC-Weaknesses
-		Attributes: Actor-OVLD.ATOMIC-Attributes
+		Attributes: Actor-OVLD.ATOMIC-Attributes2
 	RenderSprites:
 		Image: ovldi
 	ReplacedInQueue:
@@ -10275,7 +10275,7 @@ OVLD.ERAD:
 		Name: Actor-OVLD.ERAD-Name
 	TooltipExtras:
 		Strengths: Actor-OVLD.ERAD-Strengths
-		Attributes: Actor-OVLD.ERAD-Attributes
+		Attributes: Actor-OVLD.ERAD-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 237
@@ -10313,7 +10313,7 @@ OVLD.ERAD.ATOMIC:
 		Name: Actor-OVLD.ERAD.ATOMIC-Name
 	TooltipExtras:
 		Strengths: Actor-OVLD.ERAD.ATOMIC-Strengths
-		Attributes: Actor-OVLD.ERAD.ATOMIC-Attributes
+		Attributes: Actor-OVLD.ERAD.ATOMIC-Attributes2
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 238
@@ -10367,7 +10367,7 @@ THWK:
 		Description: Actor-THWK-Description
 	TooltipExtras:
 		Strengths: Actor-THWK-Strengths
-		Weaknesses: Actor-THWK-Weaknesses
+		Weaknesses: Actor-THWK-Weaknesses2
 	Mobile:
 		Speed: 44
 		Voice: Move
@@ -10436,7 +10436,7 @@ THWK:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-THWK-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 TH:
 	Inherits: ^ShootableMissile
@@ -10523,7 +10523,7 @@ ZEUS:
 		Description: Actor-ZEUS-Description
 	TooltipExtras:
 		Strengths: Actor-ZEUS-Strengths
-		Weaknesses: Actor-ZEUS-Weaknesses
+		Weaknesses: Actor-JUGG-Weaknesses2
 	Selectable:
 		DecorationBounds: 1280, 1280
 	Health:
@@ -10578,7 +10578,7 @@ ZEUS:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ZEUS-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Greece Coalition.
 
 MOLE:
 	Inherits: ^Vehicle-NOUPG
@@ -10697,7 +10697,7 @@ AVTR:
 	TooltipExtras:
 		Strengths: Actor-AVTR-Strengths
 		Weaknesses: Actor-AVTR-Weaknesses
-		Attributes: Actor-AVTR-Attributes
+		Attributes: Actor-TITN-Attributes2
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -10826,7 +10826,7 @@ AVTR:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-AVTR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Wrath Covenant.
 
 CUST:
 	Inherits: ^Tank
@@ -10844,7 +10844,7 @@ CUST:
 		Description: Actor-CUST-Description
 	TooltipExtras:
 		Weaknesses: Actor-CUST-Weaknesses
-		Attributes: Actor-CUST-Attributes
+		Attributes: Actor-CUST-Attributes2
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Valued:
@@ -10944,4 +10944,4 @@ CUST:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CUST-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Unity Covenant.

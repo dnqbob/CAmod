@@ -337,7 +337,7 @@ SUK:
 		Description: Actor-SUK-Description
 	TooltipExtras:
 		Strengths: Actor-SUK-Strengths
-		Weaknesses: Actor-SUK-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		RequiresCondition: !seismic-upgrade
 	TooltipExtras@SEISMIC:
 		Description: Actor-SUK.SEISMIC-Description
@@ -673,7 +673,7 @@ TRAN:
 		Description: Actor-TRAN-Description
 	TooltipExtras:
 		Weaknesses: Actor-TRAN-Weaknesses
-		Attributes: Actor-TRAN-Attributes
+		Attributes: Actor-TRAN-Attributes2
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -881,8 +881,8 @@ NHAW:
 		Description: Actor-NHAW-Description
 	TooltipExtras:
 		Strengths: Actor-NHAW-Strengths
-		Weaknesses: Actor-NHAW-Weaknesses
-		Attributes: Actor-NHAW-Attributes
+		Weaknesses: Actor-NHAW-Weaknesses2
+		Attributes: Actor-NHAW-Attributes2
 	Valued:
 		Cost: 1150
 	Tooltip:
@@ -1203,7 +1203,7 @@ HIND:
 		Description: Actor-HIND-Description
 	TooltipExtras:
 		Strengths: Actor-HIND-Strengths
-		Weaknesses: Actor-HIND-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 		Attributes: Actor-HIND-Attributes
 	Valued:
 		Cost: 1600
@@ -1521,7 +1521,7 @@ A10:
 		Description: Actor-A10-Description
 	TooltipExtras:
 		Strengths: Actor-A10-Strengths
-		Weaknesses: Actor-A10-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2358,7 +2358,7 @@ ORCB:
 		Description: Actor-ORCB-Description
 	TooltipExtras:
 		Strengths: Actor-ORCB-Strengths
-		Weaknesses: Actor-ORCB-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-ORCB-Attributes
 	Valued:
 		Cost: 2000
@@ -2578,7 +2578,7 @@ RAH:
 		Description: Actor-RAH-Description
 	TooltipExtras:
 		Strengths: Actor-RAH-Strengths
-		Weaknesses: Actor-RAH-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2728,7 +2728,7 @@ KIRO:
 		Description: Actor-KIRO-Description
 	TooltipExtras:
 		Strengths: Actor-KIRO-Strengths
-		Weaknesses: Actor-KIRO-Weaknesses
+		Weaknesses: Actor-KIRO-Weaknesses2
 		Attributes: Actor-KIRO-Attributes
 	Valued:
 		Cost: 2000
@@ -3952,7 +3952,7 @@ PMAK:
 		Description: Actor-PMAK-Description
 	TooltipExtras:
 		Strengths: Actor-PMAK-Strengths
-		Weaknesses: Actor-PMAK-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -4212,7 +4212,7 @@ BEAG:
 	Encyclopedia:
 		Category: Allies/Aircraft
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-BEAG-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Korea Coalition.
 
 PHAN:
 	Inherits: ^Helicopter
@@ -4348,7 +4348,7 @@ PHAN:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-PHAN-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Allied Helipad.
 
 KAMV:
 	Inherits: ^Helicopter
@@ -4362,7 +4362,7 @@ KAMV:
 		Description: Actor-KAMV-Description
 	TooltipExtras:
 		Strengths: Actor-KAMV-Strengths
-		Weaknesses: Actor-KAMV-Weaknesses
+		Weaknesses: Actor-KAMV-Weaknesses2
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -4471,7 +4471,7 @@ KAMV:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-KAMV-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Soviet Airfield.
 
 SHDE:
 	Inherits: ^HelicopterTD
@@ -4486,7 +4486,7 @@ SHDE:
 		Description: Actor-SHDE-Description
 	TooltipExtras:
 		Strengths: Actor-SHDE-Strengths
-		Weaknesses: Actor-SHDE-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -4602,7 +4602,7 @@ SHDE:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-SHDE-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from GDI Helipad.
 
 VERT:
 	Inherits: ^HelicopterTD
@@ -4758,7 +4758,7 @@ VERT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-VERT-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Nod Helipad.
 
 MCOR:
 	Inherits: ^HelicopterTD
@@ -4840,7 +4840,7 @@ MCOR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-MCOR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Scrin Gravity Stabilizer.
 
 DISC:
 	Inherits: ^Helicopter
@@ -4859,7 +4859,7 @@ DISC:
 		Description: Actor-DISC-Description
 	TooltipExtras:
 		Strengths: Actor-DISC-Strengths
-		Attributes: Actor-DISC-Attributes
+		Attributes: Actor-DISC-Attributes2
 	Health:
 		HP: 65000
 	RevealsShroud:
@@ -5017,7 +5017,7 @@ JACK:
 		Description: Actor-JACK-Description
 	TooltipExtras:
 		Strengths: Actor-JACK-Strengths
-		Weaknesses: Actor-JACK-Weaknesses
+		Weaknesses: Actor-JACK-Weaknesses2
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 20

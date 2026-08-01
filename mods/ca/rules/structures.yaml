@@ -16,7 +16,7 @@ MSLO:
 		BuildLimit: 1
 		Description: Actor-MSLO-Description
 	TooltipExtras:
-		Attributes: Actor-MSLO-Attributes
+		Attributes: Actor-MSLO-Attributes2
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -137,7 +137,7 @@ SPEN:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 220
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.navy, ~techlevel.low
-		Description: Actor-SPEN-Description
+		Description: Actor-SPEN-Description2
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -249,7 +249,7 @@ SYRD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 210
 		Prerequisites: anypower, ~structures.allies, ~techlevel.navy, ~techlevel.low
-		Description: Actor-SYRD-Description
+		Description: Actor-SYRD-Description2
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -340,7 +340,7 @@ IRON:
 		BuildLimit: 1
 		Description: Actor-IRON-Description
 	TooltipExtras:
-		Attributes: Actor-IRON-Attributes
+		Attributes: Actor-IRON-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -400,7 +400,7 @@ PDOX:
 		BuildLimit: 1
 		Description: Actor-PDOX-Description
 	TooltipExtras:
-		Attributes: Actor-PDOX-Attributes
+		Attributes: Actor-PDOX-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -466,7 +466,7 @@ TSLA:
 	TooltipExtras:
 		Strengths: Actor-TSLA-Strengths
 		Weaknesses: Actor-TSLA-Weaknesses
-		Attributes: Actor-TSLA-Attributes
+		Attributes: Actor-TSLA-Attributes2
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -549,7 +549,7 @@ AGUN:
 	TooltipExtras:
 		Strengths: Actor-AGUN-Strengths
 		Weaknesses: Actor-AGUN-Weaknesses
-		Attributes: Actor-AGUN-Attributes
+		Attributes: Actor-SHAR-Attributes2
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -619,7 +619,7 @@ DOME:
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.medium
 		Description: Actor-DOME-Description
 	TooltipExtras:
-		Attributes: Actor-DOME-Attributes
+		Attributes: Actor-NERV-Attributes2
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -732,7 +732,7 @@ PBOX:
 		Description: Actor-PBOX-Description
 	TooltipExtras:
 		Strengths: Actor-PBOX-Strengths
-		Weaknesses: Actor-PBOX-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-PBOX-Attributes
 	Valued:
 		Cost: 600
@@ -784,8 +784,8 @@ HBOX:
 		Description: Actor-HBOX-Description
 	TooltipExtras:
 		Strengths: Actor-HBOX-Strengths
-		Weaknesses: Actor-HBOX-Weaknesses
-		Attributes: Actor-HBOX-Attributes
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
+		Attributes: Actor-HBOX-Attributes2
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -839,7 +839,7 @@ GUN:
 		Description: Actor-GUN-Description
 	TooltipExtras:
 		Strengths: Actor-GUN-Strengths
-		Weaknesses: Actor-GUN-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-GUN-Attributes
 	Valued:
 		Cost: 800
@@ -896,7 +896,7 @@ FTUR:
 		Description: Actor-FTUR-Description
 	TooltipExtras:
 		Strengths: Actor-FTUR-Strengths
-		Weaknesses: Actor-FTUR-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-FTUR-Attributes
 	Valued:
 		Cost: 600
@@ -962,7 +962,7 @@ SAM:
 	TooltipExtras:
 		Strengths: Actor-SAM-Strengths
 		Weaknesses: Actor-SAM-Weaknesses
-		Attributes: Actor-SAM-Attributes
+		Attributes: Actor-SHAR-Attributes2
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -1028,7 +1028,7 @@ ATEK:
 		Prerequisites: vehicles.any, anyradar, ~structures.allies, ~techlevel.high
 		Description: Actor-ATEK-Description
 	TooltipExtras:
-		Attributes: Actor-ATEK-Attributes
+		Attributes: Actor-ATEK-Attributes2
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -1139,7 +1139,7 @@ ALHQ:
 		Description: Actor-ALHQ-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-ALHQ-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -2334,7 +2334,7 @@ FIX:
 		Prerequisites: vehicles.any, ~structures.ra, ~techlevel.low
 		Description: Actor-FIX-Description
 	TooltipExtras:
-		Attributes: Actor-FIX-Attributes
+		Attributes: Actor-SREP-Attributes2
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -2408,7 +2408,7 @@ SBAG:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.sandbag
-		Description: Actor-SBAG-Description
+		Description: Actor-SBAG-Description2
 	Valued:
 		Cost: 30
 	CustomSellValue:
@@ -2436,7 +2436,7 @@ FENC:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.soviet
-		Description: Actor-FENC-Description
+		Description: Actor-SBAG-Description2
 	Valued:
 		Cost: 30
 	CustomSellValue:
@@ -2462,7 +2462,7 @@ CHAIN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.nod
-		Description: Actor-CHAIN-Description
+		Description: Actor-SBAG-Description2
 	Valued:
 		Cost: 30
 	CustomSellValue:
@@ -2488,7 +2488,7 @@ BRIK:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.wall
-		Description: Actor-BRIK-Description
+		Description: Actor-BRIK-Description2
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -3461,7 +3461,7 @@ NSAM:
 	TooltipExtras:
 		Strengths: Actor-NSAM-Strengths
 		Weaknesses: Actor-NSAM-Weaknesses
-		Attributes: Actor-NSAM-Attributes
+		Attributes: Actor-SHAR-Attributes2
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -3521,7 +3521,7 @@ GTWR:
 		Description: Actor-GTWR-Description
 	TooltipExtras:
 		Strengths: Actor-GTWR-Strengths
-		Weaknesses: Actor-GTWR-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-GTWR-Attributes
 	Valued:
 		Cost: 600
@@ -3573,7 +3573,7 @@ ATWR:
 	TooltipExtras:
 		Strengths: Actor-ATWR-Strengths
 		Weaknesses: Actor-ATWR-Weaknesses
-		Attributes: Actor-ATWR-Attributes
+		Attributes: Actor-SCOL-Attributes2
 	Valued:
 		Cost: 1250
 	Tooltip:
@@ -3624,7 +3624,7 @@ STWR:
 	TooltipExtras:
 		Strengths: Actor-STWR-Strengths
 		Weaknesses: Actor-STWR-Weaknesses
-		Attributes: Actor-STWR-Attributes
+		Attributes: Actor-SCOL-Attributes2
 	Valued:
 		Cost: 1450
 	Tooltip:
@@ -3687,7 +3687,7 @@ OBLI:
 	TooltipExtras:
 		Strengths: Actor-OBLI-Strengths
 		Weaknesses: Actor-OBLI-Weaknesses
-		Attributes: Actor-OBLI-Attributes
+		Attributes: Actor-SCOL-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -3780,7 +3780,7 @@ HQ:
 		IconPalette: chrometd
 		Description: Actor-HQ-Description
 	TooltipExtras:
-		Attributes: Actor-HQ-Attributes
+		Attributes: Actor-NERV-Attributes2
 		RequiresCondition: !arc-built
 	TooltipExtras@ARC:
 		Attributes: Actor-HQ.ARC-Attributes
@@ -3943,9 +3943,7 @@ HQ.UPG:
 	Tooltip:
 		Name: Actor-HQ.UPG-Name
 	TooltipExtras:
-		Attributes: Actor-HQ.UPG-Attributes
-	RenderSprites:
-		PlayerPalette: playertd
+		Attributes: Actor-HQ.UPG-Attributes2
 	-Targetable@HACKABLE:
 	-TransformOnCondition@UPG:
 	-GrantConditionOnPrerequisite@UPG:
@@ -4062,7 +4060,7 @@ EYE:
 		BuildLimit: 1
 		Description: Actor-EYE-Description
 	TooltipExtras:
-		Attributes: Actor-EYE-Attributes
+		Attributes: Actor-EYE-Attributes2
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -4145,7 +4143,7 @@ REP:
 		IconPalette: chrometd
 		Description: Actor-REP-Description
 	TooltipExtras:
-		Attributes: Actor-REP-Attributes
+		Attributes: Actor-SREP-Attributes2
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -4660,7 +4658,7 @@ TMPL:
 		IconPalette: chrometd
 		Description: Actor-TMPL-Description
 	TooltipExtras:
-		Attributes: Actor-TMPL-Attributes
+		Attributes: Actor-TMPL-Attributes2
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -4736,7 +4734,7 @@ PRIS:
 	TooltipExtras:
 		Strengths: Actor-PRIS-Strengths
 		Weaknesses: Actor-PRIS-Weaknesses
-		Attributes: Actor-PRIS-Attributes
+		Attributes: Actor-PRIS-Attributes2
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -4819,7 +4817,7 @@ SPEN.nod:
 		BuildPaletteOrder: 240
 		IconPalette: chrometd
 		Prerequisites: anypower, ~structures.nod, ~techlevel.navy, ~techlevel.low
-		Description: Actor-SPEN.nod-Description
+		Description: Actor-SPEN-Description2
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -4905,7 +4903,7 @@ SYRD.gdi:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 230
 		Prerequisites: anypower, ~structures.gdi, ~techlevel.navy, ~techlevel.low
-		Description: Actor-SYRD.gdi-Description
+		Description: Actor-SYRD.gdi-Description2
 		IconPalette: chrometd
 	Valued:
 		Cost: 1000
@@ -4997,8 +4995,8 @@ HTUR:
 		Description: Actor-HTUR-Description
 	TooltipExtras:
 		Strengths: Actor-HTUR-Strengths
-		Weaknesses: Actor-HTUR-Weaknesses
-		Attributes: Actor-HTUR-Attributes
+		Weaknesses: Actor-HTUR-Weaknesses2
+		Attributes: Actor-SCOL-Attributes2
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -5091,7 +5089,7 @@ LTUR:
 		Description: Actor-LTUR-Description
 	TooltipExtras:
 		Strengths: Actor-LTUR-Strengths
-		Weaknesses: Actor-LTUR-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-LTUR-Attributes
 	Turreted:
 		InitialFacing: 128
@@ -5126,7 +5124,7 @@ TTUR:
 		Description: Actor-TTUR-Description
 	TooltipExtras:
 		Strengths: Actor-TTUR-Strengths
-		Weaknesses: Actor-TTUR-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 		Attributes: Actor-TTUR-Attributes
 	Valued:
 		Cost: 650
@@ -5187,9 +5185,9 @@ SGEN:
 		Prerequisites: tmpl, ~structures.nod, ~!player.shadow, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrometd
-		Description: Actor-SGEN-Description
+		Description: Actor-SGEN-Description2
 	TooltipExtras:
-		Attributes: Actor-SGEN-Attributes
+		Attributes: Actor-SGEN-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5256,8 +5254,6 @@ SGEN.Shadow:
 	Buildable:
 		Prerequisites: tmpl, ~structures.nod, ~player.shadow, ~techlevel.high
 	WithRangeCircleCA@SGEN:
-		Attributes: Actor-SGEN.Shadow-Attributes
-	WithRangeCircle@SGEN:
 		Range: 11c512
 	ProximityExternalCondition@SGEN:
 		Range: 11c512
@@ -5328,7 +5324,7 @@ LASP:
 		BuildPaletteOrder: 30
 		Prerequisites: ~structures.nod, nuk2, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Actor-LASP-Description
+		Description: Actor-LASP-Description2
 	Building:
 		RequiresBaseProvider: False
 	Valued:
@@ -5450,7 +5446,7 @@ PATR:
 		IconPalette: chrometd
 		Description: Actor-PATR-Description
 	TooltipExtras:
-		Attributes: Actor-PATR-Attributes
+		Attributes: Actor-PATR-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5555,7 +5551,7 @@ CVAT:
 		Description: Actor-CVAT-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-CVAT-Attributes
+		Attributes: Actor-CVAT-Attributes2
 	Valued:
 		Cost: 2000
 	Health:
@@ -5674,7 +5670,7 @@ INDP:
 		Description: Actor-INDP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-INDP-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5746,7 +5742,7 @@ MUNP:
 		Description: Actor-MUNP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-MUNP-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5834,7 +5830,7 @@ OREP:
 		Description: Actor-OREP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-OREP-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5930,7 +5926,7 @@ UPGC:
 		BuildLimit: 1
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: Actor-UPGC-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -6154,7 +6150,7 @@ TMPP:
 		Description: Actor-TMPP-Description
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: Actor-TMPP-Attributes
+		Attributes: Actor-TMPP-Attributes2
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -6244,7 +6240,7 @@ MSLO.Nod:
 		BuildLimit: 1
 		Description: Actor-MSLO.Nod-Description
 	TooltipExtras:
-		Attributes: Actor-MSLO.Nod-Attributes
+		Attributes: Actor-MSLO.Nod-Attributes2
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -6296,7 +6292,7 @@ WEAT:
 		BuildLimit: 1
 		Description: Actor-WEAT-Description
 	TooltipExtras:
-		Attributes: Actor-WEAT-Attributes
+		Attributes: Actor-WEAT-Attributes2
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -6359,7 +6355,7 @@ IOK:
 	Tooltip:
 		Name: Actor-IOK-Name
 	TooltipExtras:
-		Strengths: Actor-IOK-Strengths
+		Strengths: Actor-IOK-Strengths2
 		Weaknesses: Actor-IOK-Weaknesses
 		Attributes: Actor-IOK-Attributes
 	Armor:

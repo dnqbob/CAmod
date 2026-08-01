@@ -173,8 +173,6 @@ Player:
 		InsufficientFundsTextNotification: Insufficient funds.
 		CashTickUpNotification: CashTickUp
 		CashTickDownNotification: CashTickDown
-		DefaultCashDropdownLabel: Game-Trait-DefaultCashDropdownLabel
-		DefaultCashDropdownDescription: Game-Trait-DefaultCashDropdownDesc
 		SelectableCash: 2500, 5000, 6000, 8000, 10000, 20000
 		DefaultCash: 6000
 		DefaultCashDropdownDisplayOrder: 1
@@ -187,63 +185,63 @@ Player:
 		ExploredMapCheckboxEnabled: True
 	LobbyPrerequisiteCheckbox@GLOBALBOUNTY:
 		ID: bounty
-		Label: Game-CA-Lobby-KillBounties-Label
-		Description: Game-CA-Lobby-KillBounties-Desc
+		Label: checkbox-kill-bounties.label
+		Description: checkbox-kill-bounties.description
 		Enabled: True
 		DisplayOrder: 2
 		Prerequisites: global-bounty
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
 		ID: factundeploy
-		Label: Game-CA-Lobby-RedeployableMcvs-Label
-		Description: Game-CA-Lobby-RedeployableMcvs-Desc
+		Label: checkbox-redeployable-mcvs.label
+		Description: checkbox-redeployable-mcvs.description
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
 	LobbyPrerequisiteCheckbox@FORCESHIELD:
 		ID: forceshield
-		Label: Game-CA-Lobby-ForceShield-Label
-		Description: Game-CA-Lobby-ForceShield-Desc
+		Label: checkbox-force-shield.label
+		Description: checkbox-force-shield.description
 		Enabled: True
 		DisplayOrder: 10
 		Prerequisites: forceshield.enabled
 	LobbyPrerequisiteCheckbox@NAVY:
 		ID: navy
-		Label: Game-CA-Lobby-NavalUnits-Label
-		Description: Game-CA-Lobby-NavalUnits-Desc
+		Label: checkbox-naval-units.label
+		Description: checkbox-naval-units.description
 		Enabled: True
 		DisplayOrder: 13
 		Prerequisites: techlevel.navy
 	LobbyPrerequisiteCheckbox@REVEALONFIRE:
 		ID: revealonfire
-		Label: Game-CA-Lobby-RevealOnFire-Label
-		Description: Game-CA-Lobby-RevealOnFire-Desc
+		Label: checkbox-reveal-on-fire.label
+		Description: checkbox-reveal-on-fire.description
 		Enabled: False
 		DisplayOrder: 11
 		Prerequisites: global.revealonfire
 	LobbyPrerequisiteCheckbox@BALANCEDHARVESTING:
 		ID: balancedharvesting
-		Label: Game-CA-Lobby-BalancedHarvesting-Label
-		Description: Game-CA-Lobby-BalancedHarvesting-Desc
+		Label: checkbox-balanced-harvesting.label
+		Description: checkbox-balanced-harvesting.description
 		Enabled: True
 		DisplayOrder: 4
 		Prerequisites: global.balancedharvesting
 	LobbyPrerequisiteCheckbox@FASTREGROWTH:
 		ID: fastregrowth
-		Label: Game-CA-Lobby-FastRegrowth-Label
-		Description: Game-CA-Lobby-FastRegrowth-Desc
+		Label: checkbox-fast-regrowth.label
+		Description: checkbox-fast-regrowth.description
 		Enabled: False
 		DisplayOrder: 8
 		Prerequisites: global.fastregrowth
 	LobbyPrerequisiteDropdown@QUEUETYPE:
 		ID: queuetype
-		Label: Game-CA-Lobby-QueueType-Label
-		Description: Game-CA-Lobby-QueueType-Desc
+		Label: dropdown-queuetype.label
+		Description: dropdown-queuetype.description
 		DisplayOrder: 3
 		Default: global.singlequeue
 		Values:
-			global.singlequeue: Actor-Player-QueueType_singlequeue-Name
-			global.multiqueuefull: Actor-Player-QueueType_multiqueuefull-Name
-			global.multiqueuescaled: Actor-Player-QueueType_multiqueuescaled-Name
+			global.singlequeue: options-queuetype.singlequeue
+			global.multiqueuefull: options-queuetype.multiqueuefull
+			global.multiqueuescaled: options-queuetype.multiqueuescaled
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		TextNotification: Base under attack.
@@ -252,23 +250,23 @@ Player:
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
-		Name: Actor-Player-TechLevel_infonly-Name
+		Name: options-tech-level.infantry-only
 		Prerequisites: techlevel.infonly
 		Id: infantryonly
 	ProvidesTechPrerequisite@low:
-		Name: Actor-Player-TechLevel_low-Name
+		Name: options-tech-level.low
 		Prerequisites: techlevel.infonly, techlevel.low
 		Id: low
 	ProvidesTechPrerequisite@medium:
-		Name: Actor-Player-TechLevel_medium-Name
+		Name: options-tech-level.medium
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
 	ProvidesTechPrerequisite@high:
-		Name: Actor-Player-TechLevel_high-Name
+		Name: options-tech-level.high
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high
 		Id: high
 	ProvidesTechPrerequisite@unrestricted:
-		Name: Actor-Player-TechLevel_unrestricted-Name
+		Name: options-tech-level.unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
 	ProvidesPrerequisite@allies:

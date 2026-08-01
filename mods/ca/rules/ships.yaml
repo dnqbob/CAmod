@@ -80,7 +80,7 @@ MSUB:
 		Description: Actor-MSUB-Description
 	TooltipExtras:
 		Strengths: Actor-MSUB-Strengths
-		Weaknesses: Actor-MSUB-Weaknesses
+		Weaknesses: Actor-MSUB-Weaknesses2
 		Attributes: Actor-MSUB-Attributes
 	Valued:
 		Cost: 1650
@@ -207,7 +207,7 @@ CA:
 		Description: Actor-CA-Description
 	TooltipExtras:
 		Strengths: Actor-CA-Strengths
-		Weaknesses: Actor-CA-Weaknesses
+		Weaknesses: Actor-MSUB-Weaknesses2
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -355,7 +355,7 @@ PT:
 		Description: Actor-PT-Description
 	TooltipExtras:
 		Strengths: Actor-PT-Strengths
-		Weaknesses: Actor-PT-Weaknesses
+		Weaknesses: Actor-PT-Weaknesses2
 		Attributes: Actor-PT-Attributes
 	Valued:
 		Cost: 500
@@ -662,8 +662,8 @@ ISUB:
 		Description: Actor-ISUB-Description
 	TooltipExtras:
 		Strengths: Actor-ISUB-Strengths
-		Weaknesses: Actor-ISUB-Weaknesses
-		Attributes: Actor-ISUB-Attributes
+		Weaknesses: Actor-MSUB-Weaknesses2
+		Attributes: Actor-ISUB-Attributes2
 	Valued:
 		Cost: 2000
 	Tooltip:

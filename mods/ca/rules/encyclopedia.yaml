@@ -112,7 +112,7 @@ encyclopedia.power.cryostorm:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Sweden Coalition.
 
 encyclopedia.power.heliosbomb:
 	Inherits: ^SupportPowerPreview
@@ -127,7 +127,7 @@ encyclopedia.power.heliosbomb:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Greece Coalition.
 
 encyclopedia.power.bsky:
 	Inherits: ^SupportPowerPreview
@@ -141,7 +141,7 @@ encyclopedia.power.bsky:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.bsky-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.bsky-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Korea Coalition.
 
 encyclopedia.power.spysatellite:
 	Inherits: ^SupportPowerPreview
@@ -195,7 +195,7 @@ encyclopedia.power.chronoshift:
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.chronoshift-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.chronoshift-EncyclopediaExtras-Description
 
 encyclopedia.power.lightningstorm:
 	Inherits: ^SupportPowerPreview
@@ -334,7 +334,7 @@ encyclopedia.power.atomicammo:
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.atomicammo-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.atomicammo-EncyclopediaExtras-Description
 
 encyclopedia.power.heroes:
 	Inherits: ^SupportPowerPreview
@@ -346,8 +346,8 @@ encyclopedia.power.heroes:
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.heroes-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.heroes-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.heroes-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Infantry Doctrine.
 
 encyclopedia.power.tankdrop:
 	Inherits: ^SupportPowerPreview
@@ -360,7 +360,7 @@ encyclopedia.power.tankdrop:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Armor Doctrine.
 
 encyclopedia.power.killzone:
 	Inherits: ^SupportPowerPreview
@@ -373,7 +373,7 @@ encyclopedia.power.killzone:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.killzone-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.killzone-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Artillery Doctrine.
 
 encyclopedia.power.ironcurtain:
 	Inherits: ^SupportPowerPreview
@@ -414,7 +414,7 @@ encyclopedia.power.recondrone:
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.recondrone-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.recondrone-EncyclopediaExtras-Description
 
 encyclopedia.power.xodrop:
 	Inherits: ^SupportPowerPreview
@@ -515,7 +515,7 @@ encyclopedia.power.firestorm:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 encyclopedia.power.advancedradar:
 	Inherits: ^SupportPowerPreview
@@ -530,7 +530,7 @@ encyclopedia.power.advancedradar:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 encyclopedia.power.naniteshield:
 	Inherits: ^SupportPowerPreview
@@ -544,7 +544,7 @@ encyclopedia.power.naniteshield:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Hold the Line Strategy.
 
 encyclopedia.power.empmissile:
 	Inherits: ^SupportPowerPreview
@@ -654,7 +654,7 @@ encyclopedia.power.shadowteam:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.shadowteam-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.shadowteam-EncyclopediaExtras-Description
 		Subfaction: shadow
 
 encyclopedia.power.frenzy:
@@ -668,7 +668,7 @@ encyclopedia.power.frenzy:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.frenzy-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.frenzy-EncyclopediaExtras-Description
 		Subfaction: marked
 
 encyclopedia.power.techhack:
@@ -682,7 +682,7 @@ encyclopedia.power.techhack:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.techhack-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.techhack-EncyclopediaExtras-Description
 		Subfaction: legion
 
 encyclopedia.power.assassinsquad:
@@ -696,8 +696,8 @@ encyclopedia.power.assassinsquad:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Wrath Covenant.
 
 encyclopedia.power.hackercell:
 	Inherits: ^SupportPowerPreview
@@ -709,8 +709,8 @@ encyclopedia.power.hackercell:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.hackercell-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.hackercell-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.hackercell-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Unity Covenant.
 
 encyclopedia.power.confessorcabal:
 	Inherits: ^SupportPowerPreview
@@ -723,8 +723,8 @@ encyclopedia.power.confessorcabal:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Zeal Covenant.
 
 encyclopedia.power.clustermissile:
 	Inherits: ^SupportPowerPreview
@@ -752,7 +752,7 @@ encyclopedia.power.tibstealth:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.tibstealth-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.tibstealth-EncyclopediaExtras-Description
 
 encyclopedia.power.chemmissile:
 	Inherits: ^SupportPowerPreview
@@ -766,7 +766,7 @@ encyclopedia.power.chemmissile:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.chemmissile-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.chemmissile-EncyclopediaExtras-Description
 
 # Scrin Support Powers
 
@@ -795,8 +795,8 @@ encyclopedia.power.ichorspike:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.ichorspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.ichorspike-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.ichorspike-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.colonyspike:
 	Inherits: ^SupportPowerPreview
@@ -809,8 +809,8 @@ encyclopedia.power.colonyspike:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.colonyspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.colonyspike-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.colonyspike-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.voidspike:
 	Inherits: ^SupportPowerPreview
@@ -823,8 +823,8 @@ encyclopedia.power.voidspike:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.voidspike-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.voidspike-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.voidspike-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.ionsurge:
 	Inherits: ^SupportPowerPreview
@@ -895,7 +895,7 @@ encyclopedia.power.greatercoalescence:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.greatercoalescence-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.greatercoalescence-EncyclopediaExtras-Description
 		Subfaction: collector
 
 encyclopedia.power.gateway:
@@ -910,8 +910,8 @@ encyclopedia.power.gateway:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.gateway-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.gateway-EncyclopediaExtrasAdditionalInfo
+		Description: Actor-encyclopedia.power.gateway-EncyclopediaExtras-Description
+		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.anathemapower:
 	Inherits: ^SupportPowerPreview
@@ -926,7 +926,7 @@ encyclopedia.power.anathemapower:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.owrath:
 	Inherits: ^SupportPowerPreview
@@ -941,7 +941,7 @@ encyclopedia.power.owrath:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.owrath-EncyclopediaExtrasDescription
-		AdditionalInfo: Actor-encyclopedia.power.owrath-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.fleetrecall:
 	Inherits: ^SupportPowerPreview
@@ -955,7 +955,7 @@ encyclopedia.power.fleetrecall:
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.fleetrecall-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.fleetrecall-EncyclopediaExtras-Description
 
 encyclopedia.power.suppression:
 	Inherits: ^SupportPowerPreview
@@ -994,7 +994,7 @@ encyclopedia.power.forceshield:
 	Encyclopedia:
 		Category: Other/Shared Support Powers
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.power.forceshield-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.power.forceshield-EncyclopediaExtras-Description
 
 encyclopedia.power.sendcash:
 	Inherits: ^SupportPowerPreview
@@ -1048,7 +1048,7 @@ encyclopedia.ifv.mg:
 		Description: Actor-encyclopedia.ifv.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.mg-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.mg-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.mg-Attributes
 
 encyclopedia.ifv.engi:
@@ -1063,7 +1063,7 @@ encyclopedia.ifv.engi:
 		Description: Actor-encyclopedia.ifv.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.ifv.engi-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.engi-Attributes
+		Attributes: Actor-encyclopedia.ifv.engi-Attributes2
 
 encyclopedia.ifv.med:
 	Inherits: ^IFVVariantPreview
@@ -1075,7 +1075,7 @@ encyclopedia.ifv.med:
 		Description: Actor-encyclopedia.ifv.med-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.ifv.med-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.med-Attributes
+		Attributes: Actor-encyclopedia.ifv.med-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1094,7 +1094,7 @@ encyclopedia.ifv.mech:
 		Description: Actor-encyclopedia.ifv.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.ifv.mech-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.mech-Attributes
+		Attributes: Actor-encyclopedia.ifv.mech-Attributes2
 
 encyclopedia.ifv.spy:
 	Inherits: ^IFVVariantPreview
@@ -1103,10 +1103,10 @@ encyclopedia.ifv.spy:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: Actor-encyclopedia.ifv.spy-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.ifv.spy-EncyclopediaExtras-Description
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.ifv.spy-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.spy-Attributes
+		Attributes: Actor-encyclopedia.ifv.spy-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1124,7 +1124,7 @@ encyclopedia.ifv.snip:
 		Description: Actor-encyclopedia.ifv.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.snip-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.snip-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.snip-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.snip-Attributes
 
 encyclopedia.ifv.enfo:
@@ -1139,7 +1139,7 @@ encyclopedia.ifv.enfo:
 		Description: Actor-encyclopedia.ifv.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.enfo-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.enfo-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.enfo-Attributes
 
 encyclopedia.ifv.ggi:
@@ -1184,8 +1184,8 @@ encyclopedia.ifv.cryo:
 		Description: Actor-encyclopedia.ifv.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.cryo-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.cryo-Attributes
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.cryo-Attributes2
 
 encyclopedia.ifv.tigr:
 	Inherits: ^IFVVariantPreview
@@ -1214,7 +1214,7 @@ encyclopedia.ifv.hopl:
 		Description: Actor-encyclopedia.ifv.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.hopl-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.hopl-Attributes
 
 encyclopedia.ifv.cmdo:
@@ -1244,7 +1244,7 @@ encyclopedia.ifv.grenade:
 		Description: Actor-encyclopedia.ifv.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.grenade-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.grenade-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.grenade-Attributes
 
 encyclopedia.ifv.flame:
@@ -1259,7 +1259,7 @@ encyclopedia.ifv.flame:
 		Description: Actor-encyclopedia.ifv.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.flame-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.flame-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.flame-Attributes
 
 encyclopedia.ifv.chem:
@@ -1274,7 +1274,7 @@ encyclopedia.ifv.chem:
 		Description: Actor-encyclopedia.ifv.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.chem-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.chem-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.chem-Attributes
 
 encyclopedia.ifv.rad:
@@ -1289,7 +1289,7 @@ encyclopedia.ifv.rad:
 		Description: Actor-encyclopedia.ifv.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.rad-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.rad-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.rad-Attributes
 
 encyclopedia.ifv.ivan:
@@ -1335,8 +1335,8 @@ encyclopedia.ifv.psy:
 		Description: Actor-encyclopedia.ifv.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.psy-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.psy-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.psy-Attributes
+		Weaknesses: Actor-encyclopedia.ifv.psy-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.psy-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1373,7 +1373,7 @@ encyclopedia.ifv.laser:
 		Description: Actor-encyclopedia.ifv.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.laser-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.laser-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.laser-Attributes
 
 encyclopedia.ifv.enli:
@@ -1388,7 +1388,7 @@ encyclopedia.ifv.enli:
 		Description: Actor-encyclopedia.ifv.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.enli-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.enli-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.enli-Attributes
 
 encyclopedia.ifv.rmbc:
@@ -1417,7 +1417,7 @@ encyclopedia.ifv.bh:
 		Description: Actor-encyclopedia.ifv.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.bh-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.bh-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.bh-Attributes
 
 encyclopedia.ifv.conf:
@@ -1432,8 +1432,8 @@ encyclopedia.ifv.conf:
 		Description: Actor-encyclopedia.ifv.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.conf-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.conf-Weaknesses
-		Attributes: Actor-encyclopedia.ifv.conf-Attributes
+		Weaknesses: Actor-NHAW-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.conf-Attributes2
 
 encyclopedia.ifv.reap:
 	Inherits: ^IFVVariantPreview
@@ -1462,7 +1462,7 @@ encyclopedia.ifv.shad:
 		Description: Actor-encyclopedia.ifv.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.shad-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.shad-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.shad-Attributes
 
 encyclopedia.ifv.hack:
@@ -1475,7 +1475,7 @@ encyclopedia.ifv.hack:
 		Description: Actor-encyclopedia.ifv.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.hack-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.hack-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hack-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.hack-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
@@ -1493,7 +1493,7 @@ encyclopedia.ifv.ztrp:
 		Description: Actor-encyclopedia.ifv.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.ztrp-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.ztrp-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.ztrp-Attributes
 
 encyclopedia.ifv.zdef:
@@ -1508,7 +1508,7 @@ encyclopedia.ifv.zdef:
 		Description: Actor-encyclopedia.ifv.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.zdef-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.zdef-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.zdef-Attributes
 
 encyclopedia.ifv.zrai:
@@ -1553,7 +1553,7 @@ encyclopedia.ifv.shard:
 		Description: Actor-encyclopedia.ifv.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.shard-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.shard-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.shard-Attributes
 
 encyclopedia.ifv.pdisc:
@@ -1568,7 +1568,7 @@ encyclopedia.ifv.pdisc:
 		Description: Actor-encyclopedia.ifv.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.pdisc-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.pdisc-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.pdisc-Attributes
 
 encyclopedia.ifv.impl:
@@ -1583,7 +1583,7 @@ encyclopedia.ifv.impl:
 		Description: Actor-encyclopedia.ifv.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.impl-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.impl-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.impl-Attributes
 
 encyclopedia.ifv.stlk:
@@ -1601,7 +1601,7 @@ encyclopedia.ifv.stlk:
 		Description: Actor-encyclopedia.ifv.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.stlk-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.stlk-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.stlk-Attributes
 
 encyclopedia.ifv.mortchem:
@@ -1616,7 +1616,7 @@ encyclopedia.ifv.mortchem:
 		Description: Actor-encyclopedia.ifv.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.mortchem-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.mortchem-Attributes
 
 encyclopedia.ifv.mortcryo:
@@ -1631,7 +1631,7 @@ encyclopedia.ifv.mortcryo:
 		Description: Actor-encyclopedia.ifv.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.mortcryo-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.mortcryo-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.mortcryo-Attributes
 
 encyclopedia.ifv.mortsonic:
@@ -1646,7 +1646,7 @@ encyclopedia.ifv.mortsonic:
 		Description: Actor-encyclopedia.ifv.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.ifv.mortsonic-Strengths
-		Weaknesses: Actor-encyclopedia.ifv.mortsonic-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.ifv.mortsonic-Attributes
 
 # Reckoner Variants
@@ -1688,7 +1688,7 @@ encyclopedia.reck.mg:
 		Description: Actor-encyclopedia.reck.mg-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.mg-Strengths
-		Weaknesses: Actor-encyclopedia.reck.mg-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.mg-Attributes
 
 encyclopedia.reck.engi:
@@ -1703,7 +1703,7 @@ encyclopedia.reck.engi:
 		Description: Actor-encyclopedia.reck.engi-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.reck.engi-Weaknesses
-		Attributes: Actor-encyclopedia.reck.engi-Attributes
+		Attributes: Actor-encyclopedia.ifv.engi-Attributes2
 
 encyclopedia.reck.med:
 	Inherits: ^ReckonerVariantPreview
@@ -1715,7 +1715,7 @@ encyclopedia.reck.med:
 		Description: Actor-encyclopedia.reck.med-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.reck.med-Weaknesses
-		Attributes: Actor-encyclopedia.reck.med-Attributes
+		Attributes: Actor-encyclopedia.ifv.med-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1734,7 +1734,7 @@ encyclopedia.reck.mech:
 		Description: Actor-encyclopedia.reck.mech-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.reck.mech-Weaknesses
-		Attributes: Actor-encyclopedia.reck.mech-Attributes
+		Attributes: Actor-encyclopedia.ifv.mech-Attributes2
 
 encyclopedia.reck.spy:
 	Inherits: ^ReckonerVariantPreview
@@ -1746,7 +1746,7 @@ encyclopedia.reck.spy:
 		Description: Actor-encyclopedia.reck.spy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.reck.spy-Weaknesses
-		Attributes: Actor-encyclopedia.reck.spy-Attributes
+		Attributes: Actor-encyclopedia.reck.spy-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1764,7 +1764,7 @@ encyclopedia.reck.snip:
 		Description: Actor-encyclopedia.reck.snip-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.snip-Strengths
-		Weaknesses: Actor-encyclopedia.reck.snip-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.snip-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.snip-Attributes
 
 encyclopedia.reck.enfo:
@@ -1779,7 +1779,7 @@ encyclopedia.reck.enfo:
 		Description: Actor-encyclopedia.reck.enfo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.enfo-Strengths
-		Weaknesses: Actor-encyclopedia.reck.enfo-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.enfo-Attributes
 
 encyclopedia.reck.ggi:
@@ -1824,8 +1824,8 @@ encyclopedia.reck.cryo:
 		Description: Actor-encyclopedia.reck.cryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.cryo-Strengths
-		Weaknesses: Actor-encyclopedia.reck.cryo-Weaknesses
-		Attributes: Actor-encyclopedia.reck.cryo-Attributes
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.cryo-Attributes2
 
 encyclopedia.reck.tigr:
 	Inherits: ^ReckonerVariantPreview
@@ -1854,7 +1854,7 @@ encyclopedia.reck.hopl:
 		Description: Actor-encyclopedia.reck.hopl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.hopl-Strengths
-		Weaknesses: Actor-encyclopedia.reck.hopl-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.hopl-Attributes
 
 encyclopedia.reck.cmdo:
@@ -1884,7 +1884,7 @@ encyclopedia.reck.grenade:
 		Description: Actor-encyclopedia.reck.grenade-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.grenade-Strengths
-		Weaknesses: Actor-encyclopedia.reck.grenade-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.grenade-Attributes
 
 encyclopedia.reck.flame:
@@ -1899,7 +1899,7 @@ encyclopedia.reck.flame:
 		Description: Actor-encyclopedia.reck.flame-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.flame-Strengths
-		Weaknesses: Actor-encyclopedia.reck.flame-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.flame-Attributes
 
 encyclopedia.reck.chem:
@@ -1914,7 +1914,7 @@ encyclopedia.reck.chem:
 		Description: Actor-encyclopedia.reck.chem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.chem-Strengths
-		Weaknesses: Actor-encyclopedia.reck.chem-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.chem-Attributes
 
 encyclopedia.reck.rad:
@@ -1929,7 +1929,7 @@ encyclopedia.reck.rad:
 		Description: Actor-encyclopedia.reck.rad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.rad-Strengths
-		Weaknesses: Actor-encyclopedia.reck.rad-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.rad-Attributes
 
 encyclopedia.reck.ivan:
@@ -1975,8 +1975,8 @@ encyclopedia.reck.psy:
 		Description: Actor-encyclopedia.reck.psy-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.psy-Strengths
-		Weaknesses: Actor-encyclopedia.reck.psy-Weaknesses
-		Attributes: Actor-encyclopedia.reck.psy-Attributes
+		Weaknesses: Actor-encyclopedia.ifv.psy-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.psy-Attributes2
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -2013,7 +2013,7 @@ encyclopedia.reck.laser:
 		Description: Actor-encyclopedia.reck.laser-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.laser-Strengths
-		Weaknesses: Actor-encyclopedia.reck.laser-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.laser-Attributes
 
 encyclopedia.reck.enli:
@@ -2028,7 +2028,7 @@ encyclopedia.reck.enli:
 		Description: Actor-encyclopedia.reck.enli-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.enli-Strengths
-		Weaknesses: Actor-encyclopedia.reck.enli-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.enli-Attributes
 
 encyclopedia.reck.rmbc:
@@ -2057,7 +2057,7 @@ encyclopedia.reck.bh:
 		Description: Actor-encyclopedia.reck.bh-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.bh-Strengths
-		Weaknesses: Actor-encyclopedia.reck.bh-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.bh-Attributes
 
 encyclopedia.reck.conf:
@@ -2072,8 +2072,8 @@ encyclopedia.reck.conf:
 		Description: Actor-encyclopedia.reck.conf-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.conf-Strengths
-		Weaknesses: Actor-encyclopedia.reck.conf-Weaknesses
-		Attributes: Actor-encyclopedia.reck.conf-Attributes
+		Weaknesses: Actor-NHAW-Weaknesses2
+		Attributes: Actor-encyclopedia.ifv.conf-Attributes2
 
 encyclopedia.reck.reap:
 	Inherits: ^ReckonerVariantPreview
@@ -2102,7 +2102,7 @@ encyclopedia.reck.shad:
 		Description: Actor-encyclopedia.reck.shad-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.shad-Strengths
-		Weaknesses: Actor-encyclopedia.reck.shad-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.shad-Attributes
 
 encyclopedia.reck.hack:
@@ -2115,7 +2115,7 @@ encyclopedia.reck.hack:
 		Description: Actor-encyclopedia.reck.hack-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.hack-Strengths
-		Weaknesses: Actor-encyclopedia.reck.hack-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hack-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.hack-Attributes
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
@@ -2133,7 +2133,7 @@ encyclopedia.reck.ztrp:
 		Description: Actor-encyclopedia.reck.ztrp-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.ztrp-Strengths
-		Weaknesses: Actor-encyclopedia.reck.ztrp-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.ztrp-Attributes
 
 encyclopedia.reck.zdef:
@@ -2148,7 +2148,7 @@ encyclopedia.reck.zdef:
 		Description: Actor-encyclopedia.reck.zdef-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.zdef-Strengths
-		Weaknesses: Actor-encyclopedia.reck.zdef-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.zdef-Attributes
 
 encyclopedia.reck.zrai:
@@ -2193,7 +2193,7 @@ encyclopedia.reck.shard:
 		Description: Actor-encyclopedia.reck.shard-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.shard-Strengths
-		Weaknesses: Actor-encyclopedia.reck.shard-Weaknesses
+		Weaknesses: Actor-NHAW-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.shard-Attributes
 
 encyclopedia.reck.pdisc:
@@ -2208,7 +2208,7 @@ encyclopedia.reck.pdisc:
 		Description: Actor-encyclopedia.reck.pdisc-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.pdisc-Strengths
-		Weaknesses: Actor-encyclopedia.reck.pdisc-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.pdisc-Attributes
 
 encyclopedia.reck.impl:
@@ -2223,7 +2223,7 @@ encyclopedia.reck.impl:
 		Description: Actor-encyclopedia.reck.impl-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.impl-Strengths
-		Weaknesses: Actor-encyclopedia.reck.impl-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.impl-Attributes
 
 encyclopedia.reck.stlk:
@@ -2241,7 +2241,7 @@ encyclopedia.reck.stlk:
 		Description: Actor-encyclopedia.reck.stlk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.stlk-Strengths
-		Weaknesses: Actor-encyclopedia.reck.stlk-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.stlk-Attributes
 
 encyclopedia.reck.mortchem:
@@ -2256,7 +2256,7 @@ encyclopedia.reck.mortchem:
 		Description: Actor-encyclopedia.reck.mortchem-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.mortchem-Strengths
-		Weaknesses: Actor-encyclopedia.reck.mortchem-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.mortchem-Attributes
 
 encyclopedia.reck.mortcryo:
@@ -2271,7 +2271,7 @@ encyclopedia.reck.mortcryo:
 		Description: Actor-encyclopedia.reck.mortcryo-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.mortcryo-Strengths
-		Weaknesses: Actor-encyclopedia.reck.mortcryo-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.mortcryo-Attributes
 
 encyclopedia.reck.mortsonic:
@@ -2286,7 +2286,7 @@ encyclopedia.reck.mortsonic:
 		Description: Actor-encyclopedia.reck.mortsonic-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.reck.mortsonic-Strengths
-		Weaknesses: Actor-encyclopedia.reck.mortsonic-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-encyclopedia.reck.mortsonic-Attributes
 
 encyclopedia.buffs.anathema:
@@ -2334,8 +2334,8 @@ encyclopedia.buffs.frenzy:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.frenzy-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Actor-encyclopedia.buffs.frenzy-Strengths
-		Weaknesses: Actor-encyclopedia.buffs.frenzy-Weaknesses
+		Strengths: Actor-encyclopedia.buffs.frenzy-Strengths2
+		Weaknesses: Actor-encyclopedia.buffs.frenzy-Weaknesses2
 	WithPalettedOverlay@FRENZY:
 		Palette: frenzy
 		ShowInPreview: true
@@ -2376,7 +2376,7 @@ encyclopedia.buffs.hotu:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.hotu-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Actor-encyclopedia.buffs.hotu-Strengths
+		Strengths: Actor-encyclopedia.buffs.hotu-Strengths2
 	WithIdleOverlay@HeroOfTheUnionCrest:
 		Sequence: star
 		Image: hero-overlay
@@ -2418,7 +2418,7 @@ encyclopedia.buffs.inspiration:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.inspiration-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Actor-encyclopedia.buffs.inspiration-Strengths
+		Strengths: Actor-encyclopedia.buffs.inspiration-Strengths2
 	WithIdleOverlay@Inspiration1:
 		Image: ussrstar
 		Sequence: idle-overlay1
@@ -2434,7 +2434,7 @@ encyclopedia.buffs.inspiration2:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.inspiration2-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Actor-encyclopedia.buffs.inspiration2-Strengths
+		Strengths: Actor-encyclopedia.buffs.inspiration2-Strengths2
 	WithIdleOverlay@Inspiration2:
 		Image: ussrstar
 		Sequence: idle-overlay2
@@ -2467,7 +2467,7 @@ encyclopedia.buffs.ironcurtain:
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.buffs.ironcurtain-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.buffs.ironcurtain-EncyclopediaExtras-Description
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.buffs.ironcurtain-Strengths
 		Weaknesses: Actor-encyclopedia.buffs.ironcurtain-Weaknesses
@@ -2526,7 +2526,7 @@ encyclopedia.buffs.tibstealth:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.buffs.tibstealth-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Strengths: Actor-encyclopedia.buffs.tibstealth-Strengths
+		Strengths: Actor-encyclopedia.buffs.tibstealth-Strengths2
 
 encyclopedia.debuffs.atomized:
 	Inherits: ^VehicleEffectPreview
@@ -2538,7 +2538,7 @@ encyclopedia.debuffs.atomized:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.atomized-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.atomized-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.atomized-Weaknesses2
 	WithIdleOverlay@ATOMIZED:
 		-RequiresCondition:
 
@@ -2553,7 +2553,7 @@ encyclopedia.debuffs.berserk:
 		Description: Actor-encyclopedia.debuffs.berserk-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Weaknesses: Actor-encyclopedia.debuffs.berserk-Weaknesses
-		Attributes: Actor-encyclopedia.debuffs.berserk-Attributes
+		Attributes: Actor-encyclopedia.debuffs.berserk-Attributes2
 	WithPalettedOverlay@BERSERK:
 		ShowInPreview: true
 
@@ -2566,7 +2566,7 @@ encyclopedia.debuffs.blinded:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.blinded-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.blinded-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.blinded-Weaknesses2
 	WithPreviewDecoration@Blinded:
 		Image: blinded
 		Sequence: idle
@@ -2584,7 +2584,7 @@ encyclopedia.debuffs.chill:
 		Description: Actor-encyclopedia.debuffs.chill-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Attributes: Actor-encyclopedia.debuffs.chill-Attributes
-		Weaknesses: Actor-encyclopedia.debuffs.chill-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.chill-Weaknesses2
 	WithColoredOverlayCA@chilled5:
 		Color: 51aeda68
 		ShowInPreview: true
@@ -2598,7 +2598,7 @@ encyclopedia.debuffs.concussion:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.concussion-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.concussion-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.concussion-Weaknesses2
 	WithPreviewDecoration:
 		Image: pips
 		Sequence: pip-conc
@@ -2616,7 +2616,7 @@ encyclopedia.debuffs.emp:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.emp-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.emp-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.emp-Weaknesses2
 	WithColoredOverlayCA@EMPDISABLE:
 		Color: 000000b4
 		ShowInPreview: true
@@ -2635,7 +2635,7 @@ encyclopedia.debuffs.irradiated:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.irradiated-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.irradiated-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.irradiated-Weaknesses2
 	WithPalettedOverlay@IRRADIATABLE:
 		ShowInPreview: true
 	WithPreviewDecoration:
@@ -2652,9 +2652,9 @@ encyclopedia.debuffs.jammed:
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Actor-encyclopedia.debuffs.jammed-EncyclopediaExtrasDescription
+		Description: Actor-encyclopedia.debuffs.jammed-EncyclopediaExtras-Description
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.jammed-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.jammed-Weaknesses2
 	WithIdleOverlay@WEAPJAMMED:
 		-RequiresCondition:
 
@@ -2667,7 +2667,7 @@ encyclopedia.debuffs.targetpainted:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.targetpainted-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.targetpainted-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.targetpainted-Weaknesses2
 	WithPreviewDecoration:
 		Image: targetpainter
 		Sequence: idle
@@ -2685,7 +2685,7 @@ encyclopedia.debuffs.reapersnared:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.reapersnared-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.reapersnared-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.reapersnared-Weaknesses2
 	WithIdleOverlay@ReaperSnare:
 		-RequiresCondition:
 	WithInfantryBody:
@@ -2702,7 +2702,7 @@ encyclopedia.debuffs.suppression:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.suppression-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.suppression-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.suppression-Weaknesses2
 	WithPalettedOverlay@SUPPRESSION:
 		ShowInPreview: true
 
@@ -2733,7 +2733,7 @@ encyclopedia.debuffs.veiled:
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.debuffs.veiled-EncyclopediaExtrasDescription
 	TooltipExtras:
-		Weaknesses: Actor-encyclopedia.debuffs.veiled-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.veiled-Weaknesses2
 	WithIdleOverlay@VEILED:
 		-RequiresCondition:
 
@@ -2750,7 +2750,7 @@ encyclopedia.debuffs.warped:
 		Description: Actor-encyclopedia.debuffs.warped-EncyclopediaExtrasDescription
 	TooltipExtras:
 		Strengths: Actor-encyclopedia.debuffs.warped-Strengths
-		Weaknesses: Actor-encyclopedia.debuffs.warped-Weaknesses
+		Weaknesses: Actor-encyclopedia.debuffs.reapersnared-Weaknesses2
 	WithPalettedOverlay@TEMPORALl:
 		ShowInPreview: true
 	WithIdleOverlay@TEMPORAL:

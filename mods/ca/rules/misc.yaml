@@ -276,7 +276,7 @@ CRATE:
 MONEYCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Actor-MONEYCRATE-Name
+		Name: Actor-MONEYCRATE-Name2
 	GiveCashCrateAction:
 		Amount: 500
 		SelectionShares: 1
@@ -751,8 +751,8 @@ powerproxy.paratroopers:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: halo.paradrop
-		Name: Actor-Single-Paratroopers-Soviet-Name
-		Description: Actor-Single-Paratroopers-Soviet-Description
+		Name: Actor-powerproxy.paratroopers-Name
+		Description: Actor-powerproxy.paratroopers-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 750
@@ -779,8 +779,8 @@ powerproxy.paratroopers.allies:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: tran.paradrop
-		Name: Actor-Single-Paratroopers-Allies-Name
-		Description: Actor-Single-Paratroopers-Allies-Description
+		Name: Actor-powerproxy.paratroopers-Name
+		Description: Actor-powerproxy.paratroopers.allies-Description
 		OneShot: true
 		Stacks: 1
 		StackActivationInterval: 750
@@ -808,7 +808,7 @@ powerproxy.airborne:
 		Icon: airborne
 		SquadSize: 1
 		UnitType: galx
-		Name: Actor-Single-GGI-Name
+		Name: Actor-powerproxy.airborne-Name2
 		Description: Actor-Single-GGI-Description
 		OneShot: true
 		Stacks: 1
@@ -843,7 +843,7 @@ powerproxy.airborne.tank:
 		Icon: airdropicon
 		SquadSize: 1
 		UnitType: galx
-		Name: Actor-powerproxy.airborne.tank-Name
+		Name: Actor-powerproxy.airborne.tank-Name2
 		Description: Actor-Single-Grizzly-Description
 		OneShot: true
 		Stacks: 1
@@ -926,44 +926,44 @@ aircraft.upgraded:
 playerxp.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Actor-playerxp.level1-Name
+		Name: Actor-playerxp.level1-Name2
 	Buildable:
-		Description: Actor-playerxp.level1-Description
+		Description: Actor-playerxp.level1-Name2
 
 playerxp.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Actor-playerxp.level2-Name
+		Name: Actor-playerxp.level2-Name2
 	Buildable:
-		Description: Actor-playerxp.level2-Description
+		Description: Actor-playerxp.level2-Name2
 
 playerxp.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Actor-playerxp.level3-Name
+		Name: Actor-playerxp.level3-Name2
 	Buildable:
-		Description: Actor-playerxp.level3-Description
+		Description: Actor-playerxp.level3-Name2
 
 influence.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
 		Name: Actor-influence.level1-Name
 	Buildable:
-		Description: Actor-influence.level1-Description
+		Description: Actor-influence.level1-Description2
 
 influence.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
 		Name: Actor-influence.level2-Name
 	Buildable:
-		Description: Actor-influence.level2-Description
+		Description: Actor-influence.level2-Description2
 
 influence.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
 		Name: Actor-influence.level3-Name
 	Buildable:
-		Description: Actor-influence.level3-Description
+		Description: Actor-influence.level3-Description2
 
 timeskip:
 	Inherits@DUMMY: ^InvisibleDummy

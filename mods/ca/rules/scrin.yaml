@@ -480,7 +480,7 @@ S1:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-S1-Strengths
-		Weaknesses: Actor-S1-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -522,7 +522,7 @@ S2:
 		Description: Actor-S2-Description
 	TooltipExtras:
 		Strengths: Actor-S2-Strengths
-		Weaknesses: Actor-S2-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 275
 	Tooltip:
@@ -625,7 +625,7 @@ S4:
 		Description: Actor-S4-Description
 	TooltipExtras:
 		Strengths: Actor-S4-Strengths
-		Weaknesses: Actor-S4-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 		Attributes: Actor-S4-Attributes
 	Mobile:
 		Speed: 54
@@ -689,8 +689,8 @@ MRDR:
 		Description: Actor-MRDR-Description
 	TooltipExtras:
 		Strengths: Actor-MRDR-Strengths
-		Weaknesses: Actor-MRDR-Weaknesses
-		Attributes: Actor-MRDR-Attributes
+		Weaknesses: Actor-ORCB-Weaknesses2
+		Attributes: Actor-MRDR-Attributes2
 	Mobile:
 		Speed: 46
 	Valued:
@@ -769,7 +769,7 @@ WCHR:
 		Name: Actor-WCHR-Name
 	TooltipExtras:
 		Weaknesses: Actor-WCHR-Weaknesses
-		Attributes: Actor-WCHR-Attributes
+		Attributes: Actor-WCHR-Attributes2
 	Health:
 		HP: 5000
 	UpdatesPlayerStatistics:
@@ -909,7 +909,7 @@ EVIS:
 		Name: Actor-EVIS-Name
 	TooltipExtras:
 		Strengths: Actor-EVIS-Strengths
-		Weaknesses: Actor-EVIS-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-EVIS-Attributes
 	Health:
 		HP: 16000
@@ -962,7 +962,7 @@ EVIS:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-EVIS-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Loyalist Allegiance.
 
 IMPL:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -983,7 +983,7 @@ IMPL:
 		Name: Actor-IMPL-Name
 	TooltipExtras:
 		Strengths: Actor-IMPL-Strengths
-		Weaknesses: Actor-IMPL-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-IMPL-Attributes
 	Health:
 		HP: 8000
@@ -1009,7 +1009,7 @@ IMPL:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-IMPL-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Rebel Allegiance.
 
 STLK:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1030,8 +1030,8 @@ STLK:
 		Name: Actor-STLK-Name
 	TooltipExtras:
 		Strengths: Actor-STLK-Strengths
-		Weaknesses: Actor-STLK-Weaknesses
-		Attributes: Actor-STLK-Attributes
+		Weaknesses: Actor-A10-Weaknesses2
+		Attributes: Actor-STLK-Attributes2
 	Health:
 		HP: 10000
 	UpdatesPlayerStatistics:
@@ -1106,7 +1106,7 @@ STLK:
 	TakeCover:
 		PauseOnCondition: being-warped || phaseshield
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-STLK-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Malefic Allegiance.
 
 SMEDI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1156,7 +1156,7 @@ SMEDI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-SMEDI-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Acquired from captured Hospitals.
 
 ARTI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1241,7 +1241,7 @@ ARTI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ARTI-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Acquired from captured Machine Shops.
 
 GSCR:
 	Inherits: BRUT
@@ -1270,7 +1270,7 @@ GSCR:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-GSCR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Result of Genetic Mutation Bomb on Scrin infantry.
 
 GSCR.Mutating:
 	Inherits: BRUT.Mutating
@@ -1305,7 +1305,7 @@ MAST:
 	TooltipExtras:
 		Strengths: Actor-MAST-Strengths
 		Weaknesses: Actor-MAST-Weaknesses
-		Attributes: Actor-MAST-Attributes
+		Attributes: Actor-MAST-Attributes2
 	Voiced:
 		VoiceSet: MastermindVoice
 	Valued:
@@ -1672,8 +1672,8 @@ SEEK:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-SEEK-Strengths
-		Weaknesses: Actor-SEEK-Weaknesses
-		Attributes: Actor-SEEK-Attributes
+		Weaknesses: Actor-ORCB-Weaknesses2
+		Attributes: Actor-SEEK-Attributes2
 	Mobile:
 		Speed: 126
 		Locomotor: lighthover
@@ -1756,8 +1756,8 @@ LACE:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-LACE-Strengths
-		Weaknesses: Actor-LACE-Weaknesses
-		Attributes: Actor-LACE-Attributes
+		Weaknesses: Actor-ORCB-Weaknesses2
+		Attributes: Actor-SEEK-Attributes2
 	Mobile:
 		TurnSpeed: 40
 		Speed: 144
@@ -1847,7 +1847,7 @@ INTL:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-INTL-Strengths
-		Weaknesses: Actor-INTL-Weaknesses
+		Weaknesses: Actor-INTL-Weaknesses2
 		Attributes: Actor-INTL-Attributes
 	Mobile:
 		Speed: 60
@@ -2005,7 +2005,7 @@ CORR:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-CORR-Strengths
-		Weaknesses: Actor-CORR-Weaknesses
+		Weaknesses: Actor-CORR-Weaknesses2
 	Mobile:
 		Speed: 72
 		TurnSpeed: 16
@@ -2090,8 +2090,8 @@ LCHR:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-LCHR-Strengths
-		Weaknesses: Actor-LCHR-Weaknesses
-		Attributes: Actor-LCHR-Attributes
+		Weaknesses: Actor-A10-Weaknesses2
+		Attributes: Actor-LCHR-Attributes2
 	Mobile:
 		Speed: 82
 		TurnSpeed: 20
@@ -2272,7 +2272,7 @@ STCR:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-STCR-Strengths
-		Weaknesses: Actor-STCR-Weaknesses
+		Weaknesses: Actor-ORCB-Weaknesses2
 	Mobile:
 		Speed: 46
 		TurnSpeed: 16
@@ -2339,7 +2339,7 @@ DEVO:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-DEVO-Strengths
-		Weaknesses: Actor-DEVO-Weaknesses
+		Weaknesses: Actor-DEVO-Weaknesses2
 		Attributes: Actor-DEVO-Attributes
 	Valued:
 		Cost: 1350
@@ -2433,8 +2433,8 @@ DARK:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-DARK-Strengths
-		Weaknesses: Actor-DARK-Weaknesses
-		Attributes: Actor-DARK-Attributes
+		Weaknesses: Actor-DEVO-Weaknesses2
+		Attributes: Actor-DARK-Attributes2
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -2492,7 +2492,7 @@ DARK:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-DARK-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Malefic Allegiance.
 
 RUIN:
 	Inherits: ^Vehicle
@@ -2519,7 +2519,7 @@ RUIN:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-RUIN-Strengths
-		Weaknesses: Actor-RUIN-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 		Attributes: Actor-RUIN-Attributes
 	Mobile:
 		Speed: 72
@@ -2598,7 +2598,7 @@ RUIN:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-RUIN-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Loyalist Allegiance.
 
 ATMZ:
 	Inherits: ^Vehicle
@@ -2624,8 +2624,8 @@ ATMZ:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-ATMZ-Strengths
-		Weaknesses: Actor-ATMZ-Weaknesses
-		Attributes: Actor-ATMZ-Attributes
+		Weaknesses: Actor-SUK-Weaknesses2
+		Attributes: Actor-ATMZ-Attributes2
 	Mobile:
 		Speed: 72
 		Locomotor: lighthover
@@ -2690,7 +2690,7 @@ TPOD:
 	TooltipExtras:
 		Strengths: Actor-TPOD-Strengths
 		Weaknesses: Actor-TPOD-Weaknesses
-		Attributes: Actor-TPOD-Attributes
+		Attributes: Actor-TPOD-Attributes2
 	Voiced:
 		VoiceSet: TripodVoice
 	Valued:
@@ -2782,7 +2782,7 @@ RTPD:
 		BuildPaletteOrder: 282
 		Prerequisites: scrt, ~vehicles.reaper, ~techlevel.high
 	TooltipExtras:
-		Attributes: Actor-RTPD-Attributes
+		Attributes: Actor-RTPD-Attributes2
 	Valued:
 		Cost: 2200
 	Tooltip:
@@ -2879,7 +2879,7 @@ OBLT:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-OBLT-Strengths
-		Weaknesses: Actor-OBLT-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.hopl-Weaknesses2
 		Attributes: Actor-OBLT-Attributes
 	Valued:
 		Cost: 2300
@@ -2999,8 +2999,8 @@ NULL:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-NULL-Strengths
-		Weaknesses: Actor-NULL-Weaknesses
-		Attributes: Actor-NULL-Attributes
+		Weaknesses: Actor-E1-Weaknesses2
+		Attributes: Actor-NULL-Attributes2
 	Valued:
 		Cost: 1600
 	Tooltip:
@@ -3055,7 +3055,7 @@ NULL:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-NULL-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Rebel Allegiance.
 
 SMCV:
 	Inherits: ^Vehicle-NOUPG
@@ -3077,7 +3077,7 @@ SMCV:
 		BuildDurationModifier: 50
 	TooltipExtras:
 		Weaknesses: Actor-SMCV-Weaknesses
-		Attributes: Actor-SMCV-Attributes
+		Attributes: Actor-SMCV-Attributes2
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -3569,7 +3569,7 @@ DEVA:
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: Actor-DEVA-Strengths
-		Weaknesses: Actor-DEVA-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 	Voiced:
 		VoiceSet: DevastatorVoice
 	Valued:
@@ -3959,8 +3959,8 @@ MSHP:
 		BuildLimit: 1
 	TooltipExtras:
 		Strengths: Actor-MSHP-Strengths
-		Weaknesses: Actor-MSHP-Weaknesses
-		Attributes: Actor-MSHP-Attributes
+		Weaknesses: Actor-MSHP-Weaknesses2
+		Attributes: Actor-MSHP-Attributes2
 	Voiced:
 		VoiceSet: MothershipVoice
 	Valued:
@@ -4575,7 +4575,7 @@ SWAL:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.scrin
-		Description: Actor-SWAL-Description
+		Description: Actor-SWAL-Description2
 		IconPalette: chromes
 	Valued:
 		Cost: 200
@@ -5091,7 +5091,7 @@ NERV:
 		Description: Actor-NERV-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: Actor-NERV-Attributes
+		Attributes: Actor-NERV-Attributes2
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -5383,7 +5383,7 @@ SIGN:
 		BuildLimit: 1
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: Actor-SIGN-Attributes
+		Attributes: Actor-SIGN-Attributes2
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5424,7 +5424,7 @@ SREP:
 		Description: Actor-SREP-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: Actor-SREP-Attributes
+		Attributes: Actor-SREP-Attributes2
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -5539,7 +5539,7 @@ MANI:
 		IconPalette: chrome
 		Description: Actor-MANI-Description
 	TooltipExtras:
-		Attributes: Actor-MANI-Attributes
+		Attributes: Actor-MANI-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -5596,7 +5596,7 @@ RFGN:
 		Description: Actor-RFGN-Description
 		IconPalette: chrome
 	TooltipExtras:
-		Attributes: Actor-RFGN-Attributes
+		Attributes: Actor-RFGN-Attributes2
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -5727,7 +5727,7 @@ SHAR:
 	TooltipExtras:
 		Strengths: Actor-SHAR-Strengths
 		Weaknesses: Actor-SHAR-Weaknesses
-		Attributes: Actor-SHAR-Attributes
+		Attributes: Actor-SHAR-Attributes2
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -5793,7 +5793,7 @@ SCOL:
 	TooltipExtras:
 		Strengths: Actor-SCOL-Strengths
 		Weaknesses: Actor-SCOL-Weaknesses
-		Attributes: Actor-SCOL-Attributes
+		Attributes: Actor-SCOL-Attributes2
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -6051,7 +6051,7 @@ VSPK:
 	Tooltip:
 		Name: Actor-VSPK-Name
 	TooltipExtras:
-		Attributes: Actor-VSPK-Attributes
+		Attributes: Actor-VSPK-Attributes2
 		Description: Actor-VSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6110,7 +6110,7 @@ ISPK:
 	Tooltip:
 		Name: Actor-ISPK-Name
 	TooltipExtras:
-		Attributes: Actor-ISPK-Attributes
+		Attributes: Actor-ISPK-Attributes2
 		Description: Actor-ISPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6163,7 +6163,7 @@ CSPK:
 	Tooltip:
 		Name: Actor-CSPK-Name
 	TooltipExtras:
-		Attributes: Actor-CSPK-Attributes
+		Attributes: Actor-CSPK-Attributes2
 		Description: Actor-CSPK-TooltipExtrasDescription
 	RevealsShroud:
 		MinRange: 6c0
@@ -6243,8 +6243,8 @@ BUZZ:
 	TooltipExtras:
 		Description: Actor-BUZZ-TooltipExtrasDescription
 		Strengths: Actor-BUZZ-Strengths
-		Weaknesses: Actor-BUZZ-Weaknesses
-		Attributes: Actor-BUZZ-Attributes
+		Weaknesses: Actor-E1-Weaknesses2
+		Attributes: Actor-BUZZ-Attributes2
 	RevealsShroud:
 		MinRange: 1c0
 		Range: 6c0
@@ -6370,7 +6370,7 @@ GRCL:
 		Name: Actor-GRCL-Name
 	TooltipExtras:
 		Description: Actor-GRCL-TooltipExtrasDescription
-		Attributes: Actor-GRCL-Attributes
+		Attributes: Actor-GRCL-Attributes2
 	RenderSprites:
 		Palette: caneon
 	WithMakeAnimation:
@@ -6697,7 +6697,7 @@ REBELGATEWAY:
 	Tooltip:
 		Name: Actor-REBELGATEWAY-Name
 	TooltipExtras:
-		Attributes: Actor-REBELGATEWAY-Attributes
+		Attributes: Actor-REBELGATEWAY-Attributes2
 		Description: Actor-REBELGATEWAY-TooltipExtrasDescription
 	RenderSprites:
 		Image: wormholelg

@@ -507,7 +507,7 @@ MISS:
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Actor-MISS-Name
+		Name: Actor-MISS-Name2
 	TooltipExtras:
 		Description: Actor-MISS-TooltipExtrasDescription
 	TooltipDescription@ally:
@@ -614,7 +614,7 @@ OILB:
 		Name: Actor-OILB-Name
 	TooltipExtras:
 		Description: Actor-OILB-TooltipExtrasDescription
-		Attributes: Actor-OILB-Attributes
+		Attributes: Actor-OILB-Attributes2
 	TooltipDescription@ally:
 		Description: Actor-OILB.ally-Description
 		ValidRelationships: Ally

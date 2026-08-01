@@ -9,7 +9,7 @@ DOG:
 	TooltipExtras:
 		Strengths: Actor-DOG-Strengths
 		Weaknesses: Actor-DOG-Weaknesses
-		Attributes: Actor-DOG-Attributes
+		Attributes: Actor-DOG-Attributes2
 	RenderSprites:
 		PlayerPalette: player
 	WithDeathAnimation:
@@ -114,7 +114,7 @@ TDOG:
 	TooltipExtras:
 		Strengths: Actor-TDOG-Strengths
 		Weaknesses: Actor-TDOG-Weaknesses
-		Attributes: Actor-TDOG-Attributes
+		Attributes: Actor-TDOG-Attributes2
 	Valued:
 		Cost: 300
 	KillsSelf:
@@ -156,7 +156,7 @@ E1:
 		Description: Actor-E1-Description
 	TooltipExtras:
 		Strengths: Actor-E1-Strengths
-		Weaknesses: Actor-E1-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -210,7 +210,7 @@ E2:
 		Description: Actor-E2-Description
 	TooltipExtras:
 		Strengths: Actor-E2-Strengths
-		Weaknesses: Actor-E2-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -377,8 +377,8 @@ U3:
 		Name: Actor-U3-Name
 	TooltipExtras:
 		Strengths: Actor-U3-Strengths
-		Weaknesses: Actor-U3-Weaknesses
-		Attributes: Actor-U3-Attributes
+		Weaknesses: Actor-U3-Weaknesses2
+		Attributes: Actor-U3-Attributes2
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -574,8 +574,8 @@ U3.squad:
 		Description: Actor-U3.squad-Description
 	TooltipExtras:
 		Strengths: Actor-U3.squad-Strengths
-		Weaknesses: Actor-U3.squad-Weaknesses
-		Attributes: Actor-U3.squad-Attributes
+		Weaknesses: Actor-U3-Weaknesses2
+		Attributes: Actor-U3-Attributes2
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -615,7 +615,7 @@ E4:
 		Description: Actor-E4-Description
 	TooltipExtras:
 		Strengths: Actor-E4-Strengths
-		Weaknesses: Actor-E4-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -746,13 +746,13 @@ SPY:
 		Description: Actor-SPY-Description
 	TooltipExtras:
 		Weaknesses: Actor-SPY-Weaknesses
-		Attributes: Actor-SPY-Attributes
+		Attributes: Actor-SPY-Attributes2
 	Valued:
 		Cost: 500
 	-Tooltip:
 	DisguiseTooltip:
 		Name: Actor-SPY-Name
-		GenericName: Actor-Generic-Spy-Name
+		GenericName: Actor-SPY-GenericName
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	-Guard:
@@ -873,7 +873,7 @@ E7:
 	TooltipExtras:
 		Strengths: Actor-E7-Strengths
 		Weaknesses: Actor-E7-Weaknesses
-		Attributes: Actor-E7-Attributes
+		Attributes: Actor-E7-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1213,7 +1213,7 @@ HACK:
 	TooltipExtras:
 		Strengths: Actor-HACK-Strengths
 		Weaknesses: Actor-HACK-Weaknesses
-		Attributes: Actor-HACK-Attributes
+		Attributes: Actor-HACK-Attributes2
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1311,7 +1311,7 @@ HACK:
 		HideBuildable: True
 	EncyclopediaExtras:
 		RenderPreviewActor: hack.preview
-		AdditionalInfo: Actor-HACK-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Unity Covenant.
 
 HACK.Preview:
 	Inherits: ^PreviewDummy
@@ -1407,7 +1407,7 @@ THF:
 		Description: Actor-THF-Description
 	TooltipExtras:
 		Weaknesses: Actor-THF-Weaknesses
-		Attributes: Actor-THF-Attributes
+		Attributes: Actor-THF-Attributes2
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -1599,7 +1599,7 @@ N1:
 		Description: Actor-N1-Description
 	TooltipExtras:
 		Strengths: Actor-N1-Strengths
-		Weaknesses: Actor-N1-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -1660,7 +1660,7 @@ N2:
 		Description: Actor-N2-Description
 	TooltipExtras:
 		Strengths: Actor-N2-Strengths
-		Weaknesses: Actor-N2-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -1841,7 +1841,7 @@ N4:
 		Description: Actor-N4-Description
 	TooltipExtras:
 		Strengths: Actor-N4-Strengths
-		Weaknesses: Actor-N4-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -2035,9 +2035,9 @@ RMBO:
 		BuildLimit: 1
 		Description: Actor-RMBO-Description
 	TooltipExtras:
-		Strengths: Actor-RMBO-Strengths
+		Strengths: Actor-RMBO-Strengths2
 		Weaknesses: Actor-RMBO-Weaknesses
-		Attributes: Actor-RMBO-Attributes
+		Attributes: Actor-E7-Attributes2
 	Mobile:
 		Speed: 60
 		Voice: Move
@@ -2164,8 +2164,8 @@ SNIP:
 		Description: Actor-SNIP-Description
 	TooltipExtras:
 		Strengths: Actor-SNIP-Strengths
-		Weaknesses: Actor-SNIP-Weaknesses
-		Attributes: Actor-SNIP-Attributes
+		Weaknesses: Actor-SNIP-Weaknesses2
+		Attributes: Actor-SNIP-Attributes2
 	Valued:
 		Cost: 550
 	Tooltip:
@@ -2286,7 +2286,7 @@ BORI:
 	TooltipExtras:
 		Strengths: Actor-BORI-Strengths
 		Weaknesses: Actor-BORI-Weaknesses
-		Attributes: Actor-BORI-Attributes
+		Attributes: Actor-BORI-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -2388,7 +2388,7 @@ SAB:
 	TooltipExtras:
 		Strengths: Actor-SAB-Strengths
 		Weaknesses: Actor-SAB-Weaknesses
-		Attributes: Actor-SAB-Attributes
+		Attributes: Actor-SAB-Attributes2
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2476,8 +2476,8 @@ ASSA:
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: Actor-ASSA-Strengths
-		Weaknesses: Actor-ASSA-Weaknesses
-		Attributes: Actor-ASSA-Attributes
+		Weaknesses: Actor-ASSA-Weaknesses2
+		Attributes: Actor-ASSA-Attributes2
 	Valued:
 		Cost: 750
 	Tooltip:
@@ -2573,15 +2573,15 @@ ASSA:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ASSA-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Wrath Covenant.
 
 CONF:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	TooltipExtras:
 		Strengths: Actor-CONF-Strengths
-		Weaknesses: Actor-CONF-Weaknesses
-		Attributes: Actor-CONF-Attributes
+		Weaknesses: Actor-E1-Weaknesses2
+		Attributes: Actor-CONF-Attributes2
 	Buildable:
 		Queue: ConfessorCabal
 		Description: Actor-CONF-Description
@@ -2657,7 +2657,7 @@ CONF:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CONF-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Zeal Covenant.
 
 ACOL:
 	Inherits: ^Cyborg
@@ -2842,7 +2842,7 @@ JJET:
 	TooltipExtras:
 		Strengths: Actor-JJET-Strengths
 		Weaknesses: Actor-JJET-Weaknesses
-		Attributes: Actor-JJET-Attributes
+		Attributes: Actor-JJET-Attributes2
 	Valued:
 		Cost: 350
 	Tooltip:
@@ -2979,7 +2979,7 @@ BJET:
 		BuildPaletteOrder: 101
 	TooltipExtras:
 		Strengths: Actor-BJET-Strengths
-		Weaknesses: Actor-BJET-Weaknesses
+		Weaknesses: Actor-BJET-Weaknesses2
 	Tooltip:
 		Name: Actor-BJET-Name
 	Aircraft:
@@ -3061,7 +3061,7 @@ E8:
 		Description: Actor-E8-Description
 	TooltipExtras:
 		Strengths: Actor-E8-Strengths
-		Weaknesses: Actor-E8-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 	Valued:
 		Cost: 425
 	Tooltip:
@@ -3139,7 +3139,7 @@ DESO:
 	Tooltip:
 		Name: Actor-DESO-Name
 	TooltipExtras:
-		Attributes: Actor-DESO-Attributes
+		Attributes: Actor-DESO-Attributes2
 	Valued:
 		Cost: 600
 	Health:
@@ -3231,7 +3231,7 @@ N1C:
 		Description: Actor-N1C-Description
 	TooltipExtras:
 		Strengths: Actor-N1C-Strengths
-		Weaknesses: Actor-N1C-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 		Attributes: Actor-N1C-Attributes
 	Valued:
 		Cost: 250
@@ -3472,7 +3472,7 @@ IVAN:
 		Description: Actor-IVAN-Description
 	TooltipExtras:
 		Strengths: Actor-IVAN-Strengths
-		Weaknesses: Actor-IVAN-Weaknesses
+		Weaknesses: Actor-IVAN-Weaknesses2
 		Attributes: Actor-IVAN-Attributes
 	Valued:
 		Cost: 600
@@ -3543,7 +3543,7 @@ BRUT:
 	TooltipExtras:
 		Strengths: Actor-BRUT-Strengths
 		Weaknesses: Actor-BRUT-Weaknesses
-		Attributes: Actor-BRUT-Attributes
+		Attributes: Actor-BRUT-Attributes2
 	RenderSprites:
 	Valued:
 		Cost: 450
@@ -3677,15 +3677,15 @@ SHAD:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: ShadowTeam
-		Description: Actor-SHAD-Description
+		Description: Actor-SHAD-Description2
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Actor-SHAD-Name
 	TooltipExtras:
 		Strengths: Actor-SHAD-Strengths
-		Weaknesses: Actor-SHAD-Weaknesses
-		Attributes: Actor-SHAD-Attributes
+		Weaknesses: Actor-SHAD-Weaknesses2
+		Attributes: Actor-SHAD-Attributes2
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	RevealsShroud:
@@ -3800,7 +3800,7 @@ SGLI:
 		Name: Actor-SGLI-Name
 	TooltipExtras:
 		Strengths: Actor-SGLI-Strengths
-		Weaknesses: Actor-SGLI-Weaknesses
+		Weaknesses: Actor-SHAD-Weaknesses2
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3975,7 +3975,7 @@ BH:
 		Description: Actor-BH-Description
 	TooltipExtras:
 		Strengths: Actor-BH-Strengths
-		Weaknesses: Actor-BH-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.cryo-Weaknesses2
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -4054,7 +4054,7 @@ YURI:
 	TooltipExtras:
 		Strengths: Actor-YURI-Strengths
 		Weaknesses: Actor-YURI-Weaknesses
-		Attributes: Actor-YURI-Attributes
+		Attributes: Actor-YURI-Attributes2
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -4267,7 +4267,7 @@ SEAL:
 	TooltipExtras:
 		Strengths: Actor-SEAL-Strengths
 		Weaknesses: Actor-SEAL-Weaknesses
-		Attributes: Actor-SEAL-Attributes
+		Attributes: Actor-SEAL-Attributes2
 	Voiced:
 		VoiceSet: SealVoice
 	Mobile:
@@ -4386,8 +4386,8 @@ ENLI:
 		Description: Actor-ENLI-Description
 	TooltipExtras:
 		Strengths: Actor-ENLI-Strengths
-		Weaknesses: Actor-ENLI-Weaknesses
-		Attributes: Actor-ENLI-Attributes
+		Weaknesses: Actor-ORCB-Weaknesses2
+		Attributes: Actor-ENLI-Attributes2
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -4480,7 +4480,7 @@ ENLI:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ENLI-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Zeal Covenant.
 
 ^MortarInfantryBase:
 	Inherits: ^Soldier
@@ -4490,7 +4490,7 @@ ENLI:
 		BuildAtProductionType: Soldier
 	TooltipExtras:
 		Strengths: Actor-^MortarInfantryBase-Strengths
-		Weaknesses: Actor-^MortarInfantryBase-Weaknesses
+		Weaknesses: Actor-encyclopedia.ifv.mortchem-Weaknesses2
 	Valued:
 		Cost: 350
 	UpdatesPlayerStatistics:
@@ -4537,7 +4537,7 @@ MORT.Cryo:
 	Armament@BATF:
 		Weapon: CryoMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-MORT.Cryo-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Allied Barracks.
 
 CDOG:
 	Inherits: DOG
@@ -4577,7 +4577,7 @@ CDOG:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CDOG-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Soviet Barracks.
 	-KeepsDistance:
 	-AutoGuard:
 
@@ -4600,7 +4600,7 @@ MORT.Sonic:
 	Armament@BATF:
 		Weapon: SonicMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-MORT.Sonic-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from GDI Barracks.
 
 MORT.Chem:
 	Inherits: ^MortarInfantryBase
@@ -4619,7 +4619,7 @@ MORT.Chem:
 		Chance: 33
 		RequiresCondition: !being-warped
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-MORT.Chem-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Hand of Nod.
 
 CSCR:
 	Inherits: ^Cyborg
@@ -4635,7 +4635,7 @@ CSCR:
 		Description: Actor-CSCR-Description
 	TooltipExtras:
 		Strengths: Actor-CSCR-Strengths
-		Weaknesses: Actor-CSCR-Weaknesses
+		Weaknesses: Actor-E1-Weaknesses2
 		Attributes: Actor-CSCR-Attributes
 	Valued:
 		Cost: 500
@@ -4676,7 +4676,7 @@ CSCR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CSCR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Stolen from Scrin Portal.
 	ChangesHealth@THEAL:
 		PercentageStep: 3
 
@@ -4692,8 +4692,8 @@ CMSR:
 		Description: Actor-CMSR-Description
 	TooltipExtras:
 		Strengths: Actor-CMSR-Strengths
-		Weaknesses: Actor-CMSR-Weaknesses
-		Attributes: Actor-CMSR-Attributes
+		Weaknesses: Actor-CMSR-Weaknesses2
+		Attributes: Actor-CMSR-Attributes2
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -4770,7 +4770,7 @@ ZTRP:
 		IconPalette: chrometd
 	TooltipExtras:
 		Strengths: Actor-ZTRP-Strengths
-		Weaknesses: Actor-ZTRP-Weaknesses
+		Weaknesses: Actor-SUK-Weaknesses2
 		Attributes: Actor-ZTRP-Attributes
 	Valued:
 		Cost: 700
@@ -4859,7 +4859,7 @@ ZTRP:
 	Encyclopedia:
 		Category: GDI/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ZTRP-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 ZRAI:
 	Inherits: ZTRP
@@ -4872,7 +4872,7 @@ ZRAI:
 	TooltipExtras:
 		Strengths: Actor-ZRAI-Strengths
 		Weaknesses: Actor-ZRAI-Weaknesses
-		Attributes: Actor-ZRAI-Attributes
+		Attributes: Actor-ZRAI-Attributes2
 	Armament@PRIMARY:
 		Weapon: ZoneRaiderGrenade
 		LocalOffset: 350,0,300
@@ -4889,7 +4889,7 @@ ZRAI:
 		MaxDistance: 10
 		Speed: 200
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ZRAI-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 ZDEF:
 	Inherits: ZTRP
@@ -4951,7 +4951,7 @@ ZDEF:
 		RequiresCondition: shield-active && !passenger
 		AffectsParent: true
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ZDEF-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Hold the Line Strategy.
 
 ENFO:
 	Inherits: ^Soldier
@@ -4965,8 +4965,8 @@ ENFO:
 		Description: Actor-ENFO-Description
 	TooltipExtras:
 		Strengths: Actor-ENFO-Strengths
-		Weaknesses: Actor-ENFO-Weaknesses
-		Attributes: Actor-ENFO-Attributes
+		Weaknesses: Actor-A10-Weaknesses2
+		Attributes: Actor-ENFO-Attributes2
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -5033,7 +5033,7 @@ HOPL:
 		Description: Actor-HOPL-Description
 	TooltipExtras:
 		Strengths: Actor-HOPL-Strengths
-		Weaknesses: Actor-HOPL-Weaknesses
+		Weaknesses: Actor-A10-Weaknesses2
 		Attributes: Actor-HOPL-Attributes
 	Valued:
 		Cost: 650
@@ -5109,7 +5109,7 @@ HOPL:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-HOPL-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Greece Coalition.
 
 TIGR:
 	Inherits: ^Soldier
@@ -5123,7 +5123,7 @@ TIGR:
 		Description: Actor-TIGR-Description
 	TooltipExtras:
 		Strengths: Actor-TIGR-Strengths
-		Weaknesses: Actor-TIGR-Weaknesses
+		Weaknesses: Actor-TIGR-Weaknesses2
 		Attributes: Actor-TIGR-Attributes
 	Valued:
 		Cost: 650
@@ -5182,7 +5182,7 @@ TIGR:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-TIGR-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Korea Coalition.
 
 CRYT:
 	Inherits: ^Soldier
@@ -5196,7 +5196,7 @@ CRYT:
 		Description: Actor-CRYT-Description
 	TooltipExtras:
 		Strengths: Actor-CRYT-Strengths
-		Weaknesses: Actor-CRYT-Weaknesses
+		Weaknesses: Actor-HIND-Weaknesses2
 		Attributes: Actor-CRYT-Attributes
 	Valued:
 		Cost: 700
@@ -5257,7 +5257,7 @@ CRYT:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-CRYT-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Sweden Coalition.
 
 REAP:
 	Inherits: ^Cyborg
@@ -5277,7 +5277,7 @@ REAP:
 	TooltipExtras:
 		Strengths: Actor-REAP-Strengths
 		Weaknesses: Actor-REAP-Weaknesses
-		Attributes: Actor-REAP-Attributes
+		Attributes: Actor-REAP-Attributes2
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
@@ -5383,4 +5383,4 @@ REAP:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-REAP-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Unity Covenant.

@@ -1750,7 +1750,7 @@
 	Inherits@HeavyArmor: ^HeavyArmor
 	Inherits@NodCovenantTarget: ^NodCovenantTarget
 	TooltipExtras:
-		Weaknesses: Actor-^HarvesterBase-Weaknesses
+		Weaknesses: Actor-HarvesterBase-Weaknesses
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -4744,7 +4744,7 @@
 		Description: Actor-^EngineerBase-Description
 	TooltipExtras:
 		Weaknesses: Actor-^EngineerBase-Weaknesses
-		Attributes: Actor-^EngineerBase-Attributes
+		Attributes: Actor-EngineerBase-Attributes
 	Valued:
 		Cost: 400
 	Passenger:

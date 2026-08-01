@@ -21,9 +21,9 @@ hazmat.upgrade:
 		BuildPaletteOrder: 19
 		Prerequisites: anyradar, infantry.any, ~!player.soviet, ~!player.zocom, ~!player.scrin, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Actor-hazmat.upgrade-Description
+		Description: Actor-hazmat.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-hazmat.upgrade-Strengths
+		Strengths: Actor-hazmat.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -44,9 +44,9 @@ flakarmor.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: techcenter.any, infantry.any, ~!player.nod, ~!player.scrin, ~techlevel.high
-		Description: Actor-flakarmor.upgrade-Description
+		Description: Actor-flakarmor.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-flakarmor.upgrade-Strengths
+		Strengths: Actor-flakarmor.upgrade-Strengths2
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -81,10 +81,10 @@ bombard.strat:
 		BuildPaletteOrder: 7
 		Prerequisites: ~player.gdi, anyradar, ~!seek.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Actor-bombard.strat-Description
+		Description: Actor-bombard.strat-Description2
 	TooltipExtras:
 		Strengths: Actor-bombard.strat-Strengths
-		Attributes: Actor-bombard.strat-Attributes
+		Attributes: Actor-bombard.strat-Attributes2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -128,7 +128,7 @@ bombard3.strat:
 		Description: Actor-bombard3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: Actor-bombard3.strat-Strengths
+		Strengths: Actor-bombard3.strat-Strengths2
 		Attributes: Actor-bombard3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
@@ -145,10 +145,10 @@ seek.strat:
 		BuildPaletteOrder: 9
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Actor-seek.strat-Description
+		Description: Actor-seek.strat-Description2
 	TooltipExtras:
 		Strengths: Actor-seek.strat-Strengths
-		Attributes: Actor-seek.strat-Attributes
+		Attributes: Actor-bombard.strat-Attributes2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -192,7 +192,7 @@ seek3.strat:
 		Description: Actor-seek3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: Actor-seek3.strat-Strengths
+		Strengths: Actor-seek3.strat-Strengths2
 		Attributes: Actor-seek3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
@@ -209,10 +209,10 @@ hold.strat:
 		BuildPaletteOrder: 11
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!seek.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Actor-hold.strat-Description
+		Description: Actor-hold.strat-Description2
 	TooltipExtras:
 		Strengths: Actor-hold.strat-Strengths
-		Attributes: Actor-hold.strat-Attributes
+		Attributes: Actor-bombard.strat-Attributes2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -256,7 +256,7 @@ hold3.strat:
 		Description: Actor-hold3.strat-Description
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: Actor-hold3.strat-Strengths
+		Strengths: Actor-hold3.strat-Strengths2
 		Attributes: Actor-hold3.strat-Attributes
 	RenderSprites:
 		PlayerPalette: playertd
@@ -274,8 +274,8 @@ vulcan.upgrade:
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
 		Description: Actor-vulcan.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-vulcan.upgrade-Strengths
-		Weaknesses: Actor-vulcan.upgrade-Weaknesses
+		Strengths: Actor-vulcan.upgrade-Strengths2
+		Weaknesses: Actor-vulcan.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -293,7 +293,7 @@ bjet.upgrade:
 		Description: Actor-bjet.upgrade-Description
 	TooltipExtras:
 		Strengths: Actor-bjet.upgrade-Strengths
-		Weaknesses: Actor-bjet.upgrade-Weaknesses
+		Weaknesses: Actor-bjet.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -308,10 +308,10 @@ tow.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
-		Description: Actor-tow.upgrade-Description
+		Description: Actor-tow.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-tow.upgrade-Strengths
-		Weaknesses: Actor-tow.upgrade-Weaknesses
+		Weaknesses: Actor-vulcan.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -327,9 +327,9 @@ empgren.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-empgren.upgrade-Description
+		Description: Actor-empgren.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-empgren.upgrade-Strengths
+		Strengths: Actor-empgren.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -345,7 +345,7 @@ strata10.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-strata10.upgrade-Description
+		Description: Actor-strata10.upgrade-Description2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -362,9 +362,9 @@ avenger.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
 		IconPalette: chrome
-		Description: Actor-avenger.upgrade-Description
+		Description: Actor-avenger.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-avenger.upgrade-Strengths
+		Strengths: Actor-avenger.upgrade-Strengths2
 		Weaknesses: Actor-avenger.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -373,7 +373,7 @@ avenger.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: avenger.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-avenger.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
@@ -383,7 +383,7 @@ sidewinders.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-sidewinders.upgrade-Description
+		Description: Actor-sidewinders.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-sidewinders.upgrade-Strengths
 	Valued:
@@ -393,7 +393,7 @@ sidewinders.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: sidewinders.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-sidewinders.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -403,7 +403,7 @@ ceramic.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-ceramic.upgrade-Description
+		Description: Actor-ceramic.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-ceramic.upgrade-Strengths
 	Valued:
@@ -413,7 +413,7 @@ ceramic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ceramic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-ceramic.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Hold the Line Strategy.
 
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -423,7 +423,7 @@ strategic.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-strategic.upgrade-Description
+		Description: Actor-strategic.upgrade-Description2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -442,8 +442,8 @@ thwk.upgrade:
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
 		Description: Actor-thwk.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-thwk.upgrade-Strengths
-		Weaknesses: Actor-thwk.upgrade-Weaknesses
+		Strengths: Actor-thwk.upgrade-Strengths2
+		Weaknesses: Actor-thwk.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -451,20 +451,19 @@ thwk.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: thwk.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-thwk.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 ejjet.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Actor-tow.upgrade-Name
+		Name: Actor-ejjet.upgrade-Name
 	Buildable:
 		BuildPaletteOrder: 30
 		IconPalette: chrometd
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
-		Description: Actor-tow.upgrade-Description
+		Description: Actor-ejjet.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-tow.upgrade-Strengths
-		Weaknesses: Actor-tow.upgrade-Weaknesses
+		Strengths: Actor-ejjet.upgrade-Strengths
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -472,7 +471,7 @@ ejjet.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ejjet.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-tow.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
@@ -482,9 +481,9 @@ pointdef.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-pointdef.upgrade-Description
+		Description: Actor-pointdef.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-pointdef.upgrade-Strengths
+		Strengths: Actor-pointdef.upgrade-Strengths2
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -492,7 +491,7 @@ pointdef.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: pointdef.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-pointdef.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Hold the Line Strategy.
 
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
@@ -502,7 +501,7 @@ stratmiss.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-stratmiss.upgrade-Description
+		Description: Actor-stratmiss.upgrade-Description2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -519,9 +518,9 @@ hailstorm.upgrade:
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high, ~!hypersonic.upgrade, ~!hammerhead.upgrade
 		BuildPaletteOrder: 30
 		IconPalette: chrometd
-		Description: Actor-hailstorm.upgrade-Description
+		Description: Actor-hailstorm.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-hailstorm.upgrade-Strengths
+		Strengths: Actor-hailstorm.upgrade-Strengths2
 		Weaknesses: Actor-hailstorm.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -530,7 +529,7 @@ hailstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hailstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-hailstorm.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Bombardment Strategy.
 
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -540,7 +539,7 @@ hypersonic.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~seek.strat,~techlevel.high, ~!hailstorm.upgrade, ~!hammerhead.upgrade
 		IconPalette: chrometd
-		Description: Actor-hypersonic.upgrade-Description
+		Description: Actor-hypersonic.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-hypersonic.upgrade-Strengths
 		Weaknesses: Actor-hypersonic.upgrade-Weaknesses
@@ -551,7 +550,7 @@ hypersonic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hypersonic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-hypersonic.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
@@ -561,9 +560,9 @@ hammerhead.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high, ~!hypersonic.upgrade, ~!hailstorm.upgrade
 		IconPalette: chrometd
-		Description: Actor-hammerhead.upgrade-Description
+		Description: Actor-hammerhead.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-hammerhead.upgrade-Strengths
+		Strengths: Actor-hammerhead.upgrade-Strengths2
 		Weaknesses: Actor-hammerhead.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -572,7 +571,7 @@ hammerhead.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hammerhead.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-hammerhead.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Hold the Line Strategy.
 
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -582,9 +581,9 @@ sonic.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.zocom, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-sonic.upgrade-Description
+		Description: Actor-sonic.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-sonic.upgrade-Strengths
+		Strengths: Actor-sonic.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -602,7 +601,7 @@ abur.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.eagle, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-abur.upgrade-Description
+		Description: Actor-abur.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-abur.upgrade-Strengths
 	Valued:
@@ -621,10 +620,10 @@ bdrone.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.arc, gtek, ~techlevel.high
-		Description: Actor-bdrone.upgrade-Description
+		Description: Actor-bdrone.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-bdrone.upgrade-Strengths
-		Weaknesses: Actor-bdrone.upgrade-Weaknesses
+		Strengths: Actor-bdrone.upgrade-Strengths2
+		Weaknesses: Actor-bdrone.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -645,9 +644,9 @@ railgun.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-railgun.upgrade-Description
+		Description: Actor-railgun.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-railgun.upgrade-Strengths
+		Strengths: Actor-railgun.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	AnnounceOnCreation:
@@ -668,9 +667,9 @@ ionmam.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.zocom, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-ionmam.upgrade-Description
+		Description: Actor-ionmam.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-ionmam.upgrade-Strengths
+		Strengths: Actor-ionmam.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -691,9 +690,9 @@ hovermam.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.eagle, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-hovermam.upgrade-Description
+		Description: Actor-hovermam.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-hovermam.upgrade-Strengths
+		Strengths: Actor-hovermam.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -713,10 +712,10 @@ mdrone.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.arc, upgc, ~techlevel.high
-		Description: Actor-mdrone.upgrade-Description
+		Description: Actor-mdrone.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-mdrone.upgrade-Strengths
-		Weaknesses: Actor-mdrone.upgrade-Weaknesses
+		Strengths: Actor-mdrone.upgrade-Strengths2
+		Weaknesses: Actor-bdrone.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -737,9 +736,9 @@ gyro.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-gyro.upgrade-Description
+		Description: Actor-gyro.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-gyro.upgrade-Strengths
+		Strengths: Actor-gyro.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -794,7 +793,7 @@ wrath.covenant:
 	Buildable:
 		BuildPaletteOrder: 13
 		Prerequisites: ~player.nod, covenant.level1, !unity.covenant, !zeal.covenant, ~techlevel.medium
-		Description: Actor-wrath.covenant-Description
+		Description: Actor-wrath.covenant-Description2
 		IconPalette: chrometd
 	TooltipExtras:
 		Attributes: Actor-wrath.covenant-Attributes
@@ -814,7 +813,7 @@ unity.covenant:
 	Buildable:
 		BuildPaletteOrder: 14
 		Prerequisites: ~player.nod, covenant.level1, !wrath.covenant, !zeal.covenant, ~techlevel.medium
-		Description: Actor-unity.covenant-Description
+		Description: Actor-unity.covenant-Description2
 		IconPalette: chrometd
 	TooltipExtras:
 		Attributes: Actor-unity.covenant-Attributes
@@ -834,7 +833,7 @@ zeal.covenant:
 	Buildable:
 		BuildPaletteOrder: 15
 		Prerequisites: ~player.nod, covenant.level1, !unity.covenant, !wrath.covenant, ~techlevel.medium
-		Description: Actor-zeal.covenant-Description
+		Description: Actor-zeal.covenant-Description2
 		IconPalette: chrometd
 	TooltipExtras:
 		Attributes: Actor-zeal.covenant-Attributes
@@ -854,10 +853,10 @@ howi.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
-		Description: Actor-howi.upgrade-Description
+		Description: Actor-howi.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-howi.upgrade-Strengths
-		Weaknesses: Actor-howi.upgrade-Weaknesses
+		Strengths: Actor-howi.upgrade-Strengths2
+		Weaknesses: Actor-howi.upgrade-Weaknesses2
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -878,7 +877,7 @@ decoy.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
-		Description: Actor-decoy.upgrade-Description
+		Description: Actor-decoy.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-decoy.upgrade-Strengths
 	Valued:
@@ -895,7 +894,7 @@ sharv.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, tmpl, ~techlevel.high
-		Description: Actor-sharv.upgrade-Description
+		Description: Actor-sharv.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-sharv.upgrade-Strengths
 		Weaknesses: Actor-sharv.upgrade-Weaknesses
@@ -913,10 +912,10 @@ tibcore.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, tmpl, ~techlevel.high
-		Description: Actor-tibcore.upgrade-Description
+		Description: Actor-tibcore.upgrade-Description2
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: Actor-tibcore.upgrade-Strengths
+		Strengths: Actor-tibcore.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -934,7 +933,7 @@ blacknapalm.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.blackh, tmpl, ~techlevel.high
-		Description: Actor-blacknapalm.upgrade-Description
+		Description: Actor-blacknapalm.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-blacknapalm.upgrade-Strengths
 		Weaknesses: Actor-blacknapalm.upgrade-Weaknesses
@@ -957,7 +956,7 @@ microwave.upgrade:
 		IconPalette: chrometd
 		Description: Actor-microwave.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-microwave.upgrade-Strengths
+		Strengths: Actor-microwave.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -977,9 +976,9 @@ quantum.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.marked, tmpl, ~techlevel.high
-		Description: Actor-quantum.upgrade-Description
+		Description: Actor-quantum.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-quantum.upgrade-Strengths
+		Strengths: Actor-quantum.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -998,8 +997,8 @@ hstk.upgrade:
 		Prerequisites: ~player.shadow, tmpl, ~techlevel.high
 		Description: Actor-hstk.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-hstk.upgrade-Strengths
-		Weaknesses: Actor-hstk.upgrade-Weaknesses
+		Strengths: Actor-hstk.upgrade-Strengths2
+		Weaknesses: Actor-hstk.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1017,7 +1016,7 @@ covenant.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, anycovenant, covenant.level2, ~!wrath.covenant, ~!unity.covenant, ~!zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-covenant.upgrade-Description
+		Description: Actor-covenant.upgrade-Description2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1033,9 +1032,9 @@ lastnk.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, covenant.level2, ~wrath.covenant, ~techlevel.high
-		Description: Actor-lastnk.upgrade-Description
+		Description: Actor-lastnk.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-lastnk.upgrade-Strengths
+		Strengths: Actor-lastnk.upgrade-Strengths2
 		Weaknesses: Actor-lastnk.upgrade-Weaknesses
 	Valued:
 		Cost: 750
@@ -1053,8 +1052,8 @@ cust.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~unity.covenant, ~techlevel.high
 		Description: Actor-cust.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-cust.upgrade-Strengths
-		Weaknesses: Actor-cust.upgrade-Weaknesses
+		Strengths: Actor-cust.upgrade-Strengths2
+		Weaknesses: Actor-cust.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1071,8 +1070,8 @@ rbug.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~zeal.covenant, ~techlevel.high
 		Description: Actor-rbug.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-rbug.upgrade-Strengths
-		Weaknesses: Actor-rbug.upgrade-Weaknesses
+		Strengths: Actor-rbug.upgrade-Strengths2
+		Weaknesses: Actor-vulcan.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1088,9 +1087,9 @@ cyborgarmor.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level2, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-cyborgarmor.upgrade-Description
+		Description: Actor-cyborgarmor.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-cyborgarmor.upgrade-Strengths
+		Strengths: Actor-cyborgarmor.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1106,7 +1105,7 @@ covenant.upgrade2:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, anycovenant, tmpp, covenant.level3, ~!wrath.covenant, ~!unity.covenant, ~!zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-covenant.upgrade2-Description
+		Description: Actor-covenant.upgrade2-Description2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1123,7 +1122,7 @@ cyborgdmg.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~wrath.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-cyborgdmg.upgrade-Description
+		Description: Actor-cyborgdmg.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-cyborgdmg.upgrade-Strengths
 	Valued:
@@ -1133,7 +1132,7 @@ cyborgdmg.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgdmg.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-cyborgdmg.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Wrath Covenant.
 
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
@@ -1153,7 +1152,7 @@ cyborgprod.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgprod.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-cyborgprod.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Unity Covenant.
 
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
@@ -1163,7 +1162,7 @@ cyborgspeed.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Actor-cyborgspeed.upgrade-Description
+		Description: Actor-cyborgspeed.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-cyborgspeed.upgrade-Strengths
 	Valued:
@@ -1173,7 +1172,7 @@ cyborgspeed.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgspeed.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-cyborgspeed.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Zeal Covenant.
 
 #########################SOVIET#########
 ########################################
@@ -1199,7 +1198,7 @@ infantry.doctrine:
 	Buildable:
 		BuildPaletteOrder: 4
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Actor-infantry.doctrine-Description
+		Description: Actor-infantry.doctrine-Description2
 	TooltipExtras:
 		Attributes: Actor-infantry.doctrine-Attributes
 	Valued:
@@ -1216,7 +1215,7 @@ armor.doctrine:
 	Buildable:
 		BuildPaletteOrder: 5
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Actor-armor.doctrine-Description
+		Description: Actor-armor.doctrine-Description2
 	TooltipExtras:
 		Attributes: Actor-armor.doctrine-Attributes
 	Valued:
@@ -1233,7 +1232,7 @@ arty.doctrine:
 	Buildable:
 		BuildPaletteOrder: 6
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Actor-arty.doctrine-Description
+		Description: Actor-arty.doctrine-Description2
 	TooltipExtras:
 		Attributes: Actor-arty.doctrine-Attributes
 	Valued:
@@ -1250,9 +1249,9 @@ hazmatsoviet.upgrade:
 	Buildable:
 		BuildPaletteOrder: 19
 		Prerequisites: ~player.soviet, ~!player.iraq, anyradar, infantry.any, ~techlevel.medium
-		Description: Actor-hazmatsoviet.upgrade-Description
+		Description: Actor-hazmatsoviet.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-hazmatsoviet.upgrade-Strengths
+		Strengths: Actor-hazmatsoviet.upgrade-Strengths2
 		Weaknesses: Actor-hazmatsoviet.upgrade-Weaknesses
 	Valued:
 		Cost: 850
@@ -1268,10 +1267,10 @@ tdog.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.soviet, anyradar, ~techlevel.medium
-		Description: Actor-tdog.upgrade-Description
+		Description: Actor-tdog.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-tdog.upgrade-Strengths
-		Weaknesses: Actor-tdog.upgrade-Weaknesses
+		Strengths: Actor-tdog.upgrade-Strengths2
+		Weaknesses: Actor-tdog.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1286,10 +1285,10 @@ lasher.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
-		Description: Actor-lasher.upgrade-Description
+		Description: Actor-lasher.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-lasher.upgrade-Strengths
-		Weaknesses: Actor-lasher.upgrade-Weaknesses
+		Strengths: Actor-lasher.upgrade-Strengths2
+		Weaknesses: Actor-lasher.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1306,7 +1305,7 @@ gattling.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
-		Description: Actor-gattling.upgrade-Description
+		Description: Actor-gattling.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-gattling.upgrade-Strengths
 		Weaknesses: Actor-gattling.upgrade-Weaknesses
@@ -1326,9 +1325,9 @@ ttrp.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~!player.iraq, stek, ~techlevel.high
-		Description: Actor-ttrp.upgrade-Description
+		Description: Actor-ttrp.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-ttrp.upgrade-Strengths
+		Strengths: Actor-ttrp.upgrade-Strengths2
 		Weaknesses: Actor-ttrp.upgrade-Weaknesses
 	Valued:
 		Cost: 500
@@ -1350,9 +1349,9 @@ deso.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~player.iraq, stek, ~techlevel.high
-		Description: Actor-deso.upgrade-Description
+		Description: Actor-deso.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-deso.upgrade-Strengths
+		Strengths: Actor-deso.upgrade-Strengths2
 		Weaknesses: Actor-deso.upgrade-Weaknesses
 	Valued:
 		Cost: 500
@@ -1370,7 +1369,7 @@ tarc.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
-		Description: Actor-tarc.upgrade-Description
+		Description: Actor-tarc.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-tarc.upgrade-Strengths
 	Valued:
@@ -1389,9 +1388,9 @@ seismic.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.ukraine, stek, ~techlevel.high
-		Description: Actor-seismic.upgrade-Description
+		Description: Actor-seismic.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-seismic.upgrade-Strengths
+		Strengths: Actor-seismic.upgrade-Strengths2
 		Weaknesses: Actor-seismic.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -1412,7 +1411,7 @@ doctrine.upgrade1:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, anydoctrine, playerxp.level2, ~!infantry.doctrine, ~!armor.doctrine, ~!arty.doctrine, ~techlevel.medium
-		Description: Actor-doctrine.upgrade1-Description
+		Description: Actor-doctrine.upgrade1-Description2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1427,7 +1426,7 @@ imppara.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.soviet, ~!player.russia, ~!player.yuri, ~infantry.doctrine, ~techlevel.medium
-		Description: Actor-imppara.upgrade-Description
+		Description: Actor-imppara.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-imppara.upgrade-Strengths
 	Valued:
@@ -1437,7 +1436,7 @@ imppara.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: imppara.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-imppara.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Infantry Doctrine.
 
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1446,7 +1445,7 @@ impstorm.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.russia, ~infantry.doctrine, ~techlevel.medium
-		Description: Actor-impstorm.upgrade-Description
+		Description: Actor-impstorm.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-impstorm.upgrade-Strengths
 	Valued:
@@ -1466,9 +1465,9 @@ impmuta.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.yuri, ~infantry.doctrine, ~techlevel.medium
-		Description: Actor-impmuta.upgrade-Description
+		Description: Actor-impmuta.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-impmuta.upgrade-Strengths
+		Strengths: Actor-impmuta.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1486,7 +1485,7 @@ reactive.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~armor.doctrine, playerxp.level2, ~techlevel.high
-		Description: Actor-reactive.upgrade-Description
+		Description: Actor-reactive.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-reactive.upgrade-Strengths
 	Valued:
@@ -1496,7 +1495,7 @@ reactive.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: reactive.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-reactive.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Armor Doctrine.
 
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1505,9 +1504,9 @@ rocketpods.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~arty.doctrine, playerxp.level2, ~techlevel.high
-		Description: Actor-rocketpods.upgrade-Description
+		Description: Actor-rocketpods.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-rocketpods.upgrade-Strengths
+		Strengths: Actor-rocketpods.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1515,7 +1514,7 @@ rocketpods.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: rocketpods.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Actor-rocketpods.upgrade-EncyclopediaExtrasAdditionalInfo
+		AdditionalInfo: Requires Artillery Doctrine.
 
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1524,7 +1523,7 @@ atomicengines.upgrade:
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: ~player.soviet, npwr, ~techlevel.high
-		Description: Actor-atomicengines.upgrade-Description
+		Description: Actor-atomicengines.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-atomicengines.upgrade-Strengths
 		Weaknesses: Actor-atomicengines.upgrade-Weaknesses
@@ -1542,10 +1541,10 @@ erad.upgrade:
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: ~player.iraq, npwr, ~techlevel.high
-		Description: Actor-erad.upgrade-Description
+		Description: Actor-erad.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-erad.upgrade-Strengths
-		Weaknesses: Actor-erad.upgrade-Weaknesses
+		Strengths: Actor-erad.upgrade-Strengths2
+		Weaknesses: Actor-erad.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1562,7 +1561,7 @@ doctrine.upgrade2:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.soviet, anydoctrine, ~!infantry.doctrine, ~!armor.doctrine, ~!arty.doctrine, ~techlevel.high
-		Description: Actor-doctrine.upgrade2-Description
+		Description: Actor-doctrine.upgrade2-Description2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1577,10 +1576,10 @@ ovld.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: playerxp.level3, ~player.soviet, ~infantry.doctrine, ~techlevel.high
-		Description: Actor-ovld.upgrade-Description
+		Description: Actor-ovld.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-ovld.upgrade-Strengths
-		Weaknesses: Actor-ovld.upgrade-Weaknesses
+		Strengths: Actor-ovld.upgrade-Strengths2
+		Weaknesses: Actor-ovld.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1595,10 +1594,10 @@ apoc.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: playerxp.level3, ~player.soviet, ~armor.doctrine, ~techlevel.high
-		Description: Actor-apoc.upgrade-Description
+		Description: Actor-apoc.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-apoc.upgrade-Strengths
-		Weaknesses: Actor-apoc.upgrade-Weaknesses
+		Strengths: Actor-apoc.upgrade-Strengths2
+		Weaknesses: Actor-ovld.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1615,8 +1614,8 @@ nukc.upgrade:
 		Prerequisites: playerxp.level3, ~player.soviet, ~arty.doctrine, ~techlevel.high
 		Description: Actor-nukc.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-nukc.upgrade-Strengths
-		Weaknesses: Actor-nukc.upgrade-Weaknesses
+		Strengths: Actor-nukc.upgrade-Strengths2
+		Weaknesses: Actor-nukc.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1648,9 +1647,9 @@ economy.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Actor-economy.policy-Description
+		Description: Actor-economy.policy-Description2
 	TooltipExtras:
-		Attributes: Actor-economy.policy-Attributes
+		Attributes: Actor-economy.policy-Attributes2
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1671,9 +1670,9 @@ defense.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Actor-defense.policy-Description
+		Description: Actor-defense.policy-Description2
 	TooltipExtras:
-		Attributes: Actor-defense.policy-Attributes
+		Attributes: Actor-defense.policy-Attributes2
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1688,9 +1687,9 @@ development.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Actor-development.policy-Description
+		Description: Actor-development.policy-Description2
 	TooltipExtras:
-		Attributes: Actor-development.policy-Attributes
+		Attributes: Actor-development.policy-Attributes2
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1705,7 +1704,7 @@ greece.coalition:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Actor-greece.coalition-Description
+		Description: Actor-greece.coalition-Description2
 	TooltipExtras:
 		Attributes: Actor-greece.coalition-Attributes
 	Valued:
@@ -1725,7 +1724,7 @@ korea.coalition:
 	Buildable:
 		BuildPaletteOrder: 2
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Actor-korea.coalition-Description
+		Description: Actor-korea.coalition-Description2
 	TooltipExtras:
 		Attributes: Actor-korea.coalition-Attributes
 	Valued:
@@ -1745,7 +1744,7 @@ sweden.coalition:
 	Buildable:
 		BuildPaletteOrder: 3
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Actor-sweden.coalition-Description
+		Description: Actor-sweden.coalition-Description2
 	TooltipExtras:
 		Attributes: Actor-sweden.coalition-Attributes
 	Valued:
@@ -1762,14 +1761,14 @@ delp.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Actor-aapc.upgrade-Name
+		Name: Actor-delp.upgrade-Name
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: Actor-aapc.upgrade-Description
+		Description: Actor-delp.upgrade-Description
 	TooltipExtras:
-		Strengths: Actor-aapc.upgrade-Strengths
-		Weaknesses: Actor-aapc.upgrade-Weaknesses
+		Strengths: Actor-delp.upgrade-Strengths
+		Weaknesses: Actor-delp.upgrade-Weaknesses
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1785,7 +1784,7 @@ optics.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: Actor-optics.upgrade-Description
+		Description: Actor-optics.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-optics.upgrade-Strengths
 	Valued:
@@ -1803,7 +1802,7 @@ entrench.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.france, anyradar, ~techlevel.medium
-		Description: Actor-entrench.upgrade-Description
+		Description: Actor-entrench.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-entrench.upgrade-Strengths
 	Valued:
@@ -1823,7 +1822,7 @@ cryw.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.allies, atek, ~techlevel.high
-		Description: Actor-cryw.upgrade-Description
+		Description: Actor-cryw.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-cryw.upgrade-Strengths
 	Valued:
@@ -1841,10 +1840,10 @@ pcan.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.allies, atek, ~techlevel.high
-		Description: Actor-pcan.upgrade-Description
+		Description: Actor-pcan.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-pcan.upgrade-Strengths
-		Weaknesses: Actor-pcan.upgrade-Weaknesses
+		Strengths: Actor-pcan.upgrade-Strengths2
+		Weaknesses: Actor-pcan.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1860,7 +1859,7 @@ apb.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.england, atek, ~techlevel.high
-		Description: Actor-apb.upgrade-Description
+		Description: Actor-apb.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-apb.upgrade-Strengths
 		Weaknesses: Actor-apb.upgrade-Weaknesses
@@ -1881,9 +1880,9 @@ airborne.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.usa, atek, ~techlevel.high
-		Description: Actor-airborne.upgrade-Description
+		Description: Actor-airborne.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-airborne.upgrade-Strengths
+		Strengths: Actor-airborne.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1901,9 +1900,9 @@ tflx.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.germany, atek, ~techlevel.high
-		Description: Actor-tflx.upgrade-Description
+		Description: Actor-tflx.upgrade-Description2
 	TooltipExtras:
-		Strengths: Actor-tflx.upgrade-Strengths
+		Strengths: Actor-tflx.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1921,7 +1920,7 @@ charv.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.allies, alhq, ~techlevel.high, !charv.upgrade
-		Description: Actor-charv.upgrade-Description
+		Description: Actor-charv.upgrade-Description2
 	TooltipExtras:
 		Strengths: Actor-charv.upgrade-Strengths
 	Valued:
@@ -1955,7 +1954,7 @@ loyalist.allegiance:
 	Buildable:
 		BuildPaletteOrder: 16
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !rebel.allegiance, !malefic.allegiance, ~techlevel.medium
-		Description: Actor-loyalist.allegiance-Description
+		Description: Actor-loyalist.allegiance-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: Actor-loyalist.allegiance-Attributes
@@ -1975,7 +1974,7 @@ rebel.allegiance:
 	Buildable:
 		BuildPaletteOrder: 17
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !loyalist.allegiance, !malefic.allegiance, ~techlevel.medium
-		Description: Actor-rebel.allegiance-Description
+		Description: Actor-rebel.allegiance-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: Actor-rebel.allegiance-Attributes
@@ -1995,7 +1994,7 @@ malefic.allegiance:
 	Buildable:
 		BuildPaletteOrder: 18
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !loyalist.allegiance, !rebel.allegiance, ~techlevel.medium
-		Description: Actor-malefic.allegiance-Description
+		Description: Actor-malefic.allegiance-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: Actor-malefic.allegiance-Attributes
@@ -2015,7 +2014,7 @@ hyper.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~techlevel.medium
-		Description: Actor-hyper.upgrade-Description
+		Description: Actor-hyper.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-hyper.upgrade-Strengths
@@ -2034,7 +2033,7 @@ allegiance.upgrade:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, anyallegiance, ~!loyalist.allegiance, ~!rebel.allegiance, ~!malefic.allegiance, ~techlevel.medium
 		IconPalette: chromes
-		Description: Actor-allegiance.upgrade-Description
+		Description: Actor-allegiance.upgrade-Description2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2053,8 +2052,8 @@ evis.upgrade:
 		Description: Actor-evis.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-evis.upgrade-Strengths
-		Weaknesses: Actor-evis.upgrade-Weaknesses
+		Strengths: Actor-evis.upgrade-Strengths2
+		Weaknesses: Actor-evis.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2072,8 +2071,8 @@ impl.upgrade:
 		Description: Actor-impl.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-impl.upgrade-Strengths
-		Weaknesses: Actor-impl.upgrade-Weaknesses
+		Strengths: Actor-impl.upgrade-Strengths2
+		Weaknesses: Actor-impl.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2091,8 +2090,8 @@ stlk.upgrade:
 		Description: Actor-stlk.upgrade-Description
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-stlk.upgrade-Strengths
-		Weaknesses: Actor-stlk.upgrade-Weaknesses
+		Strengths: Actor-stlk.upgrade-Strengths2
+		Weaknesses: Actor-stlk.upgrade-Weaknesses2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2107,11 +2106,11 @@ shrw.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~techlevel.medium
-		Description: Actor-shrw.upgrade-Description
+		Description: Actor-shrw.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-shrw.upgrade-Strengths
-		Weaknesses: Actor-shrw.upgrade-Weaknesses
+		Strengths: Actor-shrw.upgrade-Strengths2
+		Weaknesses: Actor-shrw.upgrade-Weaknesses2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2126,7 +2125,7 @@ advart.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.traveler, anyradar, ~techlevel.medium
-		Description: Actor-advart.upgrade-Description
+		Description: Actor-advart.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-advart.upgrade-Strengths
@@ -2146,10 +2145,10 @@ carapace.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, infantry.any, ~techlevel.high
-		Description: Actor-carapace.upgrade-Description
+		Description: Actor-carapace.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-carapace.upgrade-Strengths
+		Strengths: Actor-flakarmor.upgrade-Strengths2
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2164,7 +2163,7 @@ blink.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Actor-blink.upgrade-Description
+		Description: Actor-blink.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-blink.upgrade-Strengths
@@ -2182,10 +2181,10 @@ resconv.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Actor-resconv.upgrade-Description
+		Description: Actor-resconv.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-resconv.upgrade-Strengths
+		Strengths: Actor-resconv.upgrade-Strengths2
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2200,10 +2199,10 @@ ioncon.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.reaper, scrt, ~techlevel.high
-		Description: Actor-ioncon.upgrade-Description
+		Description: Actor-ioncon.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-ioncon.upgrade-Strengths
+		Strengths: Actor-ioncon.upgrade-Strengths2
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2220,7 +2219,7 @@ regen.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Actor-regen.upgrade-Description
+		Description: Actor-regen.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: Actor-regen.upgrade-Strengths
@@ -2238,10 +2237,10 @@ stellar.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.harbinger, scrt, ~techlevel.high
-		Description: Actor-stellar.upgrade-Description
+		Description: Actor-stellar.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-stellar.upgrade-Strengths
+		Strengths: Actor-stellar.upgrade-Strengths2
 		Weaknesses: Actor-stellar.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -2259,10 +2258,10 @@ coalescence.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.collector, scrt, ~techlevel.high
-		Description: Actor-coalescence.upgrade-Description
+		Description: Actor-coalescence.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-coalescence.upgrade-Strengths
+		Strengths: Actor-coalescence.upgrade-Strengths2
 		Weaknesses: Actor-coalescence.upgrade-Weaknesses
 	Valued:
 		Cost: 1000
@@ -2280,10 +2279,10 @@ shields.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.scrin, sign, ~techlevel.high
-		Description: Actor-shields.upgrade-Description
+		Description: Actor-shields.upgrade-Description2
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: Actor-shields.upgrade-Strengths
+		Strengths: Actor-shields.upgrade-Strengths2
 	Valued:
 		Cost: 1500
 	RenderSprites:

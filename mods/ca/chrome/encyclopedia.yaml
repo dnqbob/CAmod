@@ -14,7 +14,7 @@ Background@ENCYCLOPEDIA_PANEL:
 				Label@ENCYCLOPEDIA_TITLE:
 					Width: PARENT_WIDTH
 					Height: 25
-					Text: Encyclopedia
+					Text: Game-CA-Encyclopedia-Title
 					Align: Center
 					Font: Bold
 				Container@ENCYCLOPEDIA_TABS:
@@ -96,7 +96,7 @@ Background@ENCYCLOPEDIA_PANEL:
 							Width: PARENT_WIDTH - 148 - 10
 							Height: 25
 							Font: Regular
-							Text: Select Variant...
+							Text: Game-CA-Encyclopedia-SelectVariant
 						ScrollPanel@ACTOR_DESCRIPTION_PANEL:
 							Y: 30
 							Width: PARENT_WIDTH - 148 - 10
@@ -125,7 +125,7 @@ Background@ENCYCLOPEDIA_PANEL:
 											X: 0
 											Height: 16
 											Font: Bold
-											Text: Not Producible
+											Text: Game-CA-Encyclopedia-NotProducible
 											TextColor: a58770
 										Image@COST_ICON:
 											Y: 1
@@ -252,7 +252,7 @@ Background@ENCYCLOPEDIA_PANEL:
 					Font: Bold
 					Width: 148
 					Height: 25
-					Text: button-back
+					Text: Chrome-MainMenu-Back
 					Key: escape
 
 		TooltipContainer@TOOLTIP_CONTAINER:

@@ -8,7 +8,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 25
 			Font: Bold
 			Align: Center
-			Text: Map Options
+			Text: Chrome-LobbyOptions-Title
 		Button@RESET_OPTIONS:
 			X: PARENT_WIDTH - WIDTH
 			Y: 0 - 26
@@ -16,7 +16,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Reset options to map defaults
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Reset
+			Text: Chrome-LobbyOptions-ResetButton
 		Button@LOAD_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50
 			Y: 0 - 26
@@ -24,7 +24,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Load saved options
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Load
+			Text: Chrome-LobbyOptions-LoadButton
 		Button@SAVE_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50 - 44
 			Y: 0 - 26
@@ -32,7 +32,7 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 26
 			TooltipText: Save options
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Save
+			Text: Chrome-LobbyOptions-SaveButton
 		ScrollPanel:
 			Logic: LobbyOptionsLogicCA, LobbyMissionInfoLogic
 			Width: PARENT_WIDTH
@@ -117,4 +117,4 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH - 20
 									Height: 20
 									Font: Bold
-									Text: Advanced Options
+									Text: Chrome-LobbyOptions-AdvancedHeader

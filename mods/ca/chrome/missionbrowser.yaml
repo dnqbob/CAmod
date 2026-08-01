@@ -9,7 +9,7 @@ Background@MISSIONBROWSER_PANEL:
 			Y: 21
 			Width: PARENT_WIDTH
 			Height: 25
-			Text: Missions
+			Text: Chrome-MissionBrowser-Title
 			Align: Center
 			Font: Bold
 		ScrollPanel@MISSION_LIST:
@@ -150,55 +150,55 @@ Background@MISSIONBROWSER_PANEL:
 							Y: 25
 							Height: 28
 							Font: Bold
-							Text: Briefing
+							Text: Chrome-MissionBrowser-BriefingTab
 						Button@OPTIONS_TAB:
 							X: PARENT_WIDTH / 2
 							Width: PARENT_WIDTH / 2
 							Y: 25
 							Height: 28
 							Font: Bold
-							Text: Options
+							Text: Chrome-MissionBrowser-MissionOptionsTab
 		Button@START_BRIEFING_VIDEO_BUTTON:
 			X: 20
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Watch Briefing
+			Text: Chrome-MissionBrowser-StartBrefing
 			Font: Bold
 		Button@STOP_BRIEFING_VIDEO_BUTTON:
 			X: 20
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Stop Briefing
+			Text: Chrome-MissionBrowser-StopBrefing
 			Font: Bold
 		Button@START_INFO_VIDEO_BUTTON:
 			X: 160
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Watch Info Video
+			Text: Chrome-MissionBrowser-StartInfoVideo
 			Font: Bold
 		Button@STOP_INFO_VIDEO_BUTTON:
 			X: 160
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Stop Info Video
+			Text: Chrome-MissionBrowser-StopInfoVideo
 			Font: Bold
 		Button@STARTGAME_BUTTON:
 			X: PARENT_WIDTH - 140 - 130
 			Y: PARENT_HEIGHT - 45
 			Width: 120
 			Height: 25
-			Text: Play
+			Text: Chrome-MissionBrowser-OkButton
 			Font: Bold
 		Button@BACK_BUTTON:
 			X: PARENT_WIDTH - 140
 			Y: PARENT_HEIGHT - 45
 			Width: 120
 			Height: 25
-			Text: Back
+			Text: Chrome-MissionBrowser-BackButton
 			Font: Bold
 			Key: escape
 		Background@MISSION_BIN:

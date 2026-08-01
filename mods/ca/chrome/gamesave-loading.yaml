@@ -15,7 +15,7 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Bold
 			Align: Center
-			Text: label-gamesave-loading-screen-title
+			Text: Chrome-GameSaveLoading-Loading
 		ProgressBar@PROGRESS:
 			X: (WINDOW_WIDTH - 500) / 2
 			Y: 3 * WINDOW_HEIGHT / 4
@@ -29,14 +29,14 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Regular
 			Align: Center
-			Text: label-gamesave-loading-screen-desc
+			Text: Chrome-GameSaveLoading-Desc
 		Label@DESC2:
 			Width: WINDOW_WIDTH
 			Y: 3 * WINDOW_HEIGHT / 4 + 19 + 30
 			Height: 25
 			Font: Small
 			Align: Center
-			Text: label-gamesave-loading-screen-loadtime-line1
+			Text: Chrome-GameSaveLoading-LoadTimeLine1
 			TextColor: 777777
 		Label@DESC3:
 			Width: WINDOW_WIDTH
@@ -44,5 +44,5 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Small
 			Align: Center
-			Text: label-gamesave-loading-screen-loadtime-line2
+			Text: Chrome-GameSaveLoading-LoadTimeLine2
 			TextColor: 777777

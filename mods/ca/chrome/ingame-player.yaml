@@ -365,7 +365,7 @@ Container@PLAYER_WIDGETS:
 					Width: PARENT_WIDTH - 30
 					Height: 25
 					Align: Right
-					Text: Audio Muted
+					Text: Chrome-InGamePlayer-AudioMutedLabel
 					Contrast: true
 		Image@SIDEBAR_BACKGROUND:
 			Logic: AddFactionSuffixLogic
@@ -856,11 +856,11 @@ Container@PLAYER_WIDGETS:
 				DropDownButton@HPF_OVERLAY_LOCOMOTOR:
 					Width: PARENT_WIDTH
 					Height: 25
-					Text: Select Locomotor
+					Text: Chrome-InGameDebug-HpfOverlay-Locomotor
 					Font: Regular
 				DropDownButton@HPF_OVERLAY_CHECK:
 					Y: 0 + 35
 					Width: PARENT_WIDTH
 					Height: 25
-					Text: Select BlockedByActor
+					Text: Chrome-InGameDebug-HpfOverlay-BlockedByActor
 					Font: Regular

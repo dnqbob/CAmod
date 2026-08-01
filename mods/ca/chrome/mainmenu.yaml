@@ -51,7 +51,7 @@ Container@MAINMENU:
 							Y: 22
 							Width: 200
 							Height: 30
-							Text: Combined Arms
+							Text: Game-CA-MainMenu-BrandTitle
 							Align: Center
 							Font: MediumBold
 						Button@SINGLEPLAYER_BUTTON:
@@ -59,49 +59,49 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Singleplayer
+							Text: Chrome-SingleplayerMenu-Title
 							Font: Bold
 						Button@MULTIPLAYER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Multiplayer
+							Text: Chrome-MainMenu-Multiplayer
 							Font: Bold
 						Button@SETTINGS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Settings
+							Text: Chrome-MainMenu-Settings
 							Font: Bold
 						Button@ENCYCLOPEDIA_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 180
 							Width: 140
 							Height: 30
-							Text: Encyclopedia
+							Text: Game-CA-MainMenu-EncyclopediaButton
 							Font: Bold
 						Button@EXTRAS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Extras
+							Text: Chrome-ExtraMenu-Title
 							Font: Bold
 						Button@CONTENT_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 260
 							Width: 140
 							Height: 30
-							Text: Manage Content
+							Text: Chrome-MainMenu-ManageContent
 							Font: Bold
 						Button@QUIT_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Quit
+							Text: Chrome-MainMenu-Quit
 							Font: Bold
 				Background@SINGLEPLAYER_MENU:
 					Width: PARENT_WIDTH
@@ -112,7 +112,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Singleplayer
+							Text: Chrome-SingleplayerMenu-Title
 							Align: Center
 							Font: Bold
 						Button@SKIRMISH_BUTTON:
@@ -120,21 +120,21 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Skirmish
+							Text: Chrome-SingleplayerMenu-Skirmish
 							Font: Bold
 						Button@MISSIONS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Missions
+							Text: Chrome-SingleplayerMenu-Mission
 							Font: Bold
 						Button@LOAD_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Load
+							Text: Chrome-SingleplayerMenu-Load
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -142,7 +142,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: Chrome-MainMenu-Back
 							Font: Bold
 				Background@EXTRAS_MENU:
 					Width: PARENT_WIDTH
@@ -153,7 +153,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Extras
+							Text: Chrome-ExtraMenu-Title
 							Align: Center
 							Font: Bold
 						Button@REPLAYS_BUTTON:
@@ -161,35 +161,35 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Replays
+							Text: Chrome-ExtraMenu-Replay
 							Font: Bold
 						Button@MUSIC_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Music
+							Text: Chrome-ExtraMenu-Music
 							Font: Bold
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Map Editor
+							Text: Chrome-MapEditorMenu-Title
 							Font: Bold
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 180
 							Width: 140
 							Height: 30
-							Text: Asset Browser
+							Text: Chrome-ExtraMenu-AssetBrowser
 							Font: Bold
 						Button@CREDITS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Credits
+							Text: Chrome-ExtraMenu-Credits
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -197,7 +197,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: Chrome-MainMenu-Back
 							Font: Bold
 				Background@MAP_EDITOR_MENU:
 					Width: PARENT_WIDTH
@@ -208,7 +208,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Map Editor
+							Text: Chrome-MapEditorMenu-Title
 							Align: Center
 							Font: Bold
 						Button@NEW_MAP_BUTTON:
@@ -216,14 +216,14 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: New Map
+							Text: Chrome-MapEditorMenu-NewMap
 							Font: Bold
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Load Map
+							Text: Chrome-MapEditorMenu-LoadMap
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -231,7 +231,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: Chrome-MainMenu-Back
 							Font: Bold
 		Container@PERFORMANCE_INFO:
 			Logic: PerfDebugLogic
@@ -274,7 +274,7 @@ Container@MAINMENU:
 							Font: Regular
 							Shadow: true
 							TextColor: ffff00
-							Text: Testing testing
+							Text: Game-CA-MainMenu-VersionPreviewStub
 						ExternalLinkButton@NEW_VERSION_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: PARENT_HEIGHT - HEIGHT - 8
@@ -282,7 +282,7 @@ Container@MAINMENU:
 							Height: 28
 							Background: button
 							Align: Center
-							Text: Download
+							Text: Game-CA-MainMenu-DownloadButton
 							Font: Regular
 							Url: null
 				Background@NOTIFICATIONS:
@@ -301,7 +301,7 @@ Container@MAINMENU:
 							Font: Bold
 							Shadow: true
 							TextColor: ffff00
-							Text: Notifications
+							Text: Game-CA-MainMenu-NotificationsTitle
 						ScrollPanel@NOTIFICATIONS_PANEL:
 							X: 10
 							Y: 30

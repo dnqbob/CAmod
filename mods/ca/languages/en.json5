@@ -894,5 +894,9 @@
 	"Chrome-IngameObserver-ReplayPlayer-ButtonRegular-TooltipText": "100% speed",
 	"Chrome-IngameObserver-ReplayPlayer-ButtonFaster-TooltipText": "200% speed",
 	"Chrome-Mainmenu-ExternalLinks-WebsiteLink-TooltipText": "CA Website",
-	"Chrome-Tooltips-ProductionTooltip-Requires": "Requires {0}"
+	"Chrome-Tooltips-ProductionTooltip-Requires": "Requires {0}",
+	"Encyclopedia-Category-Defense": "Defense",
+	"Encyclopedia-Category-Vehicle": "Vehicle",
+	"Encyclopedia-Category-Ship": "Ship",
+	"Encyclopedia-Category-Upgrade": "Upgrade"
 }

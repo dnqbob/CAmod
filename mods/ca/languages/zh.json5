@@ -894,5 +894,9 @@
 	"Game-ObserverStatsLogic-Speed-133x": "1.33x",
 	"Game-ObserverStatsLogic-Speed-1x": "1x",
 	"Game-ObserverStatsLogic-Speed-2x": "2x",
-	"Game-SettingLogic-WeaponPostFX": "启用武器后期处理特效"
+	"Game-SettingLogic-WeaponPostFX": "启用武器后期处理特效",
+	"Encyclopedia-Category-Defense": "防御设施",
+	"Encyclopedia-Category-Vehicle": "载具",
+	"Encyclopedia-Category-Ship": "舰船",
+	"Encyclopedia-Category-Upgrade": "升级"
 }

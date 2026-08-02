@@ -21,8 +21,8 @@ Container@PLAYER_WIDGETS:
 					IconSize: 62, 46
 					IconSpriteOffset: -1, -1
 					TooltipContainer: TOOLTIP_CONTAINER
-					ReadyText: supportpowers-support-powers-palette.ready
-					HoldText: supportpowers-support-powers-palette.hold
+					ReadyText: Chrome-InGamePlayer-SupportPowerReady
+					HoldText: Chrome-InGamePlayer-SupportPowerHold
 					HotkeyPrefix: SupportPower
 					HotkeyCount: 10
 				Container@PALETTE_FOREGROUND:
@@ -573,8 +573,8 @@ Container@PLAYER_WIDGETS:
 							X: 53
 							Y: 326
 							TooltipContainer: TOOLTIP_CONTAINER
-							ReadyText: READY
-							HoldText: ON HOLD
+							ReadyText: Chrome-InGamePlayer-ProductionReady
+							HoldText: Chrome-InGamePlayer-ProductionHold
 							IconSize: 62, 46
 							IconMargin: 3, 3
 							IconSpriteOffset: -1, -1

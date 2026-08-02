@@ -81,7 +81,7 @@ Container@OBSERVER_WIDGETS:
 					Width: PARENT_WIDTH - 30
 					Height: 25
 					Align: Right
-					Text: Chrome-IngameObserver-Containermuteindicator-Labellabel
+					Text: Chrome-InGameObserver-MuteIndicator
 					Contrast: true
 		LogicKeyListener@OBSERVER_KEY_LISTENER:
 		MenuButton@OPTIONS_BUTTON:

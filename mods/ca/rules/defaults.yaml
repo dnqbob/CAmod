@@ -1496,7 +1496,7 @@
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: aircraft-repair && !forceshield && !invulnerability && !being-warped
 	WithDecoration@AIRCRAFTREPAIR:
 		Image: select
@@ -2556,7 +2556,7 @@
 		Notification: EnemyUnitStolen
 		TextNotification: Enemy unit stolen.
 		LoseNotification: UnitStolen
-		LoseTextNotification: Unit stolen.
+		LoseTextNotification: Notification-UnitStolen
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: VehicleVoice
@@ -3621,7 +3621,7 @@
 	CaptureNotification:
 		TextNotification: Structure captured.
 		LoseNotification: OurBuildingCaptured
-		LoseTextNotification: Structure lost (captured).
+		LoseTextNotification: Notification-StructureLostCaptured
 	ShakeOnDeath:
 	Guardable:
 		Range: 3c0
@@ -4968,11 +4968,11 @@
 		Group: Building
 		LowPowerModifier: 250
 		ReadyAudio: ConstructionComplete
-		ReadyTextNotification: Construction complete.
+		ReadyTextNotification: Notification-ConstructionComplete
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -4982,11 +4982,11 @@
 		Group: Defense
 		LowPowerModifier: 250
 		ReadyAudio: ConstructionComplete
-		ReadyTextNotification: Construction complete.
+		ReadyTextNotification: Notification-ConstructionComplete
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -5026,9 +5026,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Training
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -5102,9 +5102,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -5146,9 +5146,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -5193,9 +5193,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: Notification-UnableToComplyBuildingInProgress
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled

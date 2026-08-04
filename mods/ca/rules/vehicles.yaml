@@ -2180,7 +2180,7 @@ MCV:
 		Facing: 384
 		TransformSounds: placbldg.aud, build5.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
-		NoTransformTextNotification: Cannot deploy here.
+		NoTransformTextNotification: Notification-CannotDeployHere
 		PauseOnCondition: empdisable || being-warped
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -3199,7 +3199,7 @@ AMCV:
 		Facing: 384
 		TransformSounds: placbldg.aud, build5.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
-		NoTransformTextNotification: Cannot deploy here.
+		NoTransformTextNotification: Notification-CannotDeployHere
 		PauseOnCondition: empdisable || being-warped
 	MustBeDestroyed:
 		RequiredForShortGame: true

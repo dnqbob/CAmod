@@ -204,7 +204,7 @@ SPEN:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -300,7 +300,7 @@ SYRD:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -2364,7 +2364,7 @@ FIX:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	ProximityExternalCondition@UNITSELL:
 		Condition: unit-sellable
@@ -4175,7 +4175,7 @@ REP:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
@@ -4858,7 +4858,7 @@ SPEN.nod:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -4954,7 +4954,7 @@ SYRD.gdi:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -5612,7 +5612,7 @@ CVAT:
 		BuildDurationModifier: 120
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		ShowSelectionBar: true
 		PauseOnCondition: tech-locked || being-warped || disabled
 		RequiresCondition: !global-multiqueue
@@ -5623,7 +5623,7 @@ CVAT:
 		BuildDurationModifier: 80
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: Notification-UnableToBuildMore
 		ShowSelectionBar: true
 		PauseOnCondition: tech-locked || being-warped || disabled
 		RequiresCondition: global-multiqueue

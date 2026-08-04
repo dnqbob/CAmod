@@ -3099,7 +3099,7 @@ SMCV:
 		Facing: 384
 		TransformSounds: placbldg.aud, build5.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
-		NoTransformTextNotification: Cannot deploy here.
+		NoTransformTextNotification: Notification-CannotDeployHere
 		PauseOnCondition: empdisable || being-warped
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -5456,7 +5456,7 @@ SREP:
 		StartRepairingNotification: Repairing
 		StartRepairingTextNotification: Repairing.
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete

@@ -15,10 +15,10 @@
 		OnFireSound: forceon.aud
 		DisplayTimerRelationships: Ally
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: ForceShieldReady
-		EndChargeTextNotification: Force Shield ready.
+		EndChargeTextNotification: Notification-ForceShieldReady
 		DisplayRadarPing: True
 		Cursor: ability
 		PauseOnCondition: disabled || empdisable ||  being-warped
@@ -38,7 +38,7 @@
 		Name: Actor-supportpower.sendcash-Name
 		Description: Actor-supportpower.sendcash-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		Cursor: ability
 		SupportPowerPaletteOrder: 0
 		Prerequisites: sendcash.enabled
@@ -73,10 +73,10 @@
 		Description: Actor-supportpower.veilofwar-Description
 		LaunchSound: sscrambl.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: VeilOfWarReady
-		EndChargeTextNotification: Veil of War ready.
+		EndChargeTextNotification: Notification-VeilOfWarReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		Cursor: ability
@@ -109,9 +109,9 @@
 		UseDirectionalTarget: True
 		DirectionArrowAnimation: paradirection
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ClusterMinesReady
-		EndChargeTextNotification: Cluster Mines ready.
+		EndChargeTextNotification: Notification-ClusterMinesReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		SupportPowerPaletteOrder: 50
 
@@ -131,10 +131,10 @@
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 375
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: TemporalIncursionReady
-		EndChargeTextNotification: Temporal Incursion ready.
+		EndChargeTextNotification: Notification-TemporalIncursionReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		LaunchSound: chrono2.aud
@@ -167,9 +167,9 @@
 		Name: Actor-supportpower.strafe-Name
 		Description: Actor-supportpower.strafe-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: StrafingRunReady
-		EndChargeTextNotification: Strafing Run ready.
+		EndChargeTextNotification: Notification-StrafingRunReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		QuantizedFacings: 8
@@ -268,11 +268,11 @@
 		ValidRelationships: Ally, Enemy, Neutral
 		AllowMultiple: false
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChronosphereCharging
 		EndChargeSpeechNotification: TimeWarpReady
-		EndChargeTextNotification: Time Warp ready.
+		EndChargeTextNotification: Notification-TimeWarpReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayBeacon: True
 		ArrowSequence: arrow
@@ -299,12 +299,12 @@
 		Name: Actor-supportpower.cryostorm-Name
 		Description: Actor-supportpower.cryostorm-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: CryostormReady
-		EndChargeTextNotification: Cryostorm ready.
+		EndChargeTextNotification: Notification-CryostormReady
 		IncomingSpeechNotification: CryostormWarning
-		IncomingTextNotification: Cryostorm approaching.
+		IncomingTextNotification: Notification-CryostormApproaching
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		Cursor: ability
@@ -333,9 +333,9 @@
 		Name: Actor-supportpower.heliosbomb-Name
 		Description: Actor-supportpower.heliosbomb-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: HeliosBombReady
-		EndChargeTextNotification: Helios bomb ready.
+		EndChargeTextNotification: Notification-HeliosBombReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: galx.helios
@@ -367,11 +367,11 @@
 		Name: Actor-supportpower.blackskystrike-Name
 		Description: Actor-supportpower.blackskystrike-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: BlackSkyStrikeReady
-		EndChargeTextNotification: Black Sky Strike ready.
+		EndChargeTextNotification: Notification-BlackSkyStrikeReady
 		IncomingSpeechNotification: BlackSkyStrikeWarning
-		IncomingTextNotification: Black Sky missiles approaching.
+		IncomingTextNotification: Notification-BlackSkyMissilesApproaching
 		DisplayBeacon: true
 		SupportPowerPaletteOrder: 25
 		ShowSelectionBoxes: true
@@ -402,11 +402,11 @@
 		Name: Actor-supportpower.chronoshift-Name
 		Description: Actor-supportpower.chronoshift-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChronosphereCharging
 		EndChargeSpeechNotification: ChronosphereReady
-		EndChargeTextNotification: Chronosphere ready.
+		EndChargeTextNotification: Notification-ChronosphereReady
 		LaunchSound: chrono2.aud
 		IncomingSound: chrono2.aud
 		KillCargo: false
@@ -442,11 +442,11 @@
 		CameraActor: camera
 		CameraRemoveDelay: 375
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChronosphereCharging
 		EndChargeSpeechNotification: ChronosphereReady
-		EndChargeTextNotification: Chronosphere ready.
+		EndChargeTextNotification: Notification-ChronosphereReady
 		DisplayTimerRelationships: Ally, Neutral, Enemy
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
@@ -469,12 +469,12 @@
 		CameraActor: camera
 		CameraRemoveDelay: 425
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: StormReady
-		EndChargeTextNotification: Lightning Storm ready.
+		EndChargeTextNotification: Notification-LightningStormReady
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: StormApproach
-		IncomingTextNotification: Lightning Storm approaching.
+		IncomingTextNotification: Notification-LightningStormApproaching
 		IncomingSound: sweaintr.aud
 		LaunchSound: sweaintr.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -501,9 +501,9 @@
 		Name: Actor-supportpower.spyplane-Name
 		Description: Actor-supportpower.spyplane-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: SpyPlaneReady
-		EndChargeTextNotification: Spy Plane ready.
+		EndChargeTextNotification: Notification-SpyPlaneReady
 		LaunchSound: spyplane.aud
 		CameraActor: camera.spyplane
 		CameraRemoveDelay: 150
@@ -537,9 +537,9 @@
 		DropItems: E1,E1,E2,E3,E3,E1,E1,E1
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ParatroopersReady
-		EndChargeTextNotification: Paratroopers ready.
+		EndChargeTextNotification: Notification-ParatroopersReady
 		AllowImpassableCells: false
 		QuantizedFacings: 8
 		CameraActor: camera.paradrop
@@ -571,9 +571,9 @@
 		DropItems: SHOK,SHOK,SHOK,SHOK,SHOK
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: StormtroopersReady
-		EndChargeTextNotification: Stormtroopers ready.
+		EndChargeTextNotification: Notification-StormtroopersReady
 		AllowImpassableCells: false
 		QuantizedFacings: 8
 		CameraActor: camera.paradrop
@@ -605,9 +605,9 @@
 		Name: Actor-supportpower.parabombs-Name
 		Description: Actor-supportpower.parabombs-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ParabombsReady
-		EndChargeTextNotification: Parabombs ready.
+		EndChargeTextNotification: Notification-ParabombsReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: badr.bomber
@@ -633,9 +633,9 @@
 		Name: Actor-supportpower.carpetbomb-Name
 		Description: Actor-supportpower.carpetbomb-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: CarpetBombReady
-		EndChargeTextNotification: Carpet bombing ready.
+		EndChargeTextNotification: Notification-CarpetBombingReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: badr.cbomber
@@ -661,9 +661,9 @@
 		Name: Actor-supportpower.atombomb-Name
 		Description: Actor-supportpower.atombomb-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: AtomicBombReady
-		EndChargeTextNotification: Atomic bomb ready.
+		EndChargeTextNotification: Notification-AtomicBombReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: badr.nbomber
@@ -690,9 +690,9 @@
 		Name: Actor-supportpower.mutabomb-Name
 		Description: Actor-supportpower.mutabomb-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: GeneticMutationBombReady
-		EndChargeTextNotification: Genetic Mutation Bomb ready.
+		EndChargeTextNotification: Notification-GeneticMutationBombReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: badr.mbomber
@@ -719,9 +719,9 @@
 		Name: Actor-supportpower.chaosbombs-Name
 		Description: Actor-supportpower.chaosbombs-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ChaosBombsReady
-		EndChargeTextNotification: Chaos bombs ready.
+		EndChargeTextNotification: Notification-ChaosBombsReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: badr.chaosbomber
@@ -772,10 +772,10 @@
 		Description: Actor-supportpower.atomicammo-Description
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: AtomicShellsReady
-		EndChargeTextNotification: Atomic Shells ready.
+		EndChargeTextNotification: Notification-AtomicShellsReady
 		DisplayRadarPing: True
 		Cursor: ability
 		PauseOnCondition: empdisable || being-warped
@@ -803,10 +803,10 @@
 		Description: Actor-supportpower.atomicammoiraq-Description
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: AtomicShellsReady
-		EndChargeTextNotification: Atomic Shells ready.
+		EndChargeTextNotification: Notification-AtomicShellsReady
 		DisplayRadarPing: True
 		Cursor: ability
 		PauseOnCondition: empdisable || being-warped
@@ -836,10 +836,10 @@
 		Prerequisites: ~infantry.doctrine, playerxp.level2
 		OnFireSound: heroes.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: HeroesOfTheUnionReady
-		EndChargeTextNotification: Heroes of the Union ready.
+		EndChargeTextNotification: Notification-HeroesOfTheUnionReady
 		DisplayRadarPing: True
 		Cursor: ability
 		ActiveSequence: idle
@@ -862,13 +862,13 @@
 		DropItems: 3tnk, 3tnk, 3tnk
 		SquadOffset: -2048, 2048, 0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		AllowImpassableCells: false
 		EndChargeSpeechNotification: TankDropReady
-		EndChargeTextNotification: Tank Drop ready.
+		EndChargeTextNotification: Notification-TankDropReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: Notification-EnemyAirDropDetected
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
 		BeaconPoster: lrairdropicon
@@ -905,9 +905,9 @@
 		Name: Actor-supportpower.killzone-Name
 		Description: Actor-supportpower.killzone-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: KillZoneReady
-		EndChargeTextNotification: Kill Zone ready.
+		EndChargeTextNotification: Notification-KillZoneReady
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
 		UnitType: u2.killzone
@@ -944,10 +944,10 @@
 		Description: Actor-supportpower.ironcurtain-Description
 		OnFireSound: ironcur9.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: IronCurtainReady
-		EndChargeTextNotification: Iron Curtain ready.
+		EndChargeTextNotification: Notification-IronCurtainReady
 		BeginChargeSpeechNotification: IronCurtainCharging
 		DisplayRadarPing: True
 		Cursor: ability
@@ -968,13 +968,13 @@
 		Description: Actor-supportpower.abomb-Description
 		BeginChargeSpeechNotification: AbombPrepping
 		EndChargeSpeechNotification: AbombReady
-		EndChargeTextNotification: A-bomb ready.
+		EndChargeTextNotification: Notification-ABombReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSound: nukelaunch.aud
 		IncomingSpeechNotification: AbombLaunchDetected
-		IncomingTextNotification: Atom Bomb launch detected.
+		IncomingTextNotification: Notification-AtomBombLaunchDetected
 		LaunchSound: nukelaunch.aud
 		MissileWeapon: atomic
 		MissileImage: atomic
@@ -1007,9 +1007,9 @@
 		Name: Actor-supportpower.gdiuav-Name
 		Description: Actor-supportpower.gdiuav-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ReconDroneReady
-		EndChargeTextNotification: Recon Drone ready.
+		EndChargeTextNotification: Notification-ReconDroneReady
 		CameraActor: camera.spyplane
 		CameraRemoveDelay: 0
 		UnitType: uav
@@ -1031,9 +1031,9 @@
 		Name: Actor-supportpower.gdiuavarc-Name
 		Description: Actor-supportpower.gdiuavarc-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ReconDroneReady
-		EndChargeTextNotification: Recon Drone ready.
+		EndChargeTextNotification: Notification-ReconDroneReady
 		CameraActor: camera.spyplane
 		CameraRemoveDelay: 0
 		UnitType: uav
@@ -1062,9 +1062,9 @@
 		DropItems: XO,XO,XO
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: XODropAvailable
-		EndChargeTextNotification: X-O Drop ready.
+		EndChargeTextNotification: Notification-XODropReady
 		AllowImpassableCells: false
 		QuantizedFacings: 8
 		CameraActor: camera.paradrop
@@ -1088,9 +1088,9 @@
 		Name: Actor-supportpower.droppods-Name
 		Description: Actor-supportpower.droppods-Description
 		EndChargeSpeechNotification: DropPodsAvailable
-		EndChargeTextNotification: Drop Pods ready.
+		EndChargeTextNotification: Notification-DropPodsReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		DisplayRadarPing: True
 		ChargeInterval: 4500
 		Weapon: DropPodArrive
@@ -1115,10 +1115,10 @@
 		Name: Actor-supportpower.dropzoneeagle-Name
 		Description: Actor-supportpower.dropzoneeagle-Description
 		EndChargeSpeechNotification: Reinforce
-		EndChargeTextNotification: Reinforcements ready.
+		EndChargeTextNotification: Notification-ReinforcementsReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EffectImage: empty
 		EffectSequence: idle
 		EffectPalette: effect
@@ -1141,9 +1141,9 @@
 		Name: Actor-supportpower.interceptors-Name
 		Description: Actor-supportpower.interceptors-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: InterceptorsReady
-		EndChargeTextNotification: Interceptors ready.
+		EndChargeTextNotification: Notification-InterceptorsReady
 		CameraActor: camera.interceptors
 		UnitType: yf23.bomber
 		QuantizedFacings: 8
@@ -1181,10 +1181,10 @@
 		Description: Actor-supportpower.nrepair-Description
 		OnFireSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: NaniteRepairReady
-		EndChargeTextNotification: Nanite Repair ready.
+		EndChargeTextNotification: Notification-NaniteRepairReady
 		DisplayRadarPing: True
 		Cursor: repair
 		PauseOnCondition: disabled || empdisable ||  being-warped
@@ -1207,9 +1207,9 @@
 		Description: Actor-supportpower.rocketbarrage-Description
 		BeginChargeSpeechNotification: FireStormOffline
 		EndChargeSpeechNotification: FireStormReady
-		EndChargeTextNotification: Firestorm Missiles ready.
+		EndChargeTextNotification: Notification-FirestormMissilesReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		RequiresCondition: tower-rocket
 		Prerequisites: ~techlevel.high
@@ -1245,9 +1245,9 @@
 		LaunchSound: gradarup.aud
 		BeginChargeSound: gradardn.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
-		EndChargeTextNotification: Advanced Radar Scan ready.
+		EndChargeTextNotification: Notification-AdvancedRadarScanReady
 		Prerequisites: ~techlevel.high
 		EarlyDeactivationPenalty: 1500
 		SupportPowerPaletteOrder: 30
@@ -1264,11 +1264,11 @@
 		Description: Actor-supportpower.nshieldorder-Description
 		LaunchSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: NaniteShieldCharging
 		EndChargeSpeechNotification: NaniteShieldReady
-		EndChargeTextNotification: Nanite Shield ready.
+		EndChargeTextNotification: Notification-NaniteShieldReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		Cursor: ability
@@ -1292,9 +1292,9 @@
 		Description: Actor-supportpower.empmissile-Description
 		BeginChargeSpeechNotification: EMMissilePrepping
 		EndChargeSpeechNotification: EMMissileReady
-		EndChargeTextNotification: E.M. Missile ready.
+		EndChargeTextNotification: Notification-EMMissileReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		DisplayTimerRelationships: Ally, Neutral, Enemy
 		SupportPowerPaletteOrder: 20
@@ -1324,11 +1324,11 @@
 		EffectPalette: tdeffect-ignore-lighting-alpha85
 		Description: Actor-supportpower.surgicalstrike-Description
 		EndChargeSpeechNotification: SurgicalStrikeReady
-		EndChargeTextNotification: Surgical Strike ready.
+		EndChargeTextNotification: Notification-SurgicalStrikeReady
 		IncomingSound: ion2.aud
 		LaunchSound: ion2.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		DisplayRadarPing: True
 		DisplayTimerRelationships: Ally
@@ -1356,13 +1356,13 @@
 		CameraActor: camera
 		CameraRemoveDelay: 375
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		BeginChargeSpeechNotification: IonCannonCharging
 		EndChargeSpeechNotification: IonCannonReady
-		EndChargeTextNotification: Ion Cannon ready.
+		EndChargeTextNotification: Notification-IonCannonReady
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: IonCannonApproach
-		IncomingTextNotification: Ion cannon activated.
+		IncomingTextNotification: Notification-IonCannonActivated
 		IncomingSound: nukelaunch.aud
 		LaunchSound: nukelaunch.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -1390,13 +1390,13 @@
 		DropItems: ltnk, ftnk, ltnk
 		SquadOffset: -2048, 2048, 0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		AllowImpassableCells: false
 		EndChargeSpeechNotification: Reinforce
-		EndChargeTextNotification: Air Drop ready.
+		EndChargeTextNotification: Notification-AirDropReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: Notification-EnemyAirDropDetected
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1419,13 +1419,13 @@
 		DropItems: hftk, hftk
 		SquadOffset: -1024, 1024, 0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		AllowImpassableCells: false
 		EndChargeSpeechNotification: Reinforce
-		EndChargeTextNotification: Air Drop ready.
+		EndChargeTextNotification: Notification-AirDropReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: Notification-EnemyAirDropDetected
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1450,12 +1450,12 @@
 		Weapon: SubterraneanStrikeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: Reinforce
-		EndChargeTextNotification: Subterranean Strike ready.
+		EndChargeTextNotification: Notification-SubterraneanStrikeReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy subterranean units detected.
+		IncomingTextNotification: Notification-EnemySubterraneanUnitsDetected
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -1477,13 +1477,13 @@
 		DropItems: stnk.nod, stnk.nod
 		SquadOffset: -1024, 1024, 0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		AllowImpassableCells: false
 		EndChargeSpeechNotification: Reinforce
-		EndChargeTextNotification: Air Drop ready.
+		EndChargeTextNotification: Notification-AirDropReady
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: Notification-EnemyAirDropDetected
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1510,9 +1510,9 @@
 		Description: Actor-supportpower.sathack-Description
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: SatelliteHackReady
-		EndChargeTextNotification: Satellite Hack ready.
+		EndChargeTextNotification: Notification-SatelliteHackReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
 		EffectSequence: idle
@@ -1531,9 +1531,9 @@
 		Description: Actor-supportpower.sathacklegion-Description
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: SatelliteHackReady
-		EndChargeTextNotification: Satellite Hack ready.
+		EndChargeTextNotification: Notification-SatelliteHackReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
 		EffectSequence: idle
@@ -1552,9 +1552,9 @@
 		Name: Actor-supportpower.infernobomb-Name
 		Description: Actor-supportpower.infernobomb-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: InfernoBombReady
-		EndChargeTextNotification: Inferno Bomb ready.
+		EndChargeTextNotification: Notification-InfernoBombReady
 		CameraActor: camera.paradrop
 		CameraRemoveDelay: 150
 		UnitType: b2b
@@ -1586,10 +1586,10 @@
 		OnFireSound: scashhac.aud
 		Notification: CreditsStolen
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: CashHackReady
-		EndChargeTextNotification: Cash Hack ready.
+		EndChargeTextNotification: Notification-CashHackReady
 		DisplayRadarPing: True
 		Cursor: ability
 		PauseOnCondition: disabled || empdisable || being-warped
@@ -1604,10 +1604,10 @@
 		Name: Actor-supportpower.shadowteam-Name
 		Description: Actor-supportpower.shadowteam-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: ShadowTeamReady
-		EndChargeTextNotification: Shadow Team ready.
+		EndChargeTextNotification: Notification-ShadowTeamReady
 		UnitType: sgli
 		QuantizedFacings: 8
 		DisplayBeacon: false
@@ -1629,12 +1629,12 @@
 		Name: Actor-supportpower.clustermissile-Name
 		Description: Actor-supportpower.clustermissile-Description
 		EndChargeSpeechNotification: ClusMissileReady
-		EndChargeTextNotification: Cluster Missile ready.
+		EndChargeTextNotification: Notification-ClusterMissileReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: ClusMissileWarning
-		IncomingTextNotification: Cluster Missile launch detected.
+		IncomingTextNotification: Notification-ClusterMissileLaunchDetected
 		MissileWeapon: deathhand
 		MissileImage: deathhand
 		MissilePalette: temptd
@@ -1681,10 +1681,10 @@
 		Description: Actor-supportpower.frenzy-Description
 		OnFireSound: nodfrenzy.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: FrenzyReady
-		EndChargeTextNotification: Frenzy ready.
+		EndChargeTextNotification: Notification-FrenzyReady
 		DisplayRadarPing: True
 		Cursor: ability
 		PauseOnCondition: disabled || empdisable || being-warped
@@ -1702,10 +1702,10 @@
 		Name: Actor-supportpower.techhack-Name
 		Description: Actor-supportpower.techhack-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: TechHackReady
-		EndChargeTextNotification: Technology Hack ready.
+		EndChargeTextNotification: Notification-TechnologyHackReady
 		LaunchSound: techhack.aud
 		SupportPowerPaletteOrder: 50
 		Types: StealTechInfiltrate
@@ -1719,14 +1719,14 @@
 		IconPalette: chrometd
 		Type: ParadropInfantry
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		ChargeInterval: 6000
 		Name: Actor-supportpower.assassinsquad-Name
 		Description: Actor-supportpower.assassinsquad-Description
 		Actors: assa, assa, assa
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: AssassinSquadReady
-		EndChargeTextNotification: Assassin Squad ready.
+		EndChargeTextNotification: Notification-AssassinSquadReady
 		SupportPowerPaletteOrder: 50
 	ProduceActorPowerCA@AssassinSquadAI:
 		OrderName: assassinsquadai
@@ -1747,14 +1747,14 @@
 		Icon: hackercell
 		Type: ParadropInfantry
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		ChargeInterval: 6000
 		Name: Actor-supportpower.hackercell-Name
 		Description: Actor-supportpower.hackercell-Description
 		Actors: hack, hack, hack
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: HackerCellReady
-		EndChargeTextNotification: Hacker Cell ready.
+		EndChargeTextNotification: Notification-HackerCellReady
 		SupportPowerPaletteOrder: 50
 	ProduceActorPowerCA@HackerCellAI:
 		OrderName: hackercellai
@@ -1776,14 +1776,14 @@
 		IconPalette: chrometd
 		Type: ParadropInfantry
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		ChargeInterval: 6000
 		Name: Actor-supportpower.confessorcabal-Name
 		Description: Actor-supportpower.confessorcabal-Description
 		Actors: conf, conf, conf
 		LaunchSound: conf-create.aud
 		EndChargeSpeechNotification: ConfessorCabalReady
-		EndChargeTextNotification: Confessor Cabal ready.
+		EndChargeTextNotification: Notification-ConfessorCabalReady
 		SupportPowerPaletteOrder: 50
 	ProduceActorPowerCA@ConfessorCabalAI:
 		OrderName: confessorcabalai
@@ -1815,11 +1815,11 @@
 		Description: Actor-supportpower.stealthgen-Description
 		OnFireSound: cloak6.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChemStealthCharging
 		EndChargeSpeechNotification: ChemStealthReady
-		EndChargeTextNotification: Stealth Generator ready.
+		EndChargeTextNotification: Notification-StealthGeneratorReady
 		DisplayRadarPing: True
 		Cursor: chemmissile
 		PauseOnCondition: disabled || empdisable || being-warped
@@ -1839,12 +1839,12 @@
 		Name: Actor-supportpower.chemmissile-Name
 		Description: Actor-supportpower.chemmissile-Description
 		EndChargeSpeechNotification: ChemMissileReady
-		EndChargeTextNotification: Chemical Missile ready.
+		EndChargeTextNotification: Notification-ChemicalMissileReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: ChemMissileWarning
-		IncomingTextNotification: Chemical Missile launch detected.
+		IncomingTextNotification: Notification-ChemicalMissileLaunchDetected
 		MissileWeapon: Chemicbm
 		MissileImage: Chemicbm
 		MissileDelay: 5
@@ -1886,9 +1886,9 @@
 		Weapon: IchorSpikeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: IchorSpikeReady
-		EndChargeTextNotification: Ichor Spike ready.
+		EndChargeTextNotification: Notification-IchorSpikeReady
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
 		DisplayRadarPing: True
@@ -1912,9 +1912,9 @@
 		Weapon: ColonySpikeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: ColonySpikeReady
-		EndChargeTextNotification: Colony Spike ready.
+		EndChargeTextNotification: Notification-ColonySpikeReady
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
 		DisplayRadarPing: True
@@ -1938,9 +1938,9 @@
 		Weapon: VoidSpikeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: VoidSpikeReady
-		EndChargeTextNotification: Voidspike ready.
+		EndChargeTextNotification: Notification-VoidspikeReady
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
 		DisplayRadarPing: True
@@ -1966,7 +1966,7 @@
 		EffectPalette: tseffect-ignore-lighting-alpha75
 		SupportPowerPaletteOrder: 50
 		EndChargeSpeechNotification: ResourceScanReady
-		EndChargeTextNotification: Resource Scan ready.
+		EndChargeTextNotification: Notification-ResourceScanReady
 
 ^StormSpikePower:
 	DetonateWeaponPower@STORMSPIKE:
@@ -1983,9 +1983,9 @@
 		Weapon: StormSpikeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: StormSpikeReady
-		EndChargeTextNotification: Storm Spike ready.
+		EndChargeTextNotification: Notification-StormSpikeReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -2009,9 +2009,9 @@
 		Weapon: BuzzerSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: BuzzerSwarmReady
-		EndChargeTextNotification: Buzzer Swarm ready.
+		EndChargeTextNotification: Notification-BuzzerSwarmReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -2031,9 +2031,9 @@
 		Weapon: BuzzerSpawnerAI
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: BuzzerSwarmReady
-		EndChargeTextNotification: Buzzer Swarm ready.
+		EndChargeTextNotification: Notification-BuzzerSwarmReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -2055,9 +2055,9 @@
 		Weapon: IonSurgeSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: IonSurgeReady
-		EndChargeTextNotification: Ion Surge ready.
+		EndChargeTextNotification: Notification-IonSurgeReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		CameraActor: camera.dummy
@@ -2079,10 +2079,10 @@
 		Description: Actor-supportpower.ichorseed-Description
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: IchorSeedReady
-		EndChargeTextNotification: Ichor Seed ready.
+		EndChargeTextNotification: Notification-IchorSeedReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
 		EffectSequence: idle
@@ -2101,10 +2101,10 @@
 		Description: Actor-supportpower.ichorseedreaper-Description
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: IchorSeedReady
-		EndChargeTextNotification: Ichor Seed ready.
+		EndChargeTextNotification: Notification-IchorSeedReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
 		EffectSequence: idle
@@ -2127,9 +2127,9 @@
 		Weapon: GreaterCoalescenceSpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: GreaterCoalescenceReady
-		EndChargeTextNotification: Greater Coalescence ready.
+		EndChargeTextNotification: Notification-GreaterCoalescenceReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -2149,12 +2149,12 @@
 		Name: Actor-supportpower.overlordswrath-Name
 		Description: Actor-supportpower.overlordswrath-Description
 		EndChargeSpeechNotification: OverlordsWrathReady
-		EndChargeTextNotification: Overlord's Wrath ready.
+		EndChargeTextNotification: Notification-OverlordSWrathReady
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: OverlordsWrathWarning
-		IncomingTextNotification: Tiberium meteor approaching.
+		IncomingTextNotification: Notification-TiberiumMeteorApproaching
 		ImpactWeapon: OverlordsWrath
 		MeteorImage: tibmeteor
 		MeteorPalette: scrin
@@ -2193,9 +2193,9 @@
 		Weapon: GatewaySpawner
 		AirburstAltitude: 0c0
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: GatewayReady
-		EndChargeTextNotification: Gateway ready.
+		EndChargeTextNotification: Notification-GatewayReady
 		PauseOnCondition: disabled || empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -2220,10 +2220,10 @@
 		Prerequisites: ~malefic.allegiance, ~techlevel.high
 		OnFireSound: anathema.aud
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: AnathemaReady
-		EndChargeTextNotification: Anathema ready.
+		EndChargeTextNotification: Notification-AnathemaReady
 		DisplayRadarPing: True
 		Cursor: ability
 		ActiveSequence: idle
@@ -2241,11 +2241,11 @@
 		Name: Actor-supportpower.suppression-Name
 		Description: Actor-supportpower.suppression-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: SuppressionCharging
 		EndChargeSpeechNotification: SuppressionReady
-		EndChargeTextNotification: Suppression Field ready.
+		EndChargeTextNotification: Notification-SuppressionFieldReady
 		DisplayRadarPing: True
 		Range: 3c0
 		ShowTargetCircle: true
@@ -2272,11 +2272,11 @@
 		Name: Actor-supportpower.suppressionsiphon-Name
 		Description: Actor-supportpower.suppressionsiphon-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: SuppressionCharging
 		EndChargeSpeechNotification: SuppressionReady
-		EndChargeTextNotification: Suppression Field ready.
+		EndChargeTextNotification: Notification-SuppressionFieldReady
 		DisplayRadarPing: True
 		Range: 3c0
 		ShowTargetCircle: true
@@ -2310,12 +2310,12 @@
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 375
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		EndChargeSpeechNotification: RiftReady
-		EndChargeTextNotification: Rift Generator ready.
+		EndChargeTextNotification: Notification-RiftGeneratorReady
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: RiftWarning
-		IncomingTextNotification: Rift Generator activated.
+		IncomingTextNotification: Notification-RiftGeneratorActivated
 		IncomingSound: nukelaunch.aud
 		LaunchSound: nukelaunch.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -2343,10 +2343,10 @@
 		KeepFormation: true
 		Description: Actor-supportpower.recall-Description
 		SelectTargetSpeechNotification: SelectTarget
-		SelectTargetTextNotification: Select target.
+		SelectTargetTextNotification: Notification-SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		EndChargeSpeechNotification: FleetRecallReady
-		EndChargeTextNotification: Fleet Recall ready.
+		EndChargeTextNotification: Notification-FleetRecallReady
 		LaunchSound: fleetrecall.aud
 		IncomingSound: fleetrecall.aud
 		KillCargo: false

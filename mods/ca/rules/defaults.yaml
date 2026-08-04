@@ -1494,7 +1494,7 @@
 		HpPerStep: 1000
 		Interval: 7
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: Notification-Repairing
 		FinishRepairingNotification: UnitRepaired
 		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: aircraft-repair && !forceshield && !invulnerability && !being-warped
@@ -1807,7 +1807,7 @@
 	NotificationOnDamage:
 		Type: Harvester
 		Notification: HarvesterAttack
-		TextNotification: Harvester under attack.
+		TextNotification: Notification-HarvesterUnderAttack
 		MinimumDamage: 500
 	GrantConditionOnTerrain@Tiberium:
 		Condition: ontib
@@ -2540,7 +2540,7 @@
 	AttackMove:
 	HiddenUnderFog:
 	ActorLostNotification:
-		TextNotification: Unit lost.
+		TextNotification: Notification-UnitLost
 	WithDamageOverlay:
 	Guard:
 	Guardable:
@@ -2554,7 +2554,7 @@
 		RequiresCondition: !being-warped
 	CaptureNotification:
 		Notification: EnemyUnitStolen
-		TextNotification: Enemy unit stolen.
+		TextNotification: Notification-EnemyUnitStolen
 		LoseNotification: UnitStolen
 		LoseTextNotification: Notification-UnitStolen
 	MustBeDestroyed:
@@ -2640,7 +2640,7 @@
 		RequiresCondition: unit-sellable && !c4 && !being-captured && !being-warped
 		SellSounds: cashturntd.aud
 		Notification: UnitSold
-		TextNotification: Unit sold.
+		TextNotification: Notification-UnitSold
 		Cursor: sell2
 	Encyclopedia:
 		Scale: 2
@@ -2836,7 +2836,7 @@
 	PassengerBlocked:
 	HiddenUnderFog:
 	ActorLostNotification:
-		TextNotification: Unit lost.
+		TextNotification: Notification-UnitLost
 	Crushable:
 		WarnProbability: 100
 		CrushSound: squishy2.aud
@@ -3231,7 +3231,7 @@
 	AttackMove:
 	ActorLostNotification:
 		Notification: NavalUnitLost
-		TextNotification: Naval unit lost.
+		TextNotification: Notification-NavalUnitLost
 	RepairableNear:
 		RepairActors: syrd, spen, syrd.gdi, spen.nod
 	WithDamageOverlay:
@@ -3389,7 +3389,7 @@
 	Guardable:
 	ActorLostNotification:
 		Notification: AirUnitLost
-		TextNotification: Airborne unit lost.
+		TextNotification: Notification-AirborneUnitLost
 	Tooltip:
 		GenericName: Actor-Generic-Plane-Name
 	WithShadow:
@@ -3518,7 +3518,7 @@
 		RequiresCondition: unit-sellable && !c4 && !being-warped
 		SellSounds: cashturntd.aud
 		Notification: UnitSold
-		TextNotification: Unit sold.
+		TextNotification: Notification-UnitSold
 		Cursor: sell2
 	Encyclopedia:
 		Scale: 2
@@ -3619,7 +3619,7 @@
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
 	CaptureNotification:
-		TextNotification: Structure captured.
+		TextNotification: Notification-StructureCaptured
 		LoseNotification: OurBuildingCaptured
 		LoseTextNotification: Notification-StructureLostCaptured
 	ShakeOnDeath:
@@ -3702,7 +3702,7 @@
 		RequiresCondition: !build-incomplete && !c4 && !being-captured && !being-warped && !hacked
 		SellSounds: cashturn.aud
 		Notification: StructureSold
-		TextNotification: Structure sold.
+		TextNotification: Notification-StructureSold
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair

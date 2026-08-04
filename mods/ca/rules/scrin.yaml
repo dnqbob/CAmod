@@ -5454,7 +5454,7 @@ SREP:
 		HpPerStep: 1000
 		Interval: 7
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: Notification-Repairing
 		FinishRepairingNotification: UnitRepaired
 		FinishRepairingTextNotification: Notification-UnitRepaired
 		RequiresCondition: !forceshield && !invulnerability && !being-warped

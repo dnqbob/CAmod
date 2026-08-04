@@ -292,8 +292,8 @@ local function SyncObjectives()
 	local texts = {
 		primary = "Primary",
 		secondary = "Secondary",
-		newPrimary = "New primary objective",
-		newSecondary = "New secondary objective"
+		newPrimary = UserInterface.GetFluentMessage("Notification-NewPrimaryObjective"),
+		newSecondary = UserInterface.GetFluentMessage("Notification-NewSecondaryObjective")
 	}
 
 	Trigger.OnObjectiveAdded(MainPlayer, function(_, obid)
@@ -334,7 +334,7 @@ local function SyncObjectives()
 			player.MarkCompletedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective completed", HSLColor.LimeGreen)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), UserInterface.GetFluentMessage("Notification-ObjectiveCompleted"), HSLColor.LimeGreen)
 			end
 		end)
 	end)
@@ -344,7 +344,7 @@ local function SyncObjectives()
 			player.MarkFailedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective failed", HSLColor.Red)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), UserInterface.GetFluentMessage("Notification-ObjectiveFailed"), HSLColor.Red)
 			end
 		end)
 	end)

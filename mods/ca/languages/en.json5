@@ -873,14 +873,8 @@
 	"Map-Difficulty-vhard": "Very Hard",
 	"Map-Respawn-disabled": "Disabled",
 	"Map-Respawn-enabled": "Enabled",
-	"New primary objective": "New primary objective",
-	"New secondary objective": "New secondary objective",
 	"Notification-Mission": "Notification",
 	"Notification-Tip": "Tip",
-	"Objective completed": "Objective completed",
-	"Objective failed": "Objective failed",
-	"Primary": "Primary",
-	"Secondary": "Secondary",
 	"Sys-GameSpeed-Fast": "Fast",
 	"Sys-GameSpeed-Faster": "Faster",
 	"Sys-GameSpeed-Fastest": "Fastest",
@@ -988,5 +982,11 @@
 	"Notification-NewConstructionOptions": "New construction options.",
 	"Notification-InsufficientFunds": "Insufficient funds.",
 	"Notification-OurAllyIsUnderAttack": "Our ally is under attack.",
-	"Notification-RankGained": "You have gained a rank! You are now rank {0}."
+	"Notification-RankGained": "You have gained a rank! You are now rank {0}.",
+	"Notification-NewPrimaryObjective": "New primary objective",
+	"Notification-NewSecondaryObjective": "New secondary objective",
+	"Notification-ObjectiveCompleted": "Objective completed",
+	"Notification-ObjectiveFailed": "Objective failed",
+	"Game-ObjectiveType-Primary": "Primary",
+	"Game-ObjectiveType-Secondary": "Secondary"
 }

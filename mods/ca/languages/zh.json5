@@ -316,8 +316,6 @@
 	"Map-Respawn-enabled": "启用",
 	"Notification-Mission": "通知",
 	"Notification-Tip": "提示",
-	"Primary": "主要目标",
-	"Secondary": "次要目标",
 	"Sys-GameSpeed-Fast": "快速",
 	"Sys-GameSpeed-Faster": "较快",
 	"Sys-GameSpeed-Fastest": "最快",
@@ -985,8 +983,10 @@
 	"Notification-InsufficientFunds": "资金不足。",
 	"Notification-OurAllyIsUnderAttack": "我们的盟友正遭受攻击。",
 	"Notification-RankGained": "你已提升军衔！当前军衔为 {0}。",
-	"New primary objective": "新的主要目标",
-	"New secondary objective": "新的次要目标",
-	"Objective completed": "目标已完成",
-	"Objective failed": "目标已失败"
+	"Notification-NewPrimaryObjective": "新的主要目标",
+	"Notification-NewSecondaryObjective": "新的次要目标",
+	"Notification-ObjectiveCompleted": "目标已完成",
+	"Notification-ObjectiveFailed": "目标已失败",
+	"Game-ObjectiveType-Primary": "主要目标",
+	"Game-ObjectiveType-Secondary": "次要目标"
 }

@@ -231,7 +231,12 @@ InitObjectives = function(player)
 				if p.GetObjectiveType(id) ~= "Primary" then
 					colour = HSLColor.Gray
 				end
-				Media.DisplayMessage(p.GetObjectiveDescription(id), "New " .. string.lower(p.GetObjectiveType(id)) .. " objective", colour)
+				local objType = p.GetObjectiveType(id)
+				local objTitle = UserInterface.GetFluentMessage("Notification-NewPrimaryObjective")
+				if objType ~= "Primary" then
+					objTitle = UserInterface.GetFluentMessage("Notification-NewSecondaryObjective")
+				end
+				Media.DisplayMessage(p.GetObjectiveDescription(id), objTitle, colour)
 			end)
 		end
 	end)
@@ -239,13 +244,13 @@ InitObjectives = function(player)
 	Trigger.OnObjectiveCompleted(player, function(p, id)
 		if p.IsLocalPlayer then
 			Media.PlaySoundNotification(player, "AlertBleep")
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective completed", HSLColor.LimeGreen)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), UserInterface.GetFluentMessage("Notification-ObjectiveCompleted"), HSLColor.LimeGreen)
 		end
 	end)
 
 	Trigger.OnObjectiveFailed(player, function(p, id)
 		if p.IsLocalPlayer then
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective failed", HSLColor.Red)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), UserInterface.GetFluentMessage("Notification-ObjectiveFailed"), HSLColor.Red)
 		end
 	end)
 

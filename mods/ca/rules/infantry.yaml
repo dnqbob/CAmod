@@ -1311,7 +1311,7 @@ HACK:
 		HideBuildable: True
 	EncyclopediaExtras:
 		RenderPreviewActor: hack.preview
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresUnityCovenant
 
 HACK.Preview:
 	Inherits: ^PreviewDummy
@@ -2573,7 +2573,7 @@ ASSA:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresWrathCovenant
 
 CONF:
 	Inherits: ^Soldier
@@ -2657,7 +2657,7 @@ CONF:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresZealCovenant
 
 ACOL:
 	Inherits: ^Cyborg
@@ -4480,7 +4480,7 @@ ENLI:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresZealCovenant
 
 ^MortarInfantryBase:
 	Inherits: ^Soldier
@@ -4537,7 +4537,7 @@ MORT.Cryo:
 	Armament@BATF:
 		Weapon: CryoMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied Barracks.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromAlliedBarracks
 
 CDOG:
 	Inherits: DOG
@@ -4577,7 +4577,7 @@ CDOG:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet Barracks.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromSovietBarracks
 	-KeepsDistance:
 	-AutoGuard:
 
@@ -4600,7 +4600,7 @@ MORT.Sonic:
 	Armament@BATF:
 		Weapon: SonicMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Barracks.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromGdiBarracks
 
 MORT.Chem:
 	Inherits: ^MortarInfantryBase
@@ -4619,7 +4619,7 @@ MORT.Chem:
 		Chance: 33
 		RequiresCondition: !being-warped
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Hand of Nod.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromHandOfNod
 
 CSCR:
 	Inherits: ^Cyborg
@@ -4676,7 +4676,7 @@ CSCR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Portal.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromScrinPortal
 	ChangesHealth@THEAL:
 		PercentageStep: 3
 
@@ -4859,7 +4859,7 @@ ZTRP:
 	Encyclopedia:
 		Category: GDI/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 ZRAI:
 	Inherits: ZTRP
@@ -4889,7 +4889,7 @@ ZRAI:
 		MaxDistance: 10
 		Speed: 200
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSeekAndDestroyStrategy
 
 ZDEF:
 	Inherits: ZTRP
@@ -4951,7 +4951,7 @@ ZDEF:
 		RequiresCondition: shield-active && !passenger
 		AffectsParent: true
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresHoldTheLineStrategy
 
 ENFO:
 	Inherits: ^Soldier
@@ -5109,7 +5109,7 @@ HOPL:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresGreeceCoalition
 
 TIGR:
 	Inherits: ^Soldier
@@ -5182,7 +5182,7 @@ TIGR:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresKoreaCoalition
 
 CRYT:
 	Inherits: ^Soldier
@@ -5257,7 +5257,7 @@ CRYT:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSwedenCoalition
 
 REAP:
 	Inherits: ^Cyborg
@@ -5383,4 +5383,4 @@ REAP:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresUnityCovenant

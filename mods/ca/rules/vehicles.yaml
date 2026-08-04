@@ -187,7 +187,7 @@ GRAD:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArtilleryDoctrine
 
 NUKC:
 	Inherits: ^Tank
@@ -386,7 +386,7 @@ NUKC:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArtilleryDoctrine
 
 NUKC.Preview:
 	Inherits: ^PreviewDummy
@@ -1188,7 +1188,7 @@ GTNK.squad:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		Name: Actor-3TNK.RHINO-EncyclopediaExtrasName
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArmorDoctrine
 
 3TNK.RHINO.ATOMIC:
 	Inherits: 3TNK.RHINO
@@ -3588,7 +3588,7 @@ RBUG:
 	-WithDecoration@UpgradeOverlay:
 	-WithEjectedCasings:
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresZealCovenant
 
 ^DecoyUnit:
 	Inherits@selection: ^SelectableSupportUnit
@@ -6208,7 +6208,7 @@ TRPC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 IFV:
 	Inherits: ^Tank
@@ -7466,7 +7466,7 @@ RECK:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied War Factory.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromAlliedWarFactory
 		-Name:
 
 TITN:
@@ -9303,7 +9303,7 @@ CRYO:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSwedenCoalition
 
 PBUL:
 	Inherits: ^VehicleTD
@@ -9447,7 +9447,7 @@ CYCP:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet War Factory.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromSovietWarFactory
 
 BASI:
 	Inherits: ^TankTD
@@ -9532,7 +9532,7 @@ BASI:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Weapons Factory.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromGdiWeaponsFactory
 
 MANT:
 	Inherits: ^VehicleTD
@@ -9596,7 +9596,7 @@ MANT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Nod Airstrip.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromNodAirstrip
 
 VIPR:
 	Inherits: ^VehicleTD
@@ -9667,7 +9667,7 @@ VIPR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Warp Sphere.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromScrinWarpSphere
 
 WOLV:
 	Inherits: ^VehicleTD
@@ -9995,7 +9995,7 @@ APOC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArmorDoctrine
 
 APOC.ATOMIC:
 	Inherits: APOC
@@ -10239,7 +10239,7 @@ OVLD:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 OVLD.ATOMIC:
 	Inherits: OVLD
@@ -10436,7 +10436,7 @@ THWK:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 TH:
 	Inherits: ^ShootableMissile
@@ -10578,7 +10578,7 @@ ZEUS:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresGreeceCoalition
 
 MOLE:
 	Inherits: ^Vehicle-NOUPG
@@ -10826,7 +10826,7 @@ AVTR:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresWrathCovenant
 
 CUST:
 	Inherits: ^Tank
@@ -10944,4 +10944,4 @@ CUST:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresUnityCovenant

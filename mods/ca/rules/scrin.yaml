@@ -962,7 +962,7 @@ EVIS:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresLoyalistAllegiance
 
 IMPL:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1009,7 +1009,7 @@ IMPL:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresRebelAllegiance
 
 STLK:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1106,7 +1106,7 @@ STLK:
 	TakeCover:
 		PauseOnCondition: being-warped || phaseshield
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresMaleficAllegiance
 
 SMEDI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1156,7 +1156,7 @@ SMEDI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Acquired from captured Hospitals.
+		AdditionalInfo: Game-AdditionalInfo-AcquiredFromCapturedHospitals
 
 ARTI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1241,7 +1241,7 @@ ARTI:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Acquired from captured Machine Shops.
+		AdditionalInfo: Game-AdditionalInfo-AcquiredFromCapturedMachineShops
 
 GSCR:
 	Inherits: BRUT
@@ -1270,7 +1270,7 @@ GSCR:
 	Encyclopedia:
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Result of Genetic Mutation Bomb on Scrin infantry.
+		AdditionalInfo: Game-AdditionalInfo-ResultOfGeneticMutationBombOnScrinInfantry
 
 GSCR.Mutating:
 	Inherits: BRUT.Mutating
@@ -2492,7 +2492,7 @@ DARK:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresMaleficAllegiance
 
 RUIN:
 	Inherits: ^Vehicle
@@ -2598,7 +2598,7 @@ RUIN:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresLoyalistAllegiance
 
 ATMZ:
 	Inherits: ^Vehicle
@@ -3055,7 +3055,7 @@ NULL:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresRebelAllegiance
 
 SMCV:
 	Inherits: ^Vehicle-NOUPG

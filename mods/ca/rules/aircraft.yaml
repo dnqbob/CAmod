@@ -4212,7 +4212,7 @@ BEAG:
 	Encyclopedia:
 		Category: Allies/Aircraft
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresKoreaCoalition
 
 PHAN:
 	Inherits: ^Helicopter
@@ -4348,7 +4348,7 @@ PHAN:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied Helipad.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromAlliedHelipad
 
 KAMV:
 	Inherits: ^Helicopter
@@ -4471,7 +4471,7 @@ KAMV:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet Airfield.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromSovietAirfield
 
 SHDE:
 	Inherits: ^HelicopterTD
@@ -4602,7 +4602,7 @@ SHDE:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Helipad.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromGdiHelipad
 
 VERT:
 	Inherits: ^HelicopterTD
@@ -4758,7 +4758,7 @@ VERT:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Nod Helipad.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromNodHelipad
 
 MCOR:
 	Inherits: ^HelicopterTD
@@ -4840,7 +4840,7 @@ MCOR:
 	Encyclopedia:
 		Category: Nod/Stolen Technology
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Gravity Stabilizer.
+		AdditionalInfo: Game-AdditionalInfo-StolenFromScrinGravityStabilizer
 
 DISC:
 	Inherits: ^Helicopter

@@ -373,7 +373,7 @@ avenger.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: avenger.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
@@ -393,7 +393,7 @@ sidewinders.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: sidewinders.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSeekAndDestroyStrategy
 
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -413,7 +413,7 @@ ceramic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ceramic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresHoldTheLineStrategy
 
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -451,7 +451,7 @@ thwk.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: thwk.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 ejjet.upgrade:
 	Inherits: ^GDIUpgrade
@@ -471,7 +471,7 @@ ejjet.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ejjet.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSeekAndDestroyStrategy
 
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
@@ -491,7 +491,7 @@ pointdef.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: pointdef.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresHoldTheLineStrategy
 
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
@@ -529,7 +529,7 @@ hailstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hailstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -550,7 +550,7 @@ hypersonic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hypersonic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSeekAndDestroyStrategy
 
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
@@ -571,7 +571,7 @@ hammerhead.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hammerhead.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresHoldTheLineStrategy
 
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -1132,7 +1132,7 @@ cyborgdmg.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgdmg.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresWrathCovenant
 
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
@@ -1152,7 +1152,7 @@ cyborgprod.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgprod.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresUnityCovenant
 
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
@@ -1172,7 +1172,7 @@ cyborgspeed.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgspeed.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresZealCovenant
 
 #########################SOVIET#########
 ########################################
@@ -1436,7 +1436,7 @@ imppara.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: imppara.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1456,7 +1456,7 @@ impstorm.upgrade:
 		Prerequisites: impstorm.upgrade
 	EncyclopediaExtras:
 		Subfaction: russia
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 impmuta.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1476,7 +1476,7 @@ impmuta.upgrade:
 		Prerequisites: impmuta.upgrade
 	EncyclopediaExtras:
 		Subfaction: yuri
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 reactive.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1495,7 +1495,7 @@ reactive.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: reactive.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArmorDoctrine
 
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1514,7 +1514,7 @@ rocketpods.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: rocketpods.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArtilleryDoctrine
 
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade

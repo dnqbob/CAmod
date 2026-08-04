@@ -112,7 +112,7 @@ encyclopedia.power.cryostorm:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.cryostorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSwedenCoalition
 
 encyclopedia.power.heliosbomb:
 	Inherits: ^SupportPowerPreview
@@ -127,7 +127,7 @@ encyclopedia.power.heliosbomb:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.heliosbomb-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresGreeceCoalition
 
 encyclopedia.power.bsky:
 	Inherits: ^SupportPowerPreview
@@ -141,7 +141,7 @@ encyclopedia.power.bsky:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.bsky-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: Game-AdditionalInfo-RequiresKoreaCoalition
 
 encyclopedia.power.spysatellite:
 	Inherits: ^SupportPowerPreview
@@ -347,7 +347,7 @@ encyclopedia.power.heroes:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.heroes-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresInfantryDoctrine
 
 encyclopedia.power.tankdrop:
 	Inherits: ^SupportPowerPreview
@@ -360,7 +360,7 @@ encyclopedia.power.tankdrop:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.tankdrop-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArmorDoctrine
 
 encyclopedia.power.killzone:
 	Inherits: ^SupportPowerPreview
@@ -373,7 +373,7 @@ encyclopedia.power.killzone:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.killzone-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: Game-AdditionalInfo-RequiresArtilleryDoctrine
 
 encyclopedia.power.ironcurtain:
 	Inherits: ^SupportPowerPreview
@@ -515,7 +515,7 @@ encyclopedia.power.firestorm:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.firestorm-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresBombardmentStrategy
 
 encyclopedia.power.advancedradar:
 	Inherits: ^SupportPowerPreview
@@ -530,7 +530,7 @@ encyclopedia.power.advancedradar:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.advancedradar-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresSeekAndDestroyStrategy
 
 encyclopedia.power.naniteshield:
 	Inherits: ^SupportPowerPreview
@@ -544,7 +544,7 @@ encyclopedia.power.naniteshield:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.naniteshield-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: Game-AdditionalInfo-RequiresHoldTheLineStrategy
 
 encyclopedia.power.empmissile:
 	Inherits: ^SupportPowerPreview
@@ -697,7 +697,7 @@ encyclopedia.power.assassinsquad:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.assassinsquad-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresWrathCovenant
 
 encyclopedia.power.hackercell:
 	Inherits: ^SupportPowerPreview
@@ -710,7 +710,7 @@ encyclopedia.power.hackercell:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.hackercell-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresUnityCovenant
 
 encyclopedia.power.confessorcabal:
 	Inherits: ^SupportPowerPreview
@@ -724,7 +724,7 @@ encyclopedia.power.confessorcabal:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.confessorcabal-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: Game-AdditionalInfo-RequiresZealCovenant
 
 encyclopedia.power.clustermissile:
 	Inherits: ^SupportPowerPreview
@@ -796,7 +796,7 @@ encyclopedia.power.ichorspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.ichorspike-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresLoyalistAllegiance
 
 encyclopedia.power.colonyspike:
 	Inherits: ^SupportPowerPreview
@@ -810,7 +810,7 @@ encyclopedia.power.colonyspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.colonyspike-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresRebelAllegiance
 
 encyclopedia.power.voidspike:
 	Inherits: ^SupportPowerPreview
@@ -824,7 +824,7 @@ encyclopedia.power.voidspike:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.voidspike-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresMaleficAllegiance
 
 encyclopedia.power.ionsurge:
 	Inherits: ^SupportPowerPreview
@@ -911,7 +911,7 @@ encyclopedia.power.gateway:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.gateway-EncyclopediaExtras-Description
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresRebelAllegiance
 
 encyclopedia.power.anathemapower:
 	Inherits: ^SupportPowerPreview
@@ -926,7 +926,7 @@ encyclopedia.power.anathemapower:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.anathemapower-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresMaleficAllegiance
 
 encyclopedia.power.owrath:
 	Inherits: ^SupportPowerPreview
@@ -941,7 +941,7 @@ encyclopedia.power.owrath:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
 		Description: Actor-encyclopedia.power.owrath-EncyclopediaExtrasDescription
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: Game-AdditionalInfo-RequiresLoyalistAllegiance
 
 encyclopedia.power.fleetrecall:
 	Inherits: ^SupportPowerPreview

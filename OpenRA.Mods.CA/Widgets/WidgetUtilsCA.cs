@@ -75,8 +75,9 @@ namespace OpenRA.Mods.CA.Widgets
 					}
 				}
 
-				// Apply indentation only to wrapped lines (not original lines)
-				if (indent > 0)
+				// Apply indentation only to wrapped lines (not original lines);
+				// CJK 语言（中文等）不使用续行缩进——自动换行的行首不应出现空格
+				if (indent > 0 && !isCjk)
 				{
 					for (var i = 0; i < lines.Count; i++)
 					{

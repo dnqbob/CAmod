@@ -84,7 +84,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 		void PopulateBriefing()
 		{
-			var briefingText = nextMission?.WorldActorInfo?.TraitInfoOrDefault<MissionDataInfo>()?.Briefing?.Replace("\\n", "\n") ?? string.Empty;
+			var briefingText = nextMission?.Translate(nextMission.WorldActorInfo?.TraitInfoOrDefault<MissionDataInfo>()?.Briefing)?.Replace("\\n", "\n") ?? string.Empty;
 			var wrapped = WidgetUtils.WrapText(briefingText, description.Bounds.Width, Game.Renderer.Fonts[description.Font]);
 			description.GetText = () => wrapped;
 			description.Bounds.Height = Game.Renderer.Fonts[description.Font].Measure(wrapped).Y;

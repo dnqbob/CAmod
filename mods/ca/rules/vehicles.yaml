@@ -9144,6 +9144,8 @@ CDRN:
 		Weapon: ChaosGas
 		RequiresCondition: triggered && ammo
 		AmmoPoolName: explosion
+	KillsSelf:
+		RequiresCondition: invulnerability
 	-Capturable:
 	Targetable@MindControlImmune:
 		TargetTypes: MindControlImmune

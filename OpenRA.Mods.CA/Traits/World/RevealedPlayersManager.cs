@@ -14,23 +14,38 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.CA.Traits
 {
+	public enum RevealPlayerFactionType
+	{
+		OnGameStart,
+		OnSelection
+	}
+
 	[Desc("Attached to the world actor to track which players are revealed (for displaying their real faction in scores panel).")]
-	[TraitLocation(SystemActors.World)]
+	[TraitLocation(SystemActors.Player)]
 	public class RevealedPlayersManagerInfo : TraitInfo
 	{
-		public override object Create(ActorInitializer init) { return new RevealedPlayersManager(init.World, this); }
+		[Desc("When to reveal players.")]
+		public RevealPlayerFactionType RevealCondition { get; set; } = RevealPlayerFactionType.OnGameStart;
+
+		public override object Create(ActorInitializer init) { return new RevealedPlayersManager(init.Self, this); }
 	}
 
 	public class RevealedPlayersManager : INotifySelection
 	{
+		readonly Actor self;
 		readonly World world;
-		public HashSet<Player> Players { get; private set; }
+		readonly RevealedPlayersManagerInfo info;
+		public HashSet<Player> Players { get; }
 
-		public RevealedPlayersManager(World world, RevealedPlayersManagerInfo info)
+		public RevealedPlayersManager(Actor self, RevealedPlayersManagerInfo info)
 		{
+			this.self = self;
+			world = self.World;
 			Players = new HashSet<Player>();
-			this.world = world;
+			this.info = info;
 		}
+
+		public bool RevealOnGameStart => info.RevealCondition == RevealPlayerFactionType.OnGameStart;
 
 		public void RevealPlayer(Player player)
 		{
@@ -44,8 +59,14 @@ namespace OpenRA.Mods.CA.Traits
 
 		void INotifySelection.SelectionChanged()
 		{
+			if (info.RevealCondition != RevealPlayerFactionType.OnSelection)
+				return;
+
 			// Disable for spectators
 			if (world.LocalPlayer == null || world.LocalPlayer.Spectating)
+				return;
+
+			if (self.Owner != world.LocalPlayer)
 				return;
 
 			var players = world.Selection.Actors
@@ -53,7 +74,10 @@ namespace OpenRA.Mods.CA.Traits
 				.Select(a => a.Owner);
 
 			foreach (var player in players)
-				RevealPlayer(player);
+			{
+				foreach (var alliedPlayer in world.Players.Where(p => p == self.Owner || self.Owner.RelationshipWith(p) == PlayerRelationship.Ally))
+					alliedPlayer.PlayerActor.TraitOrDefault<RevealedPlayersManager>()?.RevealPlayer(player);
+			}
 		}
 	}
 }

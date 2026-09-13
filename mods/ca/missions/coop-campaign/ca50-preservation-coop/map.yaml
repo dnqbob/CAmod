@@ -28,48 +28,54 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
-		Enemies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 	PlayerReference@ScrinRebels:
 		Name: ScrinRebels
 		Faction: scrin
 		Color: 2FB4A6
 		Allies: Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelWestWormholes:
 		Name: ScrinRebelWestWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
 		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: Scrin, USSR, Creeps
+		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelEastWormholes:
 		Name: ScrinRebelEastWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
 		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: Scrin, USSR, Creeps
+		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@Scrin:
 		Name: Scrin
 		Bot: campaign
 		Faction: scrin
 		Color: 7700FF
 		Allies: USSR
-		Enemies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
+		Enemies: ScrinRebels, Nod, MaleficScrin, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
 	PlayerReference@USSR:
 		Name: USSR
 		Bot: campaign
 		Faction: soviet
 		Color: FE1100
 		Allies: Scrin
-		Enemies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
+		Enemies: ScrinRebels, Nod, MaleficScrin, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
 	PlayerReference@Nod:
 		Name: Nod
 		Bot: dormant
 		Faction: nod
 		Color: 6D738C
 		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
+	PlayerReference@MaleficScrin:
+		Name: MaleficScrin
+		Bot: campaign
+		Faction: scrin
+		Color: 3E4549
+		Enemies: ScrinRebels, Nod, Scrin, USSR, Creeps, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
@@ -82,7 +88,7 @@ Players:
 		Color: 2FB4A6
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi1:
 		Name: Multi1
 		Playable: True
@@ -94,7 +100,7 @@ Players:
 		Color: 6D738C
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi2:
 		Name: Multi2
 		Playable: True
@@ -106,7 +112,7 @@ Players:
 		Color: D83CE5
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi3:
 		Name: Multi3
 		Playable: True
@@ -118,7 +124,7 @@ Players:
 		Color: 0B7310
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi4:
 		Name: Multi4
 		Playable: True
@@ -130,7 +136,7 @@ Players:
 		Color: 134691
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi5:
 		Name: Multi5
 		Playable: True
@@ -142,7 +148,7 @@ Players:
 		Color: 775A12
 		LockColor: True
 		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 
 Actors:
 	Actor160: sbag
@@ -5522,6 +5528,15 @@ Actors:
 	Actor1683: camera
 		Owner: Scrin
 		Location: 195,50
+	MaleficSpawnWest: waypoint
+		Owner: Neutral
+		Location: 47,128
+	MaleficSpawnMiddle: waypoint
+		Owner: Neutral
+		Location: 132,128
+	MaleficSpawnEast: waypoint
+		Owner: Neutral
+		Location: 208,128
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, ca|missions/main-campaign/ca50-preservation/preservation-rules.yaml, ca|rules/custom/coop-rules.yaml, preservation-coop-rules.yaml
 

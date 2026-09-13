@@ -28,7 +28,7 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
-		Enemies: ScrinRebels
+		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin
 	PlayerReference@ScrinRebels:
 		Name: ScrinRebels
 		AllowBots: False
@@ -41,42 +41,48 @@ Players:
 		LockSpawn: True
 		LockTeam: True
 		Allies: Nod
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelWestWormholes:
 		Name: ScrinRebelWestWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
 		Allies: ScrinRebels
-		Enemies: Scrin, USSR, Creeps
+		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelEastWormholes:
 		Name: ScrinRebelEastWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
 		Allies: ScrinRebels
-		Enemies: Scrin, USSR, Creeps
+		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@Scrin:
 		Name: Scrin
 		Bot: campaign
 		Faction: scrin
 		Color: 7700FF
 		Allies: USSR
-		Enemies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
+		Enemies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, MaleficScrin, Creeps
 	PlayerReference@USSR:
 		Name: USSR
 		Bot: campaign
 		Faction: soviet
 		Color: FE1100
 		Allies: Scrin
-		Enemies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps
+		Enemies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, MaleficScrin, Creeps
 	PlayerReference@Nod:
 		Name: Nod
 		Bot: dormant
 		Faction: nod
 		Color: 6D738C
 		Allies: ScrinRebels
-		Enemies: USSR, Scrin, Creeps
+		Enemies: USSR, Scrin, MaleficScrin, Creeps
+	PlayerReference@MaleficScrin:
+		Name: MaleficScrin
+		Bot: campaign
+		Faction: scrin
+		Color: 3E4549
+		Enemies: ScrinRebels, Nod, Scrin, USSR, Creeps
 
 Actors:
 	Actor160: sbag
@@ -5456,6 +5462,15 @@ Actors:
 	Actor1683: camera
 		Owner: Scrin
 		Location: 195,50
+	MaleficSpawnWest: waypoint
+		Owner: Neutral
+		Location: 47,128
+	MaleficSpawnMiddle: waypoint
+		Owner: Neutral
+		Location: 132,128
+	MaleficSpawnEast: waypoint
+		Owner: Neutral
+		Location: 208,128
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, preservation-rules.yaml
 

@@ -2046,6 +2046,36 @@ veng.destroyed:
 		ZOffset: -512
 		UseClassicFacings: True
 
+vcan:
+	Inherits: ^StructureOverlays
+	idle:
+		Filename: vcan.shp
+		Start: 32
+		Length: 1
+	turret:
+		Filename: vcan.shp
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Filename: rift.shp
+		Length: *
+		Frames: 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+		Alpha: 0.96, 0.88, 0.80, 0.72, 0.64, 0.56, 0.48, 0.40, 0.32, 0.24, 0.16, 0.08
+		ZOffset: 2048
+		BlendMode: Subtractive
+		IgnoreWorldTint: true
+		Scale: 0.4
+		Tick: 60
+	bib:
+		Filename: bib2.tem
+		TilesetFilenames:
+			SNOW: bib2.sno
+			DESERT: bib2.des
+			JUNGLE: bib2.jun
+			WINTER: bib2.win
+			BARREN: bib2.bar
+		Length: *
+
 ospi:
 	Inherits: ^StructureOverlays
 	Defaults:

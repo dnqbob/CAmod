@@ -15,6 +15,26 @@ Player:
 colonyspike.provider:
 	-UpdatesSupportPowerTimer:
 
+INTL.Loaded:
+	Inherits: INTL
+	RenderSprites:
+		Image: intl
+	Cargo:
+		InitialUnits: s1,s1,s1,s1,s3
+	-Buildable:
+	Selectable:
+		Class: intl
+
+INTL.Loaded.IMPL:
+	Inherits: INTL
+	RenderSprites:
+		Image: intl
+	Cargo:
+		InitialUnits: impl,impl,impl,impl,impl
+	-Buildable:
+	Selectable:
+		Class: intl
+
 # Enable subfaction specific tech
 
 STCR:

@@ -22,6 +22,8 @@ INTL.Loaded:
 	Cargo:
 		InitialUnits: S1,S1,S1,S3,S3
 	-Buildable:
+	Selectable:
+		Class: intl
 
 fleetaccess:
 	AlwaysVisible:

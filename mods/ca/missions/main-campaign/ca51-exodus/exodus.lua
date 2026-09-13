@@ -37,6 +37,14 @@ GatewayReorientationTime = {
 	brutal = DateTime.Minutes(4)
 }
 
+VoidspikeInterval = {
+	easy = DateTime.Minutes(4),
+	normal = DateTime.Minutes(3) + DateTime.Seconds(30),
+	hard = DateTime.Minutes(3),
+	vhard = DateTime.Minutes(2) + DateTime.Seconds(30),
+	brutal = DateTime.Minutes(2) + DateTime.Seconds(30),
+}
+
 VoidspikeTargets = {
 	VoidspikeTarget1.Location,
 	VoidspikeTarget2.Location,
@@ -63,7 +71,7 @@ ConvoyUnits = {
 
 Squads = {
 	MaleficMain = {
-		Delay = AdjustDelayForDifficulty(DateTime.Minutes(3)),
+		Delay = AdjustDelayForDifficulty(DateTime.Minutes(2)),
 		Compositions = AdjustCompositionsForDifficulty(UnitCompositions.Scrin),
 		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 40, Max = 80 }),
 		FollowLeader = true,
@@ -99,6 +107,7 @@ WorldLoaded = function()
 	InitMaleficScrin()
 
 	NextVoidspikeTargetIndex = 1
+	NextVoidCannonRiftTargetIndex = 1
 	NextConvoyCompositionIndex = 1
 	NextConvoySpawnIndex = 1
 	EvacuationTimerTicks = (DateTime.Minutes(2) * NumEvacConvoys[Difficulty]) + DateTime.Minutes(4)
@@ -107,9 +116,15 @@ WorldLoaded = function()
 	SetupGDIExit()
 	InitGDI()
 
-	Trigger.AfterDelay(DateTime.Minutes(3), function()
+	Trigger.AfterDelay(VoidspikeInterval[Difficulty], function()
 		PlaceNextVoidspike()
 	end)
+
+	if IsHardOrAbove() then
+		Trigger.AfterDelay(VoidspikeInterval[Difficulty] * 2, function()
+			CreateNextVoidCannonRift()
+		end)
+	end
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		Utils.Do({ InitialCamera1, InitialCamera2, InitialCamera3, InitialCamera4 }, function(camera)
@@ -237,11 +252,51 @@ PlaceNextVoidspike = function()
 
 	NextVoidspikeTargetIndex = NextVoidspikeTargetIndex + 1
 	if NextVoidspikeTargetIndex > #VoidspikeTargets then
-		NextVoidspikeTargetIndex = 1
+		NextVoidspikeTargetIndex = nil
 	end
 
-	Trigger.AfterDelay(DateTime.Minutes(2) + DateTime.Seconds(30), function()
+	if NextVoidspikeTargetIndex == nil then
+		return
+	end
+
+	Trigger.AfterDelay(VoidspikeInterval[Difficulty], function()
 		PlaceNextVoidspike()
+	end)
+end
+
+CreateNextVoidCannonRift = function()
+	local targetLocation = VoidspikeTargets[NextVoidCannonRiftTargetIndex]
+	Trigger.AfterDelay(DateTime.Seconds(7), function()
+		if not VoidCannon.IsDead then
+			local targetActor = Actor.Create("VoidCannonTarget", true, { Location = targetLocation, Owner = ScrinRebels })
+
+			Trigger.AfterDelay(1, function()
+				VoidCannon.Stop()
+				VoidCannon.GrantCondition("charged", 50)
+				VoidCannon.Attack(targetActor)
+			end)
+
+			Trigger.AfterDelay(DateTime.Seconds(3), function()
+				if not VoidCannonAnnounced then
+					VoidCannonAnnounced = true
+					MediaCA.PlaySound("s_voidcannon.aud", 2)
+					Notification("Warning, a Malefic Void Cannon is creating powerful rifts that threaten to consume the entire area. Your forces will not survive an assault against the cannon. You must fall back from any rifts it creates.")
+				end
+			end)
+		end
+	end)
+
+	NextVoidCannonRiftTargetIndex = NextVoidCannonRiftTargetIndex + 1
+	if NextVoidCannonRiftTargetIndex > #VoidspikeTargets then
+		NextVoidCannonRiftTargetIndex = nil
+	end
+
+	if NextVoidCannonRiftTargetIndex == nil then
+		return
+	end
+
+	Trigger.AfterDelay(VoidspikeInterval[Difficulty], function()
+		CreateNextVoidCannonRift()
 	end)
 end
 

@@ -157,6 +157,32 @@ VoidEngineRift:
 		ValidTargets: Vehicle, Ship
 		ValidRelationships: Enemy, Neutral
 
+VoidCannonRiftBeam:
+	Inherits: VoidEngineBeam
+	ReloadDelay: 1
+	Range: 200c0
+	Report: vcan-fire1.aud
+	-Warhead@Arc:
+	ValidTargets: VoidCannonTarget
+	Projectile: LaserZapCA
+		Duration: 50
+		Width: 500
+		SecondaryBeamWidth: 700
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 50
+	Warhead@TargetDamage: SpreadDamage
+		ValidTargets: VoidCannonTarget
+		Damage: 1
+	Warhead@Spawn: SpawnActor
+		Actors: voidcannonrift
+
+VoidCannonRift:
+	Inherits: Rift
+	Warhead@1Dam: SpreadDamage
+		Damage: 1500
+		ValidRelationships: Enemy, Neutral
+
 Dominate:
 	Range: 7c0
 	ReloadDelay: 50

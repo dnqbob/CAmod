@@ -5159,6 +5159,34 @@ Actors:
 	Nod2Comms: hq
 		Owner: Nod2
 		Location: 136,168
+	Actor1488: etpd
+		Owner: Scrin
+		Location: 21,11
+		Facing: 384
+		ScriptTags: VeryHardAndAbove
+	Actor1489: etpd
+		Owner: Scrin
+		Location: 29,11
+		Facing: 640
+		ScriptTags: VeryHardAndAbove
+	Actor1293: s1
+		Owner: Scrin
+		Facing: 384
+		Location: 28,13
+		SubCell: 3
+	Actor1490: etpd
+		Owner: Scrin
+		Location: 141,56
+		ScriptTags: VeryHardAndAbove
+		Facing: 384
+	Actor1491: split2
+		Owner: Neutral
+		Location: 55,128
+	Actor1492: etpd
+		Owner: Scrin
+		Location: 71,41
+		Facing: 384
+		ScriptTags: BrutalOnly
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, ca|missions/main-campaign/ca54-decapitation/decapitation-rules.yaml, ca|rules/custom/coop-rules.yaml, decapitation-coop-rules.yaml
 

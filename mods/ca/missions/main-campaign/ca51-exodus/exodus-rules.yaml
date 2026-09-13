@@ -31,6 +31,18 @@ VoidSpikeSpawner:
 	EditorOnlyTooltip:
 		Name: Voidspike Spawner
 
+VoidCannonTarget:
+	Inherits: ^InvisibleDummy
+	Targetable:
+		TargetTypes: VoidCannonTarget
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1
+	HitShape:
+	BodyOrientation:
+		QuantizedFacings: 1
+
 ^EmpMissilePower:
 	AttackOrderPowerCA@EMPMISSILE:
 		DisplayTimerRelationships: Ally

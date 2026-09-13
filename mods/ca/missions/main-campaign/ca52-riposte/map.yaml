@@ -1542,17 +1542,9 @@ Actors:
 	Actor533: nuk2
 		Owner: Nod
 		Location: 118,29
-	Actor534: smcv
-		Owner: ScrinRebels
-		Location: 20,156
-		Facing: 384
 	Actor535: null
 		Owner: ScrinRebels
 		Location: 23,158
-		Facing: 896
-	Actor536: null
-		Owner: ScrinRebels
-		Location: 23,154
 		Facing: 896
 	Actor537: seek
 		Owner: ScrinRebels
@@ -1566,93 +1558,6 @@ Actors:
 		Owner: ScrinRebels
 		Location: 20,152
 		Facing: 896
-	Actor543: s1
-		Owner: ScrinRebels
-		Location: 25,156
-		SubCell: 1
-		Facing: 892
-	Actor544: s1
-		Owner: ScrinRebels
-		Location: 25,156
-		SubCell: 2
-		Facing: 896
-	Actor545: s1
-		Owner: ScrinRebels
-		Location: 25,156
-		SubCell: 4
-		Facing: 892
-	Actor550: s1
-		Owner: ScrinRebels
-		Location: 25,156
-		SubCell: 5
-		Facing: 896
-	Actor542: s3
-		Owner: ScrinRebels
-		Location: 25,156
-		SubCell: 3
-		Facing: 892
-	Actor541: intl
-		Owner: ScrinRebels
-		Location: 26,155
-		Facing: 896
-	Actor546: s3
-		Owner: ScrinRebels
-		SubCell: 3
-		Facing: 892
-		Location: 26,158
-	Actor547: s1
-		Owner: ScrinRebels
-		SubCell: 1
-		Facing: 892
-		Location: 26,158
-	Actor548: s1
-		Owner: ScrinRebels
-		SubCell: 2
-		Facing: 896
-		Location: 26,158
-	Actor549: s1
-		Owner: ScrinRebels
-		SubCell: 4
-		Facing: 892
-		Location: 26,158
-	Actor551: s1
-		Owner: ScrinRebels
-		SubCell: 5
-		Facing: 896
-		Location: 26,158
-	Actor540: intl
-		Owner: ScrinRebels
-		Facing: 896
-		Location: 27,157
-	Actor552: impl
-		Owner: ScrinRebels
-		Location: 16,157
-		SubCell: 3
-		Facing: 896
-	Actor553: impl
-		Owner: ScrinRebels
-		Location: 16,157
-		SubCell: 1
-		Facing: 896
-	Actor554: impl
-		Owner: ScrinRebels
-		Location: 16,157
-		SubCell: 2
-		Facing: 896
-	Actor555: impl
-		Owner: ScrinRebels
-		Location: 16,157
-		SubCell: 4
-		Facing: 896
-	Actor556: impl
-		Owner: ScrinRebels
-		Location: 16,157
-		SubCell: 5
-		Facing: 896
-	Actor557: intl
-		Owner: ScrinRebels
-		Facing: 896
-		Location: 17,156
 	Actor558: split2
 		Owner: Neutral
 		Location: 74,150
@@ -3784,6 +3689,26 @@ Actors:
 		SubCell: 3
 		Facing: 640
 		Location: 66,13
+	Actor536: null
+		Owner: ScrinRebels
+		Facing: 896
+		Location: 20,158
+	Actor1069: intl.loaded
+		Owner: ScrinRebels
+		Facing: 896
+		Location: 24,154
+	Actor1070: intl.loaded
+		Owner: ScrinRebels
+		Location: 26,156
+		Facing: 896
+	Actor1071: intl.loaded.impl
+		Owner: ScrinRebels
+		Facing: 896
+		Location: 19,154
+	Actor534: smcv
+		Owner: ScrinRebels
+		Facing: 384
+		Location: 21,156
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, riposte-rules.yaml
 

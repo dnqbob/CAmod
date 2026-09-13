@@ -22,6 +22,60 @@ SuperweaponsEnabledTime = {
 	brutal = DateTime.Seconds((60 * 15) + 17)
 }
 
+AirFleetKillersThreshold = {
+	normal = 6,
+	hard = 4,
+	vhard = 3,
+	brutal = 2
+}
+
+MaxFleetKillers = {
+	normal = 3,
+	hard = 5,
+	vhard = 8,
+	brutal = 12
+}
+
+TripodKillersThreshold = {
+	normal = 11,
+	hard = 9,
+	vhard = 7,
+	brutal = 5
+}
+
+MaxTripodKillers = {
+	normal = 3,
+	hard = 5,
+	vhard = 8,
+	brutal = 12
+}
+
+MaleficFleetSpawns = Utils.Shuffle({
+	MaleficSpawnWest.Location,
+	MaleficSpawnEast.Location,
+	MaleficSpawnMiddle.Location,
+})
+
+MaleficFleetSpawnDelay = {
+	easy = DateTime.Minutes(25),
+	normal = DateTime.Minutes(18),
+	hard = DateTime.Minutes(15),
+	vhard = DateTime.Minutes(12),
+	brutal = DateTime.Minutes(10)
+}
+
+MaleficFleetSpawnInterval = DateTime.Minutes(4)
+
+MaleficFleetCompositions = {
+	easy = { "pac", "deva" },
+	normal = { "pac", "deva" },
+	hard = { "pac", "deva", "deva" },
+	vhard = { "pac", "deva", "pac", "deva" },
+	brutal = { "pac", "deva", "pac", "deva", "pac" },
+}
+
+NextMaleficFleetSpawnIndex = 1
+
 Squads = {
 	ScrinMain = {
 		Compositions = AdjustCompositionsForDifficulty(UnitCompositions.Scrin),
@@ -46,6 +100,36 @@ Squads = {
 		Delay = AdjustAirDelayForDifficulty(DateTime.Minutes(13)),
 		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 12, Max = 12 }),
 		Compositions = AirCompositions.Soviet,
+	},
+	AirFleetKillers = {
+		ActiveCondition = function(squad)
+			local scrinFleet = GetMissionPlayersActorsByTypes({ "pac", "deva" })
+			return #scrinFleet > AirFleetKillersThreshold[Difficulty]
+		end,
+		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 50, Max = 50 }),
+		Compositions = function(squad)
+			local enervators = { "enrv" }
+			local numFleetShips = #GetMissionPlayersActorsByTypes({ "pac", "deva" })
+			for i = 1, math.min(numFleetShips, MaxFleetKillers[Difficulty]) do
+				table.insert(enervators, "enrv")
+			end
+			return { { Aircraft = enervators } }
+		end
+	},
+	TripodKillers = {
+		ActiveCondition = function(squad)
+			local tripods = GetMissionPlayersActorsByTypes({ "tpod", "rtpd" })
+			return #tripods > TripodKillersThreshold[Difficulty]
+		end,
+		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 30, Max = 30 }),
+		Compositions = function(squad)
+			local sukhois = { "suk" }
+			local numTripods = #GetMissionPlayersActorsByTypes({ "tpod", "rtpd" })
+			for i = 1, math.min(numTripods, MaxTripodKillers[Difficulty]) do
+				table.insert(sukhois, "suk")
+			end
+			return { { Aircraft = sukhois } }
+		end
 	}
 }
 
@@ -54,6 +138,7 @@ SetupPlayers = function()
 	USSR = Player.GetPlayer("USSR")
 	Scrin = Player.GetPlayer("Scrin")
     Nod = Player.GetPlayer("Nod")
+	MaleficScrin = Player.GetPlayer("MaleficScrin")
 	Neutral = Player.GetPlayer("Neutral")
 	MissionPlayers = { ScrinRebels }
 	MissionEnemies = { USSR, Scrin }
@@ -100,6 +185,14 @@ WorldLoaded = function()
     Trigger.AfterDelay(DateTime.Seconds(5), function()
         Tip("Use the Charge Gateway power to use resources to charge the three gateways.")
     end)
+
+	Trigger.AfterDelay(MaleficFleetSpawnDelay[Difficulty], function()
+		Notification("Warning, Malefic fleet detected, approaching from the south.")
+		MediaCA.PlaySound("s_maleficfleet.aud", 2)
+		Trigger.AfterDelay(DateTime.Seconds(30), function()
+			SpawnNextMaleficFleetWave()
+		end)
+	end)
 
     AfterWorldLoaded()
 end
@@ -166,6 +259,10 @@ InitScrinAttacks = function()
 		Actor.Create("ai.superweapons.enabled", true, { Owner = Scrin })
 		Actor.Create("ai.minor.superweapons.enabled", true, { Owner = Scrin })
 	end)
+
+	if IsHardOrAbove() then
+		InitAirAttackSquad(Squads.AirFleetKillers, Scrin, MissionPlayers, { "pac", "deva" })
+	end
 end
 
 InitUSSR = function()
@@ -192,6 +289,10 @@ InitUSSRAttacks = function()
 		Actor.Create("ai.superweapons.enabled", true, { Owner = USSR })
 		Actor.Create("ai.minor.superweapons.enabled", true, { Owner = USSR })
 	end)
+
+	if IsHardOrAbove() then
+		InitAirAttackSquad(Squads.TripodKillers, USSR, MissionPlayers, { "tpod", "rtpd" })
+	end
 end
 
 UpdateGatewayStatus = function()
@@ -209,6 +310,29 @@ UpdateGatewayStatus = function()
     if chargePerc == 100 then
         ScrinRebels.MarkCompletedObjective(ObjectiveProtectTemples)
     end
+end
+
+SpawnNextMaleficFleetWave = function()
+	local spawnLocation = MaleficFleetSpawns[NextMaleficFleetSpawnIndex]
+	local delay = 0
+
+	Utils.Do(MaleficFleetCompositions[Difficulty], function(actorType)
+		-- add a random X offset between -3 and +3
+		local xOffset = Utils.RandomInteger(-3, 4)
+		local actorSpawnLocation = CPos.New(spawnLocation.X + xOffset, spawnLocation.Y)
+		Trigger.AfterDelay(delay, function()
+			local a = Actor.Create(actorType, true, { Location = actorSpawnLocation, Owner = MaleficScrin, Facing = Angle.North })
+			a.Hunt()
+		end)
+		delay = delay + DateTime.Seconds(1)
+	end)
+
+	NextMaleficFleetSpawnIndex = NextMaleficFleetSpawnIndex + 1
+	if NextMaleficFleetSpawnIndex > #MaleficFleetSpawns then
+		NextMaleficFleetSpawnIndex = 1
+	end
+
+	Trigger.AfterDelay(MaleficFleetSpawnInterval, SpawnNextMaleficFleetWave)
 end
 
 -- overridden in co-op version

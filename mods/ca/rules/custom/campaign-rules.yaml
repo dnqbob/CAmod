@@ -941,6 +941,72 @@ VoidEngineDeathRift:
 	KillsSelf:
 		Delay: 1512
 
+VCAN:
+	Inherits: ^Defense
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@A2GPROTECTION: ^AirToGroundProtection
+	Targetable@CampaignBoss:
+		TargetTypes: CampaignBoss
+	RenderSprites:
+		PlayerPalette: playerscrin
+	TooltipExtras:
+		Strengths: • Strong vs everything
+	Valued:
+		Cost: 30000
+	Tooltip:
+		Name: Void Cannon
+	Selectable:
+		Bounds: 3072, 4608, 0, -1024
+		DecorationBounds: 3114, 4608, 0, -1024
+	Building:
+		Footprint: xxx xxx ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 5000000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 15c0
+	Turreted:
+		TurnSpeed: 10
+		InitialFacing: 192
+		RealignDelay: -1
+	WithSpriteTurret:
+		Recoils: false
+	Armament@PRIMARY:
+		Weapon: VoidEngineBeam
+		LocalOffset: 1300,0,500
+		MuzzleSequence: muzzle
+		MuzzlePalette: scrin
+		PauseOnCondition: charged
+	Armament@SECONDARY:
+		Weapon: VoidCannonRiftBeam
+		LocalOffset: 1300,0,500
+		MuzzleSequence: muzzle
+		MuzzlePalette: scrin
+		RequiresCondition: charged
+	ExternalCondition@Charged:
+		Condition: charged
+	AttackTurreted:
+	WithBuildingBib:
+	WithMuzzleOverlay:
+	-WithMakeAnimation:
+	-Sellable:
+	-Targetable@HACKABLE:
+
+VoidCannonRift:
+	Inherits: Rift
+	-KillsSelf:
+	PeriodicExplosion:
+		Weapon: VoidCannonRift
+	ConvertsResources:
+		Range: 8c0
+		ConvertFrom: Tiberium, BlueTiberium, Ore, Gems
+		ConvertTo: BlackTiberium
+		Interval: 10
+		Amount: 2
+
 SCRINPURIFIER:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
@@ -1000,6 +1066,7 @@ OSPI:
 		TargetTypes: CampaignBoss
 	Targetable@OverlordSpire:
 		TargetTypes: OverlordSpire
+	-Targetable@HACKABLE:
 	RenderSprites:
 		PlayerPalette: playerscrin
 	Valued:
@@ -1031,6 +1098,7 @@ OSPI:
 		Actor: evis
 	WithBuildingBib:
 	WithMuzzleOverlay:
+	-WithMakeAnimation:
 	-Sellable:
 
 DOMI:

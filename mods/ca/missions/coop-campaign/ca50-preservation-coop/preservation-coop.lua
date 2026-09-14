@@ -82,6 +82,6 @@ AfterTick = function()
 
 end
 
-AppendChargeStatus = function(text, chargePerc)
-	return text
+SetChargeStatusText = function(chargePerc)
+	UserInterface.SetMissionText("Gateway charge progress: " .. chargePerc .. "%", HSLColor.Yellow)
 end

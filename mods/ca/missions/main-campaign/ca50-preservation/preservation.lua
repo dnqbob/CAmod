@@ -64,7 +64,13 @@ MaleficFleetSpawnDelay = {
 	brutal = DateTime.Minutes(10)
 }
 
-MaleficFleetSpawnInterval = DateTime.Minutes(4)
+MaleficFleetSpawnInterval = {
+	easy = DateTime.Minutes(5),
+	normal = DateTime.Minutes(5),
+	hard = DateTime.Minutes(4),
+	vhard = DateTime.Minutes(4),
+	brutal = DateTime.Minutes(3),
+}
 
 MaleficFleetCompositions = {
 	easy = { "pac", "deva" },
@@ -78,18 +84,20 @@ NextMaleficFleetSpawnIndex = 1
 
 Squads = {
 	ScrinMain = {
+		InitTimeAdjustment = -DateTime.Minutes(4),
 		Compositions = AdjustCompositionsForDifficulty(UnitCompositions.Scrin),
 		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 20, Max = 40, RampDuration = DateTime.Minutes(15) }),
 		FollowLeader = true,
 		AttackPaths = ScrinAttackPaths,
-		Delay = AdjustDelayForDifficulty(DateTime.Minutes(2)),
+		Delay = AdjustDelayForDifficulty(DateTime.Minutes(1)),
 	},
 	SovietMain = {
+		InitTimeAdjustment = -DateTime.Minutes(4),
 		Compositions = AdjustCompositionsForDifficulty(UnitCompositions.Soviet),
 		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 20, Max = 40, RampDuration = DateTime.Minutes(15) }),
 		FollowLeader = true,
 		AttackPaths = SovietAttackPaths,
-		Delay = AdjustDelayForDifficulty(DateTime.Minutes(3)),
+		Delay = AdjustDelayForDifficulty(DateTime.Minutes(2)),
 	},
 	ScrinAir = {
 		Delay = AdjustAirDelayForDifficulty(DateTime.Minutes(13)),
@@ -101,6 +109,7 @@ Squads = {
 		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 12, Max = 12 }),
 		Compositions = AirCompositions.Soviet,
 	},
+	ScrinAirToAir = AirToAirSquad({ "stmr", "enrv", "torm" }, AdjustAirDelayForDifficulty(DateTime.Minutes(10))),
 	AirFleetKillers = {
 		ActiveCondition = function(squad)
 			local scrinFleet = GetMissionPlayersActorsByTypes({ "pac", "deva" })
@@ -130,6 +139,14 @@ Squads = {
 			end
 			return { { Aircraft = sukhois } }
 		end
+	},
+	SovietCommandoKillers = {
+		ActiveCondition = function(squad)
+			local commandos = GetMissionPlayersActorsByTypes({ "mast", "rmbo" })
+			return #commandos > 0
+		end,
+		AttackValuePerSecond = AdjustAttackValuesForDifficulty({ Min = 15, Max = 20 }),
+		Compositions = { { Aircraft = { "yak", "yak" } } }
 	}
 }
 
@@ -262,6 +279,7 @@ InitScrinAttacks = function()
 
 	if IsHardOrAbove() then
 		InitAirAttackSquad(Squads.AirFleetKillers, Scrin, MissionPlayers, { "pac", "deva" })
+		InitAirAttackSquad(Squads.ScrinAirToAir, Scrin, MissionPlayers, { "Aircraft" }, "ArmorType")
 	end
 end
 
@@ -292,6 +310,10 @@ InitUSSRAttacks = function()
 
 	if IsHardOrAbove() then
 		InitAirAttackSquad(Squads.TripodKillers, USSR, MissionPlayers, { "tpod", "rtpd" })
+
+		if IsVeryHardOrAbove() then
+			InitAirAttackSquad(Squads.SovietCommandoKillers, USSR, MissionPlayers, { "mast", "rmbo" })
+		end
 	end
 end
 
@@ -301,11 +323,7 @@ UpdateGatewayStatus = function()
         chargePerc = MiddleGateway.ChargePercentage
     end
 
-	local text = "Gateway charge progress: " .. chargePerc .. "%"
-	local textColor = HSLColor.Yellow
-
-	text = AppendChargeStatus(text, chargePerc)
-    UserInterface.SetMissionText(text, textColor)
+	SetChargeStatusText(chargePerc)
 
     if chargePerc == 100 then
         ScrinRebels.MarkCompletedObjective(ObjectiveProtectTemples)
@@ -332,16 +350,21 @@ SpawnNextMaleficFleetWave = function()
 		NextMaleficFleetSpawnIndex = 1
 	end
 
-	Trigger.AfterDelay(MaleficFleetSpawnInterval, SpawnNextMaleficFleetWave)
+	Trigger.AfterDelay(MaleficFleetSpawnInterval[Difficulty], SpawnNextMaleficFleetWave)
 end
 
 -- overridden in co-op version
-AppendChargeStatus = function(text, chargePerc)
+SetChargeStatusText = function(chargePerc)
+	local text = "Gateway charge progress: " .. chargePerc .. "%"
+	local textColor = HSLColor.Yellow
 	local isCharging = ScrinRebels.HasPrerequisites({ "gatewayscharging" })
+
 	if isCharging then
 		text = text .. " (Charging)"
 		textColor = HSLColor.Lime
 	else
 		text = text .. " (Not Charging)"
 	end
+
+	UserInterface.SetMissionText(text, textColor)
 end

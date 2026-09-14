@@ -384,6 +384,7 @@ Player:
 	ProductionTracker:
 	PlayerConnectionStatus:
 	PopController:
+	RevealedPlayersManager:
 	ReclaimableExperiencePool:
 	ReclaimableValueProducer:
 		Type: Cyborg

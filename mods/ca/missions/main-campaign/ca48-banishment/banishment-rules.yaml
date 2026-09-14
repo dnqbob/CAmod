@@ -81,32 +81,21 @@ HTUR:
 
 entrench.upgrade:
 	Buildable:
-		Prerequisites: anyradar, ~radar.allies
+		Prerequisites: anyradar, ~player.allies
 
 apb.upgrade:
 	Buildable:
-		Prerequisites: atek
+		Prerequisites: atek, ~player.allies
 
 tflx.upgrade:
 	Buildable:
-		Prerequisites: pdox
+		Prerequisites: atek, ~player.allies
 
 ^VeilOfWarPower:
 	SpawnActorPowerCA@VeilOfWar:
 		Prerequisites: ~radar.allies
 
 # Misc
-
-STLK:
-	Cloak@NORMAL:
-		CloakDelay: 750
-		RequiresCondition: !cloak-force-disabled && !being-warped && !parachute
-	GrantTimedCondition@Uncloaked:
-		RequiresCondition: !hidden
-	DummyConditionConsumer@cloak-active:
-		Condition: cloak-active
-	DummyConditionConsumer@cloak-charging:
-		Condition: cloak-charging
 
 FLARE:
 	RevealsShroud:

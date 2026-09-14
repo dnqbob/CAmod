@@ -53,11 +53,19 @@ ENRV:
 
 stellar.upgrade:
 	Buildable:
-		Prerequisites: scrt
+		Prerequisites: scrt, ~player.scrin
+
+advart.upgrade:
+	Buildable:
+		Prerequisites: anyradar, ~player.scrin
+
+ioncon.upgrade:
+	Buildable:
+		Prerequisites: scrt, ~player.scrin
 
 coalescence.upgrade:
 	Buildable:
-		Prerequisites: scrt
+		Prerequisites: scrt, ~player.scrin
 
 # Disable tech
 
@@ -159,7 +167,3 @@ subjugation.dummy:
 	WithColoredOverlay@Subjugated:
 		RequiresCondition: subjugated
 		Color: a400f233
-
-# Hunt() requires only 1 AttackBase
-BATF.AI:
-	-AttackFrontal:

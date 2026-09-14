@@ -221,7 +221,11 @@ ATMZ:
 	Buildable:
 		Prerequisites: scrt, ~vehicles.scrin
 
-stellar.upgrade:
+advart.upgrade:
+	Buildable:
+		Prerequisites: anyradar, ~player.scrin
+
+ioncon.upgrade:
 	Buildable:
 		Prerequisites: scrt, ~player.scrin
 

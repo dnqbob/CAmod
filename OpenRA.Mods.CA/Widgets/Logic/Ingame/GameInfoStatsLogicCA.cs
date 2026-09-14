@@ -221,7 +221,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				&& (!client.IsAdmin || orderManager.LobbyInfo.GlobalSettings.Dedicated)
 				&& (!isVoteKick() || UnitOrders.KickVoteTarget == null || UnitOrders.KickVoteTarget == client.Index);
 
-			var revealedPlayersManager = player != null ? player.World.WorldActor.TraitOrDefault<RevealedPlayersManager>() : null;
+			var revealedPlayersManager = player?.PlayerActor.TraitOrDefault<RevealedPlayersManager>();
 
 			foreach (var t in teams)
 			{
@@ -252,7 +252,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					nameLabel.GetColor = () => pp.Color;
 
 					// Begin custom CA section for revealing random factions
-					var isRevealed = revealedPlayersManager != null && revealedPlayersManager.IsRevealed(pp);
+					var isRevealed = revealedPlayersManager != null && (revealedPlayersManager.RevealOnGameStart || revealedPlayersManager.IsRevealed(pp));
 					var factionAndLabel = item.Get<ContainerWithTooltipWidget>("FACTIONFLAGANDLABEL");
 					var realFactionVisible = player == null || player.RelationshipWith(pp) == PlayerRelationship.Ally || player.WinState != WinState.Undefined || isRevealed;
 

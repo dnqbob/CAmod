@@ -1,0 +1,310 @@
+^Palettes:
+	PaletteFromFile@terrain-temperat:
+		Filename: ca|missions/main-campaign/ca54-decapitation/decay.pal
+	FlashPostProcessEffect@LIGHTNINGSTRIKE:
+		Type: LightningStrike
+	WeatherOverlay@RAIN:
+		WindTick: 150, 550
+		UseSquares: false
+		ScatterDirection: 0, 0
+		Gravity: 20, 25
+		SwingOffset: 0, 0
+		SwingSpeed: 0, 0
+		SwingAmplitude: 0, 0
+		ParticleColors: 72aaae, 72aea6, 5caea3, 6da69f
+		LineTailAlphaValue: 30
+		ParticleSize: 1, 1
+		ParticleDensityFactor: 10
+	TerrainLighting:
+	TintPostProcessEffect:
+		Blue: 1.1
+		Ambient: 0.8
+
+World:
+	LuaScript:
+		Scripts: campaign.lua, decapitation.lua
+	MissionData:
+		Briefing: The Overlord's Earth stronghold has been located, and the Overlord himself is overseeing the construction of several large structures there. Their purpose is unknown, but immense amounts of power are being channeled into them.\n\nThese structures must be extremely important to the his plans as he rarely oversees such things personally, and this presents us with a rare opportunity to eliminate him.\n\nWe must destroy these structures before they are made fully operational, and if the opportunity arises to kill the Overlord, we must take it.\n\nNod forces have begun their offensive already and are encountering massive resistance. We must establish our own forward base to assist them.
+	MapOptions:
+		ShortGameCheckboxEnabled: False
+	MusicPlaylist:
+		StartingMusic: nomercy
+
+Player:
+	PlayerResources:
+		DefaultCash: 6000
+
+colonyspike.provider:
+	-UpdatesSupportPowerTimer:
+
+recall.effect:
+	Inherits@WeaponDetonaterDummy: ^WeaponDetonaterDummy
+	PeriodicExplosion:
+		Weapon: FleetRecallEffect
+
+# Enable subfaction specific tech
+
+STCR:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.scrin
+
+LCHR:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.scrin
+
+OBLT:
+	Buildable:
+		Prerequisites: scrt, ~vehicles.scrin
+
+ATMZ:
+	Buildable:
+		Prerequisites: scrt, ~vehicles.scrin
+
+ENRV:
+	Buildable:
+		Prerequisites: scrt, ~aircraft.scrin
+
+advart.upgrade:
+	Buildable:
+		Prerequisites: anyradar, ~player.scrin
+
+ioncon.upgrade:
+	Buildable:
+		Prerequisites: scrt, ~player.scrin
+
+coalescence.upgrade:
+	Buildable:
+		Prerequisites: scrt, ~player.scrin
+
+# Enable GDI subfaction specific tech
+
+STWR:
+	Buildable:
+		Prerequisites: vehicles.any, ~structures.gdi
+
+TITN:
+	Buildable:
+		Prerequisites: gtek, ~!railgun.upgrade, ~vehicles.gdi
+
+TITN.RAIL:
+	Buildable:
+		Prerequisites: gtek, ~railgun.upgrade, ~vehicles.gdi
+
+JUGG:
+	Buildable:
+		Prerequisites: gtek, ~vehicles.gdi
+
+HSAM:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.gdi
+
+MDRN:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.gdi
+
+GDRN:
+	Buildable:
+		Prerequisites: ~vehicles.gdi, ~!tow.upgrade
+
+GDRN.TOW:
+	Buildable:
+		Prerequisites: ~vehicles.gdi, ~tow.upgrade
+
+WOLV:
+	Buildable:
+		Prerequisites: gtek, ~vehicles.gdi
+
+XO:
+	Buildable:
+		Prerequisites: gtek, ~vehicles.gdi
+
+PBUL:
+	Buildable:
+		Prerequisites: gtek, ~vehicles.gdi
+
+AURO:
+	Buildable:
+		Prerequisites: afld.gdi, gtek, ~aircraft.gdi
+
+gyro.upgrade:
+	Buildable:
+		Prerequisites: gtek, ~player.gdi
+
+abur.upgrade:
+	Buildable:
+		Prerequisites: gtek, ~player.gdi
+
+bdrone.upgrade:
+	Buildable:
+		Prerequisites: gtek, ~player.gdi
+
+railgun.upgrade:
+	Buildable:
+		Prerequisites: upgc, ~player.gdi
+
+ionmam.upgrade:
+	Buildable:
+		Prerequisites: upgc, !mdrone.upgrade, !hovermam.upgrade, ~player.gdi
+	TooltipExtras:
+		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+
+hovermam.upgrade:
+	Buildable:
+		Prerequisites: upgc, !ionmam.upgrade, !mdrone.upgrade, ~player.gdi
+	TooltipExtras:
+		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+
+mdrone.upgrade:
+	Buildable:
+		Prerequisites: upgc, !ionmam.upgrade, !hovermam.upgrade, ~player.gdi
+	TooltipExtras:
+		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+
+# Enable Nod subfaction specific tech
+
+TMPL:
+	GrantExternalConditionPowerCA@Frenzy:
+		-Prerequisites:
+
+ACOL:
+	Buildable:
+		Prerequisites: obliortmpl, anyradar, ~infantry.nod, ~!tmpp
+
+TPLR:
+	Buildable:
+		Prerequisites: obliortmpl, anyradar, ~infantry.nod, ~tmpp
+
+BH:
+	Buildable:
+		Prerequisites: anyradar, ~infantry.nod
+
+FTNK:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.nod
+
+HFTK:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.nod
+
+WTNK:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.nod
+
+MLRS:
+	Buildable:
+		Prerequisites: tmpl, ~vehicles.nod
+
+SPEC:
+	Buildable:
+		Prerequisites: tmpl, ~vehicles.nod
+
+VENM:
+	Buildable:
+		Prerequisites: ~aircraft.nod
+
+blacknapalm.upgrade:
+	Buildable:
+		Prerequisites: ~player.nod, tmpl
+
+quantum.upgrade:
+	Buildable:
+		Prerequisites: ~player.nod, tmpl
+
+hstk.upgrade:
+	Buildable:
+		Prerequisites: ~player.nod, tmpl
+
+# Enable Allied subfaction specific tech
+
+SNIP:
+	Buildable:
+		Prerequisites: ~tent, anyradar
+
+RTNK:
+	Buildable:
+		Prerequisites: ~vehicles.allies
+
+TNKD:
+	Buildable:
+		Prerequisites: anyradar, ~vehicles.allies
+
+CHPR:
+	Buildable:
+		Prerequisites: atek, ~vehicles.allies
+
+BATF:
+	Buildable:
+		Prerequisites: atek, ~vehicles.allies
+
+NHAW:
+	Buildable:
+		Prerequisites: ~aircraft.allies
+
+HTUR:
+	Buildable:
+		Prerequisites: ~structures.allies, anyradar
+
+entrench.upgrade:
+	Buildable:
+		Prerequisites: anyradar, ~player.allies
+
+apb.upgrade:
+	Buildable:
+		Prerequisites: atek, ~player.allies
+
+tflx.upgrade:
+	Buildable:
+		Prerequisites: atek, ~player.allies
+
+^VeilOfWarPower:
+	SpawnActorPowerCA@VeilOfWar:
+		Prerequisites: ~radar.allies
+
+# AI Powers
+
+^StormSpikePower:
+	DetonateWeaponPower@STORMSPIKE:
+		Prerequisites: botplayer, player.scrin
+		ChargeInterval: 8250
+
+# Difficulty modifiers
+
+OSPI:
+	FirepowerMultiplier@NORMAL:
+		Modifier: 75
+		RequiresCondition: difficulty-normal
+	FirepowerMultiplier@EASY:
+		Modifier: 50
+		RequiresCondition: difficulty-easy
+	DamageMultiplier@NORMAL:
+		Modifier: 125
+		RequiresCondition: difficulty-normal
+	DamageMultiplier@EASY:
+		Modifier: 150
+		RequiresCondition: difficulty-easy
+	DamageTypeDamageMultiplier@A2GPROTECTION:
+		Modifier: 75
+		RequiresCondition: !difficulty-easy
+
+VANQ:
+	FirepowerMultiplier@NORMAL:
+		Modifier: 75
+		RequiresCondition: difficulty-normal
+	FirepowerMultiplier@EASY:
+		Modifier: 50
+		RequiresCondition: difficulty-easy
+	DamageMultiplier@NORMAL:
+		Modifier: 125
+		RequiresCondition: difficulty-normal
+	DamageMultiplier@EASY:
+		Modifier: 150
+		RequiresCondition: difficulty-easy
+
+# Hunt() requires only 1 AttackBase
+DEVA:
+	-AttackFrontalCharged:
+	-Armament@PRIMARYUPG:
+	-AmbientSound@CHARGE:
+	-WithIdleOverlay@CHARGE1:
+	-WithIdleOverlay@CHARGE2:
+	-WithIdleOverlay@CHARGE3:

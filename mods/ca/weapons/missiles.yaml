@@ -509,6 +509,7 @@ HellfireAA.Cryo:
 		Duration: 75
 		Range: 0c341
 		ValidRelationships: Enemy, Neutral
+		ValidTargets: Air, AirSmall
 
 HellfireAA.Harrier:
 	Inherits: HellfireAA
@@ -2446,7 +2447,7 @@ CyborgReaperMissiles:
 	ReloadDelay: 65
 	Burst: 2
 	BurstDelays: 10
-	Range: 6c0
+	Range: 6c512
 	Report: reap-fire1.aud, reap-fire2.aud
 	Projectile: MissileCA
 		Speed: 220
@@ -2473,7 +2474,7 @@ CyborgReaperMissilesAA:
 	ReloadDelay: 65
 	Burst: 2
 	BurstDelays: 10
-	Range: 6c0
+	Range: 6c512
 	Report: reap-fire1.aud, reap-fire2.aud
 	Projectile: MissileCA
 		Speed: 250

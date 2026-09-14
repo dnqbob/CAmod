@@ -140,6 +140,14 @@ IsPlayerInList = function(player, players)
 	end)
 end
 
+---@param playerSlots player[]
+---@return player[]
+GetActiveCoopPlayers = function(playerSlots)
+	return Utils.Where(playerSlots, function(player)
+		return player ~= nil
+	end)
+end
+
 GetCoopGroundAttackers = function()
 	local attackers = { }
 
@@ -223,6 +231,7 @@ AssignToCoopPlayers = function(units, specificPlayers, ignoreBlackList)
 		units = Utils.Where(units, CanSplitAmongPlayers)
 	end
 
+	local players
 	local ownerID
 
 	if specificPlayers then
@@ -280,7 +289,7 @@ GoodSpread = function()
 	Trigger.AfterDelay(5, GoodSpread)
 
 	if StopSpread ~= true then
-		local actors = Utils.Where(SinglePlayerPlayer.GetActors(), function(a) return a.HasProperty("Move") and not IsHarvester(a) and not IsMcv(a) end)
+		local actors = GetSpreadableUnits(SinglePlayerPlayer)
 
 		if #actors > 0 then
 			AssignToCoopPlayers(actors)
@@ -437,6 +446,11 @@ PlayerDefeatedOrDisconnected = function(player)
 
 	Trigger.AfterDelay(DateTime.Seconds(8), function()
 		AssignToCoopPlayers(player.GetActors(), CoopPlayers)
+		if #CoopPlayers == 0 then
+			MessageCooldown = false
+			return
+		end
+
 		local estateCash = player.Cash + player.Resources
 		local estateCashShare = estateCash / #CoopPlayers
 		Utils.Do(CoopPlayers, function(player)
@@ -921,9 +935,9 @@ CoopInit = function()
 	local baseSharingValue = Map.LobbyOption("basesharing")
 
 	if baseSharingValue == "1" then
-		McvPerPlayer = false
+		BaseSharingEnabled = true
 	else
-		McvPerPlayer = true
+		BaseSharingEnabled = false
 	end
 
 	-- delay by 1 tick to allow difficulty based removals to take effect
@@ -975,6 +989,14 @@ IsBaseTransferActor = function(actor)
 	return actor.HasProperty("StartBuildingRepairs") or IsHarvester(actor) or Utils.Any(WallTypes, function(t) return actor.Type == t end)
 end
 
+IsSpreadableUnit = function(a)
+	return a.HasProperty("Move") and not IsHarvester(a) and not IsMcv(a)
+end
+
+GetSpreadableUnits = function(player)
+	return Utils.Where(player.GetActors(), IsSpreadableUnit)
+end
+
 TransferBaseToPlayer = function(fromPlayer, toPlayer)
 	Trigger.AfterDelay(1, function()
 		local baseActors = Utils.Where(fromPlayer.GetActors(), function(a)
@@ -987,12 +1009,17 @@ TransferBaseToPlayer = function(fromPlayer, toPlayer)
 	end)
 end
 
-TransferMcvsToPlayers = function()
+TransferMcvsToPlayers = function(players)
 	local mcvs = SinglePlayerPlayer.GetActorsByTypes(McvTypes)
-	local toPlayers = GetMcvPlayers()
+	local toPlayers
+	if players ~= nil then
+		toPlayers = players
+	else
+		toPlayers = GetMcvPlayers()
+	end
 	Utils.Do(mcvs, function(mcv)
 		mcv.Owner = toPlayers[1]
-		if McvPerPlayer then
+		if not BaseSharingEnabled then
 			Utils.Do(toPlayers, function(p)
 				if p ~= toPlayers[1] then
 					local copy = Actor.Create(mcv.Type, true, { Owner = p, Location = mcv.Location })
@@ -1013,7 +1040,7 @@ GetFirstActivePlayer = function()
 end
 
 GetMcvPlayers = function()
-	if McvPerPlayer then
+	if not BaseSharingEnabled then
 		return CoopPlayers
 	else
 		local firstActive = GetFirstActivePlayer()

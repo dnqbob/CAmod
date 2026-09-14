@@ -1939,7 +1939,7 @@ INTL:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	DetectCloaked:
-		Range: 4c0
+		Range: 7c0
 		DetectionTypes: Mine
 		RequiresCondition: loaded-engi
 	-WithFacingSpriteBody@SHIELDS:
@@ -3187,6 +3187,7 @@ STMR:
 		FacingTolerance: 512
 		OpportunityFire: true
 		PauseOnCondition: empdisable || being-warped || blinded
+		PersistentTargeting: false
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 22

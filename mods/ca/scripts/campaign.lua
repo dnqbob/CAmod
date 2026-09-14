@@ -304,6 +304,9 @@ InitAttackAircraft = function(aircraft, targetPlayers, targetList, targetType)
 		local typeKey = string.gsub(aircraft.Type, "%.", "_")
 		local fallbackTargetList = nil
 		local fallbackTargetType = nil
+		if targetList ~= nil and targetType == nil then
+			targetType = "ActorType"
+		end
 		if targetList == nil and AircraftTargets[typeKey] ~= nil then
 			fallbackTargetList = AircraftTargets[typeKey].TargetList
 		end
@@ -1127,6 +1130,11 @@ InitAttackWave = function(squad)
 	-- make sure ActiveCondition function returns true (if it exists)
 	local isActive = squad.ActiveCondition == nil or squad.ActiveCondition(squad)
 
+	-- on easy difficulty we don't send waves if player has less than 3000 army value
+	if Difficulty == "easy" and squad.TargetPlayer.ArmyValue < 3000 then
+		isActive = false
+	end
+
 	if isActive then
 		local allCompositions
 
@@ -1576,6 +1584,9 @@ SendAttackSquad = function(squad)
 		end)
 	end
 	squad.IdleUnits = { }
+	if squad.AfterSendSquad ~= nil then
+		squad.AfterSendSquad(squad)
+	end
 end
 
 ClearSquadLeader = function(squadLeader)
@@ -2193,15 +2204,15 @@ AdjustCompositionForDifficulty = function(composition, difficulty)
 			end
 		else
 			if k == "MinTime" or k == "MaxTime" then
-
 				if difficulty == "easy" then
 					updatedComposition[k] = v * 1.4
 				elseif difficulty == "normal" then
 					updatedComposition[k] = v * 1.2
 				elseif difficulty == "brutal" then
 					updatedComposition[k] = v * 0.9
+				else
+					updatedComposition[k] = v
 				end
-
 			else
 				updatedComposition[k] = v
 			end

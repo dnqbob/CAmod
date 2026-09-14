@@ -22,6 +22,8 @@ INTL.Loaded:
 	Cargo:
 		InitialUnits: S1,S1,S1,S3,S3
 	-Buildable:
+	Selectable:
+		Class: intl
 
 fleetaccess:
 	AlwaysVisible:
@@ -62,11 +64,19 @@ ATMZ:
 
 stellar.upgrade:
 	Buildable:
-		Prerequisites: scrt
+		Prerequisites: scrt, ~player.scrin
+
+advart.upgrade:
+	Buildable:
+		Prerequisites: anyradar, ~player.scrin
+
+ioncon.upgrade:
+	Buildable:
+		Prerequisites: scrt, ~player.scrin
 
 coalescence.upgrade:
 	Buildable:
-		Prerequisites: scrt
+		Prerequisites: scrt, ~player.scrin
 
 # Triggered access to Reaper Tripods, Enervators, Devastators, Carriers
 

@@ -28,7 +28,7 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
-		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin
+		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin, ScrinRebelWestWormholes, ScrinRebelEastWormholes
 	PlayerReference@ScrinRebels:
 		Name: ScrinRebels
 		AllowBots: False
@@ -40,21 +40,21 @@ Players:
 		Color: 2FB4A6
 		LockSpawn: True
 		LockTeam: True
-		Allies: Nod
+		Allies: Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelWestWormholes:
 		Name: ScrinRebelWestWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
-		Allies: ScrinRebels
+		Allies: ScrinRebels, Nod, ScrinRebelEastWormholes
 		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelEastWormholes:
 		Name: ScrinRebelEastWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
-		Allies: ScrinRebels
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes
 		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@Scrin:
 		Name: Scrin
@@ -75,14 +75,14 @@ Players:
 		Bot: dormant
 		Faction: nod
 		Color: 6D738C
-		Allies: ScrinRebels
+		Allies: ScrinRebels, ScrinRebelWestWormholes, ScrinRebelEastWormholes
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@MaleficScrin:
 		Name: MaleficScrin
 		Bot: campaign
 		Faction: scrin
 		Color: 3E4549
-		Enemies: ScrinRebels, Nod, Scrin, USSR, Creeps
+		Enemies: ScrinRebels, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Nod, Scrin, USSR, Creeps
 
 Actors:
 	Actor160: sbag
@@ -4066,18 +4066,6 @@ Actors:
 	Actor1428: nerv
 		Owner: ScrinRebels
 		Location: 126,92
-	Actor506: wormhole
-		Owner: ScrinRebelEastWormholes
-		Location: 198,69
-	Actor504: wormhole
-		Owner: ScrinRebelWestWormholes
-		Location: 119,85
-	Actor505: wormhole
-		Owner: ScrinRebelEastWormholes
-		Location: 145,90
-	Actor503: wormhole
-		Owner: ScrinRebelWestWormholes
-		Location: 61,85
 	ScrinWaypoint1: waypoint
 		Owner: Neutral
 		Location: 123,36
@@ -5813,6 +5801,18 @@ Actors:
 	Actor1761: reac
 		Owner: Scrin
 		Location: 8,4
+	WestToMiddleWormhole: wormhole
+		Owner: ScrinRebelWestWormholes
+		Location: 61,85
+	MiddleToWestWormhole: wormhole
+		Owner: ScrinRebelWestWormholes
+		Location: 119,85
+	MiddleToEastWormhole: wormhole
+		Owner: ScrinRebelEastWormholes
+		Location: 145,90
+	EastToMiddleWormhole: wormhole
+		Owner: ScrinRebelEastWormholes
+		Location: 198,69
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, preservation-rules.yaml
 

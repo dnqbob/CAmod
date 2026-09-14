@@ -211,6 +211,11 @@ WorldLoaded = function()
 		end)
 	end)
 
+	WestToMiddleWormhole.RallyPoint = CPos.New(WestToMiddleWormhole.Location.X - 3, WestToMiddleWormhole.Location.Y - 1)
+	MiddleToWestWormhole.RallyPoint = CPos.New(MiddleToWestWormhole.Location.X + 2, MiddleToWestWormhole.Location.Y - 2)
+	MiddleToEastWormhole.RallyPoint = CPos.New(MiddleToEastWormhole.Location.X - 3, MiddleToEastWormhole.Location.Y + 2)
+	EastToMiddleWormhole.RallyPoint = CPos.New(EastToMiddleWormhole.Location.X, EastToMiddleWormhole.Location.Y + 3)
+
     AfterWorldLoaded()
 end
 

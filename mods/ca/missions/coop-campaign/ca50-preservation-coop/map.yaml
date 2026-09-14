@@ -28,26 +28,26 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
-		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Enemies: ScrinRebels, Nod, Scrin, USSR, MaleficScrin, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 	PlayerReference@ScrinRebels:
 		Name: ScrinRebels
 		Faction: scrin
 		Color: 2FB4A6
-		Allies: Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelWestWormholes:
 		Name: ScrinRebelWestWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
-		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@ScrinRebelEastWormholes:
 		Name: ScrinRebelEastWormholes
 		NonCombatant: True
 		Faction: scrin
 		Color: 2FB4A6
-		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: Scrin, USSR, MaleficScrin, Creeps
 	PlayerReference@Scrin:
 		Name: Scrin
@@ -68,14 +68,14 @@ Players:
 		Bot: dormant
 		Faction: nod
 		Color: 6D738C
-		Allies: ScrinRebels, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@MaleficScrin:
 		Name: MaleficScrin
 		Bot: campaign
 		Faction: scrin
 		Color: 3E4549
-		Enemies: ScrinRebels, Nod, Scrin, USSR, Creeps, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Enemies: ScrinRebels, Nod, Scrin, USSR, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Creeps, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
@@ -87,7 +87,7 @@ Players:
 		Faction: scrin
 		Color: 2FB4A6
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi1:
 		Name: Multi1
@@ -99,7 +99,7 @@ Players:
 		Faction: nod
 		Color: 6D738C
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi2:
 		Name: Multi2
@@ -111,7 +111,7 @@ Players:
 		Faction: scrin
 		Color: D83CE5
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi3:
 		Name: Multi3
@@ -123,7 +123,7 @@ Players:
 		Faction: scrin
 		Color: 0B7310
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi4:
 		Name: Multi4
@@ -135,7 +135,7 @@ Players:
 		Faction: nod
 		Color: 134691
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 	PlayerReference@Multi5:
 		Name: Multi5
@@ -147,7 +147,7 @@ Players:
 		Faction: scrin
 		Color: 775A12
 		LockColor: True
-		Allies: ScrinRebels, Nod, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Allies: ScrinRebels, Nod, ScrinRebelWestWormholes, ScrinRebelEastWormholes, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
 		Enemies: USSR, Scrin, MaleficScrin, Creeps
 
 Actors:
@@ -4132,18 +4132,6 @@ Actors:
 	Actor1428: nerv
 		Owner: ScrinRebels
 		Location: 126,92
-	Actor506: wormhole
-		Owner: ScrinRebelEastWormholes
-		Location: 198,69
-	Actor504: wormhole
-		Owner: ScrinRebelWestWormholes
-		Location: 119,85
-	Actor505: wormhole
-		Owner: ScrinRebelEastWormholes
-		Location: 145,90
-	Actor503: wormhole
-		Owner: ScrinRebelWestWormholes
-		Location: 61,85
 	ScrinWaypoint1: waypoint
 		Owner: Neutral
 		Location: 123,36
@@ -5879,6 +5867,18 @@ Actors:
 	Actor1761: reac
 		Owner: Scrin
 		Location: 8,4
+	WestToMiddleWormhole: wormhole
+		Owner: ScrinRebelWestWormholes
+		Location: 61,85
+	MiddleToWestWormhole: wormhole
+		Owner: ScrinRebelWestWormholes
+		Location: 119,85
+	MiddleToEastWormhole: wormhole
+		Owner: ScrinRebelEastWormholes
+		Location: 145,90
+	EastToMiddleWormhole: wormhole
+		Owner: ScrinRebelEastWormholes
+		Location: 198,69
 
 Rules: ca|rules/custom/campaign-rules.yaml, ca|rules/custom/campaign-tooltips.yaml, ca|rules/custom/two-tone-nod.yaml, ca|rules/custom/disable-allegiances.yaml, ca|missions/main-campaign/ca50-preservation/preservation-rules.yaml, ca|rules/custom/coop-rules.yaml, preservation-coop-rules.yaml
 

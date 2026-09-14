@@ -6685,6 +6685,7 @@ WORMHOLE:
 	TeleportNetwork:
 		Type: Wormhole
 		Delay: 0
+	WithTeleportNetworkLinkVisualization:
 	RallyPoint:
 		Path: 1,1
 	Exit:

@@ -80,6 +80,25 @@ MaleficFleetCompositions = {
 	brutal = { "pac", "deva", "pac", "deva", "pac" },
 }
 
+if IsHardOrAbove() then
+	table.insert(UnitCompositions.Scrin, {
+		Infantry = { "s3", "s4", "evis", "evis", "evis", "evis", "s1", "s1", "s4", "s1", "s4", "s1", "s4", "s1", "mast" },
+		Vehicles = { "shrw", TripodVariant, TripodVariant, "shrw", CorrupterOrDevourer, "oblt", "shrw" },
+		Aircraft = { PacOrDevastator, "pac" },
+		MinTime = DateTime.Minutes(22)
+	})
+
+	if IsVeryHardOrAbove() then
+		table.insert(UnitCompositions.Scrin, {
+			Infantry = { "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis" },
+			Vehicles = { "shrw", "shrw", "ruin", "ruin", "ruin", "ruin", "rptp", "rptp" },
+			Aircraft = { "deva" },
+			MinTime = DateTime.Minutes(18),
+			RequiredTargetCharacteristics = { "MassInfantry" }
+		})
+	end
+end
+
 NextMaleficFleetSpawnIndex = 1
 
 Squads = {

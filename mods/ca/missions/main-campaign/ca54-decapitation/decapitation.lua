@@ -113,6 +113,16 @@ if IsHardOrAbove() then
 		Aircraft = { PacOrDevastator, "pac" },
 		MinTime = DateTime.Minutes(22)
 	})
+
+	if IsVeryHardOrAbove() then
+		table.insert(UnitCompositions.Scrin, {
+			Infantry = { "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis", "evis" },
+			Vehicles = { "shrw", "shrw", "ruin", "ruin", "ruin", "ruin", "rptp", "rptp" },
+			Aircraft = { "deva" },
+			MinTime = DateTime.Minutes(18),
+			RequiredTargetCharacteristics = { "MassInfantry" }
+		})
+	end
 end
 
 AdjustedScrinCompositions = AdjustCompositionsForDifficulty(UnitCompositions.Scrin)
